@@ -6,6 +6,7 @@ import { AccreditationsStrip } from '@/components/accreditations-strip';
 import { CtaFinalStrip } from '@/components/cta-final-strip';
 import { Shield, Droplet, Layers, FileText } from 'lucide-react'; // REMOVED: Phone
 import { buildPageMetadata } from '@/lib/metadata';
+import { Breadcrumbs } from '@/components/breadcrumbs';
 
 // --- METADATA (SEO) ---
 export const metadata = buildPageMetadata({
@@ -46,6 +47,12 @@ const WaterproofingSolutions = [
 export default function WaterproofingPage() {
     return (
         <div className="bg-primary pt-24 text-white">
+            <Breadcrumbs 
+                items={[
+                    { label: 'Services', href: '/services' },
+                    { label: 'Waterproofing Services', href: '/waterproofing-services' },
+                ]}
+            />
 
             {/* --- MODULE 1: WATERPROOFING HERO --- */}
             <section className="relative py-24 md:py-40 px-4 bg-gray-900 border-b-4 border-secondary">
@@ -57,7 +64,7 @@ export default function WaterproofingPage() {
                         Guaranteed Waterproofing. Eliminate Water Ingress Risk.
                     </h1>
                     <p className="2xl font-light mt-6 max-w-4xl text-gray-400">
-                        We provide **co-signed guarantees** on both our workmanship and the manufacturer&apos;s product, ensuring your high-value asset is protected from the single greatest cause of structural damage: water.
+                        We provide **co-signed guarantees** on both our workmanship and the manufacturer&apos;s product, ensuring your high-value asset is protected from the single greatest cause of structural damage: water. Learn more about our <Link href="/blog/waterproofing" className="text-secondary hover:text-tertiary underline">waterproofing guides</Link> or explore our <Link href="/damp-proofing-services" className="text-secondary hover:text-tertiary underline">damp proofing services</Link>.
                     </p>
 
                     <Button asChild

@@ -146,8 +146,10 @@ export default function RootLayout({
       <body className={inter.className}>
         
         {/* --- ANALYTICS INJECTION (Off-Main Thread) --- */}
-        {/* REPLACE "GTM-YOURID" WITH YOUR ACTUAL CONTAINER ID */}
-        <GoogleTagManager containerId="GTM-YOURID" />
+        {/* GTM Container ID from environment variable, falls back to empty string if not set */}
+        {process.env.NEXT_PUBLIC_GTM_ID && (
+          <GoogleTagManager containerId={process.env.NEXT_PUBLIC_GTM_ID} />
+        )}
 
         <Header />
 

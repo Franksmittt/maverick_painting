@@ -24,7 +24,7 @@ export function ProjectShowcaseImageCard({ name, location, href, imageSrc }: Pro
                 {/* Image Placeholder with Hover Effect */}
                 <Image
                     src={imageSrc} // Use the imageSrc prop
-                    alt={`Project image for ${name}`} // Essential for SEO and Accessibility [cite: 1900]
+                    alt={`${name} - ${location} painting and waterproofing project by Maverick Painting Contractors`} // Enhanced SEO: descriptive, keyword-rich alt text
                     fill // Fills the parent container (relative h-60 w-full)
                     sizes="(max-width: 768px) 100vw, 33vw" // Responsive image size definition
                     className="object-cover transition-transform duration-500 group-hover:scale-[1.05]"

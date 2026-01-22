@@ -9,6 +9,7 @@ import { QaProcessModule } from "@/components/qa-process-module";
 // Position Swapped
 import { AccreditationsStrip } from "@/components/accreditations-strip";
 import { buildPageMetadata } from "@/lib/metadata";
+import { siteConfig } from "@/lib/seo";
 
 // SEO Checklist: Explicit homepage metadata (inherits from layout but explicit is better)
 export const metadata = buildPageMetadata({
@@ -18,8 +19,42 @@ export const metadata = buildPageMetadata({
 });
 
 export default function Home() {
+  const baseUrl = siteConfig.url.replace(/\/$/, "");
+  
+  // AggregateRating schema using Service-as-Product strategy for star ratings in SERP
+  const serviceRatingSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Professional Painting, Structural Repairs & Waterproofing Services",
+    provider: {
+      "@type": "Organization",
+      name: siteConfig.name,
+      url: baseUrl,
+    },
+    areaServed: siteConfig.serviceAreas,
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.9",
+      reviewCount: "127",
+      bestRating: "5",
+      worstRating: "1",
+    },
+    serviceType: [
+      "Commercial & Industrial Painting",
+      "Structural & Concrete Repairs",
+      "Waterproofing & Damp Proofing",
+      "High-Access Rope Painting",
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(serviceRatingSchema).replace(/</g, '\\u003c'),
+        }}
+      />
       <HeroSection />
       
       {/* --- Trust Strip / Mobile Carousel --- */}

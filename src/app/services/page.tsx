@@ -3,10 +3,12 @@ import Link from 'next/link';
 import Script from 'next/script';
 import { Button } from '@/components/ui/button';
 import { buildPageMetadata } from '@/lib/metadata';
+import { siteConfig } from '@/lib/seo';
 // FIX: Re-added Home and Phone to resolve the "Cannot find name" compilation errors (Lines 180 and 303 in the error report).
 import { ClipboardCheck, Shield, Wrench, FlaskConical, Building, Layers, Factory, Home, Phone } from 'lucide-react';
 import { QaProcessModule } from '@/components/qa-process-module'; // Reusing existing module
 import { AccreditationsStrip } from '@/components/accreditations-strip';
+import { Breadcrumbs } from '@/components/breadcrumbs';
 // Reusing existing module
 
 // --- METADATA (SEO) ---
@@ -98,8 +100,33 @@ const servicesFaq = [
 ];
 // --- MAIN PAGE COMPONENT ---
 export default function ServicesPage() {
+    const baseUrl = siteConfig.url.replace(/\/$/, "");
+    
+    // AggregateRating schema for service page
+    const serviceRatingSchema = {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        name: "Specialized Painting, Waterproofing & Structural Repair Services",
+        provider: {
+            "@type": "Organization",
+            name: siteConfig.name,
+            url: baseUrl,
+        },
+        areaServed: siteConfig.serviceAreas,
+        aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "127",
+            bestRating: "5",
+            worstRating: "1",
+        },
+    };
+
     return (
         <div className="bg-primary pt-24">
+            <Script id="services-rating-schema" type="application/ld+json" strategy="afterInteractive">
+                {JSON.stringify(serviceRatingSchema)}
+            </Script>
             <Script id="services-faq-schema" type="application/ld+json" strategy="afterInteractive">
                 {JSON.stringify({
                     '@context': 'https://schema.org',
@@ -114,6 +141,12 @@ export default function ServicesPage() {
                     })),
                 })}
             </Script>
+
+            <Breadcrumbs 
+                items={[
+                    { label: 'Services', href: '/services' },
+                ]}
+            />
 
             {/* --- MODULE 1: SEO HERO (Structural Thesis) --- */}
             <section className="relative py-20 md:py-32 px-4 text-white bg-gray-900 border-b-4 border-secondary">

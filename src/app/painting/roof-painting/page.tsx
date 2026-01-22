@@ -6,6 +6,8 @@ import { AccreditationsStrip } from '@/components/accreditations-strip';
 import { CtaFinalStrip } from '@/components/cta-final-strip';
 import { Home, Sun, Droplet, Shield } from 'lucide-react';
 import { buildPageMetadata } from '@/lib/metadata';
+import { siteConfig } from '@/lib/seo';
+import { Breadcrumbs } from '@/components/breadcrumbs';
 
 // --- METADATA (SEO) ---
 export const metadata = buildPageMetadata({
@@ -44,8 +46,71 @@ const RoofServices = [
 
 // --- MAIN PAGE COMPONENT ---
 export default function RoofPaintingPage() {
+    const baseUrl = siteConfig.url.replace(/\/$/, "");
+    
+    // Service with Offer schema for pricing rich snippets
+    const serviceWithOfferSchema = {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        name: "Professional Roof Painting & Tile Restoration Services",
+        description: "Expert roof painting and tile restoration services using heat-reflective roof paint, airless roof spray systems, and weatherproof coatings.",
+        provider: {
+            "@type": "Organization",
+            name: siteConfig.name,
+            url: baseUrl,
+        },
+        areaServed: siteConfig.serviceAreas,
+        serviceType: "Roof Painting & Restoration",
+        offers: [
+            {
+                "@type": "Offer",
+                name: "Standard Tile Roof Painting",
+                priceCurrency: "ZAR",
+                price: "60",
+                priceSpecification: {
+                    "@type": "UnitPriceSpecification",
+                    price: "60",
+                    priceCurrency: "ZAR",
+                    unitCode: "MTK",
+                    unitText: "per square meter",
+                },
+                availability: "https://schema.org/InStock",
+                url: `${baseUrl}/painting/roof-painting`,
+            },
+            {
+                "@type": "Offer",
+                name: "Premium Heat-Reflective Roof System",
+                priceCurrency: "ZAR",
+                price: "100",
+                priceSpecification: {
+                    "@type": "UnitPriceSpecification",
+                    price: "100",
+                    priceCurrency: "ZAR",
+                    unitCode: "MTK",
+                    unitText: "per square meter",
+                },
+                availability: "https://schema.org/InStock",
+                url: `${baseUrl}/painting/roof-painting`,
+            },
+        ],
+    };
+
     return (
         <div className="bg-primary pt-24 text-white">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(serviceWithOfferSchema).replace(/</g, '\\u003c'),
+                }}
+            />
+            
+            <Breadcrumbs 
+                items={[
+                    { label: 'Services', href: '/services' },
+                    { label: 'Painting Services', href: '/painting-services' },
+                    { label: 'Roof Painting', href: '/painting/roof-painting' },
+                ]}
+            />
             
             {/* --- MODULE 1: ROOF PAINTING HERO --- */}
             <section className="relative py-24 md:py-32 px-4 bg-gray-900 border-b-4 border-secondary">
@@ -57,7 +122,7 @@ export default function RoofPaintingPage() {
                         Professional Roof Painting & Tile Restoration
                     </h1>
                     <p className="text-2xl font-light mt-6 max-w-4xl text-gray-400">
-                        Protect your roof from UV damage, water ingress, and thermal expansion. We use heat-reflective coatings, airless spray systems, and weatherproof finishes that extend roof life by 10+ years.
+                        Protect your roof from UV damage, water ingress, and thermal expansion. We use heat-reflective coatings, airless spray systems, and weatherproof finishes that extend roof life by 10+ years. For flat concrete roofs, see our <Link href="/waterproofing-services" className="text-secondary hover:text-tertiary underline">waterproofing services</Link> or explore our <Link href="/painting-services" className="text-secondary hover:text-tertiary underline">full range of painting services</Link>.
                     </p>
                     <div className="mt-8 p-6 bg-primary/50 rounded-xl border border-tertiary/30 max-w-2xl">
                         <p className="text-lg font-semibold text-tertiary mb-2">Transparent Pricing</p>

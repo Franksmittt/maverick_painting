@@ -6,6 +6,7 @@ import { AccreditationsStrip } from '@/components/accreditations-strip';
 import { CtaFinalStrip } from '@/components/cta-final-strip';
 import { Stethoscope, ClipboardCheck, MessageCircle, Building } from 'lucide-react'; 
 import { buildPageMetadata } from '@/lib/metadata';
+import { Breadcrumbs } from '@/components/breadcrumbs';
 
 // --- METADATA (SEO) ---
 export const metadata = buildPageMetadata({
@@ -46,6 +47,13 @@ const CommercialFeatures = [
 export default function CommercialPaintingPage() {
     return (
         <div className="bg-primary pt-24 text-white">
+            <Breadcrumbs 
+                items={[
+                    { label: 'Services', href: '/services' },
+                    { label: 'Painting Services', href: '/painting-services' },
+                    { label: 'Commercial Painting', href: '/painting/commercial-painting' },
+                ]}
+            />
 
             {/* --- MODULE 1: COMMERCIAL FOCUS HERO --- */}
             <section className="relative py-24 md:py-40 px-4 bg-gray-900 border-b-4 border-secondary">
