@@ -103,6 +103,7 @@ export const siteConfig = {
     "/structural-repairs",
     "/coatings/hygienic-food-grade-flooring",
     "/our-process-independent-qa",
+    "/accreditations",
     "/projects",
     "/blog",
     "/blog/industrial",
