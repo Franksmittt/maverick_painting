@@ -6,11 +6,13 @@ import { AccreditationsStrip } from '@/components/accreditations-strip';
 import { CtaFinalStrip } from '@/components/cta-final-strip';
 import { Droplet, Sprout, Building, MessageSquare } from 'lucide-react'; // REMOVED: AirVent
 import { buildPageMetadata } from '@/lib/metadata';
+import { Breadcrumbs } from '@/components/breadcrumbs';
+import { HubSpokeSection } from '@/components/hub-spoke-section';
 
 // --- METADATA (SEO) ---
 export const metadata = buildPageMetadata({
     title: 'Rising Damp & Damp Proofing Solutions | Chemical DPC & Moisture Control',
-    description: 'Specialized rising damp treatment contractors offering guaranteed chemical DPC (Damp Proof Course) injection and full moisture control solutions for basements and ground-level walls.',
+    description: 'Specialized rising damp treatment and damp proofing contractors in Gauteng: chemical DPC injection, salt-retardant replastering, basement tanking, and diagnostics that separate capillary rise from leaks and condensation.',
     path: '/damp-proofing-services',
 });
 
@@ -46,6 +48,12 @@ const DampFeatures = [
 export default function DampProofingPage() {
     return (
         <div className="bg-primary pt-24 text-white">
+            <Breadcrumbs
+                items={[
+                    { label: 'Services', href: '/services' },
+                    { label: 'Damp proofing services', href: '/damp-proofing-services' },
+                ]}
+            />
 
             {/* --- MODULE 1: DAMP PROOFING HERO --- */}
             <section className="relative py-24 md:py-40 px-4 bg-gray-900 border-b-4 border-secondary">
@@ -54,10 +62,10 @@ export default function DampProofingPage() {
                         Moisture Control & Remediation
                     </p>
                     <h1 className="text-5xl md:text-7xl font-extrabold leading-tight uppercase max-w-5xl">
-                        Guaranteed Rising Damp & Damp Proofing Solutions.
+                        Rising Damp & Damp Proofing Solutions for Gauteng Masonry
                     </h1>
                     <p className="2xl font-light mt-6 max-w-4xl text-gray-400">
-                        We provide **permanent chemical damp proof course (DPC) injection** and full basement tanking systems to eliminate moisture ingress, protecting your structural assets from mold and decay.
+                        We provide <strong className="font-semibold text-gray-200">chemical damp proof course (DPC) injection</strong> and compatible replastering systems, plus basement tanking where hydrostatic pressure demands engineered negative-side approaches. Diagnosis precedes drilling — rising damp, lateral moisture, and condensation present differently and require different remedies.
                     </p>
 
                     <Button asChild
@@ -96,6 +104,41 @@ export default function DampProofingPage() {
                             </div>
                         ))}
                     </div>
+                </div>
+            </section>
+
+            <HubSpokeSection
+                title="Rising damp — dedicated technical page"
+                intro="Rising damp competes with waterproofing in search, but the physics, remedies, and trustee conversations differ. Isolating rising damp into its own URL prevents algorithmic confusion and gives homeowners the depth they expect before authorising plaster removal."
+                links={[
+                    {
+                        href: '/damp-proofing/rising-damp-treatment',
+                        label: 'Rising damp treatment & chemical DPC injection',
+                        description:
+                            'Diagnostics, injection patterns, salt-contaminated plaster management, and maintenance guidance to keep manufacturer warranties realistic.',
+                    },
+                ]}
+            />
+
+            <section className="border-t border-white/5 bg-primary px-4 py-20">
+                <div className="mx-auto max-w-4xl space-y-5 text-base leading-relaxed text-gray-300 md:text-lg">
+                    <h2 className="text-3xl font-extrabold uppercase text-white">Moisture control without over-promising</h2>
+                    <p>
+                        Maverick avoids absolute &quot;never damp again&quot; claims. We instead document pathways, specify
+                        compatible plaster systems, and explain when{' '}
+                        <Link href="/waterproofing/leaking-balconies" className="text-secondary hover:underline">
+                            lateral waterproofing
+                        </Link>{' '}
+                        or roof leaks must be solved before replastering — protecting trustees and homeowners from repeat
+                        spend.
+                    </p>
+                    <p>
+                        Read our{' '}
+                        <Link href="/blog/waterproofing/rising-damp-guide" className="text-secondary hover:underline">
+                            rising damp technical guide
+                        </Link>{' '}
+                        for educational context, then invite Maverick for a moisture-profiled site visit.
+                    </p>
                 </div>
             </section>
 

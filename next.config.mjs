@@ -1,5 +1,24 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    async redirects() {
+        return [
+            {
+                source: "/painting/body-corporate-painting",
+                destination: "/painting/body-corporate",
+                permanent: true,
+            },
+            {
+                source: "/painting/industrial-painting",
+                destination: "/painting/industrial",
+                permanent: true,
+            },
+            {
+                source: "/coatings/hygienic-food-grade-flooring",
+                destination: "/specialized-coatings/hygienic-food-grade",
+                permanent: true,
+            },
+        ];
+    },
     // SEO Checklist: React Strict Mode for better development experience and error detection
     reactStrictMode: true,
     

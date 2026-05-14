@@ -11,9 +11,9 @@ const servicesData = [
     { title: "Rising Damp Treatment", description: "Permanent chemical injection DPC solutions.", href: "/damp-proofing-services/", icon: AirVent },
     { title: "Rope Access & High Access", description: "Cost-effective maintenance for high-rise buildings.", href: "/access-solutions/", icon: PersonStanding },
  
-    { title: "Industrial Corrosion Control", description: "Protective coatings for factory assets and steelwork.", href: "/painting/industrial-painting/", icon: Wrench },
-    { title: "Hygienic Food-Grade Floors", description: "Seamless, chemical-resistant systems for food plants.", href: "/coatings/hygienic-food-grade-flooring/", icon: FlaskConical },
-    { title: "Body Corporate Painting", description: "Managing complex projects with minimal disturbance.", href: "/painting/body-corporate-painting/", icon: Building },
+    { title: "Industrial Corrosion Control", description: "Protective coatings for factory assets and steelwork.", href: "/painting/industrial", icon: Wrench },
+    { title: "Hygienic Food-Grade Floors", description: "Seamless, chemical-resistant systems for food plants.", href: "/specialized-coatings/hygienic-food-grade", icon: FlaskConical },
+    { title: "Body Corporate Painting", description: "Managing complex projects with minimal disturbance.", href: "/painting/body-corporate", icon: Building },
     { title: "Commercial & Healthcare", description: "Low-VOC, specialized coatings for sensitive environments.", href: "/painting/commercial-painting/", icon: Stethoscope },
     { title: "Stucco & Wall Coatings", description: "Premium masonry cladding with vapor-permeable finishes.", href: "/painting/stucco-wall-coatings/", icon: Home },
 ];

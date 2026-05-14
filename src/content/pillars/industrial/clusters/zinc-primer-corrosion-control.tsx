@@ -58,7 +58,7 @@ export function ZincPrimerCorrosionControlArticle() {
               asChild
               className="mt-4 bg-secondary hover:bg-[#4AD5E2] text-primary font-bold text-lg h-12"
             >
-              <Link href="/industrial-painting">Request a plant coating audit &rarr;</Link>
+              <Link href="/painting/industrial">Request a plant coating audit &rarr;</Link>
             </Button>
           </section>
         </div>

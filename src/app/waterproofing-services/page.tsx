@@ -7,6 +7,7 @@ import { CtaFinalStrip } from '@/components/cta-final-strip';
 import { Shield, Droplet, Layers, FileText } from 'lucide-react'; // REMOVED: Phone
 import { buildPageMetadata } from '@/lib/metadata';
 import { Breadcrumbs } from '@/components/breadcrumbs';
+import { HubSpokeSection } from '@/components/hub-spoke-section';
 
 // --- METADATA (SEO) ---
 export const metadata = buildPageMetadata({
@@ -103,6 +104,65 @@ export default function WaterproofingPage() {
                             </div>
                         ))}
                     </div>
+                </div>
+            </section>
+
+            <HubSpokeSection
+                title="Dedicated waterproofing service pages"
+                intro="Thin, catch-all waterproofing pages dilute intent for high-value queries like flat slab renewals, under-tile balconies, and basement tanking. Maverick’s spoke pages unpack methodology, compliance context, and BC documentation separately."
+                links={[
+                    {
+                        href: "/waterproofing/flat-concrete-roofs",
+                        label: "Flat concrete roof waterproofing",
+                        description:
+                            "Torch-on vs liquid trade-offs, drainage and ponding risk, UV protection, hybrid programmes, and manufacturer-backed maintenance calendars.",
+                    },
+                    {
+                        href: "/waterproofing/leaking-balconies",
+                        label: "Leaking balcony remediation",
+                        description:
+                            "Sectional-title documentation, low-disruption options, exclusive-use interfaces, and coordination with structural arris repairs.",
+                    },
+                    {
+                        href: "/waterproofing/basement-tanking",
+                        label: "Basement tanking & sub-structure waterproofing",
+                        description:
+                            "Negative- vs positive-side logic, active leak management, lift pits, and parking slabs with hydrostatic pressure risk.",
+                    },
+                ]}
+            />
+
+            <section className="border-t border-white/5 bg-primary px-4 py-20">
+                <div className="mx-auto max-w-4xl space-y-5 text-base leading-relaxed text-gray-300 md:text-lg">
+                    <h2 className="text-3xl font-extrabold uppercase text-white">Waterproofing as a portfolio risk discipline</h2>
+                    <p>
+                        Water ingress is the fastest way to destroy coating warranties, accelerate concrete carbonation, and
+                        force unplanned special levies. Maverick treats waterproofing as{" "}
+                        <strong className="text-white">systems engineering</strong>: preparation, detailing at penetrations,
+                        compatible protection courses, and realistic maintenance — not a single-layer miracle product.
+                    </p>
+                    <p>
+                        Our teams are comfortable working alongside{" "}
+                        <Link href="/structural-repairs" className="text-secondary hover:underline">
+                            structural remedial contractors
+                        </Link>{" "}
+                        when spalling and membrane renewal must be sequenced, and we speak the language of{" "}
+                        <Link href="/painting/body-corporate" className="text-secondary hover:underline">
+                            sectional-title maintenance plans
+                        </Link>{" "}
+                        where trustees need transparent scope boundaries for insurers and attorneys.
+                    </p>
+                    <p>
+                        Explore our technical blog cluster on{" "}
+                        <Link href="/blog/waterproofing/liquid-vs-torch-on" className="text-secondary hover:underline">
+                            liquid vs torch-on membranes
+                        </Link>{" "}
+                        and{" "}
+                        <Link href="/blog/waterproofing/leaking-balcony-fixes" className="text-secondary hover:underline">
+                            low-disruption balcony repairs
+                        </Link>{" "}
+                        — then invite us to translate those principles into a site-specific specification for your asset.
+                    </p>
                 </div>
             </section>
 

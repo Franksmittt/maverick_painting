@@ -6,6 +6,8 @@ import { AccreditationsStrip } from '@/components/accreditations-strip';
 import { CtaFinalStrip } from '@/components/cta-final-strip';
 import { PersonStanding, Shield, TrendingUp, Truck } from 'lucide-react'; // REMOVED: Zap, Phone
 import { buildPageMetadata } from '@/lib/metadata';
+import { Breadcrumbs } from '@/components/breadcrumbs';
+import { HubSpokeSection } from '@/components/hub-spoke-section';
 
 // --- METADATA (SEO) ---
 export const metadata = buildPageMetadata({
@@ -46,6 +48,12 @@ const AccessMethods = [
 export default function AccessSolutionsPage() {
     return (
         <div className="bg-primary pt-24 text-white">
+            <Breadcrumbs
+                items={[
+                    { label: 'Services', href: '/services' },
+                    { label: 'Access solutions', href: '/access-solutions' },
+                ]}
+            />
 
             {/* --- MODULE 1: ACCESS HERO --- */}
             <section className="relative py-24 md:py-40 px-4 bg-gray-900 border-b-4 border-secondary">
@@ -96,6 +104,40 @@ export default function AccessSolutionsPage() {
                             </div>
                         ))}
                     </div>
+                </div>
+            </section>
+
+            <HubSpokeSection
+                title="Rope access painting & high-level remediation"
+                intro="Access method pages should not be thin brochures. Our rope access service page documents procurement concerns: anchor engineering context, rescue planning, IRATA subcontractor governance, and sequencing with waterproofing and structural repairs."
+                links={[
+                    {
+                        href: '/access-solutions/rope-access-painting',
+                        label: 'Rope access painting & maintenance',
+                        description:
+                            'High-rise programmes, estate security inductions, hybrid scaffold economics, and integration with façade spalling and leak remediation.',
+                    },
+                ]}
+            />
+
+            <section className="border-t border-white/5 bg-primary px-4 py-20">
+                <div className="mx-auto max-w-4xl space-y-5 text-base leading-relaxed text-gray-300 md:text-lg">
+                    <h2 className="text-3xl font-extrabold uppercase text-white">Selecting the right temporary works package</h2>
+                    <p>
+                        Scaffold provides stable working platforms for heavy breakout — but can be slow to erect, expensive
+                        to secure in residential estates, and visually dominant. Rope access can shrink footprints when
+                        engineering and weather windows align. Maverick recommends{' '}
+                        <strong className="text-white">hybrid models</strong> honestly rather than forcing a single access
+                        vendor narrative.
+                    </p>
+                    <p>
+                        Tie-in: most{' '}
+                        <Link href="/painting/body-corporate" className="text-secondary hover:underline">
+                            sectional-title painting programmes
+                        </Link>{' '}
+                        above six storeys eventually evaluate rope stages for cost and security reasons — see the dedicated
+                        rope page for safety file expectations and programme examples.
+                    </p>
                 </div>
             </section>
 

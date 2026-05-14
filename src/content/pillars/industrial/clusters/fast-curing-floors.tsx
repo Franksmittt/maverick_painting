@@ -63,7 +63,7 @@ export function FastCuringFloorsArticle() {
               asChild
               className="mt-4 bg-secondary hover:bg-[#4AD5E2] text-primary font-bold text-lg h-12"
             >
-              <Link href="/coatings/hygienic-food-grade-flooring">
+              <Link href="/specialized-coatings/hygienic-food-grade">
                 Plan my floor replacement &rarr;
               </Link>
             </Button>

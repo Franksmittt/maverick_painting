@@ -1,11 +1,12 @@
 // src/app/specialized-coatings/page.tsx
-import Link from 'next/link';
+import Link from "next/link";
 import { Button } from '@/components/ui/button';
 import { QaProcessModule } from '@/components/qa-process-module';
 import { AccreditationsStrip } from '@/components/accreditations-strip';
 import { CtaFinalStrip } from '@/components/cta-final-strip';
 import { FlaskConical, Layers, Shield, Building } from 'lucide-react'; // REMOVED: Rss, Phone
 import { buildPageMetadata } from '@/lib/metadata';
+import { HubSpokeSection } from '@/components/hub-spoke-section';
 
 // --- METADATA (SEO) ---
 export const metadata = buildPageMetadata({
@@ -107,6 +108,58 @@ export default function SpecializedCoatingsPage() {
                             </Link>
                         </Button>
                     </div>
+                </div>
+            </section>
+
+            <HubSpokeSection
+                title="Specialized coating systems — individual service pages"
+                intro="Industrial buyers research chemistry, slip resistance, thermal shock, and audit readiness. Splitting resin flooring, hygienic systems, and decorative wall finishes into dedicated URLs prevents ‘garage epoxy’ intent from polluting food-plant HACCP searches — and vice versa."
+                links={[
+                    {
+                        href: "/specialized-coatings/industrial-epoxy-flooring",
+                        label: "Industrial epoxy & polyurethane flooring",
+                        description:
+                            "CSP profiling, moisture mitigation, chemical exposure tables, line marking, and shutdown-sensitive programme planning.",
+                    },
+                    {
+                        href: "/specialized-coatings/hygienic-food-grade",
+                        label: "Hygienic & food-grade resin flooring",
+                        description:
+                            "PU cement screeds, integral coving, thermal shock considerations, and weekend/MMA fast-track options.",
+                    },
+                    {
+                        href: "/specialized-coatings/marmoran-wall-systems",
+                        label: "Marmoran-class decorative wall systems",
+                        description:
+                            "High-build textures, mock-up discipline, façade crack bridging coordination, and estate security logistics.",
+                    },
+                ]}
+            />
+
+            <section className="border-t border-white/5 bg-primary px-4 py-20">
+                <div className="mx-auto max-w-4xl space-y-5 text-base leading-relaxed text-gray-300 md:text-lg">
+                    <h2 className="text-3xl font-extrabold uppercase text-white">Application science, not product hype</h2>
+                    <p>
+                        Most resin failures are preparation and environmental discipline failures — not brand colour
+                        choices. Maverick’s coating division sequences{" "}
+                        <strong className="text-white">moisture tests, profiling, primer compatibility, and cure holds</strong>{" "}
+                        exactly as manufacturer datasheets require, with film-thickness mapping on QA scopes.
+                    </p>
+                    <p>
+                        Where food and beverage audits apply, we align details to hygiene principles (coving, drainage,
+                        cleanability) while being careful not to overstate certification outcomes Maverick does not control.
+                    </p>
+                    <p>
+                        Need structural repairs before resurfacing? Link to{" "}
+                        <Link href="/structural-repairs/concrete-spalling" className="text-secondary hover:underline">
+                            spalling remediation
+                        </Link>{" "}
+                        and{" "}
+                        <Link href="/structural-repairs/expansion-joint-sealing" className="text-secondary hover:underline">
+                            joint rebuilds
+                        </Link>{" "}
+                        — failed slabs should not receive expensive screeds until substrate integrity is restored.
+                    </p>
                 </div>
             </section>
 

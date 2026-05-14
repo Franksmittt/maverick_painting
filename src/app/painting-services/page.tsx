@@ -6,6 +6,7 @@ import { AccreditationsStrip } from '@/components/accreditations-strip';
 import { CtaFinalStrip } from '@/components/cta-final-strip';
 import { Building, Factory, Wrench, Truck } from 'lucide-react'; // REMOVED: Paintbrush, Phone
 import { buildPageMetadata } from '@/lib/metadata';
+import { HubSpokeSection } from '@/components/hub-spoke-section';
 
 // --- METADATA (SEO) ---
 export const metadata = buildPageMetadata({
@@ -102,11 +103,62 @@ export default function PaintingServicesPage() {
                             variant="link"
                             className="text-tertiary hover:text-white mt-4 pl-0 text-lg font-bold"
                         >
-                            <Link href="/painting/body-corporate-painting">
-                                See Body Corporate Solutions &rarr;
+                            <Link href="/painting/body-corporate">
+                                See body corporate painting hub &rarr;
                             </Link>
                         </Button>
                     </div>
+                </div>
+            </section>
+
+            <HubSpokeSection
+                title="Commercial painting — dedicated entry points"
+                intro="Body corporate, industrial, and rope-access programmes have different safety files, procurement language, and risk profiles. Canonical service pages keep each buyer journey focused."
+                links={[
+                    {
+                        href: "/painting/body-corporate",
+                        label: "Body corporate & sectional-title painting",
+                        description:
+                            "STSMA-aligned documentation language, phasing, exclusive-use interfaces, and manufacturer coating warranties for large complexes.",
+                    },
+                    {
+                        href: "/painting/industrial",
+                        label: "Industrial painting & corrosion control",
+                        description:
+                            "Blast preparation pathways, high-build systems for steel and concrete, shutdown windows, and chemical bund coordination.",
+                    },
+                    {
+                        href: "/access-solutions/rope-access-painting",
+                        label: "Rope access painting & high-level maintenance",
+                        description:
+                            "IRATA-aligned subcontractor governance, rescue planning, anchor certification context, and hybrid access economics vs scaffold-only.",
+                    },
+                ]}
+            />
+
+            <section className="border-t border-white/5 bg-primary px-4 py-20">
+                <div className="mx-auto max-w-4xl space-y-5 text-base leading-relaxed text-gray-300 md:text-lg">
+                    <h2 className="text-3xl font-extrabold uppercase text-white">Commercial coatings with defensible QA</h2>
+                    <p>
+                        High-volume painting without inspection discipline is a warranty dispute waiting to happen. Maverick
+                        integrates independent QA options, manufacturer specification compliance, and photographic handover
+                        packs suitable for managing agents and developer retention teams.
+                    </p>
+                    <p>
+                        Explore additional routes such as{" "}
+                        <Link href="/painting/commercial-painting" className="text-secondary hover:underline">
+                            commercial facades
+                        </Link>
+                        ,{" "}
+                        <Link href="/painting/roof-painting" className="text-secondary hover:underline">
+                            roof painting & restoration
+                        </Link>
+                        , and{" "}
+                        <Link href="/painting/stucco-wall-coatings" className="text-secondary hover:underline">
+                            stucco & wall coatings
+                        </Link>{" "}
+                        — each can be expanded to the same deep-page standard as priorities dictate.
+                    </p>
                 </div>
             </section>
 

@@ -75,12 +75,12 @@ return (
                             <li><Link href="/structural-repairs" className={footerLinkClass}>Structural & Spalling Repair</Link></li>
                             {/* NEW LINK: Hygienic Flooring */}
                    
-             <li><Link href="/coatings/hygienic-food-grade-flooring" className={footerLinkClass}>Hygienic Floor Coatings</Link></li>
-                            <li><Link href="/access-solutions" className={footerLinkClass}>Rope Access Painting</Link></li>
-                            <li><Link href="/painting/body-corporate-painting" className={footerLinkClass}>Body Corporate Painting</Link></li>
+             <li><Link href="/specialized-coatings/hygienic-food-grade" className={footerLinkClass}>Hygienic Floor Coatings</Link></li>
+                            <li><Link href="/access-solutions/rope-access-painting" className={footerLinkClass}>Rope Access Painting</Link></li>
+                            <li><Link href="/painting/body-corporate" className={footerLinkClass}>Body Corporate Painting</Link></li>
                        
              {/* NEW LINK: Industrial Corrosion */}
-                            <li><Link href="/painting/industrial-painting" className={footerLinkClass}>Industrial Corrosion Control</Link></li>
+                            <li><Link href="/painting/industrial" className={footerLinkClass}>Industrial Corrosion Control</Link></li>
                             <li><Link href="/painting/stucco-wall-coatings" className={footerLinkClass}>Stucco & Wall Coatings</Link></li>
                         </ul>
                     </div>
