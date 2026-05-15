@@ -1,0 +1,1040 @@
+import Link from "next/link";
+import type { ServiceHubPageConfig } from "@/lib/service-hub-types";
+
+const MAGAZINE_IMAGES = [
+  {
+    src: "/images/munyaka-midrand.jpg",
+    alt: "Concrete structure diagnostics on a Gauteng sectional-title development",
+  },
+  {
+    src: "/images/the-blyde-pretorria.jpg",
+    alt: "Gauteng high-rise façade and podium with parking levels",
+  },
+  {
+    src: "/images/eastlands-benoni.jpg",
+    alt: "Structural remediation and access planning on a commercial exterior",
+  },
+] as const;
+
+const linkClass = "text-secondary no-underline hover:underline";
+
+export const structuralRepairsHub: ServiceHubPageConfig = {
+  path: "/structural-repairs",
+  breadcrumbLabel: "Structural repairs",
+  metadata: {
+    title: "Concrete Spalling, Structural Crack & Remedial Repair Specialists | Maverick",
+    description:
+      "Gauteng structural repair contractors for concrete spalling, crack injection, expansion joints, and protective coatings. Engineer-aligned specifications, manufacturer-approved systems, and independent QA on major commercial scopes.",
+  },
+  jsonLd: {
+    name: "Structural Repairs & Concrete Remediation",
+    description:
+      "Concrete spalling repair, crack injection, expansion joint sealing, and protective coatings for sectional-title, commercial, and industrial assets in Gauteng.",
+    serviceType: [
+      "Concrete spalling repair",
+      "Structural crack injection",
+      "Expansion joint sealing",
+      "Protective coating application",
+    ],
+  },
+  hero: {
+    headingId: "structural-repairs-heading",
+    h1: "Structural repairs for concrete that is failing in plain sight.",
+    lead:
+      "If you are managing spalling edges, gridlines in parking, or cracks that will not stop moving, you need a contractor who can sequence breakout, steel protection, reinstatement, and downstream waterproofing or coatings without drama.",
+    interventionsLabel: "Core interventions",
+    interventions: [
+      "Rebar passivation",
+      "Structural mortars",
+      "Crack injection",
+      "Joint rebuilds",
+      "Protective coatings",
+    ],
+  },
+  approach: {
+    headingId: "structural-remedial-approach-heading",
+    title: "Our remedial approach",
+    subtitle: "Engineer-approved protocols. Auditable repairs. Zero fluff.",
+    steps: [
+      {
+        phase: "PHASE_01",
+        title: "Defect Diagnosis & Spec",
+        description:
+          "Our assessment team uses moisture meters and hammer tests to diagnose the root cause (e.g., carbonation, chloride ingress) and prepares a substrate-specific, engineer-approved specification.",
+      },
+      {
+        phase: "PHASE_02",
+        title: "Concrete Remediation",
+        description:
+          "Removal of delaminated concrete, passivation of rebar to stop rust, and repair using polymer-modified structural mortar, engineered reinstatement, not cosmetic filler.",
+      },
+      {
+        phase: "PHASE_03",
+        title: "Crack Injection",
+        description:
+          "Epoxy or polyurethane injection selected by crack behaviour: structural bonding vs active leak sealing. Ports, pressures, and batch records are documented for commercial QA files.",
+      },
+      {
+        phase: "PHASE_04",
+        title: "Protective Coating",
+        description:
+          "Application of manufacturer-approved breathable membranes and elastomeric coatings that resist UV, manage water vapour, and accommodate movement where specified.",
+      },
+    ],
+  },
+  hubSpoke: {
+    headingId: "structural-services-heading",
+    title: "Deep-dive structural services",
+    intro:
+      "Each page below targets a distinct failure mode and procurement keyword cluster, improving topical clarity for search engines and giving technical buyers the depth they expect before inviting a site walk-down.",
+    links: [
+      {
+        href: "/structural-repairs/concrete-spalling",
+        label: "Concrete spalling & concrete cancer",
+        description:
+          "Rebar exposure, passivation, polymer-modified mortars, anti-carbonation finishes, and QA documentation for façades, parking grids, and plant assets.",
+      },
+      {
+        href: "/structural-repairs/crack-injection",
+        label: "Structural & leak crack injection",
+        description:
+          "Epoxy vs polyurethane decision logic, injection porting, pressure discipline, and integration with waterproofing renewals.",
+      },
+      {
+        href: "/structural-repairs/expansion-joint-sealing",
+        label: "Expansion joint sealing",
+        description:
+          "Traffic-rated joint rebuilds, armour angles, podium interfaces, and phased programmes for live logistics and retail facilities.",
+      },
+    ],
+  },
+  magazine: {
+    headingId: "structural-maintenance-philosophy-heading",
+    title: (
+      <>
+        Maintenance <span className="text-secondary">Philosophy</span>
+      </>
+    ),
+    subtitle: "Why structural remediation belongs in your maintenance plan",
+    sections: [
+      {
+        phase: "Phase 01 / Assessment",
+        title: "Concrete does not negotiate.",
+        image: MAGAZINE_IMAGES[0],
+        dropCap: true,
+        body: (
+          <>
+            <p className="drop-cap type-body mb-4 text-zinc-300">
+              It warns you in small pieces first, then it invoices you in big ones. Keeping spalling inside a proper
+              maintenance rhythm is how you protect reserves, keep insurers calm, and avoid the repaint that lands on edges
+              that are already tired.
+            </p>
+            <p className="type-body text-zinc-300">
+              When breakouts are left in the “we will see” pile, chlorides ride deeper, patches get bigger, and the next
+              contractor has to price risk you could have trimmed months ago. In sectional-title schemes, visible concrete
+              cancer also arrives in trustee conversations at exactly the wrong time, often beside a{" "}
+              <Link href="/painting/body-corporate" className={linkClass}>
+                body corporate painting programme
+              </Link>{" "}
+              that needs sound arrises and balcony edges before any coating system can do its job.
+            </p>
+          </>
+        ),
+      },
+      {
+        phase: "Phase 02 / The Pattern",
+        title: "Gauteng estates repeat the pattern.",
+        image: MAGAZINE_IMAGES[1],
+        body: (
+          <>
+            <p className="type-body mb-4 text-zinc-300">
+              Edges take the weather, cars track chloride in under tyres, and a small delamination becomes a line item nobody
+              wanted on the AGM agenda. These jobs are seldom a single edge. They are whole façades, parking grids, and
+              trustees who need a plan they can explain without reaching for a dictionary of defects.
+            </p>
+            <p className="type-body text-zinc-300">
+              On site, we treat evidence as the brief. Hammer sounding, cover surveys, moisture context, and photographs that
+              explain why a repair detail exists, not why a sales deck says it should. Where load-bearing capacity is part of
+              the story, we work to engineer specifications instead of improvising under time pressure.
+            </p>
+          </>
+        ),
+      },
+      {
+        phase: "Phase 03 / Coordination",
+        title: "Repair rarely travels alone.",
+        image: MAGAZINE_IMAGES[2],
+        body: (
+          <>
+            <p className="type-body mb-4 text-zinc-300">
+              We sequence naturally with{" "}
+              <Link href="/waterproofing-services" className={linkClass}>
+                waterproofing renewals
+              </Link>{" "}
+              and{" "}
+              <Link href="/access-solutions/rope-access-painting" className={linkClass}>
+                rope access programmes
+              </Link>{" "}
+              so temporary works, curing windows, and membrane interfaces are planned once. That is the boring kind of
+              coordination that stops the classic argument where the painter blames the waterproofer, and the other way
+              around. One programme, one sequence, fewer return visits.
+            </p>
+            <p className="type-body mb-4 text-zinc-300">
+              Access, water, and concrete talk to each other whether we draw them in separate boxes or not. We prefer the
+              drawing that matches how your asset actually behaves.
+            </p>
+            <p className="type-body text-zinc-500">
+              If you are comparing Gauteng remedial contractors, ask for a method statement outline, a safety file index, and
+              a redacted QA sample from a recent commercial job. We are comfortable being judged on paperwork, because that is
+              how serious portfolios are run.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+};
+
+export const waterproofingHub: ServiceHubPageConfig = {
+  path: "/waterproofing-services",
+  breadcrumbLabel: "Waterproofing services",
+  metadata: {
+    title: "Flat Roof & Balcony Waterproofing Services | Guaranteed Membrane Systems",
+    description:
+      "Specialist waterproofing contractors in Gauteng. We use guaranteed liquid-applied and torch-on membrane systems to permanently solve flat roof, balcony, and basement water ingress. Independent QA verified.",
+  },
+  jsonLd: {
+    name: "Waterproofing & Membrane Systems",
+    description:
+      "Guaranteed torch-on and liquid-applied membrane systems for flat concrete roofs, leaking balconies, and basement tanking across Gauteng commercial and sectional-title assets.",
+    serviceType: [
+      "Flat concrete roof waterproofing",
+      "Leaking balcony remediation",
+      "Basement tanking",
+      "Liquid-applied membrane systems",
+    ],
+  },
+  hero: {
+    headingId: "waterproofing-services-heading",
+    h1: "Guaranteed waterproofing that treats water ingress as a systems problem.",
+    lead:
+      "Flat slabs, parapets, and under-tile balconies fail in predictable places. We specify preparation, detailing at penetrations, compatible protection courses, and manufacturer-backed guarantees, not a single-layer miracle product.",
+    interventionsLabel: "Core interventions",
+    interventions: [
+      "Torch-on membranes",
+      "Liquid-applied membranes",
+      "Balcony remediation",
+      "Basement tanking",
+      "Parapet & flashing detail",
+    ],
+  },
+  approach: {
+    headingId: "waterproofing-approach-heading",
+    title: "Our waterproofing approach",
+    subtitle: "Diagnostics first. Detailing discipline. Co-signed guarantees.",
+    steps: [
+      {
+        phase: "PHASE_01",
+        title: "Ingress Diagnosis",
+        description:
+          "Moisture mapping, core samples where justified, and documentation that separates active leaks, capillary rise, and condensation before any membrane is specified.",
+      },
+      {
+        phase: "PHASE_02",
+        title: "Substrate Preparation",
+        description:
+          "Structural repairs, screed corrections, and fall adjustments completed before membranes. We will not bond guaranteed systems to tired concrete or hollow screeds.",
+      },
+      {
+        phase: "PHASE_03",
+        title: "Membrane Installation",
+        description:
+          "Manufacturer-approved torch-on or liquid-applied systems with disciplined detailing at outlets, penetrations, and movement interfaces.",
+      },
+      {
+        phase: "PHASE_04",
+        title: "Protection & QA Handover",
+        description:
+          "Protection courses, maintenance calendars, and independent QA records trustees and asset managers can file without embarrassment.",
+      },
+    ],
+  },
+  hubSpoke: {
+    headingId: "waterproofing-hub-spoke-heading",
+    title: "Dedicated waterproofing service pages",
+    intro:
+      "Thin, catch-all waterproofing pages dilute intent for high-value queries like flat slab renewals, under-tile balconies, and basement tanking. Maverick’s spoke pages unpack methodology, compliance context, and BC documentation separately.",
+    links: [
+      {
+        href: "/waterproofing/flat-concrete-roofs",
+        label: "Flat concrete roof waterproofing",
+        description:
+          "Torch-on vs liquid trade-offs, drainage and ponding risk, UV protection, hybrid programmes, and manufacturer-backed maintenance calendars.",
+      },
+      {
+        href: "/waterproofing/leaking-balconies",
+        label: "Leaking balcony remediation",
+        description:
+          "Sectional-title documentation, low-disruption options, exclusive-use interfaces, and coordination with structural arris repairs.",
+      },
+      {
+        href: "/waterproofing/basement-tanking",
+        label: "Basement tanking & sub-structure waterproofing",
+        description:
+          "Negative- vs positive-side logic, active leak management, lift pits, and parking slabs with hydrostatic pressure risk.",
+      },
+    ],
+  },
+  magazine: {
+    headingId: "waterproofing-philosophy-heading",
+    title: (
+      <>
+        Waterproofing <span className="text-secondary">Philosophy</span>
+      </>
+    ),
+    subtitle: "Why membrane renewals belong in your portfolio risk plan",
+    sections: [
+      {
+        phase: "Phase 01 / Risk",
+        title: "Water destroys warranties first.",
+        image: MAGAZINE_IMAGES[0],
+        dropCap: true,
+        body: (
+          <>
+            <p className="drop-cap type-body mb-4 text-zinc-300">
+              Ingress is the fastest way to accelerate carbonation, force unplanned special levies, and turn a cosmetic repaint
+              into a structural conversation. Treating waterproofing as systems engineering, not a product pitch, is how you
+              keep coating warranties alive.
+            </p>
+            <p className="type-body text-zinc-300">
+              Our teams sequence naturally with{" "}
+              <Link href="/structural-repairs" className={linkClass}>
+                structural remedial work
+              </Link>{" "}
+              when spalling and membrane renewal must happen in one programme, and we speak the language of{" "}
+              <Link href="/painting/body-corporate" className={linkClass}>
+                sectional-title maintenance plans
+              </Link>{" "}
+              where trustees need transparent scope boundaries for insurers and attorneys.
+            </p>
+          </>
+        ),
+      },
+      {
+        phase: "Phase 02 / Systems",
+        title: "Torch-on and liquid each have a place.",
+        image: MAGAZINE_IMAGES[1],
+        body: (
+          <>
+            <p className="type-body mb-4 text-zinc-300">
+              Flat concrete roofs favour disciplined falls, outlet detailing, and UV-stable protection courses. Complex parapets
+              and flashings often suit seamless liquid membranes. We choose by substrate behaviour and maintenance reality, not
+              by whichever system our sales desk stocks this quarter.
+            </p>
+            <p className="type-body text-zinc-300">
+              Explore our technical guides on{" "}
+              <Link href="/blog/waterproofing/liquid-vs-torch-on" className={linkClass}>
+                liquid vs torch-on membranes
+              </Link>{" "}
+              and{" "}
+              <Link href="/blog/waterproofing/leaking-balcony-fixes" className={linkClass}>
+                low-disruption balcony repairs
+              </Link>
+              , then invite us to translate those principles into a site-specific specification for your asset.
+            </p>
+          </>
+        ),
+      },
+      {
+        phase: "Phase 03 / Coordination",
+        title: "Membranes rarely fail alone.",
+        image: MAGAZINE_IMAGES[2],
+        body: (
+          <>
+            <p className="type-body mb-4 text-zinc-300">
+              Balcony edges, expansion joints, and podium interfaces need one sequence, not three contractors arguing on site.
+              We plan curing windows, protection courses, and handover inspections so the painter is not pricing risk the
+              waterproofer left behind.
+            </p>
+            <p className="type-body text-zinc-500">
+              When comparing Gauteng waterproofing contractors, ask for manufacturer approval letters, a redacted QA file, and
+              a method statement that names penetrations and movement joints explicitly. Serious assets deserve serious paperwork.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+};
+
+export const dampProofingHub: ServiceHubPageConfig = {
+  path: "/damp-proofing-services",
+  breadcrumbLabel: "Damp proofing services",
+  metadata: {
+    title: "Rising Damp & Damp Proofing Solutions | Chemical DPC & Moisture Control",
+    description:
+      "Specialized rising damp treatment and damp proofing contractors in Gauteng: chemical DPC injection, salt-retardant replastering, basement tanking, and diagnostics that separate capillary rise from leaks and condensation.",
+  },
+  jsonLd: {
+    name: "Rising Damp & Damp Proofing",
+    description:
+      "Chemical DPC injection, salt-retardant replastering, and moisture diagnostics that separate capillary rise from leaks and condensation in Gauteng residential and commercial assets.",
+    serviceType: [
+      "Chemical DPC injection",
+      "Rising damp treatment",
+      "Salt-retardant replastering",
+      "Moisture diagnostics",
+    ],
+  },
+  hero: {
+    headingId: "damp-proofing-services-heading",
+    h1: "Rising damp treatment grounded in diagnostics, not guesswork.",
+    lead:
+      "Salt bands, blistering paint, and musty ground-floor rooms can be rising damp, lateral ingress, or condensation. We diagnose before we inject, replaster, or promise a barrier that the wall never needed.",
+    interventionsLabel: "Core interventions",
+    interventions: [
+      "Chemical DPC injection",
+      "Salt-retardant replastering",
+      "Moisture diagnostics",
+      "Negative-side tanking",
+      "Mould remediation protocol",
+    ],
+  },
+  approach: {
+    headingId: "damp-proofing-approach-heading",
+    title: "Our damp proofing approach",
+    subtitle: "Measure first. Treat the mechanism. Document the barrier.",
+    steps: [
+      {
+        phase: "PHASE_01",
+        title: "Moisture Diagnostics",
+        description:
+          "Professional moisture meters and thermal imaging to separate capillary rise, lateral ingress, and condensation before any chemical barrier is specified.",
+      },
+      {
+        phase: "PHASE_02",
+        title: "Chemical DPC Injection",
+        description:
+          "Silicone-based cream injection at regulated pressures to form a new damp-proof course in masonry, with drill patterns matched to wall construction.",
+      },
+      {
+        phase: "PHASE_03",
+        title: "Salt-Retardant Replastering",
+        description:
+          "Controlled removal of contaminated plaster and reinstatement with salt-retardant systems that protect finishes after the barrier is installed.",
+      },
+      {
+        phase: "PHASE_04",
+        title: "Finishes & Verification",
+        description:
+          "Drying programmes, compatible primers, and post-treatment moisture checks so trustees and homeowners know when it is safe to repaint.",
+      },
+    ],
+  },
+  hubSpoke: {
+    headingId: "damp-proofing-hub-spoke-heading",
+    title: "Rising damp deep-dive",
+    intro:
+      "Rising damp procurement searches deserve a dedicated methodology page, not a paragraph buried on a generic damp hub. The spoke below unpacks injection, replastering, and documentation for technical buyers.",
+    links: [
+      {
+        href: "/damp-proofing/rising-damp-treatment",
+        label: "Rising damp treatment",
+        description:
+          "Chemical DPC injection, salt analysis, replastering protocols, and sectional-title documentation for ground-floor moisture in masonry walls.",
+      },
+    ],
+  },
+  magazine: {
+    headingId: "damp-proofing-philosophy-heading",
+    title: (
+      <>
+        Damp <span className="text-secondary">Philosophy</span>
+      </>
+    ),
+    subtitle: "Why rising damp needs diagnosis before demolition",
+    sections: [
+      {
+        phase: "Phase 01 / Diagnosis",
+        title: "Not every tide mark is rising damp.",
+        image: MAGAZINE_IMAGES[0],
+        dropCap: true,
+        body: (
+          <>
+            <p className="drop-cap type-body mb-4 text-zinc-300">
+              Ground-floor staining can be a failed DPC, a bridged cavity, a leaking pipe, or condensation that never crossed a
+              chemical barrier. Injecting cream into the wrong problem wastes reserves and leaves the real defect laughing at
+              your repaint schedule.
+            </p>
+            <p className="type-body text-zinc-300">
+              Our{" "}
+              <Link href="/damp-proofing/rising-damp-treatment" className={linkClass}>
+                rising damp treatment
+              </Link>{" "}
+              page walks through injection, replastering, and drying windows in the language trustees and homeowners can file,
+              not the language of a product datasheet alone.
+            </p>
+          </>
+        ),
+      },
+      {
+        phase: "Phase 02 / Masonry",
+        title: "Salts outlive the water you see.",
+        image: MAGAZINE_IMAGES[1],
+        body: (
+          <>
+            <p className="type-body mb-4 text-zinc-300">
+              Hygroscopic salts in plaster keep pulling moisture long after a barrier is installed. Skipping salt-retardant
+              replastering is how you get the callback where the painter is blamed for a damp problem the substrate never
+              finished shedding.
+            </p>
+            <p className="type-body text-zinc-300">
+              Where below-ground structures are part of the story, we coordinate with{" "}
+              <Link href="/waterproofing/basement-tanking" className={linkClass}>
+                basement tanking
+              </Link>{" "}
+              scopes so negative-side pressure and capillary rise are not treated as the same defect with different names.
+            </p>
+          </>
+        ),
+      },
+      {
+        phase: "Phase 03 / Finishes",
+        title: "Paint is the last witness.",
+        image: MAGAZINE_IMAGES[2],
+        body: (
+          <>
+            <p className="type-body mb-4 text-zinc-300">
+              Finishes fail on damp walls whether the specification said “breathable” or not. We document drying targets and
+              compatible primers so{" "}
+              <Link href="/painting-services" className={linkClass}>
+                painting programmes
+              </Link>{" "}
+              start on a substrate that has actually stabilised, not one that merely looks dry on a sunny Tuesday.
+            </p>
+            <p className="type-body text-zinc-500">
+              Read our{" "}
+              <Link href="/blog/waterproofing/rising-damp-guide" className={linkClass}>
+                rising damp guide
+              </Link>{" "}
+              for the owner-facing version, then invite us to map diagnostics to a method statement you can defend at the AGM.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+};
+
+export const specializedCoatingsHub: ServiceHubPageConfig = {
+  path: "/specialized-coatings",
+  breadcrumbLabel: "Specialized coatings",
+  metadata: {
+    title: "Epoxy & Polyurethane Floor Coatings | Certified Specialized Applicators",
+    description:
+      "Approved applicators for high-performance, industrial-grade floor and wall coatings. We provide guaranteed, chemical-resistant systems for food production, manufacturing, and commercial spaces.",
+  },
+  jsonLd: {
+    name: "Specialized Coatings & High-Performance Systems",
+    description:
+      "Manufacturer-approved epoxy and polyurethane floors, hygienic food-grade coatings, Marmoran wall systems, and industrial corrosion control for Gauteng commercial and industrial assets.",
+    serviceType: [
+      "Industrial epoxy flooring",
+      "Hygienic food-grade coatings",
+      "Marmoran wall systems",
+      "Industrial corrosion control",
+    ],
+  },
+  hero: {
+    headingId: "specialized-coatings-heading",
+    h1: "Epoxy, polyurethane, and architectural coatings built for traffic and compliance.",
+    lead:
+      "Standard paint is not a floor in a brewery, a loading bay, or a food-grade wall. We are approved applicators for high-performance systems where substrate preparation, film thickness, and manufacturer sign-off are non-negotiable.",
+    interventionsLabel: "Core interventions",
+    interventions: [
+      "Epoxy & PU floors",
+      "Hygienic food-grade",
+      "Marmoran wall systems",
+      "Corrosion control",
+      "Surface preparation",
+    ],
+  },
+  approach: {
+    headingId: "specialized-coatings-approach-heading",
+    title: "Our coatings approach",
+    subtitle: "Approved systems. Measured films. Auditable handover.",
+    steps: [
+      {
+        phase: "PHASE_01",
+        title: "Substrate Assessment",
+        description:
+          "Moisture tests, contamination surveys, and engineer or manufacturer input where structural substrates or food-grade compliance demand documented acceptance criteria.",
+      },
+      {
+        phase: "PHASE_02",
+        title: "Surface Preparation",
+        description:
+          "Diamond grinding, shot blasting, and crack repair to the standard the chosen system requires, not the standard the programme hoped would be enough.",
+      },
+      {
+        phase: "PHASE_03",
+        title: "System Application",
+        description:
+          "Multi-coat epoxy, polyurethane, hygienic, or Marmoran stacks applied to manufacturer film-thickness and recoat windows with batch records retained.",
+      },
+      {
+        phase: "PHASE_04",
+        title: "QA & Warranty Handover",
+        description:
+          "Independent thickness checks, cure verification, and co-signed workmanship and product guarantees where the full specification stack is met.",
+      },
+    ],
+  },
+  hubSpoke: {
+    headingId: "specialized-coatings-hub-spoke-heading",
+    title: "Specialized coating service pages",
+    intro:
+      "Industrial floors, hygienic walls, and architectural texture systems carry different compliance expectations. Each spoke below targets the procurement language and QA artefacts buyers expect before mobilisation.",
+    links: [
+      {
+        href: "/specialized-coatings/industrial-epoxy-flooring",
+        label: "Industrial epoxy & polyurethane flooring",
+        description:
+          "Chemical resistance, traffic ratings, fast-cure options, and QA documentation for warehouses, plants, and retail back-of-house.",
+      },
+      {
+        href: "/specialized-coatings/hygienic-food-grade",
+        label: "Hygienic food-grade coatings",
+        description:
+          "Smooth, cleanable wall and floor systems for food and beverage facilities with audit-friendly documentation.",
+      },
+      {
+        href: "/specialized-coatings/marmoran-wall-systems",
+        label: "Marmoran wall systems",
+        description:
+          "Certified Marmoran application for durable architectural façades and feature walls with manufacturer-backed warranties.",
+      },
+    ],
+  },
+  magazine: {
+    headingId: "specialized-coatings-philosophy-heading",
+    title: (
+      <>
+        Coatings <span className="text-secondary">Philosophy</span>
+      </>
+    ),
+    subtitle: "Why high-performance systems fail on preparation, not product",
+    sections: [
+      {
+        phase: "Phase 01 / Substrate",
+        title: "The floor tells the truth under traffic.",
+        image: MAGAZINE_IMAGES[0],
+        dropCap: true,
+        body: (
+          <>
+            <p className="drop-cap type-body mb-4 text-zinc-300">
+              A glossy topcoat on weak concrete or rising moisture is an expensive way to learn the substrate was never ready.
+              We treat industrial floors as engineered systems: preparation, primer, build coats, and protection windows that
+              match how the space is actually used.
+            </p>
+            <p className="type-body text-zinc-300">
+              Explore our{" "}
+              <Link href="/specialized-coatings/industrial-epoxy-flooring" className={linkClass}>
+                industrial epoxy flooring
+              </Link>{" "}
+              scope for chemical resistance, traffic ratings, and QA artefacts plant managers can file without translation.
+            </p>
+          </>
+        ),
+      },
+      {
+        phase: "Phase 02 / Compliance",
+        title: "Food-grade is a specification, not a colour.",
+        image: MAGAZINE_IMAGES[1],
+        body: (
+          <>
+            <p className="type-body mb-4 text-zinc-300">
+              Hygienic environments need smooth, cleanable surfaces and documentation auditors recognise. Our{" "}
+              <Link href="/specialized-coatings/hygienic-food-grade" className={linkClass}>
+                hygienic food-grade
+              </Link>{" "}
+              programmes align film build and coving details with the hygiene outcomes the facility actually certifies against.
+            </p>
+            <p className="type-body text-zinc-300">
+              Where plant steel is part of the same maintenance cycle, we integrate{" "}
+              <Link href="/painting/industrial" className={linkClass}>
+                industrial corrosion control
+              </Link>{" "}
+              so floors and structures are not painted by two philosophies in the same month.
+            </p>
+          </>
+        ),
+      },
+      {
+        phase: "Phase 03 / Architecture",
+        title: "Texture systems need certified hands.",
+        image: MAGAZINE_IMAGES[2],
+        body: (
+          <>
+            <p className="type-body mb-4 text-zinc-300">
+              Marmoran and other architectural coatings fail when applicators improvise outside manufacturer stacks. Our{" "}
+              <Link href="/specialized-coatings/marmoran-wall-systems" className={linkClass}>
+                Marmoran wall systems
+              </Link>{" "}
+              work is delivered by certified teams who understand humidity control, primer selection, and the maintenance
+              calendar that keeps façades looking intentional, not accidental.
+            </p>
+            <p className="type-body text-zinc-500">
+              If you are comparing specialized contractors, ask for manufacturer approval letters and a redacted thickness log
+              from a recent industrial or food-grade job. Product names are easy; proof of application discipline is harder.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+};
+
+export const paintingServicesHub: ServiceHubPageConfig = {
+  path: "/painting-services",
+  breadcrumbLabel: "Painting services",
+  metadata: {
+    title: "Commercial & High-Access Painting Contractors | Industrial & Body Corporate",
+    description:
+      "Specialist large-scale painting services for industrial sites, factories, and commercial buildings. Expert high-access, rope access, and cost-effective solutions with Independent QA.",
+  },
+  jsonLd: {
+    name: "Commercial & High-Access Painting",
+    description:
+      "Large-scale body corporate, industrial, and commercial painting with advanced access, surface preparation, and independent QA for Gauteng portfolios.",
+    serviceType: [
+      "Body corporate painting",
+      "Industrial & factory painting",
+      "Commercial façade painting",
+      "Rope access painting",
+    ],
+  },
+  hero: {
+    headingId: "painting-services-heading",
+    h1: "Commercial painting programmes trustees and plant managers can defend.",
+    lead:
+      "High-volume exterior work is never just rollers and ladders. It is access strategy, substrate repairs, coating specifications, resident disruption protocols, and QA files that survive insurer and attorney scrutiny.",
+    interventionsLabel: "Core interventions",
+    interventions: [
+      "Body corporate programmes",
+      "Industrial & factory",
+      "Commercial façades",
+      "Surface preparation",
+      "Access coordination",
+    ],
+  },
+  approach: {
+    headingId: "painting-services-approach-heading",
+    title: "Our painting approach",
+    subtitle: "Preparation discipline. Access realism. Independent QA.",
+    steps: [
+      {
+        phase: "PHASE_01",
+        title: "Scope & Specification",
+        description:
+          "Substrate surveys, maintenance-plan alignment, and coating systems selected for Highveld UV, rain exposure, and the substrate condition we actually measured.",
+      },
+      {
+        phase: "PHASE_02",
+        title: "Repairs & Preparation",
+        description:
+          "Structural arris repairs, crack treatment, and abrasive preparation completed before topcoats so coatings are not asked to hide defects they cannot carry.",
+      },
+      {
+        phase: "PHASE_03",
+        title: "Access & Application",
+        description:
+          "Rope, scaffold, or MEWP programmes chosen for safety and programme efficiency, with film thickness and recoat windows managed to manufacturer data sheets.",
+      },
+      {
+        phase: "PHASE_04",
+        title: "QA & Handover",
+        description:
+          "Photographic records, thickness checks where specified, and maintenance guidance trustees and asset managers can file without rewriting the truth.",
+      },
+    ],
+  },
+  hubSpoke: {
+    headingId: "painting-services-hub-spoke-heading",
+    title: "Dedicated painting service pages",
+    intro:
+      "Body corporate, industrial, and rope-access programmes carry different procurement keywords, safety files, and QA expectations. Each spoke below gives technical buyers the depth they need before a site walk-down.",
+    links: [
+      {
+        href: "/painting/body-corporate",
+        label: "Body corporate & sectional-title painting",
+        description:
+          "STSMA-aligned documentation, phasing, exclusive-use interfaces, waterproofing coordination, and QA artefacts for Gauteng complexes.",
+      },
+      {
+        href: "/painting/industrial",
+        label: "Industrial & factory painting",
+        description:
+          "Corrosion control, production-friendly phasing, OHS compliance, and protective systems for steel, silos, and harsh interior environments.",
+      },
+      {
+        href: "/access-solutions/rope-access-painting",
+        label: "Rope access painting",
+        description:
+          "IRATA-certified high-rise programmes that reduce scaffold footprints, security exposure, and programme duration on towers and complex façades.",
+      },
+    ],
+  },
+  magazine: {
+    headingId: "painting-services-philosophy-heading",
+    title: (
+      <>
+        Painting <span className="text-secondary">Philosophy</span>
+      </>
+    ),
+    subtitle: "Why commercial painting is an asset maintenance decision",
+    sections: [
+      {
+        phase: "Phase 01 / Trustees",
+        title: "Trustees do not buy paint.",
+        image: MAGAZINE_IMAGES[0],
+        dropCap: true,
+        body: (
+          <>
+            <p className="drop-cap type-body mb-4 text-zinc-300">
+              They buy defensible decisions: scopes aligned with 10-year maintenance thinking, safety files residents can
+              scrutinise, and coating systems that survive Highveld weather without becoming next year’s special levy. Our{" "}
+              <Link href="/painting/body-corporate" className={linkClass}>
+                body corporate painting
+              </Link>{" "}
+              programmes are built for that conversation, not for a one-page quote that hides preparation.
+            </p>
+            <p className="type-body text-zinc-300">
+              Visible cracks and spalling at balcony edges belong in{" "}
+              <Link href="/structural-repairs" className={linkClass}>
+                structural remedial
+              </Link>{" "}
+              scopes before topcoats, or the repaint fails on the same arrises within two seasons.
+            </p>
+          </>
+        ),
+      },
+      {
+        phase: "Phase 02 / Industrial",
+        title: "Plant painting is production planning.",
+        image: MAGAZINE_IMAGES[1],
+        body: (
+          <>
+            <p className="type-body mb-4 text-zinc-300">
+              Factories and logistics assets need corrosion control, fast-cure options, and phasing that respects production,
+              not a residential crew scaled up with bigger rollers. Our{" "}
+              <Link href="/painting/industrial" className={linkClass}>
+                industrial painting
+              </Link>{" "}
+              scopes treat OHS, surface preparation, and coating compatibility as contractual facts.
+            </p>
+            <p className="type-body text-zinc-300">
+              Premium masonry and texture façades sit in a different discipline entirely. When trustees or developers specify{" "}
+              <Link href="/painting/stucco-wall-coatings" className={linkClass}>
+                stucco and specialized wall coatings
+              </Link>
+              , we apply manufacturer stacks with humidity control and primer systems that differ from standard exterior emulsion
+              programmes.
+            </p>
+          </>
+        ),
+      },
+      {
+        phase: "Phase 03 / Access",
+        title: "Access choice is a cost and safety decision.",
+        image: MAGAZINE_IMAGES[2],
+        body: (
+          <>
+            <p className="type-body mb-4 text-zinc-300">
+              High-rise complexes often benefit from{" "}
+              <Link href="/access-solutions/rope-access-painting" className={linkClass}>
+                rope access painting
+              </Link>{" "}
+              for upper elevations, reducing street-level scaffold footprints and security exposure. We integrate rope, MEWPs,
+              and scaffold where each is safest and most cost-effective, not where whichever subcontractor arrived first owns
+              the programme.
+            </p>
+            <p className="type-body text-zinc-500">
+              When comparing Gauteng painting contractors, ask for a method statement outline, safety file index, and redacted QA
+              from a recent commercial or sectional-title job. We are comfortable being judged on paperwork.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+};
+
+export const accessSolutionsHub: ServiceHubPageConfig = {
+  path: "/access-solutions",
+  breadcrumbLabel: "Access solutions",
+  metadata: {
+    title: "Rope Access & High-Access Painting Solutions | Cost-Effective & OHS Compliant",
+    description:
+      "Expert rope access and high-access painting contractors. We use scaffolding, boom lifts, and certified rope access to provide cost-effective maintenance for high-rise facades and difficult-to-reach industrial areas.",
+  },
+  jsonLd: {
+    name: "Rope Access & High-Access Solutions",
+    description:
+      "IRATA-certified rope access, scaffolding, and MEWP programmes for high-rise façade painting, structural repairs, and industrial maintenance in Gauteng.",
+    serviceType: [
+      "Certified rope access",
+      "Scaffolding & MEWP access",
+      "High-rise façade painting",
+      "OHS-compliant maintenance programmes",
+    ],
+  },
+  hero: {
+    headingId: "access-solutions-heading",
+    h1: "Rope access and high-access programmes that shrink scaffold footprints.",
+    lead:
+      "Towers, podiums, and industrial silos need access chosen for safety, programme duration, and resident disruption, not whichever method the last contractor owned. We integrate rope, scaffold, and MEWPs into one accountable sequence.",
+    interventionsLabel: "Core interventions",
+    interventions: [
+      "Certified rope access",
+      "Scaffolding & boom lifts",
+      "OHS compliance",
+      "Façade painting",
+      "Programme sequencing",
+    ],
+  },
+  approach: {
+    headingId: "access-solutions-approach-heading",
+    title: "Our access approach",
+    subtitle: "Certified teams. Audited safety files. Optimal method selection.",
+    steps: [
+      {
+        phase: "PHASE_01",
+        title: "Access Strategy",
+        description:
+          "Façade surveys, resident disruption constraints, and method selection between rope, scaffold, and MEWPs based on safety, programme duration, and cost.",
+      },
+      {
+        phase: "PHASE_02",
+        title: "Safety File & Mobilisation",
+        description:
+          "Comprehensive OHS documentation, rescue plans, and estate or plant inductions so client liability is managed by discipline, not assumption.",
+      },
+      {
+        phase: "PHASE_03",
+        title: "Integrated Execution",
+        description:
+          "Painting, waterproofing, and structural repairs sequenced under one access plan so temporary works are not duplicated across trades.",
+      },
+      {
+        phase: "PHASE_04",
+        title: "Demobilisation & QA",
+        description:
+          "Clean handover, photographic records, and access equipment sign-off so trustees and plant managers know the street, podium, or bay is returned intact.",
+      },
+    ],
+  },
+  hubSpoke: {
+    headingId: "access-solutions-hub-spoke-heading",
+    title: "Rope access deep-dive",
+    intro:
+      "High-rise painting and remedial work procurement often starts with access method. The spoke below unpacks IRATA programmes, safety documentation, and coordination with coating and structural scopes.",
+    links: [
+      {
+        href: "/access-solutions/rope-access-painting",
+        label: "Rope access painting",
+        description:
+          "IRATA-certified façade painting and repairs for sectional-title towers, commercial buildings, and complex architectural elevations.",
+      },
+    ],
+  },
+  magazine: {
+    headingId: "access-solutions-philosophy-heading",
+    title: (
+      <>
+        Access <span className="text-secondary">Philosophy</span>
+      </>
+    ),
+    subtitle: "Why access method is a programme decision, not a line item",
+    sections: [
+      {
+        phase: "Phase 01 / Method",
+        title: "The wrong access costs twice.",
+        image: MAGAZINE_IMAGES[0],
+        dropCap: true,
+        body: (
+          <>
+            <p className="drop-cap type-body mb-4 text-zinc-300">
+              A twelve-week scaffold footprint on a Sandton tower is not just expensive; it is security exposure, resident
+              frustration, and a programme that outlives the weather window you needed for coatings. Rope access is not a stunt;
+              it is a mobilisation strategy when certified teams and rescue plans are in place.
+            </p>
+            <p className="type-body text-zinc-300">
+              Our{" "}
+              <Link href="/access-solutions/rope-access-painting" className={linkClass}>
+                rope access painting
+              </Link>{" "}
+              programmes combine IRATA teams with the coating and remedial scopes they actually touch, so upper elevations are
+              not painted twice because access and specification were split across vendors.
+            </p>
+          </>
+        ),
+      },
+      {
+        phase: "Phase 02 / Compliance",
+        title: "Safety files are how serious portfolios run.",
+        image: MAGAZINE_IMAGES[1],
+        body: (
+          <>
+            <p className="type-body mb-4 text-zinc-300">
+              Trustees, managing agents, and plant HSE managers ask for method statements, rescue plans, and induction records
+              before they ask for colour charts. We treat OHS documentation as part of the deliverable, not a folder assembled
+              the night before council inspection.
+            </p>
+            <p className="type-body text-zinc-300">
+              Where structural arris repairs precede coatings, we sequence{" "}
+              <Link href="/structural-repairs" className={linkClass}>
+                structural remedial work
+              </Link>{" "}
+              under the same access plan so curing windows and handover points are owned once.
+            </p>
+          </>
+        ),
+      },
+      {
+        phase: "Phase 03 / Coordination",
+        title: "One programme beats three mobilisations.",
+        image: MAGAZINE_IMAGES[2],
+        body: (
+          <>
+            <p className="type-body mb-4 text-zinc-300">
+              Façade maintenance rarely stops at paint. We coordinate with{" "}
+              <Link href="/waterproofing-services" className={linkClass}>
+                waterproofing renewals
+              </Link>{" "}
+              and{" "}
+              <Link href="/painting-services" className={linkClass}>
+                commercial painting programmes
+              </Link>{" "}
+              so rope teams, membrane contractors, and QA inspectors are not tripping over separate mobilisations on the same
+              elevation.
+            </p>
+            <p className="type-body text-zinc-500">
+              When comparing access contractors, ask for IRATA certification scope, a redacted rescue plan, and a recent sectional-title
+              or commercial reference. Speed without paperwork is how programmes become headlines.
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+};
+
+export const serviceHubPages: Record<string, ServiceHubPageConfig> = {
+  "/structural-repairs": structuralRepairsHub,
+  "/waterproofing-services": waterproofingHub,
+  "/damp-proofing-services": dampProofingHub,
+  "/specialized-coatings": specializedCoatingsHub,
+  "/painting-services": paintingServicesHub,
+  "/access-solutions": accessSolutionsHub,
+};
