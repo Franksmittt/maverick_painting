@@ -75,25 +75,25 @@ export const structuralRepairsHub: ServiceHubPageConfig = {
         phase: "PHASE_01",
         title: "Defect Diagnosis & Spec",
         description:
-          "Our assessment team uses moisture meters and hammer tests to diagnose the root cause (e.g., carbonation, chloride ingress) and prepares a substrate-specific, engineer-approved specification.",
+          "Moisture meters, hammer tests, and visual maps separate carbonation, chlorides, and movement before we document breakout limits and an engineer-aligned, substrate-specific specification the site team can execute without guesswork.",
       },
       {
         phase: "PHASE_02",
         title: "Concrete Remediation",
         description:
-          "Removal of delaminated concrete, passivation of rebar to stop rust, and repair using polymer-modified structural mortar, engineered reinstatement, not cosmetic filler.",
+          "Delaminated concrete is removed, reinforcement is cleaned and conditioned, and section loss is rebuilt with polymer-modified structural mortars so reinstatement is engineered—not filler hiding active corrosion.",
       },
       {
         phase: "PHASE_03",
         title: "Crack Injection",
         description:
-          "Epoxy or polyurethane injection selected by crack behaviour: structural bonding vs active leak sealing. Ports, pressures, and batch records are documented for commercial QA files.",
+          "Epoxy or polyurethane is chosen from crack stability, moisture, and structural intent; port layouts, pressures, batch IDs, and environmental readings are logged for commercial QA files and specifier review.",
       },
       {
         phase: "PHASE_04",
         title: "Protective Coating",
         description:
-          "Application of manufacturer-approved breathable membranes and elastomeric coatings that resist UV, manage water vapour, and accommodate movement where specified.",
+          "Breathable or elastomeric manufacturer stacks close exposed concrete with disciplined film build, holidays, and adhesion checks so UV and carbonation exposure are managed on datasheet terms, not optimism.",
       },
     ],
   },
@@ -252,25 +252,25 @@ export const waterproofingHub: ServiceHubPageConfig = {
         phase: "PHASE_01",
         title: "Ingress Diagnosis",
         description:
-          "Moisture mapping, core samples where justified, and documentation that separates active leaks, capillary rise, and condensation before any membrane is specified.",
+          "Moisture mapping, targeted cores when justified, and written narratives separate active leaks, capillary rise, and condensation so membrane spend fixes the mechanism—not whichever symptom photographed first.",
       },
       {
         phase: "PHASE_02",
         title: "Substrate Preparation",
         description:
-          "Structural repairs, screed corrections, and fall adjustments completed before membranes. We will not bond guaranteed systems to tired concrete or hollow screeds.",
+          "Structural repairs, screed rebuilds, and fall corrections finish before membranes bond; we refuse to glue guaranteed systems to hollow screeds, saturated concrete, or arrises that still need breakout.",
       },
       {
         phase: "PHASE_03",
         title: "Membrane Installation",
         description:
-          "Manufacturer-approved torch-on or liquid-applied systems with disciplined detailing at outlets, penetrations, and movement interfaces.",
+          "Torch-on or liquid manufacturer stacks are detailed at outlets, penetrations, and movement planes with reinforcement and sequential QA holds so every risky interface is built once, not patched later in the rain.",
       },
       {
         phase: "PHASE_04",
         title: "Protection & QA Handover",
         description:
-          "Protection courses, maintenance calendars, and independent QA records trustees and asset managers can file without embarrassment.",
+          "Protection courses, traffickable wear layers where required, maintenance calendars, and independent QA records accompany handover so trustees and FMs file evidence—not apologies—after the first storm season.",
       },
     ],
   },
@@ -430,25 +430,25 @@ export const dampProofingHub: ServiceHubPageConfig = {
         phase: "PHASE_01",
         title: "Moisture Diagnostics",
         description:
-          "Professional moisture meters and thermal imaging to separate capillary rise, lateral ingress, and condensation before any chemical barrier is specified.",
+          "Profiled readings, thermography where useful, and invasive samples when needed distinguish capillary rise, lateral bridges, and HVAC condensation before anyone drills for a chemical barrier.",
       },
       {
         phase: "PHASE_02",
         title: "Chemical DPC Injection",
         description:
-          "Silicone-based cream injection at regulated pressures to form a new damp-proof course in masonry, with drill patterns matched to wall construction.",
+          "Silane, siloxane, or resin creams are placed in regulated drill patterns to reinstate a horizontal barrier matched to single-leaf, cavity, or infill construction—spacing follows manufacturer and wall-build logic.",
       },
       {
         phase: "PHASE_03",
         title: "Salt-Retardant Replastering",
         description:
-          "Controlled removal of contaminated plaster and reinstatement with salt-retardant systems that protect finishes after the barrier is installed.",
+          "Contaminated plaster comes off in controlled lifts and returns with salt-retardant systems and compatible primers so finishes do not blister through hygroscopic salts left behind after the barrier installs.",
       },
       {
         phase: "PHASE_04",
         title: "Finishes & Verification",
         description:
-          "Drying programmes, compatible primers, and post-treatment moisture checks so trustees and homeowners know when it is safe to repaint.",
+          "Drying curves, moisture re-checks, and compatible topcoat windows are published for trustees and homeowners so decoration starts only when equilibration—not calendar optimism—supports the paint warranty.",
       },
     ],
   },
@@ -601,25 +601,25 @@ export const specializedCoatingsHub: ServiceHubPageConfig = {
         phase: "PHASE_01",
         title: "Substrate Assessment",
         description:
-          "Moisture tests, contamination surveys, and engineer or manufacturer input where structural substrates or food-grade compliance demand documented acceptance criteria.",
+          "Moisture, contamination, and flatness are baselined before resin kits arrive; engineer or manufacturer hold points cover food-grade, chemical, or structural substrates that need written acceptance criteria.",
       },
       {
         phase: "PHASE_02",
         title: "Surface Preparation",
         description:
-          "Diamond grinding, shot blasting, and crack repair to the standard the chosen system requires, not the standard the programme hoped would be enough.",
+          "Diamond grind, shot blast, or scarify to the CSP the stack demands—then repair cracks and install mitigation when vapour readings say the slab is lying about being dry enough to coat.",
       },
       {
         phase: "PHASE_03",
         title: "System Application",
         description:
-          "Multi-coat epoxy, polyurethane, hygienic, or Marmoran stacks applied to manufacturer film-thickness and recoat windows with batch records retained.",
+          "Epoxy, polyurethane, hygienic, or decorative builds follow wet-film checks, embedded reinforcement, and recoat windows with batch numbers retained for audits and manufacturer disputes.",
       },
       {
         phase: "PHASE_04",
         title: "QA & Warranty Handover",
         description:
-          "Independent thickness checks, cure verification, and co-signed workmanship and product guarantees where the full specification stack is met.",
+          "Independent thickness or holiday inspection, cure verification, and co-signed warranties close only when the full specification stack—not a shortcut “practical completion” photo—is actually complete.",
       },
     ],
   },
@@ -776,25 +776,25 @@ export const paintingServicesHub: ServiceHubPageConfig = {
         phase: "PHASE_01",
         title: "Scope & Specification",
         description:
-          "Substrate surveys, maintenance-plan alignment, and coating systems selected for Highveld UV, rain exposure, and the substrate condition we actually measured.",
+          "Surveys and maintenance-plan alignment pick coating stacks for measured substrate condition, Highveld UV, and rain exposure—no recycled specs from a building we never inspected.",
       },
       {
         phase: "PHASE_02",
         title: "Repairs & Preparation",
         description:
-          "Structural arris repairs, crack treatment, and abrasive preparation completed before topcoats so coatings are not asked to hide defects they cannot carry.",
+          "Arris repairs, crack treatment, and abrasive preparation finish before decorative coats so films are not asked to bridge defects or chloride cells they were never designed to carry.",
       },
       {
         phase: "PHASE_03",
         title: "Access & Application",
         description:
-          "Rope, scaffold, or MEWP programmes chosen for safety and programme efficiency, with film thickness and recoat windows managed to manufacturer data sheets.",
+          "Rope, scaffold, or MEWP programmes match elevation geometry and resident disruption; film build and recoat windows follow datasheets while security and pavement logistics stay in the same programme narrative.",
       },
       {
         phase: "PHASE_04",
         title: "QA & Handover",
         description:
-          "Photographic records, thickness checks where specified, and maintenance guidance trustees and asset managers can file without rewriting the truth.",
+          "Photo registers, thickness checks where specified, and cleaning or re-coat guidance produce a handover trustees and asset managers can file beside manufacturer warranties without rewriting facts later.",
       },
     ],
   },
@@ -981,25 +981,25 @@ export const accessSolutionsHub: ServiceHubPageConfig = {
         phase: "PHASE_01",
         title: "Access Strategy",
         description:
-          "Façade surveys, resident disruption constraints, and method selection between rope, scaffold, and MEWPs based on safety, programme duration, and cost.",
+          "Façade walks, resident constraints, and temporary works cost drive the choice between rope, scaffold, and MEWPs—logistics and security risk sit in the same comparison, not a single-line hire quote.",
       },
       {
         phase: "PHASE_02",
         title: "Safety File & Mobilisation",
         description:
-          "Comprehensive OHS documentation, rescue plans, and estate or plant inductions so client liability is managed by discipline, not assumption.",
+          "OHS packs, rescue methodology, equipment inspections, and estate or plant inductions land before ropes tension so liability is managed with paperwork that matches how the site actually runs.",
       },
       {
         phase: "PHASE_03",
         title: "Integrated Execution",
         description:
-          "Painting, waterproofing, and structural repairs sequenced under one access plan so temporary works are not duplicated across trades.",
+          "Painting, waterproofing, and structural trades share one access plan and sequence so curing membranes, breakout dust, and swing stages are not fighting for the same elevation twice.",
       },
       {
         phase: "PHASE_04",
         title: "Demobilisation & QA",
         description:
-          "Clean handover, photographic records, and access equipment sign-off so trustees and plant managers know the street, podium, or bay is returned intact.",
+          "Kit is stripped, pavements are photographed clean, and access equipment is signed off so facility teams know public realm, podiums, or bays return without rigging hardware or paint debris left behind.",
       },
     ],
   },

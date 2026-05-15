@@ -36,19 +36,23 @@ export function ServiceHubApproach({ headingId, title, subtitle, steps }: Props)
           <p className="type-lead m-0 text-zinc-500">{subtitle}</p>
         </header>
 
-        <div className={cn("grid w-full min-w-0 grid-cols-1 overflow-hidden rounded-lg border border-[#2a2e33] bg-[#111111]", colClass)}>
+        <div className={cn("grid w-full min-w-0 grid-cols-1 items-stretch overflow-hidden rounded-lg border border-[#2a2e33] bg-[#111111]", colClass)}>
           {steps.map((step, index) => (
             <article
               key={step.phase}
               className={cn(
-                "group relative p-6 transition-colors duration-300 hover:bg-[#1a1c1e] sm:p-8 lg:p-10",
+                "group relative flex h-full flex-col p-6 transition-colors duration-300 hover:bg-[#1a1c1e] sm:p-8 lg:p-10",
                 "after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-0 after:bg-secondary after:transition-[width] after:duration-300 after:ease-out group-hover:after:w-full",
                 matrixColBorderClass(index, steps.length),
               )}
             >
-              <p className="type-phase mb-4">{step.phase}</p>
-              <h3 className="mb-3 text-lg font-bold leading-snug text-white sm:mb-4 sm:text-xl">{step.title}</h3>
-              <p className="type-body m-0 text-zinc-500">{step.description}</p>
+              <p className="type-phase mb-4 shrink-0">{step.phase}</p>
+              <h3 className="mb-3 line-clamp-3 min-h-[4.75rem] text-lg font-bold leading-snug text-white sm:mb-4 sm:min-h-[5.25rem] sm:text-xl lg:min-h-[5.75rem]">
+                {step.title}
+              </h3>
+              <p className="type-body m-0 min-h-[7.75rem] text-zinc-500 sm:min-h-[8.25rem] lg:min-h-[8.5rem]">
+                {step.description}
+              </p>
             </article>
           ))}
         </div>

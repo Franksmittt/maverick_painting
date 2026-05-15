@@ -41,25 +41,25 @@ export const serviceDeepRegistryB: Pick<
       {
         title: "Surface preparation is the real product",
         paragraphs: [
-          "Most resin failures are laitance, contamination, or moisture vapour, not the topcoat colour. Maverick profiles concrete to specified CSP ranges, installs moisture barriers when readings demand them, and only opens resin kits when environmental logs prove it is safe to proceed.",
+          "Most resin failures trace to laitance, oil, or vapour drive—not topcoat colour. We profile concrete to specified CSP, install mitigation when dew-point and readings demand it, and only mix resin when logs show it is safe to proceed.",
         ],
       },
       {
         title: "Epoxy vs polyurethane in plain language",
         paragraphs: [
-          "Epoxy systems can offer high compressive strength and economic build for dry industrial floors. Polyurethane and PU-cement systems often handle thermal shock, scratching, and certain chemical suites better, especially in food-adjacent or wet processing areas. Final choice must follow manufacturer exposure tables, not guesswork.",
+          "Epoxy offers strength and economy on dry industrial floors; PU and PU-cement lines often survive thermal shock, scratching, and harsher chemical suites. Final stacks follow manufacturer exposure tables and engineer acceptance, not guesses.",
         ],
       },
       {
         title: "Line marking, demarcation, and ESD considerations",
         paragraphs: [
-          "Logistics clients need durable line systems that survive tyre scrub. Maverick sequences demarcation after main field cures to avoid ghosting. ESD or conductive systems are quoted only when datasheets and earthing design exist.",
+          "Logistics clients need lines that survive tyre scrub. Demarcation follows main field cure so ghosting does not appear; ESD or conductive builds are quoted only when earthing design and datasheets exist together.",
         ],
       },
       {
         title: "Programme and shutdown windows",
         paragraphs: [
-          "Weekend MMA or fast-cure programmes can compress downtime, but accelerate risk if preparation is rushed. Maverick publishes realistic cure-before-traffic tables and refuses to shortcut environmental holds that void warranties.",
+          "Fast-cure weekends compress downtime but punish rushed prep. Published cure-before-traffic tables and environmental holds stay in the programme—if a hold is skipped, the warranty conversation is already over.",
         ],
       },
     ],
@@ -163,25 +163,25 @@ export const serviceDeepRegistryB: Pick<
       {
         title: "Why coving details decide audits",
         paragraphs: [
-          "Sharp internal corners harbour biofilms. Maverick details stainless or resin coves, radius transitions, and drain surrounds to manufacturer hygiene drawings. We photograph critical details before screed covers them.",
+          "Square internal corners trap biofilm. We detail stainless or resin coves, radius transitions, and drain surrounds to hygiene drawings and photograph critical interfaces before screeds close them from view.",
         ],
       },
       {
         title: "Thermal shock from ovens, steam, and cold rooms",
         paragraphs: [
-          "PU cement systems tolerate wider thermal swings than standard epoxy in many food lines. Maverick aligns product choice to real process temperatures, not brochure adjectives.",
+          "Process heat and cold-room edges punish standard epoxy. PU-cement and compatible systems are matched to real temperatures and cleaning chemistry—selection follows exposure tables, not marketing adjectives on a brochure.",
         ],
       },
       {
         title: "Weekend shutdown sequencing",
         paragraphs: [
-          "MMA or fast-cure screeds can compress windows, but only when prep is complete before Friday night. We stage plant hygiene sign-offs and commissioning wipes as programme gates.",
+          "MMA or fast-cure windows only work when Thursday prep is complete. Plant hygiene sign-offs, bund checks, and commissioning wipes are written as gates so Friday night is execution, not catching up on grinding.",
         ],
       },
       {
         title: "Compliance language (non-legal)",
         paragraphs: [
-          "Maverick references HACCP/ISO hygiene principles as operational context. Final compliance remains the facility’s certification regime, we supply system datasheets and QA records installers are typically asked for during audits.",
+          "We reference HACCP and ISO hygiene principles as operational context only. Certification stays the facility’s job—we supply datasheets, film logs, and pull tests auditors typically expect from the installing contractor.",
         ],
       },
     ],
@@ -286,19 +286,25 @@ export const serviceDeepRegistryB: Pick<
       {
         title: "Why mock-ups matter",
         paragraphs: [
-          "Texture, granule size, and light angle change perception. Maverick installs signed-off sample panels on scaffolding before scaling façades so HOA boards approve the final look.",
+          "Granule size, texture, and light angle change how colour reads. Signed sample panels go on scaffold lines before full façades so HOAs and architects lock the look with measurable acceptance, not arguments from the ground.",
         ],
       },
       {
         title: "Crack-bridging and movement",
         paragraphs: [
-          "Decorative systems are not structural movement joints. Maverick integrates engineer-approved joint rebuilds and reinforcement fabrics where specified before aesthetic coats proceed.",
+          "Decorative coats are not movement joints. Engineer-approved joint rehabs and fabrics land first where structures breathe; aesthetic coats follow so cracks do not telegraph through within one storm cycle.",
         ],
       },
       {
         title: "Estate security and access logistics",
         paragraphs: [
-          "Inductions, vehicle escorts, and noise windows are scheduled for high-security nodes. Rope access may pair with coatings on tall feature walls.",
+          "Inductions, escorts, and noise curfews fit high-security estates. Rope or mast climbers pair with coatings on tall features when temporary works engineers sign off the rigging philosophy.",
+        ],
+      },
+      {
+        title: "UV topcoats & maintenance calendars",
+        paragraphs: [
+          "Premium textures need UV-stable finishes and gentle cleaning rhythms. Handover states re-inspection dates and approved wash methods so estates budget maintenance before the granule wash-off surprises the HOA.",
         ],
       },
     ],
@@ -402,19 +408,25 @@ export const serviceDeepRegistryB: Pick<
       {
         title: "Surface preparation scales with exposure",
         paragraphs: [
-          "Hand scraping suits mild environments; blast or power-tool cleaning suits aggressive corrosion zones. Maverick refuses to sign off zinc-rich primers over flash rust unless specifications allow.",
+          "Hand prep suits mild atmospheres; blast or mechanical prep suits aggressive cells. Zinc-rich primers never ship over flash rust unless the specification explicitly allows—we protect balance sheets from shortcut metal prep.",
         ],
       },
       {
         title: "System stacks, not single coats",
         paragraphs: [
-          "Zinc-rich primers, epoxies, polyurethanes, and high-temperature silicones are applied per engineer datasheets. Maverick documents DFT maps and repair notes for QA scopes.",
+          "Zinc-rich, epoxy, polyurethane, and high-temperature films build per engineer datasheets. DFT maps, repair notes, and stripe coats are filed so third-party QA or insurers can reconstruct what was applied where.",
         ],
       },
       {
         title: "Bunds, tanks, and chemical exposures",
         paragraphs: [
-          "Specialist lining systems pair with flooring scopes where chemical matrices demand. Maverick coordinates third-party inspection steps where clients appoint NACE-minded reviewers.",
+          "Chemical matrices drive lining choice alongside flooring packages. We book third-party hold points when clients appoint NACE-minded inspectors and sequence repairs around cure windows the process cannot ignore.",
+        ],
+      },
+      {
+        title: "Shutdown coordination & hot-work discipline",
+        paragraphs: [
+          "Live plants need hot-work permits, gas-free certificates, and confined-space plans that match daily reality. Night crews extend windows only when those controls stay in force—no silent trade-off on safety files.",
         ],
       },
     ],
@@ -491,25 +503,25 @@ export const serviceDeepRegistryB: Pick<
       {
         title: "STSMA, reserve funds, and maintenance realism",
         paragraphs: [
-          "Prescribed Management Rule 22 requires a 10-year maintenance, repair, and replacement plan supported by reserve funding. Maverick’s proposals reference maintenance alignment in operational language, not legal advice, so trustees can map painting and waterproofing cycles to cash flow without nasty special-levy surprises.",
+          "PMR 22 expects ten-year maintenance thinking funded from reserves. Our scopes describe painting and waterproofing cycles in plain language so trustees map cash flow without surprise special levies after the first storms.",
         ],
       },
       {
         title: "Exclusive-use balconies and complex ownership edges",
         paragraphs: [
-          "Balcony waterproofing and painting boundaries can be contentious. Maverick’s site reports describe technical causes and interfaces so managing agents can route decisions; we do not adjudicate law.",
+          "Balcony failures sit on technical boundaries, not legal ones we adjudicate. Site reports describe causes and interfaces so attorneys and agents can route decisions with moisture evidence in the file.",
         ],
       },
       {
         title: "Access: scaffold vs rope vs boom",
         paragraphs: [
-          "High-rise complexes often benefit from IRATA rope teams for upper elevations, reducing street-level scaffold footprints and security exposure. Maverick integrates rope, mobile elevated work platforms, and traditional scaffold where each is safest and most cost-effective.",
+          "Tall blocks often suit IRATA rope where certified anchors exist, shrinking street scaffold and estate security friction. We pair rope, MEWPs, and conventional scaffold for hoisting, overspray control, and rescue—not whichever access method quoted lowest.",
         ],
       },
       {
         title: "Resident disruption protocols",
         paragraphs: [
-          "Dust extraction, window protection, lift lobby sealing, and parking bay rotation plans are written into method statements. Noise curfews and estate rule compliance are treated as contractual obligations, not nice-to-haves.",
+          "Dust control, window protection, lift lobby sealing, and bay rotation sit in the method statement alongside noise curfews and estate rules—written as contractual obligations residents can track week to week.",
         ],
       },
     ],
@@ -613,19 +625,25 @@ export const serviceDeepRegistryB: Pick<
       {
         title: "Surface preparation scales with exposure",
         paragraphs: [
-          "Hand scraping suits mild environments; blast or power-tool cleaning suits aggressive corrosion zones. Maverick refuses to sign off zinc-rich primers over flash rust unless specifications allow, we protect your balance sheet from shortcut chemistry.",
+          "Mild atmospheres allow mechanical clean-up; aggressive cells need blast or power-tool standards. Zinc-rich films do not launch over flash rust unless the spec says so—we protect balance sheets from shortcut metal prep.",
         ],
       },
       {
         title: "Shutdown windows and production safety",
         paragraphs: [
-          "Hot permits, confined space protocols, and food-plant hygiene boundaries are written into daily task instructions. Night crews and double shifts compress timelines without bypassing cure windows.",
+          "Hot works, confined spaces, and food-plant hygiene lines go into daily instructions. Night crews compress calendars only where cure holds and permits stay valid—no silent compromise on OHS gates.",
         ],
       },
       {
         title: "Bunds, tanks, and chemical exposures",
         paragraphs: [
-          "Specialist lining systems pair with flooring scopes. Maverick coordinates NACE-minded inspection steps where clients appoint third parties.",
+          "Bund and tank linings track chemical matrices alongside floor scopes. Third-party NACE-minded holds are booked when clients appoint them so film builds are witnessed where the process is flammable or toxic.",
+        ],
+      },
+      {
+        title: "QA records & specifier sign-off",
+        paragraphs: [
+          "DFT maps, stripe-coat notes, and batch records build the handover pack insurers and engineers expect after outages. Defect lists and repair cycles close before demob so plants restart without arguments about touch-up zones.",
         ],
       },
     ],
@@ -730,19 +748,25 @@ export const serviceDeepRegistryB: Pick<
       {
         title: "Tile roof restoration",
         paragraphs: [
-          "Cracked tiles, failed bedding, and UV-degraded coatings are addressed before topcoats. Breathable, UV-stable systems extend service life when substrates are sound.",
+          "Cracked tiles, tired bedding, and UV-failed coatings are sorted before any topcoat. Breathable, UV-stable films only proceed once substrates are sound so the refresh lasts more than one Highveld summer.",
         ],
       },
       {
         title: "Heat-reflective coatings",
         paragraphs: [
-          "Reflective roof coatings can reduce heat load on top-floor units. Maverick matches products to substrate and documents compatibility with existing waterproofing where present.",
+          "Reflective stacks reduce heat pick-up on top-floor units when products match tile or membrane compatibility. We confirm primer and topcoat stacks with datasheets so reflective paint does not fight existing waterproofing.",
         ],
       },
       {
         title: "IBR & corrugated metal roofs",
         paragraphs: [
-          "Rust treatment, zinc-rich primers, and durable topcoats address corrosion on metal roofs. Maverick sequences access (rope, MEWP, or scaffold) for safe material hoisting.",
+          "Rust conversion, zinc-rich primers, and durable topcoats follow access schedules—rope, MEWP, or scaffold—for safe handling of sheets and drum weights at height.",
+        ],
+      },
+      {
+        title: "Membrane protection & warranty interfaces",
+        paragraphs: [
+          "Reflective or trafficable protection courses extend membrane life after waterproofing renewals. We sequence cure, cleanliness, and manufacturer approvals so the painter does not void the membrane warranty on day one.",
         ],
       },
     ],
@@ -819,19 +843,25 @@ export const serviceDeepRegistryB: Pick<
       {
         title: "Traditional 3-coat systems",
         paragraphs: [
-          "Lath reinforcement, scratch coat, brown coat, and decorative finish create a monolithic shell when movement joints and drainage are respected. Maverick does not bridge structural joints with aesthetic coats alone.",
+          "Lath, scratch, brown, and finish build a monolithic shell only when movement joints and drainage are respected first. We do not bridge structural joints with decorative coats and expect them to survive thermal swing.",
         ],
       },
       {
         title: "Re-dash & restoration",
         paragraphs: [
-          "Faded or hairline-cracked surfaces can receive acrylic-modified finish coats that restore waterproofing and colour without full rebuild costs where substrates remain sound.",
+          "Hairline fatigue and colour fade often accept acrylic-modified finishes when substrates stay sound. Targeted re-dash avoids full removal budgets while still restoring water shedding at caps and sills.",
         ],
       },
       {
         title: "Texture options and mock-ups",
         paragraphs: [
-          "Float, Spanish lace, dash, and smooth finishes change light perception. Signed-off sample panels precede full façades so HOAs approve granule exposure and colour.",
+          "Float, lace, dash, and smooth finishes change glare and perceived colour. Signed panels pre-approve granule exposure before the hoist moves so estates see the finished plane under real sky—not a brochure swatch.",
+        ],
+      },
+      {
+        title: "Moisture & movement remedial interfaces",
+        paragraphs: [
+          "Rising damp, leaks, or dynamic cracks need remedial plans before texture. Waterproofing or structural notes feed the coating stack so finishes are not asked to hide defects they cannot bridge legally or practically.",
         ],
       },
     ],
@@ -908,19 +938,25 @@ export const serviceDeepRegistryB: Pick<
       {
         title: "When rope access wins commercially",
         paragraphs: [
-          "Tall straight elevations, repetitive balcony soffits, and high parapet detailing often suit rope programmes once anchor certification exists. Maverick compares scaffold vs rope NPV including security, pavement hire, and programme risk.",
+          "Tall repeats—balcony grids, straight curtain walls, deep parapets—often favour rope once anchor registers exist. We compare scaffold, rope, and boom NPV with security, pavement, and programme risk in the same spreadsheet.",
         ],
       },
       {
         title: "Safety files trustees expect",
         paragraphs: [
-          "Fall plans, rescue drills (where required), equipment inspection logs, and competent-person appointments accompany BC submissions. Maverick does not market “IRATA certified” without current subcontractor credentials on file.",
+          "Rescue plans, rigging inspections, training logs, and competent-person appointments travel with BC packs. IRATA credentials are named current for the subcontractor actually on the ropes, not a generic slide deck.",
         ],
       },
       {
         title: "Coordination with waterproofing and spalling",
         paragraphs: [
-          "Rope is a means of access, not a coating system. Maverick sequences breakout, injection, membrane detailing, and topcoat windows so cured membranes are not damaged by later trades.",
+          "Access gets crews to the work; it does not replace coating sequencing. Breakout, injection, membranes, and topcoats are ordered so cured films are not torn by a later trade rushing to demobilise access.",
+        ],
+      },
+      {
+        title: "Weather holds & programme float",
+        paragraphs: [
+          "Wind, lightning, and wet substrates halt rope work under sane rules. Programmes include float days and secondary tasks so a blown Monday does not collapse the compliance file or the trustee update on Friday.",
         ],
       },
     ],
@@ -1024,19 +1060,25 @@ export const serviceDeepRegistryB: Pick<
       {
         title: "Low-VOC & sensitive environments",
         paragraphs: [
-          "Product selection follows occupancy class: schools, clinics, and open-plan offices receive systems with documented VOC profiles and recoat windows that respect air-handling schedules.",
+          "Product stacks follow occupancy class: schools, clinics, and dense offices get low-VOC films, documented recoat windows, and ventilation notes that align with air-handling schedules instead of hoping odours behave.",
         ],
       },
       {
         title: "Managed disruption",
         paragraphs: [
-          "After-hours phases, containment, and noise curfews are written into method statements so operations continue while wet edges progress logically through the floor plate.",
+          "After-hours phases, containment hoardings, and noise limits are written into method statements so trading floors and wards keep operating while wet edges advance logically—no mystery about which zone is open Monday.",
         ],
       },
       {
         title: "Compliance documentation",
         paragraphs: [
-          "Datasheets, batch references, and QA checkpoints accompany handover packs for property managers and infection-control stakeholders.",
+          "Datasheets, batch references, film-build logs, and QA checkpoints travel in handover packs for property and infection-control stakeholders who file evidence, not verbal assurances from site.",
+        ],
+      },
+      {
+        title: "Independent QA options",
+        paragraphs: [
+          "Major refurbishments can appoint third-party film or holiday inspection. We coordinate access and hold points so independent reviewers see wet films and cured coats without shutting the programme down for theatre.",
         ],
       },
     ],
@@ -1076,9 +1118,10 @@ export const serviceDeepRegistryB: Pick<
     schemaServiceName: "High-volume commercial painting",
     schemaServiceDescription: "Large-scale commercial exterior and interior painting with QA documentation in Gauteng.",
     sections: [
-      { title: "Programme & phasing", paragraphs: ["Multi-building schedules align with cash flow, tenant notices, and security inductions across estates and business parks."] },
-      { title: "Surface preparation at scale", paragraphs: ["Abrasive preparation, crack repairs, and primer compatibility are managed zone-by-zone so topcoats are not applied over hidden defects."] },
-      { title: "QA & reporting", paragraphs: ["Film thickness, photographic logs, and third-party QA can be bundled for portfolio managers."] },
+      { title: "Programme & phasing", paragraphs: ["Multi-building schedules align cash flow, tenant notices, and security badges across estates and business parks so crews do not wait at gates or overlap unsafe zones."] },
+      { title: "Surface preparation at scale", paragraphs: ["Abrasive prep, crack repairs, and primer compatibility move zone by zone—topcoats never chase hidden defects because a whole elevation was rushed to meet a photo deadline."] },
+      { title: "QA & reporting", paragraphs: ["Film logs, weather notes, and photo registers build portfolio evidence; third-party QA can witness thickness and holidays where FM teams require independent files for governance."] },
+      { title: "Colour control & batch discipline", paragraphs: ["Large jobs need controlled batching and labelled kits per block face. Sprayouts and wet samples are compared in natural light so drift is caught before half the precinct is the wrong grey."] },
     ],
     caseAngles: [
       { title: "Business park rollout", summary: "Twelve buildings repainted in four phases with shared colour control and security passes." },
@@ -1115,9 +1158,10 @@ export const serviceDeepRegistryB: Pick<
     schemaServiceName: "Interior painting services",
     schemaServiceDescription: "Residential and commercial interior painting with dustless preparation in Gauteng.",
     sections: [
-      { title: "Dustless preparation", paragraphs: ["HEPA-assisted sanding and protection of fixtures reduce contamination in occupied homes and offices."] },
-      { title: "Low-VOC systems", paragraphs: ["Premium low-VOC paints specified for sensitive occupants with documented recoat and ventilation guidance."] },
-      { title: "Specialist finishes", paragraphs: ["Ceilings, cabinets, and feature walls receive substrate-specific primers before topcoats."] },
+      { title: "Dustless preparation", paragraphs: ["HEPA-assisted sanding, taped protection, and negative-air tactics keep occupied homes and offices livable while prep reaches the standard the premium coat actually needs."] },
+      { title: "Low-VOC systems", paragraphs: ["Low-odour films and documented recoat windows suit asthma-sensitive homes, schools, and hotel rooms where closing a wing is not an option during the working week."] },
+      { title: "Specialist finishes", paragraphs: ["Ceilings, joinery, and feature walls get substrate-specific primers and sanding sequences so sheens look intentional under real light, not streaky where sun hits at 4 p.m."] },
+      { title: "Phasing & handover cleanliness", paragraphs: ["Room-by-room phasing includes daily vacuum-and-wipe routines, furniture protection, and sign-off walkthroughs so handover matches the quiet standard promised before work started."] },
     ],
     caseAngles: [
       { title: "Full home repaint", summary: "Room sequencing kept the family in occupation with daily clean-down." },
@@ -1154,9 +1198,10 @@ export const serviceDeepRegistryB: Pick<
     schemaServiceName: "Warehouse painting and floor coatings",
     schemaServiceDescription: "Industrial warehouse interior painting and resin floor coordination in Gauteng.",
     sections: [
-      { title: "Walls & structural steel", paragraphs: ["Interior steel and masonry receive preparation grades matched to exposure, with zinc-rich or epoxy stacks where specified."] },
-      { title: "Floor coordination", paragraphs: ["We partner resin flooring scopes or install compatible traffic coatings and demarcation with shared QA files."] },
-      { title: "Live operations", paragraphs: ["Night and weekend shifts compress downtime without bypassing cure requirements."] },
+      { title: "Walls & structural steel", paragraphs: ["Interior steel and masonry receive prep grades matched to exposure—zinc-rich or epoxy tie coats land before topcoats when chloride or corrosive atmospheres demand documented film build."] },
+      { title: "Floor coordination", paragraphs: ["Resin floors, traffic coatings, and demarcation share QA files when we partner specialised flooring crews so wall colours and line colours age together instead of blaming separate contractors."] },
+      { title: "Live operations", paragraphs: ["Night and weekend shifts protect weekday throughput while cure holds stay visible on whiteboards—no forklift traffic until the datasheet says the film can take it."] },
+      { title: "Ventilation & fume management", paragraphs: ["Solvent-borne stacks in partially occupied hubs need mechanical ventilation plans and monitoring. We align odour controls with tenant hours so inspectors do not arrive to complaints on day three."] },
     ],
     caseAngles: [
       { title: "Fulfilment centre", summary: "Zone painting kept half the grid operational throughout the programme." },
@@ -1193,9 +1238,10 @@ export const serviceDeepRegistryB: Pick<
     schemaServiceName: "Parking garage painting",
     schemaServiceDescription: "Basement and parking structure painting with structural coordination in Gauteng.",
     sections: [
-      { title: "Chloride & spalling interfaces", paragraphs: ["Spalling repairs and injection precede topcoats where deck edges show rebar activity."] },
-      { title: "Deck & wall systems", paragraphs: ["Traffic-rated coatings and anti-carbonation finishes selected per level exposure."] },
-      { title: "Phasing & safety", paragraphs: ["Bay rotation, ventilation, and fire routes remain open with documented traffic plans."] },
+      { title: "Chloride & spalling interfaces", paragraphs: ["Deck edges with rust bleed or missing cover get injection, passivation, or mortar rebuild before coatings—painting cannot silence chloride cells that keep delaminating concrete."] },
+      { title: "Deck & wall systems", paragraphs: ["Traffic-rated deck films and anti-carbonation or semi-gloss wall stacks follow level exposure: pay grades, plant decks, and open ramps do not share one generic data sheet."] },
+      { title: "Phasing & safety", paragraphs: ["Bay rotation, forced ventilation, and clear fire routes stay in the traffic plan reviewed with trustees—crews cannot park kit in life-line aisles while chasing programme."] },
+      { title: "Wayfinding & line marking close-out", paragraphs: ["Demarcation, stencils, and anti-slip zones return after deck cures so the garage reopens legible for drivers, not freshly grey but unreadable at night."] },
     ],
     caseAngles: [
       { title: "Sectional-title basement", summary: "Half-grid phasing matched trustee cash flow over three quarters." },
@@ -1232,9 +1278,10 @@ export const serviceDeepRegistryB: Pick<
     schemaServiceName: "Road and yard line marking",
     schemaServiceDescription: "Commercial car park and industrial yard line marking services in Gauteng.",
     sections: [
-      { title: "Surface preparation", paragraphs: ["Oil contamination and friable old lines are removed before new demarcation adheres."] },
-      { title: "Traffic-rated materials", paragraphs: ["Cold-applied and heat-resistant systems selected for tyre scrub and Gauteng UV exposure."] },
-      { title: "Layout & compliance", paragraphs: ["Layouts can follow client drawings, SANS conventions, or insurer recommendations with as-built photos."] },
+      { title: "Surface preparation", paragraphs: ["Oils, dust, and friable old lines are removed mechanically so traffic paint bonds to sound asphalt or concrete—skipping this step is how new stripes lift under steering scrub in weeks."] },
+      { title: "Traffic-rated materials", paragraphs: ["Cold plastic, MMA, or solvent-borne systems are picked for tyre scrub, chemical drips, and Gauteng UV—each bay or yard lane gets the stack the duty actually demands."] },
+      { title: "Layout & compliance", paragraphs: ["Layouts follow client CAD, SANS conventions, or insurer diagrams; as-built photos and nozzle logs prove line widths and legend placement if there is ever a dispute in the basement."] },
+      { title: "Dry-time traffic management", paragraphs: ["Lane reopening times are published before work starts—marshals and boom protocols align with guardhouse rules so traffic does not return before the film can survive a turning bus."] },
     ],
     caseAngles: [
       { title: "Distribution yard", summary: "HGV routes and loading bays remarked during a 48-hour logistics pause." },

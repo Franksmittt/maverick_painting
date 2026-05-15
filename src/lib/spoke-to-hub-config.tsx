@@ -92,6 +92,48 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
       alt: "Completed concrete spalling repair with protective anti-carbonation finish",
     },
   ],
+  "crack-injection": [
+    {
+      src: "/images/structural-crack-injection-assessment.jpg",
+      alt: "Structural crack mapping and injection assessment on a concrete slab or wall in Gauteng",
+    },
+    {
+      src: "/images/structural-crack-injection-injection.jpg",
+      alt: "Epoxy or polyurethane crack injection with ports and pressure-controlled resin placement",
+    },
+    {
+      src: "/images/structural-crack-injection-qa.jpg",
+      alt: "Completed crack injection programme with documented QA-ready concrete repair finish",
+    },
+  ],
+  "expansion-joint-sealing": [
+    {
+      src: "/images/structural-expansion-joint-assessment.jpg",
+      alt: "Expansion joint condition assessment and breakout preparation on a parking or podium slab",
+    },
+    {
+      src: "/images/structural-expansion-joint-installation.jpg",
+      alt: "Traffic-rated expansion joint rebuild with sealant and armour detailing in Gauteng",
+    },
+    {
+      src: "/images/structural-expansion-joint-finish.jpg",
+      alt: "Completed expansion joint sealing interface ready for waterproofing or traffic reopening",
+    },
+  ],
+  "rising-damp-treatment": [
+    {
+      src: "/images/damp-rising-damp-diagnosis.jpg",
+      alt: "Rising damp diagnosis and moisture profiling on masonry walls in a Gauteng home or sectional-title unit",
+    },
+    {
+      src: "/images/damp-rising-damp-injection.jpg",
+      alt: "Chemical damp-proof course injection at bed joint level with regulated drill pattern",
+    },
+    {
+      src: "/images/damp-rising-damp-replaster.jpg",
+      alt: "Salt-retardant replastering and compatible finishes after rising damp remediation",
+    },
+  ],
 };
 
 const linkClass = "text-secondary no-underline hover:underline";

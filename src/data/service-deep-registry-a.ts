@@ -34,14 +34,14 @@ export const serviceDeepRegistryA: Pick<
       {
         title: "Why spalling escalates on Highveld buildings",
         paragraphs: [
-          "Carbonation, chloride ingress, poor cover, and long-term moisture paths all attack the same interface: steel inside concrete. As corrosion products expand, they blow off the concrete face, what owners call “concrete cancer.” Cosmetic patching without passivation leaves active rust underneath, so failures return within seasons.",
+          "Carbonation, chlorides, and moisture paths all attack steel inside concrete. Expanding rust blows off the cover owners call concrete cancer, and patches without passivation hide active corrosion that fails again within seasons.",
           "In Gauteng, thermal cycling, driving rain, and UV stress on thin cover zones (parapets, balcony edges, plant-room slabs) accelerate the cycle. Maverick treats spalling as a structural maintenance discipline: we identify the failure mechanism, define the repair class, and align execution with engineer specifications and manufacturer data sheets.",
         ],
       },
       {
         title: "Our engineer-aligned remedial methodology",
         paragraphs: [
-          "We do not substitute marketing language for structural accountability. Where load-bearing elements are implicated, we work to engineer-approved repair details. Our field teams document breakout limits, reinforcement exposure, cleaning standards, bond bridges, and curing regimes so QA reviewers can audit the trail.",
+          "We follow engineer-approved details for load-bearing elements. Crews document breakout limits, reinforcement exposure, cleaning standards, bond bridges, and curing so commercial QA files show what was done, when, and to which standard.",
         ],
         subsections: [
           {
@@ -73,13 +73,13 @@ export const serviceDeepRegistryA: Pick<
       {
         title: "Independent QA and manufacturer guarantees",
         paragraphs: [
-          "High-stakes portfolios increasingly require third-party coating inspection. Maverick can coordinate independent QA on film thickness, holiday detection, and adhesion pulls for major commercial packages. Workmanship and materials warranties are quoted strictly on manufacturer terms, including required maintenance cycles, so CPA expectations remain realistic.",
+          "Major scopes often need third-party coating inspection. We coordinate thickness, holiday, and adhesion checks where appointed; workmanship and materials warranties follow manufacturer rules and maintenance cycles so CPA expectations stay honest.",
         ],
       },
       {
         title: "Disruption management for occupied buildings",
         paragraphs: [
-          "We phase breakouts, dust extraction, and noise windows for residential complexes and live industrial lines. Where rope access or out-of-hours shifts reduce tenant impact, we integrate those methods into the method statement rather than improvising on site.",
+          "We phase breakouts, extraction, and noise for flats and live plants. Rope access, night shifts, and dust controls are written into the method statement so residents and facility managers see a planned programme, not ad-hoc site decisions.",
         ],
       },
       {
@@ -189,25 +189,25 @@ export const serviceDeepRegistryA: Pick<
       {
         title: "Epoxy vs polyurethane, matching chemistry to crack behaviour",
         paragraphs: [
-          "Epoxy resins can achieve high bond strength in dry, stable cracks and are often selected where structural contribution is specified. Polyurethane systems can tolerate cyclic movement and wet substrates better in certain leak-sealing contexts. Misapplication is expensive: the wrong resin fails, then owners pay twice for breakout.",
+          "Epoxy suits stable, dry cracks where structural bond is specified; polyurethane tolerates movement and active water in many leak paths. Wrong chemistry fails twice—we match resin class to crack behaviour, moisture, and engineer guidance, not habit.",
         ],
       },
       {
         title: "Injection methodology we document on site",
         paragraphs: [
-          "Ports are spaced to manufacturer guidance, surfaces are sealed to contain resin travel, and pressures are controlled to avoid splitting the substrate. Maverick photographs port layouts, batch numbers, and environmental readings so commercial clients can file QA evidence.",
+          "Ports are spaced to manufacturer rules, faces are sealed to control resin travel, and pressures stay within safe limits. We log layouts, batch numbers, temperatures, and pressures so commercial clients can file injection evidence without argument.",
         ],
       },
       {
         title: "Where crack injection fits the wider remedial plan",
         paragraphs: [
-          "Injection rarely replaces drainage remediation, joint rebuilds, or waterproofing membrane renewal. We map whether the crack is symptomatic of settlement, thermal movement, or hydrostatic load so the portfolio does not fund a repeat failure.",
+          "Injection rarely replaces drainage fixes, joint rebuilds, or membrane renewal. We map whether cracks reflect settlement, thermal movement, or hydrostatic load so portfolios do not fund cosmetic resin while the real driver keeps working.",
         ],
       },
       {
         title: "Commercial and sectional-title realities",
         paragraphs: [
-          "Trustees and engineers often need assurance that injection will not mask a wider structural issue. Maverick’s language stays compliance-safe: we implement engineer-specified injection details and flag when intrusive investigation or monitoring is advisable.",
+          "Trustees need language that stays compliance-safe. We execute engineer-specified injection details and flag when monitoring or intrusive investigation is advisable instead of promising injection will fix every structural question on site.",
         ],
       },
     ],
@@ -309,21 +309,27 @@ export const serviceDeepRegistryA: Pick<
       "Commercial expansion joint removal and reinstatement with manufacturer-approved sealants and armour for parking, warehousing, and podium structures in Gauteng.",
     sections: [
       {
-        title: "Joint failure modes we see in Gauteng portfolios",
+        title: "Joint failure modes in Gauteng",
         paragraphs: [
-          "Armour angles pop rivets fatigue, elastomer inserts UV-crack, and traffic hammering extrudes sealant from cavities. Once the armour line breaks, tyre impact destroys concrete arrises. Maverick scopes joint types (isolation, movement, construction) before quoting because each demands different detail plates.",
+          "Armour angles pop, elastomer inserts crack, and traffic hammers sealant from joints. Once armour fails, tyres destroy concrete arrises. We classify isolation, movement, and construction joints before quoting—each needs its own detail plate.",
         ],
       },
       {
         title: "Phased replacement for live facilities",
         paragraphs: [
-          "Warehouses and malls cannot close entire aisles for weeks. We phase saw-cutting, bedding compounds, and cure windows so forklifts resume on agreed lanes. Night shifts and traffic management plans are written into safety files.",
+          "Warehouses and malls cannot shut entire aisles for weeks. We phase saw-cutting, bedding compounds, and cure windows so forklifts return on agreed lanes, with night shifts and traffic plans written into the safety file.",
         ],
       },
       {
         title: "Waterproofing interface discipline",
         paragraphs: [
-          "Podium joints often interface with membranes. Maverick coordinates membrane turn-ups, sacrificial screeds, and injection pre-treatments so the waterproofing warranty path stays continuous.",
+          "Podium joints meet waterproofing membranes. We coordinate turn-ups, sacrificial screeds, and injection pre-treatments so the membrane warranty path stays continuous through the joint box and into adjacent decks.",
+        ],
+      },
+      {
+        title: "Traffic-rated sealants & armour",
+        paragraphs: [
+          "Manufacturer-listed sealants and armour are installed for the slab's movement and traffic class. Primer choice, recess depth, and cure windows are documented so lane reopening matches datasheet limits—not guesswork.",
         ],
       },
     ],
@@ -427,19 +433,25 @@ export const serviceDeepRegistryA: Pick<
       {
         title: "Diagnosis before drilling",
         paragraphs: [
-          "Condensation, roof leaks, and lateral subfloor moisture can mimic rising damp. Maverick uses profiled moisture readings, inspection of abutting pavements, and finish removal samples where needed. Misdiagnosis wastes special levies and destroys heritage plaster unnecessarily.",
+          "Condensation, roof leaks, and lateral moisture can mimic rising damp. We profile readings, inspect external bridges, and sample finishes where needed so injection budgets fix the real mechanism, not the wrong wall.",
         ],
       },
       {
         title: "Chemical DPC injection methodology (high level)",
         paragraphs: [
-          "Approved silane/siloxane or resin creams are introduced into mortar beds to form a horizontal barrier. Injection spacing, depth, and wall construction (single leaf, cavity, rubble-infill) change the pattern. Replastering uses salt-retardant systems and cavity ventilation advice where applicable.",
+          "Approved creams or resins are placed in mortar beds to reinstate a horizontal barrier. Drill spacing, depth, and cavity construction change the pattern—we set out to manufacturer and wall-build guidance, not a generic grid.",
         ],
       },
       {
         title: "Sectional-title and HOA communication",
         paragraphs: [
-          "Exclusive use gardens, paving bridges over DPC, and retrofitted patios often re-bridge the barrier. Maverick’s reports call out maintenance behaviours that keep warranties defensible under CPA scrutiny.",
+          "Exclusive-use paving, planters, and retrofitted patios often re-bridge a new DPC. Reports spell out maintenance duties so warranties stay defensible when owners or insurers ask hard questions later.",
+        ],
+      },
+      {
+        title: "Drying timelines & redecoration gates",
+        paragraphs: [
+          "Masonry dries slowly after injection. We publish realistic drying curves, compatible primers, and re-check dates so trustees do not authorise paint or wallpaper that traps moisture and voids promises.",
         ],
       },
     ],
@@ -543,19 +555,25 @@ export const serviceDeepRegistryA: Pick<
       {
         title: "Torch-on vs liquid, honest trade-offs",
         paragraphs: [
-          "Torch-on remains a proven solution for large unobstructed decks when open-flame permits, wind, and insurance constraints allow. Liquid systems excel at complex geometry, tight flashings, and over-buried details where seams are risk points. Maverick does not force a single SKU; we align system choice to risk registers.",
+          "Torch-on suits large open decks when permits, wind, and insurance allow; liquids suit complex geometry and penetrations where seams are risky. We choose from risk registers and test data, not a favourite brand in the yard.",
         ],
       },
       {
         title: "Drainage, falls, and long-term ponding risk",
         paragraphs: [
-          "Even premium membranes age faster under permanent ponding. Where falls are inadequate, Maverick flags re-screed or targeted leveling scopes rather than burying the hydraulic problem under new rubber. SANS 10400-L discussions belong in the report narrative so trustees understand why drainage work may accompany waterproofing.",
+          "Permanent ponding ages any membrane faster. If falls are wrong, we flag re-screed or levelling scopes instead of burying the hydraulic problem—SANS narratives go into the report so trustees understand combined budgets.",
         ],
       },
       {
         title: "QA checkpoints that protect warranties",
         paragraphs: [
-          "Moisture content, primer compatibility, reinforcement at corners, and sequential holiday testing matter more than marketing adjectives. Independent QA can be bundled for portfolio managers who require third-party sign-off.",
+          "Moisture readings, primer compatibility, corner reinforcement, and sequential holiday tests matter more than adjectives. Independent QA bundles are available for portfolios that want third-party sign-off on the full stack.",
+        ],
+      },
+      {
+        title: "Protection courses & long-term maintenance",
+        paragraphs: [
+          "Manufacturer guarantees need protection layers, debris control, and inspection rhythms. Handover includes maintenance calendars and photo logs so facility teams know what “good” looks like five years after completion.",
         ],
       },
     ],
@@ -660,19 +678,25 @@ export const serviceDeepRegistryA: Pick<
       {
         title: "When torch-on is the right tool",
         paragraphs: [
-          "Torch-on remains a proven field solution for large, unobstructed concrete decks when open-flame permits, wind limits, and insurer requirements align. Seam integrity, reinforcement at corners, and protection courses are executed to manufacturer datasheets, not improvised site shortcuts.",
+          "Torch-on fits big, open concrete decks when hot works, wind limits, and insurers align. Seams, corner reinforcement, and protection sheets follow datasheets—no improvised laps or shortcut primers that void the guarantee.",
         ],
       },
       {
         title: "When liquid systems win",
         paragraphs: [
-          "Liquid membranes excel at complex geometry, plant bases, penetrations, and refurbishment over aged systems where seams would be failure points. Maverick sequences primers, reinforcement fleeces, and UV-stable topcoats with dew-point and moisture-content discipline.",
+          "Liquids follow complex shapes, plant bases, and penetrations without seam grids vulnerable to holidays. Primers, fleeces, and UV topcoats are sequenced with dew-point and moisture discipline before each coat closes.",
         ],
       },
       {
         title: "Hybrid programmes are common",
         paragraphs: [
-          "Office parks and sectional-title roofs often combine torch-on field areas with liquid detailing at HVAC clusters, parapets, and outlets. Maverick documents the interface between systems so warranty claims do not collapse at trade boundaries.",
+          "Many sites torch field areas and detail in liquid at HVAC clusters, parapets, and outlets. Interfaces between systems are documented so a warranty claim cannot die at the trade boundary nobody planned for.",
+        ],
+      },
+      {
+        title: "Fire constraints & alternative specifications",
+        paragraphs: [
+          "Retail podiums and insured assets sometimes ban open flame. We switch to full liquid or cold-applied stacks with insurer-ready method statements, fire watches where still required, and penetration details that match listing letters.",
         ],
       },
     ],
@@ -751,19 +775,25 @@ export const serviceDeepRegistryA: Pick<
       {
         title: "Why under-tile leaks recur",
         paragraphs: [
-          "Failed fall planes, blocked weep holes, cracked screeds, and punctured membranes under tiles all re-wet the assembly. Maverick differentiates low-disruption injection stabilisation from full uplift-and-rebuild programmes so budgets align with risk.",
+          "Failed falls, blocked weep paths, cracked screeds, and punctured membranes under tiles all re-wet the build-up. We separate injection stabilisation options from full uplift programmes so budgets align with the real failure mode.",
         ],
       },
       {
         title: "Trustee documentation packages",
         paragraphs: [
-          "We summarise cause, scope options, insurance implications (without giving legal advice), and maintenance duties so managing agents can table resolutions. Photos are geo/time stamped where policy allows.",
+          "Reports summarise cause, scope options, and maintenance interfaces without legal advice. Photos and moisture notes give managing agents material they can table in BC minutes and insurer submissions in plain language.",
         ],
       },
       {
         title: "Coordination with structural repairs",
         paragraphs: [
-          "Rusted balcony edges may need spalling repairs before membranes. Maverick sequences structural and waterproofing trades under one site manager to reduce subcontractor disputes.",
+          "Rusted balcony edges or spalling often need structural work before membranes. One site manager sequences waterproofing and concrete trades so waterproofers are not chasing arrises the painter was told to “just coat over.”",
+        ],
+      },
+      {
+        title: "Phasing, access & resident impact",
+        paragraphs: [
+          "Balcony programmes are staged by stack, level, or lease priority. Protection, barricades, and noise windows are agreed upfront so occupants know when decks are off-limits and when coatings can take foot traffic again.",
         ],
       },
     ],
@@ -867,19 +897,25 @@ export const serviceDeepRegistryA: Pick<
       {
         title: "Positive vs negative side interventions",
         paragraphs: [
-          "Positive-side (external) barriers are ideal in new construction. Negative-side remedial tanking often applies when excavating externally is impossible. Maverick is explicit about limitations: negative systems manage pressure differently and must be engineered.",
+          "External positive barriers suit new construction; negative remedial tanking applies when bulkheads cannot be dug out. We state limitations honestly—negative builds manage hydrostatic load differently and must follow engineer design.",
         ],
       },
       {
         title: "Active leak management before skin coats",
         paragraphs: [
-          "Fast-flowing leaks may need grout stopping, injection, or drainage relief before membranes see constant hydrostatic load. Skipping this step is why many tanking jobs fail in the first rains.",
+          "Fast leaks need grout, injection, or relief drainage before membranes see constant head. Skipping active-water control is the usual reason a tanking file fails in the first wet season after handover.",
         ],
       },
       {
         title: "Lift pits, plant rooms, and parking slabs",
         paragraphs: [
-          "Each has different crack risk and chemical exposure. Oil interceptors, brine decks, and fire sprinkler test failures change specification. Maverick’s risk register captures these inputs for facility managers.",
+          "Oil interceptors, brine decks, and sprinkler testing change chemical risk for each space. Facility inputs go into a short risk register so specification matches how those rooms are actually used and cleaned.",
+        ],
+      },
+      {
+        title: "Protection screeds & handover monitoring",
+        paragraphs: [
+          "Membranes need sacrificial screeds, careful backfilling, and sump checks where designed. Handover includes what to watch after occupancy—sump run hours, alarm tests, and who to call before a small leak becomes a lift shutdown.",
         ],
       },
     ],
