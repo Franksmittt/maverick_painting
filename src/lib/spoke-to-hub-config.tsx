@@ -64,6 +64,20 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
       alt: "Body corporate painting programme with QA documentation at a Gauteng complex",
     },
   ],
+  "commercial-painting": [
+    {
+      src: "/images/painting-commercial-healthcare.jpg",
+      alt: "Healthcare suite interior painting with containment and low-VOC coatings",
+    },
+    {
+      src: "/images/painting-commercial-campus.jpg",
+      alt: "Corporate campus interior repaint with phased weekend programmes",
+    },
+    {
+      src: "/images/painting-commercial-retail.jpg",
+      alt: "Retail flagship commercial painting completed during night shifts",
+    },
+  ],
 };
 
 const linkClass = "text-secondary no-underline hover:underline";

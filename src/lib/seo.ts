@@ -117,6 +117,7 @@ export const siteConfig = {
     "/our-process-independent-qa",
     "/accreditations",
     "/projects",
+    "/gallery",
     "/blog",
     "/blog/industrial",
     "/blog/waterproofing",

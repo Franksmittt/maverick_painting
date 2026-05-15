@@ -10,6 +10,7 @@ export const FOOTER_QUICK_LINKS = [
   { href: "/", label: "Home" },
   { href: "/about-us", label: "About us" },
   { href: "/projects", label: "Portfolio" },
+  { href: "/gallery", label: "Gallery" },
   { href: "/accreditations", label: "Accreditations" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
