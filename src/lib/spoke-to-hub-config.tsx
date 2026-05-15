@@ -19,6 +19,53 @@ const MAGAZINE_IMAGES = [
   },
 ] as const;
 
+const SPOKE_MAGAZINE_IMAGES: Partial<
+  Record<ServiceSpokeId, readonly { src: string; alt: string }[]>
+> = {
+  "industrial-painting": [
+    {
+      src: "/images/painting-industrial-preparation.jpg",
+      alt: "Industrial surface preparation and coating work on warehouse steel structures",
+    },
+    {
+      src: "/images/painting-industrial-corrosion.jpg",
+      alt: "Corrosion control and protective coatings on industrial silo and plant exteriors",
+    },
+    {
+      src: "/images/painting-industrial-coatings.jpg",
+      alt: "Multicoat epoxy and polyurethane application on a chemical plant pipe rack",
+    },
+  ],
+  "hygienic-food-grade": [
+    {
+      src: "/images/hygienic-food-grade-bakery.jpg",
+      alt: "Hygienic resin flooring in a commercial bakery production area",
+    },
+    {
+      src: "/images/hygienic-food-grade-abattoir.jpg",
+      alt: "Food-grade floor screed with coving and drainage in an abattoir facility",
+    },
+    {
+      src: "/images/hygienic-food-grade-bottling.jpg",
+      alt: "Chemical-resistant hygienic flooring and bund lining at a bottling plant",
+    },
+  ],
+  "body-corporate": [
+    {
+      src: "/images/painting-body-corporate-sandton.jpg",
+      alt: "Phased exterior repainting of a Sandton sectional-title tower",
+    },
+    {
+      src: "/images/painting-body-corporate-estate.jpg",
+      alt: "Townhouse estate exterior painting and balcony edge repairs in Centurion",
+    },
+    {
+      src: "/images/painting-body-corporate-qa.jpg",
+      alt: "Body corporate painting programme with QA documentation at a Gauteng complex",
+    },
+  ],
+};
+
 const linkClass = "text-secondary no-underline hover:underline";
 
 const SPOKE_PARENT_HUB: Record<ServiceSpokeId, string> = {
@@ -46,15 +93,6 @@ const SPOKE_PARENT_HUB: Record<ServiceSpokeId, string> = {
   "parking-garage-painting": "/painting-services",
   "road-marking": "/painting-services",
 };
-
-function leadForDropCap(text: string): string {
-  const trimmed = text.trim();
-  if (/^(It|We|They|Salt|Concrete|Masonry|Trustees|Industrial|Waterproofing|Rope)\b/i.test(trimmed)) {
-    return trimmed;
-  }
-  const lower = trimmed.charAt(0).toLowerCase() + trimmed.slice(1);
-  return `It is rarely obvious at first glance: ${lower}`;
-}
 
 function buildApproachSteps(
   content: ServiceDeepPageContent,
@@ -93,9 +131,10 @@ function buildApproachSteps(
 }
 
 function buildMagazineSections(
+  spokeId: ServiceSpokeId,
   content: ServiceDeepPageContent,
-  parentMagazine: ServiceHubPageConfig["magazine"],
 ): ServiceHubPageConfig["magazine"]["sections"] {
+  const images = SPOKE_MAGAZINE_IMAGES[spokeId] ?? MAGAZINE_IMAGES;
   const phases = ["Phase 01 / Assessment", "Phase 02 / Execution", "Phase 03 / Handover"];
   const sources: { title: string; paragraphs: string[] }[] = [];
 
@@ -121,9 +160,7 @@ function buildMagazineSections(
 
     const body: ReactNode = (
       <>
-        <p className={index === 0 ? "drop-cap type-body mb-4 text-zinc-300" : "type-body mb-4 text-zinc-300"}>
-          {index === 0 ? leadForDropCap(primary) : primary}
-        </p>
+        <p className="type-body mb-4 text-zinc-300">{primary}</p>
         {secondary ? <p className="type-body mb-4 text-zinc-300">{secondary}</p> : null}
         {related ? (
           <p className="type-body text-zinc-300">
@@ -140,8 +177,8 @@ function buildMagazineSections(
     return {
       phase: phases[index] ?? `Phase 0${index + 1}`,
       title: source.title,
-      image: MAGAZINE_IMAGES[index % MAGAZINE_IMAGES.length],
-      dropCap: index === 0,
+      image: images[index % images.length],
+      dropCap: false,
       body,
     };
   });
@@ -206,7 +243,7 @@ export function spokeToHubConfig(spokeId: ServiceSpokeId, content: ServiceDeepPa
       headingId: `${spokeId}-philosophy-heading`,
       title: parentHub.magazine.title,
       subtitle: parentHub.magazine.subtitle,
-      sections: buildMagazineSections(content, parentHub.magazine),
+      sections: buildMagazineSections(spokeId, content),
     },
   };
 }

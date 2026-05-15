@@ -16,6 +16,21 @@ const MAGAZINE_IMAGES = [
   },
 ] as const;
 
+const ACCESS_MAGAZINE_IMAGES = [
+  {
+    src: "/images/access-solutions-method.png",
+    alt: "Rope access technicians working on a high-rise façade in Gauteng",
+  },
+  {
+    src: "/images/access-solutions-compliance.png",
+    alt: "Rope access team with safety equipment on a commercial building exterior",
+  },
+  {
+    src: "/images/access-solutions-coordination.png",
+    alt: "Coordinated rope access and remedial work on a multi-storey structure",
+  },
+] as const;
+
 const linkClass = "text-secondary no-underline hover:underline";
 
 export const structuralRepairsHub: ServiceHubPageConfig = {
@@ -1026,7 +1041,7 @@ export const accessSolutionsHub: ServiceHubPageConfig = {
       {
         phase: "Phase 01 / Method",
         title: "The wrong access costs twice.",
-        image: MAGAZINE_IMAGES[0],
+        image: ACCESS_MAGAZINE_IMAGES[0],
         dropCap: true,
         body: (
           <>
@@ -1049,7 +1064,7 @@ export const accessSolutionsHub: ServiceHubPageConfig = {
       {
         phase: "Phase 02 / Compliance",
         title: "Safety files are how serious portfolios run.",
-        image: MAGAZINE_IMAGES[1],
+        image: ACCESS_MAGAZINE_IMAGES[1],
         body: (
           <>
             <p className="type-body mb-4 text-zinc-300">
@@ -1070,7 +1085,7 @@ export const accessSolutionsHub: ServiceHubPageConfig = {
       {
         phase: "Phase 03 / Coordination",
         title: "One programme beats three mobilisations.",
-        image: MAGAZINE_IMAGES[2],
+        image: ACCESS_MAGAZINE_IMAGES[2],
         body: (
           <>
             <p className="type-body mb-4 text-zinc-300">
