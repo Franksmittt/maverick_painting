@@ -1,14 +1,14 @@
 // src/app/structural-repairs/page.tsx
 import { QaProcessModule } from "@/components/qa-process-module";
-import { Wrench, Shield, Layers, Users } from "lucide-react";
 import { buildPageMetadata } from "@/lib/metadata";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { HubSpokeSection } from "@/components/hub-spoke-section";
 import { StructuralRepairsHero } from "@/components/service-hub/structural-repairs-hero";
+import { StructuralRemedialApproach } from "@/components/service-hub/structural-remedial-approach";
 import { StructuralMaintenanceMagazine } from "@/components/service-hub/structural-maintenance-magazine";
 import { TrustAndCtaStrip } from "@/components/trust-and-cta-strip";
+import { siteConfig } from "@/lib/seo";
 
-// --- METADATA (SEO) ---
 export const metadata = buildPageMetadata({
   title: "Concrete Spalling, Structural Crack & Remedial Repair Specialists | Maverick",
   description:
@@ -16,38 +16,36 @@ export const metadata = buildPageMetadata({
   path: "/structural-repairs",
 });
 
-// --- TECHNICAL DATA FOR CONTENT MODULES ---
-const RepairProcessSteps = [
-  {
-    title: "Defect Diagnosis & Technical Specification",
-    description:
-      "Our assessment team uses moisture meters and hammer tests to diagnose the root cause (e.g., carbonation, chloride ingress) and prepares a substrate-specific, engineer-approved specification.",
-    icon: Wrench,
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Structural Repairs & Concrete Remediation",
+  provider: {
+    "@type": "Organization",
+    name: siteConfig.name,
+    url: siteConfig.url.replace(/\/$/, ""),
   },
-  {
-    title: "Spalling & Concrete Cancer Remediation",
-    description:
-      "Removal of delaminated concrete, passivation of rebar to stop rust, and repair using polymer-modified structural mortar, engineered reinstatement, not cosmetic filler.",
-    icon: Shield,
-  },
-  {
-    title: "Structural Crack Injection & Sealing",
-    description:
-      "Epoxy or polyurethane injection selected by crack behaviour: structural bonding vs active leak sealing. Ports, pressures, and batch records are documented for commercial QA files.",
-    icon: Layers,
-  },
-  {
-    title: "Protective Coating Application",
-    description:
-      "Application of manufacturer-approved breathable membranes and elastomeric coatings that resist UV, manage water vapour, and accommodate movement where specified.",
-    icon: Users,
-  },
-];
+  areaServed: siteConfig.serviceAreas,
+  description:
+    "Concrete spalling repair, crack injection, expansion joint sealing, and protective coatings for sectional-title, commercial, and industrial assets in Gauteng.",
+  serviceType: [
+    "Concrete spalling repair",
+    "Structural crack injection",
+    "Expansion joint sealing",
+    "Protective coating application",
+  ],
+};
 
-// --- MAIN PAGE COMPONENT ---
 export default function StructuralRepairsPage() {
   return (
-    <div className="bg-primary pt-24 text-white">
+    <div className="bg-[#080808] pt-24 text-zinc-300 antialiased">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(serviceJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+
       <Breadcrumbs
         items={[
           { label: "Services", href: "/services" },
@@ -56,30 +54,11 @@ export default function StructuralRepairsPage() {
       />
 
       <StructuralRepairsHero />
-
-      {/* --- MODULE 2: THE PROCESS (Technical Grid) --- */}
-      <section className="bg-primary px-4 py-24 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl">
-          <header className="mx-auto mb-16 max-w-3xl text-center">
-            <h2 className="mb-3 text-4xl font-extrabold uppercase">Our four-phase remedial approach</h2>
-            <p className="text-lg font-light text-gray-400">
-              We follow manufacturer and engineer-approved protocols so repairs are auditable, not hidden beneath fresh paint.
-            </p>
-          </header>
-
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-            {RepairProcessSteps.map((step, index) => (
-              <div key={index} className="rounded-xl border-t-4 border-tertiary bg-gray-900 p-6 shadow-xl">
-                <step.icon className="mb-4 h-8 w-8 text-secondary" />
-                <h3 className="mb-2 text-xl font-bold uppercase text-white">{step.title}</h3>
-                <p className="text-sm text-gray-400">{step.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <StructuralRemedialApproach />
 
       <HubSpokeSection
+        variant="dark"
+        headingId="structural-services-heading"
         title="Deep-dive structural services"
         intro="Each page below targets a distinct failure mode and procurement keyword cluster, improving topical clarity for search engines and giving technical buyers the depth they expect before inviting a site walk-down."
         links={[
@@ -105,7 +84,6 @@ export default function StructuralRepairsPage() {
       />
 
       <StructuralMaintenanceMagazine />
-
       <QaProcessModule />
       <TrustAndCtaStrip />
     </div>

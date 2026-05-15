@@ -43,7 +43,7 @@ export function Breadcrumbs({ items }: BreadcrumbsProps) {
           __html: JSON.stringify(breadcrumbSchema).replace(/</g, '\\u003c'),
         }}
       />
-      <nav aria-label="Breadcrumb" className="bg-gray-900 border-b border-gray-800">
+      <nav aria-label="Breadcrumb" className="border-b border-white/5 bg-[#080808]">
         <div className="page-container py-4">
           <ol className="flex items-center space-x-2 text-sm">
             <li>

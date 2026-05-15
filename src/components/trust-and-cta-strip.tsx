@@ -53,20 +53,22 @@ function ProofRow({ className }: { className?: string }) {
 /** Accreditations + final phone CTA (split card: credentials left, CTA right on large screens). */
 export function TrustAndCtaStrip() {
   return (
-    <section className="section-flow bg-primary">
+    <section className="section-surface section-pad" aria-labelledby="trust-cta-heading">
       <div className="page-container">
         <div className="overflow-hidden rounded-2xl border border-white/[0.08] shadow-lg lg:grid lg:min-h-[300px] lg:grid-cols-2">
-          <div className="flex flex-col justify-center border-b border-white/[0.06] bg-[#141413] p-8 sm:p-10 lg:border-b-0 lg:border-r">
-            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-secondary">{T.TRUST_EYEBROW}</p>
-            <h3 className="mt-2 text-2xl font-semibold text-white md:text-3xl">{T.TRUST_TITLE}</h3>
+          <div className="flex flex-col justify-center border-b border-white/[0.06] bg-[#141413] p-6 sm:p-8 lg:border-b-0 lg:border-r lg:p-10">
+            <p className="type-phase">{T.TRUST_EYEBROW}</p>
+            <h2 id="trust-cta-heading" className="type-h2 mt-2 text-2xl sm:text-3xl">
+              {T.TRUST_TITLE}
+            </h2>
             <BrandRow className="mt-8 justify-start gap-x-6 gap-y-3" />
             <div className="mt-8 border-t border-white/[0.06] pt-8">
               <ProofRow />
             </div>
           </div>
-          <div className="flex flex-col justify-center bg-primary px-8 py-10 text-center sm:px-12">
-            <h2 className="text-2xl font-extrabold text-white md:text-3xl">{T.TRUST_CTA_HEADLINE}</h2>
-            <p className="mx-auto mt-4 max-w-md text-sm text-gray-400 md:text-base">{T.TRUST_CTA_BODY}</p>
+          <div className="flex flex-col justify-center bg-[#080808] px-6 py-8 text-center sm:px-10 sm:py-10">
+            <p className="text-xl font-bold text-white sm:text-2xl">{T.TRUST_CTA_HEADLINE}</p>
+            <p className="type-body mx-auto mt-4 max-w-md">{T.TRUST_CTA_BODY}</p>
             <div className="mt-8 flex justify-center">
               <CtaPhoneButton className="h-14 w-full max-w-md bg-secondary px-6 text-base font-bold text-primary shadow-xl transition hover:bg-[#4AD5E2] sm:text-lg" />
             </div>
