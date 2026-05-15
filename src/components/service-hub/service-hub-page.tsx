@@ -33,10 +33,12 @@ export function ServiceHubPage({ config }: { config: ServiceHubPageConfig }) {
       />
 
       <Breadcrumbs
-        items={[
-          { label: "Services", href: "/services" },
-          { label: config.breadcrumbLabel, href: config.path },
-        ]}
+        items={
+          config.breadcrumbs ?? [
+            { label: "Services", href: "/services" },
+            { label: config.breadcrumbLabel, href: config.path },
+          ]
+        }
       />
 
       <ServiceHubHero {...config.hero} />

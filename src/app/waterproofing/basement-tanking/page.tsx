@@ -1,11 +1,12 @@
 import { buildPageMetadata } from "@/lib/metadata";
 import { ServiceDeepPage } from "@/components/service-deep-page";
 import { getServiceSpoke } from "@/data/service-deep-registry";
+import type { ServiceSpokeId } from "@/lib/service-deep-types";
 
-const content = getServiceSpoke("basement-tanking");
+const spokeId: ServiceSpokeId = "basement-tanking";
 
-export const metadata = buildPageMetadata(content.meta);
+export const metadata = buildPageMetadata(getServiceSpoke(spokeId).meta);
 
 export default function BasementTankingPage() {
-  return <ServiceDeepPage content={content} />;
+  return <ServiceDeepPage spokeId={spokeId} />;
 }

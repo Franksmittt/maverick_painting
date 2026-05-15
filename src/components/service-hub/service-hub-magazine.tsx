@@ -37,7 +37,7 @@ function EditorialSection({
             ? "-mt-8 border-b-[3px] border-secondary sm:-mt-10 lg:mt-0 lg:-mr-[10%] lg:ml-0 lg:border-t-0 lg:shadow-[10px_10px_30px_rgba(0,0,0,0.8)]"
             : "-mt-8 border-t-[3px] border-secondary sm:-mt-10 lg:mt-0 lg:-ml-[10%] lg:shadow-[-10px_10px_30px_rgba(0,0,0,0.8)]",
           section.dropCap &&
-            "[&_.drop-cap:first-letter]:float-left [&_.drop-cap:first-letter]:mr-3 [&_.drop-cap:first-letter]:mt-1 [&_.drop-cap:first-letter]:text-4xl [&_.drop-cap:first-letter]:font-bold [&_.drop-cap:first-letter]:leading-none [&_.drop-cap:first-letter]:text-secondary sm:[&_.drop-cap:first-letter]:text-5xl",
+            "[&_.drop-cap:first-letter]:mr-1 [&_.drop-cap:first-letter]:text-4xl [&_.drop-cap:first-letter]:font-bold [&_.drop-cap:first-letter]:leading-none [&_.drop-cap:first-letter]:text-secondary sm:[&_.drop-cap:first-letter]:text-5xl",
         )}
       >
         <p className="type-phase mb-3">{section.phase}</p>

@@ -5,9 +5,18 @@ export const serviceDeepRegistryB: Pick<
   | "industrial-epoxy-flooring"
   | "hygienic-food-grade"
   | "marmoran-wall-systems"
+  | "industrial-corrosion-control"
   | "body-corporate"
   | "industrial-painting"
+  | "roof-painting"
+  | "stucco-wall-coatings"
   | "rope-access-painting"
+  | "commercial-painting"
+  | "high-volume-commercial-painting"
+  | "interior-painting"
+  | "warehouse-painting"
+  | "parking-garage-painting"
+  | "road-marking"
 > = {
   "industrial-epoxy-flooring": {
     meta: {
@@ -247,7 +256,8 @@ export const serviceDeepRegistryB: Pick<
     ],
     relatedServices: [
       { href: "/specialized-coatings/industrial-epoxy-flooring", label: "Industrial epoxy & PU floors" },
-      { href: "/painting/industrial", label: "Industrial painting & corrosion control" },
+      { href: "/specialized-coatings/industrial-corrosion-control", label: "Industrial corrosion control" },
+      { href: "/painting/industrial", label: "Industrial & factory painting" },
       { href: "/blog/industrial/fast-curing-floors", label: "Fast-curing plant flooring guide" },
       { href: "/contact", label: "Book a plant walk-down" },
     ],
@@ -365,6 +375,95 @@ export const serviceDeepRegistryB: Pick<
       { href: "/painting/stucco-wall-coatings", label: "Stucco & wall coatings" },
       { href: "/painting/high-volume-commercial-painting", label: "High-volume commercial painting" },
       { href: "/access-solutions/rope-access-painting", label: "Rope access façade work" },
+      { href: "/specialized-coatings", label: "Specialized coatings hub" },
+    ],
+  },
+
+  "industrial-corrosion-control": {
+    meta: {
+      title: "Industrial Corrosion Control & Protective Coatings Gauteng | Maverick",
+      description:
+        "Structural steel, silo, tank, and plant corrosion protection using zinc-rich primers, epoxies, and polyurethanes with blast preparation, DFT verification, and shutdown-sensitive programmes across Gauteng industrial nodes.",
+      path: "/specialized-coatings/industrial-corrosion-control",
+    },
+    h1: "Industrial corrosion control & protective coating systems",
+    eyebrow: "Specialized coatings",
+    heroLead:
+      "Corrosion is a balance-sheet problem before it is an aesthetic one. Maverick applies protective coating stacks matched to exposure class, with surface preparation, recoat windows, and film-build documentation that survives insurer and engineer scrutiny when assets fail in service.",
+    breadcrumbs: [
+      { label: "Services", href: "/services" },
+      { label: "Specialized coatings", href: "/specialized-coatings" },
+      { label: "Industrial corrosion control", href: "/specialized-coatings/industrial-corrosion-control" },
+    ],
+    schemaServiceName: "Industrial corrosion control and protective coatings",
+    schemaServiceDescription:
+      "Corrosion protection for structural steel, plant equipment, silos, and chemical exposures using high-performance coating systems in Gauteng.",
+    sections: [
+      {
+        title: "Surface preparation scales with exposure",
+        paragraphs: [
+          "Hand scraping suits mild environments; blast or power-tool cleaning suits aggressive corrosion zones. Maverick refuses to sign off zinc-rich primers over flash rust unless specifications allow.",
+        ],
+      },
+      {
+        title: "System stacks, not single coats",
+        paragraphs: [
+          "Zinc-rich primers, epoxies, polyurethanes, and high-temperature silicones are applied per engineer datasheets. Maverick documents DFT maps and repair notes for QA scopes.",
+        ],
+      },
+      {
+        title: "Bunds, tanks, and chemical exposures",
+        paragraphs: [
+          "Specialist lining systems pair with flooring scopes where chemical matrices demand. Maverick coordinates third-party inspection steps where clients appoint NACE-minded reviewers.",
+        ],
+      },
+    ],
+    caseAngles: [
+      {
+        title: "Silo exterior corrosion arrest",
+        summary:
+          "Blast-recycle containment prevented environmental complaints while a multicoat stack was applied between planned maintenance outages.",
+      },
+      {
+        title: "Chemical plant pipe rack",
+        summary:
+          "Epoxy-polyurethane stacks applied with DFT logs filed for insurer renewal documentation.",
+      },
+      {
+        title: "Warehouse roof truss repaint",
+        summary:
+          "MEWP and rope hybrid access compressed programme duration versus full internal scaffold.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do you blast clean?",
+        answer:
+          "We partner certified blasting where specifications demand; Maverick manages coating application QA.",
+      },
+      {
+        question: "What systems do you apply?",
+        answer: "Zinc-rich primers, epoxies, polyurethanes, and high-temperature silicones per engineer datasheets.",
+      },
+      {
+        question: "Can you work in live plants?",
+        answer:
+          "Often yes with hot-work controls and containment; risk assessments define no-go zones.",
+      },
+      {
+        question: "Do you provide DFT reports?",
+        answer: "Yes, elcometer logs and repair maps are standard on QA scopes.",
+      },
+      {
+        question: "How does this differ from factory painting?",
+        answer:
+          "Corrosion control focuses on protective stacks for steel and chemical exposure; factory painting may include broader interior programmes. See our industrial painting spoke for full plant scopes.",
+      },
+    ],
+    relatedServices: [
+      { href: "/specialized-coatings/industrial-epoxy-flooring", label: "Industrial epoxy flooring" },
+      { href: "/painting/industrial", label: "Industrial & factory painting" },
+      { href: "/blog/industrial/zinc-primer-corrosion-control", label: "Corrosion technical guide" },
       { href: "/specialized-coatings", label: "Specialized coatings hub" },
     ],
   },
@@ -600,10 +699,189 @@ export const serviceDeepRegistryB: Pick<
       },
     ],
     relatedServices: [
+      { href: "/specialized-coatings/industrial-corrosion-control", label: "Industrial corrosion control" },
       { href: "/specialized-coatings/industrial-epoxy-flooring", label: "Industrial resin flooring" },
       { href: "/painting/warehouse-painting", label: "Warehouse painting" },
       { href: "/blog/industrial/zinc-primer-corrosion-control", label: "Corrosion technical guide" },
       { href: "/contact", label: "Request an industrial survey" },
+    ],
+  },
+
+  "roof-painting": {
+    meta: {
+      title: "Roof Painting & Tile Restoration Contractors Gauteng | Maverick",
+      description:
+        "Heat-reflective roof coatings, tile restoration, IBR metal roof systems, and airless spray programmes for sectional-title and commercial assets in Johannesburg & Pretoria.",
+      path: "/painting/roof-painting",
+    },
+    h1: "Roof painting & tile restoration",
+    eyebrow: "Commercial painting",
+    heroLead:
+      "Roof coatings are waterproofing and energy decisions, not colour decisions. Maverick specifies heat-reflective and weatherproof systems compatible with underlying membranes, with preparation, rust treatment, and film-build discipline suited to Gauteng UV and storm cycles.",
+    breadcrumbs: [
+      { label: "Services", href: "/services" },
+      { label: "Painting services", href: "/painting-services" },
+      { label: "Roof painting", href: "/painting/roof-painting" },
+    ],
+    schemaServiceName: "Roof painting and tile restoration",
+    schemaServiceDescription:
+      "Professional roof painting, tile restoration, and heat-reflective coating application for residential and commercial buildings in Gauteng.",
+    sections: [
+      {
+        title: "Tile roof restoration",
+        paragraphs: [
+          "Cracked tiles, failed bedding, and UV-degraded coatings are addressed before topcoats. Breathable, UV-stable systems extend service life when substrates are sound.",
+        ],
+      },
+      {
+        title: "Heat-reflective coatings",
+        paragraphs: [
+          "Reflective roof coatings can reduce heat load on top-floor units. Maverick matches products to substrate and documents compatibility with existing waterproofing where present.",
+        ],
+      },
+      {
+        title: "IBR & corrugated metal roofs",
+        paragraphs: [
+          "Rust treatment, zinc-rich primers, and durable topcoats address corrosion on metal roofs. Maverick sequences access (rope, MEWP, or scaffold) for safe material hoisting.",
+        ],
+      },
+    ],
+    caseAngles: [
+      {
+        title: "Sectional-title tile refresh",
+        summary:
+          "Phased roof halves matched trustee cash flow; heat-reflective topcoat specified for top-storey units.",
+      },
+      {
+        title: "Industrial IBR corrosion arrest",
+        summary:
+          "Rust conversion and multicoat stack applied during a planned maintenance shutdown.",
+      },
+      {
+        title: "Post-waterproofing protection course",
+        summary:
+          "Reflective coating applied after membrane cure to extend UV life on a flat concrete roof.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Can you paint over a waterproofed flat roof?",
+        answer:
+          "Often yes with compatible reflective systems; Maverick confirms manufacturer approval between trades.",
+      },
+      {
+        question: "Do you repair cracked tiles?",
+        answer: "Yes, replacement and bedding repairs precede coating where failures are active.",
+      },
+      {
+        question: "What is the cost per m²?",
+        answer:
+          "Pricing depends on access, rust treatment, and system type. Site measurement drives quotes.",
+      },
+      {
+        question: "How long do roof coatings last?",
+        answer:
+          "Manufacturer maintenance calendars apply; we document cleaning and re-coat intervals at handover.",
+      },
+      {
+        question: "Is rope access used on roofs?",
+        answer: "Where anchor certification and geometry allow, rope can reduce scaffold footprints.",
+      },
+    ],
+    relatedServices: [
+      { href: "/waterproofing/flat-concrete-roofs", label: "Flat concrete roof waterproofing" },
+      { href: "/access-solutions/rope-access-painting", label: "Rope access painting" },
+      { href: "/painting/body-corporate", label: "Body corporate painting" },
+      { href: "/painting-services", label: "Painting services hub" },
+    ],
+  },
+
+  "stucco-wall-coatings": {
+    meta: {
+      title: "Stucco & Specialized Wall Coatings Gauteng | Maverick",
+      description:
+        "Traditional and acrylic-modified stucco systems, elastomeric crack-defense coatings, and vapor-permeable masonry finishes for estates and commercial façades in Johannesburg & Pretoria.",
+      path: "/painting/stucco-wall-coatings",
+    },
+    h1: "Stucco & specialized wall coatings",
+    eyebrow: "Commercial painting",
+    heroLead:
+      "Stucco and high-build wall coatings demand substrate discipline: lath, scratch coats, movement joints, and vapor permeability all affect longevity. Maverick applies monolithic masonry finishes and elastomeric systems with mock-ups and documented preparation so estates and architects receive predictable texture and weather resistance.",
+    breadcrumbs: [
+      { label: "Services", href: "/services" },
+      { label: "Painting services", href: "/painting-services" },
+      { label: "Stucco & wall coatings", href: "/painting/stucco-wall-coatings" },
+    ],
+    schemaServiceName: "Stucco and specialized wall coating application",
+    schemaServiceDescription:
+      "Stucco application, re-dash restoration, and elastomeric wall coating systems for residential estates and commercial buildings in Gauteng.",
+    sections: [
+      {
+        title: "Traditional 3-coat systems",
+        paragraphs: [
+          "Lath reinforcement, scratch coat, brown coat, and decorative finish create a monolithic shell when movement joints and drainage are respected. Maverick does not bridge structural joints with aesthetic coats alone.",
+        ],
+      },
+      {
+        title: "Re-dash & restoration",
+        paragraphs: [
+          "Faded or hairline-cracked surfaces can receive acrylic-modified finish coats that restore waterproofing and colour without full rebuild costs where substrates remain sound.",
+        ],
+      },
+      {
+        title: "Texture options and mock-ups",
+        paragraphs: [
+          "Float, Spanish lace, dash, and smooth finishes change light perception. Signed-off sample panels precede full façades so HOAs approve granule exposure and colour.",
+        ],
+      },
+    ],
+    caseAngles: [
+      {
+        title: "Estate re-dash programme",
+        summary:
+          "Acrylic-modified finish restored colour uniformity across 18 villas without full scaffold on secondary elevations.",
+      },
+      {
+        title: "Commercial elastomeric upgrade",
+        summary:
+          "High-build crack-bridging coating specified after engineer-approved joint repairs at podium level.",
+      },
+      {
+        title: "New-build stucco feature walls",
+        summary:
+          "3-coat system with vapor-permeable topcoat matched to architect specification and QA film logs.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is stucco suitable for Gauteng climate?",
+        answer:
+          "Yes when vapor permeability, UV topcoats, and movement detailing are specified correctly.",
+      },
+      {
+        question: "Can you repair hairline cracks?",
+        answer:
+          "Elastomeric systems can bridge minor movement; structural cracks require remedial scopes first.",
+      },
+      {
+        question: "How does stucco relate to Marmoran?",
+        answer:
+          "Both are high-build decorative systems; Marmoran is a premium textured product class. Maverick applies both where specified.",
+      },
+      {
+        question: "Do you provide texture samples?",
+        answer: "Yes, mock-up panels are standard on estate and architect-led projects.",
+      },
+      {
+        question: "Interior stucco?",
+        answer: "Yes, humidity and primer stacks differ from exterior; scopes are separated accordingly.",
+      },
+    ],
+    relatedServices: [
+      { href: "/specialized-coatings/marmoran-wall-systems", label: "Marmoran wall systems" },
+      { href: "/painting/body-corporate", label: "Body corporate painting" },
+      { href: "/structural-repairs/expansion-joint-sealing", label: "Expansion joint sealing" },
+      { href: "/painting-services", label: "Painting services hub" },
     ],
   },
 
@@ -720,6 +998,257 @@ export const serviceDeepRegistryB: Pick<
       { href: "/structural-repairs/concrete-spalling", label: "Façade spalling repair" },
       { href: "/waterproofing/leaking-balconies", label: "Balcony waterproofing" },
       { href: "/access-solutions", label: "Access solutions overview" },
+    ],
+  },
+
+  "commercial-painting": {
+    meta: {
+      title: "Commercial & Healthcare Painting Contractors Gauteng | Maverick",
+      description:
+        "Low-VOC and anti-microbial coating application for offices, healthcare, and retail with managed disruption, compliance documentation, and independent QA options.",
+      path: "/painting/commercial-painting",
+    },
+    h1: "Commercial & healthcare painting contractors",
+    eyebrow: "Commercial painting",
+    heroLead:
+      "Occupied offices and healthcare suites need coatings that protect air quality, hygiene, and operations—not weekend paint jobs that leave solvent odours in circulation ducts. Maverick specifies low-VOC systems, phased access, and QA records facility managers can file.",
+    breadcrumbs: [
+      { label: "Services", href: "/services" },
+      { label: "Painting services", href: "/painting-services" },
+      { label: "Commercial painting", href: "/painting/commercial-painting" },
+    ],
+    schemaServiceName: "Commercial and healthcare painting",
+    schemaServiceDescription:
+      "Low-VOC commercial interior and sensitive-environment coating programmes in Gauteng with compliance documentation.",
+    sections: [
+      {
+        title: "Low-VOC & sensitive environments",
+        paragraphs: [
+          "Product selection follows occupancy class: schools, clinics, and open-plan offices receive systems with documented VOC profiles and recoat windows that respect air-handling schedules.",
+        ],
+      },
+      {
+        title: "Managed disruption",
+        paragraphs: [
+          "After-hours phases, containment, and noise curfews are written into method statements so operations continue while wet edges progress logically through the floor plate.",
+        ],
+      },
+      {
+        title: "Compliance documentation",
+        paragraphs: [
+          "Datasheets, batch references, and QA checkpoints accompany handover packs for property managers and infection-control stakeholders.",
+        ],
+      },
+    ],
+    caseAngles: [
+      { title: "Healthcare suite refresh", summary: "Anti-microbial topcoats applied in phased wards with HEPA containment and audit-friendly records." },
+      { title: "Corporate campus repaint", summary: "Low-odour systems executed floor-by-floor over six weekends without tenant relocation." },
+      { title: "Retail flagship", summary: "Night-shift programme protected trading hours while achieving specified film build." },
+    ],
+    faqs: [
+      { question: "Do you work in occupied buildings?", answer: "Yes, with containment, ventilation plans, and phased areas." },
+      { question: "What paints do you use?", answer: "Manufacturer-approved low-VOC and hygienic systems per substrate survey." },
+      { question: "Can you provide VOC certificates?", answer: "Yes, product datasheets and batch records are included in handover packs." },
+    ],
+    relatedServices: [
+      { href: "/painting/body-corporate", label: "Body corporate painting" },
+      { href: "/painting/interior-painting", label: "Interior painting" },
+      { href: "/painting-services", label: "Painting services hub" },
+    ],
+  },
+
+  "high-volume-commercial-painting": {
+    meta: {
+      title: "High-Volume Commercial Painting Gauteng | Maverick",
+      description:
+        "Large-scale commercial and industrial painting with programme management, access coordination, surface preparation, and independent QA for Gauteng portfolios.",
+      path: "/painting/high-volume-commercial-painting",
+    },
+    h1: "High-volume commercial painting programmes",
+    eyebrow: "Commercial painting",
+    heroLead:
+      "Large façades and multi-building campuses need throughput without sacrificing preparation discipline. Maverick mobilises crews, access, and QA checkpoints as a single programme—not a patchwork of day labour quotes.",
+    breadcrumbs: [
+      { label: "Services", href: "/services" },
+      { label: "Painting services", href: "/painting-services" },
+      { label: "High-volume commercial painting", href: "/painting/high-volume-commercial-painting" },
+    ],
+    schemaServiceName: "High-volume commercial painting",
+    schemaServiceDescription: "Large-scale commercial exterior and interior painting with QA documentation in Gauteng.",
+    sections: [
+      { title: "Programme & phasing", paragraphs: ["Multi-building schedules align with cash flow, tenant notices, and security inductions across estates and business parks."] },
+      { title: "Surface preparation at scale", paragraphs: ["Abrasive preparation, crack repairs, and primer compatibility are managed zone-by-zone so topcoats are not applied over hidden defects."] },
+      { title: "QA & reporting", paragraphs: ["Film thickness, photographic logs, and third-party QA can be bundled for portfolio managers."] },
+    ],
+    caseAngles: [
+      { title: "Business park rollout", summary: "Twelve buildings repainted in four phases with shared colour control and security passes." },
+      { title: "Logistics hub", summary: "MEWP and night-shift prep protected live loading bays." },
+      { title: "Mixed-use precinct", summary: "Retail podiums and office towers sequenced under one safety file index." },
+    ],
+    faqs: [
+      { question: "What size projects do you take?", answer: "From multi-unit estates to single large warehouses—scope defines mobilisation." },
+      { question: "Do you tender?", answer: "Yes, itemised BOQ responses where required." },
+    ],
+    relatedServices: [
+      { href: "/painting/body-corporate", label: "Body corporate painting" },
+      { href: "/painting/industrial", label: "Industrial painting" },
+      { href: "/painting-services", label: "Painting services hub" },
+    ],
+  },
+
+  "interior-painting": {
+    meta: {
+      title: "Interior Painting Contractors Gauteng | Dustless & Low-VOC",
+      description:
+        "Professional interior painting with dustless sanding, low-VOC paints, ceiling specialists, and kitchen cabinet respray for homes and commercial interiors.",
+      path: "/painting/interior-painting",
+    },
+    h1: "Professional interior painting services",
+    eyebrow: "Commercial painting",
+    heroLead:
+      "Interior work fails when dust, odour, and poor preparation meet expensive finishes. Maverick uses dust-controlled prep, low-VOC systems, and room-by-room phasing so families and tenants stay comfortable while coatings cure correctly.",
+    breadcrumbs: [
+      { label: "Services", href: "/services" },
+      { label: "Painting services", href: "/painting-services" },
+      { label: "Interior painting", href: "/painting/interior-painting" },
+    ],
+    schemaServiceName: "Interior painting services",
+    schemaServiceDescription: "Residential and commercial interior painting with dustless preparation in Gauteng.",
+    sections: [
+      { title: "Dustless preparation", paragraphs: ["HEPA-assisted sanding and protection of fixtures reduce contamination in occupied homes and offices."] },
+      { title: "Low-VOC systems", paragraphs: ["Premium low-VOC paints specified for sensitive occupants with documented recoat and ventilation guidance."] },
+      { title: "Specialist finishes", paragraphs: ["Ceilings, cabinets, and feature walls receive substrate-specific primers before topcoats."] },
+    ],
+    caseAngles: [
+      { title: "Full home repaint", summary: "Room sequencing kept the family in occupation with daily clean-down." },
+      { title: "Kitchen respray", summary: "Cabinet de-grease, primer, and 2K finish with hardware logged for reinstallation." },
+      { title: "Office fit-out", summary: "Weekend-only programme delivered handover before Monday trading." },
+    ],
+    faqs: [
+      { question: "How long until we can sleep in painted rooms?", answer: "Product-specific; we issue ventilation and cure guidance at handover." },
+      { question: "Do you move furniture?", answer: "Light furniture shifting with protection; heavy items discussed in scope." },
+    ],
+    relatedServices: [
+      { href: "/painting/commercial-painting", label: "Commercial painting" },
+      { href: "/solutions/for-homeowners", label: "Homeowner solutions" },
+      { href: "/painting-services", label: "Painting services hub" },
+    ],
+  },
+
+  "warehouse-painting": {
+    meta: {
+      title: "Warehouse Painting & Floor Coating Contractors Gauteng | Maverick",
+      description:
+        "Warehouse painting, high-traffic floor coatings, line marking coordination, and corrosion-aware programmes for logistics and manufacturing facilities.",
+      path: "/painting/warehouse-painting",
+    },
+    h1: "Warehouse painting & industrial interior coatings",
+    eyebrow: "Commercial painting",
+    heroLead:
+      "Warehouses need coatings that survive tyre scrub, chemical splash, and 24/7 operations—not aesthetic-only paint on dusty concrete. Maverick coordinates floor and wall systems with realistic shutdown windows and QA film logs.",
+    breadcrumbs: [
+      { label: "Services", href: "/services" },
+      { label: "Painting services", href: "/painting-services" },
+      { label: "Warehouse painting", href: "/painting/warehouse-painting" },
+    ],
+    schemaServiceName: "Warehouse painting and floor coatings",
+    schemaServiceDescription: "Industrial warehouse interior painting and resin floor coordination in Gauteng.",
+    sections: [
+      { title: "Walls & structural steel", paragraphs: ["Interior steel and masonry receive preparation grades matched to exposure, with zinc-rich or epoxy stacks where specified."] },
+      { title: "Floor coordination", paragraphs: ["We partner resin flooring scopes or install compatible traffic coatings and demarcation with shared QA files."] },
+      { title: "Live operations", paragraphs: ["Night and weekend shifts compress downtime without bypassing cure requirements."] },
+    ],
+    caseAngles: [
+      { title: "Fulfilment centre", summary: "Zone painting kept half the grid operational throughout the programme." },
+      { title: "Cold storage edge", summary: "Walls and doors coated during a planned shutdown window." },
+      { title: "Distribution hub", summary: "Line marking refreshed after epoxy field cure with thickness maps filed." },
+    ],
+    faqs: [
+      { question: "Do you install epoxy floors?", answer: "Yes via our specialized coatings team or coordinated install." },
+      { question: "Can forklifts run immediately?", answer: "Only after manufacturer cure times—never shortcutted." },
+    ],
+    relatedServices: [
+      { href: "/specialized-coatings/industrial-epoxy-flooring", label: "Industrial epoxy flooring" },
+      { href: "/painting/industrial", label: "Industrial painting" },
+      { href: "/painting-services", label: "Painting services hub" },
+    ],
+  },
+
+  "parking-garage-painting": {
+    meta: {
+      title: "Parking Garage Painting Contractors Gauteng | Maverick",
+      description:
+        "Parking garage and basement painting with chloride-aware preparation, deck coatings coordination, line marking, and phased programmes for occupied buildings.",
+      path: "/painting/parking-garage-painting",
+    },
+    h1: "Parking garage & basement painting",
+    eyebrow: "Commercial painting",
+    heroLead:
+      "Parking structures combine chloride exposure, tyre abrasion, and poor ventilation—generic interior specs fail quickly. Maverick sequences deck repairs, coatings, and line marking with traffic management trustees can approve.",
+    breadcrumbs: [
+      { label: "Services", href: "/services" },
+      { label: "Painting services", href: "/painting-services" },
+      { label: "Parking garage painting", href: "/painting/parking-garage-painting" },
+    ],
+    schemaServiceName: "Parking garage painting",
+    schemaServiceDescription: "Basement and parking structure painting with structural coordination in Gauteng.",
+    sections: [
+      { title: "Chloride & spalling interfaces", paragraphs: ["Spalling repairs and injection precede topcoats where deck edges show rebar activity."] },
+      { title: "Deck & wall systems", paragraphs: ["Traffic-rated coatings and anti-carbonation finishes selected per level exposure."] },
+      { title: "Phasing & safety", paragraphs: ["Bay rotation, ventilation, and fire routes remain open with documented traffic plans."] },
+    ],
+    caseAngles: [
+      { title: "Sectional-title basement", summary: "Half-grid phasing matched trustee cash flow over three quarters." },
+      { title: "Office park garage", summary: "Line marking and walls completed between Friday close and Monday open." },
+      { title: "Retail podium parking", summary: "Spalling at expansion joints repaired before deck coating renewal." },
+    ],
+    faqs: [
+      { question: "Do you repair concrete before painting?", answer: "Yes, structural defects are scoped separately then sequenced before coatings." },
+      { question: "Can cars park during works?", answer: "Typically partial occupancy with rotated bays." },
+    ],
+    relatedServices: [
+      { href: "/structural-repairs/concrete-spalling", label: "Concrete spalling repair" },
+      { href: "/painting/body-corporate", label: "Body corporate painting" },
+      { href: "/painting-services", label: "Painting services hub" },
+    ],
+  },
+
+  "road-marking": {
+    meta: {
+      title: "Road & Yard Line Marking Contractors Gauteng | Maverick",
+      description:
+        "Car park, warehouse yard, and estate road line marking with durable traffic paints, stencils, and QA documentation for commercial and industrial sites.",
+      path: "/painting/road-marking",
+    },
+    h1: "Road, yard & car park line marking",
+    eyebrow: "Commercial painting",
+    heroLead:
+      "Line marking is a safety and compliance deliverable—faded bays and ambiguous haul routes create liability. Maverick applies durable traffic coatings with surface prep, stencil control, and reflectivity where estates and plants require it.",
+    breadcrumbs: [
+      { label: "Services", href: "/services" },
+      { label: "Painting services", href: "/painting-services" },
+      { label: "Road marking", href: "/painting/road-marking" },
+    ],
+    schemaServiceName: "Road and yard line marking",
+    schemaServiceDescription: "Commercial car park and industrial yard line marking services in Gauteng.",
+    sections: [
+      { title: "Surface preparation", paragraphs: ["Oil contamination and friable old lines are removed before new demarcation adheres."] },
+      { title: "Traffic-rated materials", paragraphs: ["Cold-applied and heat-resistant systems selected for tyre scrub and Gauteng UV exposure."] },
+      { title: "Layout & compliance", paragraphs: ["Layouts can follow client drawings, SANS conventions, or insurer recommendations with as-built photos."] },
+    ],
+    caseAngles: [
+      { title: "Distribution yard", summary: "HGV routes and loading bays remarked during a 48-hour logistics pause." },
+      { title: "Office park basement", summary: "EV bays and disabled bays stencilled to updated national conventions." },
+      { title: "Estate roads", summary: "Speed calming markings refreshed before rainy season handover." },
+    ],
+    faqs: [
+      { question: "How soon can traffic resume?", answer: "Product-specific dry times; we publish hold periods before mobilisation." },
+      { question: "Do you remark warehouses?", answer: "Yes, including 5S zones and safety walkways." },
+    ],
+    relatedServices: [
+      { href: "/painting/warehouse-painting", label: "Warehouse painting" },
+      { href: "/painting/parking-garage-painting", label: "Parking garage painting" },
+      { href: "/painting-services", label: "Painting services hub" },
     ],
   },
 };

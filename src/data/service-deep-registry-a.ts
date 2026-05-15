@@ -8,6 +8,7 @@ export const serviceDeepRegistryA: Pick<
   | "rising-damp-treatment"
   | "flat-concrete-roofs"
   | "leaking-balconies"
+  | "torch-on-liquid-membranes"
   | "basement-tanking"
 > = {
   "concrete-spalling": {
@@ -631,7 +632,99 @@ export const serviceDeepRegistryA: Pick<
       { href: "/waterproofing/leaking-balconies", label: "Leaking balcony remediation" },
       { href: "/waterproofing/basement-tanking", label: "Basement & tanking systems" },
       { href: "/painting/roof-painting", label: "Roof painting & reflective coatings" },
+      { href: "/waterproofing/torch-on-liquid-membranes", label: "Torch-on & liquid membrane systems" },
       { href: "/blog/waterproofing/liquid-vs-torch-on", label: "Torch-on vs liquid guide" },
+    ],
+  },
+
+  "torch-on-liquid-membranes": {
+    meta: {
+      title: "Torch-On & Liquid Applied Membrane Systems Gauteng | Maverick",
+      description:
+        "Manufacturer-approved torch-on bitumen and liquid-applied waterproofing membranes for flat roofs, podiums, and complex details. System selection, hybrid programmes, and independent QA in Johannesburg & Pretoria.",
+      path: "/waterproofing/torch-on-liquid-membranes",
+    },
+    h1: "Torch-on & liquid applied membrane systems",
+    eyebrow: "Membrane technology",
+    heroLead:
+      "There is no universal “best” membrane, only the right system for geometry, fire constraints, substrate condition, and maintenance access. Maverick specifies torch-on, liquid polyurethane, acrylic, or hybrid programmes after moisture risk assessment, adhesion testing, and manufacturer exposure tables, so guarantees remain enforceable after handover.",
+    breadcrumbs: [
+      { label: "Services", href: "/services" },
+      { label: "Waterproofing services", href: "/waterproofing-services" },
+      { label: "Torch-on & liquid membranes", href: "/waterproofing/torch-on-liquid-membranes" },
+    ],
+    schemaServiceName: "Torch-on and liquid applied waterproofing membranes",
+    schemaServiceDescription:
+      "Torch-applied bitumen and liquid-applied membrane installation for commercial and residential waterproofing in Gauteng with detailing, QA, and manufacturer-backed warranties.",
+    sections: [
+      {
+        title: "When torch-on is the right tool",
+        paragraphs: [
+          "Torch-on remains a proven field solution for large, unobstructed concrete decks when open-flame permits, wind limits, and insurer requirements align. Seam integrity, reinforcement at corners, and protection courses are executed to manufacturer datasheets, not improvised site shortcuts.",
+        ],
+      },
+      {
+        title: "When liquid systems win",
+        paragraphs: [
+          "Liquid membranes excel at complex geometry, plant bases, penetrations, and refurbishment over aged systems where seams would be failure points. Maverick sequences primers, reinforcement fleeces, and UV-stable topcoats with dew-point and moisture-content discipline.",
+        ],
+      },
+      {
+        title: "Hybrid programmes are common",
+        paragraphs: [
+          "Office parks and sectional-title roofs often combine torch-on field areas with liquid detailing at HVAC clusters, parapets, and outlets. Maverick documents the interface between systems so warranty claims do not collapse at trade boundaries.",
+        ],
+      },
+    ],
+    caseAngles: [
+      {
+        title: "Torch-to-liquid conversion",
+        summary:
+          "Core samples showed inter-laminary moisture in an aged torch-on deck; phased drying and a liquid overlay avoided trapping vapour under a repeat torch layer.",
+      },
+      {
+        title: "Insurance-driven flame restrictions",
+        summary:
+          "A retail podium required full liquid specification after insurer declined hot works; detailing at drains matched manufacturer-approved liquid details.",
+      },
+      {
+        title: "Hybrid office roof",
+        summary:
+          "Field areas used torch-on for speed while plant bases received liquid flashings, reducing programme risk without compromising critical interfaces.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is torch-on still used in Gauteng?",
+        answer:
+          "Yes where permits, wind, and substrate conditions allow. Maverick selects systems based on risk registers, not product preference.",
+      },
+      {
+        question: "Can liquid membranes go over torch-on?",
+        answer:
+          "Sometimes, after adhesion and moisture testing. Not every aged torch-on deck is a suitable substrate.",
+      },
+      {
+        question: "What about fire risk?",
+        answer:
+          "Hot works controls, fire watches, and insurer approvals are planned. Liquid systems are specified when flame work is prohibited.",
+      },
+      {
+        question: "Do you issue QA reports?",
+        answer:
+          "Independent QA can be bundled for portfolio managers requiring third-party sign-off on film build and holiday testing.",
+      },
+      {
+        question: "How do I compare quotes?",
+        answer:
+          "Compare system type, removal scope, detailing standards, and warranty maintenance obligations, not m² bait pricing alone.",
+      },
+    ],
+    relatedServices: [
+      { href: "/waterproofing/flat-concrete-roofs", label: "Flat concrete roof waterproofing" },
+      { href: "/waterproofing/leaking-balconies", label: "Leaking balcony repair" },
+      { href: "/blog/waterproofing/liquid-vs-torch-on", label: "Torch-on vs liquid technical guide" },
+      { href: "/waterproofing-services", label: "Waterproofing hub" },
     ],
   },
 

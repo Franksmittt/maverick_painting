@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import type { BreadcrumbItem } from "@/components/breadcrumbs";
 import type { HubSpokeLink } from "@/components/hub-spoke-section";
 
 export type ServiceHubPhaseStep = {
@@ -18,6 +19,8 @@ export type ServiceHubMagazineSection = {
 export type ServiceHubPageConfig = {
   path: string;
   breadcrumbLabel: string;
+  /** Full trail for spoke pages; hubs use Services + breadcrumbLabel when omitted. */
+  breadcrumbs?: BreadcrumbItem[];
   metadata: {
     title: string;
     description: string;

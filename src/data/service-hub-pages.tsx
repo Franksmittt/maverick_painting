@@ -283,6 +283,12 @@ export const waterproofingHub: ServiceHubPageConfig = {
         description:
           "Negative- vs positive-side logic, active leak management, lift pits, and parking slabs with hydrostatic pressure risk.",
       },
+      {
+        href: "/waterproofing/torch-on-liquid-membranes",
+        label: "Torch-on & liquid applied membranes",
+        description:
+          "System selection, hybrid programmes, fire constraints, and manufacturer-backed detailing for torch-on and liquid membrane stacks.",
+      },
     ],
   },
   magazine: {
@@ -433,15 +439,27 @@ export const dampProofingHub: ServiceHubPageConfig = {
   },
   hubSpoke: {
     headingId: "damp-proofing-hub-spoke-heading",
-    title: "Rising damp deep-dive",
+    title: "Dedicated damp proofing service pages",
     intro:
-      "Rising damp procurement searches deserve a dedicated methodology page, not a paragraph buried on a generic damp hub. The spoke below unpacks injection, replastering, and documentation for technical buyers.",
+      "Each page below targets a distinct moisture mechanism and procurement keyword cluster, giving technical buyers the depth they expect before inviting a site walk-down.",
     links: [
       {
         href: "/damp-proofing/rising-damp-treatment",
         label: "Rising damp treatment",
         description:
-          "Chemical DPC injection, salt analysis, replastering protocols, and sectional-title documentation for ground-floor moisture in masonry walls.",
+          "Chemical DPC injection, salt analysis, replastering protocols, and sectional-title documentation for capillary rise in masonry walls.",
+      },
+      {
+        href: "/waterproofing/basement-tanking",
+        label: "Basement tanking & sub-structure waterproofing",
+        description:
+          "Negative- vs positive-side logic, active leak management, lift pits, and parking slabs with hydrostatic pressure risk.",
+      },
+      {
+        href: "/waterproofing/leaking-balconies",
+        label: "Leaking balcony remediation",
+        description:
+          "Sectional-title documentation, low-disruption options, exclusive-use interfaces, and coordination with structural arris repairs.",
       },
     ],
   },
@@ -462,9 +480,9 @@ export const dampProofingHub: ServiceHubPageConfig = {
         body: (
           <>
             <p className="drop-cap type-body mb-4 text-zinc-300">
-              Ground-floor staining can be a failed DPC, a bridged cavity, a leaking pipe, or condensation that never crossed a
-              chemical barrier. Injecting cream into the wrong problem wastes reserves and leaves the real defect laughing at
-              your repaint schedule.
+              It is rarely obvious which moisture mechanism you are fighting. Ground-floor staining can be a failed DPC, a bridged
+              cavity, a leaking pipe, or condensation that never crossed a chemical barrier. Injecting cream into the wrong problem
+              wastes reserves and leaves the real defect laughing at your repaint schedule.
             </p>
             <p className="type-body text-zinc-300">
               Our{" "}
@@ -613,6 +631,12 @@ export const specializedCoatingsHub: ServiceHubPageConfig = {
         label: "Marmoran wall systems",
         description:
           "Certified Marmoran application for durable architectural façades and feature walls with manufacturer-backed warranties.",
+      },
+      {
+        href: "/specialized-coatings/industrial-corrosion-control",
+        label: "Industrial corrosion control",
+        description:
+          "Zinc-rich primers, epoxies, and polyurethanes for steel, silos, and plant assets with DFT verification and shutdown-sensitive programmes.",
       },
     ],
   },
@@ -783,6 +807,36 @@ export const paintingServicesHub: ServiceHubPageConfig = {
         description:
           "IRATA-certified high-rise programmes that reduce scaffold footprints, security exposure, and programme duration on towers and complex façades.",
       },
+      {
+        href: "/painting/roof-painting",
+        label: "Roof painting & restoration",
+        description:
+          "Heat-reflective coatings, tile restoration, and IBR metal roof systems with membrane-compatible protection courses.",
+      },
+      {
+        href: "/painting/stucco-wall-coatings",
+        label: "Stucco & specialized wall coatings",
+        description:
+          "Traditional 3-coat stucco, elastomeric crack-defense, and vapor-permeable masonry finishes with signed-off mock-ups.",
+      },
+      {
+        href: "/painting/commercial-painting",
+        label: "Commercial & healthcare painting",
+        description:
+          "Low-VOC and anti-microbial coatings for offices, clinics, and retail with managed disruption and compliance documentation.",
+      },
+      {
+        href: "/painting/interior-painting",
+        label: "Interior painting",
+        description:
+          "Dustless preparation, low-VOC systems, ceiling work, and cabinet respray for occupied homes and commercial interiors.",
+      },
+      {
+        href: "/painting/warehouse-painting",
+        label: "Warehouse painting",
+        description:
+          "Industrial interior coatings, floor coordination, and production-friendly phasing for logistics facilities.",
+      },
     ],
   },
   magazine: {
@@ -936,15 +990,27 @@ export const accessSolutionsHub: ServiceHubPageConfig = {
   },
   hubSpoke: {
     headingId: "access-solutions-hub-spoke-heading",
-    title: "Rope access deep-dive",
+    title: "Dedicated access solution service pages",
     intro:
-      "High-rise painting and remedial work procurement often starts with access method. The spoke below unpacks IRATA programmes, safety documentation, and coordination with coating and structural scopes.",
+      "Each page below targets a distinct access method and procurement keyword cluster, giving technical buyers the depth they expect before inviting a site walk-down.",
     links: [
       {
         href: "/access-solutions/rope-access-painting",
         label: "Rope access painting",
         description:
           "IRATA-certified façade painting and repairs for sectional-title towers, commercial buildings, and complex architectural elevations.",
+      },
+      {
+        href: "/painting/body-corporate",
+        label: "Body corporate & sectional-title painting",
+        description:
+          "STSMA-aligned documentation, phasing, and rope or scaffold strategies for Gauteng sectional-title complexes.",
+      },
+      {
+        href: "/structural-repairs/concrete-spalling",
+        label: "Concrete spalling & concrete cancer",
+        description:
+          "Façade and podium spalling repairs often sequenced with rope access to reduce scaffold footprints on occupied estates.",
       },
     ],
   },
