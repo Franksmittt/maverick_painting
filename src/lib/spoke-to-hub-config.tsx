@@ -78,6 +78,20 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
       alt: "Retail flagship commercial painting completed during night shifts",
     },
   ],
+  "concrete-spalling": [
+    {
+      src: "/images/structural-concrete-spalling-assessment.jpg",
+      alt: "Concrete spalling assessment and breakout on a Gauteng high-rise façade",
+    },
+    {
+      src: "/images/structural-concrete-spalling-repair.jpg",
+      alt: "Rebar passivation and structural mortar repair during concrete cancer remediation",
+    },
+    {
+      src: "/images/structural-concrete-spalling-handover.jpg",
+      alt: "Completed concrete spalling repair with protective anti-carbonation finish",
+    },
+  ],
 };
 
 const linkClass = "text-secondary no-underline hover:underline";
