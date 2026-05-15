@@ -1,13 +1,12 @@
 // src/app/structural-repairs/page.tsx
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { QaProcessModule } from "@/components/qa-process-module";
-import { AccreditationsStrip } from "@/components/accreditations-strip";
 import { Wrench, Shield, Layers, Users } from "lucide-react";
-import { CtaFinalStrip } from "@/components/cta-final-strip";
 import { buildPageMetadata } from "@/lib/metadata";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { HubSpokeSection } from "@/components/hub-spoke-section";
+import { StructuralRepairsHero } from "@/components/service-hub/structural-repairs-hero";
+import { StructuralMaintenanceMagazine } from "@/components/service-hub/structural-maintenance-magazine";
+import { TrustAndCtaStrip } from "@/components/trust-and-cta-strip";
 
 // --- METADATA (SEO) ---
 export const metadata = buildPageMetadata({
@@ -28,7 +27,7 @@ const RepairProcessSteps = [
   {
     title: "Spalling & Concrete Cancer Remediation",
     description:
-      "Removal of delaminated concrete, passivation of rebar to stop rust, and repair using polymer-modified structural mortar — engineered reinstatement, not cosmetic filler.",
+      "Removal of delaminated concrete, passivation of rebar to stop rust, and repair using polymer-modified structural mortar, engineered reinstatement, not cosmetic filler.",
     icon: Shield,
   },
   {
@@ -56,36 +55,15 @@ export default function StructuralRepairsPage() {
         ]}
       />
 
-      {/* --- MODULE 1: TECHNICAL HERO --- */}
-      <section className="relative border-b-4 border-secondary bg-gray-900 px-4 py-24 md:py-40">
-        <div className="mx-auto max-w-7xl">
-          <p className="mb-3 text-xl font-medium uppercase tracking-widest text-tertiary">Structural integrity first</p>
-          <h1 className="max-w-4xl text-5xl font-extrabold uppercase leading-tight md:text-7xl">
-            Engineered concrete spalling & structural repair in Gauteng
-          </h1>
-          <p className="mt-6 max-w-3xl text-2xl font-light text-gray-400">
-            Maverick implements{" "}
-            <strong className="font-semibold text-gray-200">inspection-led remedial scopes</strong> for sectional-title,
-            commercial, and industrial assets — from rebar passivation and structural mortars through to protective coatings
-            — with documentation suitable for engineer review and manufacturer warranty paths.
-          </p>
-
-          <Button
-            asChild
-            className="mt-10 h-14 bg-secondary text-lg font-bold text-primary shadow-2xl hover:bg-[#4AD5E2] hover:scale-105"
-          >
-            <Link href="/contact">Schedule technical assessment &rarr;</Link>
-          </Button>
-        </div>
-      </section>
+      <StructuralRepairsHero />
 
       {/* --- MODULE 2: THE PROCESS (Technical Grid) --- */}
-      <section className="bg-primary px-4 py-24">
+      <section className="bg-primary px-4 py-24 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <header className="mx-auto mb-16 max-w-3xl text-center">
             <h2 className="mb-3 text-4xl font-extrabold uppercase">Our four-phase remedial approach</h2>
             <p className="text-lg font-light text-gray-400">
-              We follow manufacturer and engineer-approved protocols so repairs are auditable — not hidden beneath fresh paint.
+              We follow manufacturer and engineer-approved protocols so repairs are auditable, not hidden beneath fresh paint.
             </p>
           </header>
 
@@ -103,7 +81,7 @@ export default function StructuralRepairsPage() {
 
       <HubSpokeSection
         title="Deep-dive structural services"
-        intro="Each page below targets a distinct failure mode and procurement keyword cluster — improving topical clarity for search engines and giving technical buyers the depth they expect before inviting a site walk-down."
+        intro="Each page below targets a distinct failure mode and procurement keyword cluster, improving topical clarity for search engines and giving technical buyers the depth they expect before inviting a site walk-down."
         links={[
           {
             href: "/structural-repairs/concrete-spalling",
@@ -126,47 +104,10 @@ export default function StructuralRepairsPage() {
         ]}
       />
 
-      <section className="border-t border-white/5 bg-primary px-4 py-20">
-        <div className="mx-auto max-w-4xl space-y-5 text-base leading-relaxed text-gray-300 md:text-lg">
-          <h2 className="text-3xl font-extrabold uppercase text-white">Why structural remediation belongs in your maintenance plan</h2>
-          <p>
-            Deferred spalling repairs increase chloride loading, enlarge breakout zones, and inflate future contractor
-            risk premiums. For sectional-title schemes, visible concrete cancer also erodes trustee confidence during
-            reserve-fund discussions — especially where{" "}
-            <Link href="/painting/body-corporate" className="text-secondary hover:underline">
-              exterior painting programmes
-            </Link>{" "}
-            depend on sound arrises and balcony edges before coatings can perform.
-          </p>
-          <p>
-            Maverick separates{" "}
-            <strong className="text-white">diagnostic evidence</strong> from sales copy: hammer sounding, cover surveys,
-            moisture profiling, and photographic logs establish why a repair detail exists. Where load-bearing capacity is
-            implicated, we defer to engineer specifications rather than improvising on site.
-          </p>
-          <p>
-            Our teams coordinate naturally with{" "}
-            <Link href="/waterproofing-services" className="text-secondary hover:underline">
-              waterproofing renewals
-            </Link>{" "}
-            and{" "}
-            <Link href="/access-solutions/rope-access-painting" className="text-secondary hover:underline">
-              rope access programmes
-            </Link>{" "}
-            so temporary works, curing windows, and membrane interfaces are sequenced once — avoiding the classic dispute
-            where a painter blames a waterproofer and vice versa.
-          </p>
-          <p>
-            For procurement teams comparing Gauteng remedial contractors, request our method statement outline, safety file
-            index, and sample QA pack redacted for a recent commercial project. We are comfortable being evaluated on
-            paperwork — because that is how serious assets are run.
-          </p>
-        </div>
-      </section>
+      <StructuralMaintenanceMagazine />
 
       <QaProcessModule />
-      <AccreditationsStrip />
-      <CtaFinalStrip />
+      <TrustAndCtaStrip />
     </div>
   );
 }

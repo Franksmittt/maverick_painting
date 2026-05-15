@@ -33,7 +33,7 @@ export function PeelingPaintRepairArticle() {
               Understanding Paint Peeling: The Root Causes
             </h2>
             <p>
-              Paint peeling is not a cosmetic issue—it&apos;s a symptom of underlying
+              Paint peeling is not a cosmetic issue: it&apos;s a symptom of underlying
               substrate failure. Before applying a new coat, you must diagnose the
               root cause. The three primary culprits are <strong>moisture
               intrusion</strong>, <strong>poor surface preparation</strong>, and{" "}

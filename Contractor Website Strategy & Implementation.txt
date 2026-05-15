@@ -70,7 +70,7 @@ Target Audience
 	Protect Your Home's Value with Specialized Waterproofing & Structural Repair.
 	Stop treating the symptoms. Our diagnostic approach to rising damp and structural deterioration ensures your property is restored, protected, and beautifully finished.
 	Microcopy Library
-Microcopy—the brief, contextual text on buttons, forms, and section transitions—is critical for guiding user behavior and reducing cognitive friction. Generic terminology like "Submit" reduces conversion rates significantly.29
+Microcopy: the brief, contextual text on buttons, forms, and section transitions: is critical for guiding user behavior and reducing cognitive friction. Generic terminology like "Submit" reduces conversion rates significantly.29
 Category
 	Microcopy Lines
 	CTAs
@@ -592,7 +592,7 @@ Buyer Archetype
    * Spam Protection: Implement reCAPTCHA v3 (invisible) to prevent bot spam without adding user friction to the form submission process.
    * Data Minimization: Only collect what is strictly necessary to quote. Remove invasive fields like "Home Address" from initial inquiry forms; request the physical address only when actively scheduling the site visit.
 Accessibility, UX, and "Scannability"
-Applying WCAG 2.1 principles and recognized Usability Heuristics ensures that high-intent, high-net-worth users—often older demographics such as senior facility managers or retired trustees—encounter zero friction during the lead generation process.19
+Applying WCAG 2.1 principles and recognized Usability Heuristics ensures that high-intent, high-net-worth users: often older demographics such as senior facility managers or retired trustees: encounter zero friction during the lead generation process.19
 Priority UX and Accessibility Checklist (Top 25)
    1. 1.1.1 Non-text Content: All job site and technical images must possess highly descriptive alt-text.19
    2. 1.4.3 Contrast (Minimum): Enforce a minimum contrast ratio of 4.5:1 for normal text and 3:1 for large text across the site.20
@@ -806,7 +806,7 @@ Works cited
    35. Construction Inspection Checklists & Audit Templates - GoAudits, accessed May 14, 2026, https://goaudits.com/library/construction/
    36. Commercial Case Studies - Roof Technology Partners, accessed May 14, 2026, https://rooftechnologypartners.com/commercial-roofing/case-studies/
    37. Fresh Content for SEO Ranking: Update vs Publish (2026 Guide) - Bluehost Blog, accessed May 14, 2026, https://www.bluehost.com/blog/fresh-content-seo/
-   38. Building project gone wrong? How to rescue it—and the right Pros to finish, accessed May 14, 2026, https://www.procompare.co.za/articles/building-contractors/failed-building-project-rescue-plan
+   38. Building project gone wrong? How to rescue it: and the right Pros to finish, accessed May 14, 2026, https://www.procompare.co.za/articles/building-contractors/failed-building-project-rescue-plan
    39. WATERPROOFING RISING DAMP - AfriSam, accessed May 14, 2026, https://www.afrisam.co.za/wp-content/uploads/2025/10/46-Waterproofing-and-Rising-Damp.pdf
    40. Case Studies - Carlisle SynTec Systems, accessed May 14, 2026, https://www.carlislesyntec.com/en/Resources/Media/Case-Studies
    41. Tender Compliance Checklist for South African Businesses - TenderFlow, accessed May 14, 2026, https://www.tenderflow.co.za/blog/resources-guides/explainers/tender-compliance-checklist-south-africa/

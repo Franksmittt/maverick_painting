@@ -2,8 +2,7 @@ import Link from "next/link";
 import Script from "next/script";
 import { Button } from "@/components/ui/button";
 import { Breadcrumbs } from "@/components/breadcrumbs";
-import { CtaFinalStrip } from "@/components/cta-final-strip";
-import { AccreditationsStrip } from "@/components/accreditations-strip";
+import { TrustAndCtaStrip } from "@/components/trust-and-cta-strip";
 import { Phone, MessageCircle } from "lucide-react";
 import { siteConfig } from "@/lib/seo";
 import type { ServiceDeepPageContent } from "@/lib/service-deep-types";
@@ -72,8 +71,9 @@ export function ServiceDeepPage({ content }: { content: ServiceDeepPageContent }
 
       <Breadcrumbs items={breadcrumbs} />
 
-      <section className="relative border-b-4 border-secondary bg-gray-900 px-4 py-20 md:py-28">
-        <div className="mx-auto max-w-4xl">
+      <section className="relative border-b-4 border-secondary bg-gray-900 py-20 md:py-28">
+        <div className="page-container">
+          <div className="max-w-4xl">
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-tertiary">{eyebrow}</p>
           <h1 className="text-4xl font-extrabold uppercase leading-tight tracking-tight text-white md:text-6xl">{h1}</h1>
           <p className="mt-6 text-lg font-light leading-relaxed text-gray-300 md:text-xl">{heroLead}</p>
@@ -100,12 +100,14 @@ export function ServiceDeepPage({ content }: { content: ServiceDeepPageContent }
           </div>
           <p className="mt-6 max-w-3xl text-sm text-gray-500">
             Maverick implements engineer-specified and manufacturer-approved methodologies. We document substrate condition, preparation, and film-build
-            checkpoints — with independent QA available on major commercial scopes — so procurement teams receive defensible records, not marketing claims.
+            checkpoints, with independent QA available on major commercial scopes, so procurement teams receive defensible records, not marketing claims.
           </p>
+        </div>
         </div>
       </section>
 
-      <article className="mx-auto max-w-4xl px-4 py-16 md:py-20">
+      <article className="page-container py-16 md:py-20">
+        <div className="mx-auto max-w-4xl">
         {sections.map((section) => (
           <section key={section.title} className="mb-14 border-b border-white/10 pb-14 last:mb-0 last:border-0 last:pb-0">
             <h2 className="mb-4 text-2xl font-extrabold uppercase tracking-tight text-white md:text-3xl">{section.title}</h2>
@@ -168,10 +170,10 @@ export function ServiceDeepPage({ content }: { content: ServiceDeepPageContent }
             ))}
           </div>
         </section>
+        </div>
       </article>
 
-      <AccreditationsStrip />
-      <CtaFinalStrip />
+      <TrustAndCtaStrip />
     </div>
   );
 }

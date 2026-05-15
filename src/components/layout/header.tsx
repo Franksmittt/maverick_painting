@@ -32,19 +32,29 @@ export function Header() {
       
             "fixed top-0 left-0 w-full z-50 transition-all duration-300",
             "bg-footer-dark", // Removed backdrop-blur and transparency
-            "shadow-lg"
+            "shadow-md shadow-black/25",
         )}
     >
         <div 
-className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+className="page-container">
             <div className="flex items-center justify-between h-20">
                 
                 {/* --- 1. LOGO & ICON (Left) --- */}
                 <Link href="/" className="flex-shrink-0 flex items-center text-white rounded-lg p-1 transition 
 duration-300 hover:text-secondary space-x-2">
              
-{/* SVG Icon - Remains Green/tertiary (fill="#A9D34") */}
-                    <svg className="w-7 h-7 animate-shake" fill="#A9D34" height="800px" width="800px" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 463 463" xmlnsXlink="http://www.w3.org/1999/xlink" enableBackground="new 0 0 463 463">
+{/* SVG paint roller: brand turquoise (secondary) + slow periodic wiggle */}
+                    <svg
+                        className="h-7 w-7 shrink-0 origin-bottom text-secondary fill-current motion-reduce:animate-none animate-roller-wiggle-slow"
+                        height="800px"
+                        width="800px"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 463 463"
+                        xmlnsXlink="http://www.w3.org/1999/xlink"
+                        enableBackground="new 0 0 463 463"
+                        aria-hidden
+                    >
                         <g>
                         
 <path d="m423.5,40h-0.5v-8.5c0-17.369-14.131-31.5-31.5-31.5h-288c-17.369,0-31.5,14.131-31.5,31.5v8.5h-0.5c-12.958,0-23.5,10.542-23.5,23.5v8.5h-0.5c-17.369,0-31.5,14.131-31.5,31.5v64c0,17.369 14.131,31.5 31.5,31.5h176c9.098,0 16.5,7.402 16.5,16.5v16.5h-8.5c-12.958,0-23.5,10.542-23.5,23.5v168c0,21.78 17.72,39.5 

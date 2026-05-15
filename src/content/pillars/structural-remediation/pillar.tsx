@@ -6,8 +6,8 @@ import { Layers, ShieldCheck, Wrench } from "lucide-react";
 export function StructuralRemediationPillarPage() {
   return (
     <div className="bg-primary pt-24 text-white min-h-screen">
-      <section className="relative py-24 md:py-32 px-4 bg-gray-900 border-b-4 border-secondary">
-        <div className="max-w-6xl mx-auto">
+      <section className="relative border-b-4 border-secondary bg-gray-900 py-24 md:py-32">
+        <div className="page-container">
           <Layers className="w-12 h-12 text-tertiary mb-4" />
           <p className="text-sm uppercase tracking-[0.3em] text-gray-400">
             Structural Remediation • Concrete Restoration
@@ -29,8 +29,8 @@ export function StructuralRemediationPillarPage() {
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-primary">
-        <div className="max-w-6xl mx-auto grid gap-8 md:grid-cols-2">
+      <section className="bg-primary py-20">
+        <div className="page-container grid gap-8 md:grid-cols-2">
           <article className="p-8 bg-gray-900 rounded-2xl border border-white/10">
             <h2 className="text-3xl font-extrabold uppercase mb-4 flex items-center gap-3">
               <ShieldCheck className="w-8 h-8 text-tertiary" /> Engineering Discipline

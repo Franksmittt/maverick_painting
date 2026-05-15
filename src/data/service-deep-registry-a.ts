@@ -33,7 +33,7 @@ export const serviceDeepRegistryA: Pick<
       {
         title: "Why spalling escalates on Highveld buildings",
         paragraphs: [
-          "Carbonation, chloride ingress, poor cover, and long-term moisture paths all attack the same interface: steel inside concrete. As corrosion products expand, they blow off the concrete face — what owners call “concrete cancer.” Cosmetic patching without passivation leaves active rust underneath, so failures return within seasons.",
+          "Carbonation, chloride ingress, poor cover, and long-term moisture paths all attack the same interface: steel inside concrete. As corrosion products expand, they blow off the concrete face, what owners call “concrete cancer.” Cosmetic patching without passivation leaves active rust underneath, so failures return within seasons.",
           "In Gauteng, thermal cycling, driving rain, and UV stress on thin cover zones (parapets, balcony edges, plant-room slabs) accelerate the cycle. Maverick treats spalling as a structural maintenance discipline: we identify the failure mechanism, define the repair class, and align execution with engineer specifications and manufacturer data sheets.",
         ],
       },
@@ -58,7 +58,7 @@ export const serviceDeepRegistryA: Pick<
           {
             title: "Structural mortar build and fairing",
             paragraphs: [
-              "We reinstate section loss using polymer-modified repair mortars selected for the exposure class — parking chlorides, façade weathering, or industrial chemical atmospheres. Build-ups are layered to manufacturer limits to control shrinkage and internal heat.",
+              "We reinstate section loss using polymer-modified repair mortars selected for the exposure class, parking chlorides, façade weathering, or industrial chemical atmospheres. Build-ups are layered to manufacturer limits to control shrinkage and internal heat.",
             ],
           },
           {
@@ -72,7 +72,7 @@ export const serviceDeepRegistryA: Pick<
       {
         title: "Independent QA and manufacturer guarantees",
         paragraphs: [
-          "High-stakes portfolios increasingly require third-party coating inspection. Maverick can coordinate independent QA on film thickness, holiday detection, and adhesion pulls for major commercial packages. Workmanship and materials warranties are quoted strictly on manufacturer terms — including required maintenance cycles — so CPA expectations remain realistic.",
+          "High-stakes portfolios increasingly require third-party coating inspection. Maverick can coordinate independent QA on film thickness, holiday detection, and adhesion pulls for major commercial packages. Workmanship and materials warranties are quoted strictly on manufacturer terms, including required maintenance cycles, so CPA expectations remain realistic.",
         ],
       },
       {
@@ -175,7 +175,7 @@ export const serviceDeepRegistryA: Pick<
     h1: "Structural & leak crack injection for concrete structures",
     eyebrow: "Resin injection",
     heroLead:
-      "Cracks are not interchangeable. Dormant structural cracks often need low-viscosity epoxy to restore bond and stiffness. Active leaking cracks frequently need polyurethane grouts that react with moisture to seal flow paths. Maverick selects chemistry based on diagnosis — not whichever drum is closest to the truck.",
+      "Cracks are not interchangeable. Dormant structural cracks often need low-viscosity epoxy to restore bond and stiffness. Active leaking cracks frequently need polyurethane grouts that react with moisture to seal flow paths. Maverick selects chemistry based on diagnosis, not whichever drum is closest to the truck.",
     breadcrumbs: [
       { label: "Services", href: "/services" },
       { label: "Structural repairs", href: "/structural-repairs" },
@@ -186,7 +186,7 @@ export const serviceDeepRegistryA: Pick<
       "Epoxy and polyurethane injection services for structural and leaking cracks on Gauteng commercial, industrial, and sectional-title concrete elements.",
     sections: [
       {
-        title: "Epoxy vs polyurethane — matching chemistry to crack behaviour",
+        title: "Epoxy vs polyurethane, matching chemistry to crack behaviour",
         paragraphs: [
           "Epoxy resins can achieve high bond strength in dry, stable cracks and are often selected where structural contribution is specified. Polyurethane systems can tolerate cyclic movement and wet substrates better in certain leak-sealing contexts. Misapplication is expensive: the wrong resin fails, then owners pay twice for breakout.",
         ],
@@ -246,7 +246,7 @@ export const serviceDeepRegistryA: Pick<
       {
         question: "Can you inject from one side only?",
         answer:
-          "Sometimes, depending on thickness and leak path. Through-injection setups exist but are not always feasible — assessments define port geometry.",
+          "Sometimes, depending on thickness and leak path. Through-injection setups exist but are not always feasible, assessments define port geometry.",
       },
       {
         question: "Do you provide warranties on injection?",
@@ -276,7 +276,7 @@ export const serviceDeepRegistryA: Pick<
       {
         question: "Do you test after injection?",
         answer:
-          "Testing regimes depend on specification — holiday detection for membranes, pull-off tests for coatings, or moisture verification for leak paths.",
+          "Testing regimes depend on specification, holiday detection for membranes, pull-off tests for coatings, or moisture verification for leak paths.",
       },
     ],
     relatedServices: [
@@ -297,7 +297,7 @@ export const serviceDeepRegistryA: Pick<
     h1: "Expansion joint sealing & concrete joint rehabilitation",
     eyebrow: "Movement joints",
     heroLead:
-      "Failed joints admit water, hard particles, and chlorides straight into slab edges — the perfect recipe for spalling and deck anchor corrosion. Maverick replaces joint systems with traffic- or chemical-rated assemblies specified for the real movement service of the slab, not a one-size polyurethane bead squeezed in during a rainy afternoon.",
+      "Failed joints admit water, hard particles, and chlorides straight into slab edges, the perfect recipe for spalling and deck anchor corrosion. Maverick replaces joint systems with traffic- or chemical-rated assemblies specified for the real movement service of the slab, not a one-size polyurethane bead squeezed in during a rainy afternoon.",
     breadcrumbs: [
       { label: "Services", href: "/services" },
       { label: "Structural repairs", href: "/structural-repairs" },
@@ -357,7 +357,7 @@ export const serviceDeepRegistryA: Pick<
       {
         question: "Do you replace armoured angles?",
         answer:
-          "Where corrosion or impact damage exists, armour replacement is often mandatory — cosmetic sealant-only repairs rarely survive tyre loads.",
+          "Where corrosion or impact damage exists, armour replacement is often mandatory, cosmetic sealant-only repairs rarely survive tyre loads.",
       },
       {
         question: "What about joints over waterproofing?",
@@ -387,7 +387,7 @@ export const serviceDeepRegistryA: Pick<
       {
         question: "Do you remove old concrete arris damage?",
         answer:
-          "Yes — arris rebuilds with repair mortar precede new armour angles when edges are ragged.",
+          "Yes, arris rebuilds with repair mortar precede new armour angles when edges are ragged.",
       },
       {
         question: "What areas do you serve?",
@@ -413,7 +413,7 @@ export const serviceDeepRegistryA: Pick<
     h1: "Rising damp treatment & chemical DPC injection",
     eyebrow: "Damp proofing",
     heroLead:
-      "Rising damp is capillary moisture pulling through masonry and carrying hygroscopic salts that destroy plaster and paint finishes. Effective remediation combines a new horizontal barrier (typically chemical DPC injection at bed joint level), salt management, and compatible replastering — not a single coat of paint marketed as a miracle cure.",
+      "Rising damp is capillary moisture pulling through masonry and carrying hygroscopic salts that destroy plaster and paint finishes. Effective remediation combines a new horizontal barrier (typically chemical DPC injection at bed joint level), salt management, and compatible replastering, not a single coat of paint marketed as a miracle cure.",
     breadcrumbs: [
       { label: "Services", href: "/services" },
       { label: "Damp proofing services", href: "/damp-proofing-services" },
@@ -498,12 +498,12 @@ export const serviceDeepRegistryA: Pick<
       {
         question: "How long has Maverick treated rising damp?",
         answer:
-          "Field teams combine damp remediation experience with wider waterproofing and coating knowledge — important when multiple moisture drivers overlap.",
+          "Field teams combine damp remediation experience with wider waterproofing and coating knowledge, important when multiple moisture drivers overlap.",
       },
       {
         question: "Do you issue written specifications?",
         answer:
-          "Yes for trustees and homeowners — scope, products, exclusion zones, and redecoration sequencing are documented.",
+          "Yes for trustees and homeowners, scope, products, exclusion zones, and redecoration sequencing are documented.",
       },
       {
         question: "What is maintenance after treatment?",
@@ -529,7 +529,7 @@ export const serviceDeepRegistryA: Pick<
     h1: "Flat concrete roof waterproofing specialists",
     eyebrow: "Advanced waterproofing",
     heroLead:
-      "Flat roofs fail at interfaces: outlets, plant bases, expansion strips, and perimeter kerbs. Maverick specifies torch-on or liquid-applied systems based on geometry, occupancy fire risk, UV exposure, and maintenance access — then executes preparation, detailing, and protection courses to manufacturer standards so guarantees remain enforceable.",
+      "Flat roofs fail at interfaces: outlets, plant bases, expansion strips, and perimeter kerbs. Maverick specifies torch-on or liquid-applied systems based on geometry, occupancy fire risk, UV exposure, and maintenance access, then executes preparation, detailing, and protection courses to manufacturer standards so guarantees remain enforceable.",
     breadcrumbs: [
       { label: "Services", href: "/services" },
       { label: "Waterproofing services", href: "/waterproofing-services" },
@@ -540,7 +540,7 @@ export const serviceDeepRegistryA: Pick<
       "Commercial and residential flat slab waterproofing using torch-applied bitumen and liquid polyurethane or acrylic systems with detailing for penetrations and drainage compliance in Gauteng.",
     sections: [
       {
-        title: "Torch-on vs liquid — honest trade-offs",
+        title: "Torch-on vs liquid, honest trade-offs",
         paragraphs: [
           "Torch-on remains a proven solution for large unobstructed decks when open-flame permits, wind, and insurance constraints allow. Liquid systems excel at complex geometry, tight flashings, and over-buried details where seams are risk points. Maverick does not force a single SKU; we align system choice to risk registers.",
         ],
@@ -567,7 +567,7 @@ export const serviceDeepRegistryA: Pick<
       {
         title: "Office park HVAC cluster",
         summary:
-          "Complex plant bases received liquid detailing while field areas used torch-on for speed — hybrid programmes are common when fire and geometry conflict.",
+          "Complex plant bases received liquid detailing while field areas used torch-on for speed, hybrid programmes are common when fire and geometry conflict.",
       },
       {
         title: "Sectional-title top storey leaks",
@@ -584,7 +584,7 @@ export const serviceDeepRegistryA: Pick<
       {
         question: "Can you waterproof over an old torch-on?",
         answer:
-          "Sometimes, after adhesion tests and moisture risk assessment. Not every aged system is a suitable substrate — engineer/manufacturer guidance decides.",
+          "Sometimes, after adhesion tests and moisture risk assessment. Not every aged system is a suitable substrate, engineer/manufacturer guidance decides.",
       },
       {
         question: "How long before rain exposure after liquid application?",
@@ -594,7 +594,7 @@ export const serviceDeepRegistryA: Pick<
       {
         question: "Do you issue maintenance plans?",
         answer:
-          "Manufacturer-backed warranties typically require periodic inspections and debris clearing — we document those obligations plainly.",
+          "Manufacturer-backed warranties typically require periodic inspections and debris clearing, we document those obligations plainly.",
       },
       {
         question: "What about rooftop safety?",
@@ -614,12 +614,12 @@ export const serviceDeepRegistryA: Pick<
       {
         question: "What is the cost per m²?",
         answer:
-          "Pricing depends on removal, leveling, insulation, and system type. Site-specific measurements and risk items drive quotes — we avoid bait pricing.",
+          "Pricing depends on removal, leveling, insulation, and system type. Site-specific measurements and risk items drive quotes, we avoid bait pricing.",
       },
       {
         question: "Can you work in stages for BC cash flow?",
         answer:
-          "Yes — phased roof halves are common when reservoirs or plant cannot be shut down simultaneously.",
+          "Yes, phased roof halves are common when reservoirs or plant cannot be shut down simultaneously.",
       },
       {
         question: "Do you integrate roof painting afterwards?",
@@ -645,7 +645,7 @@ export const serviceDeepRegistryA: Pick<
     h1: "Leaking balcony waterproofing & sectional-title repairs",
     eyebrow: "Balcony & podium waterproofing",
     heroLead:
-      "Balcony leaks destroy ceilings, trigger insurance fights, and pit owners against trustees when exclusive-use maintenance is ambiguous. Maverick combines leak path diagnosis (including injection and regrouting options where appropriate) with membrane renewals that respect tile finishes, door thresholds, and drainage outlets — documented for BC minutes.",
+      "Balcony leaks destroy ceilings, trigger insurance fights, and pit owners against trustees when exclusive-use maintenance is ambiguous. Maverick combines leak path diagnosis (including injection and regrouting options where appropriate) with membrane renewals that respect tile finishes, door thresholds, and drainage outlets, documented for BC minutes.",
     breadcrumbs: [
       { label: "Services", href: "/services" },
       { label: "Waterproofing services", href: "/waterproofing-services" },
@@ -695,7 +695,7 @@ export const serviceDeepRegistryA: Pick<
       {
         question: "Who pays for balcony leaks in sectional title?",
         answer:
-          "Responsibility depends on scheme rules, exclusive-use allocations, and failure location. Maverick documents technical cause so lawyers and insurers interpret fairly — we do not adjudicate law.",
+          "Responsibility depends on scheme rules, exclusive-use allocations, and failure location. Maverick documents technical cause so lawyers and insurers interpret fairly, we do not adjudicate law.",
       },
       {
         question: "Can you fix leaks without removing tiles?",
@@ -725,7 +725,7 @@ export const serviceDeepRegistryA: Pick<
       {
         question: "Do you work with insurance assessors?",
         answer:
-          "Yes — we provide cause narratives and itemised reinstatement quotes.",
+          "Yes, we provide cause narratives and itemised reinstatement quotes.",
       },
       {
         question: "What about screed falls?",
@@ -735,7 +735,7 @@ export const serviceDeepRegistryA: Pick<
       {
         question: "Are cold-applied systems safer than torch?",
         answer:
-          "Often on occupied podiums, yes — fire risk and fume management drive system choice alongside performance.",
+          "Often on occupied podiums, yes, fire risk and fume management drive system choice alongside performance.",
       },
       {
         question: "Do you service estates only?",
@@ -761,7 +761,7 @@ export const serviceDeepRegistryA: Pick<
     h1: "Basement tanking & underground waterproofing",
     eyebrow: "Below-ground structures",
     heroLead:
-      "Hydrostatic pressure finds the weakest detail: construction joints, kicker joints, pipe penetrations, and honeycombed lifts. Maverick executes tanking as a system — not a single brush coat — sequencing surface preparation, active leak management, membrane or crystalline courses, and protection screeds exactly as the engineer and manufacturer define.",
+      "Hydrostatic pressure finds the weakest detail: construction joints, kicker joints, pipe penetrations, and honeycombed lifts. Maverick executes tanking as a system, not a single brush coat, sequencing surface preparation, active leak management, membrane or crystalline courses, and protection screeds exactly as the engineer and manufacturer define.",
     breadcrumbs: [
       { label: "Services", href: "/services" },
       { label: "Waterproofing services", href: "/waterproofing-services" },
@@ -811,7 +811,7 @@ export const serviceDeepRegistryA: Pick<
       {
         question: "Can you tank from the inside only?",
         answer:
-          "Often remedial projects must. Feasibility depends on wall construction, water load, and engineer design — Maverick implements specified systems.",
+          "Often remedial projects must. Feasibility depends on wall construction, water load, and engineer design, Maverick implements specified systems.",
       },
       {
         question: "What about crystalline admixtures?",
@@ -826,7 +826,7 @@ export const serviceDeepRegistryA: Pick<
       {
         question: "Do you excavate externally?",
         answer:
-          "Where programmes and neighbours allow, positive-side work may be advised — each site differs.",
+          "Where programmes and neighbours allow, positive-side work may be advised, each site differs.",
       },
       {
         question: "How do you protect new membranes during backfill?",
@@ -841,7 +841,7 @@ export const serviceDeepRegistryA: Pick<
       {
         question: "Can you work with waterproofing consultants?",
         answer:
-          "Yes — we welcome third-party design and hold-and-point inspections.",
+          "Yes, we welcome third-party design and hold-and-point inspections.",
       },
       {
         question: "What VOC controls exist?",

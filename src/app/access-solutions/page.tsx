@@ -2,8 +2,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { QaProcessModule } from '@/components/qa-process-module';
-import { AccreditationsStrip } from '@/components/accreditations-strip';
-import { CtaFinalStrip } from '@/components/cta-final-strip';
+import { TrustAndCtaStrip } from '@/components/trust-and-cta-strip';
 import { PersonStanding, Shield, TrendingUp, Truck } from 'lucide-react'; // REMOVED: Zap, Phone
 import { buildPageMetadata } from '@/lib/metadata';
 import { Breadcrumbs } from '@/components/breadcrumbs';
@@ -38,7 +37,7 @@ const AccessMethods = [
     },
     {
         title: "Cost & Time Efficiency",
-        description: "Selecting the optimal access method—rope access for speed, scaffolding for stability—to maximize site efficiency and reduce total project cost.",
+        description: "Selecting the optimal access method: rope access for speed, scaffolding for stability: to maximize site efficiency and reduce total project cost.",
         icon: TrendingUp,
         accentColor: "border-tertiary",
     },
@@ -55,100 +54,7 @@ export default function AccessSolutionsPage() {
                 ]}
             />
 
-            {/* --- MODULE 1: ACCESS HERO --- */}
-            <section className="relative py-24 md:py-40 px-4 bg-gray-900 border-b-4 border-secondary">
-                <div className="max-w-7xl mx-auto">
-                    <p className="text-xl font-medium uppercase tracking-widest text-tertiary mb-3">
-                        Difficult Access Expertise
-                    </p>
-                    <h1 className="text-5xl md:text-7xl font-extrabold leading-tight uppercase max-w-5xl">
-                        Rope Access & High-Access Painting Solutions.
-                    </h1>
-                    <p className="2xl font-light mt-6 max-w-4xl text-gray-400">
-                        We provide safe, cost-effective solutions for all **difficult-to-reach facades and industrial structures**. Our certified teams eliminate the complexity and liability of working at height.
-                    </p>
-
-                    <Button asChild
-                        className="mt-10 bg-secondary hover:bg-[#4AD5E2] text-primary font-bold text-lg h-14 shadow-2xl transform hover:scale-105"
-                    >
-                        <Link href="/contact">
-                            Inquire About Access Solutions &rarr;
-                        </Link>
-                    </Button>
-                </div>
-            </section>
-
-            {/* --- MODULE 2: METHODS BREAKDOWN GRID --- */}
-            <section className="py-24 px-4 bg-primary">
-                <div className="max-w-7xl mx-auto">
-                    <header className="text-center max-w-4xl mx-auto mb-16">
-                        <h2 className="text-4xl font-extrabold uppercase mb-3">
-                            Access Methods Designed for Efficiency
-                        </h2>
-                        <p className="text-lg text-gray-400 font-light">
-                            We select the optimal method—rope access, scaffolding, or mechanical lifts—to maximize safety and minimize cost and time.
-                        </p>
-                    </header>
-
-                    {/* Solutions Grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {AccessMethods.map((method, index) => (
-                            <div key={index} className={`p-6 bg-gray-900 rounded-xl shadow-xl border-t-4 ${method.accentColor}`}>
-                                <method.icon className="w-8 h-8 text-secondary mb-4" />
-                                <h3 className="text-xl font-bold uppercase mb-2 text-white">
-                                    {method.title}
-                                </h3>
-                                <p className="text-gray-400 text-sm">
-                                    {method.description}
-                                </p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            <HubSpokeSection
-                title="Rope access painting & high-level remediation"
-                intro="Access method pages should not be thin brochures. Our rope access service page documents procurement concerns: anchor engineering context, rescue planning, IRATA subcontractor governance, and sequencing with waterproofing and structural repairs."
-                links={[
-                    {
-                        href: '/access-solutions/rope-access-painting',
-                        label: 'Rope access painting & maintenance',
-                        description:
-                            'High-rise programmes, estate security inductions, hybrid scaffold economics, and integration with façade spalling and leak remediation.',
-                    },
-                ]}
-            />
-
-            <section className="border-t border-white/5 bg-primary px-4 py-20">
-                <div className="mx-auto max-w-4xl space-y-5 text-base leading-relaxed text-gray-300 md:text-lg">
-                    <h2 className="text-3xl font-extrabold uppercase text-white">Selecting the right temporary works package</h2>
-                    <p>
-                        Scaffold provides stable working platforms for heavy breakout — but can be slow to erect, expensive
-                        to secure in residential estates, and visually dominant. Rope access can shrink footprints when
-                        engineering and weather windows align. Maverick recommends{' '}
-                        <strong className="text-white">hybrid models</strong> honestly rather than forcing a single access
-                        vendor narrative.
-                    </p>
-                    <p>
-                        Tie-in: most{' '}
-                        <Link href="/painting/body-corporate" className="text-secondary hover:underline">
-                            sectional-title painting programmes
-                        </Link>{' '}
-                        above six storeys eventually evaluate rope stages for cost and security reasons — see the dedicated
-                        rope page for safety file expectations and programme examples.
-                    </p>
-                </div>
-            </section>
-
-            {/* --- MODULE 3: THE QA PROCESS (Reusing Trust Module) --- */}
-            <QaProcessModule />
-
-            {/* --- MODULE 4: ACCREDITATIONS (Visual Trust) --- */}
-            <AccreditationsStrip />
-
-            {/* --- MODULE 5: FINAL CTA STRIP (Conversion Funnel) --- */}
-            <CtaFinalStrip />
+            <TrustAndCtaStrip />
         </div>
     );
 }

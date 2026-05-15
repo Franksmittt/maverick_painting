@@ -2,8 +2,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { QaProcessModule } from '@/components/qa-process-module';
-import { AccreditationsStrip } from '@/components/accreditations-strip';
-import { CtaFinalStrip } from '@/components/cta-final-strip';
+import { TrustAndCtaStrip } from '@/components/trust-and-cta-strip';
 import { Scale, Factory, Clock, Building } from 'lucide-react'; 
 import { buildPageMetadata } from '@/lib/metadata';
 
@@ -102,11 +101,7 @@ export default function HighVolumeCommercialPaintingPage() {
             {/* --- MODULE 3: THE QA PROCESS (Reusing Trust Module) --- */}
             <QaProcessModule />
 
-            {/* --- MODULE 4: ACCREDITATIONS (Visual Trust) --- */}
-            <AccreditationsStrip />
-
-            {/* --- MODULE 5: FINAL CTA STRIP (Conversion Funnel) --- */}
-            <CtaFinalStrip />
+            <TrustAndCtaStrip />
         </div>
     );
 }

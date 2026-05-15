@@ -1,10 +1,10 @@
 // src/app/about-us/page.tsx
 import Link from 'next/link';
-import { ClipboardCheck, Medal, Scroll, Users, Phone, Wrench, Sprout, Shield } from 'lucide-react'; // Removed Layers, Home, Factory
+import { ClipboardCheck, Medal, Scroll, Users, Wrench, Sprout, Shield } from 'lucide-react'; // Removed Layers, Home, Factory
 import { buildPageMetadata } from '@/lib/metadata';
 import { Button } from '@/components/ui/button';
 import { QaProcessModule } from '@/components/qa-process-module'; // Reusing existing module
-import { AccreditationsStrip } from '@/components/accreditations-strip'; // Reusing existing module
+import { TrustAndCtaStrip } from '@/components/trust-and-cta-strip';
 
 // --- Temporary Local Components for the About Page ---
 
@@ -145,7 +145,7 @@ export default function AboutUsPage() {
                             We Don&apos;t Just Paint Over Problems.
                         </h2>
                         <p className="text-xl font-light text-gray-400">
-                            We pivot the conversation from cosmetic painting to structural protection. Visible cracks, spalling, and damp are symptoms of deeper asset failure. We handle defect identification, structural repairs, waterproofing, and specialized coatings—providing a complete turn-key solution.
+                            We pivot the conversation from cosmetic painting to structural protection. Visible cracks, spalling, and damp are symptoms of deeper asset failure. We handle defect identification, structural repairs, waterproofing, and specialized coatings: providing a complete turn-key solution.
                         </p>
                         
                         <Button asChild 
@@ -191,27 +191,7 @@ export default function AboutUsPage() {
 
             {/* --- MODULE 5: ACCREDITATIONS (Reusing existing module) --- */}
             {/* Displaying logos to build visual trust. */}
-            <AccreditationsStrip />
-
-            {/* --- MODULE 6: FINAL CTA STRIP (Conversion Funnel) --- */}
-            <section className="bg-header-dark py-12 px-4">
-                <div className="max-w-7xl mx-auto text-center">
-                    <h2 className="text-3xl font-extrabold text-white mb-4">
-                        Ready for Verifiable, Zero-Risk Quality?
-                    </h2>
-                    <p className="text-gray-400 text-lg mb-6">
-                        Contact us today to schedule an on-site assessment and receive your substrate-specific specification.
-                    </p>
-                     <Button asChild 
-                        className="bg-secondary hover:bg-[#4AD5E2] text-primary font-bold text-xl h-14 shadow-2xl transform hover:scale-105"
-                    >
-                        <a href="tel:0826277082" className="flex items-center space-x-2">
-                             <Phone className="w-6 h-6" />
-                             <span>Call Lawrence Brooks: 082 627 7082</span>
-                        </a>
-                    </Button>
-                </div>
-            </section>
+            <TrustAndCtaStrip />
 
         </div>
     );

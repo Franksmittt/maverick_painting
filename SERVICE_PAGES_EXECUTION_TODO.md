@@ -1,8 +1,8 @@
-# Maverick service pages — execution checklist
+# Maverick service pages, execution checklist
 
 Source docs: `SEO Strategy for Contractor Service Pages.txt`, `Contractor Website Strategy & Implementation.txt`, `Contractor Website Audit & Strategy.txt`.
 
-## Phase A — IA & deep spoke pages (one URL per core service)
+## Phase A, IA & deep spoke pages (one URL per core service)
 
 - [x] Add reusable `ServiceDeepPage` layout (hero, long-form sections, case angles, FAQs, JSON-LD Service + FAQPage, internal links).
 - [x] `/structural-repairs/concrete-spalling`
@@ -19,24 +19,24 @@ Source docs: `SEO Strategy for Contractor Service Pages.txt`, `Contractor Websit
 - [x] `/painting/industrial`
 - [x] `/access-solutions/rope-access-painting`
 
-## Phase B — Hub pages (pillar depth + spokes)
+## Phase B, Hub pages (pillar depth + spokes)
 
 - [x] Link hubs to all child spokes; add long-form intro + methodology copy on hubs where feasible.
 - [ ] Client follow-up: replace placeholder metrics (“years on site”, “m² completed”) with verified numbers when available.
 
-## Phase C — Routing, discovery, CRO
+## Phase C, Routing, discovery, CRO
 
 - [x] `next.config.mjs` redirects from legacy URLs to canonical spokes where applicable.
 - [x] `siteConfig.primaryPages` + homepage/service grid links.
 - [x] Sitemap picks up new URLs via `primaryPages`.
 
-## Phase D — Still recommended (from research; not all automatable)
+## Phase D, Still recommended (from research; not all automatable)
 
 - [ ] WhatsApp floating CTA + GA4 events (`click_to_call`, `generate_lead`, etc.).
 - [ ] GBP review velocity + estate case studies (unique narratives per estate).
-- [ ] Trust page PDFs: COIDA, PL, PI, CIDB, B-BBEE (redacted) — only after client supplies.
+- [ ] Trust page PDFs: COIDA, PL, PI, CIDB, B-BBEE (redacted), only after client supplies.
 
-## Phase E — Other painting verticals (existing routes)
+## Phase E, Other painting verticals (existing routes)
 
 These already have routes under `/painting/*` (commercial, roof, stucco, etc.). Expand copy using the same `ServiceDeepPage` pattern when prioritized.
 

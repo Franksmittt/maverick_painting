@@ -19,7 +19,7 @@ export const serviceDeepRegistryB: Pick<
     h1: "Industrial epoxy & polyurethane flooring systems",
     eyebrow: "Specialized coatings",
     heroLead:
-      "Forklift traffic, chemical washdowns, and thermal shock destroy generic concrete sealers. Maverick installs industrial resin screeds and coatings specified for your exposure class — with substrate preparation, dew-point discipline, and film-build verification treated as non-negotiable programme items, not line items to squeeze at the end of the job.",
+      "Forklift traffic, chemical washdowns, and thermal shock destroy generic concrete sealers. Maverick installs industrial resin screeds and coatings specified for your exposure class, with substrate preparation, dew-point discipline, and film-build verification treated as non-negotiable programme items, not line items to squeeze at the end of the job.",
     breadcrumbs: [
       { label: "Services", href: "/services" },
       { label: "Specialized coatings", href: "/specialized-coatings" },
@@ -32,13 +32,13 @@ export const serviceDeepRegistryB: Pick<
       {
         title: "Surface preparation is the real product",
         paragraphs: [
-          "Most resin failures are laitance, contamination, or moisture vapour — not the topcoat colour. Maverick profiles concrete to specified CSP ranges, installs moisture barriers when readings demand them, and only opens resin kits when environmental logs prove it is safe to proceed.",
+          "Most resin failures are laitance, contamination, or moisture vapour, not the topcoat colour. Maverick profiles concrete to specified CSP ranges, installs moisture barriers when readings demand them, and only opens resin kits when environmental logs prove it is safe to proceed.",
         ],
       },
       {
         title: "Epoxy vs polyurethane in plain language",
         paragraphs: [
-          "Epoxy systems can offer high compressive strength and economic build for dry industrial floors. Polyurethane and PU-cement systems often handle thermal shock, scratching, and certain chemical suites better — especially in food-adjacent or wet processing areas. Final choice must follow manufacturer exposure tables, not guesswork.",
+          "Epoxy systems can offer high compressive strength and economic build for dry industrial floors. Polyurethane and PU-cement systems often handle thermal shock, scratching, and certain chemical suites better, especially in food-adjacent or wet processing areas. Final choice must follow manufacturer exposure tables, not guesswork.",
         ],
       },
       {
@@ -80,7 +80,7 @@ export const serviceDeepRegistryB: Pick<
       {
         question: "Can you coat damp slabs?",
         answer:
-          "Only with engineered moisture mitigation systems — never by ignoring readings.",
+          "Only with engineered moisture mitigation systems, never by ignoring readings.",
       },
       {
         question: "How long before forklifts return?",
@@ -90,7 +90,7 @@ export const serviceDeepRegistryB: Pick<
       {
         question: "Do you provide slip ratings?",
         answer:
-          "Yes — aggregate profiles are selected to documented slip resistance bands for wet/dry areas.",
+          "Yes, aggregate profiles are selected to documented slip resistance bands for wet/dry areas.",
       },
       {
         question: "Do you remove old coatings?",
@@ -110,7 +110,7 @@ export const serviceDeepRegistryB: Pick<
       {
         question: "Do you handle joints in floors?",
         answer:
-          "Yes — we coordinate with expansion joint teams so resin fields do not bridge movement incorrectly.",
+          "Yes, we coordinate with expansion joint teams so resin fields do not bridge movement incorrectly.",
       },
       {
         question: "Are VOC certificates available?",
@@ -120,7 +120,7 @@ export const serviceDeepRegistryB: Pick<
       {
         question: "What areas do you serve?",
         answer:
-          "Gauteng industrial corridors — Midrand, Centurion, Kempton Park, Rosslyn, Wadeville, and similar nodes.",
+          "Gauteng industrial corridors, Midrand, Centurion, Kempton Park, Rosslyn, Wadeville, and similar nodes.",
       },
     ],
     relatedServices: [
@@ -141,7 +141,7 @@ export const serviceDeepRegistryB: Pick<
     h1: "Hygienic & HACCP-aligned food-grade resin flooring",
     eyebrow: "Food & beverage plants",
     heroLead:
-      "Auditors do not reward pretty topcoats — they reward integral coving, pinhole-free surfaces, drainage falls, and cleanability under real washdown temperatures. Maverick installs polyurethane-cement and compatible systems where thermal shock, fats, acids, and aggressive cleaning cycles demand more than thin-film epoxy house paint rebranded as “hygienic.”",
+      "Auditors do not reward pretty topcoats, they reward integral coving, pinhole-free surfaces, drainage falls, and cleanability under real washdown temperatures. Maverick installs polyurethane-cement and compatible systems where thermal shock, fats, acids, and aggressive cleaning cycles demand more than thin-film epoxy house paint rebranded as “hygienic.”",
     breadcrumbs: [
       { label: "Services", href: "/services" },
       { label: "Specialized coatings", href: "/specialized-coatings" },
@@ -160,7 +160,7 @@ export const serviceDeepRegistryB: Pick<
       {
         title: "Thermal shock from ovens, steam, and cold rooms",
         paragraphs: [
-          "PU cement systems tolerate wider thermal swings than standard epoxy in many food lines. Maverick aligns product choice to real process temperatures — not brochure adjectives.",
+          "PU cement systems tolerate wider thermal swings than standard epoxy in many food lines. Maverick aligns product choice to real process temperatures, not brochure adjectives.",
         ],
       },
       {
@@ -172,7 +172,7 @@ export const serviceDeepRegistryB: Pick<
       {
         title: "Compliance language (non-legal)",
         paragraphs: [
-          "Maverick references HACCP/ISO hygiene principles as operational context. Final compliance remains the facility’s certification regime — we supply system datasheets and QA records installers are typically asked for during audits.",
+          "Maverick references HACCP/ISO hygiene principles as operational context. Final compliance remains the facility’s certification regime, we supply system datasheets and QA records installers are typically asked for during audits.",
         ],
       },
     ],
@@ -197,22 +197,22 @@ export const serviceDeepRegistryB: Pick<
       {
         question: "What makes a floor “HACCP compliant”?",
         answer:
-          "Typically seamless construction, cleanable surfaces, appropriate drainage, coving, and slip control suited to wet processes — verified against facility programmes and auditor expectations. Maverick supplies product evidence; we do not certify the plant.",
+          "Typically seamless construction, cleanable surfaces, appropriate drainage, coving, and slip control suited to wet processes, verified against facility programmes and auditor expectations. Maverick supplies product evidence; we do not certify the plant.",
       },
       {
         question: "PU cement vs epoxy in wet processing?",
         answer:
-          "PU cement systems often tolerate thermal cycling and harsh cleaning better in wet food environments — final choice follows manufacturer exposure guidance.",
+          "PU cement systems often tolerate thermal cycling and harsh cleaning better in wet food environments, final choice follows manufacturer exposure guidance.",
       },
       {
         question: "How high should coving be?",
         answer:
-          "Heights follow hygienic detail drawings — commonly 100–150 mm in many food specs but project-specific.",
+          "Heights follow hygienic detail drawings, commonly 100–150 mm in many food specs but project-specific.",
       },
       {
         question: "Can you work over tiled floors?",
         answer:
-          "Usually requires removal or mechanical scarification and risk assessment — overlays on unstable tiles fail.",
+          "Usually requires removal or mechanical scarification and risk assessment, overlays on unstable tiles fail.",
       },
       {
         question: "What about drains?",
@@ -242,7 +242,7 @@ export const serviceDeepRegistryB: Pick<
       {
         question: "Do you service beverage and dairy?",
         answer:
-          "Yes — chemical exposure tables guide resin selection for lactic and caustic washdown suites.",
+          "Yes, chemical exposure tables guide resin selection for lactic and caustic washdown suites.",
       },
     ],
     relatedServices: [
@@ -257,13 +257,13 @@ export const serviceDeepRegistryB: Pick<
     meta: {
       title: "Marmoran & Decorative Wall Coating Applicators Gauteng | Maverick",
       description:
-        "Licensed-class decorative wall systems, high-build textured finishes, and exterior protective coatings for estates and commercial façades — applied with manufacturer-approved primers and QA suitable for architect sign-off.",
+        "Licensed-class decorative wall systems, high-build textured finishes, and exterior protective coatings for estates and commercial façades, applied with manufacturer-approved primers and QA suitable for architect sign-off.",
       path: "/specialized-coatings/marmoran-wall-systems",
     },
     h1: "Marmoran-class decorative wall coating systems",
     eyebrow: "Premium wall finishes",
     heroLead:
-      "High-build textured coatings fail from the primer up: alkali movement, crack bridging, and UV topcoat selection all matter. Maverick applies premium decorative systems using documented preparation, mock-ups, and wet-film control so architects and estate managers see predictable texture and colour stability — not patchy holidays after the first Highveld storm cycle.",
+      "High-build textured coatings fail from the primer up: alkali movement, crack bridging, and UV topcoat selection all matter. Maverick applies premium decorative systems using documented preparation, mock-ups, and wet-film control so architects and estate managers see predictable texture and colour stability, not patchy holidays after the first Highveld storm cycle.",
     breadcrumbs: [
       { label: "Services", href: "/services" },
       { label: "Specialized coatings", href: "/specialized-coatings" },
@@ -313,7 +313,7 @@ export const serviceDeepRegistryB: Pick<
       {
         question: "Are you licensed Marmoran applicators?",
         answer:
-          "Maverick applies manufacturer-approved decorative systems; specific brand credentials should be confirmed during tender — we do not claim exclusive licences without current paperwork.",
+          "Maverick applies manufacturer-approved decorative systems; specific brand credentials should be confirmed during tender, we do not claim exclusive licences without current paperwork.",
       },
       {
         question: "How long do textured coatings last?",
@@ -353,7 +353,7 @@ export const serviceDeepRegistryB: Pick<
       {
         question: "Interior feature walls?",
         answer:
-          "Yes — humidity control and primer systems differ from exterior; we scope accordingly.",
+          "Yes, humidity control and primer systems differ from exterior; we scope accordingly.",
       },
       {
         question: "Lead times for materials?",
@@ -392,7 +392,7 @@ export const serviceDeepRegistryB: Pick<
       {
         title: "STSMA, reserve funds, and maintenance realism",
         paragraphs: [
-          "Prescribed Management Rule 22 requires a 10-year maintenance, repair, and replacement plan supported by reserve funding. Maverick’s proposals reference maintenance alignment in operational language — not legal advice — so trustees can map painting and waterproofing cycles to cash flow without nasty special-levy surprises.",
+          "Prescribed Management Rule 22 requires a 10-year maintenance, repair, and replacement plan supported by reserve funding. Maverick’s proposals reference maintenance alignment in operational language, not legal advice, so trustees can map painting and waterproofing cycles to cash flow without nasty special-levy surprises.",
         ],
       },
       {
@@ -440,7 +440,7 @@ export const serviceDeepRegistryB: Pick<
       {
         question: "Do you help with 10-year maintenance plans?",
         answer:
-          "We supply condition data and photographic logs useful for plan updates — not legal drafting of PMR documents.",
+          "We supply condition data and photographic logs useful for plan updates, not legal drafting of PMR documents.",
       },
       {
         question: "Can you work without scaffolding?",
@@ -455,7 +455,7 @@ export const serviceDeepRegistryB: Pick<
       {
         question: "How do you handle colour changes?",
         answer:
-          "Special resolutions may be required for material aesthetic changes — Maverick supplies samples and schedules voting windows when requested.",
+          "Special resolutions may be required for material aesthetic changes, Maverick supplies samples and schedules voting windows when requested.",
       },
       {
         question: "What safety files are provided?",
@@ -480,7 +480,7 @@ export const serviceDeepRegistryB: Pick<
       {
         question: "Do you tender competitively?",
         answer:
-          "Yes — we provide itemised bills of quantities responses where tender docs demand them.",
+          "Yes, we provide itemised bills of quantities responses where tender docs demand them.",
       },
     ],
     relatedServices: [
@@ -501,7 +501,7 @@ export const serviceDeepRegistryB: Pick<
     h1: "Industrial painting & corrosion control programmes",
     eyebrow: "Industrial & facilities",
     heroLead:
-      "Industrial buyers care about corrosion cell creation, blast profile hold, and recoat windows — not influencer pastel palettes. Maverick executes coating systems matched to ISO 12944–style exposure thinking (expressed practically for South African coastal vs inland atmospheres), with QA hold points that survive insurer and engineer scrutiny during loss events.",
+      "Industrial buyers care about corrosion cell creation, blast profile hold, and recoat windows, not influencer pastel palettes. Maverick executes coating systems matched to ISO 12944–style exposure thinking (expressed practically for South African coastal vs inland atmospheres), with QA hold points that survive insurer and engineer scrutiny during loss events.",
     breadcrumbs: [
       { label: "Services", href: "/services" },
       { label: "Painting services", href: "/painting-services" },
@@ -514,7 +514,7 @@ export const serviceDeepRegistryB: Pick<
       {
         title: "Surface preparation scales with exposure",
         paragraphs: [
-          "Hand scraping suits mild environments; blast or power-tool cleaning suits aggressive corrosion zones. Maverick refuses to sign off zinc-rich primers over flash rust unless specifications allow — we protect your balance sheet from shortcut chemistry.",
+          "Hand scraping suits mild environments; blast or power-tool cleaning suits aggressive corrosion zones. Maverick refuses to sign off zinc-rich primers over flash rust unless specifications allow, we protect your balance sheet from shortcut chemistry.",
         ],
       },
       {
@@ -561,7 +561,7 @@ export const serviceDeepRegistryB: Pick<
       {
         question: "Can you work live in plants?",
         answer:
-          "Often yes with hot-work controls and food-safe containment — risk assessments define no-go zones.",
+          "Often yes with hot-work controls and food-safe containment, risk assessments define no-go zones.",
       },
       {
         question: "Do you line chemical bunds?",
@@ -576,17 +576,17 @@ export const serviceDeepRegistryB: Pick<
       {
         question: "Do you provide dft reports?",
         answer:
-          "Yes — elcometer logs and repair maps are standard on QA scopes.",
+          "Yes, elcometer logs and repair maps are standard on QA scopes.",
       },
       {
         question: "How do you handle lead paint?",
         answer:
-          "Where legacy lead is suspected, testing and compliant removal pathways are planned — never ad-hoc grinding without controls.",
+          "Where legacy lead is suspected, testing and compliant removal pathways are planned, never ad-hoc grinding without controls.",
       },
       {
         question: "Can Maverick manage sub-contractors?",
         answer:
-          "Yes — single-point accountability is available for multi-trade industrial packages.",
+          "Yes, single-point accountability is available for multi-trade industrial packages.",
       },
       {
         question: "What about colour coding for safety?",
@@ -611,13 +611,13 @@ export const serviceDeepRegistryB: Pick<
     meta: {
       title: "Rope Access Painting & High-Level Maintenance Gauteng | Maverick",
       description:
-        "IRATA-aligned rope access painting, waterproofing, and structural touch-ups for high-rise residential and commercial façades — with rescue plans, PPE discipline, and programme savings vs scaffold-only approaches.",
+        "IRATA-aligned rope access painting, waterproofing, and structural touch-ups for high-rise residential and commercial façades, with rescue plans, PPE discipline, and programme savings vs scaffold-only approaches.",
       path: "/access-solutions/rope-access-painting",
     },
     h1: "Rope access painting & difficult-access maintenance",
     eyebrow: "High access solutions",
     heroLead:
-      "Scaffold is sometimes essential — but often expensive, slow to erect in secure estates, and visually dominant. Industrial rope access (abseil) methods can shrink temporary works footprints when engineering and weather windows align. Maverick combines remedial painters with rope crews under documented rescue and rigging plans — not informal harness use.",
+      "Scaffold is sometimes essential, but often expensive, slow to erect in secure estates, and visually dominant. Industrial rope access (abseil) methods can shrink temporary works footprints when engineering and weather windows align. Maverick combines remedial painters with rope crews under documented rescue and rigging plans, not informal harness use.",
     breadcrumbs: [
       { label: "Services", href: "/services" },
       { label: "Access solutions", href: "/access-solutions" },
@@ -677,12 +677,12 @@ export const serviceDeepRegistryB: Pick<
       {
         question: "What if anchors do not exist?",
         answer:
-          "Structural engineers may specify new anchor arrays or alternative access — we do not improvise anchors.",
+          "Structural engineers may specify new anchor arrays or alternative access, we do not improvise anchors.",
       },
       {
         question: "Can rope access carry heavy materials?",
         answer:
-          "Lighter tools and coatings yes; bulk materials often need hoists or building lifts — logistics are planned.",
+          "Lighter tools and coatings yes; bulk materials often need hoists or building lifts, logistics are planned.",
       },
       {
         question: "What weather stops rope work?",
@@ -707,7 +707,7 @@ export const serviceDeepRegistryB: Pick<
       {
         question: "Scaffold still needed?",
         answer:
-          "Sometimes for heavy substrate removal or where rope rigging is impractical — we recommend hybrid models honestly.",
+          "Sometimes for heavy substrate removal or where rope rigging is impractical, we recommend hybrid models honestly.",
       },
       {
         question: "How do I request a rope survey?",

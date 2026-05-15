@@ -2,8 +2,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { QaProcessModule } from '@/components/qa-process-module';
-import { AccreditationsStrip } from '@/components/accreditations-strip';
-import { CtaFinalStrip } from '@/components/cta-final-strip';
+import { TrustAndCtaStrip } from '@/components/trust-and-cta-strip';
 import { Home, Sparkles, Droplet, Shield } from 'lucide-react';
 import { buildPageMetadata } from '@/lib/metadata';
 
@@ -127,11 +126,8 @@ export default function InteriorPaintingPage() {
             {/* --- MODULE 4: THE PROCESS IN DEPTH --- */}
             <QaProcessModule />
 
-            {/* --- MODULE 5: ACCREDITATIONS --- */}
-            <AccreditationsStrip />
-
-            {/* --- MODULE 6: FINAL CTA --- */}
-            <CtaFinalStrip />
+            {/* --- MODULE 5–6: TRUST + CTA --- */}
+            <TrustAndCtaStrip />
         </div>
     );
 }

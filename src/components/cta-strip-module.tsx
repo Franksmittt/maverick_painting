@@ -5,17 +5,9 @@ import { Phone, ArrowRight } from 'lucide-react';
 
 export function CtaStripModule() {
   return (
-    <section className="relative -mt-4 mb-16 px-4">
-        <div className="max-w-7xl mx-auto">
-            {/* The main container uses the tertiary (green) accent color for high contrast */}
-            <div className="bg-tertiary p-6 md:p-8 rounded-xl shadow-2xl 
-                        flex flex-col 
-md:flex-row items-center justify-between 
-                        gap-4 md:gap-8 
-                        transition-all duration-500 
-                        transform scale-[1.01] hover:scale-[1.02] hover:shadow-tertiary/50" // Subtle lift and glow effect
-            
->
+    <section className="section-flow">
+        <div className="page-container">
+            <div className="flex flex-col items-center justify-between gap-4 rounded-2xl border border-white/10 bg-tertiary/95 p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl hover:shadow-black/20 md:flex-row md:gap-8 md:p-8">
                 
                 {/* --- LEFT: Headline/Value Proposition --- */}
                 <div className="text-center md:text-left">

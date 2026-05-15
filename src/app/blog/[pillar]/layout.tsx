@@ -19,7 +19,7 @@ export default async function PillarLayout({ children, params }: PillarLayoutPro
   return (
     <div className="min-h-screen bg-primary/5 text-primary">
       <div className="bg-gray-950 text-white border-b border-white/10">
-        <div className="max-w-7xl mx-auto px-4 py-4 flex flex-wrap gap-4 items-center justify-between">
+        <div className="page-container flex flex-wrap items-center justify-between gap-4 py-4">
           <div className="flex items-center gap-3 text-sm uppercase tracking-wide">
             <Link href="/blog" className="text-secondary font-semibold">
               ← All Guides

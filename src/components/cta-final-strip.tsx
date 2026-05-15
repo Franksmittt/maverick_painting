@@ -1,30 +1,24 @@
 // src/components/cta-final-strip.tsx
-import React from 'react';
-import { Button } from '@/components/ui/button';
-import { Phone } from 'lucide-react';
-
-// This component centralizes the high-conversion, final Call-to-Action strip.
-// It applies the mobile-specific text removal logic for better UX (using hidden md:inline).
+import { Button } from "@/components/ui/button";
+import { Phone } from "lucide-react";
+import * as T from "@/lib/trust-cta-data";
 
 export function CtaFinalStrip() {
-    return (
-        <section className="bg-header-dark py-12 px-4 border-t border-primary/50">
-            <div className="max-w-7xl mx-auto text-center">
-                <h2 className="text-3xl font-extrabold text-white mb-4">
-                    Ready for Verifiable, Zero-Risk Quality?
-                </h2>
-                <p className="text-gray-400 text-lg mb-6">
-                    Contact us today to schedule an on-site assessment and receive your substrate-specific specification.
-                </p>
-                 <Button asChild 
-                    className="bg-secondary hover:bg-[#4AD5E2] text-primary font-bold text-xl h-14 shadow-2xl transform hover:scale-105"
-                >
-                    <a href="tel:0826277082" className="flex items-center space-x-2">
-                         <Phone className="w-6 h-6" />
-                         <span className="hidden md:inline">Call Lawrence Brooks:</span> 082 627 7082
-                    </a>
-                </Button>
-            </div>
-        </section>
-    );
+  return (
+    <section className="border-t border-primary/50 bg-header-dark py-12">
+      <div className="page-container text-center">
+        <h2 className="mb-4 text-3xl font-extrabold text-white">{T.TRUST_CTA_HEADLINE}</h2>
+        <p className="mx-auto mb-6 max-w-2xl text-lg text-gray-400">{T.TRUST_CTA_BODY}</p>
+        <Button
+          asChild
+          className="h-14 bg-secondary text-xl font-bold text-primary shadow-2xl transition hover:scale-105 hover:bg-[#4AD5E2]"
+        >
+          <a href={T.TRUST_TEL_HREF} className="flex items-center justify-center gap-2">
+            <Phone className="h-6 w-6" />
+            <span className="hidden md:inline">{T.TRUST_CONTACT_LABEL}</span> {T.TRUST_TEL_DISPLAY}
+          </a>
+        </Button>
+      </div>
+    </section>
+  );
 }

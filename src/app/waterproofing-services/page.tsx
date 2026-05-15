@@ -2,8 +2,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { QaProcessModule } from '@/components/qa-process-module';
-import { AccreditationsStrip } from '@/components/accreditations-strip';
-import { CtaFinalStrip } from '@/components/cta-final-strip';
+import { TrustAndCtaStrip } from '@/components/trust-and-cta-strip';
 import { Shield, Droplet, Layers, FileText } from 'lucide-react'; // REMOVED: Phone
 import { buildPageMetadata } from '@/lib/metadata';
 import { Breadcrumbs } from '@/components/breadcrumbs';
@@ -139,7 +138,7 @@ export default function WaterproofingPage() {
                         Water ingress is the fastest way to destroy coating warranties, accelerate concrete carbonation, and
                         force unplanned special levies. Maverick treats waterproofing as{" "}
                         <strong className="text-white">systems engineering</strong>: preparation, detailing at penetrations,
-                        compatible protection courses, and realistic maintenance — not a single-layer miracle product.
+                        compatible protection courses, and realistic maintenance, not a single-layer miracle product.
                     </p>
                     <p>
                         Our teams are comfortable working alongside{" "}
@@ -161,7 +160,7 @@ export default function WaterproofingPage() {
                         <Link href="/blog/waterproofing/leaking-balcony-fixes" className="text-secondary hover:underline">
                             low-disruption balcony repairs
                         </Link>{" "}
-                        — then invite us to translate those principles into a site-specific specification for your asset.
+                       , then invite us to translate those principles into a site-specific specification for your asset.
                     </p>
                 </div>
             </section>
@@ -170,10 +169,9 @@ export default function WaterproofingPage() {
             <QaProcessModule />
 
             {/* --- MODULE 4: ACCREDITATIONS (Visual Trust) --- */}
-            <AccreditationsStrip />
+            <TrustAndCtaStrip />
 
             {/* --- MODULE 5: FINAL CTA STRIP (Conversion Funnel) --- */}
-            <CtaFinalStrip />
         </div>
     );
 }

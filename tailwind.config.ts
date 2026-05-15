@@ -102,6 +102,15 @@ const config = {
             // COMMA ADDED AND SYNTAX CORRECTED
             "100%": { transform: "translateX(0)" }, 
         },
+        /** Idle ~4s, then a slow gentle wiggle (header paint roller) */
+        "roller-wiggle-interval": {
+          "0%, 78%": { transform: "rotate(0deg) translateX(0)" },
+          "82%": { transform: "rotate(-6deg) translateX(-1px)" },
+          "86%": { transform: "rotate(6deg) translateX(1px)" },
+          "90%": { transform: "rotate(-4deg) translateX(-1px)" },
+          "94%": { transform: "rotate(4deg) translateX(1px)" },
+          "97%, 100%": { transform: "rotate(0deg) translateX(0)" },
+        },
         "infinite-scroll": {
             from: { transform: "translateX(0)" },
             to: { transform: "translateX(-50%)" }, 
@@ -114,6 +123,7 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
         "shake": 
  "shake-logo 1.5s ease-in-out 3", 
+        "roller-wiggle-slow": "roller-wiggle-interval 5s ease-in-out infinite",
         "infinite-scroll": "infinite-scroll 25s linear infinite", 
       }, 
     },

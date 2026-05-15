@@ -8,8 +8,8 @@ export type HubSpokeLink = {
 
 export function HubSpokeSection({ title, intro, links }: { title: string; intro: string; links: HubSpokeLink[] }) {
   return (
-    <section className="border-t border-white/5 bg-gray-950 px-4 py-20">
-      <div className="mx-auto max-w-7xl">
+    <section className="border-t border-white/5 bg-gray-950 py-20">
+      <div className="page-container">
         <h2 className="text-3xl font-extrabold uppercase tracking-tight text-white md:text-4xl">{title}</h2>
         <p className="mt-4 max-w-3xl text-lg leading-relaxed text-gray-400">{intro}</p>
         <ul className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">

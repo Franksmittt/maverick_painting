@@ -32,7 +32,7 @@ export function ZincPrimerCorrosionControlArticle() {
               Sacrificial vs. Barrier Protection
             </h2>
             <p>
-              A zinc-rich primer is more than a coating—it is an engineered, sacrificial system.
+              A zinc-rich primer is more than a coating: it is an engineered, sacrificial system.
               When the coating contains &gt;80% metallic zinc by weight, it becomes conductive and
               sacrifices itself before the structural steel corrodes. Barrier primers, by contrast,
               rely purely on film build to keep oxygen and moisture away from the substrate.

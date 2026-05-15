@@ -153,7 +153,7 @@ export default function RootLayout({
 
         <Header />
 
-        <main className="flex-grow">
+        <main className="flex-grow bg-primary text-primary-foreground antialiased">
           {children}
         </main>
 

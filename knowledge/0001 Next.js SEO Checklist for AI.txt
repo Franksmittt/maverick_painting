@@ -8,7 +8,7 @@ ________________
 2. The Context Specification: integrating SEO Logic with Cursor
 Before analyzing the specific SEO requirements, it is critical to establish the mechanism by which these requirements are enforced. The user utilizes Cursor, an AI-powered IDE, which offers a unique opportunity to transform static checklists into dynamic, active audits. To achieve "best health" autonomously, the AI requires a rigorous context specification.
 2.1 The Theory of AI Context in Development
-Large Language Models (LLMs) embedded in IDEs operate on context windows. Without explicit instruction, an AI agent guesses the architectural intent. By providing a "Context Specification," we collapse the possibility space, forcing the AI to adhere to strict SEO standards rather than generic React patterns. This is particularly vital for Next.js SEO, where subtle errors—such as a missing metadataBase or a relative canonical URL—can result in catastrophic de-indexing.2
+Large Language Models (LLMs) embedded in IDEs operate on context windows. Without explicit instruction, an AI agent guesses the architectural intent. By providing a "Context Specification," we collapse the possibility space, forcing the AI to adhere to strict SEO standards rather than generic React patterns. This is particularly vital for Next.js SEO, where subtle errors: such as a missing metadataBase or a relative canonical URL: can result in catastrophic de-indexing.2
 2.2 The .cursorrules Architecture
 The .cursorrules file acts as the "Constitution" for the project. It instructs the AI on the non-negotiable standards of the codebase. For an SEO-focused project, this file must explicitly ban anti-patterns (like using <img> tags) and mandate the use of the Metadata API.
 Table 1: Key Directives for SEO-Focused .cursorrules
@@ -34,14 +34,14 @@ Directive Category
 	Prevents runtime errors during metadata generation which could cause 500 errors for crawlers.
 	2.3 The SEO State File (SEO_AUDIT.md)
 To enable the AI to "determine where we are," we introduce the concept of a "State File." This is a living document in the repository root. The developer does not manually check boxes; rather, they prompt Cursor to "Audit the project against SEO_AUDIT.md." The AI then reads the file, scans the code, and updates the status.
-This approach creates a verifiable audit trail. When the project is ready for sign-off, the SEO_AUDIT.md serves as the proof of work, showing that every requirement—from canonicalization to structured data—has been verified against the actual code.
+This approach creates a verifiable audit trail. When the project is ready for sign-off, the SEO_AUDIT.md serves as the proof of work, showing that every requirement: from canonicalization to structured data: has been verified against the actual code.
 ________________
 3. Foundational SEO: The Metadata API and Route Configuration
 The bedrock of Next.js SEO is the Metadata API. Introduced to replace next/head, this API allows for the recursive definition of tags that are merged and overridden as the user traverses the route tree. Understanding its resolution logic is prerequisite to a healthy website.
 3.1 The Root Layout (app/layout.tsx)
 The root layout is the immutable shell of the application. SEO errors here propagate to every single page.
 3.1.1 The Criticality of metadataBase
-One of the most frequent and damaging errors in modern Next.js applications is the omission of metadataBase. As identified in technical audits, missing this property prevents Next.js from resolving relative URLs for Open Graph images and Twitter cards.2 When a URL like /og-image.png is passed without a base, social crawlers (Facebook, LinkedIn) receive a broken link, resulting in link previews with no image—a disaster for click-through rates (CTR).
+One of the most frequent and damaging errors in modern Next.js applications is the omission of metadataBase. As identified in technical audits, missing this property prevents Next.js from resolving relative URLs for Open Graph images and Twitter cards.2 When a URL like /og-image.png is passed without a base, social crawlers (Facebook, LinkedIn) receive a broken link, resulting in link previews with no image: a disaster for click-through rates (CTR).
 * Implementation Requirement: The metadataBase must be explicitly defined using the new URL() constructor, typically referencing an environment variable (process.env.NEXT_PUBLIC_SITE_URL) to ensure correct resolution across staging and production environments.2
 * Implication: This setting decouples the file system from the domain, allowing developers to use simple relative paths in their components while ensuring absolute URL compliance in the rendered HTML.
 3.1.2 Title Templates and Default Fallbacks
@@ -258,4 +258,4 @@ VI. Sign-Off Quality Gate
    * [ ] Lighthouse: Local audit shows all Green metrics.
 ________________
 8. Conclusion
-The construction of a Next.js website "in the best health possible" is an exercise in precision. It requires navigating the complex interplay between server-side rendering, metadata resolution, and client-side performance. By adhering to the protocols outlined in this report—specifically the use of the Metadata API, the enforcement of Core Web Vital best practices, and the integration of automated auditing via Cursor—developers can deliver applications that are not only robust and fast but fundamentally optimized for discovery. This document serves as the roadmap for that journey, from the first line of code to the final sign-off.
+The construction of a Next.js website "in the best health possible" is an exercise in precision. It requires navigating the complex interplay between server-side rendering, metadata resolution, and client-side performance. By adhering to the protocols outlined in this report: specifically the use of the Metadata API, the enforcement of Core Web Vital best practices, and the integration of automated auditing via Cursor: developers can deliver applications that are not only robust and fast but fundamentally optimized for discovery. This document serves as the roadmap for that journey, from the first line of code to the final sign-off.

@@ -1,8 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { CtaFinalStrip } from "@/components/cta-final-strip";
-import { AccreditationsStrip } from "@/components/accreditations-strip";
+import { TrustAndCtaStrip } from "@/components/trust-and-cta-strip";
 import { MapPin, CheckSquare, Shield, Phone } from "lucide-react";
 import { serviceLocations, getLocation } from "@/data/locations";
 import { siteConfig } from "@/lib/seo";
@@ -107,8 +106,7 @@ export default async function LocationPage({ params }: { params: Promise<{ city:
         </div>
       </section>
 
-      <AccreditationsStrip />
-      <CtaFinalStrip />
+      <TrustAndCtaStrip />
     </div>
   );
 }
