@@ -38,16 +38,16 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
   ],
   "hygienic-food-grade": [
     {
-      src: "/images/hygienic-food-grade-bakery.jpg",
-      alt: "Hygienic resin flooring in a commercial bakery production area",
+      src: "/images/coatings-hygienic-food-grade-01.jpg",
+      alt: "Hygienic PU-cement or resin flooring in a food or beverage production area in Gauteng",
     },
     {
-      src: "/images/hygienic-food-grade-abattoir.jpg",
-      alt: "Food-grade floor screed with coving and drainage in an abattoir facility",
+      src: "/images/coatings-hygienic-food-grade-02.jpg",
+      alt: "Seamless hygienic floor with integral coving and drainage detailing for HACCP-driven facilities",
     },
     {
-      src: "/images/hygienic-food-grade-bottling.jpg",
-      alt: "Chemical-resistant hygienic flooring and bund lining at a bottling plant",
+      src: "/images/coatings-hygienic-food-grade-03.jpg",
+      alt: "Completed food-grade resin floor system ready for washdown and audit sign-off",
     },
   ],
   "body-corporate": [
@@ -132,6 +132,34 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
     {
       src: "/images/damp-rising-damp-replaster.jpg",
       alt: "Salt-retardant replastering and compatible finishes after rising damp remediation",
+    },
+  ],
+  "industrial-epoxy-flooring": [
+    {
+      src: "/images/coatings-industrial-epoxy-surface-prep.jpg",
+      alt: "Diamond grinding and surface preparation for industrial epoxy flooring in a Gauteng warehouse or plant",
+    },
+    {
+      src: "/images/coatings-industrial-epoxy-resin-application.jpg",
+      alt: "Multi-coat epoxy or polyurethane resin flooring application with controlled film build",
+    },
+    {
+      src: "/images/coatings-industrial-epoxy-completed-floor.jpg",
+      alt: "Completed industrial epoxy floor system ready for traffic and line-marking handover",
+    },
+  ],
+  "marmoran-wall-systems": [
+    {
+      src: "/images/coatings-marmoran-wall-01.jpg",
+      alt: "Marmoran-class decorative wall preparation and high-build textured coating work on a Gauteng façade",
+    },
+    {
+      src: "/images/coatings-marmoran-wall-02.jpg",
+      alt: "Premium textured wall coating application with granule control and signed-off mock-up reference",
+    },
+    {
+      src: "/images/coatings-marmoran-wall-03.jpg",
+      alt: "Completed Marmoran-style decorative wall finish on an estate or commercial elevation",
     },
   ],
 };
