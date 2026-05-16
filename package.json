@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "validate:sitemap": "npx tsx scripts/validate-sitemap.ts",
     "postinstall": "partytown copylib public/~partytown"
   },
   "dependencies": {
@@ -42,6 +43,7 @@
     "eslint-config-next": "^16.1.1",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
+    "tsx": "^4.19.0",
     "typescript": "^5"
   }
 }

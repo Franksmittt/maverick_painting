@@ -1,26 +1,317 @@
-📋 **PROJECT STATUS: UPDATED 2025-01-27**
+📋 **PROJECT STATUS: UPDATED 2026-05-16 (sitemap + GSC ready)**
 
-**Recent Updates:**
-- ✅ **Next.js 16 Upgrade:** Successfully upgraded from Next.js 14.2.33 to 16.1.1
-- ✅ **React 19:** Updated to React 19.2.3 and React DOM 19.2.3
-- ✅ **ESLint 9:** Updated to ESLint 9.39.2 (required for Next.js 16)
-- ✅ **Async Params:** All dynamic routes updated for Next.js 16 async params requirement
-- ✅ **Cache API:** Updated revalidateTag calls to include required cache profile parameter
-- ✅ Added 7 new location pages (Benoni, Kempton Park, Alberton, Johannesburg North, Serengeti Estate, Ebotse Estate, Meyersdal Estate)
-- ✅ Added 5 new service pages (roof-painting, interior-painting, parking-garage-painting, road-marking, warehouse-painting)
-- ✅ Added new blog article (peeling-paint-repair) to structural-remediation pillar
-- ✅ Enhanced keywords with 15+ new high-intent terms
-- ✅ Updated sitemap to include all new pages
-- ✅ Build successful: 63 pages generated (Next.js 16)
-- ✅ All SEO requirements verified and complete
-- ✅ Zero SEO regressions after upgrade
+**Repository:** https://github.com/Franksmittt/maverick_painting  
+**Production URL:** https://www.maverickpainting.co.za (`NEXT_PUBLIC_SITE_URL` / `src/lib/seo.ts`)  
+**Google Search Console sitemap:** https://www.maverickpainting.co.za/sitemap.xml (**93 indexable URLs**)
 
-**Total Pages:** 63 (13 new pages added, 1 removed due to Next.js 16 edge runtime)
-**Location Pages:** 11 (expanded from 4)
-**Service Pages:** 9 painting pages (expanded from 4)
-**Blog Articles:** 8 total (1 new problem-solution article)
-**Next.js Version:** 16.1.1 (upgraded from 14.2.33)
-**React Version:** 19.2.3 (upgraded from 18.3.1)
+**Build:** `npm run build` → **99 routes** (93 in sitemap + 6 non-indexable: API, OG image, `_not-found`, etc.)  
+**Validate sitemap:** `npm run build` then `npm run validate:sitemap` → writes `sitemap-urls.txt` + `sitemap-export.xml`
+
+---
+
+## Executive summary
+
+Maverick Painting is a **Next.js 16 App Router** marketing site for a Gauteng structural repairs, waterproofing, industrial coatings, and painting contractor. Content is **data-driven** (TypeScript registries + JSON pillars), statically generated at build time, and optimized for **local SEO** (East / West / South Rand + Central Gauteng), **STSMA/body corporate** intent, and **industrial/logistics** keywords.
+
+**Build status:** `npm run build` succeeds — **99 static routes** (as of 2026-05-16).
+
+| Metric | Count |
+|--------|------:|
+| Total generated routes | 99 |
+| Core/marketing pages | 12 |
+| Solution pages | 3 |
+| Service hub pages | 6 |
+| Service spoke (deep) pages | 22 |
+| Blog pillar pages | 3 |
+| Blog cluster articles (pillar) | 8 |
+| Standalone blog guides (flat URLs) | 12 |
+| Regional location hubs | 4 |
+| City location pages | 17 |
+| Project case studies | 6 |
+| API / dynamic | 3 (auth, revalidate, OG image) |
+
+**Stack:** Next.js 16.1.1 · React 19.2.3 · TypeScript · Tailwind CSS · Partytown (GTM) · NextAuth (scaffold) · Drizzle/Postgres (scaffold)
+
+---
+
+## Architecture overview
+
+### Hub → spoke service model (6 hubs, 22 spokes)
+
+Transactional pages use a **hub** (category landing) + **spoke** (specialist service) pattern:
+
+| Hub route | Spokes |
+|-----------|--------|
+| `/structural-repairs` | `/concrete-spalling`, `/crack-injection`, `/expansion-joint-sealing` |
+| `/waterproofing-services` | `/flat-concrete-roofs`, `/leaking-balconies`, `/torch-on-liquid-membranes`, `/basement-tanking` |
+| `/damp-proofing-services` | `/rising-damp-treatment` |
+| `/specialized-coatings` | `/industrial-epoxy-flooring`, `/hygienic-food-grade`, `/marmoran-wall-systems`, `/industrial-corrosion-control` |
+| `/painting-services` | `/body-corporate`, `/industrial`, `/commercial-painting`, `/high-volume-commercial-painting`, `/roof-painting`, `/interior-painting`, `/parking-garage-painting`, `/road-marking`, `/warehouse-painting`, `/stucco-wall-coatings` |
+| `/access-solutions` | `/rope-access-painting` |
+
+**Rendering pipeline:**
+- Hub UI: `src/data/service-hub-pages.tsx` → `src/components/service-hub/service-hub-page.tsx`
+- Spoke copy: `src/data/service-deep-registry-a.ts` + `service-deep-registry-b.ts` → merged in `service-deep-registry.ts`
+- Spoke → hub config: `src/lib/spoke-to-hub-config.tsx` (approach steps, magazine images, FAQs, sibling links)
+- Spoke wrapper: `src/components/service-deep-page.tsx` (thin `page.tsx` per spoke)
+
+### Audience solution pages (conversion)
+
+| Route | Purpose |
+|-------|---------|
+| `/solutions/for-body-corporates` | STSMA, MRRP, CSOS, trustee liability, sectional-title programmes |
+| `/solutions/for-developers` | SANS 10400, handover QA, latent defect mitigation |
+| `/solutions/for-homeowners` | Highveld climate, damp, estates |
+
+Layout: `src/components/solution-page-layout.tsx`
+
+### Blog content (3 pillars + 8 clusters + 12 standalone)
+
+**Pillar index:** `/blog`  
+**Pillars:** `/blog/waterproofing`, `/blog/industrial`, `/blog/structural-remediation`
+
+**Pillar cluster articles (8):**
+- `/blog/waterproofing/liquid-vs-torch-on`
+- `/blog/waterproofing/leaking-balcony-fixes`
+- `/blog/waterproofing/rising-damp-guide`
+- `/blog/industrial/zinc-primer-corrosion-control`
+- `/blog/industrial/fast-curing-floors`
+- `/blog/industrial/ohs-access-liability`
+- `/blog/structural-remediation/concrete-spalling-repair`
+- `/blog/structural-remediation/peeling-paint-repair`
+
+**Standalone guides (12)** — SEO Content Plan URLs, rendered via `blog/[pillar]/page.tsx` when slug matches `standalone-blog-articles.ts`:
+- `/blog/stsma-10-year-maintenance-plan-guide`
+- `/blog/sectional-title-reserve-fund-calculation`
+- `/blog/rising-damp-vs-condensation-gauteng`
+- `/blog/highveld-climate-concrete-roof-damage`
+- `/blog/positive-negative-side-waterproofing`
+- `/blog/sans-731-warehouse-line-marking`
+- `/blog/parking-garage-concrete-spalling-repair`
+- `/blog/r638-food-safety-flooring-regulations`
+- `/blog/rope-access-vs-scaffolding-costs`
+- `/blog/industrial-expansion-joint-failure`
+- `/blog/roof-leak-insurance-claims-maintenance`
+- `/blog/property-developer-handover-checklist`
+
+**Blog data:** `src/content/pillars.json`, `src/lib/pillars.ts`, `src/content/pillars/**`, `src/data/standalone-blog-articles.ts`, `src/components/blog/standalone-blog-article.tsx`
+
+---
+
+## Complete route inventory (99 pages)
+
+### Core & marketing (12)
+- `/` — Homepage (hero, services grid, projects, QA, accreditations strip)
+- `/about-us` — Authority / experience (owner-supervised positioning)
+- `/services` — Services overview + **visible FAQ** section
+- `/contact` — Quote / contact
+- `/gallery` — 64 images with SEO alt text (`gallery-images.ts`)
+- `/projects` — Portfolio index
+- `/projects/[slug]` — 6 case studies: munyaka, the-blyde, celebration, eastlands, kikuyu, greencreek
+- `/accreditations` — Manufacturer applicators + compliance (rebuilt; was empty shell)
+- `/our-process-independent-qa` — Independent QA differentiator
+- `/privacy`, `/terms`
+- `/blog` — Blog index with featured guides (no placeholders)
+
+### Solutions (3)
+- `/solutions/for-body-corporates`
+- `/solutions/for-developers`
+- `/solutions/for-homeowners`
+
+### Service hubs (6)
+- `/structural-repairs`
+- `/waterproofing-services`
+- `/damp-proofing-services`
+- `/specialized-coatings`
+- `/painting-services`
+- `/access-solutions`
+
+### Service spokes (22)
+**Structural:** `/structural-repairs/concrete-spalling`, `/crack-injection`, `/expansion-joint-sealing`  
+**Waterproofing:** `/waterproofing/flat-concrete-roofs`, `/leaking-balconies`, `/torch-on-liquid-membranes`, `/basement-tanking`  
+**Damp:** `/damp-proofing/rising-damp-treatment`  
+**Coatings:** `/specialized-coatings/industrial-epoxy-flooring`, `/hygienic-food-grade`, `/marmoran-wall-systems`, `/industrial-corrosion-control`  
+**Painting:** `/painting/body-corporate`, `/industrial`, `/commercial-painting`, `/high-volume-commercial-painting`, `/roof-painting`, `/interior-painting`, `/parking-garage-painting`, `/road-marking`, `/warehouse-painting`, `/stucco-wall-coatings`  
+**Access:** `/access-solutions/rope-access-painting`
+
+### Locations — regional hubs (4)
+- `/locations/east-rand` — Industrial, logistics, HACCP, line marking
+- `/locations/west-rand` — Damp, basement tanking, spalling
+- `/locations/south-rand` — Body corporate, STSMA, balconies
+- `/locations/central` — Sandton, Midrand, Centurion, Pretoria East
+
+### Locations — city pages (17)
+`midrand`, `sandton`, `centurion`, `pretoria-east`, `benoni`, `kempton-park`, `boksburg`, `germiston`, `isando`, `alberton`, `glenvista`, `roodepoort`, `krugersdorp`, `johannesburg-north`, `serengeti-estate`, `ebotse-estate`, `meyersdal-estate`  
+→ `/locations/[city]` — each has `regionalNarrative`, `primaryServiceLinks`, `region`, LocalBusiness schema
+
+### Blog (23 indexable article routes)
+- 3 pillar indexes + 8 cluster articles + 12 standalone guides (listed above)
+
+### System
+- `/robots.txt`, `/sitemap.xml`
+- `/api/auth/[...nextauth]`, `/api/revalidate`
+- `blog/[pillar]/[cluster]/opengraph-image` (edge OG)
+
+---
+
+## SEO implementation (completed)
+
+### Technical SEO
+| Area | Implementation |
+|------|----------------|
+| Metadata | `src/lib/metadata.ts` — `buildPageMetadata()`, strips duplicate `\| Maverick` suffix; layout template adds brand once |
+| Canonical | Per-page via `metadata.alternates.canonical` |
+| Sitemap | **`src/lib/sitemap-builder.ts`** (single source of truth) → `src/app/sitemap.ts` generates live `/sitemap.xml`. Auto-includes: core, solutions, 6 hubs, 22 spokes (registry), blog (pillars + clusters + 12 standalone), 4 regional + 17 city locations, 6 projects. **93 URLs, deduped, HTTPS www, no trailing slashes.** |
+| Robots | `src/app/robots.ts` — production points to `{baseUrl}/sitemap.xml`; disallows `/api/` only |
+| Sitemap exports | `sitemap-urls.txt` (plain list), `sitemap-export.xml` (review copy; **do not** place in `public/` — would override dynamic sitemap) |
+| JSON-LD | Organization (layout), Service/LocalBusiness (locations), FAQPage (visible FAQs), Article/CollectionPage (blog), BreadcrumbList (blog clusters) |
+| Keywords | `siteConfig.keywords` in `src/lib/seo.ts` (40+ terms) |
+| OG images | Blog cluster `opengraph-image.tsx`; default site OG in layout |
+
+### On-page / content SEO (2026 rollout)
+- **Visible FAQs** on all 6 service hubs (`src/data/hub-faqs.ts` + `src/components/faq-section.tsx`)
+- **Visible FAQs** on all 22 spokes (from registry, max 8 via `spoke-to-hub-config`)
+- **Visible FAQs** on `/services` (removed hidden-only FAQ schema)
+- **Removed unsubstantiated** `aggregateRating` schema from homepage and services
+- **Hub vs spoke title differentiation** (e.g. structural hub no longer cannibalizes “concrete spalling”)
+- **Pricing / NHBRC FAQs** on high-intent spokes: concrete spalling, body corporate, leaking balconies; hub FAQs for structural + waterproofing
+- **Industrial vs corrosion spoke** de-duplicated copy and case studies
+- **12 standalone blog articles** aligned to `Maverick Painting SEO Content Plan.txt`
+- **Regional narrative** on all 17 city pages + 4 regional hub pages
+- **Gallery:** 64 images with descriptive alt text (`scripts/update-gallery-alts.mjs`)
+- **Internal linking:** footer solutions + regional links; city → regional hub; blog CTAs → money pages
+- **Accreditations page** fully rebuilt (was TrustAndCtaStrip only)
+- **Solution pages** rebuilt with `solution-page-layout.tsx` (STSMA, SANS, Highveld copy)
+
+### Positioning & geography (content strategy)
+- **East Rand:** industrial coatings, HACCP, SANS line marking, warehouse/HEA airless
+- **West Rand:** rising damp, negative-side tanking, mining-legacy hydrology
+- **South Rand:** STSMA, body corporate, balcony waterproofing, estates
+- **Central:** Sandton towers, Midrand logistics, Centurion techno parks
+- **Differentiator:** Independent third-party QA on commercial and sectional-title scopes
+
+### Research files (repo root, not committed to git)
+- `Maverick Painting SEO Content Strategy.txt`
+- `Maverick Painting SEO Content Plan.txt`
+- `Maverick Painting Keyword Research Matrix.txt`
+- `Maverick Painting Content Strategy Research.txt`
+- `Maverick Painting Buyer Persona Research.txt`
+- `Maverick Painting Competitor Analysis.txt`
+
+### Deferred / future (Phases 6–8 per research plan)
+- Additional programmatic “service × location” pages (only if unique copy justified)
+- Further blog expansion beyond 20 total articles
+- Search Console / Core Web Vitals monitoring playbook
+- Optional: commit research `.txt` files to repo
+
+---
+
+## Components inventory (`src/components/`)
+
+| Component | Role |
+|-----------|------|
+| `layout/header.tsx`, `footer.tsx`, `mobile-nav.tsx` | Global nav; footer includes solutions + regional links (`footer-data.ts`) |
+| `hero-section.tsx`, `hero-contact-form.tsx` | Homepage hero |
+| `service-expertise-grid.tsx`, `service-grid-item.tsx` | Homepage / services discovery (9 tiles) |
+| `services/services-overview.tsx` | `/services` pillar tags (`service-spoke-links.ts`) |
+| `service-hub/*` | Hub hero, approach, magazine, hub page shell |
+| `service-deep-page.tsx` | Spoke page shell |
+| `hub-spoke-section.tsx` | Related spoke links |
+| `faq-section.tsx` | Visible accordion + FAQPage JSON-LD |
+| `solution-page-layout.tsx` | Audience solution pages |
+| `blog/standalone-blog-article.tsx` | Standalone blog renderer |
+| `locations/regional-hub-page.tsx` | Regional location hubs |
+| `breadcrumbs.tsx` | Breadcrumb UI |
+| `project-showcase-module.tsx`, `project-showcase-image-card.tsx` | Homepage projects |
+| `qa-process-module.tsx` | QA process strip |
+| `accreditations-strip.tsx`, `client-logo-strip.tsx` | Trust / authority |
+| `trust-strip-mobile-carousel.tsx`, `trust-and-cta-strip.tsx` | Trust + CTA |
+| `cta-strip-module.tsx`, `cta-final-strip.tsx` | Conversion strips |
+| `gallery/gallery-grid.tsx` | Gallery page |
+| `analytics/gtm-partytown.tsx` | GTM via Partytown |
+| `ui/button.tsx`, `ui/card.tsx` | shadcn-style primitives |
+
+---
+
+## Data layer (`src/data/` + `src/lib/`)
+
+| File | Purpose |
+|------|---------|
+| `service-hub-pages.tsx` | 6 hub definitions (hero, approach, magazine, hubSpoke links) |
+| `service-deep-registry-a.ts` | Spokes: structural, damp, waterproofing (set A) |
+| `service-deep-registry-b.ts` | Spokes: coatings, painting, access (set B) |
+| `service-deep-registry.ts` | Merged registry export |
+| `service-spoke-links.ts` | `/services` tag links per pillar |
+| `hub-faqs.ts` | Visible FAQs for 6 hubs |
+| `locations.ts` | 17 cities with region, narrative, service links |
+| `location-regions.ts` | 4 regional hub configs |
+| `standalone-blog-articles.ts` | 12 flat-URL blog articles (content + metadata) |
+| `projects.ts` | 6 project case studies |
+| `gallery-images.ts` | 64 gallery images + SEO alts |
+| `pillars.ts` | Re-export from `content/pillars.json` |
+| `seo.ts` | `siteConfig`, keywords, address, social (`primaryPages` deprecated — sitemap uses `sitemap-builder.ts`) |
+| `metadata.ts` | `buildPageMetadata`, title normalization (strips duplicate `\| Maverick`) |
+| `sitemap-builder.ts` | **`getAllSitemapPathEntries()`, `buildSitemapEntries()`** — canonical URL list for GSC |
+| `pillars.ts` (lib) | Pillar/cluster components map + JSON-LD helpers |
+| `spoke-to-hub-config.tsx` | Spoke → `ServiceHubPageConfig` adapter |
+| `standalone-blog.ts` | Standalone article getters + static params |
+
+---
+
+## Scripts & npm commands
+
+| Command / script | Purpose |
+|------------------|---------|
+| `npm run build` | Production build (99 routes); generates `/sitemap.xml` |
+| `npm run validate:sitemap` | Validates 93 URLs vs prerender manifest; writes `sitemap-urls.txt` + `sitemap-export.xml` (requires `npm run build` first) |
+| `npm run dev` | Local development |
+| `scripts/validate-sitemap.ts` | Sitemap validation (run via `validate:sitemap`; uses `tsx` devDependency) |
+| `scripts/update-gallery-alts.mjs` | Refreshes SEO alt text on 64 gallery images |
+| `scripts/update-spoke-pages.mjs` | Spoke page maintenance helper |
+| `mvvp_project_scanner.py` | Regenerates file tree dump in this document (legacy bulk export) |
+| `safe_seo_installer.py` / `undo_seo_changes.py` | Legacy SEO bootstrap (historical) |
+
+### Google Search Console checklist (post-deploy)
+1. Deploy latest `main` to production hosting.
+2. Open https://www.maverickpainting.co.za/sitemap.xml — confirm **93** `<url>` entries.
+3. Open https://www.maverickpainting.co.za/robots.txt — confirm `Sitemap: https://www.maverickpainting.co.za/sitemap.xml`.
+4. Search Console → **Sitemaps** → submit `sitemap.xml` (or full URL above).
+5. Optional: URL Inspection on `/`, `/locations/east-rand`, `/blog/stsma-10-year-maintenance-plan-guide`.
+
+### Sitemap URL breakdown (93 total)
+| Category | Count |
+|----------|------:|
+| Core & marketing | 10 |
+| Solutions | 3 |
+| Service hubs | 6 |
+| Service spokes | 22 |
+| Blog (index + pillars + clusters + standalone) | 24 |
+| Regional location hubs | 4 |
+| City locations | 17 |
+| Project case studies | 6 |
+| **Excluded from sitemap** | `/api/*`, `/_not-found`, `opengraph-image`, favicon |
+
+---
+
+## Git & deployment notes
+
+- **Branch:** `main` on https://github.com/Franksmittt/maverick_painting
+- **Do not commit:** `.next/`, `.env.local`, research `Maverick Painting *.txt` (optional)
+- **Committed exports:** `sitemap-urls.txt`, `sitemap-export.xml` (reference for GSC review)
+- **tsconfig:** `scripts/` excluded from Next.js typecheck (utility scripts)
+- **Revalidate:** `POST /api/revalidate` (see `docs/revalidation-webhook.md`)
+
+---
+
+## Historical changelog (condensed)
+
+**2025-01-27:** Next.js 16 / React 19 upgrade; 63 routes; 11 locations; 8 blog clusters; expanded painting spokes.  
+**2026-05-16 (AM):** Full SEO content rollout — 99 routes; 17 cities + 4 regional hubs; 12 standalone blogs; visible FAQs; accreditations/solutions rebuild; metadata title fixes; registry copy for all 22 spokes.  
+**2026-05-16 (PM):** Sitemap rebuilt via `sitemap-builder.ts` (93 indexable URLs, deduped); `validate:sitemap` script; GSC-ready `robots.txt` + live `/sitemap.xml`; `tsx` devDependency for validation.
+
+---
+
+⚠️ **Note:** The **PROJECT FILE TREE** and **INDIVIDUAL FILE CONTENTS** sections below were generated by an earlier scanner run (2025-01-27 era) and may be **out of date** (missing new files such as `faq-section.tsx`, `hub-faqs.ts`, regional location pages, standalone blog system, etc.). Re-run `python mvvp_project_scanner.py` to refresh the full dump.
 
 ====================================================================================================
 
