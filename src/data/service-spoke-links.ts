@@ -26,8 +26,14 @@ export const SERVICE_OVERVIEW_TAGS: Record<
   painting: [
     { label: "Body Corporate Painting", href: "/painting/body-corporate" },
     { label: "Industrial & Factory Painting", href: "/painting/industrial" },
+    { label: "Commercial & Healthcare Painting", href: "/painting/commercial-painting" },
+    { label: "Interior Painting", href: "/painting/interior-painting" },
+    { label: "High-Volume Airless Spray", href: "/painting/high-volume-commercial-painting" },
     { label: "Rope Access Painting", href: "/access-solutions/rope-access-painting" },
     { label: "Roof Painting & Restoration", href: "/painting/roof-painting" },
+    { label: "Warehouse Painting", href: "/painting/warehouse-painting" },
+    { label: "Parking Garage Painting", href: "/painting/parking-garage-painting" },
     { label: "Stucco & Wall Coatings", href: "/painting/stucco-wall-coatings" },
+    { label: "Road & Yard Line Marking", href: "/painting/road-marking" },
   ],
 };

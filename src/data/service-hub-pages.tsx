@@ -37,9 +37,9 @@ export const structuralRepairsHub: ServiceHubPageConfig = {
   path: "/structural-repairs",
   breadcrumbLabel: "Structural repairs",
   metadata: {
-    title: "Concrete Spalling, Structural Crack & Remedial Repair Specialists | Maverick",
+    title: "Structural Repairs & Remedial Concrete Contractors | Gauteng",
     description:
-      "Gauteng structural repair contractors for concrete spalling, crack injection, expansion joints, and protective coatings. Engineer-aligned specifications, manufacturer-approved systems, and independent QA on major commercial scopes.",
+      "Gauteng structural repair contractors for concrete spalling, crack injection, expansion joints, and protective coatings. Engineer-aligned specifications, manufacturer-approved systems, and independent third-party QA for East Rand, West Rand, and South Rand commercial assets.",
   },
   jsonLd: {
     name: "Structural Repairs & Concrete Remediation",
@@ -56,7 +56,7 @@ export const structuralRepairsHub: ServiceHubPageConfig = {
     headingId: "structural-repairs-heading",
     h1: "Structural repairs for concrete that is failing in plain sight.",
     lead:
-      "If you are managing spalling edges, gridlines in parking, or cracks that will not stop moving, you need a contractor who can sequence breakout, steel protection, reinstatement, and downstream waterproofing or coatings without drama.",
+      "On the Gauteng Highveld, aggressive UV, thermal cycling, and chloride-laden parking environments accelerate concrete cancer faster than inland owners expect. If you are managing spalling edges, gridlines in parking, or cracks that will not stop moving, you need an asset maintenance partner who can sequence breakout, steel passivation, structural mortars, and downstream waterproofing—with independent QA your trustees can file.",
     interventionsLabel: "Core interventions",
     interventions: [
       "Rebar passivation",
@@ -216,7 +216,7 @@ export const waterproofingHub: ServiceHubPageConfig = {
   metadata: {
     title: "Flat Roof & Balcony Waterproofing Services | Guaranteed Membrane Systems",
     description:
-      "Specialist waterproofing contractors in Gauteng. We use guaranteed liquid-applied and torch-on membrane systems to permanently solve flat roof, balcony, and basement water ingress. Independent QA verified.",
+      "Specialist waterproofing contractors in Gauteng for flat concrete roofs, leaking balconies, and basement tanking. Torch-on, liquid-applied, and crystalline systems with independent third-party QA—serving East Rand logistics assets, West Rand sectional-title stock, and South Rand podium decks.",
   },
   jsonLd: {
     name: "Waterproofing & Membrane Systems",
@@ -233,7 +233,7 @@ export const waterproofingHub: ServiceHubPageConfig = {
     headingId: "waterproofing-services-heading",
     h1: "Guaranteed waterproofing that treats water ingress as a systems problem.",
     lead:
-      "Flat slabs, parapets, and under-tile balconies fail in predictable places. We specify preparation, detailing at penetrations, compatible protection courses, and manufacturer-backed guarantees, not a single-layer miracle product.",
+      "Gauteng’s intense diurnal temperature swings and high-volume summer storms stress membranes at outlets, plant bases, and balcony thresholds. We specify torch-on, liquid polyurethane, or hybrid programmes after moisture risk assessment—with detailing, protection courses, and independent QA so manufacturer guarantees survive the first storm season.",
     interventionsLabel: "Core interventions",
     interventions: [
       "Torch-on membranes",
@@ -565,7 +565,7 @@ export const specializedCoatingsHub: ServiceHubPageConfig = {
   metadata: {
     title: "Epoxy & Polyurethane Floor Coatings | Certified Specialized Applicators",
     description:
-      "Approved applicators for high-performance, industrial-grade floor and wall coatings. We provide guaranteed, chemical-resistant systems for food production, manufacturing, and commercial spaces.",
+      "Manufacturer-approved epoxy, PU-cement, MMA, and Marmoran systems for Gauteng warehouses, food plants, and premium façades. HACCP-aligned hygienic flooring, corrosion control stacks, and independent QA on film build and substrate preparation.",
   },
   jsonLd: {
     name: "Specialized Coatings & High-Performance Systems",
@@ -740,7 +740,7 @@ export const paintingServicesHub: ServiceHubPageConfig = {
   metadata: {
     title: "Commercial & High-Access Painting Contractors | Industrial & Body Corporate",
     description:
-      "Specialist large-scale painting services for industrial sites, factories, and commercial buildings. Expert high-access, rope access, and cost-effective solutions with Independent QA.",
+      "Gauteng commercial painting for body corporates, factories, warehouses, and healthcare: HEA airless spray, IRATA rope access, low-VOC hygienic coatings, and independent third-party QA across the East Rand, West Rand, and South Rand.",
   },
   jsonLd: {
     name: "Commercial & High-Access Painting",
@@ -757,7 +757,7 @@ export const paintingServicesHub: ServiceHubPageConfig = {
     headingId: "painting-services-heading",
     h1: "Commercial painting programmes trustees and plant managers can defend.",
     lead:
-      "High-volume exterior work is never just rollers and ladders. It is access strategy, substrate repairs, coating specifications, resident disruption protocols, and QA files that survive insurer and attorney scrutiny.",
+      "Commercial painting on the Highveld is an asset maintenance decision—not a colour refresh. Maverick programmes combine substrate repairs, UV-stable 100% acrylics, HEA airless throughput for large logistics shells, IRATA rope access on towers, and bi-weekly independent QA reporting trustees and facility managers can defend at the AGM.",
     interventionsLabel: "Core interventions",
     interventions: [
       "Body corporate programmes",
@@ -852,6 +852,24 @@ export const paintingServicesHub: ServiceHubPageConfig = {
         description:
           "Industrial interior coatings, floor coordination, and production-friendly phasing for logistics facilities.",
       },
+      {
+        href: "/painting/high-volume-commercial-painting",
+        label: "High-volume commercial painting",
+        description:
+          "HEA airless spray programmes for warehouses, logistics hubs, and large façades—4–10× faster coverage with documented film build.",
+      },
+      {
+        href: "/painting/parking-garage-painting",
+        label: "Parking garage & basement painting",
+        description:
+          "Chloride-aware deck prep, traffic-rated coatings, light-reflective finishes, and line marking for occupied parking structures.",
+      },
+      {
+        href: "/painting/road-marking",
+        label: "Road, yard & car park line marking",
+        description:
+          "SANS-aligned layouts, MMA cold plastic, retro-reflective beads, and durable traffic paints for commercial sites.",
+      },
     ],
   },
   magazine: {
@@ -945,7 +963,7 @@ export const accessSolutionsHub: ServiceHubPageConfig = {
   metadata: {
     title: "Rope Access & High-Access Painting Solutions | Cost-Effective & OHS Compliant",
     description:
-      "Expert rope access and high-access painting contractors. We use scaffolding, boom lifts, and certified rope access to provide cost-effective maintenance for high-rise facades and difficult-to-reach industrial areas.",
+      "IRATA-aligned industrial rope access for Gauteng high-rise façades, silos, and sectional-title towers—integrated with waterproofing, spalling repair, and painting. OHS-compliant safety files, rescue plans, and programme savings versus scaffold-only approaches.",
   },
   jsonLd: {
     name: "Rope Access & High-Access Solutions",

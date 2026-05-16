@@ -16,9 +16,24 @@ export const FOOTER_QUICK_LINKS = [
   { href: "/contact", label: "Contact" },
 ] as const;
 
+export const FOOTER_SOLUTION_LINKS = [
+  { href: "/solutions/for-body-corporates", label: "Body corporates" },
+  { href: "/solutions/for-developers", label: "Developers" },
+  { href: "/solutions/for-homeowners", label: "Homeowners" },
+] as const;
+
+export const FOOTER_LOCATION_LINKS = [
+  { href: "/locations/east-rand", label: "East Rand" },
+  { href: "/locations/west-rand", label: "West Rand" },
+  { href: "/locations/south-rand", label: "South Rand" },
+  { href: "/locations/central", label: "Central Gauteng" },
+  { href: "/locations/sandton", label: "Sandton" },
+] as const;
+
 export const FOOTER_SERVICE_LINKS = [
   { href: "/waterproofing-services", label: "Waterproofing" },
   { href: "/structural-repairs", label: "Structural repairs" },
+  { href: "/damp-proofing-services", label: "Damp proofing" },
   { href: "/specialized-coatings/hygienic-food-grade", label: "Hygienic coatings" },
   { href: "/access-solutions/rope-access-painting", label: "Rope access" },
   { href: "/painting/body-corporate", label: "Body corporate painting" },

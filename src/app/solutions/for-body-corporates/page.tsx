@@ -1,52 +1,100 @@
-// src/app/solutions/for-body-corporates/page.tsx
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { QaProcessModule } from '@/components/qa-process-module';
-import { TrustAndCtaStrip } from '@/components/trust-and-cta-strip';
-import { ClipboardCheck, MessageCircle, Scroll, Shield } from 'lucide-react'; // REMOVED: Users
-import { buildPageMetadata } from '@/lib/metadata';
+import { ClipboardCheck, MessageCircle, Scroll, Shield } from "lucide-react";
+import { SolutionPageLayout } from "@/components/solution-page-layout";
+import { buildPageMetadata } from "@/lib/metadata";
 
-// --- METADATA (SEO) ---
 export const metadata = buildPageMetadata({
-    title: 'Painting & Waterproofing Solutions for Body Corporates & HOAs | Maverick',
-    description: 'Specialized asset maintenance for Body Corporates and Homeowners\' Associations. We offer guaranteed compliance, minimal disturbance, and Independent QA for long-term asset security.',
-    path: '/solutions/for-body-corporates',
+  title: "Body Corporate & Sectional Title Asset Maintenance | STSMA-Aligned | Maverick",
+  description:
+    "STSMA and CSOS-aware maintenance for Gauteng body corporates: 10-year MRRP support, independent QA, waterproofing, spalling repair, and phased painting with manufacturer-backed guarantees.",
+  path: "/solutions/for-body-corporates",
 });
 
-// --- CORE PAIN POINTS DATA ---
-const PainPoints = [
-    {
-        title: "Risk-Free Compliance",
-        description: "Independent QA verifies film thickness and application quality, providing trustees with auditable proof of work for AGMs.",
-        icon: ClipboardCheck,
-        accentColor: "border-secondary",
-    },
-    {
-        title: "Long-Term Security",
-        description: "Our structural repairs and guaranteed waterproofing systems eliminate recurring defects, securing the long-term value of the entire block.",
-        icon: Shield,
-        accentColor: "border-tertiary",
-    },
-    {
-        title: "Minimal Disturbance",
-        description: "We use advanced high-access methods and strict project management protocols to ensure minimal disturbance and inconvenience to residents.",
-        icon: MessageCircle,
-        accentColor: "border-secondary",
-    },
-    {
-        title: "Transparent Guarantees",
-        description: "All guarantees are co-signed by the manufacturer, the contractor, and the independent inspector, providing unparalleled warranty transparency.",
-        icon: Scroll,
-        accentColor: "border-tertiary",
-    },
-];
+const faqs = [
+  {
+    question: "What is a 10-year maintenance plan under the STSMA?",
+    answer:
+      "Prescribed Management Rule 22 requires a written Maintenance, Repair and Replacement Plan (MRRP) covering major capital items over ten years, funded from the reserve fund. Maverick supplies condition data and scoped quotations to support plan updates—we do not draft legal PMR documents.",
+  },
+  {
+    question: "Who pays for a leaking balcony—the owner or the body corporate?",
+    answer:
+      "It depends on scheme rules, exclusive-use allocations, and where the failure occurs. Maverick documents technical cause so managing agents and attorneys can route decisions—we do not adjudicate law.",
+  },
+  {
+    question: "How does independent QA protect trustees?",
+    answer:
+      "Third-party verification of preparation, film build, and adherence to specifications creates an auditable file for AGMs, insurers, and CSOS disputes—reducing allegations of self-monitored contractor bias.",
+  },
+] as const;
 
-// --- MAIN PAGE COMPONENT ---
 export default function BodyCorporateSolutionsPage() {
-    return (
-        <div className="bg-primary pt-24 text-white">
-
-            <TrustAndCtaStrip />
-        </div>
-    );
+  return (
+    <SolutionPageLayout
+      path="/solutions/for-body-corporates"
+      breadcrumbLabel="Body corporates"
+      h1="Sectional title maintenance trustees can defend at the AGM."
+      lead="Trustees are not buying paint—they are managing fiduciary risk under the STSMA. Maverick helps execute Maintenance, Repair and Replacement Plan (MRRP) items with engineer-aligned structural work, manufacturer-backed waterproofing, phased exterior programmes, and independent third-party QA your managing agent can file."
+      valueProps={[
+        {
+          title: "STSMA & MRRP alignment",
+          description:
+            "Condition surveys, photographic logs, and phased scopes that map to reserve fund planning—supporting PMR 22 without surprise special levies after the first storms.",
+          icon: Scroll,
+          accentColor: "border-secondary",
+        },
+        {
+          title: "Independent QA",
+          description:
+            "Bi-weekly third-party reporting on preparation, film build, and manufacturer compliance—so trustees are not relying on the contractor marking their own homework.",
+          icon: ClipboardCheck,
+          accentColor: "border-tertiary",
+        },
+        {
+          title: "Structural & waterproofing first",
+          description:
+            "Spalling arrises, leaking balconies, and flat roofs are sequenced before decorative coats so the repaint is not funding repeat failures within two seasons.",
+          icon: Shield,
+          accentColor: "border-secondary",
+        },
+        {
+          title: "Low-disruption access",
+          description:
+            "Rope access, phased elevations, and resident communication plans reduce scaffold footprints and estate security friction on Sandton, Alberton, and South Rand complexes.",
+          icon: MessageCircle,
+          accentColor: "border-tertiary",
+        },
+      ]}
+      narrative={{
+        heading: "Common property, exclusive use, and insurance reality",
+        paragraphs: [
+          "The body corporate maintains common property—including exterior walls, roofs, and shared structures—while exclusive-use areas can shift responsibility for balconies and finishes. Maverick scopes work with clear technical boundaries documented for insurers and CSOS, not vague promises.",
+          "Insurers frequently reject claims citing gradual deterioration or lack of maintenance. Manufacturer-backed systems plus independent QA create evidence of reasonable care—context only; we do not provide legal or insurance advice.",
+          "South Rand and Highveld assets face intense UV, thermal cycling, and summer storm damage. Coating and membrane choices must match exposure on north and west elevations, not a single spec recycled from another complex.",
+        ],
+      }}
+      serviceLinks={[
+        {
+          href: "/painting/body-corporate",
+          label: "Body corporate painting",
+          blurb: "Phased exterior programmes, rope access, and QA packs for sectional-title towers and estates.",
+        },
+        {
+          href: "/waterproofing/leaking-balconies",
+          label: "Leaking balcony remediation",
+          blurb: "Trustee-ready reports, low-disruption options, and coordination with structural arris repairs.",
+        },
+        {
+          href: "/structural-repairs/concrete-spalling",
+          label: "Concrete spalling repair",
+          blurb: "Engineer-aligned concrete cancer remediation before waterproofing and topcoats.",
+        },
+        {
+          href: "/our-process-independent-qa",
+          label: "Independent QA process",
+          blurb: "How third-party inspection de-risks multi-million rand common property spend.",
+        },
+      ]}
+      faqs={faqs}
+    />
+  );
 }

@@ -1,4 +1,5 @@
 // src/app/about-us/page.tsx
+import Image from "next/image";
 import Link from 'next/link';
 import { ClipboardCheck, Medal, Scroll, Users, Wrench, Sprout, Shield } from 'lucide-react'; // Removed Layers, Home, Factory
 import { buildPageMetadata } from '@/lib/metadata';
@@ -24,7 +25,7 @@ function ExperienceStatCard({ value, label, icon: Icon }: { value: string; label
 
 // --- METADATA (SEO) ---
 export const metadata = buildPageMetadata({
-    title: 'Owner Supervised Painting Contractors - 50+ Years Experience | Maverick',
+    title: 'Owner Supervised Painting Contractors | 50+ Years Experience',
     description: 'Established in 2004, Maverick Painting offers structural repair and specialized coatings, backed by Independent 3rd Party Quality Assurance on every high-value project.',
     path: '/about-us',
 });
@@ -64,9 +65,15 @@ export default function AboutUsPage() {
 
                     {/* RIGHT: Visual Proof & Stats Grid */}
                     <div className="lg:col-span-5 space-y-6">
-                        {/* Placeholder for Management Photo */}
-                        <div className="w-full h-80 bg-gray-800 rounded-xl shadow-2xl flex items-center justify-center">
-                            <span className="text-white/60 text-lg"></span>
+                        <div className="relative h-80 w-full overflow-hidden rounded-xl shadow-2xl">
+                            <Image
+                                src="/images/structural-concrete-spalling-handover.jpg"
+                                alt="Maverick Painting owner-supervised structural repair handover on a Gauteng commercial asset"
+                                fill
+                                className="object-cover"
+                                sizes="(max-width: 1024px) 100vw, 40vw"
+                                priority
+                            />
                         </div>
                         
                         {/* Stats Grid */}

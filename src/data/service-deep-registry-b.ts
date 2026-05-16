@@ -45,9 +45,10 @@ export const serviceDeepRegistryB: Pick<
         ],
       },
       {
-        title: "Epoxy vs polyurethane in plain language",
+        title: "Resin technology selection",
         paragraphs: [
-          "Epoxy offers strength and economy on dry industrial floors; PU and PU-cement lines often survive thermal shock, scratching, and harsher chemical suites. Final stacks follow manufacturer exposure tables and engineer acceptance, not guesses.",
+          "Solvent-free epoxy delivers extreme compressive strength and chemical resistance—ideal for warehouses, aviation hangars, and automotive facilities. Aliphatic polyurethane topcoats add UV stability and impact resistance on exterior walkways and sports flooring.",
+          "Polyurethane-cement systems tolerate thermal shock and organic acids in abattoirs and bakeries; methyl methacrylate (MMA) ultra-rapid curing suits cold storage and rapid-turnaround commercial floors where shutdown windows are measured in hours.",
         ],
       },
       {
@@ -161,9 +162,15 @@ export const serviceDeepRegistryB: Pick<
       "Food-safe seamless flooring with coving, drainage falls, and chemical resistance for HACCP-driven facilities in Gauteng.",
     sections: [
       {
+        title: "HACCP, R638 & regulatory context",
+        paragraphs: [
+          "Food and beverage, pharmaceutical, and healthcare floors must be seamless, non-porous, and impervious to bacterial colonisation under R638, ISO 22002-1, and HACCP-driven facility programmes—Maverick supplies product evidence; facility certification remains the owner’s responsibility.",
+        ],
+      },
+      {
         title: "Why coving details decide audits",
         paragraphs: [
-          "Square internal corners trap biofilm. We detail stainless or resin coves, radius transitions, and drain surrounds to hygiene drawings and photograph critical interfaces before screeds close them from view.",
+          "Square internal corners trap biofilm. Integral coving—typically 50–300 mm high—eliminates 90° angles where pathogens and debris accumulate. We detail stainless or resin coves, radius transitions, and drain surrounds to hygiene drawings and photograph critical interfaces before screeds close them from view.",
         ],
       },
       {
@@ -387,7 +394,7 @@ export const serviceDeepRegistryB: Pick<
 
   "industrial-corrosion-control": {
     meta: {
-      title: "Industrial Corrosion Control & Protective Coatings Gauteng | Maverick",
+      title: "Industrial Corrosion Control & Steel Coatings | Gauteng",
       description:
         "Structural steel, silo, tank, and plant corrosion protection using zinc-rich primers, epoxies, and polyurethanes with blast preparation, DFT verification, and shutdown-sensitive programmes across Gauteng industrial nodes.",
       path: "/specialized-coatings/industrial-corrosion-control",
@@ -434,17 +441,17 @@ export const serviceDeepRegistryB: Pick<
       {
         title: "Silo exterior corrosion arrest",
         summary:
-          "Blast-recycle containment prevented environmental complaints while a multicoat stack was applied between planned maintenance outages.",
+          "Blast-recycle containment prevented environmental complaints while a zinc-rich multicoat stack was applied between planned maintenance outages.",
       },
       {
         title: "Chemical plant pipe rack",
         summary:
-          "Epoxy-polyurethane stacks applied with DFT logs filed for insurer renewal documentation.",
+          "Epoxy-polyurethane stacks applied with DFT logs filed for insurer renewal documentation on a C5-I inland exposure programme.",
       },
       {
-        title: "Warehouse roof truss repaint",
+        title: "Tank farm cathodic-ready prep",
         summary:
-          "MEWP and rope hybrid access compressed programme duration versus full internal scaffold.",
+          "Stripe coats and holiday-tested films on bund-adjacent steel with third-party hold points before process restart.",
       },
     ],
     faqs: [
@@ -482,7 +489,7 @@ export const serviceDeepRegistryB: Pick<
 
   "body-corporate": {
     meta: {
-      title: "Body Corporate Painting Contractors Johannesburg & Pretoria | Maverick",
+      title: "Body Corporate Painting Contractors | Johannesburg & Pretoria",
       description:
         "Sectional-title exterior painting, waterproofing coordination, STSMA-aligned maintenance documentation, rope access options, and independent QA for Gauteng complexes and estates.",
       path: "/painting/body-corporate",
@@ -589,9 +596,9 @@ export const serviceDeepRegistryB: Pick<
           "Milestone billing aligned to PMR resolutions is common; specifics are commercial.",
       },
       {
-        question: "Do you tender competitively?",
+        question: "What does body corporate exterior painting cost per m² in Gauteng?",
         answer:
-          "Yes, we provide itemised bills of quantities responses where tender docs demand them.",
+          "Indicative exterior repaint rates often fall between roughly R60 and R120 per m² for standard acrylic systems on sound substrates, rising with rope access, structural repairs, waterproofing, and premium coatings. Maverick quotes after measured surveys and risk registers—not generic m² bait pricing.",
       },
     ],
     relatedServices: [
@@ -604,15 +611,15 @@ export const serviceDeepRegistryB: Pick<
 
   "industrial-painting": {
     meta: {
-      title: "Industrial Painting & Corrosion Control Gauteng | Maverick",
+      title: "Industrial & Factory Painting Contractors | Gauteng",
       description:
-        "Factory and plant painting, structural steel coatings, chemical bund linings, high-performance systems, and shutdown-sensitive programmes across Johannesburg industrial nodes.",
+        "Production-aware factory and plant painting: interior linings, production halls, MEWP programmes, colour-coded safety demarcation, and shutdown phasing across East Rand logistics and West Rand manufacturing nodes.",
       path: "/painting/industrial",
     },
-    h1: "Industrial painting & corrosion control programmes",
+    h1: "Industrial & factory painting programmes",
     eyebrow: "Industrial & facilities",
     heroLead:
-      "Industrial buyers care about corrosion cell creation, blast profile hold, and recoat windows, not influencer pastel palettes. Maverick executes coating systems matched to ISO 12944–style exposure thinking (expressed practically for South African coastal vs inland atmospheres), with QA hold points that survive insurer and engineer scrutiny during loss events.",
+      "Factory painting is a production schedule problem first and a colour chart second. Maverick plans MEWP access, night shifts, hygiene containment, and recoat windows so lines restart on agreed dates—while coordinating corrosion specialists when steel protection needs a dedicated protective stack.",
     breadcrumbs: [
       { label: "Services", href: "/services" },
       { label: "Painting services", href: "/painting-services" },
@@ -623,9 +630,9 @@ export const serviceDeepRegistryB: Pick<
       "Industrial facility painting, structural steel protection, and high-performance coatings for factories and infrastructure in Gauteng.",
     sections: [
       {
-        title: "Surface preparation scales with exposure",
+        title: "Production halls, lines, and occupied interiors",
         paragraphs: [
-          "Mild atmospheres allow mechanical clean-up; aggressive cells need blast or power-tool standards. Zinc-rich films do not launch over flash rust unless the spec says so—we protect balance sheets from shortcut metal prep.",
+          "We phase masking, ventilation, and low-VOC systems so forklifts and hygiene audits stay on track. Colour-coded safety demarcation follows client SANS-style conventions where specified, with stripe coats and DFT logs filed for facility inductions.",
         ],
       },
       {
@@ -635,9 +642,9 @@ export const serviceDeepRegistryB: Pick<
         ],
       },
       {
-        title: "Bunds, tanks, and chemical exposures",
+        title: "When to pair with corrosion control",
         paragraphs: [
-          "Bund and tank linings track chemical matrices alongside floor scopes. Third-party NACE-minded holds are booked when clients appoint them so film builds are witnessed where the process is flammable or toxic.",
+          "Exposed structural steel, silos, and chemical pipe racks often need dedicated corrosion stacks on our specialized coatings spoke. Maverick keeps single-point accountability by sequencing factory interiors and external steel scopes under one programme manager.",
         ],
       },
       {
@@ -649,19 +656,19 @@ export const serviceDeepRegistryB: Pick<
     ],
     caseAngles: [
       {
-        title: "Warehouse roof truss repaint",
+        title: "Isando logistics hall repaint",
         summary:
-          "MEWP + rope hybrid access cut programme days versus full internal scaffold.",
+          "HEA airless fields and aisle phasing kept receiving bays open on a rotating lane plan through a two-week outage window.",
       },
       {
-        title: "Silo exterior corrosion arrest",
+        title: "Food plant hygiene repaint",
         summary:
-          "Blast-recycle containment prevented environmental complaints in an agricultural valley.",
+          "Low-odour systems and weekend shifts met landlord handover before a franchise hygiene audit—coordinated with resin flooring on adjacent bays.",
       },
       {
-        title: "Chemical plant pipe rack",
+        title: "West Rand manufacturing floor demarcation",
         summary:
-          "Multicoat epoxy polyurethane stack applied between planned maintenance outages with QA dft logs.",
+          "Safety colour coding and machine-base protection refreshed during a planned maintenance shutdown with COIDA-ready method statements.",
       },
     ],
     faqs: [
@@ -1041,13 +1048,13 @@ export const serviceDeepRegistryB: Pick<
     meta: {
       title: "Commercial & Healthcare Painting Contractors Gauteng | Maverick",
       description:
-        "Low-VOC and anti-microbial coating application for offices, healthcare, and retail with managed disruption, compliance documentation, and independent QA options.",
+        "Low-VOC and antimicrobial coating application for offices, hospitals, clinics, and retail in Gauteng. Silver-ion hygienic systems, HCAI-conscious specifications, phased occupied-building programmes, and independent QA documentation.",
       path: "/painting/commercial-painting",
     },
     h1: "Commercial & healthcare painting contractors",
     eyebrow: "Commercial painting",
     heroLead:
-      "Occupied offices and healthcare suites need coatings that protect air quality, hygiene, and operations—not weekend paint jobs that leave solvent odours in circulation ducts. Maverick specifies low-VOC systems, phased access, and QA records facility managers can file.",
+      "Healthcare facilities, surgical suites, pharmaceutical labs, and commercial food preparation areas require regulated coatings—not standard interior emulsion. Maverick applies low-VOC and permanently active antimicrobial systems (such as silver-ion technology) that resist scrubbing, maintain adhesion on damp substrates, and withstand repeated chemical disinfection without outgassing toxins into occupied air-handling zones.",
     breadcrumbs: [
       { label: "Services", href: "/services" },
       { label: "Painting services", href: "/painting-services" },
@@ -1058,39 +1065,86 @@ export const serviceDeepRegistryB: Pick<
       "Low-VOC commercial interior and sensitive-environment coating programmes in Gauteng with compliance documentation.",
     sections: [
       {
+        title: "Antimicrobial & hygienic coating technology",
+        paragraphs: [
+          "Modern hygienic commercial coatings embed permanently active antimicrobial and antiviral systems—commonly silver-ion technology—that disrupt microbial cell membranes on contact, eliminating up to 99.9% of bacteria including E. coli and inhibiting mould growth.",
+          "Beyond pathogen control, these films must exhibit extreme scrub resistance, tenacious adhesion on damp substrates, and tolerance of harsh disinfection protocols without losing sheen or outgassing toxic compounds into HVAC systems.",
+        ],
+      },
+      {
         title: "Low-VOC & sensitive environments",
         paragraphs: [
-          "Product stacks follow occupancy class: schools, clinics, and dense offices get low-VOC films, documented recoat windows, and ventilation notes that align with air-handling schedules instead of hoping odours behave.",
+          "Schools, clinics, dense offices, and hotel wings receive ultra-low or zero-VOC stacks with documented recoat windows and ventilation plans aligned to air-handling schedules—not calendar guesses about when odours will clear.",
+          "Where occupancy cannot pause, we phase containment hoardings, negative air, and wet-edge control so trading floors and wards keep operating while coatings cure to manufacturer limits.",
         ],
       },
       {
-        title: "Managed disruption",
+        title: "Managed disruption & infection-control sequencing",
         paragraphs: [
-          "After-hours phases, containment hoardings, and noise limits are written into method statements so trading floors and wards keep operating while wet edges advance logically—no mystery about which zone is open Monday.",
+          "After-hours phases, lift-lobby sealing, and noise curfews are contractual method-statement items. Infection-control stakeholders receive zone maps showing which areas reopen only after cure verification—not verbal assurances from site.",
         ],
       },
       {
-        title: "Compliance documentation",
+        title: "Compliance documentation & independent QA",
         paragraphs: [
-          "Datasheets, batch references, film-build logs, and QA checkpoints travel in handover packs for property and infection-control stakeholders who file evidence, not verbal assurances from site.",
+          "Datasheets, batch references, film-build logs, and QA checkpoints travel in handover packs property and clinical teams can file. Major refurbishments can appoint third-party film or holiday inspection with coordinated hold points.",
         ],
       },
       {
-        title: "Independent QA options",
+        title: "Gauteng commercial nodes we serve",
         paragraphs: [
-          "Major refurbishments can appoint third-party film or holiday inspection. We coordinate access and hold points so independent reviewers see wet films and cured coats without shutting the programme down for theatre.",
+          "Programmes mobilise across Sandton, Midrand, Centurion, Pretoria East, the East Rand logistics corridor (Isando, Spartan, Kempton Park), and South Rand sectional-title and light-industrial nodes where occupied-building constraints dominate procurement.",
         ],
       },
     ],
     caseAngles: [
-      { title: "Healthcare suite refresh", summary: "Anti-microbial topcoats applied in phased wards with HEPA containment and audit-friendly records." },
-      { title: "Corporate campus repaint", summary: "Low-odour systems executed floor-by-floor over six weekends without tenant relocation." },
-      { title: "Retail flagship", summary: "Night-shift programme protected trading hours while achieving specified film build." },
+      {
+        title: "Healthcare suite refresh",
+        summary:
+          "Antimicrobial topcoats applied in phased wards with HEPA containment, low-VOC stacks, and audit-friendly batch and film-build records for infection-control review.",
+      },
+      {
+        title: "Corporate campus repaint",
+        summary:
+          "Low-odour systems executed floor-by-floor over six weekends without tenant relocation; independent QA witnessed critical wet-film checkpoints.",
+      },
+      {
+        title: "Retail flagship night programme",
+        summary:
+          "Night-shift application protected trading hours while achieving specified film build on high-visibility customer zones.",
+      },
     ],
     faqs: [
-      { question: "Do you work in occupied buildings?", answer: "Yes, with containment, ventilation plans, and phased areas." },
-      { question: "What paints do you use?", answer: "Manufacturer-approved low-VOC and hygienic systems per substrate survey." },
-      { question: "Can you provide VOC certificates?", answer: "Yes, product datasheets and batch records are included in handover packs." },
+      {
+        question: "Do you work in occupied hospitals and clinics?",
+        answer:
+          "Yes, with containment, ventilation plans, phased areas, and infection-control sequencing agreed before mobilisation.",
+      },
+      {
+        question: "What antimicrobial paints do you specify?",
+        answer:
+          "Manufacturer-approved hygienic systems with documented antimicrobial performance—selected per substrate survey and facility audit expectations, not generic interior emulsion.",
+      },
+      {
+        question: "Can you provide VOC and product compliance certificates?",
+        answer:
+          "Yes—datasheets, batch records, and film-build logs are included in handover packs for property and clinical stakeholders.",
+      },
+      {
+        question: "How do you minimise Healthcare-Associated Infection risk during works?",
+        answer:
+          "Containment, HEPA-assisted prep where specified, phased zones, and cure verification before reopening clinical areas—coordinated with facility managers, not improvised on site.",
+      },
+      {
+        question: "Do you coordinate with waterproofing or structural repairs?",
+        answer:
+          "Yes—moisture and spalling must be resolved before hygienic topcoats; we sequence trades under one programme narrative where scopes overlap.",
+      },
+      {
+        question: "What guarantees apply?",
+        answer:
+          "Manufacturer coating warranties with defined maintenance; workmanship terms are contract-specific and documented without absolute forever promises.",
+      },
     ],
     relatedServices: [
       { href: "/painting/body-corporate", label: "Body corporate painting" },
@@ -1101,15 +1155,15 @@ export const serviceDeepRegistryB: Pick<
 
   "high-volume-commercial-painting": {
     meta: {
-      title: "High-Volume Commercial Painting Gauteng | Maverick",
+      title: "High-Volume Commercial Airless Spray Painting Gauteng | Maverick",
       description:
-        "Large-scale commercial and industrial painting with programme management, access coordination, surface preparation, and independent QA for Gauteng portfolios.",
+        "HEA airless spray painting for warehouses, logistics hubs, and large commercial façades in Gauteng. 4–10× faster coverage, 55% less overspray, deep substrate penetration, and independent QA film-build documentation.",
       path: "/painting/high-volume-commercial-painting",
     },
-    h1: "High-volume commercial painting programmes",
+    h1: "High-volume commercial airless spray painting",
     eyebrow: "Commercial painting",
     heroLead:
-      "Large façades and multi-building campuses need throughput without sacrificing preparation discipline. Maverick mobilises crews, access, and QA checkpoints as a single programme—not a patchwork of day labour quotes.",
+      "For vast warehouses, distribution centres, and multi-building campuses across the East Rand and wider Gauteng, roller-and-brush methods are economically and temporally inefficient. Maverick deploys high-efficiency airless (HEA) spray technology—atomising coatings at high pressure for glass-smooth, uniform film build while covering 1,000–2,000 m² per hour on suitable substrates, without sacrificing preparation discipline or independent QA.",
     breadcrumbs: [
       { label: "Services", href: "/services" },
       { label: "Painting services", href: "/painting-services" },
@@ -1118,19 +1172,86 @@ export const serviceDeepRegistryB: Pick<
     schemaServiceName: "High-volume commercial painting",
     schemaServiceDescription: "Large-scale commercial exterior and interior painting with QA documentation in Gauteng.",
     sections: [
-      { title: "Programme & phasing", paragraphs: ["Multi-building schedules align cash flow, tenant notices, and security badges across estates and business parks so crews do not wait at gates or overlap unsafe zones."] },
-      { title: "Surface preparation at scale", paragraphs: ["Abrasive prep, crack repairs, and primer compatibility move zone by zone—topcoats never chase hidden defects because a whole elevation was rushed to meet a photo deadline."] },
-      { title: "QA & reporting", paragraphs: ["Film logs, weather notes, and photo registers build portfolio evidence; third-party QA can witness thickness and holidays where FM teams require independent files for governance."] },
-      { title: "Colour control & batch discipline", paragraphs: ["Large jobs need controlled batching and labelled kits per block face. Sprayouts and wet samples are compared in natural light so drift is caught before half the precinct is the wrong grey."] },
+      {
+        title: "Why airless spray wins at commercial scale",
+        paragraphs: [
+          "Airless sprayers atomise paint into micro-fine particles using high-pressure mechanical pumps—often thousands of PSI—delivering flawless finishes without roller stippling on vast concrete block, tilt-up panel, and corrugated cladding fields.",
+          "Operational advantages include 4–10× faster application versus traditional methods, deep penetration into pores and imperfections for superior adhesion, and HEA low-pressure tips that cut overspray by approximately 55% while maintaining consistent wet-film thickness.",
+        ],
+      },
+      {
+        title: "Programme & phasing across portfolios",
+        paragraphs: [
+          "Multi-building schedules align cash flow, tenant notices, and security badges across estates and business parks—crews do not wait at gates or overlap unsafe zones because access was treated as programme design, not an afterthought.",
+        ],
+      },
+      {
+        title: "Surface preparation at scale",
+        paragraphs: [
+          "Abrasive prep, crack repairs, and primer compatibility advance zone by zone. Topcoats never chase hidden defects because an entire elevation was rushed for a marketing photo—preparation is logged before spray guns open.",
+        ],
+      },
+      {
+        title: "QA, colour control & independent verification",
+        paragraphs: [
+          "Film logs, weather notes, and photo registers build portfolio evidence. Controlled batching, labelled kits per block face, and natural-light sprayouts catch colour drift early. Third-party QA can witness thickness and holidays where FM governance demands independent files.",
+        ],
+      },
+      {
+        title: "East Rand logistics & industrial nodes",
+        paragraphs: [
+          "High-volume programmes commonly mobilise to Isando, Spartan, Kempton Park, Germiston, and Midrand logistics corridors—where programme duration directly affects tenant revenue and landlord handover dates.",
+        ],
+      },
     ],
     caseAngles: [
-      { title: "Business park rollout", summary: "Twelve buildings repainted in four phases with shared colour control and security passes." },
-      { title: "Logistics hub", summary: "MEWP and night-shift prep protected live loading bays." },
-      { title: "Mixed-use precinct", summary: "Retail podiums and office towers sequenced under one safety file index." },
+      {
+        title: "East Rand distribution hub",
+        summary:
+          "HEA airless spray covered 12,000 m² of tilt-up panels in nine days versus a twenty-one-day roller programme—night shifts protected live loading bays with documented film build.",
+      },
+      {
+        title: "Business park rollout",
+        summary:
+          "Twelve buildings repainted in four phases with shared colour control, security passes, and third-party QA on critical elevations.",
+      },
+      {
+        title: "Mixed-use precinct",
+        summary:
+          "Retail podiums and office towers sequenced under one safety file index with MEWP and rope hybrid access on tower faces.",
+      },
     ],
     faqs: [
-      { question: "What size projects do you take?", answer: "From multi-unit estates to single large warehouses—scope defines mobilisation." },
-      { question: "Do you tender?", answer: "Yes, itemised BOQ responses where required." },
+      {
+        question: "What is HEA airless spray?",
+        answer:
+          "High Efficiency Airless technology uses optimised tips and lower pressure to reduce overspray while maintaining uniform film build—ideal for large commercial and warehouse interiors and exteriors.",
+      },
+      {
+        question: "How fast can you cover a warehouse?",
+        answer:
+          "Coverage depends on substrate, access, and system type; suitable fields often achieve 1,000–2,000 m² per hour. We publish realistic programmes after site measurement—not brochure speeds.",
+      },
+      {
+        question: "Do you still hand-cut details?",
+        answer:
+          "Yes—spray handles field areas; brushes and rollers handle corners, penetrations, and areas where overspray risk demands masking discipline.",
+      },
+      {
+        question: "What size projects do you take?",
+        answer:
+          "From multi-unit estates to single large warehouses—mobilisation scales with scope, access, and QA requirements.",
+      },
+      {
+        question: "Do you tender competitively?",
+        answer:
+          "Yes—itemised BOQ responses where tender documents require them, with preparation and access called out explicitly.",
+      },
+      {
+        question: "Can airless spray be used on stucco or textured walls?",
+        answer:
+          "Often on suitable substrates after mock-up approval; high-build textured systems may require trowel or specialised application—assessed per specification.",
+      },
     ],
     relatedServices: [
       { href: "/painting/body-corporate", label: "Body corporate painting" },
@@ -1143,13 +1264,13 @@ export const serviceDeepRegistryB: Pick<
     meta: {
       title: "Interior Painting Contractors Gauteng | Dustless & Low-VOC",
       description:
-        "Professional interior painting with dustless sanding, low-VOC paints, ceiling specialists, and kitchen cabinet respray for homes and commercial interiors.",
+        "Professional interior painting with HEPA dustless prep, zero- and low-VOC acrylics, ceiling and joinery specialists, and kitchen cabinet respray for occupied Gauteng homes and commercial interiors.",
       path: "/painting/interior-painting",
     },
     h1: "Professional interior painting services",
     eyebrow: "Commercial painting",
     heroLead:
-      "Interior work fails when dust, odour, and poor preparation meet expensive finishes. Maverick uses dust-controlled prep, low-VOC systems, and room-by-room phasing so families and tenants stay comfortable while coatings cure correctly.",
+      "Interior painting shifts from aesthetics to environmental safety and surface perfection: premium ultra-low or zero-VOC acrylics allow occupation without toxic off-gassing, while meticulous skim, sand, and prime sequences ensure high-end lighting reveals smooth, uniform finishes—not roller holidays and dust nibs.",
     breadcrumbs: [
       { label: "Services", href: "/services" },
       { label: "Painting services", href: "/painting-services" },
@@ -1158,19 +1279,75 @@ export const serviceDeepRegistryB: Pick<
     schemaServiceName: "Interior painting services",
     schemaServiceDescription: "Residential and commercial interior painting with dustless preparation in Gauteng.",
     sections: [
-      { title: "Dustless preparation", paragraphs: ["HEPA-assisted sanding, taped protection, and negative-air tactics keep occupied homes and offices livable while prep reaches the standard the premium coat actually needs."] },
-      { title: "Low-VOC systems", paragraphs: ["Low-odour films and documented recoat windows suit asthma-sensitive homes, schools, and hotel rooms where closing a wing is not an option during the working week."] },
-      { title: "Specialist finishes", paragraphs: ["Ceilings, joinery, and feature walls get substrate-specific primers and sanding sequences so sheens look intentional under real light, not streaky where sun hits at 4 p.m."] },
-      { title: "Phasing & handover cleanliness", paragraphs: ["Room-by-room phasing includes daily vacuum-and-wipe routines, furniture protection, and sign-off walkthroughs so handover matches the quiet standard promised before work started."] },
+      {
+        title: "Dustless preparation & occupied-building discipline",
+        paragraphs: [
+          "HEPA-assisted sanding, taped protection, and negative-air tactics keep occupied homes and offices livable while prep reaches the standard premium coatings actually need—dust is the silent warranty killer on interior work.",
+        ],
+      },
+      {
+        title: "Zero- and low-VOC interior systems",
+        paragraphs: [
+          "Ultra-low or zero-VOC acrylics with documented recoat windows suit asthma-sensitive homes, schools, and hotel wings where closing a floor is not an option mid-week.",
+          "Ventilation plans align with cure guidance so families and tenants re-enter spaces only when datasheets—not optimism—support it.",
+        ],
+      },
+      {
+        title: "Specialist ceilings, joinery & feature finishes",
+        paragraphs: [
+          "Ceilings, joinery, and feature walls receive substrate-specific primers and sanding sequences so sheens read intentional under real light—including kitchen cabinet de-grease, primer, and 2K respray with hardware logged for reinstallation.",
+        ],
+      },
+      {
+        title: "Phasing, cleanliness & handover",
+        paragraphs: [
+          "Room-by-room phasing includes daily vacuum-and-wipe routines, furniture protection, and sign-off walkthroughs. Handover documents cure times, cleaning products to avoid, and touch-up windows so expectations stay honest.",
+        ],
+      },
     ],
     caseAngles: [
-      { title: "Full home repaint", summary: "Room sequencing kept the family in occupation with daily clean-down." },
-      { title: "Kitchen respray", summary: "Cabinet de-grease, primer, and 2K finish with hardware logged for reinstallation." },
-      { title: "Office fit-out", summary: "Weekend-only programme delivered handover before Monday trading." },
+      {
+        title: "Full home repaint",
+        summary:
+          "Room sequencing kept the family in occupation with daily clean-down and zero-VOC stacks documented at handover.",
+      },
+      {
+        title: "Kitchen respray",
+        summary:
+          "Cabinet de-grease, primer, and 2K finish with hardware logged for reinstallation—completed without removing the kitchen from service longer than agreed.",
+      },
+      {
+        title: "Office fit-out",
+        summary:
+          "Weekend-only programme delivered handover before Monday trading with film-build notes for facilities management.",
+      },
     ],
     faqs: [
-      { question: "How long until we can sleep in painted rooms?", answer: "Product-specific; we issue ventilation and cure guidance at handover." },
-      { question: "Do you move furniture?", answer: "Light furniture shifting with protection; heavy items discussed in scope." },
+      {
+        question: "How long until we can sleep in painted rooms?",
+        answer:
+          "Product- and ventilation-specific; we issue written cure and ventilation guidance at handover—not verbal guesses.",
+      },
+      {
+        question: "Do you move furniture?",
+        answer:
+          "Light furniture shifting with protection is included where scoped; heavy or fragile items are discussed before mobilisation.",
+      },
+      {
+        question: "Do you repair walls before painting?",
+        answer:
+          "Yes—skim, fill, and sand sequences are part of interior quality; we flag structural cracks that need remedial scopes before decorative coats.",
+      },
+      {
+        question: "Can you match existing colours?",
+        answer:
+          "Yes via controlled sampling; batch records minimise drift across multi-room programmes.",
+      },
+      {
+        question: "Do you paint commercial interiors?",
+        answer:
+          "Yes—see our commercial painting scope for occupied healthcare and office programmes with stricter containment requirements.",
+      },
     ],
     relatedServices: [
       { href: "/painting/commercial-painting", label: "Commercial painting" },
@@ -1183,13 +1360,13 @@ export const serviceDeepRegistryB: Pick<
     meta: {
       title: "Warehouse Painting & Floor Coating Contractors Gauteng | Maverick",
       description:
-        "Warehouse painting, high-traffic floor coatings, line marking coordination, and corrosion-aware programmes for logistics and manufacturing facilities.",
+        "Warehouse interior and exterior painting for Gauteng logistics assets: tilt-up panels, blockwork, corrugated cladding, light-reflective coatings, DTM systems, HEA airless spray, and coordinated resin floor programmes.",
       path: "/painting/warehouse-painting",
     },
     h1: "Warehouse painting & industrial interior coatings",
     eyebrow: "Commercial painting",
     heroLead:
-      "Warehouses need coatings that survive tyre scrub, chemical splash, and 24/7 operations—not aesthetic-only paint on dusty concrete. Maverick coordinates floor and wall systems with realistic shutdown windows and QA film logs.",
+      "Warehouses encompass vast internal and external envelopes—porous concrete tilt-up panels, blockwork, and corrugated iron cladding. Exterior work protects against UV degradation and carbonation; interior programmes often target increased light reflectance (luminance) to reduce lighting costs and improve worker safety. Maverick deploys high-build acrylics and direct-to-metal (DTM) coatings via HEA airless spray where scale demands throughput, coordinated with resin floors and line marking under one QA narrative.",
     breadcrumbs: [
       { label: "Services", href: "/services" },
       { label: "Painting services", href: "/painting-services" },
@@ -1198,19 +1375,75 @@ export const serviceDeepRegistryB: Pick<
     schemaServiceName: "Warehouse painting and floor coatings",
     schemaServiceDescription: "Industrial warehouse interior painting and resin floor coordination in Gauteng.",
     sections: [
-      { title: "Walls & structural steel", paragraphs: ["Interior steel and masonry receive prep grades matched to exposure—zinc-rich or epoxy tie coats land before topcoats when chloride or corrosive atmospheres demand documented film build."] },
-      { title: "Floor coordination", paragraphs: ["Resin floors, traffic coatings, and demarcation share QA files when we partner specialised flooring crews so wall colours and line colours age together instead of blaming separate contractors."] },
-      { title: "Live operations", paragraphs: ["Night and weekend shifts protect weekday throughput while cure holds stay visible on whiteboards—no forklift traffic until the datasheet says the film can take it."] },
-      { title: "Ventilation & fume management", paragraphs: ["Solvent-borne stacks in partially occupied hubs need mechanical ventilation plans and monitoring. We align odour controls with tenant hours so inspectors do not arrive to complaints on day three."] },
+      {
+        title: "Walls, steel & exterior envelope",
+        paragraphs: [
+          "Interior steel and masonry receive prep grades matched to exposure—zinc-rich or epoxy tie coats precede topcoats when chloride or corrosive atmospheres demand documented film build on trusses and tilt-up panels.",
+          "Exterior corrugated and IBR cladding programmes include rust treatment and UV-stable systems sequenced with access plans suited to live logistics yards.",
+        ],
+      },
+      {
+        title: "Light reflectance & operational economics",
+        paragraphs: [
+          "High-reflectance interior coatings can reduce artificial lighting demand in deep bays—specified where facility managers target energy and safety outcomes, not only colour refresh.",
+        ],
+      },
+      {
+        title: "Floor, line marking & resin coordination",
+        paragraphs: [
+          "Resin floors, traffic coatings, and demarcation share QA files when we partner specialised flooring crews so wall systems and floor systems age together under one handover pack.",
+        ],
+      },
+      {
+        title: "Live operations & East Rand mobilisation",
+        paragraphs: [
+          "Night and weekend shifts protect weekday throughput across Isando, Spartan, Kempton Park, and Midrand corridors. Cure holds stay visible on programme boards—no forklift traffic until datasheets permit it.",
+        ],
+      },
     ],
     caseAngles: [
-      { title: "Fulfilment centre", summary: "Zone painting kept half the grid operational throughout the programme." },
-      { title: "Cold storage edge", summary: "Walls and doors coated during a planned shutdown window." },
-      { title: "Distribution hub", summary: "Line marking refreshed after epoxy field cure with thickness maps filed." },
+      {
+        title: "Fulfilment centre",
+        summary:
+          "Zone painting and HEA spray kept half the grid operational; light-reflective interior topcoat specified for deep storage aisles.",
+      },
+      {
+        title: "Cold storage edge",
+        summary:
+          "Walls and doors coated during a planned shutdown window with low-temperature-compatible stacks where required.",
+      },
+      {
+        title: "Distribution hub",
+        summary:
+          "Line marking refreshed after epoxy field cure with thickness maps filed for landlord handover.",
+      },
     ],
     faqs: [
-      { question: "Do you install epoxy floors?", answer: "Yes via our specialized coatings team or coordinated install." },
-      { question: "Can forklifts run immediately?", answer: "Only after manufacturer cure times—never shortcutted." },
+      {
+        question: "Do you install epoxy floors?",
+        answer:
+          "Yes via our specialized coatings team or coordinated install with shared QA documentation.",
+      },
+      {
+        question: "Can forklifts run immediately after painting?",
+        answer:
+          "Only after manufacturer cure times for the specific system—never shortcutted on live logistics floors.",
+      },
+      {
+        question: "Do you use airless spray in warehouses?",
+        answer:
+          "Yes on suitable large fields—see our high-volume commercial painting scope for HEA programme detail.",
+      },
+      {
+        question: "Can you improve interior brightness?",
+        answer:
+          "Yes—high-reflectance coatings can be specified where light levels and energy targets justify the stack change.",
+      },
+      {
+        question: "What areas do you serve?",
+        answer:
+          "Gauteng logistics and industrial corridors with mobilisation to adjacent provinces on major tenders.",
+      },
     ],
     relatedServices: [
       { href: "/specialized-coatings/industrial-epoxy-flooring", label: "Industrial epoxy flooring" },
@@ -1223,13 +1456,13 @@ export const serviceDeepRegistryB: Pick<
     meta: {
       title: "Parking Garage Painting Contractors Gauteng | Maverick",
       description:
-        "Parking garage and basement painting with chloride-aware preparation, deck coatings coordination, line marking, and phased programmes for occupied buildings.",
+        "Parking garage and basement painting: light-reflective anti-carbonation wall coatings, hot-tire-resistant deck polyurethanes, chloride-aware spalling repair, SANS line marking, and phased programmes for occupied sectional-title and commercial assets.",
       path: "/painting/parking-garage-painting",
     },
     h1: "Parking garage & basement painting",
     eyebrow: "Commercial painting",
     heroLead:
-      "Parking structures combine chloride exposure, tyre abrasion, and poor ventilation—generic interior specs fail quickly. Maverick sequences deck repairs, coatings, and line marking with traffic management trustees can approve.",
+      "Subterranean and multi-level parking structures endure relentless mechanical stress, corrosive automotive fluids, and carbon monoxide exhaust staining. Maverick applies high-visibility, light-reflective coatings to enhance driver safety and reduce lighting load, while deck films resist hot-tire pickup, abrasive wear, and petrochemical spills—sequenced with expansion joint and spalling repairs trustees can approve.",
     breadcrumbs: [
       { label: "Services", href: "/services" },
       { label: "Painting services", href: "/painting-services" },
@@ -1238,19 +1471,75 @@ export const serviceDeepRegistryB: Pick<
     schemaServiceName: "Parking garage painting",
     schemaServiceDescription: "Basement and parking structure painting with structural coordination in Gauteng.",
     sections: [
-      { title: "Chloride & spalling interfaces", paragraphs: ["Deck edges with rust bleed or missing cover get injection, passivation, or mortar rebuild before coatings—painting cannot silence chloride cells that keep delaminating concrete."] },
-      { title: "Deck & wall systems", paragraphs: ["Traffic-rated deck films and anti-carbonation or semi-gloss wall stacks follow level exposure: pay grades, plant decks, and open ramps do not share one generic data sheet."] },
-      { title: "Phasing & safety", paragraphs: ["Bay rotation, forced ventilation, and clear fire routes stay in the traffic plan reviewed with trustees—crews cannot park kit in life-line aisles while chasing programme."] },
-      { title: "Wayfinding & line marking close-out", paragraphs: ["Demarcation, stencils, and anti-slip zones return after deck cures so the garage reopens legible for drivers, not freshly grey but unreadable at night."] },
+      {
+        title: "Chloride, spalling & structural interfaces",
+        paragraphs: [
+          "Deck edges with rust bleed or missing cover receive injection, passivation, or mortar rebuild before coatings—painting cannot silence chloride cells that keep delaminating concrete in parking environments.",
+          "We coordinate with expansion joint rehabilitation so movement and waterproofing interfaces stay continuous through the garage stack.",
+        ],
+      },
+      {
+        title: "Light-reflective walls & anti-carbonation stacks",
+        paragraphs: [
+          "Basement walls, columns, and soffits receive breathable anti-carbonation acrylics or specialised epoxies that protect reinforcing steel from exhaust fumes while improving visibility in poorly lit decks.",
+        ],
+      },
+      {
+        title: "Traffic-rated deck systems",
+        paragraphs: [
+          "Highly cross-linked polyurethanes resist hot-tire pickup, abrasive wear, and petrochemical spills—specified per level exposure: public pay grades, plant decks, and open ramps do not share one generic datasheet.",
+        ],
+      },
+      {
+        title: "Phasing, ventilation & line marking close-out",
+        paragraphs: [
+          "Bay rotation, forced ventilation, and clear fire routes stay in traffic plans reviewed with trustees. Demarcation and anti-slip zones return after deck cure so garages reopen legible—not freshly grey but unreadable at night.",
+        ],
+      },
     ],
     caseAngles: [
-      { title: "Sectional-title basement", summary: "Half-grid phasing matched trustee cash flow over three quarters." },
-      { title: "Office park garage", summary: "Line marking and walls completed between Friday close and Monday open." },
-      { title: "Retail podium parking", summary: "Spalling at expansion joints repaired before deck coating renewal." },
+      {
+        title: "Sectional-title basement",
+        summary:
+          "Half-grid phasing matched trustee cash flow over three quarters; light-reflective wall stack reduced complaints about dark parking levels.",
+      },
+      {
+        title: "Office park garage",
+        summary:
+          "Line marking and walls completed between Friday close and Monday open with hot-tire-resistant deck film on pay-grade levels.",
+      },
+      {
+        title: "Retail podium parking",
+        summary:
+          "Spalling at expansion joints repaired before deck coating renewal; CO exhaust staining addressed with specified wall preparation.",
+      },
     ],
     faqs: [
-      { question: "Do you repair concrete before painting?", answer: "Yes, structural defects are scoped separately then sequenced before coatings." },
-      { question: "Can cars park during works?", answer: "Typically partial occupancy with rotated bays." },
+      {
+        question: "Do you repair concrete before painting parking decks?",
+        answer:
+          "Yes—spalling, joints, and active leaks are scoped and sequenced before deck and wall coatings.",
+      },
+      {
+        question: "Can cars park during works?",
+        answer:
+          "Typically partial occupancy with rotated bays and signed traffic plans—full closure is scoped only where safety demands it.",
+      },
+      {
+        question: "What is hot-tire pickup?",
+        answer:
+          "When warm tyre tread bonds to insufficiently cured or wrong-spec deck coatings; we specify systems rated for the traffic class and enforce cure holds.",
+      },
+      {
+        question: "Do you improve basement lighting without electrical upgrades?",
+        answer:
+          "High-reflectance coatings can improve perceived brightness; we document realistic expectations alongside electrical options.",
+      },
+      {
+        question: "Do you handle line marking in the same programme?",
+        answer:
+          "Yes—see our road and yard line marking scope for SANS-aligned layouts and traffic-rated materials.",
+      },
     ],
     relatedServices: [
       { href: "/structural-repairs/concrete-spalling", label: "Concrete spalling repair" },
@@ -1263,13 +1552,13 @@ export const serviceDeepRegistryB: Pick<
     meta: {
       title: "Road & Yard Line Marking Contractors Gauteng | Maverick",
       description:
-        "Car park, warehouse yard, and estate road line marking with durable traffic paints, stencils, and QA documentation for commercial and industrial sites.",
+        "SANS-aligned car park, warehouse yard, and estate road line marking in Gauteng. Road-grade acrylics, MMA cold plastic, retro-reflective glass beads, disabled bays, fire lanes, and OHSA exclusion zones.",
       path: "/painting/road-marking",
     },
     h1: "Road, yard & car park line marking",
     eyebrow: "Commercial painting",
     heroLead:
-      "Line marking is a safety and compliance deliverable—faded bays and ambiguous haul routes create liability. Maverick applies durable traffic coatings with surface prep, stencil control, and reflectivity where estates and plants require it.",
+      "Efficient traffic flow, logistical organisation, and pedestrian safety in commercial parking lots, warehouse distribution yards, and industrial zones depend on precise, highly visible line marking. Maverick executes demarcations compliant with South African National Standards (SANS)—including disabled accessible bays, pedestrian walkways, and emergency fire lanes—using road-grade acrylics or ultra-durable MMA cold plastic with retro-reflective drop-on glass beads for night-time visibility.",
     breadcrumbs: [
       { label: "Services", href: "/services" },
       { label: "Painting services", href: "/painting-services" },
@@ -1278,19 +1567,81 @@ export const serviceDeepRegistryB: Pick<
     schemaServiceName: "Road and yard line marking",
     schemaServiceDescription: "Commercial car park and industrial yard line marking services in Gauteng.",
     sections: [
-      { title: "Surface preparation", paragraphs: ["Oils, dust, and friable old lines are removed mechanically so traffic paint bonds to sound asphalt or concrete—skipping this step is how new stripes lift under steering scrub in weeks."] },
-      { title: "Traffic-rated materials", paragraphs: ["Cold plastic, MMA, or solvent-borne systems are picked for tyre scrub, chemical drips, and Gauteng UV—each bay or yard lane gets the stack the duty actually demands."] },
-      { title: "Layout & compliance", paragraphs: ["Layouts follow client CAD, SANS conventions, or insurer diagrams; as-built photos and nozzle logs prove line widths and legend placement if there is ever a dispute in the basement."] },
-      { title: "Dry-time traffic management", paragraphs: ["Lane reopening times are published before work starts—marshals and boom protocols align with guardhouse rules so traffic does not return before the film can survive a turning bus."] },
+      {
+        title: "Surface preparation & bond integrity",
+        paragraphs: [
+          "Oils, dust, and friable old lines are removed mechanically so traffic paint bonds to sound asphalt or concrete—skipping prep is how new stripes lift under steering scrub within weeks.",
+        ],
+      },
+      {
+        title: "MMA cold plastic & traffic-rated acrylics",
+        paragraphs: [
+          "High-performance marking uses road-grade solvent acrylics or rapid-curing MMA cold plastic in high-traffic intersection zones. MMA markings bond chemically with asphalt or concrete, offering roughly 6–8× the durability of standard road paint.",
+          "Retro-reflective drop-on glass beads are integrated where 24-hour industrial operations and basement decks demand night-time and low-light visibility.",
+        ],
+      },
+      {
+        title: "SANS layouts & compliance documentation",
+        paragraphs: [
+          "Layouts follow client CAD, SANS conventions, or insurer diagrams—disabled bays, pedestrian walkways, fire lanes, directional arrows, loading zone hatching, and OHSA machinery exclusion zones included.",
+          "As-built photos and application logs prove line widths and legend placement if disputes arise with insurers or trustees.",
+        ],
+      },
+      {
+        title: "Dry-time traffic management",
+        paragraphs: [
+          "Lane reopening times are published before mobilisation—marshals and boom protocols align with guardhouse rules so traffic does not return before films survive turning buses and HGV scrub.",
+        ],
+      },
     ],
     caseAngles: [
-      { title: "Distribution yard", summary: "HGV routes and loading bays remarked during a 48-hour logistics pause." },
-      { title: "Office park basement", summary: "EV bays and disabled bays stencilled to updated national conventions." },
-      { title: "Estate roads", summary: "Speed calming markings refreshed before rainy season handover." },
+      {
+        title: "Distribution yard",
+        summary:
+          "HGV routes, loading bays, and 5S walkways remarked with MMA in intersection zones during a 48-hour logistics pause.",
+      },
+      {
+        title: "Office park basement",
+        summary:
+          "EV bays and disabled bays stencilled to updated SANS conventions with retro-reflective beads on ramp lanes.",
+      },
+      {
+        title: "Estate roads",
+        summary:
+          "Speed-calming markings and fire lane legends refreshed before rainy-season handover with documented dry times.",
+      },
     ],
     faqs: [
-      { question: "How soon can traffic resume?", answer: "Product-specific dry times; we publish hold periods before mobilisation." },
-      { question: "Do you remark warehouses?", answer: "Yes, including 5S zones and safety walkways." },
+      {
+        question: "How soon can traffic resume after line marking?",
+        answer:
+          "Product-specific dry times—MMA often allows faster return than standard acrylic; we publish hold periods before mobilisation.",
+      },
+      {
+        question: "Do you remark warehouses and factories?",
+        answer:
+          "Yes—including 5S zones, safety walkways, forklift routes, and loading bay hatching.",
+      },
+      {
+        question: "What is MMA cold plastic?",
+        answer:
+          "Methyl methacrylate markings cure rapidly and bond chemically to the substrate—specified where tyre scrub and chemical exposure destroy conventional paint quickly.",
+      },
+      {
+        question: "Are disabled bays marked to SANS?",
+        answer:
+          "Yes—dimensions and colour coding follow SANS conventions unless client or insurer diagrams specify otherwise in writing.",
+      },
+      {
+        question: "Do you supply retro-reflective markings?",
+        answer:
+          "Yes—glass bead drop-on is integrated where night-time and low-light visibility are specified.",
+      },
+      {
+        question: "Can marking follow a parking garage repaint?",
+        answer:
+          "Yes—line marking is sequenced after deck cure as part of integrated parking structure programmes.",
+      },
     ],
     relatedServices: [
       { href: "/painting/warehouse-painting", label: "Warehouse painting" },

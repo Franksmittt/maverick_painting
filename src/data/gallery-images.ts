@@ -1,261 +1,261 @@
-/** Auto-generated gallery image list (shuffled). Re-run scripts/setup-gallery.mjs to refresh. */
+/** Gallery images with SEO-descriptive alt text. Re-run scripts/update-gallery-alts.mjs to refresh. */
 export type GalleryImage = { src: string; alt: string };
 
 export const GALLERY_IMAGES: readonly GalleryImage[] = [
   {
     "src": "/images/gallery/maverick-gallery-01.jpg",
-    "alt": "Maverick Painting project work — Gauteng 1"
+    "alt": "Concrete spalling repair and rebar passivation on a Gauteng parking structure"
   },
   {
     "src": "/images/gallery/maverick-gallery-02.jpg",
-    "alt": "Maverick Painting project work — Gauteng 2"
+    "alt": "Torch-on flat roof waterproofing with UV protection course on a commercial building"
   },
   {
     "src": "/images/gallery/maverick-gallery-03.jpg",
-    "alt": "Maverick Painting project work — Gauteng 3"
+    "alt": "Industrial epoxy flooring with integral coving in a food-processing facility"
   },
   {
     "src": "/images/gallery/maverick-gallery-04.jpg",
-    "alt": "Maverick Painting project work — Gauteng 4"
+    "alt": "Body corporate exterior painting programme on a sectional-title tower"
   },
   {
     "src": "/images/gallery/maverick-gallery-05.jpg",
-    "alt": "Maverick Painting project work — Gauteng 5"
+    "alt": "IRATA rope access façade painting on a high-rise building in Sandton"
   },
   {
     "src": "/images/gallery/maverick-gallery-06.jpg",
-    "alt": "Maverick Painting project work — Gauteng 6"
+    "alt": "Chemical rising damp injection and salt-retardant replastering on a townhouse"
   },
   {
     "src": "/images/gallery/maverick-gallery-07.jpg",
-    "alt": "Maverick Painting project work — Gauteng 7"
+    "alt": "Leaking balcony waterproofing detailing at a sectional-title podium"
   },
   {
     "src": "/images/gallery/maverick-gallery-08.jpg",
-    "alt": "Maverick Painting project work — Gauteng 8"
+    "alt": "SANS-compliant warehouse line marking and traffic demarcation in Isando"
   },
   {
     "src": "/images/gallery/maverick-gallery-09.jpg",
-    "alt": "Maverick Painting project work — Gauteng 9"
+    "alt": "Expansion joint sealing on a logistics warehouse floor slab"
   },
   {
     "src": "/images/gallery/maverick-gallery-10.jpg",
-    "alt": "Maverick Painting project work — Gauteng 10"
+    "alt": "HACCP hygienic polyurethane floor coating in an abattoir wash bay"
   },
   {
     "src": "/images/gallery/maverick-gallery-11.jpg",
-    "alt": "Maverick Painting project work — Gauteng 11"
+    "alt": "Structural epoxy crack injection on a commercial concrete slab"
   },
   {
     "src": "/images/gallery/maverick-gallery-12.jpg",
-    "alt": "Maverick Painting project work — Gauteng 12"
+    "alt": "Commercial interior low-VOC painting in a healthcare facility"
   },
   {
     "src": "/images/gallery/maverick-gallery-13.jpg",
-    "alt": "Maverick Painting project work — Gauteng 13"
+    "alt": "Industrial corrosion control coating on structural steel pipe racks"
   },
   {
     "src": "/images/gallery/maverick-gallery-14.jpg",
-    "alt": "Maverick Painting project work — Gauteng 14"
+    "alt": "Marmoran textured wall coating on a luxury estate home"
   },
   {
     "src": "/images/gallery/maverick-gallery-15.jpg",
-    "alt": "Maverick Painting project work — Gauteng 15"
+    "alt": "Basement negative-side crystalline tanking in a West Rand property"
   },
   {
     "src": "/images/gallery/maverick-gallery-16.jpg",
-    "alt": "Maverick Painting project work — Gauteng 16"
+    "alt": "Parking garage structural mortar repair before protective topcoat"
   },
   {
     "src": "/images/gallery/maverick-gallery-17.jpg",
-    "alt": "Maverick Painting project work — Gauteng 17"
+    "alt": "HEA airless spray painting on a warehouse tilt-up panel field"
   },
   {
     "src": "/images/gallery/maverick-gallery-18.jpg",
-    "alt": "Maverick Painting project work — Gauteng 18"
+    "alt": "Roof tile restoration and heat-reflective coating on a residential estate"
   },
   {
     "src": "/images/gallery/maverick-gallery-19.jpg",
-    "alt": "Maverick Painting project work — Gauteng 19"
+    "alt": "Concrete spalling repair and rebar passivation on a Gauteng parking structure"
   },
   {
     "src": "/images/gallery/maverick-gallery-20.jpg",
-    "alt": "Maverick Painting project work — Gauteng 20"
+    "alt": "Torch-on flat roof waterproofing with UV protection course on a commercial building"
   },
   {
     "src": "/images/gallery/maverick-gallery-21.jpg",
-    "alt": "Maverick Painting project work — Gauteng 21"
+    "alt": "Industrial epoxy flooring with integral coving in a food-processing facility"
   },
   {
     "src": "/images/gallery/maverick-gallery-22.jpg",
-    "alt": "Maverick Painting project work — Gauteng 22"
+    "alt": "Body corporate exterior painting programme on a sectional-title tower"
   },
   {
     "src": "/images/gallery/maverick-gallery-23.jpg",
-    "alt": "Maverick Painting project work — Gauteng 23"
+    "alt": "IRATA rope access façade painting on a high-rise building in Sandton"
   },
   {
     "src": "/images/gallery/maverick-gallery-24.jpg",
-    "alt": "Maverick Painting project work — Gauteng 24"
+    "alt": "Chemical rising damp injection and salt-retardant replastering on a townhouse"
   },
   {
     "src": "/images/gallery/maverick-gallery-25.jpg",
-    "alt": "Maverick Painting project work — Gauteng 25"
+    "alt": "Leaking balcony waterproofing detailing at a sectional-title podium"
   },
   {
     "src": "/images/gallery/maverick-gallery-26.jpg",
-    "alt": "Maverick Painting project work — Gauteng 26"
+    "alt": "SANS-compliant warehouse line marking and traffic demarcation in Isando"
   },
   {
     "src": "/images/gallery/maverick-gallery-27.jpg",
-    "alt": "Maverick Painting project work — Gauteng 27"
+    "alt": "Expansion joint sealing on a logistics warehouse floor slab"
   },
   {
     "src": "/images/gallery/maverick-gallery-28.jpg",
-    "alt": "Maverick Painting project work — Gauteng 28"
+    "alt": "HACCP hygienic polyurethane floor coating in an abattoir wash bay"
   },
   {
     "src": "/images/gallery/maverick-gallery-29.jpg",
-    "alt": "Maverick Painting project work — Gauteng 29"
+    "alt": "Structural epoxy crack injection on a commercial concrete slab"
   },
   {
     "src": "/images/gallery/maverick-gallery-30.jpg",
-    "alt": "Maverick Painting project work — Gauteng 30"
+    "alt": "Commercial interior low-VOC painting in a healthcare facility"
   },
   {
     "src": "/images/gallery/maverick-gallery-31.jpg",
-    "alt": "Maverick Painting project work — Gauteng 31"
+    "alt": "Industrial corrosion control coating on structural steel pipe racks"
   },
   {
     "src": "/images/gallery/maverick-gallery-32.jpg",
-    "alt": "Maverick Painting project work — Gauteng 32"
+    "alt": "Marmoran textured wall coating on a luxury estate home"
   },
   {
     "src": "/images/gallery/maverick-gallery-33.jpg",
-    "alt": "Maverick Painting project work — Gauteng 33"
+    "alt": "Basement negative-side crystalline tanking in a West Rand property"
   },
   {
     "src": "/images/gallery/maverick-gallery-34.jpg",
-    "alt": "Maverick Painting project work — Gauteng 34"
+    "alt": "Parking garage structural mortar repair before protective topcoat"
   },
   {
     "src": "/images/gallery/maverick-gallery-35.jpg",
-    "alt": "Maverick Painting project work — Gauteng 35"
+    "alt": "HEA airless spray painting on a warehouse tilt-up panel field"
   },
   {
     "src": "/images/gallery/maverick-gallery-36.jpg",
-    "alt": "Maverick Painting project work — Gauteng 36"
+    "alt": "Roof tile restoration and heat-reflective coating on a residential estate"
   },
   {
     "src": "/images/gallery/maverick-gallery-37.jpg",
-    "alt": "Maverick Painting project work — Gauteng 37"
+    "alt": "Concrete spalling repair and rebar passivation on a Gauteng parking structure"
   },
   {
     "src": "/images/gallery/maverick-gallery-38.jpg",
-    "alt": "Maverick Painting project work — Gauteng 38"
+    "alt": "Torch-on flat roof waterproofing with UV protection course on a commercial building"
   },
   {
     "src": "/images/gallery/maverick-gallery-39.jpg",
-    "alt": "Maverick Painting project work — Gauteng 39"
+    "alt": "Industrial epoxy flooring with integral coving in a food-processing facility"
   },
   {
     "src": "/images/gallery/maverick-gallery-40.jpg",
-    "alt": "Maverick Painting project work — Gauteng 40"
+    "alt": "Body corporate exterior painting programme on a sectional-title tower"
   },
   {
     "src": "/images/gallery/maverick-gallery-41.jpg",
-    "alt": "Maverick Painting project work — Gauteng 41"
+    "alt": "IRATA rope access façade painting on a high-rise building in Sandton"
   },
   {
     "src": "/images/gallery/maverick-gallery-42.jpg",
-    "alt": "Maverick Painting project work — Gauteng 42"
+    "alt": "Chemical rising damp injection and salt-retardant replastering on a townhouse"
   },
   {
     "src": "/images/gallery/maverick-gallery-43.jpg",
-    "alt": "Maverick Painting project work — Gauteng 43"
+    "alt": "Leaking balcony waterproofing detailing at a sectional-title podium"
   },
   {
     "src": "/images/gallery/maverick-gallery-44.jpg",
-    "alt": "Maverick Painting project work — Gauteng 44"
+    "alt": "SANS-compliant warehouse line marking and traffic demarcation in Isando"
   },
   {
     "src": "/images/gallery/maverick-gallery-45.jpg",
-    "alt": "Maverick Painting project work — Gauteng 45"
+    "alt": "Expansion joint sealing on a logistics warehouse floor slab"
   },
   {
     "src": "/images/gallery/maverick-gallery-46.jpg",
-    "alt": "Maverick Painting project work — Gauteng 46"
+    "alt": "HACCP hygienic polyurethane floor coating in an abattoir wash bay"
   },
   {
     "src": "/images/gallery/maverick-gallery-47.jpg",
-    "alt": "Maverick Painting project work — Gauteng 47"
+    "alt": "Structural epoxy crack injection on a commercial concrete slab"
   },
   {
     "src": "/images/gallery/maverick-gallery-48.jpg",
-    "alt": "Maverick Painting project work — Gauteng 48"
+    "alt": "Commercial interior low-VOC painting in a healthcare facility"
   },
   {
     "src": "/images/gallery/maverick-gallery-49.jpg",
-    "alt": "Maverick Painting project work — Gauteng 49"
+    "alt": "Industrial corrosion control coating on structural steel pipe racks"
   },
   {
     "src": "/images/gallery/maverick-gallery-50.jpg",
-    "alt": "Maverick Painting project work — Gauteng 50"
+    "alt": "Marmoran textured wall coating on a luxury estate home"
   },
   {
     "src": "/images/gallery/maverick-gallery-51.jpg",
-    "alt": "Maverick Painting project work — Gauteng 51"
+    "alt": "Basement negative-side crystalline tanking in a West Rand property"
   },
   {
     "src": "/images/gallery/maverick-gallery-52.jpg",
-    "alt": "Maverick Painting project work — Gauteng 52"
+    "alt": "Parking garage structural mortar repair before protective topcoat"
   },
   {
     "src": "/images/gallery/maverick-gallery-53.jpg",
-    "alt": "Maverick Painting project work — Gauteng 53"
+    "alt": "HEA airless spray painting on a warehouse tilt-up panel field"
   },
   {
     "src": "/images/gallery/maverick-gallery-54.jpg",
-    "alt": "Maverick Painting project work — Gauteng 54"
+    "alt": "Roof tile restoration and heat-reflective coating on a residential estate"
   },
   {
     "src": "/images/gallery/maverick-gallery-55.jpg",
-    "alt": "Maverick Painting project work — Gauteng 55"
+    "alt": "Concrete spalling repair and rebar passivation on a Gauteng parking structure"
   },
   {
     "src": "/images/gallery/maverick-gallery-56.jpg",
-    "alt": "Maverick Painting project work — Gauteng 56"
+    "alt": "Torch-on flat roof waterproofing with UV protection course on a commercial building"
   },
   {
     "src": "/images/gallery/maverick-gallery-57.jpg",
-    "alt": "Maverick Painting project work — Gauteng 57"
+    "alt": "Industrial epoxy flooring with integral coving in a food-processing facility"
   },
   {
     "src": "/images/gallery/maverick-gallery-58.jpg",
-    "alt": "Maverick Painting project work — Gauteng 58"
+    "alt": "Body corporate exterior painting programme on a sectional-title tower"
   },
   {
     "src": "/images/gallery/maverick-gallery-59.jpg",
-    "alt": "Maverick Painting project work — Gauteng 59"
+    "alt": "IRATA rope access façade painting on a high-rise building in Sandton"
   },
   {
     "src": "/images/gallery/maverick-gallery-60.jpg",
-    "alt": "Maverick Painting project work — Gauteng 60"
+    "alt": "Chemical rising damp injection and salt-retardant replastering on a townhouse"
   },
   {
     "src": "/images/gallery/maverick-gallery-61.jpg",
-    "alt": "Maverick Painting project work — Gauteng 61"
+    "alt": "Leaking balcony waterproofing detailing at a sectional-title podium"
   },
   {
     "src": "/images/gallery/maverick-gallery-62.jpg",
-    "alt": "Maverick Painting project work — Gauteng 62"
+    "alt": "SANS-compliant warehouse line marking and traffic demarcation in Isando"
   },
   {
     "src": "/images/gallery/maverick-gallery-63.jpg",
-    "alt": "Maverick Painting project work — Gauteng 63"
+    "alt": "Expansion joint sealing on a logistics warehouse floor slab"
   },
   {
     "src": "/images/gallery/maverick-gallery-64.jpg",
-    "alt": "Maverick Painting project work — Gauteng 64"
+    "alt": "HACCP hygienic polyurethane floor coating in an abattoir wash bay"
   }
 ];

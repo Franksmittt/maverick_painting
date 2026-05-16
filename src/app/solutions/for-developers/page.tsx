@@ -1,52 +1,100 @@
-// src/app/solutions/for-developers/page.tsx
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { QaProcessModule } from '@/components/qa-process-module';
-import { TrustAndCtaStrip } from '@/components/trust-and-cta-strip';
-import { Building, ClipboardCheck, Scroll, Wrench } from 'lucide-react'; // REMOVED: Hammer, Layers
-import { buildPageMetadata } from '@/lib/metadata';
+import { Building, ClipboardCheck, Scroll, Wrench } from "lucide-react";
+import { SolutionPageLayout } from "@/components/solution-page-layout";
+import { buildPageMetadata } from "@/lib/metadata";
 
-// --- METADATA (SEO) ---
 export const metadata = buildPageMetadata({
-    title: 'New Build & Developer Painting Solutions | Technical Compliance & Auditable QA',
-    description: 'Verifiable painting and coating specifications for developers, engineers, and quantity surveyors. We guarantee compliance with SANS standards and ensure zero hand-over risk through Independent 3rd Party QA.',
-    path: '/solutions/for-developers',
+  title: "Developer Handover & New Build Coatings | SANS-Aligned QA | Maverick",
+  description:
+    "Practical completion support for developers and QS teams: structural remediation, waterproofing, coatings to manufacturer data sheets, and independent QA documentation for defect-free handovers.",
+  path: "/solutions/for-developers",
 });
 
-// --- CORE PAIN POINTS DATA ---
-const DeveloperValueProps = [
-    {
-        title: "Technical Compliance",
-        description: "Application strictly adheres to manufacturer specifications and SANS 10047/10051 for verifiable film thickness and quality.",
-        icon: Scroll,
-        accentColor: "border-secondary",
-    },
-    {
-        title: "Auditable Quality",
-        description: "Independent QA provides fortnightly reports, eliminating contractor bias and giving the QS or engineer verifiable quality assurance documentation.",
-        icon: ClipboardCheck,
-        accentColor: "border-tertiary",
-    },
-    {
-        title: "Structural Hand-over",
-        description: "Our capability includes fixing spalling, crack injection, and waterproofing, ensuring the structure is sound before final coatings.",
-        icon: Wrench,
-        accentColor: "border-secondary",
-    },
-    {
-        title: "High-Volume Efficiency",
-        description: "Experienced in large-scale residential and commercial complex painting, ensuring on-time delivery without compromising on final quality.",
-        icon: Building,
-        accentColor: "border-tertiary",
-    },
-];
+const faqs = [
+  {
+    question: "How does independent QA help at practical completion?",
+    answer:
+      "Timestamped records of substrate preparation, environmental readings, and film build give developers defensible evidence during defects liability periods—reducing disputes with body corporates and incoming facility managers.",
+  },
+  {
+    question: "Do you work to SANS 10400-related coating requirements?",
+    answer:
+      "We implement engineer and manufacturer specifications aligned with national building regulations pathways for structural and fire-related interfaces—execution documentation is our deliverable; engineering sign-off remains with the appointed professional.",
+  },
+  {
+    question: "Can you fix snags before final coat?",
+    answer:
+      "Yes—spalling, crack injection, balcony waterproofing, and joint rehabilitation can be sequenced in one programme before architectural and protective topcoats close the envelope.",
+  },
+] as const;
 
-// --- MAIN PAGE COMPONENT ---
 export default function DeveloperSolutionsPage() {
-    return (
-        <div className="bg-primary pt-24 text-white">
-
-            <TrustAndCtaStrip />
-        </div>
-    );
+  return (
+    <SolutionPageLayout
+      path="/solutions/for-developers"
+      breadcrumbLabel="Developers"
+      h1="Handover-ready assets with QA files your QS can audit."
+      lead="Developers need coatings and waterproofing that survive defects liability—not cosmetic close-out paint. Maverick delivers manufacturer-aligned application, structural remediation where required, and independent third-party QA so practical completion packs include measurable evidence, not verbal assurances from site."
+      valueProps={[
+        {
+          title: "Manufacturer-aligned execution",
+          description:
+            "Mix ratios, recoat windows, and film build logged to data sheets so product warranties remain valid after handover to body corporates.",
+          icon: Scroll,
+          accentColor: "border-secondary",
+        },
+        {
+          title: "Independent QA reporting",
+          description:
+            "Fortnightly third-party inspection reduces contractor bias and gives quantity surveyors auditable quality records for retention and snag closure.",
+          icon: ClipboardCheck,
+          accentColor: "border-tertiary",
+        },
+        {
+          title: "Structural envelope integrity",
+          description:
+            "Spalling, injection, expansion joints, and tanking sequenced before final aesthetics so latent defects are not buried under topcoat.",
+          icon: Wrench,
+          accentColor: "border-secondary",
+        },
+        {
+          title: "High-volume programmes",
+          description:
+            "HEA airless and phased mobilisation for multi-block residential and commercial shells across Gauteng logistics and estate nodes.",
+          icon: Building,
+          accentColor: "border-tertiary",
+        },
+      ]}
+      narrative={{
+        heading: "Mitigating latent defects after handover",
+        paragraphs: [
+          "Water ingress, spalling at podium levels, and failed balcony detailing are among the costliest post-handover disputes. Maverick sequences waterproofing, structural repair, and coatings under one accountable programme with hold points specifiers can witness.",
+          "Independent QA captures moisture readings, batch references, and repair maps—documentation that supports SANS 10400 compliance narratives and smoother transitions to sectional-title schemes.",
+          "We mobilise across Midrand, Centurion, East Rand logistics corridors, and West Rand nodes where mining legacy hydrology demands engineered tanking—not generic damp paint.",
+        ],
+      }}
+      serviceLinks={[
+        {
+          href: "/waterproofing/basement-tanking",
+          label: "Basement tanking",
+          blurb: "Negative- and positive-side systems for hydrostatic pressure on below-grade assets.",
+        },
+        {
+          href: "/structural-repairs",
+          label: "Structural repairs",
+          blurb: "Spalling, crack injection, and joint sealing before handover coatings.",
+        },
+        {
+          href: "/painting/high-volume-commercial-painting",
+          label: "High-volume commercial painting",
+          blurb: "HEA airless programmes for large residential and commercial shells.",
+        },
+        {
+          href: "/our-process-independent-qa",
+          label: "Independent QA",
+          blurb: "Our third-party inspection workflow for developer and BC handover.",
+        },
+      ]}
+      faqs={faqs}
+    />
+  );
 }

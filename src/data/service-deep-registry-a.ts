@@ -13,7 +13,7 @@ export const serviceDeepRegistryA: Pick<
 > = {
   "concrete-spalling": {
     meta: {
-      title: "Concrete Spalling & Concrete Cancer Repair in Gauteng | Maverick",
+      title: "Concrete Spalling & Concrete Cancer Repair | Gauteng",
       description:
         "Engineer-aligned concrete spalling remediation in Johannesburg & Pretoria: rebar passivation, polymer-modified structural mortars, anti-carbonation coatings, and independent QA documentation for body corporates and commercial assets.",
       path: "/structural-repairs/concrete-spalling",
@@ -83,9 +83,10 @@ export const serviceDeepRegistryA: Pick<
         ],
       },
       {
-        title: "Service areas",
+        title: "Gauteng service footprint",
         paragraphs: [
-          "Structural spalling teams mobilise across Johannesburg, Pretoria, Midrand, Centurion, Sandton, the East Rand, and key estate nodes. Remote desktop reviews can precede a site visit for trustees collecting comparative quotes.",
+          "Structural spalling teams mobilise across Johannesburg, Pretoria, Midrand, Centurion, and Sandton, with concentrated programmes on the East Rand (Boksburg, Kempton Park, Germiston, Isando industrial nodes), West Rand (Roodepoort, Krugersdorp, legacy sectional-title stock), and South Rand (Alberton, Glenvista, Bassonia estates).",
+          "Remote desktop reviews with photographic packs can precede site walk-downs for trustees collecting comparative quotes.",
         ],
       },
     ],
@@ -143,14 +144,14 @@ export const serviceDeepRegistryA: Pick<
           "Alterations affecting structural performance may require competent-person or engineer involvement under National Building Regulations pathways. Maverick implements specified repairs; we do not self-certify engineering designs.",
       },
       {
-        question: "How long does structural epoxy mortar take to cure?",
+        question: "How does NHBRC classify cracks before repair?",
         answer:
-          "Cure schedules are product- and temperature-specific. We publish realistic return-to-service dates based on datasheet cure windows, not guesswork.",
+          "Under NHBRC home-building warranty pathways, cracks are commonly grouped by width and behaviour—hairline settlement cracks (often under about 1 mm) may be monitored or cosmetically treated, while wider or progressive cracks can indicate structural movement and may require engineer assessment, injection, or remedial rebuild. Maverick executes engineer-specified repairs; we do not self-certify structural designs.",
       },
       {
-        question: "Can you repair high-rise façades via rope access?",
+        question: "What does concrete spalling repair cost per square metre in Gauteng?",
         answer:
-          "Yes where rope access is the approved temporary works method. IRATA crews can pair with remedial teams to reduce scaffold hire duration on suitable elevations.",
+          "Indicative remedial rates often fall between roughly R800 and R2,500 per m² depending on breakout depth, rebar treatment, access method (scaffold vs rope), and protective coating scope. Site measurement, hammer sounding, and moisture profiling drive accurate quotes—we avoid bait pricing without inspection.",
       },
       {
         question: "What guarantees apply?",
@@ -573,7 +574,8 @@ export const serviceDeepRegistryA: Pick<
       {
         title: "Protection courses & long-term maintenance",
         paragraphs: [
-          "Manufacturer guarantees need protection layers, debris control, and inspection rhythms. Handover includes maintenance calendars and photo logs so facility teams know what “good” looks like five years after completion.",
+          "Manufacturer guarantees on torch-on systems (such as 3–4 mm dual-reinforced polyester polymer-modified bitumen membranes) typically require bi-annual maintenance and UV-reflective aluminium or elastic acrylic topcoats to prevent polymer embrittlement from constant Highveld solar radiation.",
+          "Handover includes maintenance calendars and photo logs so facility teams know what “good” looks like five years after completion.",
         ],
       },
     ],
@@ -861,9 +863,9 @@ export const serviceDeepRegistryA: Pick<
           "Often on occupied podiums, yes, fire risk and fume management drive system choice alongside performance.",
       },
       {
-        question: "Do you service estates only?",
+        question: "What does leaking balcony repair cost in Gauteng?",
         answer:
-          "We service estates, flats, and commercial podiums across Gauteng.",
+          "Indicative balcony waterproofing often ranges from roughly R450 to R1,200 per m² depending on tile uplift, screed correction, detailing complexity, and access. Injection-only stabilisation may cost less but is not always technically appropriate—assessments define the responsible path.",
       },
     ],
     relatedServices: [
@@ -898,6 +900,13 @@ export const serviceDeepRegistryA: Pick<
         title: "Positive vs negative side interventions",
         paragraphs: [
           "External positive barriers suit new construction; negative remedial tanking applies when bulkheads cannot be dug out. We state limitations honestly—negative builds manage hydrostatic load differently and must follow engineer design.",
+        ],
+      },
+      {
+        title: "Crystalline waterproofing technology",
+        paragraphs: [
+          "Where specified, crystalline systems (such as Xypex-type formulations) penetrate concrete capillary tracts and react with moisture and cement hydration by-products to form non-soluble crystalline structures—rendering the concrete mass impermeable to water and aggressive groundwater chemicals.",
+          "These technologies can resist extreme hydrostatic pressure from positive or negative sides and possess self-healing properties for future hairline cracks up to approximately 0.4 mm—often specified for lift pits, elevator shafts, and underground parking grids.",
         ],
       },
       {

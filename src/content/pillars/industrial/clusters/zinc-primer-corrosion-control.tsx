@@ -44,6 +44,21 @@ export function ZincPrimerCorrosionControlArticle() {
             </p>
           </section>
 
+          <section>
+            <h2 className="text-3xl font-bold text-primary mb-4">
+              ISO 12944 exposure classes on the Highveld
+            </h2>
+            <p>
+              Inland atmospheric corrosion (often C3–C4) still demands disciplined stripe coats at
+              edges and welds. Coastal logistics corridors near OR Tambo may approach C5-I. Match
+              primer chemistry to the specifier&apos;s exposure class—not a favourite brand from the yard.
+            </p>
+            <p>
+              Maverick documents blast profile, ambient conditions, and dry film thickness per layer
+              so insurer and engineer reviews survive loss events.
+            </p>
+          </section>
+
           <section className="bg-primary text-white p-6 rounded-xl shadow-xl">
             <h3 className="text-2xl font-bold text-tertiary mb-3">
               Specification Checklist

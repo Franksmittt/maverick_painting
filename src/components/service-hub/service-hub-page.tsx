@@ -5,6 +5,8 @@ import { TrustAndCtaStrip } from "@/components/trust-and-cta-strip";
 import { ServiceHubApproach } from "@/components/service-hub/service-hub-approach";
 import { ServiceHubHero } from "@/components/service-hub/service-hub-hero";
 import { ServiceHubMagazine } from "@/components/service-hub/service-hub-magazine";
+import { FaqSection } from "@/components/faq-section";
+import { hubFaqsByPath } from "@/data/hub-faqs";
 import { siteConfig } from "@/lib/seo";
 import type { ServiceHubPageConfig } from "@/lib/service-hub-types";
 
@@ -45,6 +47,13 @@ export function ServiceHubPage({ config }: { config: ServiceHubPageConfig }) {
       <ServiceHubApproach {...config.approach} />
       <HubSpokeSection variant="dark" {...config.hubSpoke} />
       <ServiceHubMagazine {...config.magazine} />
+      {(config.faqs ?? hubFaqsByPath[config.path]) ? (
+        <FaqSection
+          headingId={`${config.path.replace(/\//g, "-")}-faq-heading`}
+          items={config.faqs ?? hubFaqsByPath[config.path] ?? []}
+          schemaPath={config.path}
+        />
+      ) : null}
       <QaProcessModule />
       <TrustAndCtaStrip />
     </div>

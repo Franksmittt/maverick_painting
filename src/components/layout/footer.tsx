@@ -69,7 +69,7 @@ export function Footer() {
   return (
     <footer className="border-t border-white/[0.07] bg-[#050505]">
       <div className="page-container py-10 sm:py-12">
-        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-12">
+        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-5 lg:gap-10">
           {/* Brand */}
           <div className="flex min-w-0 flex-col gap-3 sm:col-span-2 lg:col-span-1">
             <LogoBlock />
@@ -104,6 +104,30 @@ export function Footer() {
             <FooterColHeading>Services</FooterColHeading>
             <ul className="space-y-2">
               {D.FOOTER_SERVICE_LINKS.map((l) => (
+                <li key={l.href}>
+                  <Link href={l.href} className={linkClass}>
+                    {l.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          {/* Solutions & locations */}
+          <nav className="min-w-0" aria-label="Solutions and locations">
+            <FooterColHeading>Solutions</FooterColHeading>
+            <ul className="mb-6 space-y-2">
+              {D.FOOTER_SOLUTION_LINKS.map((l) => (
+                <li key={l.href}>
+                  <Link href={l.href} className={linkClass}>
+                    {l.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <FooterColHeading>Locations</FooterColHeading>
+            <ul className="space-y-2">
+              {D.FOOTER_LOCATION_LINKS.map((l) => (
                 <li key={l.href}>
                   <Link href={l.href} className={linkClass}>
                     {l.label}

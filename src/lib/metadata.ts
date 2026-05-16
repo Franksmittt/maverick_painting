@@ -23,6 +23,21 @@ const toAbsoluteUrl = (value?: string) => {
   return `${baseUrl}${value.startsWith("/") ? value : `/${value}`}`;
 };
 
+const BRAND_SUFFIXES = [
+  /\s*\|\s*Maverick Painting Contractors\s*$/i,
+  /\s*\|\s*Maverick Painting\s*$/i,
+  /\s*\|\s*Maverick\s*$/i,
+] as const;
+
+/** Strip redundant brand suffix so layout title.template appends it once. */
+export function normalizePageTitle(title: string): string {
+  let normalized = title.trim();
+  for (const pattern of BRAND_SUFFIXES) {
+    normalized = normalized.replace(pattern, "").trim();
+  }
+  return normalized;
+}
+
 export function buildPageMetadata({
   title,
   description,
@@ -33,16 +48,18 @@ export function buildPageMetadata({
   const normalizedPath = path === "/" ? "" : path.startsWith("/") ? path : `/${path}`;
   const canonical = `${baseUrl}${normalizedPath}`;
   const ogImage = toAbsoluteUrl(image);
+  const pageTitle = normalizePageTitle(title);
+  const fullTitle = `${pageTitle} | ${siteConfig.shortName}`;
 
   return {
-    title,
+    title: pageTitle,
     description,
     metadataBase: new URL(baseUrl),
     alternates: {
       canonical,
     },
     openGraph: {
-      title,
+      title: fullTitle,
       description,
       url: canonical,
       siteName: siteConfig.name,
@@ -55,7 +72,7 @@ export function buildPageMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title,
+      title: fullTitle,
       description,
       site: siteConfig.twitterHandle,
       images: [ogImage],

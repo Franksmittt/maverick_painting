@@ -1,102 +1,127 @@
-// src/app/blog/page.tsx
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { CtaFinalStrip } from '@/components/cta-final-strip';
-import { BookOpen, Wrench, Layers, Building } from 'lucide-react';
-import { buildPageMetadata } from '@/lib/metadata';
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { CtaFinalStrip } from "@/components/cta-final-strip";
+import { BookOpen, Wrench, Layers, Building } from "lucide-react";
+import { buildPageMetadata } from "@/lib/metadata";
+import { getPillars } from "@/lib/pillars";
+import { standaloneBlogArticles } from "@/data/standalone-blog-articles";
 
-// --- METADATA (SEO) ---
 export const metadata = buildPageMetadata({
-    title: 'Expertise Hub: Structural Repair, Waterproofing & Coating Guides | Maverick Blog',
-    description: 'Read technical guides and expert advice on concrete spalling, high-performance epoxy coatings, industrial waterproofing, and managing body corporate maintenance projects.',
-    path: '/blog',
+  title: "Structural Repair, Waterproofing & Coating Guides",
+  description:
+    "Technical guides on concrete spalling, epoxy coatings, STSMA maintenance, rising damp, rope access, and body corporate asset protection in Gauteng.",
+  path: "/blog",
 });
 
-// --- DATA: Content Categories (Future SEO Silos) ---
 const ContentCategories = [
-    { title: "Structural Remediation", icon: Wrench, description: "Deep dives into concrete cancer, crack injection, and spalling repair methodologies.", href: "/blog/structural-remediation" },
-    { title: "Waterproofing & Damp", icon: Layers, description: "Guides on choosing the right torch-on or liquid membrane system for flat roofs and balconies.", href: "/blog/waterproofing" },
-    { title: "Commercial & Industrial", icon: Building, description: "Best practices for facility managers, corrosion control, and large-scale project management.", href: "/blog/industrial" },
+  {
+    title: "Structural Remediation",
+    icon: Wrench,
+    description: "Concrete cancer, crack injection, expansion joints, and spalling repair.",
+    href: "/blog/structural-remediation",
+  },
+  {
+    title: "Waterproofing & Damp",
+    icon: Layers,
+    description: "Torch-on vs liquid membranes, balconies, rising damp, and roof maintenance.",
+    href: "/blog/waterproofing",
+  },
+  {
+    title: "Commercial & Industrial",
+    icon: Building,
+    description: "Corrosion control, HACCP floors, line marking, and OHS at height.",
+    href: "/blog/industrial",
+  },
 ];
 
-// --- MAIN PAGE COMPONENT ---
 export default function BlogIndexPage() {
-    return (
-        <div className="bg-primary pt-24 text-white min-h-screen">
+  const pillars = getPillars();
+  const pillarClusters = pillars.flatMap((pillar) =>
+    pillar.clusters.map((cluster) => ({
+      title: cluster.title,
+      description: cluster.description,
+      href: cluster.metadata.path ?? `/blog/${pillar.slug}/${cluster.slug}`,
+    }))
+  );
 
-            {/* --- MODULE 1: BLOG HERO (Authority Statement) --- */}
-            <section className="relative py-24 md:py-32 px-4 bg-gray-900 border-b-4 border-secondary">
-                <div className="max-w-7xl mx-auto">
-                    <BookOpen className="w-12 h-12 text-tertiary mb-4" />
-                    <h1 className="text-5xl md:text-7xl font-extrabold leading-tight uppercase max-w-5xl">
-                        The Expertise Hub. Technical Guides & Insights.
-                    </h1>
-                    <p className="2xl font-light mt-6 max-w-4xl text-gray-400">
-                        We don&apos;t just paint; we educate. Access expert resources on solving complex structural and waterproofing defects for high-value assets.
-                    </p>
+  const featured = [
+    ...standaloneBlogArticles.slice(0, 6).map((article) => ({
+      title: article.title,
+      description: article.lead,
+      href: article.metadata.path ?? `/blog/${article.slug}`,
+    })),
+    ...pillarClusters.slice(0, 3),
+  ].slice(0, 9);
 
-                    <Button asChild
-                        className="mt-10 bg-secondary hover:bg-[#4AD5E2] text-primary font-bold text-lg h-14 shadow-2xl transform hover:scale-105"
-                    >
-                        <Link href="/contact">
-                            Contact an Expert Now &rarr;
-                        </Link>
-                    </Button>
-                </div>
-            </section>
-
-            {/* --- MODULE 2: CONTENT CATEGORIES (SEO Silo Links) --- */}
-            <section className="py-24 px-4 bg-primary">
-                <div className="max-w-7xl mx-auto">
-                    <header className="text-center max-w-4xl mx-auto mb-16">
-                        <h2 className="text-4xl font-extrabold uppercase mb-3">
-                            Explore Technical Categories
-                        </h2>
-                        <p className="text-lg text-gray-400 font-light">
-                            Jump straight into the expert knowledge required to protect your asset.
-                        </p>
-                    </header>
-
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {ContentCategories.map((category, index) => (
-                            <Link key={index} href={category.href}
-                                className="p-8 bg-gray-900 rounded-xl shadow-xl border-t-4 border-tertiary 
-                                           transition-all duration-300 transform hover:scale-[1.03] hover:shadow-tertiary/50 group"
-                            >
-                                <category.icon className="w-8 h-8 text-secondary mb-4 group-hover:text-tertiary" />
-                                <h3 className="text-2xl font-bold uppercase mb-2 text-white">
-                                    {category.title}
-                                </h3>
-                                <p className="text-gray-400 text-base">
-                                    {category.description}
-                                </p>
-                                <span className="text-tertiary font-bold mt-4 block group-hover:text-white transition-colors">
-                                    View Articles &rarr;
-                                </span>
-                            </Link>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* --- MODULE 3: FEATURED ARTICLES (Placeholder for Dynamic Content) --- */}
-            <section className="py-24 px-4 bg-gray-900">
-                <div className="max-w-7xl mx-auto">
-                    <h2 className="text-4xl font-extrabold uppercase mb-12">
-                        Latest Insights
-                    </h2>
-                    
-                    {/* Placeholder for fetching and mapping dynamic articles */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center text-gray-500 italic">
-                        <p className="p-12 bg-primary rounded-xl">Article Placeholder 1 (Requires CMS/Database Integration)</p>
-                        <p className="p-12 bg-primary rounded-xl">Article Placeholder 2 (Requires CMS/Database Integration)</p>
-                        <p className="p-12 bg-primary rounded-xl">Article Placeholder 3 (Requires CMS/Database Integration)</p>
-                    </div>
-                </div>
-            </section>
-
-            {/* --- MODULE 4: FINAL CTA STRIP (Conversion Funnel) --- */}
-            <CtaFinalStrip />
+  return (
+    <div className="min-h-screen bg-primary pt-24 text-white">
+      <section className="relative border-b-4 border-secondary bg-gray-900 px-4 py-24 md:py-32">
+        <div className="mx-auto max-w-7xl">
+          <BookOpen className="mb-4 h-12 w-12 text-tertiary" />
+          <h1 className="max-w-5xl text-5xl font-extrabold uppercase leading-tight md:text-7xl">
+            The Expertise Hub. Technical Guides & Insights.
+          </h1>
+          <p className="mt-6 max-w-4xl text-xl font-light text-gray-400">
+            Expert resources on structural defects, waterproofing, STSMA compliance, and industrial
+            coatings for Gauteng assets.
+          </p>
+          <Button
+            asChild
+            className="mt-10 h-14 transform bg-secondary text-lg font-bold text-primary shadow-2xl hover:scale-105 hover:bg-[#4AD5E2]"
+          >
+            <Link href="/contact">Contact an expert</Link>
+          </Button>
         </div>
-    );
+      </section>
+
+      <section className="bg-primary px-4 py-24">
+        <div className="mx-auto max-w-7xl">
+          <header className="mx-auto mb-16 max-w-4xl text-center">
+            <h2 className="mb-3 text-4xl font-extrabold uppercase">Explore technical categories</h2>
+            <p className="text-lg font-light text-gray-400">
+              Jump into the knowledge required to protect your asset.
+            </p>
+          </header>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+            {ContentCategories.map((category) => (
+              <Link
+                key={category.href}
+                href={category.href}
+                className="group transform rounded-xl border-t-4 border-tertiary bg-gray-900 p-8 shadow-xl transition-all duration-300 hover:scale-[1.03] hover:shadow-tertiary/50"
+              >
+                <category.icon className="mb-4 h-8 w-8 text-secondary group-hover:text-tertiary" />
+                <h3 className="mb-2 text-2xl font-bold uppercase text-white">{category.title}</h3>
+                <p className="text-base text-gray-400">{category.description}</p>
+                <span className="mt-4 block font-bold text-tertiary transition-colors group-hover:text-white">
+                  View articles →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-gray-900 px-4 py-24">
+        <div className="mx-auto max-w-7xl">
+          <h2 className="mb-12 text-4xl font-extrabold uppercase">Featured guides</h2>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {featured.map((article) => (
+              <Link
+                key={article.href}
+                href={article.href}
+                className="rounded-xl border border-gray-800 bg-primary p-8 text-left transition hover:border-secondary"
+              >
+                <h3 className="mb-3 text-xl font-bold text-white">{article.title}</h3>
+                <p className="line-clamp-4 text-gray-400">{article.description}</p>
+                <span className="mt-4 block font-semibold text-secondary">Read guide →</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <CtaFinalStrip />
+    </div>
+  );
 }
+

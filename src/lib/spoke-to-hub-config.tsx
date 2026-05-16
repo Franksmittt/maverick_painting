@@ -162,7 +162,196 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
       alt: "Completed Marmoran-style decorative wall finish on an estate or commercial elevation",
     },
   ],
+  "industrial-corrosion-control": [
+    {
+      src: "/images/coatings-industrial-corrosion-01.jpg",
+      alt: "Industrial corrosion assessment and coating specification on steel or concrete structures in Gauteng",
+    },
+    {
+      src: "/images/coatings-industrial-corrosion-02.jpg",
+      alt: "Surface preparation and protective coating application for corrosion control on plant or warehouse assets",
+    },
+    {
+      src: "/images/coatings-industrial-corrosion-03.jpg",
+      alt: "Completed protective coating system handover on industrial steelwork or tankage",
+    },
+  ],
+  "flat-concrete-roofs": [
+    {
+      src: "/images/waterproofing-flat-roof-01.jpg",
+      alt: "Flat concrete roof inspection and moisture tracing before waterproofing renewal in Gauteng",
+    },
+    {
+      src: "/images/waterproofing-flat-roof-02.jpg",
+      alt: "Detail preparation and membrane or liquid-applied waterproofing work on a concrete roof slab",
+    },
+    {
+      src: "/images/waterproofing-flat-roof-03.jpg",
+      alt: "Completed flat roof waterproofing with drainage and walkway details ready for QA sign-off",
+    },
+  ],
+  "leaking-balconies": [
+    {
+      src: "/images/waterproofing-leaking-balcony-01.jpg",
+      alt: "Balcony or slab edge assessment for water ingress and failed detailing on a sectional-title or commercial block",
+    },
+    {
+      src: "/images/waterproofing-leaking-balcony-02.jpg",
+      alt: "Breakout, reinstating falls, and reseating waterproofing or screed at a leaking balcony threshold",
+    },
+    {
+      src: "/images/waterproofing-leaking-balcony-03.jpg",
+      alt: "Completed balcony waterproofing and finish reinstatement with documented handover",
+    },
+  ],
+  "torch-on-liquid-membranes": [
+    {
+      src: "/images/waterproofing-flat-roof-01.jpg",
+      alt: "Flat roof membrane assessment before torch-on or liquid-applied renewal in Gauteng",
+    },
+    {
+      src: "/images/waterproofing-flat-roof-02.jpg",
+      alt: "Torch-on or liquid membrane installation with detailing at outlets and penetrations",
+    },
+    {
+      src: "/images/waterproofing-flat-roof-03.jpg",
+      alt: "Completed hybrid membrane programme ready for protection course and QA sign-off",
+    },
+  ],
+  "basement-tanking": [
+    {
+      src: "/images/waterproofing-flat-roof-01.jpg",
+      alt: "Below-ground structure assessment for hydrostatic pressure and active leak paths",
+    },
+    {
+      src: "/images/structural-crack-injection-injection.jpg",
+      alt: "Active leak management and injection ahead of basement tanking membrane installation",
+    },
+    {
+      src: "/images/waterproofing-flat-roof-03.jpg",
+      alt: "Completed tanking handover with protection screed and monitoring notes",
+    },
+  ],
+  "roof-painting": [
+    {
+      src: "/images/waterproofing-flat-roof-01.jpg",
+      alt: "Flat or pitched roof assessment before coating or restoration in Gauteng",
+    },
+    {
+      src: "/images/painting-industrial-preparation.jpg",
+      alt: "Roof surface preparation, rust treatment, or membrane-compatible primer application",
+    },
+    {
+      src: "/images/waterproofing-flat-roof-03.jpg",
+      alt: "Completed heat-reflective or protective roof coating programme",
+    },
+  ],
+  "stucco-wall-coatings": [
+    {
+      src: "/images/coatings-marmoran-wall-01.jpg",
+      alt: "High-build stucco or textured wall preparation on a Gauteng estate or commercial façade",
+    },
+    {
+      src: "/images/coatings-marmoran-wall-02.jpg",
+      alt: "Stucco or elastomeric wall coating application with texture control",
+    },
+    {
+      src: "/images/coatings-marmoran-wall-03.jpg",
+      alt: "Completed stucco or specialized wall finish on an estate elevation",
+    },
+  ],
+  "rope-access-painting": [
+    {
+      src: "/images/access-solutions-method.png",
+      alt: "IRATA rope access technicians on a Gauteng high-rise façade",
+    },
+    {
+      src: "/images/access-solutions-compliance.png",
+      alt: "Rope access safety and compliance documentation for sectional-title programmes",
+    },
+    {
+      src: "/images/access-solutions-coordination.png",
+      alt: "Coordinated rope access painting with remedial and waterproofing scopes",
+    },
+  ],
+  "high-volume-commercial-painting": [
+    {
+      src: "/images/painting-industrial-preparation.jpg",
+      alt: "Large-scale commercial surface preparation ahead of airless spray application",
+    },
+    {
+      src: "/images/painting-industrial-coatings.jpg",
+      alt: "High-volume airless spray coating on warehouse or logistics interior",
+    },
+    {
+      src: "/images/painting-industrial-corrosion.jpg",
+      alt: "Completed high-volume commercial coating programme with QA documentation",
+    },
+  ],
+  "interior-painting": [
+    {
+      src: "/images/painting-commercial-campus.jpg",
+      alt: "Interior commercial painting with dust control and low-VOC systems",
+    },
+    {
+      src: "/images/painting-commercial-healthcare.jpg",
+      alt: "Occupied interior repaint with containment and ventilation planning",
+    },
+    {
+      src: "/images/painting-commercial-retail.jpg",
+      alt: "Interior handover with clean-down and cure guidance for tenants",
+    },
+  ],
+  "warehouse-painting": [
+    {
+      src: "/images/painting-industrial-preparation.jpg",
+      alt: "Warehouse interior preparation for coatings and light-reflective finishes",
+    },
+    {
+      src: "/images/painting-industrial-coatings.jpg",
+      alt: "Industrial warehouse wall and steel coating application in Gauteng",
+    },
+    {
+      src: "/images/coatings-industrial-epoxy-completed-floor.jpg",
+      alt: "Warehouse programme coordinating walls, steel, and resin floor handover",
+    },
+  ],
+  "parking-garage-painting": [
+    {
+      src: "/images/structural-expansion-joint-assessment.jpg",
+      alt: "Parking deck joint and slab edge assessment before coating renewal",
+    },
+    {
+      src: "/images/structural-expansion-joint-installation.jpg",
+      alt: "Traffic-rated deck preparation and coating application in a basement garage",
+    },
+    {
+      src: "/images/structural-expansion-joint-finish.jpg",
+      alt: "Completed parking structure coatings with wayfinding-ready surfaces",
+    },
+  ],
+  "road-marking": [
+    {
+      src: "/images/painting-industrial-preparation.jpg",
+      alt: "Yard or car park surface preparation before line marking application",
+    },
+    {
+      src: "/images/coatings-industrial-epoxy-completed-floor.jpg",
+      alt: "Traffic-rated line marking and demarcation on industrial or commercial paving",
+    },
+    {
+      src: "/images/painting-industrial-coatings.jpg",
+      alt: "Completed SANS-aligned parking bay and yard marking programme",
+    },
+  ],
 };
+
+function sectionDescription(paragraphs: string[]): string {
+  const parts = paragraphs.filter(Boolean);
+  if (parts.length === 0) return "";
+  if (parts.length === 1) return parts[0];
+  return `${parts[0]} ${parts[1]}`.trim();
+}
 
 const linkClass = "text-secondary no-underline hover:underline";
 
@@ -199,14 +388,14 @@ function buildApproachSteps(
   const fromSections = content.sections.map((section, index) => ({
     phase: `PHASE_${String(index + 1).padStart(2, "0")}`,
     title: section.title,
-    description: section.paragraphs[0] ?? "",
+    description: sectionDescription(section.paragraphs),
   }));
 
   const fromSubsections = content.sections.flatMap((section) =>
     (section.subsections ?? []).map((sub) => ({
       phase: "",
       title: sub.title,
-      description: sub.paragraphs[0] ?? "",
+      description: sectionDescription(sub.paragraphs),
     })),
   );
 
@@ -343,5 +532,6 @@ export function spokeToHubConfig(spokeId: ServiceSpokeId, content: ServiceDeepPa
       subtitle: parentHub.magazine.subtitle,
       sections: buildMagazineSections(spokeId, content),
     },
+    faqs: content.faqs.slice(0, 8),
   };
 }

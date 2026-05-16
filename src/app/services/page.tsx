@@ -1,14 +1,12 @@
-import Script from "next/script";
 import { Breadcrumbs } from "@/components/breadcrumbs";
+import { FaqSection } from "@/components/faq-section";
 import { ServicesOverview } from "@/components/services/services-overview";
 import { buildPageMetadata } from "@/lib/metadata";
-import { siteConfig } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
-  title:
-    "Specialized Painting, Waterproofing & Structural Repair Services | Gauteng Contractor",
+  title: "Painting, Waterproofing & Structural Repair Services | Gauteng",
   description:
-    "A structural asset maintenance partner offering guaranteed, turn-key solutions for commercial, industrial, and body corporate properties, including structural repairs, specialized coatings, and Independent QA. Johannesburg & Pretoria.",
+    "Turn-key structural repairs, waterproofing, industrial coatings, rope access, and independent QA for body corporates, developers, and commercial assets across Johannesburg, Pretoria, and the East, West, and South Rand.",
   path: "/services",
 });
 
@@ -31,49 +29,17 @@ const servicesFaq = [
 ];
 
 export default function ServicesPage() {
-  const baseUrl = siteConfig.url.replace(/\/$/, "");
-
-  const serviceRatingSchema = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    name: "Specialized Painting, Waterproofing & Structural Repair Services",
-    provider: {
-      "@type": "Organization",
-      name: siteConfig.name,
-      url: baseUrl,
-    },
-    areaServed: siteConfig.serviceAreas,
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.9",
-      reviewCount: "127",
-      bestRating: "5",
-      worstRating: "1",
-    },
-  };
-
   return (
     <div className="bg-[#080808] pt-24 text-zinc-300 antialiased">
-      <Script id="services-rating-schema" type="application/ld+json" strategy="afterInteractive">
-        {JSON.stringify(serviceRatingSchema)}
-      </Script>
-      <Script id="services-faq-schema" type="application/ld+json" strategy="afterInteractive">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          mainEntity: servicesFaq.map((item) => ({
-            "@type": "Question",
-            name: item.question,
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: item.answer,
-            },
-          })),
-        })}
-      </Script>
-
       <Breadcrumbs items={[{ label: "Services", href: "/services" }]} />
       <ServicesOverview />
+      <FaqSection
+        headingId="services-faq-heading"
+        title="Services & procurement FAQs"
+        subtitle="How Maverick scopes structural, waterproofing, and coating programmes for Gauteng portfolios."
+        items={servicesFaq}
+        schemaPath="/services"
+      />
     </div>
   );
 }
