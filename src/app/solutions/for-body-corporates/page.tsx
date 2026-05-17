@@ -1,8 +1,8 @@
 import { ClipboardCheck, MessageCircle, Scroll, Shield } from "lucide-react";
 import { SolutionPageLayout } from "@/components/solution-page-layout";
-import { buildPageMetadata } from "@/lib/metadata";
+import { withOgImage } from "@/lib/page-metadata";
 
-export const metadata = buildPageMetadata({
+export const metadata = withOgImage({
   title: "Body Corporate & Sectional Title Asset Maintenance | STSMA-Aligned | Maverick",
   description:
     "STSMA and CSOS-aware maintenance for Gauteng body corporates: 10-year MRRP support, independent QA, waterproofing, spalling repair, and phased painting with manufacturer-backed guarantees.",
@@ -95,6 +95,7 @@ export default function BodyCorporateSolutionsPage() {
         },
       ]}
       faqs={faqs}
+      legalDisclaimer="stsma"
     />
   );
 }

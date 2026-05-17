@@ -1,7 +1,7 @@
-# Maverick Painting Sitemap — 2026-05-16
+# Maverick Painting Sitemap — 2026-05-17
 # Submit this index URL in Google Search Console:
 # https://www.maverickpainting.co.za/sitemap.xml
-# Total URLs: 93
+# Total URLs: 132
 
 https://www.maverickpainting.co.za
 https://www.maverickpainting.co.za/about-us
@@ -21,7 +21,9 @@ https://www.maverickpainting.co.za/blog/property-developer-handover-checklist
 https://www.maverickpainting.co.za/blog/r638-food-safety-flooring-regulations
 https://www.maverickpainting.co.za/blog/rising-damp-vs-condensation-gauteng
 https://www.maverickpainting.co.za/blog/roof-leak-insurance-claims-maintenance
+https://www.maverickpainting.co.za/blog/rope-access-ohs-compliance
 https://www.maverickpainting.co.za/blog/rope-access-vs-scaffolding-costs
+https://www.maverickpainting.co.za/blog/sans-10021-waterproofing
 https://www.maverickpainting.co.za/blog/sans-731-warehouse-line-marking
 https://www.maverickpainting.co.za/blog/sectional-title-reserve-fund-calculation
 https://www.maverickpainting.co.za/blog/structural-remediation
@@ -36,25 +38,62 @@ https://www.maverickpainting.co.za/contact
 https://www.maverickpainting.co.za/damp-proofing-services
 https://www.maverickpainting.co.za/damp-proofing/rising-damp-treatment
 https://www.maverickpainting.co.za/gallery
+https://www.maverickpainting.co.za/locations
 https://www.maverickpainting.co.za/locations/alberton
+https://www.maverickpainting.co.za/locations/alberton/body-corporate
+https://www.maverickpainting.co.za/locations/alberton/leaking-balconies
 https://www.maverickpainting.co.za/locations/benoni
+https://www.maverickpainting.co.za/locations/benoni/industrial-painting
+https://www.maverickpainting.co.za/locations/benoni/rope-access
 https://www.maverickpainting.co.za/locations/boksburg
+https://www.maverickpainting.co.za/locations/boksburg/industrial-epoxy
+https://www.maverickpainting.co.za/locations/boksburg/industrial-painting
+https://www.maverickpainting.co.za/locations/boksburg/road-marking
 https://www.maverickpainting.co.za/locations/central
 https://www.maverickpainting.co.za/locations/centurion
+https://www.maverickpainting.co.za/locations/centurion/hygienic-food-grade
+https://www.maverickpainting.co.za/locations/centurion/rising-damp
 https://www.maverickpainting.co.za/locations/east-rand
 https://www.maverickpainting.co.za/locations/ebotse-estate
+https://www.maverickpainting.co.za/locations/ebotse-estate/body-corporate
 https://www.maverickpainting.co.za/locations/germiston
+https://www.maverickpainting.co.za/locations/germiston/concrete-spalling
+https://www.maverickpainting.co.za/locations/germiston/industrial-painting
 https://www.maverickpainting.co.za/locations/glenvista
+https://www.maverickpainting.co.za/locations/glenvista/body-corporate
+https://www.maverickpainting.co.za/locations/glenvista/leaking-balconies
 https://www.maverickpainting.co.za/locations/isando
+https://www.maverickpainting.co.za/locations/isando/hygienic-food-grade
+https://www.maverickpainting.co.za/locations/isando/industrial-epoxy
+https://www.maverickpainting.co.za/locations/isando/road-marking
+https://www.maverickpainting.co.za/locations/isando/warehouse-painting
 https://www.maverickpainting.co.za/locations/johannesburg-north
+https://www.maverickpainting.co.za/locations/johannesburg-north/body-corporate
 https://www.maverickpainting.co.za/locations/kempton-park
+https://www.maverickpainting.co.za/locations/kempton-park/industrial-epoxy
+https://www.maverickpainting.co.za/locations/kempton-park/warehouse-painting
 https://www.maverickpainting.co.za/locations/krugersdorp
+https://www.maverickpainting.co.za/locations/krugersdorp/basement-tanking
+https://www.maverickpainting.co.za/locations/krugersdorp/rising-damp
 https://www.maverickpainting.co.za/locations/meyersdal-estate
+https://www.maverickpainting.co.za/locations/meyersdal-estate/body-corporate
+https://www.maverickpainting.co.za/locations/meyersdal-estate/stucco-coatings
 https://www.maverickpainting.co.za/locations/midrand
+https://www.maverickpainting.co.za/locations/midrand/commercial-painting
+https://www.maverickpainting.co.za/locations/midrand/industrial-epoxy
 https://www.maverickpainting.co.za/locations/pretoria-east
+https://www.maverickpainting.co.za/locations/pretoria-east/flat-roofs
+https://www.maverickpainting.co.za/locations/pretoria-east/leaking-balconies
 https://www.maverickpainting.co.za/locations/roodepoort
+https://www.maverickpainting.co.za/locations/roodepoort/basement-tanking
+https://www.maverickpainting.co.za/locations/roodepoort/concrete-spalling
+https://www.maverickpainting.co.za/locations/roodepoort/rising-damp
 https://www.maverickpainting.co.za/locations/sandton
+https://www.maverickpainting.co.za/locations/sandton/body-corporate
+https://www.maverickpainting.co.za/locations/sandton/leaking-balconies
+https://www.maverickpainting.co.za/locations/sandton/rope-access
 https://www.maverickpainting.co.za/locations/serengeti-estate
+https://www.maverickpainting.co.za/locations/serengeti-estate/body-corporate
 https://www.maverickpainting.co.za/locations/south-rand
 https://www.maverickpainting.co.za/locations/west-rand
 https://www.maverickpainting.co.za/our-process-independent-qa

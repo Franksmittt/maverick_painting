@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { serviceHubPages } from "@/data/service-hub-pages";
 import type { ServiceDeepPageContent, ServiceSpokeId } from "@/lib/service-deep-types";
+import type { LegalDisclaimerVariant } from "@/components/legal-disclaimer";
 import type { ServiceHubPageConfig, ServiceHubPhaseStep } from "@/lib/service-hub-types";
 
 const MAGAZINE_IMAGES = [
@@ -485,6 +486,19 @@ function buildInterventions(content: ServiceDeepPageContent, parentHub: ServiceH
   return parentHub.hero.interventions;
 }
 
+const SPOKE_LEGAL_DISCLAIMER: Partial<Record<ServiceSpokeId, LegalDisclaimerVariant>> = {
+  "body-corporate": "stsma",
+  "hygienic-food-grade": "haccp",
+  "concrete-spalling": "structural",
+  "crack-injection": "structural",
+  "expansion-joint-sealing": "structural",
+  "rising-damp-treatment": "structural",
+  "basement-tanking": "sans-waterproofing",
+  "leaking-balconies": "sans-waterproofing",
+  "flat-concrete-roofs": "sans-waterproofing",
+  "torch-on-liquid-membranes": "sans-waterproofing",
+};
+
 export function spokeToHubConfig(spokeId: ServiceSpokeId, content: ServiceDeepPageContent): ServiceHubPageConfig {
   const parentPath = SPOKE_PARENT_HUB[spokeId];
   const parentHub = serviceHubPages[parentPath];
@@ -533,5 +547,6 @@ export function spokeToHubConfig(spokeId: ServiceSpokeId, content: ServiceDeepPa
       sections: buildMagazineSections(spokeId, content),
     },
     faqs: content.faqs.slice(0, 8),
+    legalDisclaimer: SPOKE_LEGAL_DISCLAIMER[spokeId],
   };
 }

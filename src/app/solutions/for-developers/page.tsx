@@ -1,8 +1,8 @@
 import { Building, ClipboardCheck, Scroll, Wrench } from "lucide-react";
 import { SolutionPageLayout } from "@/components/solution-page-layout";
-import { buildPageMetadata } from "@/lib/metadata";
+import { withOgImage } from "@/lib/page-metadata";
 
-export const metadata = buildPageMetadata({
+export const metadata = withOgImage({
   title: "Developer Handover & New Build Coatings | SANS-Aligned QA | Maverick",
   description:
     "Practical completion support for developers and QS teams: structural remediation, waterproofing, coatings to manufacturer data sheets, and independent QA documentation for defect-free handovers.",

@@ -3,6 +3,7 @@ import type { LucideIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { FaqSection } from "@/components/faq-section";
+import { LegalDisclaimer, type LegalDisclaimerVariant } from "@/components/legal-disclaimer";
 import { QaProcessModule } from "@/components/qa-process-module";
 import { TrustAndCtaStrip } from "@/components/trust-and-cta-strip";
 import type { ServiceDeepFaq } from "@/lib/service-deep-types";
@@ -26,6 +27,7 @@ type SolutionPageLayoutProps = {
   };
   serviceLinks: { href: string; label: string; blurb: string }[];
   faqs?: readonly ServiceDeepFaq[];
+  legalDisclaimer?: LegalDisclaimerVariant;
 };
 
 export function SolutionPageLayout({
@@ -37,6 +39,7 @@ export function SolutionPageLayout({
   narrative,
   serviceLinks,
   faqs = [],
+  legalDisclaimer,
 }: SolutionPageLayoutProps) {
   return (
     <div className="bg-[#080808] pt-24 text-zinc-300 antialiased">
@@ -103,6 +106,12 @@ export function SolutionPageLayout({
           </div>
         </div>
       </section>
+
+      {legalDisclaimer ? (
+        <section className="px-4 pb-8">
+          <LegalDisclaimer variant={legalDisclaimer} />
+        </section>
+      ) : null}
 
       <QaProcessModule />
 

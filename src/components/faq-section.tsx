@@ -1,4 +1,3 @@
-import Script from "next/script";
 import type { ServiceDeepFaq } from "@/lib/service-deep-types";
 
 type FaqSectionProps = {
@@ -33,13 +32,12 @@ export function FaqSection({
 
   return (
     <section className="border-t border-zinc-800 bg-[#0a0a0a] py-20" aria-labelledby={headingId}>
-      <Script
-        id={`faq-visible-jsonld-${schemaPath.replace(/\//g, "-")}`}
+      <script
         type="application/ld+json"
-        strategy="afterInteractive"
-      >
-        {JSON.stringify(faqSchema)}
-      </Script>
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema).replace(/</g, "\\u003c"),
+        }}
+      />
 
       <div className="mx-auto max-w-4xl px-4">
         <h2 id={headingId} className="type-h2 mb-3 text-white">

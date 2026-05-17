@@ -1,10 +1,11 @@
 /** Gallery images with SEO-descriptive alt text. Re-run scripts/update-gallery-alts.mjs to refresh. */
-export type GalleryImage = { src: string; alt: string };
+export type GalleryImage = { src: string; alt: string; projectHref?: string };
 
 export const GALLERY_IMAGES: readonly GalleryImage[] = [
   {
     "src": "/images/gallery/maverick-gallery-01.jpg",
-    "alt": "Concrete spalling repair and rebar passivation on a Gauteng parking structure"
+    "alt": "Concrete spalling repair and rebar passivation on a Gauteng parking structure",
+    "projectHref": "/projects/eastlands"
   },
   {
     "src": "/images/gallery/maverick-gallery-02.jpg",
@@ -16,11 +17,13 @@ export const GALLERY_IMAGES: readonly GalleryImage[] = [
   },
   {
     "src": "/images/gallery/maverick-gallery-04.jpg",
-    "alt": "Body corporate exterior painting programme on a sectional-title tower"
+    "alt": "Body corporate exterior painting programme on a sectional-title tower",
+    "projectHref": "/projects/the-blyde"
   },
   {
     "src": "/images/gallery/maverick-gallery-05.jpg",
-    "alt": "IRATA rope access façade painting on a high-rise building in Sandton"
+    "alt": "IRATA rope access façade painting on a high-rise building in Sandton",
+    "projectHref": "/projects/munyaka"
   },
   {
     "src": "/images/gallery/maverick-gallery-06.jpg",

@@ -2,11 +2,12 @@
 import { Phone, Mail, MapPin, MessageCircle, Layers, ClipboardCheck, Scroll } from 'lucide-react'; 
 import { Button } from '@/components/ui/button';
 import { HeroContactForm } from '@/components/hero-contact-form'; // Reusing the form logic
-import { buildPageMetadata } from '@/lib/metadata';
+import { Breadcrumbs } from '@/components/breadcrumbs';
+import { withOgImage } from '@/lib/page-metadata';
 
 
 // --- METADATA (SEO) ---
-export const metadata = buildPageMetadata({
+export const metadata = withOgImage({
     title: 'Get a Professional Painting, Structural Repair Quote | Contact Maverick',
     description: 'Contact Maverick Painting for a free site assessment and comprehensive quote. Specialized solutions for Body Corporates, Developers, and high-value properties in Gauteng, South Africa.',
     path: '/contact',
@@ -16,7 +17,7 @@ export const metadata = buildPageMetadata({
 export default function ContactPage() {
     return (
         <div className="bg-primary pt-24 text-white">
-            
+            <Breadcrumbs items={[{ label: "Contact", href: "/contact" }]} />
             {/* --- MODULE 1: CONVERSION HERO --- */}
             <section className="relative py-20 md:py-32 px-4 bg-gray-900 border-b-4 border-secondary">
                 <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">

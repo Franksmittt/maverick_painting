@@ -8,14 +8,15 @@ import { ProjectShowcaseModule } from "@/components/project-showcase-module";
 import { QaProcessModule } from "@/components/qa-process-module";
 // Position Swapped
 import { AccreditationsStrip } from "@/components/accreditations-strip";
-import { buildPageMetadata } from "@/lib/metadata";
+import { FaqSection } from "@/components/faq-section";
+import { homeFaqs } from "@/data/home-faqs";
+import { withOgImage } from "@/lib/page-metadata";
 
-// SEO Checklist: Explicit homepage metadata (inherits from layout but explicit is better)
-export const metadata = buildPageMetadata({
-    title: "Gauteng Painting, Waterproofing & Structural Repairs",
-    description:
-      "Owner-supervised contractors for concrete spalling, flat roofs, body corporate programmes, industrial coatings, and independent QA—serving Johannesburg, Pretoria, Midrand, and the East, West, and South Rand.",
-    path: "/",
+export const metadata = withOgImage({
+  title: "Gauteng Painting, Waterproofing & Structural Repairs",
+  description:
+    "Owner-supervised contractors for concrete spalling, flat roofs, body corporate programmes, industrial coatings, and independent QA—serving Johannesburg, Pretoria, Midrand, and the East, West, and South Rand.",
+  path: "/",
 });
 
 export default function Home() {
@@ -50,6 +51,14 @@ export default function Home() {
    
       {/* --- Accreditations / Logos Strip --- */}
       <AccreditationsStrip />
+
+      <FaqSection
+        headingId="home-faq-heading"
+        title="Gauteng asset maintenance FAQs"
+        subtitle="Answers for trustees, facility managers, and property owners researching Maverick Painting."
+        items={homeFaqs}
+        schemaPath="/"
+      />
     </>
   );
 }

@@ -2,7 +2,9 @@
 import Image from "next/image";
 import Link from 'next/link';
 import { ClipboardCheck, Medal, Scroll, Users, Wrench, Sprout, Shield } from 'lucide-react'; // Removed Layers, Home, Factory
-import { buildPageMetadata } from '@/lib/metadata';
+import { Breadcrumbs } from '@/components/breadcrumbs';
+import { FaqSection } from '@/components/faq-section';
+import { withOgImage } from '@/lib/page-metadata';
 import { Button } from '@/components/ui/button';
 import { QaProcessModule } from '@/components/qa-process-module'; // Reusing existing module
 import { TrustAndCtaStrip } from '@/components/trust-and-cta-strip';
@@ -24,7 +26,20 @@ function ExperienceStatCard({ value, label, icon: Icon }: { value: string; label
 }
 
 // --- METADATA (SEO) ---
-export const metadata = buildPageMetadata({
+const aboutFaqs = [
+  {
+    question: "How long has Maverick Painting operated in Gauteng?",
+    answer:
+      "Maverick was established in 2004. Our management team brings more than 50 years combined experience in coatings, waterproofing, and structural remediation for commercial and sectional-title assets.",
+  },
+  {
+    question: "What makes Maverick different from general painting contractors?",
+    answer:
+      "We position as an asset maintenance partner: engineer-aligned structural and waterproofing scopes, manufacturer-backed systems, and independent third-party QA on agreed programmes—not cosmetic repaint crews.",
+  },
+] as const;
+
+export const metadata = withOgImage({
     title: 'Owner Supervised Painting Contractors | 50+ Years Experience',
     description: 'Established in 2004, Maverick Painting offers structural repair and specialized coatings, backed by Independent 3rd Party Quality Assurance on every high-value project.',
     path: '/about-us',
@@ -35,7 +50,7 @@ export const metadata = buildPageMetadata({
 export default function AboutUsPage() {
     return (
         <div className="bg-primary pt-24">
-            
+            <Breadcrumbs items={[{ label: "About us", href: "/about-us" }]} />
             {/* --- MODULE 1: THE AUTHORITY HERO (Experience & Mission) --- */}
             <section className="relative py-24 md:py-32 px-4 text-white">
                 <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -196,8 +211,13 @@ export default function AboutUsPage() {
             {/* The QA Process module is perfectly suited for the narrative architecture. */}
             <QaProcessModule />
 
-            {/* --- MODULE 5: ACCREDITATIONS (Reusing existing module) --- */}
-            {/* Displaying logos to build visual trust. */}
+            <FaqSection
+              headingId="about-faq-heading"
+              title="About Maverick Painting"
+              items={aboutFaqs}
+              schemaPath="/about-us"
+            />
+
             <TrustAndCtaStrip />
 
         </div>

@@ -6,17 +6,11 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
 import { MobileNav } from "@/components/layout/mobile-nav";
+import { PRIMARY_NAV } from "@/data/site-navigation";
 import { cn } from "@/lib/utils";
 
 export function Header() {
-  const navItems = [
-    { name: "Home", href: "/" },
-    { name: "About Us", href: "/about-us" },
-    { name: "Services", href: "/services" },
-    { name: "Projects", href: "/projects" },
-    { name: "Gallery", href: "/gallery" },
-    { name: "Contact", href: "/contact" },
-  ];
+  const navItems = PRIMARY_NAV;
 
   return (
     <header

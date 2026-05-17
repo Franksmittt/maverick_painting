@@ -12,9 +12,9 @@ import {
   ClipboardCheck,
   Paintbrush,
 } from "lucide-react";
-import { buildPageMetadata } from "@/lib/metadata";
+import { withOgImage } from "@/lib/page-metadata";
 
-export const metadata = buildPageMetadata({
+export const metadata = withOgImage({
   title: "Manufacturer Applicators & Certified Contractors",
   description:
     "Sika, Plascon, Dulux, and Marmoran applicator status plus MBA, NAMA, OHS compliance and independent third-party QA—verifiable credentials for Gauteng structural, waterproofing, and coating programmes.",
@@ -45,6 +45,24 @@ const ManufacturerPartners = [
     expertise: "Specialized decorative and textured wall systems",
     icon: Paintbrush,
     accentColor: "border-tertiary",
+  },
+  {
+    name: "Penetron Approved Applicator",
+    expertise: "Crystalline tanking, negative-side waterproofing, and active leak routing",
+    icon: Layers,
+    accentColor: "border-secondary",
+  },
+  {
+    name: "StonCor & A.B.E. Systems",
+    expertise: "Industrial linings, epoxy mortars, and corrosion control",
+    icon: Factory,
+    accentColor: "border-tertiary",
+  },
+  {
+    name: "Mapei & Bostik",
+    expertise: "Tile-bed remediation, flexible sealants, and movement joint chemistry",
+    icon: Scroll,
+    accentColor: "border-secondary",
   },
 ] as const;
 

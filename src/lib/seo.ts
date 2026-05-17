@@ -70,13 +70,23 @@ export const siteConfig = {
     longitude: 28.18904,
   } satisfies SiteAddress,
   serviceAreas: [
+    "Gauteng",
     "Johannesburg",
     "Pretoria",
     "Midrand",
     "Centurion",
     "Sandton",
     "Benoni",
+    "Boksburg",
+    "Kempton Park",
+    "Germiston",
+    "Isando",
+    "Roodepoort",
+    "Krugersdorp",
+    "Alberton",
     "East Rand",
+    "West Rand",
+    "South Rand",
   ],
   /**
    * Legacy list — sitemap is generated from `src/lib/sitemap-builder.ts` (single source of truth).

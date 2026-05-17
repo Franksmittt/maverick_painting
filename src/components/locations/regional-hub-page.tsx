@@ -2,9 +2,12 @@ import Link from "next/link";
 import { MapPin, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Breadcrumbs } from "@/components/breadcrumbs";
+import { FaqSection } from "@/components/faq-section";
+import { QaProcessModule } from "@/components/qa-process-module";
 import { TrustAndCtaStrip } from "@/components/trust-and-cta-strip";
 import type { LocationRegionHub } from "@/data/location-regions";
 import { getLocationsByRegion } from "@/data/location-regions";
+import { locationServiceMatrix } from "@/data/location-service-matrix";
 
 type RegionalHubPageProps = {
   region: LocationRegionHub;
@@ -12,12 +15,14 @@ type RegionalHubPageProps = {
 
 export function RegionalHubPage({ region }: RegionalHubPageProps) {
   const cities = getLocationsByRegion(region.slug);
+  const citySlugs = new Set(cities.map((c) => c.slug));
+  const matrixInRegion = locationServiceMatrix.filter((e) => citySlugs.has(e.citySlug));
 
   return (
     <div className="bg-primary pt-24 text-white">
       <Breadcrumbs
         items={[
-          { label: "Locations", href: "/services" },
+          { label: "Locations", href: "/locations" },
           { label: region.name, href: `/locations/${region.slug}` },
         ]}
       />
@@ -66,8 +71,48 @@ export function RegionalHubPage({ region }: RegionalHubPageProps) {
             </Link>
           ))}
         </div>
+
+        {matrixInRegion.length > 0 ? (
+          <>
+            <h2 className="type-h2 mb-6 mt-16 text-white">Localised scopes in {region.name}</h2>
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {matrixInRegion.slice(0, 9).map((item) => {
+                const cityName = cities.find((c) => c.slug === item.citySlug)?.name ?? item.citySlug;
+                return (
+                  <Link
+                    key={`${item.citySlug}-${item.serviceSlug}`}
+                    href={`/locations/${item.citySlug}/${item.serviceSlug}`}
+                    className="rounded-xl border border-white/10 bg-white/[0.03] p-5 transition hover:border-secondary/40"
+                  >
+                    <h3 className="mb-1 font-bold text-secondary">
+                      {item.spokeLabel} — {cityName}
+                    </h3>
+                    <p className="line-clamp-2 text-sm text-zinc-400">{item.localContext}</p>
+                  </Link>
+                );
+              })}
+            </div>
+          </>
+        ) : null}
       </section>
 
+      <QaProcessModule />
+      <FaqSection
+        headingId={`region-${region.slug}-faq`}
+        title={`${region.name} FAQs`}
+        items={[
+          {
+            question: `Why use a ${region.name} maintenance partner?`,
+            answer: region.narrative,
+          },
+          {
+            question: "Do you offer independent QA?",
+            answer:
+              "On agreed commercial and sectional-title scopes, third-party inspectors verify preparation and film build—see our independent QA process for detail.",
+          },
+        ]}
+        schemaPath={`/locations/${region.slug}`}
+      />
       <TrustAndCtaStrip />
     </div>
   );

@@ -1,0 +1,20 @@
+/** Short SEO blurbs for primary service links on city location pages. */
+export const serviceLinkBlurbs: Record<string, string> = {
+  "/structural-repairs": "Engineer-aligned spalling, crack injection, and expansion joint renewal.",
+  "/waterproofing-services": "Flat roofs, balconies, torch-on, and basement tanking systems.",
+  "/painting/body-corporate": "STSMA-aware phased exterior programmes with trustee documentation.",
+  "/painting/industrial": "Corrosion control, plant steel, and logistics envelope coatings.",
+  "/specialized-coatings/industrial-epoxy-flooring": "High-build epoxy and polyurethane for traffic-rated floors.",
+  "/damp-proofing/rising-damp-treatment": "Moisture profiling and chemical DPC injection.",
+  "/waterproofing/basement-tanking": "Negative-side crystalline and cementitious tanking.",
+  "/access-solutions/rope-access-painting": "IRATA high-rise access with reduced scaffold footprint.",
+  "/painting/warehouse-painting": "HEA airless spray for tilt-up panels and blockwork.",
+  "/painting/road-marking": "SANS 731 yard demarcation integrated with floor coatings.",
+  "/specialized-coatings/hygienic-food-grade": "HACCP and R638-aligned seamless resin floors.",
+  "/waterproofing/leaking-balconies": "Moisture mapping and membrane renewal for sectional title.",
+  "/painting/roof-painting": "UV-stable roof coatings and waterproofing interfaces.",
+  "/solutions/for-body-corporates": "MRRP support, QA files, and sectional-title governance.",
+  "/painting/stucco-wall-coatings": "Estate façades with breathable elastomeric systems.",
+  "/specialized-coatings/marmoran-wall-systems": "Decorative textured wall systems for estates.",
+  "/painting/interior-painting": "Low-VOC interior programmes for homes and offices.",
+};

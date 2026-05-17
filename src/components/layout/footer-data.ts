@@ -9,6 +9,7 @@ export const FOOTER_LOGO_PATH =
 export const FOOTER_QUICK_LINKS = [
   { href: "/", label: "Home" },
   { href: "/about-us", label: "About us" },
+  { href: "/locations", label: "Locations" },
   { href: "/projects", label: "Portfolio" },
   { href: "/gallery", label: "Gallery" },
   { href: "/accreditations", label: "Accreditations" },

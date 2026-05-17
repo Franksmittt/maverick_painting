@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import type { BreadcrumbItem } from "@/components/breadcrumbs";
 import type { HubSpokeLink } from "@/components/hub-spoke-section";
+import type { LegalDisclaimerVariant } from "@/components/legal-disclaimer";
 import type { ServiceDeepFaq } from "@/lib/service-deep-types";
 
 export type ServiceHubPhaseStep = {
@@ -58,4 +59,5 @@ export type ServiceHubPageConfig = {
   };
   /** Visible on-page FAQs (also keep JSON-LD on spokes via ServiceDeepPage). */
   faqs?: readonly ServiceDeepFaq[];
+  legalDisclaimer?: LegalDisclaimerVariant;
 };

@@ -21,7 +21,6 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.shortName}`,
   },
   description: siteConfig.description,
-  keywords: siteConfig.keywords,
   creator: siteConfig.legalName,
   publisher: siteConfig.legalName,
   category: "construction",

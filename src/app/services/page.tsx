@@ -1,9 +1,9 @@
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { FaqSection } from "@/components/faq-section";
 import { ServicesOverview } from "@/components/services/services-overview";
-import { buildPageMetadata } from "@/lib/metadata";
+import { withOgImage } from "@/lib/page-metadata";
 
-export const metadata = buildPageMetadata({
+export const metadata = withOgImage({
   title: "Painting, Waterproofing & Structural Repair Services | Gauteng",
   description:
     "Turn-key structural repairs, waterproofing, industrial coatings, rope access, and independent QA for body corporates, developers, and commercial assets across Johannesburg, Pretoria, and the East, West, and South Rand.",

@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { projectCaseStudies } from "@/data/projects";
 import { serviceLocations } from "@/data/locations";
 import { locationRegionHubs } from "@/data/location-regions";
+import { locationServiceMatrix } from "@/data/location-service-matrix";
 import { standaloneBlogArticles } from "@/data/standalone-blog-articles";
 import { SERVICE_DEEP_REGISTRY } from "@/data/service-deep-registry";
 import { serviceHubPages } from "@/data/service-hub-pages";
@@ -26,6 +27,7 @@ const CORE_PAGES: SitemapPathEntry[] = [
   { path: "/gallery", changeFrequency: "monthly", priority: 0.65 },
   { path: "/projects", changeFrequency: "monthly", priority: 0.7 },
   { path: "/accreditations", changeFrequency: "monthly", priority: 0.7 },
+  { path: "/locations", changeFrequency: "weekly", priority: 0.87 },
   { path: "/our-process-independent-qa", changeFrequency: "monthly", priority: 0.8 },
   { path: "/privacy", changeFrequency: "yearly", priority: 0.3 },
   { path: "/terms", changeFrequency: "yearly", priority: 0.3 },
@@ -113,7 +115,13 @@ function getLocationEntries(): SitemapPathEntry[] {
     priority: 0.86,
   }));
 
-  return [...regions, ...cities];
+  const matrix: SitemapPathEntry[] = locationServiceMatrix.map((entry) => ({
+    path: `/locations/${entry.citySlug}/${entry.serviceSlug}`,
+    changeFrequency: "weekly" as const,
+    priority: 0.84,
+  }));
+
+  return [...regions, ...cities, ...matrix];
 }
 
 function getProjectEntries(now: Date): SitemapPathEntry[] {
@@ -173,4 +181,4 @@ export function buildSitemapEntries(now = new Date()): MetadataRoute.Sitemap {
 }
 
 /** Expected indexable page count for CI validation (update if routes change). */
-export const EXPECTED_SITEMAP_URL_COUNT = 93;
+export const EXPECTED_SITEMAP_URL_COUNT = 132;

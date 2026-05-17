@@ -1,8 +1,8 @@
 import { CheckSquare, Clock, Shield, Users } from "lucide-react";
 import { SolutionPageLayout } from "@/components/solution-page-layout";
-import { buildPageMetadata } from "@/lib/metadata";
+import { withOgImage } from "@/lib/page-metadata";
 
-export const metadata = buildPageMetadata({
+export const metadata = withOgImage({
   title: "Premium Home Painting & Structural Protection Gauteng | Maverick",
   description:
     "High-end residential painting with rising damp diagnostics, roof and balcony waterproofing, and manufacturer-backed finishes for Gauteng estates and townhouses—documented QA optional on larger scopes.",

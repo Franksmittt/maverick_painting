@@ -7,6 +7,8 @@ export type BuildMetadataParams = {
   description: string;
   path?: string;
   image?: string;
+  /** Open Graph type — use `article` for blog posts. */
+  ogType?: "website" | "article";
 };
 
 const baseUrl = siteConfig.url.replace(/\/$/, "");
@@ -43,6 +45,7 @@ export function buildPageMetadata({
   description,
   path = "/",
   image,
+  ogType = "website",
 }: BuildMetadataParams): Metadata {
   // Ensure canonical URLs have no trailing slash (matching next.config.mjs trailingSlash: false)
   const normalizedPath = path === "/" ? "" : path.startsWith("/") ? path : `/${path}`;
@@ -63,7 +66,7 @@ export function buildPageMetadata({
       description,
       url: canonical,
       siteName: siteConfig.name,
-      type: "website",
+      type: ogType,
       images: [
         {
           url: ogImage,

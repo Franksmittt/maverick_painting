@@ -17,6 +17,31 @@ const nextConfig = {
                 destination: "/specialized-coatings/hygienic-food-grade",
                 permanent: true,
             },
+            {
+                source: "/basement-tanking",
+                destination: "/waterproofing/basement-tanking",
+                permanent: true,
+            },
+            {
+                source: "/expansion-joints",
+                destination: "/structural-repairs/expansion-joint-sealing",
+                permanent: true,
+            },
+            {
+                source: "/parking-garage",
+                destination: "/painting/parking-garage-painting",
+                permanent: true,
+            },
+            {
+                source: "/sans-line-marking",
+                destination: "/painting/road-marking",
+                permanent: true,
+            },
+            {
+                source: "/crack-injection",
+                destination: "/structural-repairs/crack-injection",
+                permanent: true,
+            },
         ];
     },
     // SEO Checklist: React Strict Mode for better development experience and error detection

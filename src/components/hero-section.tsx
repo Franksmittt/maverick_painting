@@ -9,11 +9,11 @@ export function HeroSection() {
       <div className="page-container relative grid grid-cols-1 gap-8 md:grid-cols-2 md:items-start md:gap-10 lg:pt-4">
         <div className="p-1 text-center md:p-0 md:text-left">
           <h1 className="mb-3 text-4xl font-extrabold uppercase leading-tight tracking-tight text-white drop-shadow-sm sm:text-5xl">
-            Your High-Access Asset Maintenance Partner.
+            Gauteng Painting, Waterproofing &amp; Structural Repair Contractors.
           </h1>
           <p className="mx-auto mb-3 max-w-xl text-lg font-semibold text-zinc-200 sm:text-xl md:mx-0">
-            The proven specialist, professional paint contractors for structural repair and complex high-rise coating
-            projects.
+            Owner-supervised programmes for body corporates, developers, and commercial assets—concrete spalling,
+            flat roofs, industrial coatings, and IRATA rope access across Johannesburg, Pretoria, and the Rand.
           </p>
           <p className="mx-auto mb-6 max-w-xl text-base font-medium leading-relaxed text-zinc-400 md:mx-0">
             We eliminate risk on multi-million rand assets with independent, third-party quality assurance (QA) on

@@ -1,12 +1,8 @@
 import { ServiceHubPage } from "@/components/service-hub/service-hub-page";
-import { buildPageMetadata } from "@/lib/metadata";
+import { buildHubMetadata } from "@/lib/page-metadata";
 import { specializedCoatingsHub } from "@/data/service-hub-pages";
 
-export const metadata = buildPageMetadata({
-  title: specializedCoatingsHub.metadata.title,
-  description: specializedCoatingsHub.metadata.description,
-  path: specializedCoatingsHub.path,
-});
+export const metadata = buildHubMetadata(specializedCoatingsHub);
 
 export default function SpecializedCoatingsPage() {
   return <ServiceHubPage config={specializedCoatingsHub} />;

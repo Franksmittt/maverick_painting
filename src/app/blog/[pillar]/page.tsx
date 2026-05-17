@@ -1,6 +1,8 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { buildPageMetadata } from "@/lib/metadata";
+import { withOgImage } from "@/lib/page-metadata";
+import { getOgImageForPath } from "@/lib/og-images";
 import { StandaloneBlogArticleView } from "@/components/blog/standalone-blog-article";
 import {
   getPillarBySlug,
@@ -25,13 +27,19 @@ export async function generateMetadata({ params }: PillarPageProps): Promise<Met
   const { pillar: pillarSlug } = await params;
   const standalone = getStandaloneArticle(pillarSlug);
   if (standalone) {
-    return buildPageMetadata(standalone.metadata);
+    const path = standalone.metadata.path ?? `/blog/${standalone.slug}`;
+    return withOgImage({
+      ...standalone.metadata,
+      path,
+      image: getOgImageForPath(path),
+      ogType: "article",
+    });
   }
   const pillar = getPillarBySlug(pillarSlug);
   if (!pillar) {
     return {};
   }
-  return buildPageMetadata(pillar.metadata);
+  return withOgImage({ ...pillar.metadata, image: getOgImageForPath(pillar.metadata.path ?? `/blog/${pillar.slug}`) });
 }
 
 export default async function PillarPage({ params }: PillarPageProps) {

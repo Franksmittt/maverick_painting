@@ -1,11 +1,18 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { Breadcrumbs } from "@/components/breadcrumbs";
+import { FaqSection } from "@/components/faq-section";
+import { QaProcessModule } from "@/components/qa-process-module";
+import { LocationLocalProof } from "@/components/locations/location-local-proof";
 import { TrustAndCtaStrip } from "@/components/trust-and-cta-strip";
 import { MapPin, CheckSquare, Shield, Phone } from "lucide-react";
+import { getLocationFaqs } from "@/data/location-faqs";
+import { getMatrixEntriesForCity } from "@/data/location-service-matrix";
+import { serviceLinkBlurbs } from "@/data/location-service-blurbs";
 import { serviceLocations, getLocation } from "@/data/locations";
 import { siteConfig } from "@/lib/seo";
-import { buildPageMetadata } from "@/lib/metadata";
+import { withOgImage } from "@/lib/page-metadata";
 
 export function generateStaticParams() {
   return serviceLocations.map((location) => ({
@@ -18,7 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
   const loc = getLocation(city);
   if (!loc) return {};
 
-  return buildPageMetadata({
+  return withOgImage({
     title: loc.metaTitle,
     description: loc.metaDescription,
     path: `/locations/${loc.slug}`,
@@ -37,6 +44,8 @@ export default async function LocationPage({ params }: { params: Promise<{ city:
     provider: {
       "@type": "LocalBusiness",
       name: siteConfig.name,
+      url: siteConfig.url.replace(/\/$/, ""),
+      telephone: siteConfig.phoneNumber,
       address: {
         "@type": "PostalAddress",
         addressLocality: loc.name,
@@ -50,6 +59,16 @@ export default async function LocationPage({ params }: { params: Promise<{ city:
     },
   };
 
+  const localMatrix = getMatrixEntriesForCity(loc.slug);
+  const regionLabel =
+    loc.region === "east-rand"
+      ? "East Rand"
+      : loc.region === "west-rand"
+        ? "West Rand"
+        : loc.region === "south-rand"
+          ? "South Rand"
+          : "Central Gauteng";
+
   const regionBlurb =
     loc.region === "east-rand"
       ? "Industrial coatings, HACCP floors, and logistics maintenance."
@@ -61,6 +80,13 @@ export default async function LocationPage({ params }: { params: Promise<{ city:
 
   return (
     <div className="bg-primary pt-24 text-white">
+      <Breadcrumbs
+        items={[
+          { label: "Locations", href: "/locations" },
+          { label: regionLabel, href: `/locations/${loc.region}` },
+          { label: loc.name, href: `/locations/${loc.slug}` },
+        ]}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -113,10 +139,31 @@ export default async function LocationPage({ params }: { params: Promise<{ city:
                 className="rounded-xl border border-gray-800 bg-gray-900 p-8 transition hover:border-secondary"
               >
                 <h3 className="mb-2 text-xl font-bold text-secondary">{link.label}</h3>
-                <p className="text-gray-400">Scope and methodology &rarr;</p>
+                <p className="text-sm text-gray-400">
+                  {serviceLinkBlurbs[link.href] ?? "Manufacturer-backed scope and methodology"} &rarr;
+                </p>
               </Link>
             ))}
           </div>
+          {localMatrix.length > 0 ? (
+            <>
+              <h2 className="mb-6 text-2xl font-bold uppercase text-white">
+                Localised scopes in {loc.name}
+              </h2>
+              <div className="mb-12 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+                {localMatrix.map((item) => (
+                  <Link
+                    key={item.serviceSlug}
+                    href={`/locations/${item.citySlug}/${item.serviceSlug}`}
+                    className="rounded-xl border border-gray-800 bg-gray-900 p-6 transition hover:border-secondary"
+                  >
+                    <h3 className="mb-2 text-lg font-bold text-secondary">{item.spokeLabel}</h3>
+                    <p className="text-sm text-gray-400 line-clamp-3">{item.localContext}</p>
+                  </Link>
+                ))}
+              </div>
+            </>
+          ) : null}
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             <div className="rounded-xl border-t-4 border-tertiary bg-gray-900 p-8">
               <Shield className="mb-4 h-10 w-10 text-tertiary" />
@@ -128,7 +175,11 @@ export default async function LocationPage({ params }: { params: Promise<{ city:
               <h3 className="mb-2 text-2xl font-bold">Independent QA</h3>
               <p className="text-gray-400">
                 Third-party inspection on major scopes—documented film build for trustees and facility
-                managers.
+                managers.{" "}
+                <Link href="/our-process-independent-qa" className="text-secondary hover:underline">
+                  View our independent QA process
+                </Link>
+                .
               </p>
             </div>
             <div className="rounded-xl border-t-4 border-tertiary bg-gray-900 p-8">
@@ -141,6 +192,17 @@ export default async function LocationPage({ params }: { params: Promise<{ city:
           </div>
         </div>
       </section>
+
+      <LocationLocalProof loc={loc} />
+
+      <QaProcessModule />
+
+      <FaqSection
+        headingId={`location-${loc.slug}-faq`}
+        title={`${loc.name} service FAQs`}
+        items={getLocationFaqs(loc)}
+        schemaPath={`/locations/${loc.slug}`}
+      />
 
       <TrustAndCtaStrip />
     </div>

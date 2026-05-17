@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import { X } from "lucide-react";
 import type { GalleryImage } from "@/data/gallery-images";
@@ -35,31 +36,51 @@ export function GalleryGrid({ images }: { images: readonly GalleryImage[] }) {
   return (
     <>
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4">
-        {images.map((image, index) => (
-          <button
-            key={image.src}
-            type="button"
-            className={cn(
-              "group relative aspect-[4/5] overflow-hidden rounded-lg border border-[#2a2e33] bg-[#111111]",
-              "transition duration-300 hover:border-secondary/50 hover:shadow-[0_0_24px_rgba(90,213,226,0.12)]",
-              "focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary",
-            )}
-            onClick={() => setActiveIndex(index)}
-            aria-label={`View ${image.alt}`}
-          >
-            <Image
-              src={image.src}
-              alt={image.alt}
-              fill
-              sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-              className="object-cover transition duration-500 group-hover:scale-105"
-            />
-            <span
-              className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition group-hover:opacity-100"
-              aria-hidden
-            />
-          </button>
-        ))}
+        {images.map((image, index) => {
+          const cardClass = cn(
+            "group relative block aspect-[4/5] overflow-hidden rounded-lg border border-[#2a2e33] bg-[#111111]",
+            "transition duration-300 hover:border-secondary/50 hover:shadow-[0_0_24px_rgba(90,213,226,0.12)]",
+            "focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary",
+          );
+          const inner = (
+            <>
+              <Image
+                src={image.src}
+                alt={image.alt}
+                fill
+                sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                className="object-cover transition duration-500 group-hover:scale-105"
+              />
+              <span
+                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition group-hover:opacity-100"
+                aria-hidden
+              />
+              {image.projectHref ? (
+                <span className="pointer-events-none absolute bottom-2 left-2 right-2 rounded bg-black/70 px-2 py-1 text-xs font-semibold text-secondary opacity-0 transition group-hover:opacity-100">
+                  View case study →
+                </span>
+              ) : null}
+            </>
+          );
+          if (image.projectHref) {
+            return (
+              <Link key={image.src} href={image.projectHref} className={cardClass} aria-label={`Case study: ${image.alt}`}>
+                {inner}
+              </Link>
+            );
+          }
+          return (
+            <button
+              key={image.src}
+              type="button"
+              className={cardClass}
+              onClick={() => setActiveIndex(index)}
+              aria-label={`View ${image.alt}`}
+            >
+              {inner}
+            </button>
+          );
+        })}
       </div>
       {activeIndex !== null && (
         <div

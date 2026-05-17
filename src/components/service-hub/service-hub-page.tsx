@@ -6,6 +6,7 @@ import { ServiceHubApproach } from "@/components/service-hub/service-hub-approac
 import { ServiceHubHero } from "@/components/service-hub/service-hub-hero";
 import { ServiceHubMagazine } from "@/components/service-hub/service-hub-magazine";
 import { FaqSection } from "@/components/faq-section";
+import { LegalDisclaimer } from "@/components/legal-disclaimer";
 import { hubFaqsByPath } from "@/data/hub-faqs";
 import { siteConfig } from "@/lib/seo";
 import type { ServiceHubPageConfig } from "@/lib/service-hub-types";
@@ -53,6 +54,11 @@ export function ServiceHubPage({ config }: { config: ServiceHubPageConfig }) {
           items={config.faqs ?? hubFaqsByPath[config.path] ?? []}
           schemaPath={config.path}
         />
+      ) : null}
+      {config.legalDisclaimer ? (
+        <section className="px-4 pb-8">
+          <LegalDisclaimer variant={config.legalDisclaimer} />
+        </section>
       ) : null}
       <QaProcessModule />
       <TrustAndCtaStrip />

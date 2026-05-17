@@ -16,6 +16,8 @@ export type StandaloneBlogArticle = {
   metadata: BuildMetadataParams;
   sections: StandaloneBlogSection[];
   cta: { heading: string; body: string; label: string; href: string };
+  relatedServices?: { href: string; label: string }[];
+  faqs?: { question: string; answer: string }[];
 };
 
 const articles: StandaloneBlogArticle[] = [
@@ -518,6 +520,100 @@ const articles: StandaloneBlogArticle[] = [
       body: "Use our independent QA process to close the defects liability period with defensible records.",
       label: "Solutions for developers",
       href: "/solutions/for-developers",
+    },
+  },
+  {
+    slug: "sans-10021-waterproofing",
+    title: "SANS 10021 Waterproofing: What Facility Managers Must Specify",
+    lead:
+      "South Africa’s national standard for waterproofing buildings defines how membranes, flashings, and outlets must perform—not how contractors should market generic paint-on sealants.",
+    pillarLabel: "Waterproofing guides",
+    pillarHref: "/blog/waterproofing",
+    categoryLabel: "SANS compliance",
+    metadata: {
+      title: "SANS 10021 Waterproofing Guide for Commercial Buildings",
+      description:
+        "How SANS 10021 shapes flat roof, podium, and balcony waterproofing specifications in Gauteng—outlets, laps, curing, and independent QA for warranty validity.",
+      path: "/blog/sans-10021-waterproofing",
+    },
+    sections: [
+      {
+        heading: "Why SANS 10021 matters on commercial assets",
+        paragraphs: [
+          "Facility managers and engineers reference SANS 10021 (waterproofing of buildings, including damp-proofing and vapour barriers) when specifying torch-on, liquid, and sheet systems. Deviations from lap widths, outlet detailing, and curing windows are common causes of premature failure—not product brand alone.",
+        ],
+      },
+      {
+        heading: "Specification elements auditors expect",
+        paragraphs: [
+          "A defensible scope names substrate preparation, primer compatibility, membrane build-up, termination details, and protection layers before finishes. Holiday testing and moisture readings should be scheduled before closing occupied levels.",
+        ],
+        bulletList: [
+          "Parapet and door threshold flashings tied to movement joints.",
+          "Outlet boxes and overflows independent of tile bed saturation.",
+          "Compatible anti-root or trafficable protection where planters or decks apply.",
+          "Third-party QA records on film build and environmental conditions.",
+        ],
+      },
+      {
+        heading: "Maverick’s role",
+        paragraphs: [
+          "We apply manufacturer systems aligned to SANS 10021 principles and document execution for trustees and insurers. Municipal or professional sign-off remains with your appointed engineer where required.",
+        ],
+      },
+    ],
+    cta: {
+      heading: "Scope your waterproofing renewal",
+      body: "Pair membrane design with independent QA so warranties survive the next Highveld storm season.",
+      label: "Waterproofing services",
+      href: "/waterproofing-services",
+    },
+  },
+  {
+    slug: "rope-access-ohs-compliance",
+    title: "Rope Access OHS Compliance for High-Rise Painting in Gauteng",
+    lead:
+      "IRATA-trained teams, audited safety files, and rescue plans are non-negotiable when sectional-title towers choose rope access over street scaffold.",
+    pillarLabel: "Access solutions",
+    pillarHref: "/access-solutions",
+    categoryLabel: "OHS & rope access",
+    metadata: {
+      title: "Rope Access OHS Compliance Guide | High-Rise Painting Gauteng",
+      description:
+        "Occupational Health and Safety Act requirements for rope access painting: IRATA levels, rescue plans, tool tethering, and coordination with body corporate security.",
+      path: "/blog/rope-access-ohs-compliance",
+    },
+    sections: [
+      {
+        heading: "Legal framework",
+        paragraphs: [
+          "The Occupational Health and Safety Act requires a documented risk assessment, competent supervision, and emergency rescue capability for work at height. Rope access is not a shortcut around scaffold regulations—it is a specialised method with its own codes of practice.",
+        ],
+      },
+      {
+        heading: "What trustees should verify before appointing",
+        paragraphs: [
+          "Request IRATA operator and supervisor certifications, proof of rescue drills, public liability and COIDA cover, and a site-specific safety file addressing occupied buildings, weather holds, and dropped-object controls.",
+        ],
+        bulletList: [
+          "Exclusion zones and resident communication for drop zones.",
+          "Tool tethering and debris netting on podiums.",
+          "Lightning and wind speed hold points.",
+          "Coordination with estate security and access control.",
+        ],
+      },
+      {
+        heading: "Quality still requires QA",
+        paragraphs: [
+          "OHS compliance does not replace coating QA. Film thickness, preparation, and manufacturer data sheet adherence should still be verified by an independent inspector on major renewals.",
+        ],
+      },
+    ],
+    cta: {
+      heading: "High-rise programmes with rope access",
+      body: "Reduce scaffold footprint on Sandton and East Rand towers while maintaining documented coating quality.",
+      label: "Rope access painting",
+      href: "/access-solutions/rope-access-painting",
     },
   },
 ];
