@@ -236,16 +236,16 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
   ],
   "leaking-balconies": [
     {
-      src: "/images/waterproofing-leaking-balcony-01.jpg",
-      alt: "Balcony or slab edge assessment for water ingress and failed detailing on a sectional-title or commercial block",
-    },
-    {
       src: "/images/waterproofing-leaking-balcony-02.jpg",
-      alt: "Breakout, reinstating falls, and reseating waterproofing or screed at a leaking balcony threshold",
+      alt: "Balcony threshold breakout and membrane renewal at a leaking slab edge",
     },
     {
-      src: "/images/waterproofing-leaking-balcony-03.jpg",
-      alt: "Completed balcony waterproofing and finish reinstatement with documented handover",
+      src: "/images/waterproofing-leaking-balcony-07.jpg",
+      alt: "Completed estate townhouse balcony with sealed balustrade junction",
+    },
+    {
+      src: "/images/waterproofing-leaking-balcony-08.jpg",
+      alt: "Finished waterproofed patio at a small restaurant or café",
     },
   ],
   "torch-on-liquid-membranes": [

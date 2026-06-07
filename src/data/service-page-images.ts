@@ -35,12 +35,13 @@ const SPECIALIZED_COATINGS_PATHS = new Set([
 
 const WATERPROOFING_PATHS = new Set([
   "/waterproofing-services",
-  "/waterproofing/leaking-balconies",
   "/waterproofing/basement-tanking",
   "/waterproofing/torch-on-liquid-membranes",
 ]);
 
 const FLAT_CONCRETE_ROOFS_PATHS = new Set(["/waterproofing/flat-concrete-roofs"]);
+
+const LEAKING_BALCONIES_PATHS = new Set(["/waterproofing/leaking-balconies"]);
 
 const PAINTING_SERVICES_PATHS = new Set([
   "/painting-services",
@@ -428,6 +429,46 @@ const FLAT_CONCRETE_ROOFS_IMAGE_POOL: readonly ServicePageImage[] = [
   },
 ];
 
+/** Dedicated nine-slot pool for the leaking balconies spoke. */
+const LEAKING_BALCONIES_IMAGE_POOL: readonly ServicePageImage[] = [
+  {
+    src: "/images/waterproofing-leaking-balcony-04.jpg",
+    alt: "Completed leaking balcony repair on a modest Gauteng sectional-title block",
+  },
+  {
+    src: "/images/waterproofing-leaking-balcony-05.jpg",
+    alt: "Finished tiled balcony after waterproofing renewal with neat threshold detail",
+  },
+  {
+    src: "/images/waterproofing-flat-roof-03.jpg",
+    alt: "Completed balcony waterproofing remediation with tile reinstatement in Gauteng",
+  },
+  {
+    src: "/images/waterproofing-leaking-balcony-01.jpg",
+    alt: "Balcony slab edge assessment for water ingress on a sectional-title unit",
+  },
+  {
+    src: "/images/waterproofing-leaking-balcony-02.jpg",
+    alt: "Balcony threshold breakout and membrane renewal at a leaking slab edge",
+  },
+  {
+    src: "/images/waterproofing-leaking-balcony-03.jpg",
+    alt: "Completed leaking balcony waterproofing with documented handover",
+  },
+  {
+    src: "/images/waterproofing-leaking-balcony-06.jpg",
+    alt: "Finished balcony slab edge membrane and tile trim detail",
+  },
+  {
+    src: "/images/waterproofing-leaking-balcony-07.jpg",
+    alt: "Completed estate townhouse balcony with sealed balustrade junction",
+  },
+  {
+    src: "/images/waterproofing-leaking-balcony-08.jpg",
+    alt: "Finished waterproofed patio at a small restaurant or café",
+  },
+];
+
 /** Shared nine-slot pool for the waterproofing hub and spokes. */
 const WATERPROOFING_IMAGE_POOL: readonly ServicePageImage[] = [
   {
@@ -659,6 +700,10 @@ export function getServicePageImages(
 
   if (FLAT_CONCRETE_ROOFS_PATHS.has(path)) {
     return [...FLAT_CONCRETE_ROOFS_IMAGE_POOL];
+  }
+
+  if (LEAKING_BALCONIES_PATHS.has(path)) {
+    return [...LEAKING_BALCONIES_IMAGE_POOL];
   }
 
   if (WATERPROOFING_PATHS.has(path)) {
