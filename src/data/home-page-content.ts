@@ -8,11 +8,6 @@ export type HomeFeaturedService = {
   category: string;
 };
 
-export const HOME_HERO_IMAGE = {
-  src: "/images/munyaka-midrand.jpg",
-  alt: "Sectional-title and commercial asset maintenance programme in Midrand, Gauteng",
-};
-
 export const HOME_VISUAL_STRIP = [
   {
     src: "/images/structural-concrete-spalling-repair.jpg",
