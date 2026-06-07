@@ -47,6 +47,16 @@ const PAINTING_SERVICES_PATHS = new Set([
   "/painting/road-marking",
 ]);
 
+const DAMP_PROOFING_PATHS = new Set([
+  "/damp-proofing-services",
+  "/damp-proofing/rising-damp-treatment",
+]);
+
+const ACCESS_SOLUTIONS_PATHS = new Set([
+  "/access-solutions",
+  "/access-solutions/rope-access-painting",
+]);
+
 /** Shared nine-slot pool for the structural repairs hub and spokes. */
 const STRUCTURAL_REPAIRS_IMAGE_POOL: readonly ServicePageImage[] = [
   {
@@ -207,6 +217,86 @@ const PAINTING_SERVICES_IMAGE_POOL: readonly ServicePageImage[] = [
   },
 ];
 
+/** Shared nine-slot pool for the damp proofing hub and rising-damp spoke. */
+const DAMP_PROOFING_IMAGE_POOL: readonly ServicePageImage[] = [
+  {
+    src: "/images/damp-rising-damp-injection.jpg",
+    alt: "Chemical damp-proof course injection at bed joint level in Gauteng masonry",
+  },
+  {
+    src: "/images/damp-rising-damp-diagnosis.jpg",
+    alt: "Rising damp diagnosis and moisture profiling on a Gauteng interior wall",
+  },
+  {
+    src: "/images/damp-rising-damp-replaster.jpg",
+    alt: "Salt-retardant replastering after rising damp remediation",
+  },
+  {
+    src: "/images/waterproofing-basement-tanking-01.jpg",
+    alt: "Below-ground moisture assessment related to damp and tanking programmes",
+  },
+  {
+    src: "/images/waterproofing-basement-tanking-02.jpg",
+    alt: "Cementitious tanking application on a below-ground structure",
+  },
+  {
+    src: "/images/waterproofing-basement-tanking-03.jpg",
+    alt: "Completed basement tanking handover with protection screed",
+  },
+  {
+    src: "/images/waterproofing-leaking-balcony-01.jpg",
+    alt: "Moisture assessment at a slab threshold related to ingress diagnostics",
+  },
+  {
+    src: "/images/waterproofing-leaking-balcony-02.jpg",
+    alt: "Threshold breakout and membrane renewal at a leaking slab edge",
+  },
+  {
+    src: "/images/waterproofing-leaking-balcony-03.jpg",
+    alt: "Completed waterproofing handover after moisture remediation",
+  },
+];
+
+/** Shared nine-slot pool for the access solutions hub and rope-access spoke. */
+const ACCESS_SOLUTIONS_IMAGE_POOL: readonly ServicePageImage[] = [
+  {
+    src: "/images/access-solutions-method.jpg",
+    alt: "IRATA rope access rigging on a Gauteng high-rise façade",
+  },
+  {
+    src: "/images/access-solutions-compliance.jpg",
+    alt: "Rope access safety equipment and compliance documentation on site",
+  },
+  {
+    src: "/images/access-solutions-coordination.jpg",
+    alt: "Coordinated rope access and remedial staging on a multi-storey structure",
+  },
+  {
+    src: "/images/painting-body-corporate-sandton.jpg",
+    alt: "High-rise sectional-title tower suited to rope access programmes",
+  },
+  {
+    src: "/images/structural-concrete-spalling-assessment.jpg",
+    alt: "Façade spalling assessment often sequenced with rope access",
+  },
+  {
+    src: "/images/structural-concrete-spalling-repair.jpg",
+    alt: "Completed spalling repair on an elevated façade element",
+  },
+  {
+    src: "/images/painting-body-corporate-qa.jpg",
+    alt: "High-access painting programme with independent QA documentation",
+  },
+  {
+    src: "/images/structural-crack-injection-injection.jpg",
+    alt: "Structural crack injection on concrete elements accessed at height",
+  },
+  {
+    src: "/images/waterproofing-flat-roof-01.jpg",
+    alt: "Parapet and flat roof detailing accessed via rope or MEWP programmes",
+  },
+];
+
 const SERVICE_IMAGE_PLACEHOLDERS: readonly ServicePageImage[] = [
   { src: "/images/placeholders/service-image-01.svg", alt: "Placeholder service image slot 1" },
   { src: "/images/placeholders/service-image-02.svg", alt: "Placeholder service image slot 2" },
@@ -258,6 +348,14 @@ export function getServicePageImages(
 
   if (PAINTING_SERVICES_PATHS.has(path)) {
     return [...PAINTING_SERVICES_IMAGE_POOL];
+  }
+
+  if (DAMP_PROOFING_PATHS.has(path)) {
+    return [...DAMP_PROOFING_IMAGE_POOL];
+  }
+
+  if (ACCESS_SOLUTIONS_PATHS.has(path)) {
+    return [...ACCESS_SOLUTIONS_IMAGE_POOL];
   }
 
   const serviceLabel = serviceLabelFromPath(path);

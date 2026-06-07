@@ -1,0 +1,111 @@
+{
+  "project": "Maverick Painting",
+  "client_site": "maverickpainting.co.za",
+  "page": "Access solutions hub + rope access spoke",
+  "paths": [
+    "/access-solutions",
+    "/access-solutions/rope-access-painting"
+  ],
+  "purpose": "AI image generation prompts for the access solutions vertical. The rope access method photo already exists from the homepage batch; two legacy PNG placeholders need people-free JPG replacements for compliance and coordination scenes.",
+  "version": "1.0",
+  "date": "2026-06-07",
+  "style_guidelines": {
+    "mandatory_aesthetic": [
+      "raw documentary-style architectural photography",
+      "candid handheld camera aesthetic",
+      "unposed realism",
+      "authentic natural film grain",
+      "grounded Gauteng, South Africa context"
+    ],
+    "lighting": [
+      "Prefer harsh South African midday sun on façades or flat overcast Highveld light on towers",
+      "Avoid soft cinematic studio lighting"
+    ],
+    "materials": [
+      "Describe micro-textures explicitly: rope fibres, karabiner metal, anchor strops, façade plaster, harness webbing laid on pavement",
+      "Show empty rigging evidence — no humans in frame"
+    ],
+    "people_policy": "100% people-free. No workers, faces, hands, or silhouettes. Rope access equipment and façade evidence only.",
+    "completed_vs_process": "Empty rigging setups, safety equipment staged on site, and tower façades awaiting work — all without people.",
+    "location_cues": [
+      "Sandton and Midrand sectional-title towers",
+      "pale Highveld sky",
+      "podium and pavement staging areas"
+    ]
+  },
+  "global_negative_prompt": "people, workers, faces, hands, silhouettes, climbers, posed models, stock photo, smiling at camera, plastic 3D render, CGI, Unreal Engine, octane render, toy house, diorama, overly smooth surfaces, fake HDR, cinematic bloom, lens flare, text, logos, branding, watermarks, misspelled signage, Dubai towers, lush tropical vegetation, rain, snow, oversaturated colours, perfectly clean fantasy site, drone aerial unless specified",
+  "output_specs": {
+    "default_format": "jpg",
+    "color_profile": "sRGB",
+    "quality": "high",
+    "notes": "Match aspect_ratio per slot. Filename must match target_filename exactly. Replaces access-solutions-compliance.png and access-solutions-coordination.png."
+  },
+  "reuse_from_prior_batches": [
+    {
+      "target_filename": "access-solutions-method.jpg",
+      "source": "Homepage featured services (hp15)",
+      "status": "ready — 759 KB"
+    },
+    {
+      "target_filename": "painting-body-corporate-sandton.jpg",
+      "source": "Homepage featured (hp13) — pool slot 4",
+      "status": "ready"
+    },
+    {
+      "target_filename": "structural-concrete-spalling-assessment.jpg",
+      "source": "Homepage hub pillar (hp4) — pool slots 5–8",
+      "status": "ready"
+    }
+  ],
+  "images": [
+    {
+      "id": "access-compliance",
+      "section": "Shared pool slot 2 / rope-access spoke phase 02",
+      "display_order": 2,
+      "target_filename": "access-solutions-compliance.jpg",
+      "target_path": "public/images/access-solutions-compliance.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "site_evidence",
+      "alt_text": "Rope access safety equipment and compliance documentation on a commercial building site",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "as01.png",
+      "prompt": "A raw, documentary-style 4:3 photograph of rope access safety equipment staged for a Gauteng high-rise façade programme, empty of workers. The camera shows a ground-level pavement zone with coiled static rope, karabiners, harness laid flat on a clean drop sheet, and a hard hat beside a folded rescue kit bag with no readable branding. A sectional-title tower rises in the background slightly out of focus. Flat midday Highveld light. Authentic film grain, OHS site evidence photography. No people, readable text, logos, or branding.",
+      "negative_prompt": "people, workers, climbers, readable bag labels, perfect CGI tower, logos, stock photo"
+    },
+    {
+      "id": "access-coordination",
+      "section": "Shared pool slot 3 / rope-access spoke phase 03",
+      "display_order": 3,
+      "target_filename": "access-solutions-coordination.jpg",
+      "target_path": "public/images/access-solutions-coordination.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "site_evidence",
+      "alt_text": "Coordinated rope access and remedial staging on a multi-storey Gauteng structure",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "as02.png",
+      "prompt": "A candid, documentary-style 4:3 photograph of coordinated high-access staging on a Gauteng commercial building, empty of workers. The camera looks up at a mid-rise façade where rope anchor lines run from a parapet level down to a tidy pavement exclusion zone marked with cones and tape, no readable text. Partially completed exterior plaster repair patch visible on one elevation. Pale Highveld sky. Authentic film grain, programme coordination evidence. No people, logos, or branding.",
+      "negative_prompt": "people, workers on ropes, readable tape text, perfect CGI building, logos, drone"
+    }
+  ],
+  "summary": {
+    "total_unique_filenames_in_pool": 9,
+    "reuse_from_prior_batches": 7,
+    "new_images_to_generate": 2,
+    "pages_covered": 2,
+    "generation_batches": {
+      "batch_1": [
+        "access-solutions-compliance.jpg",
+        "access-solutions-coordination.jpg"
+      ]
+    },
+    "notes": [
+      "Code updated to reference .jpg instead of legacy .png for compliance and coordination.",
+      "og-images.ts QA page now points at access-solutions-compliance.jpg.",
+      "After generation: convert PNG → JPG (~88 quality), delete source PNGs, build, commit, push."
+    ]
+  }
+}

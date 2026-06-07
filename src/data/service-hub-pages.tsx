@@ -61,6 +61,21 @@ const PAINTING_MAGAZINE_IMAGES = [
   },
 ] as const;
 
+const DAMP_MAGAZINE_IMAGES = [
+  {
+    src: "/images/damp-rising-damp-diagnosis.jpg",
+    alt: "Rising damp diagnosis and moisture profiling on a Gauteng interior wall",
+  },
+  {
+    src: "/images/damp-rising-damp-injection.jpg",
+    alt: "Chemical DPC injection at bed joint level with regulated drill pattern",
+  },
+  {
+    src: "/images/damp-rising-damp-replaster.jpg",
+    alt: "Salt-retardant replastering after rising damp remediation",
+  },
+] as const;
+
 const MAGAZINE_IMAGES = [
   {
     src: "/images/munyaka-midrand.jpg",
@@ -79,15 +94,15 @@ const MAGAZINE_IMAGES = [
 const ACCESS_MAGAZINE_IMAGES = [
   {
     src: "/images/access-solutions-method.jpg",
-    alt: "Rope access technicians working on a high-rise façade in Gauteng",
+    alt: "IRATA rope access rigging on a Gauteng high-rise façade",
   },
   {
-    src: "/images/access-solutions-compliance.png",
-    alt: "Rope access team with safety equipment on a commercial building exterior",
+    src: "/images/access-solutions-compliance.jpg",
+    alt: "Rope access safety equipment and compliance documentation on a commercial building",
   },
   {
-    src: "/images/access-solutions-coordination.png",
-    alt: "Coordinated rope access and remedial work on a multi-storey structure",
+    src: "/images/access-solutions-coordination.jpg",
+    alt: "Coordinated rope access and remedial staging on a multi-storey structure",
   },
 ] as const;
 
@@ -550,7 +565,7 @@ export const dampProofingHub: ServiceHubPageConfig = {
       {
         phase: "Phase 01 / Diagnosis",
         title: "Not every tide mark is rising damp.",
-        image: MAGAZINE_IMAGES[0],
+        image: DAMP_MAGAZINE_IMAGES[0],
         dropCap: true,
         body: (
           <>
@@ -573,7 +588,7 @@ export const dampProofingHub: ServiceHubPageConfig = {
       {
         phase: "Phase 02 / Masonry",
         title: "Salts outlive the water you see.",
-        image: MAGAZINE_IMAGES[1],
+        image: DAMP_MAGAZINE_IMAGES[1],
         body: (
           <>
             <p className="type-body mb-4 text-zinc-300">
@@ -594,7 +609,7 @@ export const dampProofingHub: ServiceHubPageConfig = {
       {
         phase: "Phase 03 / Finishes",
         title: "Paint is the last witness.",
-        image: MAGAZINE_IMAGES[2],
+        image: DAMP_MAGAZINE_IMAGES[2],
         body: (
           <>
             <p className="type-body mb-4 text-zinc-300">

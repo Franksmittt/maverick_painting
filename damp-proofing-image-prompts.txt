@@ -1,0 +1,99 @@
+{
+  "project": "Maverick Painting",
+  "client_site": "maverickpainting.co.za",
+  "page": "Damp proofing hub + rising damp spoke",
+  "paths": [
+    "/damp-proofing-services",
+    "/damp-proofing/rising-damp-treatment"
+  ],
+  "purpose": "AI image generation prompts for the damp proofing vertical. Two rising-damp filenames already exist from the homepage and services batches; one replaster placeholder still needs real photography. The nine-slot pool also reuses six waterproofing filenames for related moisture contexts.",
+  "version": "1.0",
+  "date": "2026-06-07",
+  "style_guidelines": {
+    "mandatory_aesthetic": [
+      "raw documentary-style architectural photography",
+      "candid handheld camera aesthetic",
+      "unposed realism",
+      "authentic natural film grain",
+      "grounded Gauteng, South Africa context"
+    ],
+    "lighting": [
+      "Prefer flat interior daylight from a nearby window or cool fluorescent in ground-floor rooms",
+      "Avoid soft cinematic studio lighting"
+    ],
+    "materials": [
+      "Describe micro-textures explicitly: salt banding on plaster, drill holes at DPC level, fresh salt-retardant render texture, ceramic tile floors",
+      "Contrast contaminated plaster against fresh replaster zones where relevant"
+    ],
+    "people_policy": "100% people-free. No workers, faces, hands, or silhouettes.",
+    "completed_vs_process": "Mix of diagnosis evidence and completed replaster outcomes with no humans present.",
+    "location_cues": [
+      "Gauteng townhouse and sectional-title ground-floor rooms",
+      "North Riding and Alberton residential stock",
+      "ordinary ceramic tile floors with grout wear"
+    ]
+  },
+  "global_negative_prompt": "people, workers, faces, hands, silhouettes, posed models, stock photo, smiling at camera, plastic 3D render, CGI, Unreal Engine, octane render, toy house, diorama, overly smooth surfaces, fake HDR, cinematic bloom, lens flare, text, logos, branding, watermarks, misspelled signage, American basement, European cottage, lush tropical vegetation, rain, snow, oversaturated colours, perfectly clean fantasy site",
+  "output_specs": {
+    "default_format": "jpg",
+    "color_profile": "sRGB",
+    "quality": "high",
+    "notes": "Match aspect_ratio per slot. Filename must match target_filename exactly."
+  },
+  "reuse_from_prior_batches": [
+    {
+      "target_filename": "damp-rising-damp-diagnosis.jpg",
+      "source": "Services page batch (im2)",
+      "status": "ready — 819 KB"
+    },
+    {
+      "target_filename": "damp-rising-damp-injection.jpg",
+      "source": "Homepage featured services (hp16)",
+      "status": "ready — 1.0 MB"
+    },
+    {
+      "target_filename": "waterproofing-basement-tanking-01.jpg",
+      "source": "Waterproofing batch 2",
+      "status": "ready — reused in pool slots 4–6"
+    },
+    {
+      "target_filename": "waterproofing-leaking-balcony-01.jpg",
+      "source": "Waterproofing batch 1",
+      "status": "ready — reused in pool slots 7–9"
+    }
+  ],
+  "images": [
+    {
+      "id": "damp-replaster-handover",
+      "section": "Shared pool slot 3 / rising-damp spoke phase 03",
+      "display_order": 3,
+      "target_filename": "damp-rising-damp-replaster.jpg",
+      "target_path": "public/images/damp-rising-damp-replaster.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Salt-retardant replastering and compatible finishes after rising damp remediation",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "dp01.png",
+      "prompt": "A candid, documentary-style 4:3 photograph of completed salt-retardant replastering on a ground-floor interior wall in a Gauteng townhouse after rising damp remediation. The camera frames a lower wall zone up to roughly 1.2 metres height showing fresh light grey render with realistic trowel texture, neat junction to original upper plaster, and a clean skirting line above ceramic floor tiles. No moisture staining visible on the new render. Empty room, no furniture clutter. Flat interior daylight from a side window. Authentic film grain, residential handover photography. No text, logos, or branding.",
+      "negative_prompt": "people, workers, perfect CGI wall, American basement, readable labels, logos, wet fresh paint gloss CGI"
+    }
+  ],
+  "summary": {
+    "total_unique_filenames_in_pool": 9,
+    "reuse_from_prior_batches": 8,
+    "new_images_to_generate": 1,
+    "pages_covered": 2,
+    "generation_batches": {
+      "batch_1": [
+        "damp-rising-damp-replaster.jpg"
+      ]
+    },
+    "notes": [
+      "Only one new file required — diagnosis and injection are already live.",
+      "Basement and balcony waterproofing images fill remaining pool slots for moisture-related editorial context.",
+      "After generation: convert PNG → JPG (~88 quality), delete source PNG, build, commit, push."
+    ]
+  }
+}

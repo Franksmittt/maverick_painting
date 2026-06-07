@@ -37,7 +37,7 @@ const OG_BY_PATH: Record<string, string> = {
   "/solutions/for-body-corporates": "/images/gallery/maverick-gallery-04.jpg",
   "/solutions/for-developers": "/images/the-blyde-pretorria.jpg",
   "/solutions/for-homeowners": "/images/munyaka-midrand.jpg",
-  "/our-process-independent-qa": "/images/access-solutions-compliance.png",
+  "/our-process-independent-qa": "/images/access-solutions-compliance.jpg",
   "/locations": "/images/munyaka-midrand.jpg",
   "/locations/sandton": "/images/gallery/maverick-gallery-05.jpg",
   "/locations/isando": "/images/gallery/maverick-gallery-08.jpg",

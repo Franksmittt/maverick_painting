@@ -307,14 +307,14 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
   "rope-access-painting": [
     {
       src: "/images/access-solutions-method.jpg",
-      alt: "IRATA rope access technicians on a Gauteng high-rise façade",
+      alt: "IRATA rope access rigging on a Gauteng high-rise façade",
     },
     {
-      src: "/images/access-solutions-compliance.png",
-      alt: "Rope access safety and compliance documentation for sectional-title programmes",
+      src: "/images/access-solutions-compliance.jpg",
+      alt: "Rope access safety equipment and compliance documentation for sectional-title programmes",
     },
     {
-      src: "/images/access-solutions-coordination.png",
+      src: "/images/access-solutions-coordination.jpg",
       alt: "Coordinated rope access painting with remedial and waterproofing scopes",
     },
   ],
