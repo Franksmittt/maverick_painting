@@ -8,9 +8,10 @@ export const SERVICE_PAGE_IMAGE_COUNT = 9;
 const STRUCTURAL_REPAIRS_PATHS = new Set([
   "/structural-repairs",
   "/structural-repairs/concrete-spalling",
-  "/structural-repairs/crack-injection",
   "/structural-repairs/expansion-joint-sealing",
 ]);
+
+const CRACK_INJECTION_PATHS = new Set(["/structural-repairs/crack-injection"]);
 
 const WALL_CLADDING_PATHS = new Set(["/specialized-coatings/wall-cladding"]);
 
@@ -175,6 +176,46 @@ const WALL_CLADDING_IMAGE_POOL: readonly ServicePageImage[] = [
   {
     src: "/images/coatings-wall-cladding-09.jpg",
     alt: "Completed cladding elevation on a Gauteng school or community building",
+  },
+];
+
+/** Dedicated nine-slot pool for the crack injection spoke (batch 1: slots 0–2). */
+const CRACK_INJECTION_IMAGE_POOL: readonly ServicePageImage[] = [
+  {
+    src: "/images/structural-crack-injection-01.jpg",
+    alt: "Repaired crack injection patch on a modest Gauteng sectional-title building",
+  },
+  {
+    src: "/images/structural-crack-injection-02.jpg",
+    alt: "Crack mapping with chalk marks on a concrete garage column",
+  },
+  {
+    src: "/images/structural-crack-injection-03.jpg",
+    alt: "Injection ports along a single vertical crack on a boundary wall",
+  },
+  {
+    src: "/images/placeholders/service-image-04.svg",
+    alt: "Crack injection project image 4",
+  },
+  {
+    src: "/images/placeholders/service-image-05.svg",
+    alt: "Crack injection project image 5",
+  },
+  {
+    src: "/images/placeholders/service-image-06.svg",
+    alt: "Crack injection project image 6",
+  },
+  {
+    src: "/images/placeholders/service-image-07.svg",
+    alt: "Crack injection project image 7",
+  },
+  {
+    src: "/images/placeholders/service-image-08.svg",
+    alt: "Crack injection project image 8",
+  },
+  {
+    src: "/images/placeholders/service-image-09.svg",
+    alt: "Crack injection project image 9",
   },
 ];
 
@@ -375,6 +416,10 @@ export function getServicePageImages(
   path: string,
   seedImages: readonly ServicePageImage[] = [],
 ): ServicePageImage[] {
+  if (CRACK_INJECTION_PATHS.has(path)) {
+    return [...CRACK_INJECTION_IMAGE_POOL];
+  }
+
   if (STRUCTURAL_REPAIRS_PATHS.has(path)) {
     return [...STRUCTURAL_REPAIRS_IMAGE_POOL];
   }

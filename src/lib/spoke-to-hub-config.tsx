@@ -96,16 +96,16 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
   ],
   "crack-injection": [
     {
-      src: "/images/structural-crack-injection-assessment.jpg",
-      alt: "Structural crack mapping and injection assessment on a concrete slab or wall in Gauteng",
+      src: "/images/structural-crack-injection-02.jpg",
+      alt: "Crack mapping with chalk marks on a concrete garage column",
     },
     {
-      src: "/images/structural-crack-injection-injection.jpg",
-      alt: "Epoxy or polyurethane crack injection with ports and pressure-controlled resin placement",
+      src: "/images/structural-crack-injection-03.jpg",
+      alt: "Injection ports along a single vertical crack on a boundary wall",
     },
     {
-      src: "/images/structural-crack-injection-qa.jpg",
-      alt: "Completed crack injection programme with documented QA-ready concrete repair finish",
+      src: "/images/structural-crack-injection-01.jpg",
+      alt: "Repaired crack injection patch on a modest Gauteng sectional-title building",
     },
   ],
   "expansion-joint-sealing": [
