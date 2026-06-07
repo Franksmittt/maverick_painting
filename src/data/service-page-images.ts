@@ -23,6 +23,14 @@ const SPECIALIZED_COATINGS_PATHS = new Set([
   "/specialized-coatings/industrial-corrosion-control",
 ]);
 
+const WATERPROOFING_PATHS = new Set([
+  "/waterproofing-services",
+  "/waterproofing/flat-concrete-roofs",
+  "/waterproofing/leaking-balconies",
+  "/waterproofing/basement-tanking",
+  "/waterproofing/torch-on-liquid-membranes",
+]);
+
 /** Shared nine-slot pool for the structural repairs hub and spokes. */
 const STRUCTURAL_REPAIRS_IMAGE_POOL: readonly ServicePageImage[] = [
   {
@@ -103,6 +111,46 @@ const SPECIALIZED_COATINGS_IMAGE_POOL: readonly ServicePageImage[] = [
   },
 ];
 
+/** Shared nine-slot pool for the waterproofing hub and spokes. */
+const WATERPROOFING_IMAGE_POOL: readonly ServicePageImage[] = [
+  {
+    src: "/images/waterproofing-flat-roof-02.jpg",
+    alt: "Completed liquid-applied waterproofing membrane on a Gauteng flat roof podium",
+  },
+  {
+    src: "/images/waterproofing-flat-roof-01.jpg",
+    alt: "Completed torch-on waterproofing membrane on a flat concrete roof in Gauteng",
+  },
+  {
+    src: "/images/waterproofing-flat-roof-03.jpg",
+    alt: "Completed balcony waterproofing remediation with tile reinstatement in Gauteng",
+  },
+  {
+    src: "/images/waterproofing-leaking-balcony-01.jpg",
+    alt: "Leaking balcony assessment and moisture tracing on a sectional-title unit",
+  },
+  {
+    src: "/images/waterproofing-leaking-balcony-02.jpg",
+    alt: "Balcony threshold breakout and membrane renewal at a leaking slab edge",
+  },
+  {
+    src: "/images/waterproofing-leaking-balcony-03.jpg",
+    alt: "Completed leaking balcony waterproofing with documented handover",
+  },
+  {
+    src: "/images/waterproofing-basement-tanking-01.jpg",
+    alt: "Basement tanking assessment for hydrostatic pressure and active leak paths",
+  },
+  {
+    src: "/images/waterproofing-basement-tanking-02.jpg",
+    alt: "Crystalline or cementitious tanking application on a below-ground structure",
+  },
+  {
+    src: "/images/waterproofing-basement-tanking-03.jpg",
+    alt: "Completed basement tanking handover with protection screed and monitoring notes",
+  },
+];
+
 const SERVICE_IMAGE_PLACEHOLDERS: readonly ServicePageImage[] = [
   { src: "/images/placeholders/service-image-01.svg", alt: "Placeholder service image slot 1" },
   { src: "/images/placeholders/service-image-02.svg", alt: "Placeholder service image slot 2" },
@@ -146,6 +194,10 @@ export function getServicePageImages(
 
   if (SPECIALIZED_COATINGS_PATHS.has(path)) {
     return [...SPECIALIZED_COATINGS_IMAGE_POOL];
+  }
+
+  if (WATERPROOFING_PATHS.has(path)) {
+    return [...WATERPROOFING_IMAGE_POOL];
   }
 
   const serviceLabel = serviceLabelFromPath(path);

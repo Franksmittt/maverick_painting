@@ -264,16 +264,16 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
   ],
   "basement-tanking": [
     {
-      src: "/images/waterproofing-flat-roof-01.jpg",
+      src: "/images/waterproofing-basement-tanking-01.jpg",
       alt: "Below-ground structure assessment for hydrostatic pressure and active leak paths",
     },
     {
-      src: "/images/structural-crack-injection-injection.jpg",
-      alt: "Active leak management and injection ahead of basement tanking membrane installation",
+      src: "/images/waterproofing-basement-tanking-02.jpg",
+      alt: "Active leak management and tanking membrane installation ahead of basement handover",
     },
     {
-      src: "/images/waterproofing-flat-roof-03.jpg",
-      alt: "Completed tanking handover with protection screed and monitoring notes",
+      src: "/images/waterproofing-basement-tanking-03.jpg",
+      alt: "Completed basement tanking handover with protection screed and monitoring notes",
     },
   ],
   "roof-painting": [

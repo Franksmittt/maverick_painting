@@ -31,6 +31,21 @@ const COATINGS_MAGAZINE_IMAGES = [
   },
 ] as const;
 
+const WATERPROOFING_MAGAZINE_IMAGES = [
+  {
+    src: "/images/waterproofing-flat-roof-01.jpg",
+    alt: "Torch-on waterproofing membrane detail on a Gauteng flat concrete roof",
+  },
+  {
+    src: "/images/waterproofing-flat-roof-02.jpg",
+    alt: "Liquid-applied polyurethane waterproofing on a Gauteng podium deck",
+  },
+  {
+    src: "/images/waterproofing-leaking-balcony-02.jpg",
+    alt: "Balcony threshold waterproofing and interface detailing on a sectional-title block",
+  },
+] as const;
+
 const MAGAZINE_IMAGES = [
   {
     src: "/images/munyaka-midrand.jpg",
@@ -348,7 +363,7 @@ export const waterproofingHub: ServiceHubPageConfig = {
       {
         phase: "Phase 01 / Risk",
         title: "Water destroys warranties first.",
-        image: MAGAZINE_IMAGES[0],
+        image: WATERPROOFING_MAGAZINE_IMAGES[0],
         dropCap: true,
         body: (
           <>
@@ -374,7 +389,7 @@ export const waterproofingHub: ServiceHubPageConfig = {
       {
         phase: "Phase 02 / Systems",
         title: "Torch-on and liquid each have a place.",
-        image: MAGAZINE_IMAGES[1],
+        image: WATERPROOFING_MAGAZINE_IMAGES[1],
         body: (
           <>
             <p className="type-body mb-4 text-zinc-300">
@@ -399,7 +414,7 @@ export const waterproofingHub: ServiceHubPageConfig = {
       {
         phase: "Phase 03 / Coordination",
         title: "Membranes rarely fail alone.",
-        image: MAGAZINE_IMAGES[2],
+        image: WATERPROOFING_MAGAZINE_IMAGES[2],
         body: (
           <>
             <p className="type-body mb-4 text-zinc-300">

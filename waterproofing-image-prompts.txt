@@ -1,0 +1,201 @@
+{
+  "project": "Maverick Painting",
+  "client_site": "maverickpainting.co.za",
+  "page": "Waterproofing hub + spokes",
+  "paths": [
+    "/waterproofing-services",
+    "/waterproofing/flat-concrete-roofs",
+    "/waterproofing/leaking-balconies",
+    "/waterproofing/basement-tanking",
+    "/waterproofing/torch-on-liquid-membranes"
+  ],
+  "purpose": "AI image generation prompts for the third service vertical. Three flat-roof filenames already exist from the homepage batch; six new filenames are required for leaking-balcony and basement-tanking spokes. After generation, images are converted to JPG, placed in public/images/, and the nine-slot pool in service-page-images.ts serves the hub and all four spokes.",
+  "version": "1.0",
+  "date": "2026-06-07",
+  "style_guidelines": {
+    "mandatory_aesthetic": [
+      "raw documentary-style architectural and contractor photography",
+      "candid handheld camera aesthetic",
+      "unposed realism",
+      "authentic natural film grain",
+      "grounded Gauteng, South Africa context"
+    ],
+    "lighting": [
+      "Prefer harsh South African midday sun, flat hazy mid-morning, or cool fluorescent basement light",
+      "Avoid soft cinematic studio lighting and perfect HDR balance"
+    ],
+    "materials": [
+      "Describe micro-textures explicitly: torch-on bitumen weld marks, liquid membrane roller lap lines, tile grout at balcony thresholds, crystalline tanking slurry on concrete",
+      "Contrast failed wet substrate against fresh completed membrane finishes where relevant"
+    ],
+    "people_policy": "100% people-free. No workers, faces, hands, or silhouettes.",
+    "completed_vs_process": "Mix of completed outcomes and empty in-progress evidence (cores, breakout zones, marked leak paths) with no humans present.",
+    "location_cues": [
+      "Gauteng sectional-title balconies and podiums",
+      "Sandton and Midrand flat roofs",
+      "basement parking and lift pits",
+      "pale Highveld sky",
+      "Alberton and Glenvista townhouse stock"
+    ]
+  },
+  "global_negative_prompt": "people, workers, faces, hands, silhouettes, posed models, stock photo, smiling at camera, plastic 3D render, CGI, Unreal Engine, octane render, toy house, diorama, overly smooth surfaces, fake HDR, cinematic bloom, lens flare, text, logos, branding, watermarks, misspelled signage, American suburb, European architecture, lush tropical vegetation, rain, snow, oversaturated colours, perfectly clean fantasy site, drone aerial unless specified",
+  "output_specs": {
+    "default_format": "jpg",
+    "color_profile": "sRGB",
+    "quality": "high",
+    "notes": "Match aspect_ratio per slot. Filename must match target_filename exactly (lowercase, hyphens)."
+  },
+  "reuse_from_homepage": [
+    {
+      "target_filename": "waterproofing-flat-roof-01.jpg",
+      "homepage_source": "Hub pillar 03 (hp6) — torch-on flat roof detail",
+      "status": "ready — 126 KB"
+    },
+    {
+      "target_filename": "waterproofing-flat-roof-02.jpg",
+      "homepage_source": "Featured services grid (hp8) — liquid membrane podium",
+      "status": "ready — 527 KB"
+    },
+    {
+      "target_filename": "waterproofing-flat-roof-03.jpg",
+      "homepage_source": "Featured services grid (hp10) — completed balcony tile reinstatement",
+      "status": "ready — 730 KB — also covers balcony completion theme; leaking-balcony-03 should be a distinct assessment-to-handover scene"
+    }
+  ],
+  "images": [
+    {
+      "id": "waterproofing-balcony-assessment",
+      "section": "Shared pool slot 4 / leaking-balconies spoke phase 01",
+      "display_order": 4,
+      "target_filename": "waterproofing-leaking-balcony-01.jpg",
+      "target_path": "public/images/waterproofing-leaking-balcony-01.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "site_evidence",
+      "alt_text": "Leaking balcony assessment and moisture tracing on a sectional-title unit in Gauteng",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "wp01.png",
+      "prompt": "A candid, documentary-style 4:3 photograph of leaking balcony assessment evidence on a Gauteng sectional-title unit in Alberton or Glenvista. The camera frames a tiled balcony floor with visible moisture staining along the door threshold, lifted grout at one corner, and a moisture meter probe resting against the wall base, no operator present. Aluminium sliding door frame and slightly faded exterior paint visible. Empty balcony, no furniture. Bright midday South African sun with sharp railing shadow. Authentic film grain, mundane residential defect documentation. No text, logos, or branding.",
+      "negative_prompt": "people, hands on meter, luxury penthouse, ocean view, perfect CGI tiles, pool, logos"
+    },
+    {
+      "id": "waterproofing-balcony-breakout",
+      "section": "Shared pool slot 5 / leaking-balconies spoke phase 02",
+      "display_order": 5,
+      "target_filename": "waterproofing-leaking-balcony-02.jpg",
+      "target_path": "public/images/waterproofing-leaking-balcony-02.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "site_evidence",
+      "alt_text": "Balcony threshold breakout and membrane renewal at a leaking slab edge in Gauteng",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "wp02.png",
+      "prompt": "A raw, documentary-style 4:3 photograph of balcony waterproofing renewal in progress at a Gauteng sectional-title block, empty of workers. The camera shows a section of tiles removed at the door threshold exposing screed and a freshly applied dark liquid waterproofing membrane band along the slab edge, with stacked tiles and dust on a drop sheet nearby. Aluminium door frame masked with paper tape. Harsh midday sun. Authentic film grain, contractor site evidence. No people, logos, or branding.",
+      "negative_prompt": "people, workers hands, perfect CGI balcony, luxury resort, logos, readable signage"
+    },
+    {
+      "id": "waterproofing-balcony-handover",
+      "section": "Shared pool slot 6 / leaking-balconies spoke phase 03",
+      "display_order": 6,
+      "target_filename": "waterproofing-leaking-balcony-03.jpg",
+      "target_path": "public/images/waterproofing-leaking-balcony-03.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed leaking balcony waterproofing and finish reinstatement with documented handover",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "wp03.png",
+      "prompt": "A straightforward, documentary-style 4:3 photograph of a completed under-tile balcony waterproofing handover on a Gauteng townhouse in Centurion. Reinstated ceramic floor tiles with realistic grout lines, a clean aluminium threshold strip, and a neatly sealed floor outlet at the corner. Empty balcony after handover, no furniture. Warm late-afternoon golden hour light. Authentic film grain, residential completion photography distinct from a flat roof podium scene. No text, logos, or branding.",
+      "negative_prompt": "people, luxury penthouse, ocean view, perfect CGI tiles, pool furniture, logos"
+    },
+    {
+      "id": "waterproofing-basement-assessment",
+      "section": "Shared pool slot 7 / basement-tanking spoke phase 01",
+      "display_order": 7,
+      "target_filename": "waterproofing-basement-tanking-01.jpg",
+      "target_path": "public/images/waterproofing-basement-tanking-01.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "site_evidence",
+      "alt_text": "Basement tanking assessment for hydrostatic pressure and active leak paths in Gauteng",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "wp04.png",
+      "prompt": "A candid, documentary-style 4:3 photograph of basement tanking assessment in an empty Gauteng underground parking level. The camera frames a concrete retaining wall with active water staining, efflorescence bloom, and a chalk-marked zone indicating hydrostatic pressure risk. A small core hole with moisture evidence at the base, tyre scuffs on the floor, fluorescent basement lighting mixed with daylight from the ramp. No people. Authentic film grain, raw sub-structure documentation. No text, logos, or branding.",
+      "negative_prompt": "people, flooded basement CGI, perfect clean carpark, American parking garage stock, logos"
+    },
+    {
+      "id": "waterproofing-basement-application",
+      "section": "Shared pool slot 8 / basement-tanking spoke phase 02",
+      "display_order": 8,
+      "target_filename": "waterproofing-basement-tanking-02.jpg",
+      "target_path": "public/images/waterproofing-basement-tanking-02.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "site_evidence",
+      "alt_text": "Crystalline or cementitious tanking application on a below-ground structure in Gauteng",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "wp05.png",
+      "prompt": "A raw, documentary-style 4:3 photograph of cementitious tanking slurry application on a basement wall in a Gauteng commercial parking structure, empty of workers. The camera shows a grey crystalline coating brushed onto concrete with visible brush stroke texture over previously damp-stained substrate, masking at a column junction, and a bucket with lid closed nearby. Cool fluorescent basement light. Authentic film grain, negative-side waterproofing evidence. No people, readable labels, or logos.",
+      "negative_prompt": "people, workers brushing, perfect CGI wall, spotless basement, logos, readable bucket labels"
+    },
+    {
+      "id": "waterproofing-basement-handover",
+      "section": "Shared pool slot 9 / basement-tanking spoke phase 03",
+      "display_order": 9,
+      "target_filename": "waterproofing-basement-tanking-03.jpg",
+      "target_path": "public/images/waterproofing-basement-tanking-03.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed basement tanking handover with protection screed and monitoring notes",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "wp06.png",
+      "prompt": "A candid, documentary-style 4:3 photograph of completed basement tanking handover in a Gauteng underground parking bay. The treated wall shows uniform grey cementitious finish with neat termination at the floor junction, adjacent floor with fresh protection screed band, and dry concrete with no active staining. Empty carpark, fluorescent light. Authentic film grain, sub-structure completion photography. No people, text, logos, or branding.",
+      "negative_prompt": "people, flooded basement, perfect CGI render, logos, readable signage"
+    }
+  ],
+  "hub_slot_assignment": {
+    "note": "Wired in service-page-images.ts as WATERPROOFING_IMAGE_POOL",
+    "slots": [
+      { "slot": 0, "hero": "waterproofing-flat-roof-02.jpg", "source": "reuse" },
+      { "slot": 1, "triptych_left": "waterproofing-flat-roof-01.jpg", "source": "reuse" },
+      { "slot": 2, "triptych_centre": "waterproofing-flat-roof-03.jpg", "source": "reuse" },
+      { "slot": 3, "triptych_right": "waterproofing-leaking-balcony-01.jpg", "source": "generate batch 1" },
+      { "slot": 4, "editorial_phase_01": "waterproofing-leaking-balcony-02.jpg", "source": "generate batch 1" },
+      { "slot": 5, "pair_left": "waterproofing-leaking-balcony-03.jpg", "source": "generate batch 1" },
+      { "slot": 6, "pair_right": "waterproofing-basement-tanking-01.jpg", "source": "generate batch 2" },
+      { "slot": 7, "editorial_phase_02": "waterproofing-basement-tanking-02.jpg", "source": "generate batch 2" },
+      { "slot": 8, "editorial_phase_03": "waterproofing-basement-tanking-03.jpg", "source": "generate batch 2" }
+    ]
+  },
+  "summary": {
+    "total_unique_filenames": 9,
+    "reuse_from_homepage": 3,
+    "new_images_to_generate": 6,
+    "pages_covered": 5,
+    "generation_batches": {
+      "batch_1": [
+        "waterproofing-leaking-balcony-01.jpg",
+        "waterproofing-leaking-balcony-02.jpg",
+        "waterproofing-leaking-balcony-03.jpg"
+      ],
+      "batch_2": [
+        "waterproofing-basement-tanking-01.jpg",
+        "waterproofing-basement-tanking-02.jpg",
+        "waterproofing-basement-tanking-03.jpg"
+      ]
+    },
+    "notes": [
+      "flat-concrete-roofs and torch-on-liquid-membranes spokes reuse the flat-roof-01/02/03 filenames — no new files needed.",
+      "waterproofing-flat-roof-03.jpg from homepage shows completed balcony tiles; leaking-balcony-03 should still be generated as a distinct handover scene for the spoke triplet.",
+      "basement-tanking spoke updated to use waterproofing-basement-tanking-01/02/03 instead of flat-roof and crack-injection placeholders.",
+      "After each batch: convert PNG → JPG (~88 quality), delete source PNGs, build, commit, push."
+    ]
+  }
+}
