@@ -152,16 +152,16 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
   ],
   "cemcrete-floors": [
     {
-      src: "/images/coatings-industrial-epoxy-surface-prep.jpg",
-      alt: "Surface preparation before decorative cement floor finish application",
+      src: "/images/coatings-cemcrete-floors-05.jpg",
+      alt: "Completed decorative cement floor in a small furniture showroom",
     },
     {
-      src: "/images/coatings-industrial-epoxy-resin-application.jpg",
-      alt: "Decorative cement floor finish application with controlled edge detailing",
+      src: "/images/coatings-cemcrete-floors-08.jpg",
+      alt: "Finished cement floor in a suburban room renovation handover",
     },
     {
-      src: "/images/coatings-industrial-epoxy-completed-floor.jpg",
-      alt: "Completed seamless decorative floor finish ready for handover",
+      src: "/images/coatings-cemcrete-floors-09.jpg",
+      alt: "Completed decorative cement floor in a small café or guesthouse entrance",
     },
   ],
   "wall-cladding": [

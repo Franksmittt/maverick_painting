@@ -20,9 +20,10 @@ const INDUSTRIAL_EPOXY_FLOORING_PATHS = new Set([
   "/specialized-coatings/industrial-epoxy-flooring",
 ]);
 
+const CEMCRETE_FLOORS_PATHS = new Set(["/specialized-coatings/cemcrete-floors"]);
+
 const SPECIALIZED_COATINGS_PATHS = new Set([
   "/specialized-coatings",
-  "/specialized-coatings/cemcrete-floors",
   "/specialized-coatings/cemcrete-external-walls",
   "/specialized-coatings/hygienic-food-grade",
   "/specialized-coatings/marmoran-wall-systems",
@@ -180,6 +181,46 @@ const INDUSTRIAL_EPOXY_FLOORING_IMAGE_POOL: readonly ServicePageImage[] = [
   {
     src: "/images/coatings-industrial-epoxy-07.jpg",
     alt: "Completed epoxy floor with line marking in a small fulfilment unit",
+  },
+];
+
+/** Dedicated nine-slot pool for the Cemcrete floors spoke. */
+const CEMCRETE_FLOORS_IMAGE_POOL: readonly ServicePageImage[] = [
+  {
+    src: "/images/coatings-cemcrete-floors-01.jpg",
+    alt: "Completed decorative cement floor in a Gauteng open-plan living area",
+  },
+  {
+    src: "/images/coatings-cemcrete-floors-02.jpg",
+    alt: "Finished seamless cement floor in a small retail showroom",
+  },
+  {
+    src: "/images/coatings-cemcrete-floors-03.jpg",
+    alt: "Close-up of a completed decorative cement floor with mineral texture",
+  },
+  {
+    src: "/images/coatings-cemcrete-floors-04.jpg",
+    alt: "Finished cement floor in a residential hallway",
+  },
+  {
+    src: "/images/coatings-cemcrete-floors-05.jpg",
+    alt: "Completed decorative cement floor in a small furniture showroom",
+  },
+  {
+    src: "/images/coatings-cemcrete-floors-06.jpg",
+    alt: "Seamless cement floor between kitchen and living space in a modest home",
+  },
+  {
+    src: "/images/coatings-cemcrete-floors-07.jpg",
+    alt: "Completed sealed cement floor in a small en-suite bathroom",
+  },
+  {
+    src: "/images/coatings-cemcrete-floors-08.jpg",
+    alt: "Finished cement floor in a suburban room renovation handover",
+  },
+  {
+    src: "/images/coatings-cemcrete-floors-09.jpg",
+    alt: "Completed decorative cement floor in a small café or guesthouse entrance",
   },
 ];
 
@@ -518,6 +559,10 @@ export function getServicePageImages(
 
   if (INDUSTRIAL_EPOXY_FLOORING_PATHS.has(path)) {
     return [...INDUSTRIAL_EPOXY_FLOORING_IMAGE_POOL];
+  }
+
+  if (CEMCRETE_FLOORS_PATHS.has(path)) {
+    return [...CEMCRETE_FLOORS_IMAGE_POOL];
   }
 
   if (SPECIALIZED_COATINGS_PATHS.has(path)) {
