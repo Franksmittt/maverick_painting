@@ -8,10 +8,11 @@ export const SERVICE_PAGE_IMAGE_COUNT = 9;
 const STRUCTURAL_REPAIRS_PATHS = new Set([
   "/structural-repairs",
   "/structural-repairs/concrete-spalling",
-  "/structural-repairs/expansion-joint-sealing",
 ]);
 
 const CRACK_INJECTION_PATHS = new Set(["/structural-repairs/crack-injection"]);
+
+const EXPANSION_JOINT_PATHS = new Set(["/structural-repairs/expansion-joint-sealing"]);
 
 const WALL_CLADDING_PATHS = new Set(["/specialized-coatings/wall-cladding"]);
 
@@ -219,6 +220,46 @@ const CRACK_INJECTION_IMAGE_POOL: readonly ServicePageImage[] = [
   },
 ];
 
+/** Dedicated nine-slot pool for the expansion joint sealing spoke (batch 1: slots 0–2). */
+const EXPANSION_JOINT_IMAGE_POOL: readonly ServicePageImage[] = [
+  {
+    src: "/images/structural-expansion-joint-01.jpg",
+    alt: "Renewed expansion joint line in a small basement parking area",
+  },
+  {
+    src: "/images/structural-expansion-joint-02.jpg",
+    alt: "Worn expansion joint sealant with light arris wear before repair",
+  },
+  {
+    src: "/images/structural-expansion-joint-03.jpg",
+    alt: "Fresh saw-cut expansion joint with sealant installation in a small warehouse aisle",
+  },
+  {
+    src: "/images/placeholders/service-image-04.svg",
+    alt: "Expansion joint sealing project image 4",
+  },
+  {
+    src: "/images/placeholders/service-image-05.svg",
+    alt: "Expansion joint sealing project image 5",
+  },
+  {
+    src: "/images/placeholders/service-image-06.svg",
+    alt: "Expansion joint sealing project image 6",
+  },
+  {
+    src: "/images/placeholders/service-image-07.svg",
+    alt: "Expansion joint sealing project image 7",
+  },
+  {
+    src: "/images/placeholders/service-image-08.svg",
+    alt: "Expansion joint sealing project image 8",
+  },
+  {
+    src: "/images/placeholders/service-image-09.svg",
+    alt: "Expansion joint sealing project image 9",
+  },
+];
+
 /** Shared nine-slot pool for the waterproofing hub and spokes. */
 const WATERPROOFING_IMAGE_POOL: readonly ServicePageImage[] = [
   {
@@ -418,6 +459,10 @@ export function getServicePageImages(
 ): ServicePageImage[] {
   if (CRACK_INJECTION_PATHS.has(path)) {
     return [...CRACK_INJECTION_IMAGE_POOL];
+  }
+
+  if (EXPANSION_JOINT_PATHS.has(path)) {
+    return [...EXPANSION_JOINT_IMAGE_POOL];
   }
 
   if (STRUCTURAL_REPAIRS_PATHS.has(path)) {

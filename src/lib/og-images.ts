@@ -11,7 +11,7 @@ const OG_BY_PATH: Record<string, string> = {
   "/access-solutions": "/images/access-solutions-method.jpg",
   "/structural-repairs/concrete-spalling": "/images/gallery/maverick-gallery-01.jpg",
   "/structural-repairs/crack-injection": "/images/structural-crack-injection-01.jpg",
-  "/structural-repairs/expansion-joint-sealing": "/images/gallery/maverick-gallery-09.jpg",
+  "/structural-repairs/expansion-joint-sealing": "/images/structural-expansion-joint-01.jpg",
   "/waterproofing/leaking-balconies": "/images/gallery/maverick-gallery-07.jpg",
   "/waterproofing/basement-tanking": "/images/gallery/maverick-gallery-02.jpg",
   "/waterproofing/flat-concrete-roofs": "/images/gallery/maverick-gallery-02.jpg",

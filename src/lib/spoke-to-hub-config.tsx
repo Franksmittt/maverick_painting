@@ -110,16 +110,16 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
   ],
   "expansion-joint-sealing": [
     {
-      src: "/images/structural-expansion-joint-assessment.jpg",
-      alt: "Expansion joint condition assessment and breakout preparation on a parking or podium slab",
+      src: "/images/structural-expansion-joint-02.jpg",
+      alt: "Worn expansion joint sealant with light arris wear before repair",
     },
     {
-      src: "/images/structural-expansion-joint-installation.jpg",
-      alt: "Traffic-rated expansion joint rebuild with sealant and armour detailing in Gauteng",
+      src: "/images/structural-expansion-joint-03.jpg",
+      alt: "Fresh saw-cut expansion joint with sealant installation in a small warehouse aisle",
     },
     {
-      src: "/images/structural-expansion-joint-finish.jpg",
-      alt: "Completed expansion joint sealing interface ready for waterproofing or traffic reopening",
+      src: "/images/structural-expansion-joint-01.jpg",
+      alt: "Renewed expansion joint line in a small basement parking area",
     },
   ],
   "rising-damp-treatment": [
