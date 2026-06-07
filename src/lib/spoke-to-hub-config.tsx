@@ -138,16 +138,16 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
   ],
   "industrial-epoxy-flooring": [
     {
-      src: "/images/coatings-industrial-epoxy-surface-prep.jpg",
-      alt: "Diamond grinding and surface preparation for industrial epoxy flooring in a Gauteng warehouse or plant",
+      src: "/images/coatings-industrial-epoxy-04.jpg",
+      alt: "Completed cold-room epoxy or polyurethane-cement floor with coved wall base",
     },
     {
-      src: "/images/coatings-industrial-epoxy-resin-application.jpg",
-      alt: "Multi-coat epoxy or polyurethane resin flooring application with controlled film build",
+      src: "/images/coatings-industrial-epoxy-06.jpg",
+      alt: "Completed epoxy lining in a small chemical storage bund",
     },
     {
-      src: "/images/coatings-industrial-epoxy-completed-floor.jpg",
-      alt: "Completed industrial epoxy floor system ready for traffic and line-marking handover",
+      src: "/images/coatings-industrial-epoxy-07.jpg",
+      alt: "Completed epoxy floor with line marking in a small fulfilment unit",
     },
   ],
   "cemcrete-floors": [

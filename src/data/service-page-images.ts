@@ -16,9 +16,12 @@ const EXPANSION_JOINT_PATHS = new Set(["/structural-repairs/expansion-joint-seal
 
 const WALL_CLADDING_PATHS = new Set(["/specialized-coatings/wall-cladding"]);
 
+const INDUSTRIAL_EPOXY_FLOORING_PATHS = new Set([
+  "/specialized-coatings/industrial-epoxy-flooring",
+]);
+
 const SPECIALIZED_COATINGS_PATHS = new Set([
   "/specialized-coatings",
-  "/specialized-coatings/industrial-epoxy-flooring",
   "/specialized-coatings/cemcrete-floors",
   "/specialized-coatings/cemcrete-external-walls",
   "/specialized-coatings/hygienic-food-grade",
@@ -137,6 +140,46 @@ const SPECIALIZED_COATINGS_IMAGE_POOL: readonly ServicePageImage[] = [
   {
     src: "/images/coatings-marmoran-wall-03.jpg",
     alt: "Completed Marmoran-style decorative wall finish on an estate elevation",
+  },
+];
+
+/** Dedicated nine-slot pool for the industrial epoxy flooring spoke. */
+const INDUSTRIAL_EPOXY_FLOORING_IMAGE_POOL: readonly ServicePageImage[] = [
+  {
+    src: "/images/coatings-industrial-epoxy-completed-floor.jpg",
+    alt: "Completed industrial epoxy flooring in a Gauteng logistics warehouse",
+  },
+  {
+    src: "/images/coatings-industrial-epoxy-surface-prep.jpg",
+    alt: "Diamond grinding and surface preparation for industrial epoxy flooring",
+  },
+  {
+    src: "/images/coatings-industrial-epoxy-resin-application.jpg",
+    alt: "Multi-coat epoxy resin flooring application with controlled film build",
+  },
+  {
+    src: "/images/coatings-hygienic-food-grade-02.jpg",
+    alt: "Completed hygienic PU-cement floor with coving in a food production area",
+  },
+  {
+    src: "/images/coatings-industrial-epoxy-04.jpg",
+    alt: "Completed cold-room epoxy or polyurethane-cement floor with coved wall base",
+  },
+  {
+    src: "/images/coatings-hygienic-food-grade-01.jpg",
+    alt: "Hygienic floor and wall preparation before PU-cement application",
+  },
+  {
+    src: "/images/coatings-industrial-epoxy-05.jpg",
+    alt: "Completed mid-grey epoxy floor in a small Gauteng industrial unit",
+  },
+  {
+    src: "/images/coatings-industrial-epoxy-06.jpg",
+    alt: "Completed epoxy lining in a small chemical storage bund",
+  },
+  {
+    src: "/images/coatings-industrial-epoxy-07.jpg",
+    alt: "Completed epoxy floor with line marking in a small fulfilment unit",
   },
 ];
 
@@ -471,6 +514,10 @@ export function getServicePageImages(
 
   if (WALL_CLADDING_PATHS.has(path)) {
     return [...WALL_CLADDING_IMAGE_POOL];
+  }
+
+  if (INDUSTRIAL_EPOXY_FLOORING_PATHS.has(path)) {
+    return [...INDUSTRIAL_EPOXY_FLOORING_IMAGE_POOL];
   }
 
   if (SPECIALIZED_COATINGS_PATHS.has(path)) {
