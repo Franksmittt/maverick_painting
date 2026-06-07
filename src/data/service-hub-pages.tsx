@@ -46,6 +46,21 @@ const WATERPROOFING_MAGAZINE_IMAGES = [
   },
 ] as const;
 
+const PAINTING_MAGAZINE_IMAGES = [
+  {
+    src: "/images/painting-body-corporate-sandton.jpg",
+    alt: "Phased exterior repainting of a Sandton sectional-title tower",
+  },
+  {
+    src: "/images/painting-industrial-corrosion.jpg",
+    alt: "Industrial corrosion control on silos and plant steelwork in Gauteng",
+  },
+  {
+    src: "/images/painting-body-corporate-qa.jpg",
+    alt: "Body corporate painting programme with independent QA documentation",
+  },
+] as const;
+
 const MAGAZINE_IMAGES = [
   {
     src: "/images/munyaka-midrand.jpg",
@@ -964,7 +979,7 @@ export const paintingServicesHub: ServiceHubPageConfig = {
       {
         phase: "Phase 01 / Trustees",
         title: "Trustees do not buy paint.",
-        image: MAGAZINE_IMAGES[0],
+        image: PAINTING_MAGAZINE_IMAGES[0],
         dropCap: true,
         body: (
           <>
@@ -989,7 +1004,7 @@ export const paintingServicesHub: ServiceHubPageConfig = {
       {
         phase: "Phase 02 / Industrial",
         title: "Plant painting is production planning.",
-        image: MAGAZINE_IMAGES[1],
+        image: PAINTING_MAGAZINE_IMAGES[1],
         body: (
           <>
             <p className="type-body mb-4 text-zinc-300">
@@ -1014,7 +1029,7 @@ export const paintingServicesHub: ServiceHubPageConfig = {
       {
         phase: "Phase 03 / Access",
         title: "Access choice is a cost and safety decision.",
-        image: MAGAZINE_IMAGES[2],
+        image: PAINTING_MAGAZINE_IMAGES[2],
         body: (
           <>
             <p className="type-body mb-4 text-zinc-300">

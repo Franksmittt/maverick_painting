@@ -31,6 +31,22 @@ const WATERPROOFING_PATHS = new Set([
   "/waterproofing/torch-on-liquid-membranes",
 ]);
 
+const PAINTING_SERVICES_PATHS = new Set([
+  "/painting-services",
+  "/painting/body-corporate",
+  "/painting/industrial",
+  "/painting/roof-painting",
+  "/painting/stucco-wall-coatings",
+  "/painting/commercial-painting",
+  "/painting/interior-painting",
+  "/painting/internal-walls",
+  "/painting/external-walls",
+  "/painting/warehouse-painting",
+  "/painting/high-volume-commercial-painting",
+  "/painting/parking-garage-painting",
+  "/painting/road-marking",
+]);
+
 /** Shared nine-slot pool for the structural repairs hub and spokes. */
 const STRUCTURAL_REPAIRS_IMAGE_POOL: readonly ServicePageImage[] = [
   {
@@ -151,6 +167,46 @@ const WATERPROOFING_IMAGE_POOL: readonly ServicePageImage[] = [
   },
 ];
 
+/** Shared nine-slot pool for the painting services hub and spokes. */
+const PAINTING_SERVICES_IMAGE_POOL: readonly ServicePageImage[] = [
+  {
+    src: "/images/painting-industrial-coatings.jpg",
+    alt: "Completed industrial protective coating on steel structures at a Gauteng plant",
+  },
+  {
+    src: "/images/painting-body-corporate-sandton.jpg",
+    alt: "Phased exterior repainting of a Sandton sectional-title tower",
+  },
+  {
+    src: "/images/painting-body-corporate-estate.jpg",
+    alt: "Townhouse estate exterior painting in Gauteng",
+  },
+  {
+    src: "/images/painting-industrial-corrosion.jpg",
+    alt: "Industrial corrosion control coatings on silos and plant exteriors",
+  },
+  {
+    src: "/images/painting-industrial-preparation.jpg",
+    alt: "Industrial surface preparation ahead of protective coating application",
+  },
+  {
+    src: "/images/painting-body-corporate-qa.jpg",
+    alt: "Body corporate painting programme with QA documentation",
+  },
+  {
+    src: "/images/painting-commercial-healthcare.jpg",
+    alt: "Healthcare interior painting with containment and low-VOC coatings",
+  },
+  {
+    src: "/images/painting-commercial-campus.jpg",
+    alt: "Corporate campus interior repaint with phased weekend programmes",
+  },
+  {
+    src: "/images/painting-commercial-retail.jpg",
+    alt: "Retail commercial painting completed during night shifts",
+  },
+];
+
 const SERVICE_IMAGE_PLACEHOLDERS: readonly ServicePageImage[] = [
   { src: "/images/placeholders/service-image-01.svg", alt: "Placeholder service image slot 1" },
   { src: "/images/placeholders/service-image-02.svg", alt: "Placeholder service image slot 2" },
@@ -198,6 +254,10 @@ export function getServicePageImages(
 
   if (WATERPROOFING_PATHS.has(path)) {
     return [...WATERPROOFING_IMAGE_POOL];
+  }
+
+  if (PAINTING_SERVICES_PATHS.has(path)) {
+    return [...PAINTING_SERVICES_IMAGE_POOL];
   }
 
   const serviceLabel = serviceLabelFromPath(path);

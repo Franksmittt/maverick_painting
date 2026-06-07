@@ -1,0 +1,185 @@
+{
+  "project": "Maverick Painting",
+  "client_site": "maverickpainting.co.za",
+  "page": "Painting services hub + spokes",
+  "paths": [
+    "/painting-services",
+    "/painting/body-corporate",
+    "/painting/industrial",
+    "/painting/roof-painting",
+    "/painting/stucco-wall-coatings",
+    "/painting/commercial-painting",
+    "/painting/interior-painting",
+    "/painting/internal-walls",
+    "/painting/external-walls",
+    "/painting/warehouse-painting",
+    "/painting/high-volume-commercial-painting",
+    "/painting/parking-garage-painting",
+    "/painting/road-marking"
+  ],
+  "purpose": "AI image generation prompts for the fourth service vertical. Five core painting filenames already exist from the homepage batch; four commercial and QA placeholders still need real photography. After generation, images are converted to JPG, placed in public/images/, and the nine-slot pool in service-page-images.ts serves the hub and twelve painting spokes.",
+  "version": "1.0",
+  "date": "2026-06-07",
+  "style_guidelines": {
+    "mandatory_aesthetic": [
+      "raw documentary-style architectural and contractor photography",
+      "candid handheld camera aesthetic",
+      "unposed realism",
+      "authentic natural film grain",
+      "grounded Gauteng, South Africa context"
+    ],
+    "lighting": [
+      "Prefer harsh South African midday sun for exteriors, cool fluorescent for healthcare interiors, or warm golden hour on estates",
+      "Avoid soft cinematic studio lighting and perfect HDR balance"
+    ],
+    "materials": [
+      "Describe micro-textures explicitly: matte exterior acrylic on plaster, masked window frames, containment plastic in healthcare suites, fresh retail interior topcoats",
+      "Contrast preparation zones against completed painted finishes where relevant"
+    ],
+    "people_policy": "100% people-free. No workers, faces, hands, or silhouettes.",
+    "completed_vs_process": "Mix of completed outcomes and empty in-progress evidence (QA paperwork, containment, masked interiors) with no humans present.",
+    "location_cues": [
+      "Gauteng sectional-title towers and townhouse estates",
+      "Sandton and Centurion stock",
+      "healthcare and office interiors",
+      "retail back-of-house night-shift contexts"
+    ]
+  },
+  "global_negative_prompt": "people, workers, faces, hands, silhouettes, posed models, stock photo, smiling at camera, plastic 3D render, CGI, Unreal Engine, octane render, toy house, diorama, overly smooth surfaces, fake HDR, cinematic bloom, lens flare, text, logos, branding, watermarks, misspelled signage, American suburb, European architecture, lush tropical vegetation, rain, snow, oversaturated colours, perfectly clean fantasy site, drone aerial unless specified",
+  "output_specs": {
+    "default_format": "jpg",
+    "color_profile": "sRGB",
+    "quality": "high",
+    "notes": "Match aspect_ratio per slot. Filename must match target_filename exactly (lowercase, hyphens)."
+  },
+  "reuse_from_homepage": [
+    {
+      "target_filename": "painting-industrial-coatings.jpg",
+      "homepage_source": "Hub pillar 04 (hp7)",
+      "status": "ready — 938 KB"
+    },
+    {
+      "target_filename": "painting-body-corporate-estate.jpg",
+      "homepage_source": "Visual strip (hp3)",
+      "status": "ready — 806 KB"
+    },
+    {
+      "target_filename": "painting-body-corporate-sandton.jpg",
+      "homepage_source": "Featured services grid (hp13)",
+      "status": "ready — 787 KB"
+    },
+    {
+      "target_filename": "painting-industrial-corrosion.jpg",
+      "homepage_source": "Featured services grid (hp14)",
+      "status": "ready — 1.1 MB"
+    },
+    {
+      "target_filename": "painting-industrial-preparation.jpg",
+      "homepage_source": "Featured services grid (hp18)",
+      "status": "ready — 1.0 MB"
+    }
+  ],
+  "images": [
+    {
+      "id": "painting-body-corporate-qa",
+      "section": "Shared pool slot 6 / body-corporate spoke phase 03",
+      "display_order": 6,
+      "target_filename": "painting-body-corporate-qa.jpg",
+      "target_path": "public/images/painting-body-corporate-qa.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "site_evidence",
+      "alt_text": "Body corporate painting programme with QA documentation at a Gauteng complex",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "ps01.png",
+      "prompt": "A candid, documentary-style 4:3 photograph of independent QA documentation for a body corporate exterior painting programme at a Gauteng sectional-title complex. A folding site table holds a dry film thickness gauge, blank inspection forms, and a colour sample card with no readable text, slightly out of focus. In the background a freshly painted exterior wall in warm off-white shows realistic roller texture and masked window frame edges. Empty courtyard, no people. Flat mid-morning Highveld light. Authentic film grain, trustee-ready site evidence. No readable text, logos, or branding.",
+      "negative_prompt": "people, inspector hands, readable forms, perfect CGI building, stock clipboard, logos"
+    },
+    {
+      "id": "painting-commercial-healthcare",
+      "section": "Shared pool slot 7 / commercial-painting spoke phase 01",
+      "display_order": 7,
+      "target_filename": "painting-commercial-healthcare.jpg",
+      "target_path": "public/images/painting-commercial-healthcare.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "site_evidence",
+      "alt_text": "Healthcare suite interior painting with containment and low-VOC coatings in Gauteng",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "ps02.png",
+      "prompt": "A raw, documentary-style 4:3 photograph of healthcare interior painting preparation in an empty Gauteng medical suite. Plastic containment sheeting seals a doorway, floors are protected with craft paper, and a partially painted wall shows low-VOC white topcoat with neat cut-in against a ceiling line. Medical bench and sink covered with dust sheets, no people. Cool fluorescent interior light. Authentic film grain, occupied-building programme evidence. No readable signage, logos, or branding.",
+      "negative_prompt": "people, patients, perfect hospital CGI, readable clinic names, logos, American hospital stock"
+    },
+    {
+      "id": "painting-commercial-campus",
+      "section": "Shared pool slot 8 / commercial-painting spoke phase 02",
+      "display_order": 8,
+      "target_filename": "painting-commercial-campus.jpg",
+      "target_path": "public/images/painting-commercial-campus.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "site_evidence",
+      "alt_text": "Corporate campus interior repaint with phased weekend programmes in Gauteng",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "ps03.png",
+      "prompt": "A straightforward, documentary-style 4:3 photograph of a corporate office interior repaint in progress in Midrand, empty of workers. The camera frames an open-plan zone with desks pushed to the centre under plastic covers, walls half-painted in neutral grey with visible roller lap lines, and blue masking tape at a glass partition edge. Carpet protected with drop sheets. Weekend-quiet office, fluorescent light. Authentic film grain, commercial disruption realism. No people, logos, or branding.",
+      "negative_prompt": "people, workers painting, perfect Silicon Valley office CGI, readable company logos, stock photo"
+    },
+    {
+      "id": "painting-commercial-retail",
+      "section": "Shared pool slot 9 / commercial-painting spoke phase 03",
+      "display_order": 9,
+      "target_filename": "painting-commercial-retail.jpg",
+      "target_path": "public/images/painting-commercial-retail.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Retail flagship commercial painting completed during night shifts in Gauteng",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "ps04.png",
+      "prompt": "A candid, documentary-style 4:3 photograph of a completed retail interior repaint in a Gauteng shopping centre back-of-house corridor, empty after a night-shift handover. Fresh light grey walls with clean skirting junctions, polished tile floor with realistic scuff marks, and service doors with blank faces. Cool fluorescent light reflecting on the new paint sheen. Authentic film grain, commercial handover photography. No people, readable shop names, logos, or branding.",
+      "negative_prompt": "people, shoppers, perfect mall CGI, readable store names, logos, neon retail fantasy"
+    }
+  ],
+  "hub_slot_assignment": {
+    "note": "Wired in service-page-images.ts as PAINTING_SERVICES_IMAGE_POOL",
+    "slots": [
+      { "slot": 0, "hero": "painting-industrial-coatings.jpg", "source": "reuse" },
+      { "slot": 1, "triptych_left": "painting-body-corporate-sandton.jpg", "source": "reuse" },
+      { "slot": 2, "triptych_centre": "painting-body-corporate-estate.jpg", "source": "reuse" },
+      { "slot": 3, "triptych_right": "painting-industrial-corrosion.jpg", "source": "reuse" },
+      { "slot": 4, "editorial_phase_01": "painting-industrial-preparation.jpg", "source": "reuse" },
+      { "slot": 5, "pair_left": "painting-body-corporate-qa.jpg", "source": "generate batch 1" },
+      { "slot": 6, "pair_right": "painting-commercial-healthcare.jpg", "source": "generate batch 1" },
+      { "slot": 7, "editorial_phase_02": "painting-commercial-campus.jpg", "source": "generate batch 1" },
+      { "slot": 8, "editorial_phase_03": "painting-commercial-retail.jpg", "source": "generate batch 2" }
+    ]
+  },
+  "summary": {
+    "total_unique_filenames_in_pool": 9,
+    "reuse_from_homepage": 5,
+    "new_images_to_generate": 4,
+    "pages_covered": 13,
+    "generation_batches": {
+      "batch_1": [
+        "painting-body-corporate-qa.jpg",
+        "painting-commercial-healthcare.jpg",
+        "painting-commercial-campus.jpg"
+      ],
+      "batch_2": [
+        "painting-commercial-retail.jpg"
+      ]
+    },
+    "notes": [
+      "industrial, warehouse, high-volume, road-marking, and external-walls spokes reuse homepage industrial and body-corporate filenames — no new files needed.",
+      "roof-painting and stucco-wall-coatings spokes reuse waterproofing and Marmoran filenames from prior verticals.",
+      "parking-garage-painting reuses structural expansion joint images from the structural repairs batch.",
+      "rope-access-painting lives under /access-solutions — separate hub, not included here.",
+      "After each batch: convert PNG → JPG (~88 quality), delete source PNGs, build, commit, push."
+    ]
+  }
+}
