@@ -21,4 +21,14 @@ export const homeFaqs: readonly ServiceDeepFaq[] = [
     answer:
       "Contact us with your asset address and urgency. Condition assessments are typically scheduled within a few business days, subject to access, safety files, and occupied-building protocols.",
   },
+  {
+    question: "Which services does Maverick provide beyond standard painting?",
+    answer:
+      "We deliver structural spalling and crack repair, expansion joint sealing, rising damp treatment, flat roof and balcony waterproofing, industrial epoxy and hygienic flooring, corrosion control, rope access, and sectional-title painting with manufacturer-backed systems.",
+  },
+  {
+    question: "Do you work with engineers and managing agents?",
+    answer:
+      "Yes. We implement engineer-aligned specifications, supply photographic condition packs for MRRP updates, and provide third-party QA reports that managing agents and trustees can file at AGMs without relying on contractor self-certification.",
+  },
 ];

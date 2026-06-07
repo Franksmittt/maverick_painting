@@ -37,6 +37,26 @@ const aboutFaqs = [
     answer:
       "We position as an asset maintenance partner: engineer-aligned structural and waterproofing scopes, manufacturer-backed systems, and independent third-party QA on agreed programmes, not cosmetic repaint crews.",
   },
+  {
+    question: "Do you hold manufacturer accreditations?",
+    answer:
+      "We are approved applicators for selected high-performance coating and waterproofing systems. Product selection follows exposure, substrate condition, and manufacturer data sheet requirements documented in our QA files.",
+  },
+  {
+    question: "Can Maverick manage phased sectional-title programmes?",
+    answer:
+      "Yes. We plan occupied-building access, containment, and night or weekend shifts where required, with bi-weekly progress reporting suitable for trustee AGMs and managing agents.",
+  },
+  {
+    question: "How do I request a condition assessment?",
+    answer:
+      "Contact us with your asset address, access constraints, and urgency. Assessments are typically scheduled within a few business days, subject to safety inductions and building occupancy.",
+  },
+  {
+    question: "Which compliance frameworks do you support?",
+    answer:
+      "We align documentation with STSMA maintenance planning, HACCP facility requirements where applicable, IRATA rope access protocols, and engineer specifications for structural remedial work.",
+  },
 ] as const;
 
 export const metadata = withOgImage({

@@ -26,6 +26,21 @@ const servicesFaq = [
     answer:
       "We partner with leading manufacturers, document film thickness with third-party inspectors and co-sign workmanship + product guarantees ranging from 5 to 15 years.",
   },
+  {
+    question: "Which Gauteng regions do you cover?",
+    answer:
+      "We programme work across Central Gauteng, the East Rand, West Rand, and South Rand, including Sandton, Midrand, Boksburg, Roodepoort, Alberton, and surrounding industrial and sectional-title nodes.",
+  },
+  {
+    question: "What is independent third-party QA?",
+    answer:
+      "On agreed scopes, a separate inspector verifies surface preparation, environmental conditions, and dry film thickness, producing bi-weekly reports trustees and facility managers can defend at AGMs.",
+  },
+  {
+    question: "Do you provide engineer-aligned structural specifications?",
+    answer:
+      "Yes. Spalling, crack injection, and expansion joint scopes follow manufacturer and engineer requirements with documented preparation records, not cosmetic patch-and-paint shortcuts.",
+  },
 ];
 
 export default function ServicesPage() {

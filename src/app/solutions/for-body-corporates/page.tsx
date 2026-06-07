@@ -25,6 +25,16 @@ const faqs = [
     answer:
       "Third-party verification of preparation, film build, and adherence to specifications creates an auditable file for AGMs, insurers, and CSOS disputes, reducing allegations of self-monitored contractor bias.",
   },
+  {
+    question: "Can Maverick help update our 10-year maintenance plan?",
+    answer:
+      "We supply condition surveys, photographic logs, and scoped quotations trustees can map to MRRP line items. Legal drafting of PMR documents remains with your managing agent or attorney.",
+  },
+  {
+    question: "Do you handle waterproofing and painting in one programme?",
+    answer:
+      "Yes. Podium, balcony, and façade scopes often combine membrane renewal, spalling repair, and final coatings under one project manager with shared QA reporting.",
+  },
 ] as const;
 
 export default function BodyCorporateSolutionsPage() {

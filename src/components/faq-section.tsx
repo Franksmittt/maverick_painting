@@ -1,5 +1,7 @@
 import type { ServiceDeepFaq } from "@/lib/service-deep-types";
 
+const FAQ_DISPLAY_COUNT = 6;
+
 type FaqSectionProps = {
   headingId: string;
   title?: string;
@@ -15,12 +17,14 @@ export function FaqSection({
   items,
   schemaPath,
 }: FaqSectionProps) {
-  if (items.length === 0) return null;
+  const displayItems = items.slice(0, FAQ_DISPLAY_COUNT);
+  if (displayItems.length === 0) return null;
 
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: items.map((item) => ({
+    "@id": `${schemaPath}#faq`,
+    mainEntity: displayItems.map((item) => ({
       "@type": "Question",
       name: item.question,
       acceptedAnswer: {
@@ -31,7 +35,7 @@ export function FaqSection({
   };
 
   return (
-    <section className="border-t border-zinc-800 bg-[#0a0a0a] py-20" aria-labelledby={headingId}>
+    <section className="section-surface section-pad" aria-labelledby={headingId}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -39,31 +43,21 @@ export function FaqSection({
         }}
       />
 
-      <div className="mx-auto max-w-4xl px-4">
-        <h2 id={headingId} className="type-h2 mb-3 text-white">
+      <div className="page-container">
+        <h2 id={headingId} className="type-h2 mb-4 text-white">
           {title}
         </h2>
-        <p className="type-body mb-10 text-zinc-400">{subtitle}</p>
+        <p className="type-lead mb-10 max-w-3xl text-zinc-500 md:mb-14">{subtitle}</p>
 
-        <div className="space-y-3">
-          {items.map((item, index) => (
-            <details
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
+          {displayItems.map((item) => (
+            <article
               key={item.question}
-              className="group rounded-lg border border-zinc-800 bg-zinc-900/40 open:border-secondary/40"
-              {...(index === 0 ? { open: true } : {})}
+              className="rounded border border-white/5 bg-[#1a1c1e]/40 p-8 transition hover:-translate-y-1 hover:border-secondary hover:bg-[#1a1c1e]/80"
             >
-              <summary className="cursor-pointer list-none px-5 py-4 font-semibold text-zinc-100 marker:content-none [&::-webkit-details-marker]:hidden">
-                <span className="flex items-start justify-between gap-4">
-                  <span>{item.question}</span>
-                  <span className="shrink-0 text-secondary transition group-open:rotate-45" aria-hidden>
-                    +
-                  </span>
-                </span>
-              </summary>
-              <div className="border-t border-zinc-800/80 px-5 pb-5 pt-3">
-                <p className="type-body text-zinc-300">{item.answer}</p>
-              </div>
-            </details>
+              <h3 className="mb-4 text-lg font-bold leading-snug text-white">{item.question}</h3>
+              <p className="type-body m-0 text-zinc-400">{item.answer}</p>
+            </article>
           ))}
         </div>
       </div>

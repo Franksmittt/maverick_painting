@@ -143,6 +143,26 @@ function entry(
         answer:
           "On agreed scopes, a third-party inspector verifies preparation, environmental conditions, and dry film thickness, producing bi-weekly reports trustees and insurers can file without relying on contractor self-certification.",
       },
+      {
+        question: `What documentation do you supply for ${cityName} projects?`,
+        answer:
+          "Photographic condition packs, manufacturer data sheet adherence records, and QA reports support MRRP updates, AGM packs, and insurer maintenance-of-cover arguments.",
+      },
+      {
+        question: "Can you combine this service with related scopes?",
+        answer:
+          "Yes. Local programmes often bundle waterproofing, structural repair, access, and final coatings under one project manager with shared QA reporting.",
+      },
+      {
+        question: "Do you coordinate with managing agents on sectional-title sites?",
+        answer:
+          "Yes. We align phased access, resident communication, and inspection hold points with managing agents and trustees before mobilisation.",
+      },
+      {
+        question: `How do I book a ${spokeLabel.toLowerCase()} assessment in ${cityName}?`,
+        answer:
+          "Contact us with the asset address, access constraints, and photos of the defect. We confirm scope against our full service methodology and schedule a site visit.",
+      },
       ...extraFaqs,
     ],
   };

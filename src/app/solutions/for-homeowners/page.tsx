@@ -25,6 +25,21 @@ const faqs = [
     answer:
       "Yes, ultra-low and zero-VOC systems with documented ventilation guidance for occupied homes and sensitive occupants.",
   },
+  {
+    question: "Can you repair cracks before painting exterior walls?",
+    answer:
+      "Yes. We classify cracks as cosmetic or structural, implement injection or flexible fillers where required, and only then apply UV-stable façade coatings suited to Gauteng thermal cycling.",
+  },
+  {
+    question: "Do you waterproof flat roofs and balconies on homes?",
+    answer:
+      "Yes. We specify torch-on, liquid, or hybrid membranes after moisture and adhesion testing, with maintenance guidance for insurance and bond files.",
+  },
+  {
+    question: "How do I book a home assessment?",
+    answer:
+      "Contact us with your address and photos of the defect. We typically schedule a site visit within a few business days and provide a scoped quotation with system recommendations.",
+  },
 ] as const;
 
 export default function HomeownerSolutionsPage() {

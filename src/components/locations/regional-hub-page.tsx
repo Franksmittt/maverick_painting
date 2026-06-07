@@ -110,6 +110,25 @@ export function RegionalHubPage({ region }: RegionalHubPageProps) {
             answer:
               "On agreed commercial and sectional-title scopes, third-party inspectors verify preparation and film build, see our independent QA process for detail.",
           },
+          {
+            question: `Which cities are covered in ${region.name}?`,
+            answer: `We serve ${cities.map((c) => c.name).join(", ")} and surrounding nodes. Each city page lists local landmarks, scopes, and mobilisation detail.`,
+          },
+          {
+            question: "Can you combine structural, waterproofing, and painting scopes?",
+            answer:
+              "Yes. Regional programmes often sequence spalling repair, membrane renewal, and final coatings under one project manager with shared QA documentation.",
+          },
+          {
+            question: "How quickly can you assess an asset in this region?",
+            answer:
+              "Subject to access and safety files, condition assessments are typically scheduled within a few business days across Gauteng regional hubs.",
+          },
+          {
+            question: "Do you provide documentation for trustees and insurers?",
+            answer:
+              "On agreed scopes we supply photographic condition packs, manufacturer adherence records, and third-party QA reports supporting MRRP and maintenance-of-cover arguments.",
+          },
         ]}
         schemaPath={`/locations/${region.slug}`}
       />

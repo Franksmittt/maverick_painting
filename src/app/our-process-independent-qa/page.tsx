@@ -103,6 +103,16 @@ const qaFaqs = [
     answer:
       "No. QA documents coating execution against an agreed specification. Load-bearing structural designs, NHBRC pathways, and municipal approvals remain with your engineer or competent person.",
   },
+  {
+    question: "What do bi-weekly QA reports include?",
+    answer:
+      "Reports typically cover surface preparation verification, environmental conditions, dry film thickness readings, product batch references, and photographic progress suitable for trustee AGMs and insurer files.",
+  },
+  {
+    question: "Can trustees share QA reports with insurers?",
+    answer:
+      "Yes. Independent documentation helps demonstrate reasonable maintenance care. Maverick supplies technical records; insurance outcomes remain between the owner, scheme, and broker.",
+  },
 ] as const;
 
 export default function IndependentQAPage() {

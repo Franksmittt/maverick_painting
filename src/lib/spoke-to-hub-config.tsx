@@ -621,7 +621,7 @@ export function spokeToHubConfig(spokeId: ServiceSpokeId, content: ServiceDeepPa
       subtitle: parentHub.magazine.subtitle,
       sections: buildMagazineSections(spokeId, content),
     },
-    faqs: content.faqs.slice(0, 8),
+    faqs: content.faqs.slice(0, 6),
     legalDisclaimer: SPOKE_LEGAL_DISCLAIMER[spokeId],
   };
 }

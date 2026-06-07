@@ -32,6 +32,16 @@ const locationsFaq = [
     answer:
       "Subject to access and safety file requirements, condition assessments are typically scheduled within a few business days. Photographic packs support trustee AGMs, insurer reviews, and MRRP updates.",
   },
+  {
+    question: "Do you supply documentation for trustees or insurers?",
+    answer:
+      "On agreed scopes we provide photographic condition packs, manufacturer data sheet adherence records, and third-party QA reports supporting MRRP updates and maintenance-of-cover arguments.",
+  },
+  {
+    question: "Which services are available on local pages?",
+    answer:
+      "High-intent combinations include leaking balcony repair, body corporate painting, rope access, HACCP flooring, concrete spalling, and flat roof waterproofing, each linking to full technical methodologies.",
+  },
 ] as const;
 
 export default function LocationsIndexPage() {

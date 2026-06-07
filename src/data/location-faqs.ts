@@ -30,5 +30,15 @@ export function getLocationFaqs(loc: ServiceLocation): readonly ServiceDeepFaq[]
       answer:
         "Contact us with the asset address, access constraints, and urgency. We typically schedule a condition assessment within a few business days, subject to security inductions and occupied-building protocols.",
     },
+    {
+      question: `Which services are most common in ${loc.name}?`,
+      answer:
+        "Programmes typically include sectional-title painting, leaking balcony and flat roof waterproofing, parking spalling repair, industrial coatings, and rope access façades, scoped to local building stock and access constraints.",
+    },
+    {
+      question: "Do you coordinate with managing agents and engineers?",
+      answer:
+        "Yes. We supply scoped quotations, photographic condition data, and third-party QA packs that managing agents can circulate to trustees and professional teams before AGM or MRRP decisions.",
+    },
   ];
 }

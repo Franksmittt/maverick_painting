@@ -25,6 +25,21 @@ const faqs = [
     answer:
       "Yes, spalling, crack injection, balcony waterproofing, and joint rehabilitation can be sequenced in one programme before architectural and protective topcoats close the envelope.",
   },
+  {
+    question: "Do you coordinate with the project QS and engineer?",
+    answer:
+      "Yes. We work from issued specifications, submit method statements, and align inspection hold points with the professional team before closing concealed layers.",
+  },
+  {
+    question: "Which manufacturer systems do you install at handover?",
+    answer:
+      "We apply specified waterproofing, structural repair, and coating systems from approved manufacturers with batch records and film-build logs suitable for defects liability files.",
+  },
+  {
+    question: "How do you manage weather risk on new-build envelopes?",
+    answer:
+      "Programmes include substrate protection, cure windows, and contingency sequencing so partially completed areas are not left vulnerable through Highveld storm seasons.",
+  },
 ] as const;
 
 export default function DeveloperSolutionsPage() {

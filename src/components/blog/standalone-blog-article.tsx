@@ -21,6 +21,26 @@ const DEFAULT_FAQ = [
     answer:
       "Yes. We schedule condition assessments across Johannesburg, Pretoria, and the Rand subject to access and safety requirements. Contact us with your address and urgency.",
   },
+  {
+    question: "How do these guides relate to your service pages?",
+    answer:
+      "Blog clusters explain why systems fail and how to specify repairs. Service spokes document Maverick's methodology, products, and QA process for procurement teams.",
+  },
+  {
+    question: "Do you use manufacturer-approved systems mentioned in articles?",
+    answer:
+      "Yes where specified. Product selection follows exposure, substrate tests, and data sheet requirements documented in our QA files, not generic brand mentions.",
+  },
+  {
+    question: "Can trustees share your technical guides at AGMs?",
+    answer:
+      "Yes. Guides and linked service pages help explain maintenance decisions. Legal and fiduciary advice remains with your managing agent or attorney.",
+  },
+  {
+    question: "How do I request a site assessment after reading a guide?",
+    answer:
+      "Contact us with photos, address, and urgency. We typically schedule assessments within a few business days and link findings to the relevant service methodology.",
+  },
 ] as const;
 
 export function StandaloneBlogArticleView({ article }: StandaloneBlogArticleProps) {
