@@ -3,7 +3,7 @@ export type ServicePageImage = {
   alt: string;
 };
 
-export const MIN_SERVICE_PAGE_IMAGES = 6;
+export const SERVICE_PAGE_IMAGE_COUNT = 9;
 
 const SERVICE_IMAGE_PLACEHOLDERS: readonly ServicePageImage[] = [
   { src: "/images/placeholders/service-image-01.svg", alt: "Placeholder service image slot 1" },
@@ -12,6 +12,9 @@ const SERVICE_IMAGE_PLACEHOLDERS: readonly ServicePageImage[] = [
   { src: "/images/placeholders/service-image-04.svg", alt: "Placeholder service image slot 4" },
   { src: "/images/placeholders/service-image-05.svg", alt: "Placeholder service image slot 5" },
   { src: "/images/placeholders/service-image-06.svg", alt: "Placeholder service image slot 6" },
+  { src: "/images/placeholders/service-image-07.svg", alt: "Placeholder service image slot 7" },
+  { src: "/images/placeholders/service-image-08.svg", alt: "Placeholder service image slot 8" },
+  { src: "/images/placeholders/service-image-09.svg", alt: "Placeholder service image slot 9" },
 ];
 
 function serviceLabelFromPath(path: string): string {
@@ -42,8 +45,18 @@ export function getServicePageImages(
   const serviceLabel = serviceLabelFromPath(path);
   const placeholders = SERVICE_IMAGE_PLACEHOLDERS.map((image, index) => ({
     src: image.src,
-    alt: `${serviceLabel} project image placeholder ${index + 1} - replace with completed work photography`,
+    alt: `${serviceLabel} project image ${index + 1}`,
   }));
 
-  return dedupeImages([...seedImages, ...placeholders]).slice(0, MIN_SERVICE_PAGE_IMAGES);
+  const merged = dedupeImages([...seedImages, ...placeholders]);
+
+  while (merged.length < SERVICE_PAGE_IMAGE_COUNT) {
+    const filler = placeholders[merged.length % placeholders.length];
+    merged.push({
+      ...filler,
+      alt: `${serviceLabel} project image ${merged.length + 1}`,
+    });
+  }
+
+  return merged.slice(0, SERVICE_PAGE_IMAGE_COUNT);
 }

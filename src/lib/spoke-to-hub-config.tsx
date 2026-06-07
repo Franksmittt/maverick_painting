@@ -518,20 +518,17 @@ function buildMagazineSections(
 
   return sources.slice(0, 3).map((source, index) => {
     const primary = source.paragraphs[0] ?? "";
-    const secondary = source.paragraphs[1];
     const related = content.relatedServices[index] ?? content.relatedServices[0];
 
     const body: ReactNode = (
       <>
-        <p className="type-body mb-4 text-zinc-300">{primary}</p>
-        {secondary ? <p className="type-body mb-4 text-zinc-300">{secondary}</p> : null}
+        <p className="type-body text-zinc-300">{primary}</p>
         {related ? (
-          <p className="type-body text-zinc-300">
-            Explore our{" "}
+          <p className="type-body text-zinc-400">
+            Related scope:{" "}
             <Link href={related.href} className={linkClass}>
               {related.label}
-            </Link>{" "}
-            scope for methodology, QA checkpoints, and Gauteng mobilisation detail.
+            </Link>
           </p>
         ) : null}
       </>
