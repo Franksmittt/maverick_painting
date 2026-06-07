@@ -1,6 +1,21 @@
 import Link from "next/link";
 import type { ServiceHubPageConfig } from "@/lib/service-hub-types";
 
+const STRUCTURAL_MAGAZINE_IMAGES = [
+  {
+    src: "/images/structural-concrete-spalling-assessment.jpg",
+    alt: "Concrete spalling assessment and hammer testing on a Gauteng high-rise façade",
+  },
+  {
+    src: "/images/structural-concrete-spalling-repair.jpg",
+    alt: "Rebar passivation and structural mortar repair during concrete cancer remediation",
+  },
+  {
+    src: "/images/structural-concrete-spalling-handover.jpg",
+    alt: "Completed concrete spalling repair with protective anti-carbonation finish",
+  },
+] as const;
+
 const MAGAZINE_IMAGES = [
   {
     src: "/images/munyaka-midrand.jpg",
@@ -135,7 +150,7 @@ export const structuralRepairsHub: ServiceHubPageConfig = {
       {
         phase: "Phase 01 / Assessment",
         title: "Concrete does not negotiate.",
-        image: MAGAZINE_IMAGES[0],
+        image: STRUCTURAL_MAGAZINE_IMAGES[0],
         dropCap: true,
         body: (
           <>
@@ -159,7 +174,7 @@ export const structuralRepairsHub: ServiceHubPageConfig = {
       {
         phase: "Phase 02 / The Pattern",
         title: "Gauteng estates repeat the pattern.",
-        image: MAGAZINE_IMAGES[1],
+        image: STRUCTURAL_MAGAZINE_IMAGES[1],
         body: (
           <>
             <p className="type-body mb-4 text-zinc-300">
@@ -178,7 +193,7 @@ export const structuralRepairsHub: ServiceHubPageConfig = {
       {
         phase: "Phase 03 / Coordination",
         title: "Repair rarely travels alone.",
-        image: MAGAZINE_IMAGES[2],
+        image: STRUCTURAL_MAGAZINE_IMAGES[2],
         body: (
           <>
             <p className="type-body mb-4 text-zinc-300">

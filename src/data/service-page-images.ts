@@ -5,6 +5,53 @@ export type ServicePageImage = {
 
 export const SERVICE_PAGE_IMAGE_COUNT = 9;
 
+const STRUCTURAL_REPAIRS_PATHS = new Set([
+  "/structural-repairs",
+  "/structural-repairs/concrete-spalling",
+  "/structural-repairs/crack-injection",
+  "/structural-repairs/expansion-joint-sealing",
+]);
+
+/** Shared nine-slot pool for the structural repairs hub and spokes. */
+const STRUCTURAL_REPAIRS_IMAGE_POOL: readonly ServicePageImage[] = [
+  {
+    src: "/images/structural-concrete-spalling-repair.jpg",
+    alt: "Completed concrete spalling repair with structural mortar on a Gauteng façade",
+  },
+  {
+    src: "/images/structural-concrete-spalling-assessment.jpg",
+    alt: "Concrete spalling assessment and hammer testing on a Gauteng high-rise",
+  },
+  {
+    src: "/images/structural-crack-injection-injection.jpg",
+    alt: "Epoxy crack injection with ports on a Gauteng commercial concrete element",
+  },
+  {
+    src: "/images/structural-crack-injection-qa.jpg",
+    alt: "Structural crack injection QA documentation on a Gauteng commercial asset",
+  },
+  {
+    src: "/images/structural-concrete-spalling-handover.jpg",
+    alt: "Completed concrete spalling repair with protective anti-carbonation finish",
+  },
+  {
+    src: "/images/structural-crack-injection-assessment.jpg",
+    alt: "Structural crack mapping and injection assessment on a Gauteng concrete slab",
+  },
+  {
+    src: "/images/structural-expansion-joint-assessment.jpg",
+    alt: "Expansion joint condition assessment on a Gauteng parking or podium slab",
+  },
+  {
+    src: "/images/structural-expansion-joint-installation.jpg",
+    alt: "Traffic-rated expansion joint rebuild with sealant and armour detailing",
+  },
+  {
+    src: "/images/structural-expansion-joint-finish.jpg",
+    alt: "Completed expansion joint sealing ready for traffic reopening",
+  },
+];
+
 const SERVICE_IMAGE_PLACEHOLDERS: readonly ServicePageImage[] = [
   { src: "/images/placeholders/service-image-01.svg", alt: "Placeholder service image slot 1" },
   { src: "/images/placeholders/service-image-02.svg", alt: "Placeholder service image slot 2" },
@@ -42,6 +89,10 @@ export function getServicePageImages(
   path: string,
   seedImages: readonly ServicePageImage[] = [],
 ): ServicePageImage[] {
+  if (STRUCTURAL_REPAIRS_PATHS.has(path)) {
+    return [...STRUCTURAL_REPAIRS_IMAGE_POOL];
+  }
+
   const serviceLabel = serviceLabelFromPath(path);
   const placeholders = SERVICE_IMAGE_PLACEHOLDERS.map((image, index) => ({
     src: image.src,
