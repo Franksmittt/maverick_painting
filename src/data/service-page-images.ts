@@ -179,7 +179,7 @@ const WALL_CLADDING_IMAGE_POOL: readonly ServicePageImage[] = [
   },
 ];
 
-/** Dedicated nine-slot pool for the crack injection spoke (batch 1–2: slots 0–5). */
+/** Dedicated nine-slot pool for the crack injection spoke. */
 const CRACK_INJECTION_IMAGE_POOL: readonly ServicePageImage[] = [
   {
     src: "/images/structural-crack-injection-01.jpg",
@@ -206,16 +206,16 @@ const CRACK_INJECTION_IMAGE_POOL: readonly ServicePageImage[] = [
     alt: "Close-up of injection ports on a short workshop floor crack",
   },
   {
-    src: "/images/placeholders/service-image-07.svg",
-    alt: "Crack injection project image 7",
+    src: "/images/structural-crack-injection-07.jpg",
+    alt: "Injection resin and site documentation in a small plant room with capped ports",
   },
   {
-    src: "/images/placeholders/service-image-08.svg",
-    alt: "Crack injection project image 8",
+    src: "/images/structural-crack-injection-08.jpg",
+    alt: "Injection ports along a crack at a single basement parking wall pillar base",
   },
   {
-    src: "/images/placeholders/service-image-09.svg",
-    alt: "Crack injection project image 9",
+    src: "/images/structural-crack-injection-09.jpg",
+    alt: "Completed crack injection on a double garage slab at a Gauteng house",
   },
 ];
 
