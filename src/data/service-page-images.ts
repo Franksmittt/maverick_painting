@@ -138,7 +138,7 @@ const SPECIALIZED_COATINGS_IMAGE_POOL: readonly ServicePageImage[] = [
   },
 ];
 
-/** Dedicated nine-slot pool for the wall cladding spoke (batch 1: slots 0–2). */
+/** Dedicated nine-slot pool for the wall cladding spoke (batch 1–2: slots 0–5). */
 const WALL_CLADDING_IMAGE_POOL: readonly ServicePageImage[] = [
   {
     src: "/images/coatings-wall-cladding-01.jpg",
@@ -153,16 +153,16 @@ const WALL_CLADDING_IMAGE_POOL: readonly ServicePageImage[] = [
     alt: "Completed cladding on a simple estate entrance feature wall in warm grey",
   },
   {
-    src: "/images/placeholders/service-image-04.svg",
-    alt: "Wall cladding project image 4",
+    src: "/images/coatings-wall-cladding-04.jpg",
+    alt: "Completed cladding on a single-storey commercial unit in a Gauteng industrial park",
   },
   {
-    src: "/images/placeholders/service-image-05.svg",
-    alt: "Wall cladding project image 5",
+    src: "/images/coatings-wall-cladding-05.jpg",
+    alt: "Finished cladding junction at a window reveal with aluminium trim",
   },
   {
-    src: "/images/placeholders/service-image-06.svg",
-    alt: "Wall cladding project image 6",
+    src: "/images/coatings-wall-cladding-06.jpg",
+    alt: "Completed boundary wall cladding with cap coping at a Gauteng estate",
   },
   {
     src: "/images/placeholders/service-image-07.svg",
