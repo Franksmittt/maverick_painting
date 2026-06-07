@@ -5,10 +5,8 @@ export type NavItem = { name: string; href: string };
 export const PRIMARY_NAV: NavItem[] = [
   { name: "Home", href: "/" },
   { name: "Services", href: "/services" },
-  { name: "Locations", href: "/locations" },
-  { name: "Solutions", href: "/solutions/for-body-corporates" },
   { name: "Projects", href: "/projects" },
-  { name: "Blog", href: "/blog" },
+  { name: "Gallery", href: "/gallery" },
   { name: "About", href: "/about-us" },
   { name: "Contact", href: "/contact" },
 ];

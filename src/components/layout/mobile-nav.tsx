@@ -7,7 +7,7 @@ import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
-import { PRIMARY_NAV, SOLUTION_NAV } from "@/data/site-navigation";
+import { PRIMARY_NAV } from "@/data/site-navigation";
 
 export function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,18 +42,6 @@ export function MobileNav() {
               key={item.name}
               href={item.href}
               className="block px-3 py-3 text-base font-medium text-white hover:bg-black/50"
-              onClick={toggleMenu}
-            >
-              {item.name}
-            </Link>
-          ))}
-
-          <p className="px-3 pt-4 text-xs font-bold uppercase tracking-widest text-gray-500">Solutions</p>
-          {SOLUTION_NAV.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="block px-3 py-2 text-sm font-medium text-gray-300 hover:bg-black/50"
               onClick={toggleMenu}
             >
               {item.name}
