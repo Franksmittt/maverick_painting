@@ -565,7 +565,7 @@ export const specializedCoatingsHub: ServiceHubPageConfig = {
   metadata: {
     title: "Epoxy & Polyurethane Floor Coatings | Certified Specialized Applicators",
     description:
-      "Manufacturer-approved epoxy, PU-cement, MMA, and Marmoran systems for Gauteng warehouses, food plants, and premium façades. HACCP-aligned hygienic flooring, corrosion control stacks, and independent QA on film build and substrate preparation.",
+      "Manufacturer-approved epoxy, PU-cement, Cemcrete-style floors, wall cladding, and Marmoran systems for Gauteng warehouses, food plants, homes, and premium facades.",
   },
   jsonLd: {
     name: "Specialized Coatings & High-Performance Systems",
@@ -573,6 +573,9 @@ export const specializedCoatingsHub: ServiceHubPageConfig = {
       "Manufacturer-approved epoxy and polyurethane floors, hygienic food-grade coatings, Marmoran wall systems, and industrial corrosion control for Gauteng commercial and industrial assets.",
     serviceType: [
       "Industrial epoxy flooring",
+      "Cemcrete floors",
+      "Wall cladding",
+      "Cemcrete external walls",
       "Hygienic food-grade coatings",
       "Marmoran wall systems",
       "Industrial corrosion control",
@@ -585,11 +588,11 @@ export const specializedCoatingsHub: ServiceHubPageConfig = {
       "Standard paint is not a floor in a brewery, a loading bay, or a food-grade wall. We are approved applicators for high-performance systems where substrate preparation, film thickness, and manufacturer sign-off are non-negotiable.",
     interventionsLabel: "Core interventions",
     interventions: [
-      "Epoxy & PU floors",
+      "Epoxy floors & PU floors",
+      "Cemcrete floors",
+      "Wall cladding",
       "Hygienic food-grade",
-      "Marmoran wall systems",
-      "Corrosion control",
-      "Surface preparation",
+      "Cemcrete external walls",
     ],
   },
   approach: {
@@ -631,9 +634,27 @@ export const specializedCoatingsHub: ServiceHubPageConfig = {
     links: [
       {
         href: "/specialized-coatings/industrial-epoxy-flooring",
-        label: "Industrial epoxy & polyurethane flooring",
+        label: "Epoxy floors & polyurethane flooring",
         description:
           "Chemical resistance, traffic ratings, fast-cure options, and QA documentation for warehouses, plants, and retail back-of-house.",
+      },
+      {
+        href: "/specialized-coatings/cemcrete-floors",
+        label: "Cemcrete floors",
+        description:
+          "Decorative cement floor finishes with slab checks, colour samples, sealer selection, and clean maintenance handover.",
+      },
+      {
+        href: "/specialized-coatings/wall-cladding",
+        label: "Wall cladding",
+        description:
+          "Preparation, sealing, coating, and maintenance for feature walls, facade cladding, fixings, joints, and exposed edges.",
+      },
+      {
+        href: "/specialized-coatings/cemcrete-external-walls",
+        label: "Cemcrete external walls",
+        description:
+          "Exterior cementitious wall finishes with damp checks, crack preparation, sample-led texture control, and weatherproof sealing.",
       },
       {
         href: "/specialized-coatings/hygienic-food-grade",
@@ -750,6 +771,8 @@ export const paintingServicesHub: ServiceHubPageConfig = {
       "Body corporate painting",
       "Industrial & factory painting",
       "Commercial façade painting",
+      "Internal wall painting",
+      "External wall coatings",
       "Rope access painting",
     ],
   },
@@ -762,9 +785,9 @@ export const paintingServicesHub: ServiceHubPageConfig = {
     interventions: [
       "Body corporate programmes",
       "Industrial & factory",
-      "Commercial façades",
+      "External walls",
+      "Internal walls",
       "Surface preparation",
-      "Access coordination",
     ],
   },
   approach: {
@@ -845,6 +868,18 @@ export const paintingServicesHub: ServiceHubPageConfig = {
         label: "Interior painting",
         description:
           "Dustless preparation, low-VOC systems, ceiling work, and cabinet respray for occupied homes and commercial interiors.",
+      },
+      {
+        href: "/painting/internal-walls",
+        label: "Internal walls",
+        description:
+          "Wall repairs, skim preparation, low-VOC coatings, feature walls, and clean occupied-building programmes.",
+      },
+      {
+        href: "/painting/external-walls",
+        label: "External walls",
+        description:
+          "Exterior wall coatings, crack preparation, breathable or elastomeric systems, facade access, and boundary wall maintenance.",
       },
       {
         href: "/painting/warehouse-painting",

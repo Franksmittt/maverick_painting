@@ -149,6 +149,48 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
       alt: "Completed industrial epoxy floor system ready for traffic and line-marking handover",
     },
   ],
+  "cemcrete-floors": [
+    {
+      src: "/images/coatings-industrial-epoxy-surface-prep.jpg",
+      alt: "Surface preparation before decorative cement floor finish application",
+    },
+    {
+      src: "/images/coatings-industrial-epoxy-resin-application.jpg",
+      alt: "Decorative cement floor finish application with controlled edge detailing",
+    },
+    {
+      src: "/images/coatings-industrial-epoxy-completed-floor.jpg",
+      alt: "Completed seamless decorative floor finish ready for handover",
+    },
+  ],
+  "wall-cladding": [
+    {
+      src: "/images/coatings-marmoran-wall-01.jpg",
+      alt: "Wall cladding preparation and condition assessment on a Gauteng building",
+    },
+    {
+      src: "/images/coatings-marmoran-wall-02.jpg",
+      alt: "Feature wall or facade cladding coating with sample-approved finish",
+    },
+    {
+      src: "/images/coatings-marmoran-wall-03.jpg",
+      alt: "Completed wall cladding finish on a commercial or estate elevation",
+    },
+  ],
+  "cemcrete-external-walls": [
+    {
+      src: "/images/coatings-marmoran-wall-01.jpg",
+      alt: "External wall preparation before cementitious decorative finish application",
+    },
+    {
+      src: "/images/coatings-marmoran-wall-02.jpg",
+      alt: "Cementitious exterior wall finish application with texture control",
+    },
+    {
+      src: "/images/coatings-marmoran-wall-03.jpg",
+      alt: "Completed decorative external wall finish on a Gauteng property",
+    },
+  ],
   "marmoran-wall-systems": [
     {
       src: "/images/coatings-marmoran-wall-01.jpg",
@@ -303,6 +345,34 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
       alt: "Interior handover with clean-down and cure guidance for tenants",
     },
   ],
+  "internal-walls": [
+    {
+      src: "/images/painting-commercial-campus.jpg",
+      alt: "Internal wall preparation and painting in an occupied commercial interior",
+    },
+    {
+      src: "/images/painting-commercial-healthcare.jpg",
+      alt: "Low-odour internal wall coating work with containment and protection",
+    },
+    {
+      src: "/images/painting-commercial-retail.jpg",
+      alt: "Completed internal wall feature finish in a retail or office interior",
+    },
+  ],
+  "external-walls": [
+    {
+      src: "/images/painting-body-corporate-sandton.jpg",
+      alt: "External wall painting on a Gauteng sectional-title or commercial facade",
+    },
+    {
+      src: "/images/painting-body-corporate-estate.jpg",
+      alt: "Estate external wall coating and boundary wall preparation",
+    },
+    {
+      src: "/images/painting-body-corporate-qa.jpg",
+      alt: "External wall coating quality checks and handover documentation",
+    },
+  ],
   "warehouse-painting": [
     {
       src: "/images/painting-industrial-preparation.jpg",
@@ -362,6 +432,9 @@ const SPOKE_PARENT_HUB: Record<ServiceSpokeId, string> = {
   "expansion-joint-sealing": "/structural-repairs",
   "rising-damp-treatment": "/damp-proofing-services",
   "industrial-epoxy-flooring": "/specialized-coatings",
+  "cemcrete-floors": "/specialized-coatings",
+  "wall-cladding": "/specialized-coatings",
+  "cemcrete-external-walls": "/specialized-coatings",
   "hygienic-food-grade": "/specialized-coatings",
   "marmoran-wall-systems": "/specialized-coatings",
   "industrial-corrosion-control": "/specialized-coatings",
@@ -377,6 +450,8 @@ const SPOKE_PARENT_HUB: Record<ServiceSpokeId, string> = {
   "commercial-painting": "/painting-services",
   "high-volume-commercial-painting": "/painting-services",
   "interior-painting": "/painting-services",
+  "internal-walls": "/painting-services",
+  "external-walls": "/painting-services",
   "warehouse-painting": "/painting-services",
   "parking-garage-painting": "/painting-services",
   "road-marking": "/painting-services",

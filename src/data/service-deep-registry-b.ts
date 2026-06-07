@@ -3,6 +3,9 @@ import type { ServiceDeepPageContent, ServiceSpokeId } from "@/lib/service-deep-
 export const serviceDeepRegistryB: Pick<
   Record<ServiceSpokeId, ServiceDeepPageContent>,
   | "industrial-epoxy-flooring"
+  | "cemcrete-floors"
+  | "wall-cladding"
+  | "cemcrete-external-walls"
   | "hygienic-food-grade"
   | "marmoran-wall-systems"
   | "industrial-corrosion-control"
@@ -14,6 +17,8 @@ export const serviceDeepRegistryB: Pick<
   | "commercial-painting"
   | "high-volume-commercial-painting"
   | "interior-painting"
+  | "internal-walls"
+  | "external-walls"
   | "warehouse-painting"
   | "parking-garage-painting"
   | "road-marking"
@@ -138,6 +143,297 @@ export const serviceDeepRegistryB: Pick<
       { href: "/painting/warehouse-painting", label: "Warehouse painting" },
       { href: "/specialized-coatings", label: "Specialized coatings hub" },
       { href: "/contact", label: "Request a flooring survey" },
+    ],
+  },
+
+  "cemcrete-floors": {
+    meta: {
+      title: "Cemcrete Floor Contractors Gauteng | Decorative Cement Floors",
+      description:
+        "Cemcrete floor finishes for homes, offices, showrooms, and hospitality spaces in Gauteng: substrate preparation, colour samples, sealer selection, movement joints, and clean handover.",
+      path: "/specialized-coatings/cemcrete-floors",
+    },
+    h1: "Cemcrete floor finishes for residential and commercial interiors",
+    eyebrow: "Specialized coatings",
+    heroLead:
+      "Cemcrete-style cementitious floors are specified for a seamless, mineral finish, but they only perform when the slab, moisture profile, movement joints, and sealer system are handled as one specification. Maverick prepares and applies decorative cement floor systems with signed samples, realistic colour variation expectations, and maintenance guidance written into the handover.",
+    breadcrumbs: [
+      { label: "Services", href: "/services" },
+      { label: "Specialized coatings", href: "/specialized-coatings" },
+      { label: "Cemcrete floors", href: "/specialized-coatings/cemcrete-floors" },
+    ],
+    schemaServiceName: "Cemcrete floor finishes",
+    schemaServiceDescription:
+      "Decorative cementitious floor finishes, sealing, and substrate preparation for Gauteng homes and commercial interiors.",
+    sections: [
+      {
+        title: "Substrate checks before the finish",
+        paragraphs: [
+          "Decorative cement floors telegraph the truth underneath. We check flatness, laitance, cracks, residual adhesives, and moisture before a finish is proposed, because a beautiful sample cannot rescue an unstable slab.",
+        ],
+      },
+      {
+        title: "Colour samples and finish expectations",
+        paragraphs: [
+          "Cement finishes are mineral products with natural movement in tone and burnish. We use sample panels and agreed sealers so owners approve the intended look before large fields are closed.",
+        ],
+      },
+      {
+        title: "Sealers, traffic, and maintenance",
+        paragraphs: [
+          "Residential living rooms, retail showrooms, and hospitality floors do not share the same abuse profile. Sealer selection follows cleaning chemicals, wet areas, abrasion, and expected maintenance intervals rather than a one-size-fits-all gloss level.",
+        ],
+      },
+      {
+        title: "Coordination with walls and skirtings",
+        paragraphs: [
+          "Floor edges, plinths, stair treads, and feature-wall returns need clean terminations. We coordinate these details with internal wall finishes and joinery so the cement finish reads intentional at handover.",
+        ],
+      },
+    ],
+    caseAngles: [
+      {
+        title: "Showroom cement floor",
+        summary:
+          "Sample-approved tone and satin sealer delivered a seamless retail floor with maintenance instructions for daily cleaning teams.",
+      },
+      {
+        title: "Residential renovation",
+        summary:
+          "Old adhesive was mechanically removed before the decorative cement finish was applied room by room around live occupation.",
+      },
+      {
+        title: "Hospitality foyer",
+        summary:
+          "Slip expectations and furniture abrasion drove sealer selection before final colour sign-off.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is a Cemcrete floor the same as epoxy?",
+        answer:
+          "No. Cemcrete-style floors are decorative cementitious finishes, while epoxy floors are resin systems. The correct choice depends on traffic, look, cleaning, and moisture conditions.",
+      },
+      {
+        question: "Can Cemcrete floors be used in bathrooms?",
+        answer:
+          "Often yes when the waterproofing, falls, and sealer are specified correctly. Wet rooms need detail review before coating starts.",
+      },
+      {
+        question: "Will the colour be perfectly uniform?",
+        answer:
+          "No cementitious finish has the uniformity of vinyl or tiles. Sample panels set the acceptable tone range and natural movement.",
+      },
+      {
+        question: "Do you seal the floor?",
+        answer:
+          "Yes. Sealer type is part of the specification and is chosen for traffic, cleaning chemicals, and desired sheen.",
+      },
+      {
+        question: "Can you apply over tiles?",
+        answer:
+          "Sometimes, but only after bond and movement risk are assessed. Unstable tiles should be removed rather than hidden.",
+      },
+    ],
+    relatedServices: [
+      { href: "/specialized-coatings/industrial-epoxy-flooring", label: "Epoxy floors" },
+      { href: "/painting/internal-walls", label: "Internal walls" },
+      { href: "/specialized-coatings/wall-cladding", label: "Wall cladding" },
+      { href: "/specialized-coatings", label: "Specialized coatings hub" },
+    ],
+  },
+
+  "wall-cladding": {
+    meta: {
+      title: "Wall Cladding Contractors Gauteng | Feature & Exterior Walls",
+      description:
+        "Wall cladding preparation, coating, sealing, and maintenance for Gauteng homes, estates, and commercial buildings, including feature walls, facade cladding, and moisture-aware details.",
+      path: "/specialized-coatings/wall-cladding",
+    },
+    h1: "Wall cladding preparation, coating, and maintenance",
+    eyebrow: "Specialized coatings",
+    heroLead:
+      "Cladding fails at fixings, joints, cap edges, and moisture traps long before the field area looks tired. Maverick treats wall cladding as an envelope detail: clean substrates, compatible primers, movement-aware joints, and finish systems that suit whether the cladding is decorative, protective, internal, or exposed to Gauteng weather.",
+    breadcrumbs: [
+      { label: "Services", href: "/services" },
+      { label: "Specialized coatings", href: "/specialized-coatings" },
+      { label: "Wall cladding", href: "/specialized-coatings/wall-cladding" },
+    ],
+    schemaServiceName: "Wall cladding coating and maintenance",
+    schemaServiceDescription:
+      "Preparation, sealing, coating, and maintenance of decorative and external wall cladding systems in Gauteng.",
+    sections: [
+      {
+        title: "Cladding condition and compatibility survey",
+        paragraphs: [
+          "We identify substrate type, coatings already present, open joints, rusting fixings, failed sealants, and water paths before recommending a coating or sealant system.",
+        ],
+      },
+      {
+        title: "Preparation around edges and joints",
+        paragraphs: [
+          "Successful cladding work depends on details: caps, reveals, control joints, and penetrations. These areas are cleaned, primed, and sealed before field coatings create false confidence.",
+        ],
+      },
+      {
+        title: "Feature walls and facade cladding",
+        paragraphs: [
+          "Internal feature cladding needs a different system from sun-exposed facade cladding. We separate aesthetic work from weather-facing envelope work so the finish and maintenance plan match the exposure.",
+        ],
+      },
+      {
+        title: "Handover and maintenance rhythm",
+        paragraphs: [
+          "Cladding stays attractive when cleaning methods and inspection intervals are clear. Handover notes flag soft joints, cleaning products to avoid, and areas to inspect after storm seasons.",
+        ],
+      },
+    ],
+    caseAngles: [
+      {
+        title: "Estate entrance feature wall",
+        summary:
+          "Decorative cladding was cleaned, sealed, and colour balanced with sample approval before trustee handover.",
+      },
+      {
+        title: "Commercial facade cladding",
+        summary:
+          "Failed joints and fixings were repaired before a UV-stable coating refreshed the visible street elevation.",
+      },
+      {
+        title: "Interior reception wall",
+        summary:
+          "Low-odour coatings and protection kept tenant operations open during the feature-wall refresh.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do you install new wall cladding?",
+        answer:
+          "We assess each project scope. Maverick commonly prepares, seals, coats, and maintains cladding, and can coordinate installation partners where needed.",
+      },
+      {
+        question: "Can cladding be painted?",
+        answer:
+          "Often yes, but primer and coating compatibility depend on the material and previous finish.",
+      },
+      {
+        question: "Can you fix leaking cladding joints?",
+        answer:
+          "We can reseal and coordinate remedial details, but active structural or waterproofing failures must be diagnosed before decorative coatings proceed.",
+      },
+      {
+        question: "Is wall cladding suitable outside?",
+        answer:
+          "Yes when the system is designed for exterior UV, rain, movement, and drainage. Interior-only finishes should not be pushed outside.",
+      },
+      {
+        question: "Do you provide samples?",
+        answer:
+          "Yes. Mock-ups are recommended where texture, sheen, or colour variation affects approval.",
+      },
+    ],
+    relatedServices: [
+      { href: "/specialized-coatings/cemcrete-external-walls", label: "Cemcrete external walls" },
+      { href: "/painting/external-walls", label: "External walls" },
+      { href: "/painting/stucco-wall-coatings", label: "Stucco wall coatings" },
+      { href: "/specialized-coatings/marmoran-wall-systems", label: "Marmoran wall systems" },
+    ],
+  },
+
+  "cemcrete-external-walls": {
+    meta: {
+      title: "Cemcrete External Walls Gauteng | Decorative Exterior Wall Finishes",
+      description:
+        "Cemcrete external wall finishes for estates, homes, boundary walls, and commercial facades in Gauteng with crack preparation, weatherproof sealing, and sample-led colour control.",
+      path: "/specialized-coatings/cemcrete-external-walls",
+    },
+    h1: "Cemcrete external wall finishes for Gauteng weather",
+    eyebrow: "Specialized coatings",
+    heroLead:
+      "External Cemcrete-style wall finishes need more than a beautiful trowel texture. Highveld UV, wind-driven rain, parapet caps, cracks, and damp paths must be handled before the decorative cement finish and sealer are expected to perform. Maverick prepares, applies, and maintains exterior cementitious wall finishes with sample-led colour control and moisture-aware detailing.",
+    breadcrumbs: [
+      { label: "Services", href: "/services" },
+      { label: "Specialized coatings", href: "/specialized-coatings" },
+      { label: "Cemcrete external walls", href: "/specialized-coatings/cemcrete-external-walls" },
+    ],
+    schemaServiceName: "Cemcrete external wall finishes",
+    schemaServiceDescription:
+      "Exterior decorative cementitious wall finish preparation, application, sealing, and maintenance in Gauteng.",
+    sections: [
+      {
+        title: "External wall diagnosis",
+        paragraphs: [
+          "We check rising damp, parapet waterproofing, open cracks, failed paint, and salts before applying cementitious finishes. Decorative systems should not be used to hide active water movement.",
+        ],
+      },
+      {
+        title: "Weather-exposed preparation",
+        paragraphs: [
+          "Exterior wall finishes depend on stable plaster, clean profiles, compatible primers, and joints that respect movement. Caps, sills, and reveals receive detail attention before broad elevations are finished.",
+        ],
+      },
+      {
+        title: "Colour, texture, and sealer control",
+        paragraphs: [
+          "Cementitious wall finishes can vary naturally with application and curing conditions. We agree sample panels, texture direction, and sealer sheen before full elevation work begins.",
+        ],
+      },
+      {
+        title: "Maintenance for boundary walls and facades",
+        paragraphs: [
+          "Boundary walls, estate entrances, and commercial facades need cleaning and inspection cycles. Handover notes identify sealant lines, cap details, and areas where irrigation or splashback may shorten maintenance intervals.",
+        ],
+      },
+    ],
+    caseAngles: [
+      {
+        title: "Estate boundary wall refresh",
+        summary:
+          "Moisture staining and cap cracks were corrected before a decorative cement finish was applied to public-facing walls.",
+      },
+      {
+        title: "Home exterior feature wall",
+        summary:
+          "A sample-approved finish tied garden walls and facade returns into one consistent exterior palette.",
+      },
+      {
+        title: "Commercial entrance facade",
+        summary:
+          "Weather-facing reveals and signage penetrations were sealed before the cementitious finish was handed over.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Can Cemcrete be used on outside walls?",
+        answer:
+          "Yes when the correct exterior system, preparation, waterproofing interfaces, and sealer are specified for the wall exposure.",
+      },
+      {
+        question: "Will it stop damp?",
+        answer:
+          "No decorative wall finish should be sold as a damp cure. Rising damp, leaks, and failed caps must be repaired first.",
+      },
+      {
+        question: "Can you match an existing Cemcrete wall?",
+        answer:
+          "We can sample and blend, but exact matches are affected by age, UV exposure, batch variation, and existing sealer condition.",
+      },
+      {
+        question: "Does the wall need repainting first?",
+        answer:
+          "Usually failed coatings are removed or stabilised before a compatible cementitious system is applied.",
+      },
+      {
+        question: "Do you do boundary walls?",
+        answer:
+          "Yes, including estate walls, entrances, garden walls, and commercial street-facing elevations.",
+      },
+    ],
+    relatedServices: [
+      { href: "/painting/external-walls", label: "External walls" },
+      { href: "/specialized-coatings/wall-cladding", label: "Wall cladding" },
+      { href: "/painting/stucco-wall-coatings", label: "Stucco wall coatings" },
+      { href: "/damp-proofing/rising-damp-treatment", label: "Rising damp treatment" },
     ],
   },
 
@@ -1353,6 +1649,200 @@ export const serviceDeepRegistryB: Pick<
       { href: "/painting/commercial-painting", label: "Commercial painting" },
       { href: "/solutions/for-homeowners", label: "Homeowner solutions" },
       { href: "/painting-services", label: "Painting services hub" },
+    ],
+  },
+
+  "internal-walls": {
+    meta: {
+      title: "Internal Wall Painting & Finishes Gauteng | Maverick",
+      description:
+        "Internal wall preparation, painting, skim repairs, feature finishes, low-VOC coatings, and clean occupied-building programmes for Gauteng homes, offices, retail, and estates.",
+      path: "/painting/internal-walls",
+    },
+    h1: "Internal wall preparation, painting, and feature finishes",
+    eyebrow: "Commercial painting",
+    heroLead:
+      "Internal walls are judged under close light, furniture edges, and daily touch. Maverick treats them as a surface-preparation discipline: crack mapping, skim repairs, stain blocking, low-VOC coating choices, and room-by-room protection so homes, offices, and retail spaces stay clean while the finish is upgraded.",
+    breadcrumbs: [
+      { label: "Services", href: "/services" },
+      { label: "Painting services", href: "/painting-services" },
+      { label: "Internal walls", href: "/painting/internal-walls" },
+    ],
+    schemaServiceName: "Internal wall painting and finishes",
+    schemaServiceDescription:
+      "Interior wall preparation, repairs, painting, and decorative feature finishes for Gauteng residential and commercial interiors.",
+    sections: [
+      {
+        title: "Wall condition and defect mapping",
+        paragraphs: [
+          "Hairline cracks, settlement marks, picture-hook damage, damp staining, and old patch lines are logged before coating. Repair method follows the defect rather than burying every wall under the same filler.",
+        ],
+      },
+      {
+        title: "Skim, sand, prime, and paint sequences",
+        paragraphs: [
+          "Smooth internal walls need controlled skim thickness, dust-managed sanding, stain blockers where required, and primers matched to the final coating. Skipping steps shows up immediately under downlights.",
+        ],
+      },
+      {
+        title: "Low-VOC and occupied-space controls",
+        paragraphs: [
+          "Homes, schools, healthcare suites, and offices benefit from low-odour systems, daily clean-downs, and clear re-entry guidance. Protection, ventilation, and phasing are part of the scope.",
+        ],
+      },
+      {
+        title: "Feature walls and decorative systems",
+        paragraphs: [
+          "Accent walls, cementitious finishes, textured coatings, and branded colour panels receive sample approval and edge detailing so the feature works with joinery, ceilings, and floor finishes.",
+        ],
+      },
+    ],
+    caseAngles: [
+      {
+        title: "Occupied office repaint",
+        summary:
+          "Weekend phasing, low-odour paint, and daily clean-down returned meeting rooms to use before Monday trade.",
+      },
+      {
+        title: "Residential feature wall",
+        summary:
+          "Sample-approved mineral finish tied the entrance wall into the new Cemcrete floor palette.",
+      },
+      {
+        title: "Retail white-box handover",
+        summary:
+          "Skim repairs, primer, and high-scrub coatings produced a tenant-ready internal shell under tight access rules.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is this different from interior painting?",
+        answer:
+          "Interior painting covers broader rooms, ceilings, and joinery. Internal walls focuses specifically on wall preparation, repairs, coatings, and feature finishes.",
+      },
+      {
+        question: "Do you repair cracks before painting?",
+        answer:
+          "Yes. Cosmetic cracks are filled and reinforced where appropriate; structural or damp-related cracks are flagged before decorative coats proceed.",
+      },
+      {
+        question: "Can you work while we occupy the building?",
+        answer:
+          "Often yes, with phased rooms, protection, low-odour coatings, and agreed access windows.",
+      },
+      {
+        question: "Do you do feature walls?",
+        answer:
+          "Yes, including accent colours, textured finishes, cementitious looks, and coating systems that need sample approval.",
+      },
+      {
+        question: "What paint is best for internal walls?",
+        answer:
+          "It depends on traffic, washability, light, and sensitivity to odour. We specify from those requirements rather than defaulting to one sheen.",
+      },
+    ],
+    relatedServices: [
+      { href: "/painting/interior-painting", label: "Interior painting" },
+      { href: "/specialized-coatings/cemcrete-floors", label: "Cemcrete floors" },
+      { href: "/specialized-coatings/wall-cladding", label: "Wall cladding" },
+      { href: "/painting/commercial-painting", label: "Commercial painting" },
+    ],
+  },
+
+  "external-walls": {
+    meta: {
+      title: "External Wall Painting & Coatings Gauteng | Maverick",
+      description:
+        "External wall painting, crack preparation, elastomeric coatings, anti-carbonation finishes, boundary walls, and facade maintenance for Gauteng homes, estates, and commercial buildings.",
+      path: "/painting/external-walls",
+    },
+    h1: "External wall painting and protective facade coatings",
+    eyebrow: "Commercial painting",
+    heroLead:
+      "External walls carry UV, rain, thermal movement, salts, and every shortcut in past maintenance cycles. Maverick prepares and coats exterior walls with crack treatment, moisture checks, primer discipline, and access planning so the finish protects the building envelope instead of hiding the next failure.",
+    breadcrumbs: [
+      { label: "Services", href: "/services" },
+      { label: "Painting services", href: "/painting-services" },
+      { label: "External walls", href: "/painting/external-walls" },
+    ],
+    schemaServiceName: "External wall painting and protective coatings",
+    schemaServiceDescription:
+      "Exterior wall painting, crack preparation, elastomeric coatings, and facade maintenance for Gauteng properties.",
+    sections: [
+      {
+        title: "Moisture, cracks, and substrate preparation",
+        paragraphs: [
+          "Peeling paint, hairline cracking, salts, algae, and hollow plaster are investigated before coating. Exterior paint cannot compensate for active leaks, bad caps, or friable plaster.",
+        ],
+      },
+      {
+        title: "Primer and topcoat selection",
+        paragraphs: [
+          "External wall systems range from breathable acrylics to elastomeric crack-bridging coats and anti-carbonation finishes. The right stack depends on exposure, plaster condition, and movement risk.",
+        ],
+      },
+      {
+        title: "Access and protection",
+        paragraphs: [
+          "Homes, estates, and commercial facades need safe access, window protection, overspray controls, and weather holds. We match scaffold, MEWP, or rope access to the elevation instead of forcing one method everywhere.",
+        ],
+      },
+      {
+        title: "Boundary walls, facades, and maintenance cycles",
+        paragraphs: [
+          "Boundary walls fail faster where irrigation, soil contact, and cap cracks introduce moisture. We separate those details from broad facade painting so maintenance intervals are realistic.",
+        ],
+      },
+    ],
+    caseAngles: [
+      {
+        title: "Sectional-title facade repaint",
+        summary:
+          "Crack repairs, waterproofing interfaces, and exterior coatings were sequenced before final colour handover.",
+      },
+      {
+        title: "Boundary wall renewal",
+        summary:
+          "Rising damp marks and cap cracks were addressed before a breathable exterior wall system was applied.",
+      },
+      {
+        title: "Commercial elevation",
+        summary:
+          "MEWP access, pedestrian protection, and weather holds kept the street-facing wall programme controlled.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do you paint outside walls?",
+        answer:
+          "Yes, including homes, estates, boundary walls, commercial facades, and sectional-title elevations.",
+      },
+      {
+        question: "Can paint fix exterior cracks?",
+        answer:
+          "Paint can bridge minor hairline movement only when the correct elastomeric system is specified. Structural or water-related cracks need repair first.",
+      },
+      {
+        question: "Do you waterproof walls before painting?",
+        answer:
+          "Where water ingress is present, we diagnose and coordinate waterproofing or damp-proofing before final coatings.",
+      },
+      {
+        question: "How long do exterior wall coatings last?",
+        answer:
+          "Life depends on substrate condition, sun exposure, moisture, and maintenance. We provide product-specific maintenance guidance at handover.",
+      },
+      {
+        question: "Do you handle high walls?",
+        answer:
+          "Yes. We plan scaffold, MEWP, or rope access depending on height, anchors, safety, and site disruption.",
+      },
+    ],
+    relatedServices: [
+      { href: "/painting/body-corporate", label: "Body corporate painting" },
+      { href: "/specialized-coatings/cemcrete-external-walls", label: "Cemcrete external walls" },
+      { href: "/specialized-coatings/wall-cladding", label: "Wall cladding" },
+      { href: "/access-solutions/rope-access-painting", label: "Rope access painting" },
     ],
   },
 

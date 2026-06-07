@@ -37,6 +37,9 @@ export type ServiceSpokeId =
   | "expansion-joint-sealing"
   | "rising-damp-treatment"
   | "industrial-epoxy-flooring"
+  | "cemcrete-floors"
+  | "wall-cladding"
+  | "cemcrete-external-walls"
   | "hygienic-food-grade"
   | "marmoran-wall-systems"
   | "industrial-corrosion-control"
@@ -52,6 +55,8 @@ export type ServiceSpokeId =
   | "commercial-painting"
   | "high-volume-commercial-painting"
   | "interior-painting"
+  | "internal-walls"
+  | "external-walls"
   | "warehouse-painting"
   | "parking-garage-painting"
   | "road-marking";
