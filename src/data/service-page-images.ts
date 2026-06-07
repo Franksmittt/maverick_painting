@@ -179,7 +179,7 @@ const WALL_CLADDING_IMAGE_POOL: readonly ServicePageImage[] = [
   },
 ];
 
-/** Dedicated nine-slot pool for the crack injection spoke (batch 1: slots 0–2). */
+/** Dedicated nine-slot pool for the crack injection spoke (batch 1–2: slots 0–5). */
 const CRACK_INJECTION_IMAGE_POOL: readonly ServicePageImage[] = [
   {
     src: "/images/structural-crack-injection-01.jpg",
@@ -194,16 +194,16 @@ const CRACK_INJECTION_IMAGE_POOL: readonly ServicePageImage[] = [
     alt: "Injection ports along a single vertical crack on a boundary wall",
   },
   {
-    src: "/images/placeholders/service-image-04.svg",
-    alt: "Crack injection project image 4",
+    src: "/images/structural-crack-injection-04.jpg",
+    alt: "Completed injected crack on a balcony soffit with ports filled flush",
   },
   {
-    src: "/images/placeholders/service-image-05.svg",
-    alt: "Crack injection project image 5",
+    src: "/images/structural-crack-injection-05.jpg",
+    alt: "Moisture mark and crack at a modest apartment balcony slab edge",
   },
   {
-    src: "/images/placeholders/service-image-06.svg",
-    alt: "Crack injection project image 6",
+    src: "/images/structural-crack-injection-06.jpg",
+    alt: "Close-up of injection ports on a short workshop floor crack",
   },
   {
     src: "/images/placeholders/service-image-07.svg",

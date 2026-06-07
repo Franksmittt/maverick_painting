@@ -104,8 +104,8 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
       alt: "Injection ports along a single vertical crack on a boundary wall",
     },
     {
-      src: "/images/structural-crack-injection-01.jpg",
-      alt: "Repaired crack injection patch on a modest Gauteng sectional-title building",
+      src: "/images/structural-crack-injection-04.jpg",
+      alt: "Completed injected crack on a balcony soffit with ports filled flush",
     },
   ],
   "expansion-joint-sealing": [
