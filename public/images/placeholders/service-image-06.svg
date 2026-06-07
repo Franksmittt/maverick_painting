@@ -1,0 +1,12 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Service image placeholder 06</title>
+  <desc id="desc">Replace this placeholder with project photography.</desc>
+  <rect width="1200" height="900" fill="#0E0E0E"/>
+  <rect x="48" y="48" width="1104" height="804" rx="32" fill="#171717" stroke="#D7B46A" stroke-width="4" stroke-dasharray="24 18"/>
+  <rect x="205" y="196" width="790" height="500" rx="26" fill="#242424"/>
+  <path d="M260 635L450 450L590 560L735 398L940 635" fill="#303030"/>
+  <path d="M260 635L450 450L590 560L735 398L940 635" stroke="#D7B46A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="830" cy="305" r="66" fill="#D7B46A" opacity="0.9"/>
+  <text x="600" y="764" text-anchor="middle" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700">SERVICE IMAGE 06</text>
+  <text x="600" y="824" text-anchor="middle" fill="#A1A1AA" font-family="Arial, Helvetica, sans-serif" font-size="30">Replace with project photo</text>
+</svg>

@@ -3,15 +3,21 @@ import { HubSpokeSection } from "@/components/hub-spoke-section";
 import { QaProcessModule } from "@/components/qa-process-module";
 import { TrustAndCtaStrip } from "@/components/trust-and-cta-strip";
 import { ServiceHubApproach } from "@/components/service-hub/service-hub-approach";
+import { ServiceHubGallery } from "@/components/service-hub/service-hub-gallery";
 import { ServiceHubHero } from "@/components/service-hub/service-hub-hero";
 import { ServiceHubMagazine } from "@/components/service-hub/service-hub-magazine";
 import { FaqSection } from "@/components/faq-section";
 import { LegalDisclaimer } from "@/components/legal-disclaimer";
 import { hubFaqsByPath } from "@/data/hub-faqs";
+import { getServicePageImages } from "@/data/service-page-images";
 import { siteConfig } from "@/lib/seo";
 import type { ServiceHubPageConfig } from "@/lib/service-hub-types";
 
 export function ServiceHubPage({ config }: { config: ServiceHubPageConfig }) {
+  const serviceImages = getServicePageImages(
+    config.path,
+    config.magazine.sections.map((section) => section.image),
+  );
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -48,6 +54,12 @@ export function ServiceHubPage({ config }: { config: ServiceHubPageConfig }) {
       <ServiceHubApproach {...config.approach} />
       <HubSpokeSection variant="dark" {...config.hubSpoke} />
       <ServiceHubMagazine {...config.magazine} />
+      <ServiceHubGallery
+        headingId={`${config.path.replace(/\//g, "-")}-image-gallery-heading`}
+        title={`${config.breadcrumbLabel} image gallery`}
+        subtitle="Six service image slots are reserved here so recent site photography can be added without changing the page layout."
+        images={serviceImages}
+      />
       {(config.faqs ?? hubFaqsByPath[config.path]) ? (
         <FaqSection
           headingId={`${config.path.replace(/\//g, "-")}-faq-heading`}
