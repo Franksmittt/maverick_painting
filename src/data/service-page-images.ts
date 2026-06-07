@@ -36,12 +36,13 @@ const SPECIALIZED_COATINGS_PATHS = new Set([
 const WATERPROOFING_PATHS = new Set([
   "/waterproofing-services",
   "/waterproofing/basement-tanking",
-  "/waterproofing/torch-on-liquid-membranes",
 ]);
 
 const FLAT_CONCRETE_ROOFS_PATHS = new Set(["/waterproofing/flat-concrete-roofs"]);
 
 const LEAKING_BALCONIES_PATHS = new Set(["/waterproofing/leaking-balconies"]);
+
+const TORCH_ON_LIQUID_PATHS = new Set(["/waterproofing/torch-on-liquid-membranes"]);
 
 const PAINTING_SERVICES_PATHS = new Set([
   "/painting-services",
@@ -469,6 +470,46 @@ const LEAKING_BALCONIES_IMAGE_POOL: readonly ServicePageImage[] = [
   },
 ];
 
+/** Dedicated nine-slot pool for the torch-on and liquid membranes spoke. */
+const TORCH_ON_LIQUID_IMAGE_POOL: readonly ServicePageImage[] = [
+  {
+    src: "/images/waterproofing-torch-on-liquid-01.jpg",
+    alt: "Completed torch-on membrane on a small flat roof without topcoat",
+  },
+  {
+    src: "/images/waterproofing-torch-on-liquid-02.jpg",
+    alt: "Finished grey liquid-applied membrane on a modest flat roof section",
+  },
+  {
+    src: "/images/waterproofing-torch-on-liquid-03.jpg",
+    alt: "Close-up of a completed torch-on membrane lap joint",
+  },
+  {
+    src: "/images/waterproofing-torch-on-liquid-04.jpg",
+    alt: "Finished membrane dress-down at a roof outlet on a small flat slab",
+  },
+  {
+    src: "/images/waterproofing-torch-on-liquid-05.jpg",
+    alt: "Completed liquid membrane renewal on a small flat roof wing",
+  },
+  {
+    src: "/images/waterproofing-torch-on-liquid-06.jpg",
+    alt: "Finished torch-on membrane upturn at a low parapet wall",
+  },
+  {
+    src: "/images/waterproofing-torch-on-liquid-07.jpg",
+    alt: "Completed liquid membrane sealed around a small roof penetration",
+  },
+  {
+    src: "/images/waterproofing-torch-on-liquid-08.jpg",
+    alt: "Finished cold-applied liquid membrane on a small retail podium roof",
+  },
+  {
+    src: "/images/waterproofing-torch-on-liquid-09.jpg",
+    alt: "Completed hybrid torch-on and liquid membrane roof on a small office unit",
+  },
+];
+
 /** Shared nine-slot pool for the waterproofing hub and spokes. */
 const WATERPROOFING_IMAGE_POOL: readonly ServicePageImage[] = [
   {
@@ -704,6 +745,10 @@ export function getServicePageImages(
 
   if (LEAKING_BALCONIES_PATHS.has(path)) {
     return [...LEAKING_BALCONIES_IMAGE_POOL];
+  }
+
+  if (TORCH_ON_LIQUID_PATHS.has(path)) {
+    return [...TORCH_ON_LIQUID_IMAGE_POOL];
   }
 
   if (WATERPROOFING_PATHS.has(path)) {

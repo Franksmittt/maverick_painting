@@ -250,16 +250,16 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
   ],
   "torch-on-liquid-membranes": [
     {
-      src: "/images/waterproofing-flat-roof-01.jpg",
-      alt: "Flat roof membrane assessment before torch-on or liquid-applied renewal in Gauteng",
+      src: "/images/waterproofing-torch-on-liquid-05.jpg",
+      alt: "Completed liquid membrane renewal on a small flat roof wing",
     },
     {
-      src: "/images/waterproofing-flat-roof-02.jpg",
-      alt: "Torch-on or liquid membrane installation with detailing at outlets and penetrations",
+      src: "/images/waterproofing-torch-on-liquid-08.jpg",
+      alt: "Finished cold-applied liquid membrane on a small retail podium roof",
     },
     {
-      src: "/images/waterproofing-flat-roof-03.jpg",
-      alt: "Completed hybrid membrane programme ready for protection course and QA sign-off",
+      src: "/images/waterproofing-torch-on-liquid-09.jpg",
+      alt: "Completed hybrid torch-on and liquid membrane roof on a small office unit",
     },
   ],
   "basement-tanking": [

@@ -15,7 +15,7 @@ const OG_BY_PATH: Record<string, string> = {
   "/waterproofing/leaking-balconies": "/images/waterproofing-leaking-balcony-04.jpg",
   "/waterproofing/basement-tanking": "/images/gallery/maverick-gallery-02.jpg",
   "/waterproofing/flat-concrete-roofs": "/images/waterproofing-flat-roof-02.jpg",
-  "/waterproofing/torch-on-liquid-membranes": "/images/gallery/maverick-gallery-02.jpg",
+  "/waterproofing/torch-on-liquid-membranes": "/images/waterproofing-torch-on-liquid-01.jpg",
   "/damp-proofing/rising-damp-treatment": "/images/gallery/maverick-gallery-06.jpg",
   "/specialized-coatings/industrial-epoxy-flooring": "/images/coatings-industrial-epoxy-completed-floor.jpg",
   "/specialized-coatings/cemcrete-floors": "/images/coatings-cemcrete-floors-01.jpg",
