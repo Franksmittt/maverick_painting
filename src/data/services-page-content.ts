@@ -31,7 +31,7 @@ export const SERVICES_VISUAL_STRIP = [
     alt: "Structural crack injection QA documentation on a Gauteng commercial asset",
   },
   {
-    src: "/images/coatings-hygienic-food-grade-01.jpg",
+    src: "/images/coatings-hygienic-food-grade-02.jpg",
     alt: "Hygienic resin flooring installation in a food-grade facility",
   },
   {
