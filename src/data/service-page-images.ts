@@ -220,7 +220,7 @@ const CRACK_INJECTION_IMAGE_POOL: readonly ServicePageImage[] = [
   },
 ];
 
-/** Dedicated nine-slot pool for the expansion joint sealing spoke (batch 1–2: slots 0–5). */
+/** Dedicated nine-slot pool for the expansion joint sealing spoke. */
 const EXPANSION_JOINT_IMAGE_POOL: readonly ServicePageImage[] = [
   {
     src: "/images/structural-expansion-joint-01.jpg",
@@ -247,16 +247,16 @@ const EXPANSION_JOINT_IMAGE_POOL: readonly ServicePageImage[] = [
     alt: "Aluminium armour angle and sealant bead at a small loading bay joint",
   },
   {
-    src: "/images/placeholders/service-image-07.svg",
-    alt: "Expansion joint sealing project image 7",
+    src: "/images/structural-expansion-joint-07.jpg",
+    alt: "Old worn sealant beside a newly renewed expansion joint on the same slab",
   },
   {
-    src: "/images/placeholders/service-image-08.svg",
-    alt: "Expansion joint sealing project image 8",
+    src: "/images/structural-expansion-joint-08.jpg",
+    alt: "Completed expansion joint across a townhouse complex driveway entrance",
   },
   {
-    src: "/images/placeholders/service-image-09.svg",
-    alt: "Expansion joint sealing project image 9",
+    src: "/images/structural-expansion-joint-09.jpg",
+    alt: "Wide view of renewed expansion joints across one lane of a small basement parking area",
   },
 ];
 
