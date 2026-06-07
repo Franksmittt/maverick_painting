@@ -16,6 +16,21 @@ const STRUCTURAL_MAGAZINE_IMAGES = [
   },
 ] as const;
 
+const COATINGS_MAGAZINE_IMAGES = [
+  {
+    src: "/images/coatings-industrial-epoxy-surface-prep.jpg",
+    alt: "Industrial epoxy floor surface preparation in a Gauteng warehouse",
+  },
+  {
+    src: "/images/coatings-hygienic-food-grade-02.jpg",
+    alt: "Completed hygienic PU-cement floor system in a food-grade facility",
+  },
+  {
+    src: "/images/coatings-marmoran-wall-03.jpg",
+    alt: "Completed Marmoran-style textured wall finish on a Gauteng façade",
+  },
+] as const;
+
 const MAGAZINE_IMAGES = [
   {
     src: "/images/munyaka-midrand.jpg",
@@ -703,7 +718,7 @@ export const specializedCoatingsHub: ServiceHubPageConfig = {
       {
         phase: "Phase 01 / Substrate",
         title: "The floor tells the truth under traffic.",
-        image: MAGAZINE_IMAGES[0],
+        image: COATINGS_MAGAZINE_IMAGES[0],
         dropCap: true,
         body: (
           <>
@@ -725,7 +740,7 @@ export const specializedCoatingsHub: ServiceHubPageConfig = {
       {
         phase: "Phase 02 / Compliance",
         title: "Food-grade is a specification, not a colour.",
-        image: MAGAZINE_IMAGES[1],
+        image: COATINGS_MAGAZINE_IMAGES[1],
         body: (
           <>
             <p className="type-body mb-4 text-zinc-300">
@@ -748,7 +763,7 @@ export const specializedCoatingsHub: ServiceHubPageConfig = {
       {
         phase: "Phase 03 / Architecture",
         title: "Texture systems need certified hands.",
-        image: MAGAZINE_IMAGES[2],
+        image: COATINGS_MAGAZINE_IMAGES[2],
         body: (
           <>
             <p className="type-body mb-4 text-zinc-300">

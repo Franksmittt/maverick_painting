@@ -1,0 +1,232 @@
+{
+  "project": "Maverick Painting",
+  "client_site": "maverickpainting.co.za",
+  "page": "Specialized coatings hub + spokes",
+  "paths": [
+    "/specialized-coatings",
+    "/specialized-coatings/industrial-epoxy-flooring",
+    "/specialized-coatings/cemcrete-floors",
+    "/specialized-coatings/wall-cladding",
+    "/specialized-coatings/cemcrete-external-walls",
+    "/specialized-coatings/hygienic-food-grade",
+    "/specialized-coatings/marmoran-wall-systems",
+    "/specialized-coatings/industrial-corrosion-control"
+  ],
+  "purpose": "AI image generation prompts for the second service vertical. Five epoxy and corrosion images already exist from the homepage batch; seven placeholder filenames still need real photography. After generation, images are converted to JPG, placed in public/images/, and the nine-slot pool in service-page-images.ts serves the hub and all seven spokes.",
+  "version": "1.0",
+  "date": "2026-06-07",
+  "style_guidelines": {
+    "mandatory_aesthetic": [
+      "raw documentary-style architectural and contractor photography",
+      "candid handheld camera aesthetic",
+      "unposed realism",
+      "authentic natural film grain",
+      "grounded Gauteng, South Africa context"
+    ],
+    "lighting": [
+      "Prefer harsh South African midday sun, flat hazy mid-morning, or cool fluorescent interior light in food plants",
+      "Avoid soft cinematic studio lighting and perfect HDR balance"
+    ],
+    "materials": [
+      "Describe micro-textures explicitly: diamond-ground concrete CSP profile, epoxy satin sheen with roller direction, PU-cement coving curves, zinc primer on pitted steel, Marmoran granule texture in wet coating",
+      "Contrast raw prepared substrate against fresh completed finishes where relevant"
+    ],
+    "people_policy": "100% people-free. No workers, faces, hands, or silhouettes.",
+    "completed_vs_process": "Mix of completed outcomes and empty in-progress evidence (ground slabs, masked walls, prepared steel) with no humans present.",
+    "location_cues": [
+      "Gauteng warehouses and logistics parks",
+      "food and beverage production washdown areas",
+      "Germiston and Isando industrial sites",
+      "estate and commercial façades on the Highveld"
+    ]
+  },
+  "global_negative_prompt": "people, workers, faces, hands, silhouettes, posed models, stock photo, smiling at camera, plastic 3D render, CGI, Unreal Engine, octane render, toy house, diorama, overly smooth surfaces, fake HDR, cinematic bloom, lens flare, text, logos, branding, watermarks, misspelled signage, American suburb, European architecture, lush tropical vegetation, rain, snow, oversaturated colours, perfectly clean fantasy site, drone aerial unless specified",
+  "output_specs": {
+    "default_format": "jpg",
+    "color_profile": "sRGB",
+    "quality": "high",
+    "notes": "Match aspect_ratio per slot. Filename must match target_filename exactly (lowercase, hyphens)."
+  },
+  "reuse_from_homepage": [
+    {
+      "target_filename": "coatings-industrial-epoxy-completed-floor.jpg",
+      "homepage_source": "Visual strip + featured services (hp2)",
+      "status": "ready — 688 KB"
+    },
+    {
+      "target_filename": "coatings-industrial-epoxy-resin-application.jpg",
+      "homepage_source": "Hub pillar 02 (hp5)",
+      "status": "ready — 660 KB"
+    },
+    {
+      "target_filename": "coatings-industrial-epoxy-surface-prep.jpg",
+      "homepage_source": "Featured services grid (hp11)",
+      "status": "ready — 760 KB"
+    },
+    {
+      "target_filename": "coatings-hygienic-food-grade-02.jpg",
+      "homepage_source": "Featured services + services triptych (hp12)",
+      "status": "ready — 788 KB"
+    },
+    {
+      "target_filename": "coatings-industrial-corrosion-02.jpg",
+      "homepage_source": "Featured services grid (hp17)",
+      "status": "ready — 877 KB"
+    }
+  ],
+  "images": [
+    {
+      "id": "coatings-hygienic-prep",
+      "section": "Shared pool slot 6 / hygienic spoke phase 01",
+      "display_order": 6,
+      "target_filename": "coatings-hygienic-food-grade-01.jpg",
+      "target_path": "public/images/coatings-hygienic-food-grade-01.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "site_evidence",
+      "alt_text": "Hygienic floor and wall preparation before PU-cement application in a Gauteng food facility",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "sc01.png",
+      "prompt": "A raw, documentary-style 4:3 photograph of hygienic floor preparation in an empty Gauteng food processing washdown room before PU-cement application. The camera shows a diamond-ground concrete slab with visible CSP texture, lower wall zones masked with paper and tape, and a floor drain at the centre. Stainless steel equipment legs visible but no people. Cool fluorescent light with slight green cast typical of production areas. Authentic film grain, audit-ready realism. No text, logos, or branding.",
+      "negative_prompt": "people, workers, perfect CGI floor, spotless fantasy factory, readable labels, logos"
+    },
+    {
+      "id": "coatings-corrosion-assessment",
+      "section": "Shared pool slot 7 / corrosion spoke phase 01",
+      "display_order": 7,
+      "target_filename": "coatings-industrial-corrosion-01.jpg",
+      "target_path": "public/images/coatings-industrial-corrosion-01.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "site_evidence",
+      "alt_text": "Industrial corrosion assessment and coating specification on steel structures in Gauteng",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "sc02.png",
+      "prompt": "A candid, documentary-style 4:3 photograph of corrosion assessment evidence on unpainted steel portal frame members inside a Gauteng warehouse near Isando. The camera frames pitted and rust-scaled steel columns and rafters with chalk circles marking active corrosion zones, no operator present. Concrete floor with oil staining and pallet marks. Harsh midday light cutting through open cladding sheets. Empty building interior. Authentic film grain, industrial documentary realism. No text, logos, or branding.",
+      "negative_prompt": "people, perfect CGI rust, gleaming new steel, logos, American factory stock photo"
+    },
+    {
+      "id": "coatings-marmoran-prep",
+      "section": "Shared pool slot 8 / marmoran & wall cladding spoke phase 01",
+      "display_order": 8,
+      "target_filename": "coatings-marmoran-wall-01.jpg",
+      "target_path": "public/images/coatings-marmoran-wall-01.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "site_evidence",
+      "alt_text": "Marmoran-class decorative wall preparation on a Gauteng estate façade",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "sc03.png",
+      "prompt": "A straightforward, documentary-style 4:3 photograph of exterior wall preparation before a high-build textured coating on a Gauteng sectional-title estate building. The camera shows a masked window zone, repaired hairline cracks in off-white plaster, and a small approved sample patch of textured finish on the wall. Scaffolding absent, ground-level view. Warm late-afternoon golden hour light raking across plaster micro-texture. No people. Authentic film grain, grounded estate realism. No text, logos, or branding.",
+      "negative_prompt": "people, workers on scaffold, perfect CGI render, Dubai villa, logos, readable signage"
+    },
+    {
+      "id": "coatings-hygienic-handover",
+      "section": "Hygienic spoke phase 03 / supplementary pool",
+      "display_order": 10,
+      "target_filename": "coatings-hygienic-food-grade-03.jpg",
+      "target_path": "public/images/coatings-hygienic-food-grade-03.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed food-grade resin floor and wall coving ready for washdown and audit sign-off",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "sc04.png",
+      "prompt": "A candid, documentary-style 4:3 photograph of a completed hygienic wall and floor junction in a Gauteng beverage bottling plant washdown zone. The camera captures seamless light grey PU-cement floor meeting a coated wall with integral coving, a hose reel bracket on the wall, and a floor drain cover. Empty room after handover, equipment removed. Even cool fluorescent interior light. Authentic film grain, food-grade audit realism without staging. No text, logos, or branding.",
+      "negative_prompt": "people, workers, perfect plastic CGI floor, readable equipment labels, logos"
+    },
+    {
+      "id": "coatings-corrosion-handover",
+      "section": "Corrosion spoke phase 03 / supplementary pool",
+      "display_order": 11,
+      "target_filename": "coatings-industrial-corrosion-03.jpg",
+      "target_path": "public/images/coatings-industrial-corrosion-03.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed protective coating system handover on industrial steelwork or tankage",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "sc05.png",
+      "prompt": "A raw, documentary-style 4:3 photograph of completed multi-coat corrosion protection on vertical steel silo shell plates at a Gauteng manufacturing yard. Fresh mid-grey epoxy topcoat over zinc primer shows realistic spray texture and minor orange peel, with neat cut-line at a concrete plinth. Gravel yard, dry grass tufts, chain-link fence. Flat afternoon Highveld light with mild haze. No people. Authentic film grain, industrial handover photography. No text, logos, or branding.",
+      "negative_prompt": "people, perfect mirror paint, CGI silo, logos, dramatic storm sky"
+    },
+    {
+      "id": "coatings-marmoran-application",
+      "section": "Shared pool slot 8 / marmoran spoke phase 02",
+      "display_order": 9,
+      "target_filename": "coatings-marmoran-wall-02.jpg",
+      "target_path": "public/images/coatings-marmoran-wall-02.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "site_evidence",
+      "alt_text": "Premium textured wall coating application with granule control on a Gauteng façade",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "sc06.png",
+      "prompt": "A candid, documentary-style 4:3 photograph of a high-build textured exterior wall coating in progress on a Gauteng commercial building, empty of applicators. The camera shows a partially completed wall with wet granular texture in warm beige tone, contrasted against an adjacent zone still in grey primer. Masking paper at window edges, drop sheet on paving below. Bright midday sun with short shadows. Authentic film grain, architectural coating evidence. No people, logos, or branding.",
+      "negative_prompt": "people, workers with rollers, perfect CGI texture, logos, readable signage"
+    },
+    {
+      "id": "coatings-marmoran-finish",
+      "section": "Shared pool slot 9 / marmoran spoke phase 03",
+      "display_order": 12,
+      "target_filename": "coatings-marmoran-wall-03.jpg",
+      "target_path": "public/images/coatings-marmoran-wall-03.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed Marmoran-style decorative wall finish on an estate or commercial elevation",
+      "weight": 1,
+      "batch": 3,
+      "user_file_hint": "sc07.png",
+      "prompt": "A raw, documentary-style 4:3 photograph of a completed premium textured exterior wall finish on a Gauteng lifestyle estate building. The camera frames two storeys of warm stone-beige high-build coating with visible granule texture and clean arrises around balcony openings. Young landscaping and pale Highveld sky. No people. Warm golden hour light emphasising texture depth. Authentic film grain, unposed architectural photography. No text, logos, or branding.",
+      "negative_prompt": "people, Dubai luxury render, perfect CGI estate, drone aerial, logos"
+    }
+  ],
+  "hub_slot_assignment": {
+    "note": "Wired in service-page-images.ts as SPECIALIZED_COATINGS_IMAGE_POOL",
+    "slots": [
+      { "slot": 0, "hero": "coatings-industrial-epoxy-completed-floor.jpg", "source": "reuse" },
+      { "slot": 1, "triptych_left": "coatings-industrial-epoxy-surface-prep.jpg", "source": "reuse" },
+      { "slot": 2, "triptych_centre": "coatings-industrial-epoxy-resin-application.jpg", "source": "reuse" },
+      { "slot": 3, "triptych_right": "coatings-hygienic-food-grade-02.jpg", "source": "reuse" },
+      { "slot": 4, "editorial_phase_01": "coatings-industrial-corrosion-02.jpg", "source": "reuse" },
+      { "slot": 5, "pair_left": "coatings-hygienic-food-grade-01.jpg", "source": "generate batch 1" },
+      { "slot": 6, "pair_right": "coatings-industrial-corrosion-01.jpg", "source": "generate batch 1" },
+      { "slot": 7, "editorial_phase_02": "coatings-marmoran-wall-02.jpg", "source": "generate batch 2" },
+      { "slot": 8, "editorial_phase_03": "coatings-marmoran-wall-03.jpg", "source": "generate batch 3" }
+    ]
+  },
+  "summary": {
+    "total_unique_filenames": 12,
+    "reuse_from_homepage": 5,
+    "new_images_to_generate": 7,
+    "pages_covered": 8,
+    "generation_batches": {
+      "batch_1": [
+        "coatings-hygienic-food-grade-01.jpg",
+        "coatings-industrial-corrosion-01.jpg",
+        "coatings-marmoran-wall-01.jpg"
+      ],
+      "batch_2": [
+        "coatings-hygienic-food-grade-03.jpg",
+        "coatings-industrial-corrosion-03.jpg",
+        "coatings-marmoran-wall-02.jpg"
+      ],
+      "batch_3": [
+        "coatings-marmoran-wall-03.jpg"
+      ]
+    },
+    "notes": [
+      "Epoxy trio filenames are fully covered by homepage images — industrial-epoxy-flooring and cemcrete-floors spokes need no new files.",
+      "wall-cladding, cemcrete-external-walls, and marmoran-wall-systems spokes share the marmoran-wall-01/02/03 filenames.",
+      "hygienic-food-grade-03 and industrial-corrosion-03 complete spoke phase-03 slots but sit outside the nine-slot hub pool until integrated.",
+      "After each batch: convert PNG → JPG (~88 quality), delete source PNGs, build, commit, push."
+    ]
+  }
+}
