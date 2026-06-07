@@ -7,10 +7,12 @@ import { FaqSection } from "@/components/faq-section";
 import { LegalDisclaimer } from "@/components/legal-disclaimer";
 import { hubFaqsByPath } from "@/data/hub-faqs";
 import { getServicePageImages } from "@/data/service-page-images";
+import { enrichHubPageConfig } from "@/lib/enrich-hub-page-config";
 import { siteConfig } from "@/lib/seo";
 import type { ServiceHubPageConfig } from "@/lib/service-hub-types";
 
-export function ServiceHubPage({ config }: { config: ServiceHubPageConfig }) {
+export function ServiceHubPage({ config: rawConfig }: { config: ServiceHubPageConfig }) {
+  const config = enrichHubPageConfig(rawConfig);
   const serviceImages = getServicePageImages(
     config.path,
     config.magazine.sections.map((section) => section.image),

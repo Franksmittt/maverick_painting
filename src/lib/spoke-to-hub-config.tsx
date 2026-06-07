@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { cn } from "@/lib/utils";
 import { serviceHubPages } from "@/data/service-hub-pages";
 import type { ServiceDeepPageContent, ServiceSpokeId } from "@/lib/service-deep-types";
 import type { LegalDisclaimerVariant } from "@/components/legal-disclaimer";
@@ -493,38 +494,94 @@ function buildApproachSteps(
   return steps.length >= 3 ? steps : parentSteps.slice(0, 4);
 }
 
+function buildHeroLeadParagraphs(content: ServiceDeepPageContent): string[] {
+  const paragraphs = [content.heroLead];
+  let charCount = content.heroLead.length;
+
+  for (const section of content.sections) {
+    for (const paragraph of section.paragraphs) {
+      if (paragraphs.length >= 4 || charCount >= 900) break;
+      paragraphs.push(paragraph);
+      charCount += paragraph.length;
+    }
+    if (paragraphs.length >= 4 || charCount >= 900) break;
+  }
+
+  return paragraphs;
+}
+
+function buildMagazineEditorialParagraphs(
+  content: ServiceDeepPageContent,
+  index: number,
+): string[] {
+  const paragraphs: string[] = [];
+  const caseAngle = content.caseAngles[index];
+
+  if (caseAngle?.summary) {
+    paragraphs.push(caseAngle.summary);
+  }
+
+  const primarySection = content.sections[index];
+  const secondarySection = content.sections[(index + 1) % content.sections.length];
+  const tertiarySection = content.sections[(index + 2) % content.sections.length];
+
+  if (primarySection) {
+    paragraphs.push(...primarySection.paragraphs);
+    for (const subsection of primarySection.subsections ?? []) {
+      paragraphs.push(...subsection.paragraphs);
+    }
+  }
+
+  if (paragraphs.length < 3 && secondarySection) {
+    paragraphs.push(...secondarySection.paragraphs);
+  }
+
+  if (paragraphs.length < 4 && tertiarySection && tertiarySection !== primarySection) {
+    paragraphs.push(tertiarySection.paragraphs[0] ?? "");
+  }
+
+  return paragraphs.filter(Boolean).slice(0, 5);
+}
+
 function buildMagazineSections(
   spokeId: ServiceSpokeId,
   content: ServiceDeepPageContent,
 ): ServiceHubPageConfig["magazine"]["sections"] {
   const images = SPOKE_MAGAZINE_IMAGES[spokeId] ?? MAGAZINE_IMAGES;
   const phases = ["Phase 01 / Assessment", "Phase 02 / Execution", "Phase 03 / Handover"];
-  const sources: { title: string; paragraphs: string[] }[] = [];
+  const titles: string[] = [];
 
   for (const angle of content.caseAngles) {
-    sources.push({ title: angle.title, paragraphs: [angle.summary] });
+    titles.push(angle.title);
   }
   for (const section of content.sections) {
-    if (sources.length >= 3) break;
-    sources.push({ title: section.title, paragraphs: section.paragraphs.slice(0, 2) });
+    if (titles.length >= 3) break;
+    titles.push(section.title);
   }
 
-  while (sources.length < 3) {
-    sources.push({
-      title: content.h1,
-      paragraphs: [content.heroLead],
-    });
+  while (titles.length < 3) {
+    titles.push(content.h1);
   }
 
-  return sources.slice(0, 3).map((source, index) => {
-    const primary = source.paragraphs[0] ?? "";
+  return titles.slice(0, 3).map((title, index) => {
+    const editorialParagraphs = buildMagazineEditorialParagraphs(content, index);
     const related = content.relatedServices[index] ?? content.relatedServices[0];
 
     const body: ReactNode = (
       <>
-        <p className="type-body text-zinc-300">{primary}</p>
+        {editorialParagraphs.map((paragraph, paragraphIndex) => (
+          <p
+            key={`${index}-${paragraphIndex}`}
+            className={cn(
+              "type-body",
+              paragraphIndex === 0 ? "text-zinc-300" : "text-zinc-400",
+            )}
+          >
+            {paragraph}
+          </p>
+        ))}
         {related ? (
-          <p className="type-body text-zinc-400">
+          <p className="type-body text-zinc-500">
             Related scope:{" "}
             <Link href={related.href} className={linkClass}>
               {related.label}
@@ -536,7 +593,7 @@ function buildMagazineSections(
 
     return {
       phase: phases[index] ?? `Phase 0${index + 1}`,
-      title: source.title,
+      title,
       image: images[index % images.length],
       dropCap: false,
       body,
@@ -597,6 +654,7 @@ export function spokeToHubConfig(spokeId: ServiceSpokeId, content: ServiceDeepPa
       headingId: `${spokeId}-heading`,
       h1: content.h1,
       lead: content.heroLead,
+      leadParagraphs: buildHeroLeadParagraphs(content),
       interventionsLabel: parentHub.hero.interventionsLabel,
       interventions: buildInterventions(content, parentHub),
     },

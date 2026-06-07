@@ -36,6 +36,8 @@ export type ServiceHubPageConfig = {
     headingId: string;
     h1: string;
     lead: string;
+    /** Extra hero paragraphs for editorial balance and SEO depth (spokes). */
+    leadParagraphs?: string[];
     interventionsLabel: string;
     interventions: string[];
   };

@@ -13,25 +13,26 @@ export function ServiceEditorialSplit({ section, image, reversed = false }: Prop
   return (
     <article
       className={cn(
-        "grid grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-12",
+        "grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-stretch lg:gap-12",
         reversed && "[&>*:first-child]:lg:order-2 [&>*:last-child]:lg:order-1",
       )}
     >
       <ServiceImageFrame
         image={image}
+        fillHeight
         sizes="(max-width: 1024px) 100vw, 50vw"
       />
 
       <div
         className={cn(
-          "rounded-xl border border-white/[0.06] bg-[#111111]/80 p-6 sm:p-8 lg:p-10",
+          "flex h-full min-h-[240px] flex-col justify-center rounded-xl border border-white/[0.06] bg-[#111111]/80 p-6 sm:p-8 lg:p-10",
           section.dropCap &&
             "[&_.drop-cap:first-letter]:mr-1 [&_.drop-cap:first-letter]:text-4xl [&_.drop-cap:first-letter]:font-bold [&_.drop-cap:first-letter]:leading-none [&_.drop-cap:first-letter]:text-secondary sm:[&_.drop-cap:first-letter]:text-5xl",
         )}
       >
-        <p className="type-phase mb-3">{section.phase}</p>
-        <h3 className="type-h3 mb-4 text-2xl sm:text-3xl">{section.title}</h3>
-        <div className="space-y-4 [&_.type-body]:text-zinc-400">{section.body}</div>
+        <p className="type-phase mb-3 shrink-0">{section.phase}</p>
+        <h3 className="type-h3 mb-4 shrink-0 text-2xl sm:text-3xl">{section.title}</h3>
+        <div className="space-y-4 [&_.type-body]:leading-relaxed">{section.body}</div>
       </div>
     </article>
   );

@@ -3,7 +3,7 @@ import { ServiceImageFrame } from "@/components/service-hub/service-image-blocks
 import type { ServicePageImage } from "@/data/service-page-images";
 import type { ServiceHubPageConfig } from "@/lib/service-hub-types";
 
-type Props = Pick<ServiceHubPageConfig["hero"], "headingId" | "h1" | "lead" | "interventionsLabel" | "interventions"> & {
+type Props = Pick<ServiceHubPageConfig["hero"], "headingId" | "h1" | "lead" | "leadParagraphs" | "interventionsLabel" | "interventions"> & {
   heroImage?: ServicePageImage;
 };
 
@@ -11,20 +11,23 @@ export function ServiceHubHero({
   headingId,
   h1,
   lead,
+  leadParagraphs,
   interventionsLabel,
   interventions,
   heroImage,
 }: Props) {
+  const paragraphs = leadParagraphs?.length ? leadParagraphs : [lead];
+
   return (
     <section className="section-surface" aria-labelledby={headingId}>
       <div className="page-container section-pad !py-12 md:!py-16 lg:!py-20">
         <div
           className={cn(
             "grid grid-cols-1 gap-8 lg:gap-12",
-            heroImage && "lg:grid-cols-2 lg:items-center",
+            heroImage && "lg:grid-cols-2 lg:items-stretch",
           )}
         >
-          <div className="relative min-w-0">
+          <div className="relative flex min-h-[240px] min-w-0 flex-col justify-center lg:h-full">
             <div
               className="pointer-events-none absolute left-0 top-2.5 max-h-[120px] w-[3px] bg-[#2a2e33] sm:max-h-[200px] lg:max-h-[250px]"
               aria-hidden
@@ -33,7 +36,19 @@ export function ServiceHubHero({
               <h1 id={headingId} className="type-h1 mb-4 sm:mb-5">
                 {h1}
               </h1>
-              <p className="type-lead mb-0 max-w-[640px]">{lead}</p>
+              <div className="space-y-4">
+                {paragraphs.map((paragraph, index) => (
+                  <p
+                    key={`${index}-${paragraph.slice(0, 24)}`}
+                    className={cn(
+                      "type-lead m-0 max-w-[640px]",
+                      index > 0 && "text-zinc-400",
+                    )}
+                  >
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
             </div>
           </div>
 
@@ -41,6 +56,7 @@ export function ServiceHubHero({
             <ServiceImageFrame
               image={heroImage}
               priority
+              fillHeight
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           ) : null}

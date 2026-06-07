@@ -2,26 +2,36 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import type { ServicePageImage } from "@/data/service-page-images";
 
-/** Uniform 4:3 frame used across all service page photography. */
+/** Uniform frame; on large screens stretches to match sibling text column height. */
 export function ServiceImageFrame({
   image,
   className,
   priority = false,
   sizes = "(max-width: 1024px) 100vw, 33vw",
+  fillHeight = false,
 }: {
   image: ServicePageImage;
   className?: string;
   priority?: boolean;
   sizes?: string;
+  fillHeight?: boolean;
 }) {
   return (
     <figure
       className={cn(
         "group overflow-hidden rounded-xl border border-white/10 bg-[#111111] shadow-[0_12px_32px_rgba(0,0,0,0.35)]",
+        fillHeight && "h-full min-h-[240px]",
         className,
       )}
     >
-      <div className="relative aspect-[4/3] w-full">
+      <div
+        className={cn(
+          "relative w-full",
+          fillHeight
+            ? "h-full min-h-[240px] lg:min-h-full"
+            : "aspect-[4/3]",
+        )}
+      >
         <Image
           src={image.src}
           alt={image.alt}
