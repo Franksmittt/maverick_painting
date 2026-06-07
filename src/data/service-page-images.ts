@@ -12,11 +12,12 @@ const STRUCTURAL_REPAIRS_PATHS = new Set([
   "/structural-repairs/expansion-joint-sealing",
 ]);
 
+const WALL_CLADDING_PATHS = new Set(["/specialized-coatings/wall-cladding"]);
+
 const SPECIALIZED_COATINGS_PATHS = new Set([
   "/specialized-coatings",
   "/specialized-coatings/industrial-epoxy-flooring",
   "/specialized-coatings/cemcrete-floors",
-  "/specialized-coatings/wall-cladding",
   "/specialized-coatings/cemcrete-external-walls",
   "/specialized-coatings/hygienic-food-grade",
   "/specialized-coatings/marmoran-wall-systems",
@@ -134,6 +135,46 @@ const SPECIALIZED_COATINGS_IMAGE_POOL: readonly ServicePageImage[] = [
   {
     src: "/images/coatings-marmoran-wall-03.jpg",
     alt: "Completed Marmoran-style decorative wall finish on an estate elevation",
+  },
+];
+
+/** Dedicated nine-slot pool for the wall cladding spoke (batch 1: slots 0–2). */
+const WALL_CLADDING_IMAGE_POOL: readonly ServicePageImage[] = [
+  {
+    src: "/images/coatings-wall-cladding-01.jpg",
+    alt: "Completed external wall cladding on a Gauteng office block with composite panels",
+  },
+  {
+    src: "/images/coatings-wall-cladding-02.jpg",
+    alt: "Finished fibre-cement cladding on a Gauteng townhouse gable end",
+  },
+  {
+    src: "/images/coatings-wall-cladding-03.jpg",
+    alt: "Completed cladding on a simple estate entrance feature wall in warm grey",
+  },
+  {
+    src: "/images/placeholders/service-image-04.svg",
+    alt: "Wall cladding project image 4",
+  },
+  {
+    src: "/images/placeholders/service-image-05.svg",
+    alt: "Wall cladding project image 5",
+  },
+  {
+    src: "/images/placeholders/service-image-06.svg",
+    alt: "Wall cladding project image 6",
+  },
+  {
+    src: "/images/placeholders/service-image-07.svg",
+    alt: "Wall cladding project image 7",
+  },
+  {
+    src: "/images/placeholders/service-image-08.svg",
+    alt: "Wall cladding project image 8",
+  },
+  {
+    src: "/images/placeholders/service-image-09.svg",
+    alt: "Wall cladding project image 9",
   },
 ];
 
@@ -336,6 +377,10 @@ export function getServicePageImages(
 ): ServicePageImage[] {
   if (STRUCTURAL_REPAIRS_PATHS.has(path)) {
     return [...STRUCTURAL_REPAIRS_IMAGE_POOL];
+  }
+
+  if (WALL_CLADDING_PATHS.has(path)) {
+    return [...WALL_CLADDING_IMAGE_POOL];
   }
 
   if (SPECIALIZED_COATINGS_PATHS.has(path)) {

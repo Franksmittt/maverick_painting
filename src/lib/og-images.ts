@@ -19,7 +19,7 @@ const OG_BY_PATH: Record<string, string> = {
   "/damp-proofing/rising-damp-treatment": "/images/gallery/maverick-gallery-06.jpg",
   "/specialized-coatings/industrial-epoxy-flooring": "/images/gallery/maverick-gallery-03.jpg",
   "/specialized-coatings/cemcrete-floors": "/images/coatings-industrial-epoxy-completed-floor.jpg",
-  "/specialized-coatings/wall-cladding": "/images/coatings-marmoran-wall-02.jpg",
+  "/specialized-coatings/wall-cladding": "/images/coatings-wall-cladding-01.jpg",
   "/specialized-coatings/cemcrete-external-walls": "/images/coatings-marmoran-wall-03.jpg",
   "/specialized-coatings/hygienic-food-grade": "/images/coatings-hygienic-food-grade-01.jpg",
   "/specialized-coatings/marmoran-wall-systems": "/images/munyaka-midrand.jpg",

@@ -166,16 +166,16 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
   ],
   "wall-cladding": [
     {
-      src: "/images/coatings-marmoran-wall-01.jpg",
-      alt: "Wall cladding preparation and condition assessment on a Gauteng building",
+      src: "/images/coatings-wall-cladding-01.jpg",
+      alt: "Completed external wall cladding on a Gauteng office block with composite panels",
     },
     {
-      src: "/images/coatings-marmoran-wall-02.jpg",
-      alt: "Feature wall or facade cladding coating with sample-approved finish",
+      src: "/images/coatings-wall-cladding-02.jpg",
+      alt: "Finished fibre-cement cladding on a Gauteng townhouse gable end",
     },
     {
-      src: "/images/coatings-marmoran-wall-03.jpg",
-      alt: "Completed wall cladding finish on a commercial or estate elevation",
+      src: "/images/coatings-wall-cladding-03.jpg",
+      alt: "Completed cladding on a simple estate entrance feature wall in warm grey",
     },
   ],
   "cemcrete-external-walls": [
