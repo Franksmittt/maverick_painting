@@ -8,7 +8,7 @@ const OG_BY_PATH: Record<string, string> = {
   "/damp-proofing-services": "/images/the-blyde-pretorria.jpg",
   "/specialized-coatings": "/images/painting-industrial-coatings.jpg",
   "/painting-services": "/images/munyaka-midrand.jpg",
-  "/access-solutions": "/images/access-solutions-method.png",
+  "/access-solutions": "/images/access-solutions-method.jpg",
   "/structural-repairs/concrete-spalling": "/images/gallery/maverick-gallery-01.jpg",
   "/structural-repairs/crack-injection": "/images/gallery/maverick-gallery-09.jpg",
   "/structural-repairs/expansion-joint-sealing": "/images/gallery/maverick-gallery-09.jpg",

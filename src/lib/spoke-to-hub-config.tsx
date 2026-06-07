@@ -306,7 +306,7 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
   ],
   "rope-access-painting": [
     {
-      src: "/images/access-solutions-method.png",
+      src: "/images/access-solutions-method.jpg",
       alt: "IRATA rope access technicians on a Gauteng high-rise façade",
     },
     {

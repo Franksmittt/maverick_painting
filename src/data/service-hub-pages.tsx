@@ -18,7 +18,7 @@ const MAGAZINE_IMAGES = [
 
 const ACCESS_MAGAZINE_IMAGES = [
   {
-    src: "/images/access-solutions-method.png",
+    src: "/images/access-solutions-method.jpg",
     alt: "Rope access technicians working on a high-rise façade in Gauteng",
   },
   {

@@ -154,7 +154,7 @@ export const HOME_FEATURED_SERVICES: HomeFeaturedService[] = [
     title: "Rope access painting",
     description: "IRATA-aligned façade work without full scaffold footprint.",
     href: "/access-solutions/rope-access-painting",
-    image: "/images/access-solutions-method.png",
+    image: "/images/access-solutions-method.jpg",
     category: "Access",
   },
   {

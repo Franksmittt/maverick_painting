@@ -17,7 +17,7 @@ export const SERVICES_ADDITIONAL_HUBS = [
     description:
       "IRATA rope access, scaffold coordination, and hybrid programmes for high-rise façades and towers.",
     href: "/access-solutions",
-    image: "/images/access-solutions-method.png",
+    image: "/images/access-solutions-method.jpg",
     tags: [
       { label: "Rope access painting", href: "/access-solutions/rope-access-painting" },
       { label: "Body corporate façades", href: "/painting/body-corporate" },
