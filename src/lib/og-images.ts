@@ -14,7 +14,7 @@ const OG_BY_PATH: Record<string, string> = {
   "/structural-repairs/expansion-joint-sealing": "/images/structural-expansion-joint-01.jpg",
   "/waterproofing/leaking-balconies": "/images/gallery/maverick-gallery-07.jpg",
   "/waterproofing/basement-tanking": "/images/gallery/maverick-gallery-02.jpg",
-  "/waterproofing/flat-concrete-roofs": "/images/gallery/maverick-gallery-02.jpg",
+  "/waterproofing/flat-concrete-roofs": "/images/waterproofing-flat-roof-02.jpg",
   "/waterproofing/torch-on-liquid-membranes": "/images/gallery/maverick-gallery-02.jpg",
   "/damp-proofing/rising-damp-treatment": "/images/gallery/maverick-gallery-06.jpg",
   "/specialized-coatings/industrial-epoxy-flooring": "/images/coatings-industrial-epoxy-completed-floor.jpg",

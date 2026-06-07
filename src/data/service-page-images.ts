@@ -35,11 +35,12 @@ const SPECIALIZED_COATINGS_PATHS = new Set([
 
 const WATERPROOFING_PATHS = new Set([
   "/waterproofing-services",
-  "/waterproofing/flat-concrete-roofs",
   "/waterproofing/leaking-balconies",
   "/waterproofing/basement-tanking",
   "/waterproofing/torch-on-liquid-membranes",
 ]);
+
+const FLAT_CONCRETE_ROOFS_PATHS = new Set(["/waterproofing/flat-concrete-roofs"]);
 
 const PAINTING_SERVICES_PATHS = new Set([
   "/painting-services",
@@ -387,6 +388,46 @@ const EXPANSION_JOINT_IMAGE_POOL: readonly ServicePageImage[] = [
   },
 ];
 
+/** Dedicated nine-slot pool for the flat concrete roofs spoke. */
+const FLAT_CONCRETE_ROOFS_IMAGE_POOL: readonly ServicePageImage[] = [
+  {
+    src: "/images/waterproofing-flat-roof-02.jpg",
+    alt: "Completed liquid-applied waterproofing membrane on a Gauteng flat roof",
+  },
+  {
+    src: "/images/waterproofing-flat-roof-01.jpg",
+    alt: "Completed torch-on waterproofing membrane on a flat concrete roof in Gauteng",
+  },
+  {
+    src: "/images/waterproofing-flat-roof-04.jpg",
+    alt: "Completed flat concrete roof waterproofing on a modest Gauteng building",
+  },
+  {
+    src: "/images/waterproofing-flat-roof-05.jpg",
+    alt: "Finished flat roof parapet kerb membrane detail",
+  },
+  {
+    src: "/images/waterproofing-flat-roof-06.jpg",
+    alt: "Completed liquid-applied flat roof renewal on a small commercial unit",
+  },
+  {
+    src: "/images/waterproofing-flat-roof-07.jpg",
+    alt: "Finished roof outlet and membrane dress-down detail",
+  },
+  {
+    src: "/images/waterproofing-flat-roof-08.jpg",
+    alt: "Completed waterproofing around a small roof plant penetration",
+  },
+  {
+    src: "/images/waterproofing-flat-roof-09.jpg",
+    alt: "Finished flat roof with flashed AC bases on a small office strip",
+  },
+  {
+    src: "/images/waterproofing-flat-roof-10.jpg",
+    alt: "Completed flat roof waterproofing handover on a sectional-title block",
+  },
+];
+
 /** Shared nine-slot pool for the waterproofing hub and spokes. */
 const WATERPROOFING_IMAGE_POOL: readonly ServicePageImage[] = [
   {
@@ -614,6 +655,10 @@ export function getServicePageImages(
 
   if (SPECIALIZED_COATINGS_PATHS.has(path)) {
     return [...SPECIALIZED_COATINGS_IMAGE_POOL];
+  }
+
+  if (FLAT_CONCRETE_ROOFS_PATHS.has(path)) {
+    return [...FLAT_CONCRETE_ROOFS_IMAGE_POOL];
   }
 
   if (WATERPROOFING_PATHS.has(path)) {

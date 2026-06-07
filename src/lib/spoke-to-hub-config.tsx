@@ -222,16 +222,16 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
   ],
   "flat-concrete-roofs": [
     {
-      src: "/images/waterproofing-flat-roof-01.jpg",
-      alt: "Flat concrete roof inspection and moisture tracing before waterproofing renewal in Gauteng",
+      src: "/images/waterproofing-flat-roof-06.jpg",
+      alt: "Completed liquid-applied flat roof renewal on a small commercial unit",
     },
     {
-      src: "/images/waterproofing-flat-roof-02.jpg",
-      alt: "Detail preparation and membrane or liquid-applied waterproofing work on a concrete roof slab",
+      src: "/images/waterproofing-flat-roof-09.jpg",
+      alt: "Finished flat roof with flashed AC bases on a small office strip",
     },
     {
-      src: "/images/waterproofing-flat-roof-03.jpg",
-      alt: "Completed flat roof waterproofing with drainage and walkway details ready for QA sign-off",
+      src: "/images/waterproofing-flat-roof-10.jpg",
+      alt: "Completed flat roof waterproofing handover on a sectional-title block",
     },
   ],
   "leaking-balconies": [
