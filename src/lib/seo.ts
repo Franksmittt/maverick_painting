@@ -89,7 +89,7 @@ export const siteConfig = {
     "South Rand",
   ],
   /**
-   * Legacy list — sitemap is generated from `src/lib/sitemap-builder.ts` (single source of truth).
+   * Legacy list, sitemap is generated from `src/lib/sitemap-builder.ts` (single source of truth).
    * Kept for backwards compatibility if referenced elsewhere.
    */
   primaryPages: [] as string[],

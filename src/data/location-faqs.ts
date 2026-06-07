@@ -23,7 +23,7 @@ export function getLocationFaqs(loc: ServiceLocation): readonly ServiceDeepFaq[]
     {
       question: "Can you supply documentation for trustees or insurers?",
       answer:
-        "On agreed scopes we provide photographic condition packs, manufacturer data sheet adherence records, and third-party QA reports—supporting MRRP updates, AGM packs, and maintenance-of-cover arguments. We do not provide legal or insurance advice.",
+        "On agreed scopes we provide photographic condition packs, manufacturer data sheet adherence records, and third-party QA reports, supporting MRRP updates, AGM packs, and maintenance-of-cover arguments. We do not provide legal or insurance advice.",
     },
     {
       question: `How do I get a ${loc.name} assessment?`,

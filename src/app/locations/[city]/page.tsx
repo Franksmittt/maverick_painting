@@ -174,7 +174,7 @@ export default async function LocationPage({ params }: { params: Promise<{ city:
               <CheckSquare className="mb-4 h-10 w-10 text-secondary" />
               <h3 className="mb-2 text-2xl font-bold">Independent QA</h3>
               <p className="text-gray-400">
-                Third-party inspection on major scopes—documented film build for trustees and facility
+                Third-party inspection on major scopes, documented film build for trustees and facility
                 managers.{" "}
                 <Link href="/our-process-independent-qa" className="text-secondary hover:underline">
                   View our independent QA process

@@ -28,28 +28,28 @@ const FullQAProcess = [
     step: 1,
     title: "Pre-Project Substrate Assessment",
     description:
-      "An independent coatings inspector conducts hammer tests, moisture readings, and adhesion tests. We use this data to finalize a non-negotiable technical specification—material type, minimum film thickness, and preparation method.",
+      "An independent coatings inspector conducts hammer tests, moisture readings, and adhesion tests. We use this data to finalize a non-negotiable technical specification, material type, minimum film thickness, and preparation method.",
     icon: Scroll,
   },
   {
     step: 2,
     title: "Mandatory Surface Preparation Checks",
     description:
-      "The inspector verifies that surface preparation (crack cleaning, spalling repair, washing) meets SANS and manufacturer standards before primer is applied—protecting adhesion and warranty validity.",
+      "The inspector verifies that surface preparation (crack cleaning, spalling repair, washing) meets SANS and manufacturer standards before primer is applied, protecting adhesion and warranty validity.",
     icon: CheckSquare,
   },
   {
     step: 3,
     title: "Film Thickness Measurement & Verification",
     description:
-      "The inspector monitors Wet Film Thickness (WFT) and Dry Film Thickness (DFT) of every coat. If minimum thickness is not met, manufacturer guarantees may be void—we verify before sign-off.",
+      "The inspector monitors Wet Film Thickness (WFT) and Dry Film Thickness (DFT) of every coat. If minimum thickness is not met, manufacturer guarantees may be void, we verify before sign-off.",
     icon: BarChart,
   },
   {
     step: 4,
     title: "Bi-Weekly Progress & Technical Reporting",
     description:
-      "You receive a comprehensive report every two weeks detailing tests, compliance checks, and visual progress—verifiable transparency for trustees, developers, and insurers.",
+      "You receive a comprehensive report every two weeks detailing tests, compliance checks, and visual progress, verifiable transparency for trustees, developers, and insurers.",
     icon: FileText,
   },
 ] as const;
@@ -91,7 +91,7 @@ const qaFaqs = [
   {
     question: "Is independent QA mandatory on every Maverick project?",
     answer:
-      "Independent QA is deployed on agreed commercial, sectional-title, and structural scopes where film build and preparation directly affect manufacturer warranties. Smaller maintenance tasks may follow internal checklists—your quotation will state the QA tier.",
+      "Independent QA is deployed on agreed commercial, sectional-title, and structural scopes where film build and preparation directly affect manufacturer warranties. Smaller maintenance tasks may follow internal checklists, your quotation will state the QA tier.",
   },
   {
     question: "Who employs the independent inspector?",
@@ -121,12 +121,12 @@ export default function IndependentQAPage() {
             Engineer&apos;s hub
           </p>
           <h1 className="type-h1 mb-6 text-white">
-            Independent third-party QA—not contractor self-certification.
+            Independent third-party QA, not contractor self-certification.
           </h1>
           <p className="type-body mb-6 max-w-3xl">
             Maverick Painting positions quality assurance as a risk-mitigation layer for multi-million-rand
             assets. Where scopes demand it, a separate inspector verifies preparation, environmental
-            conditions, and film build—creating evidence trustees, developers, and insurers can file without
+            conditions, and film build, creating evidence trustees, developers, and insurers can file without
             relying on biased in-house checks.
           </p>
           <Button asChild className="bg-secondary font-bold text-primary hover:bg-[#4AD5E2]">
@@ -173,8 +173,8 @@ export default function IndependentQAPage() {
               <div>
                 <h3 className="mb-2 font-bold text-white">Quality management</h3>
                 <p className="text-sm text-zinc-400">
-                  QA documentation aligns with ISO 9001 principles—traceable inspections, corrective actions,
-                  and manufacturer data sheet adherence—even where formal certification is held at group level.
+                  QA documentation aligns with ISO 9001 principles, traceable inspections, corrective actions,
+                  and manufacturer data sheet adherence, even where formal certification is held at group level.
                 </p>
               </div>
             </article>

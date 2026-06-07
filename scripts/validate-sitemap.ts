@@ -60,7 +60,7 @@ function main() {
   }
 
   if (!fs.existsSync(prerenderPath)) {
-    console.warn("\nWarn: prerender-manifest.json missing — run npm run build first.");
+    console.warn("\nWarn: prerender-manifest.json missing, run npm run build first.");
   } else {
     const prerender = JSON.parse(fs.readFileSync(prerenderPath, "utf8")) as {
       routes: Record<string, unknown>;
@@ -117,7 +117,7 @@ function main() {
   // Write human-readable report for GSC
   const reportPath = path.join(root, "sitemap-urls.txt");
   const lines = [
-    `# Maverick Painting Sitemap — ${new Date().toISOString().slice(0, 10)}`,
+    `# Maverick Painting Sitemap, ${new Date().toISOString().slice(0, 10)}`,
     `# Submit this index URL in Google Search Console:`,
     `# ${baseUrl}/sitemap.xml`,
     `# Total URLs: ${entries.length}`,
@@ -126,7 +126,7 @@ function main() {
   ];
   fs.writeFileSync(reportPath, lines.join("\n"), "utf8");
 
-  // Export XML for GSC review (not in public/ — would override app/sitemap.ts)
+  // Export XML for GSC review (not in public/, would override app/sitemap.ts)
   const xmlPath = path.join(root, "sitemap-export.xml");
   const xml = [
     '<?xml version="1.0" encoding="UTF-8"?>',

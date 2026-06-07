@@ -85,7 +85,7 @@ export function RegionalHubPage({ region }: RegionalHubPageProps) {
                     className="rounded-xl border border-white/10 bg-white/[0.03] p-5 transition hover:border-secondary/40"
                   >
                     <h3 className="mb-1 font-bold text-secondary">
-                      {item.spokeLabel} — {cityName}
+                      {item.spokeLabel}, {cityName}
                     </h3>
                     <p className="line-clamp-2 text-sm text-zinc-400">{item.localContext}</p>
                   </Link>
@@ -108,7 +108,7 @@ export function RegionalHubPage({ region }: RegionalHubPageProps) {
           {
             question: "Do you offer independent QA?",
             answer:
-              "On agreed commercial and sectional-title scopes, third-party inspectors verify preparation and film build—see our independent QA process for detail.",
+              "On agreed commercial and sectional-title scopes, third-party inspectors verify preparation and film build, see our independent QA process for detail.",
           },
         ]}
         schemaPath={`/locations/${region.slug}`}

@@ -1,5 +1,5 @@
 ================================================================================
-MAVERICK PAINTING — PROJECT SUMMARY
+MAVERICK PAINTING, PROJECT SUMMARY
 Last updated: 2026-05-17
 Site: https://www.maverickpainting.co.za
 Stack: Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS
@@ -19,7 +19,7 @@ Google Search Console:
 - Use sitemap-urls.txt for a full URL checklist when spot-checking coverage.
 
 ================================================================================
-SEO PROGRAM — PHASES COMPLETED
+SEO PROGRAM, PHASES COMPLETED
 ================================================================================
 
 PHASE 1–3 (FOUNDATION)
@@ -30,7 +30,7 @@ PHASE 1–3 (FOUNDATION)
 - Technical SEO: robots.txt, dynamic sitemap, canonical URLs, JSON-LD
 - next.config.mjs: trailingSlash false, reactStrictMode, legacy URL redirects
 
-PHASE 4 — FINAL STRETCH
+PHASE 4, FINAL STRETCH
 - 36 location×service matrix pages: /locations/[city]/[service]
   Data: src/data/location-service-matrix.ts
   UI: src/components/location-service-page.tsx
@@ -43,11 +43,11 @@ PHASE 4 — FINAL STRETCH
   /basement-tanking, /expansion-joints, /parking-garage, /sans-line-marking, /crack-injection
   (Plus body-corporate, industrial, hygienic flooring slug normalisation)
 
-PHASE 5 — SEO 9+ UPLIFT PASS
-- src/data/site-navigation.ts — header/mobile: Services, Locations, Solutions, Projects,
+PHASE 5, SEO 9+ UPLIFT PASS
+- src/data/site-navigation.ts, header/mobile: Services, Locations, Solutions, Projects,
   Blog, About, Contact; mobile Solutions sub-links
 - Homepage: keyword H1, src/data/home-faqs.ts + FAQPage JSON-LD
-- src/lib/og-images.ts + page-metadata.ts — per-route OG; buildHubMetadata / buildSpokeMetadata
+- src/lib/og-images.ts + page-metadata.ts, per-route OG; buildHubMetadata / buildSpokeMetadata
 - All hubs/spokes/solutions/core pages use OG helpers
 - Blog: Article JSON-LD, breadcrumbs, related services, guide FAQs (standalone-blog-article.tsx)
 - /locations index page in sitemap
@@ -69,7 +69,7 @@ Service spokes:         22
 Blog (index+pillar+cluster+standalone): 26
 Locations (regions+cities+matrix+index): 58
 Projects:                ~6
-Total (deduped):       132  — EXPECTED_SITEMAP_URL_COUNT in sitemap-builder.ts
+Total (deduped):       132, EXPECTED_SITEMAP_URL_COUNT in sitemap-builder.ts
 
 ================================================================================
 KEY ARCHITECTURE
@@ -122,8 +122,8 @@ Maverick Painting SEO Strategy Roadmap.txt
 Maverick Content Production System Design.txt
 
 CHANGELOG
-2026-05-17 — SEO 9+ uplift; sitemap 132 URLs.
-2026-05-16 — Phase 4: matrix, QA hub, disclaimers, blogs, P0 redirects.
-Earlier — Phases 1–3 hub/spoke, locations, blog system, technical SEO base.
+2026-05-17, SEO 9+ uplift; sitemap 132 URLs.
+2026-05-16, Phase 4: matrix, QA hub, disclaimers, blogs, P0 redirects.
+Earlier, Phases 1–3 hub/spoke, locations, blog system, technical SEO base.
 
 ================================================================================

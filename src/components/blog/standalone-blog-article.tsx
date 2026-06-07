@@ -79,7 +79,7 @@ export function StandaloneBlogArticleView({ article }: StandaloneBlogArticleProp
             <p className="mb-4">
               If moisture ingress, spalling, coating failure, or reserve-funded renewals are on your AGM agenda,
               document condition before approving tenders. Maverick supplies photographic surveys, manufacturer-backed
-              specifications, and independent QA on agreed scopes—so trustees and facility managers can defend the
+              specifications, and independent QA on agreed scopes, so trustees and facility managers can defend the
               programme, not just the quote.
             </p>
           </section>

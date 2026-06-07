@@ -63,7 +63,7 @@ export const serviceLocations: ServiceLocation[] = [
     region: "central",
     metaTitle: "Pretoria East Waterproofing & Painting Specialists",
     metaDescription:
-      "Water ingress, spalling, and estate painting in Pretoria East—Menlyn, Faerie Glen, and Woodhill with engineer-aligned remediation.",
+      "Water ingress, spalling, and estate painting in Pretoria East, Menlyn, Faerie Glen, and Woodhill with engineer-aligned remediation.",
     landmarks: ["Menlyn Maine", "Woodhill Estate", "The Grove"],
     regionalNarrative:
       "Pretoria East estates and office nodes face Highveld UV and storm loading on flat roofs and balconies. We combine membrane renewal, arris spalling repair, and exterior programmes with documented handover for HOAs and body corporates.",
@@ -75,7 +75,7 @@ export const serviceLocations: ServiceLocation[] = [
     region: "east-rand",
     metaTitle: "Benoni Painting & Structural Repairs | East Rand",
     metaDescription:
-      "East Rand painting, waterproofing, and concrete repairs in Benoni—Farrarmere, Rynfield, Eastlands—with independent QA.",
+      "East Rand painting, waterproofing, and concrete repairs in Benoni, Farrarmere, Rynfield, Eastlands, with independent QA.",
     landmarks: ["Farrarmere", "Rynfield", "Lakefield", "Northmead", "Eastlands"],
     regionalNarrative:
       "Benoni mixes sectional-title blocks and light industrial edges on the East Rand. Maverick mobilises for balcony leaks, roof renewals, and parking grid spalling with programmes sized for trustee cash flow.",
@@ -87,7 +87,7 @@ export const serviceLocations: ServiceLocation[] = [
     region: "east-rand",
     metaTitle: "Kempton Park Industrial Painting | OR Tambo Corridor",
     metaDescription:
-      "Industrial painting, epoxy floors, and warehouse coatings near O.R. Tambo—Kempton Park, Allen Grove, and Glen Marais logistics nodes.",
+      "Industrial painting, epoxy floors, and warehouse coatings near O.R. Tambo, Kempton Park, Allen Grove, and Glen Marais logistics nodes.",
     landmarks: ["Allen Grove", "Aston Manor", "Birch Acres", "Glen Marais"],
     regionalNarrative:
       "Kempton Park sits on Africa's air-freight corridor with dense warehousing and distribution. HEA airless spray, line marking, and rapid-cure resin floors support 24/7 logistics with minimal shutdown windows.",
@@ -102,7 +102,7 @@ export const serviceLocations: ServiceLocation[] = [
       "East Rand industrial and commercial maintenance in Boksburg: corrosion control, warehouse painting, SANS line marking, and structural repairs.",
     landmarks: ["East Rand Mall", "Boksburg North", "Jet Park adjacency"],
     regionalNarrative:
-      "Boksburg anchors heavy industry and logistics on the East Rand. Facility managers search for corrosion stacks, traffic-rated line marking, and roof or slab waterproofing that survives chemical exposure and forklift traffic—documented with independent QA where required.",
+      "Boksburg anchors heavy industry and logistics on the East Rand. Facility managers search for corrosion stacks, traffic-rated line marking, and roof or slab waterproofing that survives chemical exposure and forklift traffic, documented with independent QA where required.",
     primaryServiceLinks: [defaultLinks.industrial, defaultLinks.epoxy, { href: "/painting/road-marking", label: "Line marking" }],
   },
   {
@@ -126,7 +126,7 @@ export const serviceLocations: ServiceLocation[] = [
       "HACCP floors, warehouse painting, and rope access for Isando logistics, cold storage, and aviation-adjacent facilities near O.R. Tambo.",
     landmarks: ["Isando Industrial", "Jet Park", "Spartan"],
     regionalNarrative:
-      "Isando concentrates cold storage, MRO, and distribution facilities needing hygienic PU-cement floors, rapid MMA line marking, and façade access without long scaffold programmes. We speak R638/HACCP context and operational continuity—not generic painting quotes.",
+      "Isando concentrates cold storage, MRO, and distribution facilities needing hygienic PU-cement floors, rapid MMA line marking, and façade access without long scaffold programmes. We speak R638/HACCP context and operational continuity, not generic painting quotes.",
     primaryServiceLinks: [
       { href: "/specialized-coatings/hygienic-food-grade", label: "Hygienic flooring" },
       defaultLinks.epoxy,
@@ -139,7 +139,7 @@ export const serviceLocations: ServiceLocation[] = [
     region: "south-rand",
     metaTitle: "Alberton Body Corporate & Estate Painting",
     metaDescription:
-      "South Rand sectional-title and estate maintenance in Alberton—Meyersdal, Brackenhurst—with STSMA-aware scopes and independent QA.",
+      "South Rand sectional-title and estate maintenance in Alberton, Meyersdal, Brackenhurst, with STSMA-aware scopes and independent QA.",
     landmarks: ["Meyersdal Eco Estate", "Brackenhurst", "Randhart"],
     regionalNarrative:
       "Alberton and Meyersdal estates require HOA-compliant palettes, security inductions, and balcony or roof programmes that respect sectional-title boundaries. Maverick supplies trustee documentation and manufacturer-backed warranties trustees can file.",
@@ -167,10 +167,10 @@ export const serviceLocations: ServiceLocation[] = [
     region: "west-rand",
     metaTitle: "Roodepoort Damp Proofing & Waterproofing | West Rand",
     metaDescription:
-      "Rising damp, basement tanking, and structural repairs in Roodepoort—West Rand mining legacy hydrology and dolomite-aware solutions.",
+      "Rising damp, basement tanking, and structural repairs in Roodepoort, West Rand mining legacy hydrology and dolomite-aware solutions.",
     landmarks: ["Clearwater", "Florida", "Constantia Kloof"],
     regionalNarrative:
-      "Roodepoort properties often battle capillary moisture, lateral ingress, and subsidence-related cracking linked to West Rand geology. Maverick diagnoses before injection or tanking—avoiding cosmetic seals on hydrostatic problems.",
+      "Roodepoort properties often battle capillary moisture, lateral ingress, and subsidence-related cracking linked to West Rand geology. Maverick diagnoses before injection or tanking, avoiding cosmetic seals on hydrostatic problems.",
     primaryServiceLinks: [defaultLinks.damp, defaultLinks.tanking, defaultLinks.structural],
   },
   {
@@ -191,10 +191,10 @@ export const serviceLocations: ServiceLocation[] = [
     region: "central",
     metaTitle: "Johannesburg North Painting Contractors",
     metaDescription:
-      "Painting and waterproofing in Johannesburg North—Melville, Rosebank, Parktown—with heritage-sensitive and commercial scopes.",
+      "Painting and waterproofing in Johannesburg North, Melville, Rosebank, Parktown, with heritage-sensitive and commercial scopes.",
     landmarks: ["Melville", "Rosebank", "Parktown", "Parkhurst"],
     regionalNarrative:
-      "Johannesburg North mixes heritage homes, boutique commercial, and older masonry stock. Rising damp, roof renewals, and interior low-VOC programmes are scoped after moisture profiling—not one-size-fits-all quotes.",
+      "Johannesburg North mixes heritage homes, boutique commercial, and older masonry stock. Rising damp, roof renewals, and interior low-VOC programmes are scoped after moisture profiling, not one-size-fits-all quotes.",
     primaryServiceLinks: [
       { href: "/painting/interior-painting", label: "Interior painting" },
       defaultLinks.damp,

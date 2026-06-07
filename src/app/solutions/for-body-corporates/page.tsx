@@ -13,17 +13,17 @@ const faqs = [
   {
     question: "What is a 10-year maintenance plan under the STSMA?",
     answer:
-      "Prescribed Management Rule 22 requires a written Maintenance, Repair and Replacement Plan (MRRP) covering major capital items over ten years, funded from the reserve fund. Maverick supplies condition data and scoped quotations to support plan updates—we do not draft legal PMR documents.",
+      "Prescribed Management Rule 22 requires a written Maintenance, Repair and Replacement Plan (MRRP) covering major capital items over ten years, funded from the reserve fund. Maverick supplies condition data and scoped quotations to support plan updates, we do not draft legal PMR documents.",
   },
   {
-    question: "Who pays for a leaking balcony—the owner or the body corporate?",
+    question: "Who pays for a leaking balcony, the owner or the body corporate?",
     answer:
-      "It depends on scheme rules, exclusive-use allocations, and where the failure occurs. Maverick documents technical cause so managing agents and attorneys can route decisions—we do not adjudicate law.",
+      "It depends on scheme rules, exclusive-use allocations, and where the failure occurs. Maverick documents technical cause so managing agents and attorneys can route decisions, we do not adjudicate law.",
   },
   {
     question: "How does independent QA protect trustees?",
     answer:
-      "Third-party verification of preparation, film build, and adherence to specifications creates an auditable file for AGMs, insurers, and CSOS disputes—reducing allegations of self-monitored contractor bias.",
+      "Third-party verification of preparation, film build, and adherence to specifications creates an auditable file for AGMs, insurers, and CSOS disputes, reducing allegations of self-monitored contractor bias.",
   },
 ] as const;
 
@@ -33,19 +33,19 @@ export default function BodyCorporateSolutionsPage() {
       path="/solutions/for-body-corporates"
       breadcrumbLabel="Body corporates"
       h1="Sectional title maintenance trustees can defend at the AGM."
-      lead="Trustees are not buying paint—they are managing fiduciary risk under the STSMA. Maverick helps execute Maintenance, Repair and Replacement Plan (MRRP) items with engineer-aligned structural work, manufacturer-backed waterproofing, phased exterior programmes, and independent third-party QA your managing agent can file."
+      lead="Trustees are not buying paint, they are managing fiduciary risk under the STSMA. Maverick helps execute Maintenance, Repair and Replacement Plan (MRRP) items with engineer-aligned structural work, manufacturer-backed waterproofing, phased exterior programmes, and independent third-party QA your managing agent can file."
       valueProps={[
         {
           title: "STSMA & MRRP alignment",
           description:
-            "Condition surveys, photographic logs, and phased scopes that map to reserve fund planning—supporting PMR 22 without surprise special levies after the first storms.",
+            "Condition surveys, photographic logs, and phased scopes that map to reserve fund planning, supporting PMR 22 without surprise special levies after the first storms.",
           icon: Scroll,
           accentColor: "border-secondary",
         },
         {
           title: "Independent QA",
           description:
-            "Bi-weekly third-party reporting on preparation, film build, and manufacturer compliance—so trustees are not relying on the contractor marking their own homework.",
+            "Bi-weekly third-party reporting on preparation, film build, and manufacturer compliance, so trustees are not relying on the contractor marking their own homework.",
           icon: ClipboardCheck,
           accentColor: "border-tertiary",
         },
@@ -67,8 +67,8 @@ export default function BodyCorporateSolutionsPage() {
       narrative={{
         heading: "Common property, exclusive use, and insurance reality",
         paragraphs: [
-          "The body corporate maintains common property—including exterior walls, roofs, and shared structures—while exclusive-use areas can shift responsibility for balconies and finishes. Maverick scopes work with clear technical boundaries documented for insurers and CSOS, not vague promises.",
-          "Insurers frequently reject claims citing gradual deterioration or lack of maintenance. Manufacturer-backed systems plus independent QA create evidence of reasonable care—context only; we do not provide legal or insurance advice.",
+          "The body corporate maintains common property, including exterior walls, roofs, and shared structures, while exclusive-use areas can shift responsibility for balconies and finishes. Maverick scopes work with clear technical boundaries documented for insurers and CSOS, not vague promises.",
+          "Insurers frequently reject claims citing gradual deterioration or lack of maintenance. Manufacturer-backed systems plus independent QA create evidence of reasonable care, context only; we do not provide legal or insurance advice.",
           "South Rand and Highveld assets face intense UV, thermal cycling, and summer storm damage. Coating and membrane choices must match exposure on north and west elevations, not a single spec recycled from another complex.",
         ],
       }}

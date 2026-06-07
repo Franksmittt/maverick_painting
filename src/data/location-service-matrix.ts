@@ -33,7 +33,7 @@ const HIGHLIGHTS_BY_SERVICE: Record<string, readonly string[]> = {
     "IRATA-aligned teams with audited rescue and tool-tethering plans",
     "Reduced scaffold footprint on towers and plant structures",
     "After-hours and security-coordinated access for CBD assets",
-    "Coating QA on film build—not rope access alone",
+    "Coating QA on film build, not rope access alone",
   ],
   "commercial-painting": [
     "Occupied-tenant phasing with dust and odour controls",
@@ -86,7 +86,7 @@ const HIGHLIGHTS_BY_SERVICE: Record<string, readonly string[]> = {
   "concrete-spalling": [
     "Rebar exposure, passivation, and polymer-modified mortars",
     "Chloride and carbonation-aware diagnostic sequencing",
-    "Engineer-aligned scopes—not cosmetic patching",
+    "Engineer-aligned scopes, not cosmetic patching",
     "Anti-carbonation finishes after structural closure",
   ],
   "basement-tanking": [
@@ -129,7 +129,7 @@ function entry(
     metaTitle: `${spokeLabel} in ${cityName}`,
     metaDescription: `Professional ${spokeLabel.toLowerCase()} in ${cityName}, Gauteng. Manufacturer-backed specs, engineer-aligned scopes, and independent QA for commercial and sectional-title assets.`,
     h1: `${spokeLabel} in ${cityName}.`,
-    lead: `Localised ${spokeLabel.toLowerCase()} for assets in ${cityName}—scoped to regional building stock, access constraints, and compliance expectations trustees and facility managers can defend.`,
+    lead: `Localised ${spokeLabel.toLowerCase()} for assets in ${cityName}, scoped to regional building stock, access constraints, and compliance expectations trustees and facility managers can defend.`,
     localContext,
     highlights,
     disclaimer,
@@ -141,7 +141,7 @@ function entry(
       {
         question: "How does independent QA work on local programmes?",
         answer:
-          "On agreed scopes, a third-party inspector verifies preparation, environmental conditions, and dry film thickness—producing bi-weekly reports trustees and insurers can file without relying on contractor self-certification.",
+          "On agreed scopes, a third-party inspector verifies preparation, environmental conditions, and dry film thickness, producing bi-weekly reports trustees and insurers can file without relying on contractor self-certification.",
       },
       ...extraFaqs,
     ],
@@ -155,7 +155,7 @@ export const locationServiceMatrix: LocationServiceMatrixEntry[] = [
     "leaking-balconies",
     "/waterproofing/leaking-balconies",
     "Leaking balcony repair",
-    "Sandton sectional-title towers and mixed-use podiums see thermal movement, failed outlet seals, and tile-bed saturation on upper levels. We document moisture paths and membrane compatibility before recommending partial or full renewal—phased where occupied levels cannot be vacated.",
+    "Sandton sectional-title towers and mixed-use podiums see thermal movement, failed outlet seals, and tile-bed saturation on upper levels. We document moisture paths and membrane compatibility before recommending partial or full renewal, phased where occupied levels cannot be vacated.",
     "sans-waterproofing",
   ),
   entry(
@@ -254,7 +254,7 @@ export const locationServiceMatrix: LocationServiceMatrixEntry[] = [
     "warehouse-painting",
     "/painting/warehouse-painting",
     "Warehouse painting",
-    "Tilt-up panels and internal blockwork in Isando benefit from HEA airless programmes that lift luminance and protect against carbonation—often bundled with floor and line-marking scopes.",
+    "Tilt-up panels and internal blockwork in Isando benefit from HEA airless programmes that lift luminance and protect against carbonation, often bundled with floor and line-marking scopes.",
     undefined,
   ),
   entry(
@@ -281,7 +281,7 @@ export const locationServiceMatrix: LocationServiceMatrixEntry[] = [
     "industrial-epoxy",
     "/specialized-coatings/industrial-epoxy-flooring",
     "Industrial epoxy flooring",
-    "Heavy forklift and chemical exposure in Boksburg plants demands defined film build and repair protocols—documented for insurer and ISO audits.",
+    "Heavy forklift and chemical exposure in Boksburg plants demands defined film build and repair protocols, documented for insurer and ISO audits.",
     undefined,
   ),
   entry(
@@ -362,7 +362,7 @@ export const locationServiceMatrix: LocationServiceMatrixEntry[] = [
     "leaking-balconies",
     "/waterproofing/leaking-balconies",
     "Leaking balcony repair",
-    "Alberton mid-rise stock frequently shows failed waterproofing at door thresholds and tile beds—scoped with moisture mapping before renewal.",
+    "Alberton mid-rise stock frequently shows failed waterproofing at door thresholds and tile beds, scoped with moisture mapping before renewal.",
     "sans-waterproofing",
   ),
   entry(
@@ -398,7 +398,7 @@ export const locationServiceMatrix: LocationServiceMatrixEntry[] = [
     "rising-damp",
     "/damp-proofing/rising-damp-treatment",
     "Rising damp treatment",
-    "Older Roodepoort stock on reactive soils often shows rising damp and salt efflorescence—diagnosed with moisture profiles before DPC injection.",
+    "Older Roodepoort stock on reactive soils often shows rising damp and salt efflorescence, diagnosed with moisture profiles before DPC injection.",
     "structural",
   ),
   entry(
@@ -407,7 +407,7 @@ export const locationServiceMatrix: LocationServiceMatrixEntry[] = [
     "concrete-spalling",
     "/structural-repairs/concrete-spalling",
     "Concrete spalling repair",
-    "Parking and retaining structures in Roodepoort benefit from engineer-aligned spalling repair before decorative repaints—avoiding cosmetic concealment of active corrosion.",
+    "Parking and retaining structures in Roodepoort benefit from engineer-aligned spalling repair before decorative repaints, avoiding cosmetic concealment of active corrosion.",
     "structural",
   ),
   entry(
@@ -425,7 +425,7 @@ export const locationServiceMatrix: LocationServiceMatrixEntry[] = [
     "rising-damp",
     "/damp-proofing/rising-damp-treatment",
     "Rising damp treatment",
-    "West Rand lateral damp in Krugersdorp is common in pre-2000 stock—treated with injection DPC and compatible plaster regimes.",
+    "West Rand lateral damp in Krugersdorp is common in pre-2000 stock, treated with injection DPC and compatible plaster regimes.",
     "structural",
   ),
   entry(
@@ -452,7 +452,7 @@ export const locationServiceMatrix: LocationServiceMatrixEntry[] = [
     "stucco-coatings",
     "/painting/stucco-wall-coatings",
     "Stucco wall coatings",
-    "Meyersdal estate façades use textured and elastomeric stucco systems that must breathe while resisting Highveld UV—specified with crack and movement joint review.",
+    "Meyersdal estate façades use textured and elastomeric stucco systems that must breathe while resisting Highveld UV, specified with crack and movement joint review.",
     undefined,
   ),
   entry(

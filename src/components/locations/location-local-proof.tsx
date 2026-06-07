@@ -11,7 +11,7 @@ export function LocationLocalProof({ loc }: { loc: ServiceLocation }) {
         <p className="mb-6 max-w-3xl text-gray-400">
           Maverick mobilises across {loc.landmarks.join(", ")} and neighbouring suburbs. Our portfolio includes
           sectional-title towers, logistics parks, and estate programmes documented with photographic condition
-          packs and—on agreed scopes—independent third-party QA.
+          packs and, on agreed scopes, independent third-party QA.
         </p>
         <div className="flex flex-wrap gap-4">
           <Link

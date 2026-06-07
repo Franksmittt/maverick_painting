@@ -12,7 +12,7 @@ export function HeroSection() {
             Gauteng Painting, Waterproofing &amp; Structural Repair Contractors.
           </h1>
           <p className="mx-auto mb-3 max-w-xl text-lg font-semibold text-zinc-200 sm:text-xl md:mx-0">
-            Owner-supervised programmes for body corporates, developers, and commercial assets—concrete spalling,
+            Owner-supervised programmes for body corporates, developers, and commercial assets, concrete spalling,
             flat roofs, industrial coatings, and IRATA rope access across Johannesburg, Pretoria, and the Rand.
           </p>
           <p className="mx-auto mb-6 max-w-xl text-base font-medium leading-relaxed text-zinc-400 md:mx-0">

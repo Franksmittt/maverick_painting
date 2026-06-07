@@ -9,7 +9,7 @@ const COPY: Record<LegalDisclaimerVariant, { title: string; body: string }> = {
   haccp: {
     title: "Food safety & R638 notice",
     body:
-      "Hygienic flooring programmes are specified to support HACCP and Regulation R638 cleaning regimes in food and beverage environments. Maverick is an applicator—not a food safety auditor. Final hygiene validation, microbiological clearance, and process sign-off remain the facility owner’s responsibility with their appointed food safety officer.",
+      "Hygienic flooring programmes are specified to support HACCP and Regulation R638 cleaning regimes in food and beverage environments. Maverick is an applicator, not a food safety auditor. Final hygiene validation, microbiological clearance, and process sign-off remain the facility owner’s responsibility with their appointed food safety officer.",
   },
   structural: {
     title: "Structural & engineering notice",

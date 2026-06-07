@@ -7,7 +7,7 @@ export type BuildMetadataParams = {
   description: string;
   path?: string;
   image?: string;
-  /** Open Graph type — use `article` for blog posts. */
+  /** Open Graph type, use `article` for blog posts. */
   ogType?: "website" | "article";
 };
 

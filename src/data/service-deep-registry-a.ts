@@ -146,12 +146,12 @@ export const serviceDeepRegistryA: Pick<
       {
         question: "How does NHBRC classify cracks before repair?",
         answer:
-          "Under NHBRC home-building warranty pathways, cracks are commonly grouped by width and behaviour—hairline settlement cracks (often under about 1 mm) may be monitored or cosmetically treated, while wider or progressive cracks can indicate structural movement and may require engineer assessment, injection, or remedial rebuild. Maverick executes engineer-specified repairs; we do not self-certify structural designs.",
+          "Under NHBRC home-building warranty pathways, cracks are commonly grouped by width and behaviour, hairline settlement cracks (often under about 1 mm) may be monitored or cosmetically treated, while wider or progressive cracks can indicate structural movement and may require engineer assessment, injection, or remedial rebuild. Maverick executes engineer-specified repairs; we do not self-certify structural designs.",
       },
       {
         question: "What does concrete spalling repair cost per square metre in Gauteng?",
         answer:
-          "Indicative remedial rates often fall between roughly R800 and R2,500 per m² depending on breakout depth, rebar treatment, access method (scaffold vs rope), and protective coating scope. Site measurement, hammer sounding, and moisture profiling drive accurate quotes—we avoid bait pricing without inspection.",
+          "Indicative remedial rates often fall between roughly R800 and R2,500 per m² depending on breakout depth, rebar treatment, access method (scaffold vs rope), and protective coating scope. Site measurement, hammer sounding, and moisture profiling drive accurate quotes, we avoid bait pricing without inspection.",
       },
       {
         question: "What guarantees apply?",
@@ -190,7 +190,7 @@ export const serviceDeepRegistryA: Pick<
       {
         title: "Epoxy vs polyurethane, matching chemistry to crack behaviour",
         paragraphs: [
-          "Epoxy suits stable, dry cracks where structural bond is specified; polyurethane tolerates movement and active water in many leak paths. Wrong chemistry fails twice—we match resin class to crack behaviour, moisture, and engineer guidance, not habit.",
+          "Epoxy suits stable, dry cracks where structural bond is specified; polyurethane tolerates movement and active water in many leak paths. Wrong chemistry fails twice, we match resin class to crack behaviour, moisture, and engineer guidance, not habit.",
         ],
       },
       {
@@ -312,7 +312,7 @@ export const serviceDeepRegistryA: Pick<
       {
         title: "Joint failure modes in Gauteng",
         paragraphs: [
-          "Armour angles pop, elastomer inserts crack, and traffic hammers sealant from joints. Once armour fails, tyres destroy concrete arrises. We classify isolation, movement, and construction joints before quoting—each needs its own detail plate.",
+          "Armour angles pop, elastomer inserts crack, and traffic hammers sealant from joints. Once armour fails, tyres destroy concrete arrises. We classify isolation, movement, and construction joints before quoting, each needs its own detail plate.",
         ],
       },
       {
@@ -330,7 +330,7 @@ export const serviceDeepRegistryA: Pick<
       {
         title: "Traffic-rated sealants & armour",
         paragraphs: [
-          "Manufacturer-listed sealants and armour are installed for the slab's movement and traffic class. Primer choice, recess depth, and cure windows are documented so lane reopening matches datasheet limits—not guesswork.",
+          "Manufacturer-listed sealants and armour are installed for the slab's movement and traffic class. Primer choice, recess depth, and cure windows are documented so lane reopening matches datasheet limits, not guesswork.",
         ],
       },
     ],
@@ -440,7 +440,7 @@ export const serviceDeepRegistryA: Pick<
       {
         title: "Chemical DPC injection methodology (high level)",
         paragraphs: [
-          "Approved creams or resins are placed in mortar beds to reinstate a horizontal barrier. Drill spacing, depth, and cavity construction change the pattern—we set out to manufacturer and wall-build guidance, not a generic grid.",
+          "Approved creams or resins are placed in mortar beds to reinstate a horizontal barrier. Drill spacing, depth, and cavity construction change the pattern, we set out to manufacturer and wall-build guidance, not a generic grid.",
         ],
       },
       {
@@ -562,7 +562,7 @@ export const serviceDeepRegistryA: Pick<
       {
         title: "Drainage, falls, and long-term ponding risk",
         paragraphs: [
-          "Permanent ponding ages any membrane faster. If falls are wrong, we flag re-screed or levelling scopes instead of burying the hydraulic problem—SANS narratives go into the report so trustees understand combined budgets.",
+          "Permanent ponding ages any membrane faster. If falls are wrong, we flag re-screed or levelling scopes instead of burying the hydraulic problem, SANS narratives go into the report so trustees understand combined budgets.",
         ],
       },
       {
@@ -680,7 +680,7 @@ export const serviceDeepRegistryA: Pick<
       {
         title: "When torch-on is the right tool",
         paragraphs: [
-          "Torch-on fits big, open concrete decks when hot works, wind limits, and insurers align. Seams, corner reinforcement, and protection sheets follow datasheets—no improvised laps or shortcut primers that void the guarantee.",
+          "Torch-on fits big, open concrete decks when hot works, wind limits, and insurers align. Seams, corner reinforcement, and protection sheets follow datasheets, no improvised laps or shortcut primers that void the guarantee.",
         ],
       },
       {
@@ -865,7 +865,7 @@ export const serviceDeepRegistryA: Pick<
       {
         question: "What does leaking balcony repair cost in Gauteng?",
         answer:
-          "Indicative balcony waterproofing often ranges from roughly R450 to R1,200 per m² depending on tile uplift, screed correction, detailing complexity, and access. Injection-only stabilisation may cost less but is not always technically appropriate—assessments define the responsible path.",
+          "Indicative balcony waterproofing often ranges from roughly R450 to R1,200 per m² depending on tile uplift, screed correction, detailing complexity, and access. Injection-only stabilisation may cost less but is not always technically appropriate, assessments define the responsible path.",
       },
     ],
     relatedServices: [
@@ -899,14 +899,14 @@ export const serviceDeepRegistryA: Pick<
       {
         title: "Positive vs negative side interventions",
         paragraphs: [
-          "External positive barriers suit new construction; negative remedial tanking applies when bulkheads cannot be dug out. We state limitations honestly—negative builds manage hydrostatic load differently and must follow engineer design.",
+          "External positive barriers suit new construction; negative remedial tanking applies when bulkheads cannot be dug out. We state limitations honestly, negative builds manage hydrostatic load differently and must follow engineer design.",
         ],
       },
       {
         title: "Crystalline waterproofing technology",
         paragraphs: [
-          "Where specified, crystalline systems (such as Xypex-type formulations) penetrate concrete capillary tracts and react with moisture and cement hydration by-products to form non-soluble crystalline structures—rendering the concrete mass impermeable to water and aggressive groundwater chemicals.",
-          "These technologies can resist extreme hydrostatic pressure from positive or negative sides and possess self-healing properties for future hairline cracks up to approximately 0.4 mm—often specified for lift pits, elevator shafts, and underground parking grids.",
+          "Where specified, crystalline systems (such as Xypex-type formulations) penetrate concrete capillary tracts and react with moisture and cement hydration by-products to form non-soluble crystalline structures, rendering the concrete mass impermeable to water and aggressive groundwater chemicals.",
+          "These technologies can resist extreme hydrostatic pressure from positive or negative sides and possess self-healing properties for future hairline cracks up to approximately 0.4 mm, often specified for lift pits, elevator shafts, and underground parking grids.",
         ],
       },
       {
@@ -924,7 +924,7 @@ export const serviceDeepRegistryA: Pick<
       {
         title: "Protection screeds & handover monitoring",
         paragraphs: [
-          "Membranes need sacrificial screeds, careful backfilling, and sump checks where designed. Handover includes what to watch after occupancy—sump run hours, alarm tests, and who to call before a small leak becomes a lift shutdown.",
+          "Membranes need sacrificial screeds, careful backfilling, and sump checks where designed. Handover includes what to watch after occupancy, sump run hours, alarm tests, and who to call before a small leak becomes a lift shutdown.",
         ],
       },
     ],
