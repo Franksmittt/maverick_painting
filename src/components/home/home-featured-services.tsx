@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { HOME_FEATURED_SERVICES } from "@/data/home-page-content";
 
-export function HomeFeaturedServices() {
+export function HomeFeaturedServices({ hideOverviewLink = false }: { hideOverviewLink?: boolean }) {
   return (
     <section className="section-surface section-flow" aria-labelledby="home-featured-services-heading">
       <div className="page-container">
@@ -17,9 +17,15 @@ export function HomeFeaturedServices() {
               Twelve high-intent entry points across structural, waterproofing, coatings, painting, and access work.
             </p>
           </header>
-          <Button asChild className="h-auto shrink-0 rounded-lg bg-secondary px-6 py-3 font-bold text-primary hover:bg-[#4AD5E2]">
-            <Link href="/services">View all services</Link>
-          </Button>
+          {hideOverviewLink ? (
+            <Button asChild className="h-auto shrink-0 rounded-lg bg-secondary px-6 py-3 font-bold text-primary hover:bg-[#4AD5E2]">
+              <Link href="/contact">Request assessment</Link>
+            </Button>
+          ) : (
+            <Button asChild className="h-auto shrink-0 rounded-lg bg-secondary px-6 py-3 font-bold text-primary hover:bg-[#4AD5E2]">
+              <Link href="/services">View all services</Link>
+            </Button>
+          )}
         </div>
 
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
