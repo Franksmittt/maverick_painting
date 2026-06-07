@@ -1,245 +1,55 @@
-// src/app/about-us/page.tsx
-import Image from "next/image";
-import Link from 'next/link';
-import { ClipboardCheck, Medal, Scroll, Users, Wrench, Sprout, Shield } from 'lucide-react'; // Removed Layers, Home, Factory
-import { Breadcrumbs } from '@/components/breadcrumbs';
-import { FaqSection } from '@/components/faq-section';
-import { withOgImage } from '@/lib/page-metadata';
-import { Button } from '@/components/ui/button';
-import { QaProcessModule } from '@/components/qa-process-module'; // Reusing existing module
-import { TrustAndCtaStrip } from '@/components/trust-and-cta-strip';
-
-// --- Temporary Local Components for the About Page ---
-
-// NOTE: In a professional setup, complex components like this would be moved 
-// to src/components/about/section-name.tsx for clean architecture.
-
-// Component for the "Experience" statistics grid
-function ExperienceStatCard({ value, label, icon: Icon }: { value: string; label: string; icon: React.ElementType }) {
-    return (
-        <div className="flex flex-col items-center p-6 bg-primary border border-secondary/50 rounded-xl shadow-xl">
-            <Icon className="w-8 h-8 text-secondary mb-3 animate-shake" />
-            <h3 className="text-4xl font-extrabold text-white">{value}</h3>
-            <p className="text-sm uppercase tracking-wider text-tertiary mt-1 font-semibold">{label}</p>
-        </div>
-    );
-}
-
-// --- METADATA (SEO) ---
-const aboutFaqs = [
-  {
-    question: "How long has Maverick Painting operated in Gauteng?",
-    answer:
-      "Maverick was established in 2004. Our management team brings more than 50 years combined experience in coatings, waterproofing, and structural remediation for commercial and sectional-title assets.",
-  },
-  {
-    question: "What makes Maverick different from general painting contractors?",
-    answer:
-      "We position as an asset maintenance partner: engineer-aligned structural and waterproofing scopes, manufacturer-backed systems, and independent third-party QA on agreed programmes, not cosmetic repaint crews.",
-  },
-  {
-    question: "Do you hold manufacturer accreditations?",
-    answer:
-      "We are approved applicators for selected high-performance coating and waterproofing systems. Product selection follows exposure, substrate condition, and manufacturer data sheet requirements documented in our QA files.",
-  },
-  {
-    question: "Can Maverick manage phased sectional-title programmes?",
-    answer:
-      "Yes. We plan occupied-building access, containment, and night or weekend shifts where required, with bi-weekly progress reporting suitable for trustee AGMs and managing agents.",
-  },
-  {
-    question: "How do I request a condition assessment?",
-    answer:
-      "Contact us with your asset address, access constraints, and urgency. Assessments are typically scheduled within a few business days, subject to safety inductions and building occupancy.",
-  },
-  {
-    question: "Which compliance frameworks do you support?",
-    answer:
-      "We align documentation with STSMA maintenance planning, HACCP facility requirements where applicable, IRATA rope access protocols, and engineer specifications for structural remedial work.",
-  },
-] as const;
+import { Breadcrumbs } from "@/components/breadcrumbs";
+import { AboutHero } from "@/components/about/about-hero";
+import { AboutDifferencePillars } from "@/components/about/about-difference-pillars";
+import { AboutThesisSection } from "@/components/about/about-thesis-section";
+import { AboutHubNav } from "@/components/about/about-hub-nav";
+import { ServiceImageTriptych } from "@/components/service-hub/service-image-blocks";
+import { QaProcessModule } from "@/components/qa-process-module";
+import { FaqSection } from "@/components/faq-section";
+import { TrustAndCtaStrip } from "@/components/trust-and-cta-strip";
+import { AccreditationsStrip } from "@/components/accreditations-strip";
+import { aboutFaqs, ABOUT_VISUAL_STRIP } from "@/data/about-page-content";
+import { withOgImage } from "@/lib/page-metadata";
 
 export const metadata = withOgImage({
-    title: 'Owner Supervised Painting Contractors | 50+ Years Experience',
-    description: 'Established in 2004, Maverick Painting offers structural repair and specialized coatings, backed by Independent 3rd Party Quality Assurance on every high-value project.',
-    path: '/about-us',
+  title: "Owner Supervised Painting Contractors | 50+ Years Experience",
+  description:
+    "Established in 2004, Maverick Painting offers structural repair and specialized coatings, backed by Independent 3rd Party Quality Assurance on every high-value project.",
+  path: "/about-us",
 });
 
-
-// --- MAIN PAGE COMPONENT ---
 export default function AboutUsPage() {
-    return (
-        <div className="bg-primary pt-24">
-            <Breadcrumbs items={[{ label: "About us", href: "/about-us" }]} />
-            {/* --- MODULE 1: THE AUTHORITY HERO (Experience & Mission) --- */}
-            <section className="relative py-24 md:py-32 px-4 text-white">
-                <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                    
-                    {/* LEFT: Headline & Core USP */}
-                    <div className="lg:col-span-7">
-                        <p className="text-xl font-medium uppercase tracking-widest text-secondary mb-2">
-                            The Structural Asset Maintenance Partner
-                        </p>
-                        <h1 className="text-5xl md:text-7xl font-extrabold leading-tight uppercase text-white">
-                            Driven by Experience. Built for Trust.
-                        </h1>
-                        <p className="text-xl font-light mt-6 max-w-2xl text-gray-400">
-                            Maverick Painting was established in 2004 and is led by a management team with more than 50 years combined experience in the coatings and structural solutions industry. 
-                            We are committed to verifiable safety, reliability, and guaranteed quality workmanship.
-                        </p>
+  return (
+    <div className="bg-[#080808] pt-24 text-zinc-300 antialiased">
+      <Breadcrumbs items={[{ label: "About us", href: "/about-us" }]} />
 
-                        {/* Direct CTA */}
-                        <Button asChild 
-                            className="mt-8 bg-tertiary hover:bg-[#9ED529] text-primary font-bold text-lg h-12 shadow-xl transform hover:scale-[1.02]"
-                        >
-                            <Link href="/contact">
-                                Get Your Verifiable Quote Now
-                            </Link>
-                        </Button>
-                    </div>
+      <AboutHero />
 
-                    {/* RIGHT: Visual Proof & Stats Grid */}
-                    <div className="lg:col-span-5 space-y-6">
-                        <div className="relative h-80 w-full overflow-hidden rounded-xl shadow-2xl">
-                            <Image
-                                src="/images/structural-concrete-spalling-handover.jpg"
-                                alt="Maverick Painting owner-supervised structural repair handover on a Gauteng commercial asset"
-                                fill
-                                className="object-cover"
-                                sizes="(max-width: 1024px) 100vw, 40vw"
-                                priority
-                            />
-                        </div>
-                        
-                        {/* Stats Grid */}
-                        <div className="grid grid-cols-2 gap-4">
-                            <ExperienceStatCard value="50+" label="Years Combined" icon={Medal} />
-                            <ExperienceStatCard value="Est. 2004" label="Since Inception" icon={Scroll} />
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* --- MODULE 2: CORE PILLARS & INDEPENDENCE (4-Column Grid) --- */}
-            <section className="bg-gray-900 py-24 px-4 border-t border-b border-primary/50">
-                <div className="max-w-7xl mx-auto">
-                    <header className="text-center max-w-3xl mx-auto mb-16">
-                         <h2 className="text-4xl font-extrabold uppercase text-white mb-3">
-                            The Maverick Difference
-                        </h2>
-                        <p className="text-lg text-gray-400 font-light">
-                            Our process is built on four non-negotiable standards that de-risk the project for every high-value client.
-                        </p>
-                    </header>
-                    
-                    {/* 4-Column Feature Grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        
-                        {/* Pillar 1: Owner Supervision */}
-                        <div className="p-6 bg-primary rounded-xl shadow-xl border-t-4 border-tertiary transform hover:shadow-tertiary/40 transition duration-300">
-                            <Users className="w-8 h-8 text-tertiary mb-3" />
-                            <h3 className="text-xl font-bold uppercase text-white mb-2">Daily Owner Supervision</h3>
-                            <p className="text-gray-400 text-sm">
-                                Every project is owner supervised daily with a dedicated foreman on-site, ensuring the highest quality of workmanship is maintained.
-                            </p>
-                        </div>
-
-                        {/* Pillar 2: Specialized Access */}
-                        <div className="p-6 bg-primary rounded-xl shadow-xl border-t-4 border-secondary transform hover:shadow-secondary/40 transition duration-300">
-                            <Scroll className="w-8 h-8 text-secondary mb-3" />
-                            <h3 className="text-xl font-bold uppercase text-white mb-2">Advanced Access Solutions</h3>
-                            <p className="text-gray-400 text-sm">
-                                We invest in advanced access methods, including scaffolding, rope access, and cherry pickers, to ensure cost-effective access to the most difficult surfaces.
-                            </p>
-                        </div>
-                        
-                        {/* Pillar 3: Manufacturer Compliance */}
-                        <div className="p-6 bg-primary rounded-xl shadow-xl border-t-4 border-tertiary transform hover:shadow-tertiary/40 transition duration-300">
-                            <Medal className="w-8 h-8 text-tertiary mb-3" />
-                            <h3 className="text-xl font-bold uppercase text-white mb-2">Manufacturer Guarantees</h3>
-                            <p className="text-gray-400 text-sm">
-                                We work closely with the best paint & waterproofing manufacturers to issue manufacturer and workmanship guarantees.
-                            </p>
-                        </div>
-                        
-                        {/* Pillar 4: Independent QA (The Differentiator) */}
-                        <div className="p-6 bg-primary rounded-xl shadow-xl border-t-4 border-secondary transform hover:shadow-secondary/40 transition duration-300">
-                            <ClipboardCheck className="w-8 h-8 text-secondary mb-3" />
-                            <h3 className="text-xl font-bold uppercase text-white mb-2">Independent QA Process</h3>
-                            <p className="text-gray-400 text-sm">
-                                We use independent 3rd party quality assurance on all projects, with fortnightly reports on progress and film thickness.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* --- NEW MODULE 3: THE STRUCTURAL THESIS (Paint vs. Plaster) --- */}
-            <section className="py-24 px-4 text-white bg-primary">
-                 <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    
-                    {/* LEFT: Core Structural Statement */}
-                    <div className="lg:pr-12">
-                        <span className="text-xl font-medium uppercase tracking-widest text-tertiary mb-2 block">
-                            Our Core Thesis
-                        </span>
-                        <h2 className="text-5xl font-extrabold leading-tight uppercase mb-4">
-                            We Don&apos;t Just Paint Over Problems.
-                        </h2>
-                        <p className="text-xl font-light text-gray-400">
-                            We pivot the conversation from cosmetic painting to structural protection. Visible cracks, spalling, and damp are symptoms of deeper asset failure. We handle defect identification, structural repairs, waterproofing, and specialized coatings: providing a complete turn-key solution.
-                        </p>
-                        
-                        <Button asChild 
-                            variant="link"
-                            className="text-secondary hover:text-white mt-4 pl-0 text-lg font-bold"
-                        >
-                            <Link href="/structural-repairs">
-                                Explore Our Structural Repair Services &rarr;
-                            </Link>
-                        </Button>
-                    </div>
-
-                    {/* RIGHT: Service Breakdown Grid (The Proof) */}
-                    <div className="grid grid-cols-2 gap-6 p-4 bg-gray-900 rounded-xl shadow-2xl">
-                         <div className="p-4">
-                            <Wrench className="w-6 h-6 text-secondary mb-2" />
-                            <h4 className="font-bold text-lg text-white">Structural Repairs</h4>
-                            <p className="text-sm text-gray-400">Concrete spalling, crack injection, and expansion joint sealing are fixed structurally, not just patched.</p>
-                        </div>
-                        <div className="p-4">
-                            <Shield className="w-6 h-6 text-tertiary mb-2" />
-                            <h4 className="font-bold text-lg text-white">Waterproofing First</h4>
-                            <p className="text-sm text-gray-400">Guaranteed systems for flat roofs and balconies using manufacturer-approved membranes and liquid-applied coatings.</p>
-                        </div>
-                         <div className="p-4">
-                            <Sprout className="w-6 h-6 text-tertiary mb-2" />
-                            <h4 className="font-bold text-lg text-white">Turn-Key Service</h4>
-                            <p className="text-sm text-gray-400">From defect identification to preparation and final specialized coating application, we provide a full solution.</p>
-                        </div>
-                        <div className="p-4">
-                            <ClipboardCheck className="w-6 h-6 text-secondary mb-2" />
-                            <h4 className="font-bold text-lg text-white">Specialized Coatings</h4>
-                            <p className="text-sm text-gray-400">We are one of a select few applicators for high-performance, industrial-grade floor and wall systems.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            {/* --- MODULE 4: THE PROCESS IN DEPTH (Reusing existing module) --- */}
-            {/* The QA Process module is perfectly suited for the narrative architecture. */}
-            <QaProcessModule />
-
-            <FaqSection
-              headingId="about-faq-heading"
-              title="About Maverick Painting"
-              items={aboutFaqs}
-              schemaPath="/about-us"
-            />
-
-            <TrustAndCtaStrip />
-
+      <section className="section-flow border-b border-[#2a2e33]" aria-label="Gauteng project photography">
+        <div className="page-container">
+          <header className="mb-6 max-w-2xl">
+            <p className="type-eyebrow mb-2">Gauteng programmes</p>
+            <h2 className="type-h3 text-xl sm:text-2xl">Assets we maintain across the Rand</h2>
+          </header>
+          <ServiceImageTriptych images={ABOUT_VISUAL_STRIP} />
         </div>
-    );
+      </section>
+
+      <AboutDifferencePillars />
+      <AboutThesisSection />
+      <AboutHubNav />
+      <QaProcessModule />
+      <AccreditationsStrip />
+
+      <FaqSection
+        headingId="about-faq-heading"
+        title="About Maverick Painting"
+        subtitle="Company background, QA, and how we differ from general painting contractors in Gauteng."
+        items={aboutFaqs}
+        schemaPath="/about-us"
+      />
+
+      <TrustAndCtaStrip />
+    </div>
+  );
 }
