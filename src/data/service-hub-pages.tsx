@@ -56,7 +56,7 @@ export const structuralRepairsHub: ServiceHubPageConfig = {
     headingId: "structural-repairs-heading",
     h1: "Structural repairs for concrete that is failing in plain sight.",
     lead:
-      "On the Gauteng Highveld, aggressive UV, thermal cycling, and chloride-laden parking environments accelerate concrete cancer faster than inland owners expect. If you are managing spalling edges, gridlines in parking, or cracks that will not stop moving, you need an asset maintenance partner who can sequence breakout, steel passivation, structural mortars, and downstream waterproofing—with independent QA your trustees can file.",
+      "On the Gauteng Highveld, aggressive UV, thermal cycling, and chloride-laden parking environments accelerate concrete cancer faster than inland owners expect. If you are managing spalling edges, gridlines in parking, or cracks that will not stop moving, you need an asset maintenance partner who can sequence breakout, steel passivation, structural mortars, and downstream waterproofing, with independent QA your trustees can file.",
     interventionsLabel: "Core interventions",
     interventions: [
       "Rebar passivation",
@@ -81,7 +81,7 @@ export const structuralRepairsHub: ServiceHubPageConfig = {
         phase: "PHASE_02",
         title: "Concrete Remediation",
         description:
-          "Delaminated concrete is removed, reinforcement is cleaned and conditioned, and section loss is rebuilt with polymer-modified structural mortars so reinstatement is engineered—not filler hiding active corrosion.",
+          "Delaminated concrete is removed, reinforcement is cleaned and conditioned, and section loss is rebuilt with polymer-modified structural mortars so reinstatement is engineered, not filler hiding active corrosion.",
       },
       {
         phase: "PHASE_03",
@@ -216,7 +216,7 @@ export const waterproofingHub: ServiceHubPageConfig = {
   metadata: {
     title: "Flat Roof & Balcony Waterproofing Services | Guaranteed Membrane Systems",
     description:
-      "Specialist waterproofing contractors in Gauteng for flat concrete roofs, leaking balconies, and basement tanking. Torch-on, liquid-applied, and crystalline systems with independent third-party QA—serving East Rand logistics assets, West Rand sectional-title stock, and South Rand podium decks.",
+      "Specialist waterproofing contractors in Gauteng for flat concrete roofs, leaking balconies, and basement tanking. Torch-on, liquid-applied, and crystalline systems with independent third-party QA, serving East Rand logistics assets, West Rand sectional-title stock, and South Rand podium decks.",
   },
   jsonLd: {
     name: "Waterproofing & Membrane Systems",
@@ -233,7 +233,7 @@ export const waterproofingHub: ServiceHubPageConfig = {
     headingId: "waterproofing-services-heading",
     h1: "Guaranteed waterproofing that treats water ingress as a systems problem.",
     lead:
-      "Gauteng’s intense diurnal temperature swings and high-volume summer storms stress membranes at outlets, plant bases, and balcony thresholds. We specify torch-on, liquid polyurethane, or hybrid programmes after moisture risk assessment—with detailing, protection courses, and independent QA so manufacturer guarantees survive the first storm season.",
+      "Gauteng’s intense diurnal temperature swings and high-volume summer storms stress membranes at outlets, plant bases, and balcony thresholds. We specify torch-on, liquid polyurethane, or hybrid programmes after moisture risk assessment, with detailing, protection courses, and independent QA so manufacturer guarantees survive the first storm season.",
     interventionsLabel: "Core interventions",
     interventions: [
       "Torch-on membranes",
@@ -252,7 +252,7 @@ export const waterproofingHub: ServiceHubPageConfig = {
         phase: "PHASE_01",
         title: "Ingress Diagnosis",
         description:
-          "Moisture mapping, targeted cores when justified, and written narratives separate active leaks, capillary rise, and condensation so membrane spend fixes the mechanism—not whichever symptom photographed first.",
+          "Moisture mapping, targeted cores when justified, and written narratives separate active leaks, capillary rise, and condensation so membrane spend fixes the mechanism, not whichever symptom photographed first.",
       },
       {
         phase: "PHASE_02",
@@ -270,7 +270,7 @@ export const waterproofingHub: ServiceHubPageConfig = {
         phase: "PHASE_04",
         title: "Protection & QA Handover",
         description:
-          "Protection courses, traffickable wear layers where required, maintenance calendars, and independent QA records accompany handover so trustees and FMs file evidence—not apologies—after the first storm season.",
+          "Protection courses, traffickable wear layers where required, maintenance calendars, and independent QA records accompany handover so trustees and FMs file evidence, not apologies, after the first storm season.",
       },
     ],
   },
@@ -436,7 +436,7 @@ export const dampProofingHub: ServiceHubPageConfig = {
         phase: "PHASE_02",
         title: "Chemical DPC Injection",
         description:
-          "Silane, siloxane, or resin creams are placed in regulated drill patterns to reinstate a horizontal barrier matched to single-leaf, cavity, or infill construction—spacing follows manufacturer and wall-build logic.",
+          "Silane, siloxane, or resin creams are placed in regulated drill patterns to reinstate a horizontal barrier matched to single-leaf, cavity, or infill construction, spacing follows manufacturer and wall-build logic.",
       },
       {
         phase: "PHASE_03",
@@ -448,7 +448,7 @@ export const dampProofingHub: ServiceHubPageConfig = {
         phase: "PHASE_04",
         title: "Finishes & Verification",
         description:
-          "Drying curves, moisture re-checks, and compatible topcoat windows are published for trustees and homeowners so decoration starts only when equilibration—not calendar optimism—supports the paint warranty.",
+          "Drying curves, moisture re-checks, and compatible topcoat windows are published for trustees and homeowners so decoration starts only when equilibration, not calendar optimism, supports the paint warranty.",
       },
     ],
   },
@@ -610,7 +610,7 @@ export const specializedCoatingsHub: ServiceHubPageConfig = {
         phase: "PHASE_02",
         title: "Surface Preparation",
         description:
-          "Diamond grind, shot blast, or scarify to the CSP the stack demands—then repair cracks and install mitigation when vapour readings say the slab is lying about being dry enough to coat.",
+          "Diamond grind, shot blast, or scarify to the CSP the stack demands, then repair cracks and install mitigation when vapour readings say the slab is lying about being dry enough to coat.",
       },
       {
         phase: "PHASE_03",
@@ -622,7 +622,7 @@ export const specializedCoatingsHub: ServiceHubPageConfig = {
         phase: "PHASE_04",
         title: "QA & Warranty Handover",
         description:
-          "Independent thickness or holiday inspection, cure verification, and co-signed warranties close only when the full specification stack—not a shortcut “practical completion” photo—is actually complete.",
+          "Independent thickness or holiday inspection, cure verification, and co-signed warranties close only when the full specification stack, not a shortcut “practical completion” photo, is actually complete.",
       },
     ],
   },
@@ -780,7 +780,7 @@ export const paintingServicesHub: ServiceHubPageConfig = {
     headingId: "painting-services-heading",
     h1: "Commercial painting programmes trustees and plant managers can defend.",
     lead:
-      "Commercial painting on the Highveld is an asset maintenance decision—not a colour refresh. Maverick programmes combine substrate repairs, UV-stable 100% acrylics, HEA airless throughput for large logistics shells, IRATA rope access on towers, and bi-weekly independent QA reporting trustees and facility managers can defend at the AGM.",
+      "Commercial painting on the Highveld is an asset maintenance decision, not a colour refresh. Maverick programmes combine substrate repairs, UV-stable 100% acrylics, HEA airless throughput for large logistics shells, IRATA rope access on towers, and bi-weekly independent QA reporting trustees and facility managers can defend at the AGM.",
     interventionsLabel: "Core interventions",
     interventions: [
       "Body corporate programmes",
@@ -799,7 +799,7 @@ export const paintingServicesHub: ServiceHubPageConfig = {
         phase: "PHASE_01",
         title: "Scope & Specification",
         description:
-          "Surveys and maintenance-plan alignment pick coating stacks for measured substrate condition, Highveld UV, and rain exposure—no recycled specs from a building we never inspected.",
+          "Surveys and maintenance-plan alignment pick coating stacks for measured substrate condition, Highveld UV, and rain exposure, no recycled specs from a building we never inspected.",
       },
       {
         phase: "PHASE_02",
@@ -891,7 +891,7 @@ export const paintingServicesHub: ServiceHubPageConfig = {
         href: "/painting/high-volume-commercial-painting",
         label: "High-volume commercial painting",
         description:
-          "HEA airless spray programmes for warehouses, logistics hubs, and large façades—4–10× faster coverage with documented film build.",
+          "HEA airless spray programmes for warehouses, logistics hubs, and large façades, 4–10× faster coverage with documented film build.",
       },
       {
         href: "/painting/parking-garage-painting",
@@ -998,7 +998,7 @@ export const accessSolutionsHub: ServiceHubPageConfig = {
   metadata: {
     title: "Rope Access & High-Access Painting Solutions | Cost-Effective & OHS Compliant",
     description:
-      "IRATA-aligned industrial rope access for Gauteng high-rise façades, silos, and sectional-title towers—integrated with waterproofing, spalling repair, and painting. OHS-compliant safety files, rescue plans, and programme savings versus scaffold-only approaches.",
+      "IRATA-aligned industrial rope access for Gauteng high-rise façades, silos, and sectional-title towers, integrated with waterproofing, spalling repair, and painting. OHS-compliant safety files, rescue plans, and programme savings versus scaffold-only approaches.",
   },
   jsonLd: {
     name: "Rope Access & High-Access Solutions",
@@ -1034,7 +1034,7 @@ export const accessSolutionsHub: ServiceHubPageConfig = {
         phase: "PHASE_01",
         title: "Access Strategy",
         description:
-          "Façade walks, resident constraints, and temporary works cost drive the choice between rope, scaffold, and MEWPs—logistics and security risk sit in the same comparison, not a single-line hire quote.",
+          "Façade walks, resident constraints, and temporary works cost drive the choice between rope, scaffold, and MEWPs, logistics and security risk sit in the same comparison, not a single-line hire quote.",
       },
       {
         phase: "PHASE_02",

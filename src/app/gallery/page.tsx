@@ -6,7 +6,7 @@ import { withOgImage } from "@/lib/page-metadata";
 export const metadata = withOgImage({
   title: "Project Gallery | Maverick Painting Gauteng",
   description:
-    "Browse recent Maverick Painting projects across Gauteng — commercial, industrial, body corporate, waterproofing, and structural repair work.",
+    "Browse recent Maverick Painting projects across Gauteng, commercial, industrial, body corporate, waterproofing, and structural repair work.",
   path: "/gallery",
 });
 
@@ -19,7 +19,7 @@ export default function GalleryPage() {
           <h1 className="type-display max-w-3xl">Project gallery</h1>
           <p className="type-lead mt-4 max-w-2xl text-white/70">
             A selection of recent painting, waterproofing, and structural remediation projects across
-            Gauteng—body corporates, industrial plants, logistics yards, and sectional-title assets. Tap any
+            Gauteng, body corporates, industrial plants, logistics yards, and sectional-title assets. Tap any
             image to view full size or explore linked case studies where available.
           </p>
           <p className="mt-3 text-sm text-white/50">

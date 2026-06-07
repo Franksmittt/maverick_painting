@@ -109,7 +109,7 @@ export function LocationServicePage({ matrix }: { matrix: LocationServiceMatrixE
       ) : null}
       {matrix.disclaimer ? <section className="px-4 pb-12"><LegalDisclaimer variant={matrix.disclaimer} /></section> : null}
       <QaProcessModule />
-      <FaqSection headingId={`${path.replace(/\//g, "-")}-faq`} title={`${matrix.spokeLabel} FAQs — ${loc.name}`} items={matrix.faqs} schemaPath={path} />
+      <FaqSection headingId={`${path.replace(/\//g, "-")}-faq`} title={`${matrix.spokeLabel} FAQs, ${loc.name}`} items={matrix.faqs} schemaPath={path} />
       <TrustAndCtaStrip />
     </div>
   );

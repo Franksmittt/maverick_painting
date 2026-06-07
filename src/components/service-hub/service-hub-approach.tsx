@@ -3,6 +3,24 @@ import type { ServiceHubPageConfig } from "@/lib/service-hub-types";
 
 type Props = ServiceHubPageConfig["approach"];
 
+const MAX_PHASE_DESCRIPTION_LENGTH = 145;
+
+function compactPhaseDescription(description: string) {
+  const normalized = description.replace(/\s+/g, " ").trim();
+  if (normalized.length <= MAX_PHASE_DESCRIPTION_LENGTH) return normalized;
+
+  const firstSentenceMatch = normalized.match(/^.+?[.!?](?:\s|$)/);
+  const firstSentence = firstSentenceMatch?.[0]?.trim();
+  if (firstSentence && firstSentence.length <= MAX_PHASE_DESCRIPTION_LENGTH) {
+    return firstSentence;
+  }
+
+  const clipped = normalized.slice(0, MAX_PHASE_DESCRIPTION_LENGTH);
+  const lastSpace = clipped.lastIndexOf(" ");
+  const trimmed = (lastSpace > 90 ? clipped.slice(0, lastSpace) : clipped).replace(/[,:;]+$/, "").trim();
+  return `${trimmed}.`;
+}
+
 function matrixColBorderClass(index: number, total: number) {
   return cn(
     "border-[#2a2e33]",
@@ -19,10 +37,14 @@ function matrixColBorderClass(index: number, total: number) {
 }
 
 export function ServiceHubApproach({ headingId, title, subtitle, steps }: Props) {
+  const compactSteps = steps.map((step) => ({
+    ...step,
+    description: compactPhaseDescription(step.description),
+  }));
   const colClass =
-    steps.length === 4
+    compactSteps.length === 4
       ? "min-[601px]:grid-cols-2 lg:grid-cols-4"
-      : steps.length === 3
+      : compactSteps.length === 3
         ? "min-[601px]:grid-cols-3"
         : "min-[601px]:grid-cols-2";
 
@@ -37,20 +59,20 @@ export function ServiceHubApproach({ headingId, title, subtitle, steps }: Props)
         </header>
 
         <div className={cn("grid w-full min-w-0 grid-cols-1 items-stretch overflow-hidden rounded-lg border border-[#2a2e33] bg-[#111111]", colClass)}>
-          {steps.map((step, index) => (
+          {compactSteps.map((step, index) => (
             <article
               key={step.phase}
               className={cn(
                 "group relative flex h-full flex-col p-6 transition-colors duration-300 hover:bg-[#1a1c1e] sm:p-8 lg:p-10",
                 "after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-0 after:bg-secondary after:transition-[width] after:duration-300 after:ease-out group-hover:after:w-full",
-                matrixColBorderClass(index, steps.length),
+                matrixColBorderClass(index, compactSteps.length),
               )}
             >
               <p className="type-phase mb-4 shrink-0">{step.phase}</p>
               <h3 className="mb-3 line-clamp-3 min-h-[4.75rem] text-lg font-bold leading-snug text-white sm:mb-4 sm:min-h-[5.25rem] sm:text-xl lg:min-h-[5.75rem]">
                 {step.title}
               </h3>
-              <p className="type-body m-0 min-h-[7.75rem] text-zinc-500 sm:min-h-[8.25rem] lg:min-h-[8.5rem]">
+              <p className="type-body m-0 line-clamp-4 min-h-[6.75rem] text-zinc-500 sm:min-h-[7.25rem] lg:min-h-[7.5rem]">
                 {step.description}
               </p>
             </article>

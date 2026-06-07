@@ -17,7 +17,7 @@ import { withOgImage } from "@/lib/page-metadata";
 export const metadata = withOgImage({
   title: "Manufacturer Applicators & Certified Contractors",
   description:
-    "Sika, Plascon, Dulux, and Marmoran applicator status plus MBA, NAMA, OHS compliance and independent third-party QA—verifiable credentials for Gauteng structural, waterproofing, and coating programmes.",
+    "Sika, Plascon, Dulux, and Marmoran applicator status plus MBA, NAMA, OHS compliance and independent third-party QA, verifiable credentials for Gauteng structural, waterproofing, and coating programmes.",
   path: "/accreditations",
 });
 
@@ -82,7 +82,7 @@ const ComplianceChecklist = [
   {
     title: "Independent QA Process",
     description:
-      "Third-party inspectors verify preparation, environmental conditions, and film build—defensible evidence for trustees, developers, and insurers.",
+      "Third-party inspectors verify preparation, environmental conditions, and film build, defensible evidence for trustees, developers, and insurers.",
     icon: ClipboardCheck,
   },
   {

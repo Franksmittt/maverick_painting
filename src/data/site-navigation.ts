@@ -1,4 +1,4 @@
-/** Primary navigation — shared by header and mobile nav for crawl consistency. */
+/** Primary navigation, shared by header and mobile nav for crawl consistency. */
 
 export type NavItem = { name: string; href: string };
 

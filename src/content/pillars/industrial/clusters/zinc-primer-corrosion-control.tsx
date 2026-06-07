@@ -51,7 +51,7 @@ export function ZincPrimerCorrosionControlArticle() {
             <p>
               Inland atmospheric corrosion (often C3–C4) still demands disciplined stripe coats at
               edges and welds. Coastal logistics corridors near OR Tambo may approach C5-I. Match
-              primer chemistry to the specifier&apos;s exposure class—not a favourite brand from the yard.
+              primer chemistry to the specifier&apos;s exposure class, not a favourite brand from the yard.
             </p>
             <p>
               Maverick documents blast profile, ambient conditions, and dry film thickness per layer

@@ -28,7 +28,7 @@
     @apply py-10 sm:py-12 md:py-14;
   }
 
-  /** Optional hairline — reads as light, not a hard break. */
+  /** Optional hairline, reads as light, not a hard break. */
   .flow-hairline {
     @apply h-px w-full max-w-7xl bg-gradient-to-r from-transparent via-white/[0.08] to-transparent;
   }

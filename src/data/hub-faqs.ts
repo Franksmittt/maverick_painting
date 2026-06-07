@@ -6,37 +6,37 @@ export const hubFaqsByPath: Record<string, readonly ServiceDeepFaq[]> = {
     {
       question: "What is the difference between a settlement crack and a structural crack?",
       answer:
-        "Hairline settlement cracks under about 1 mm often need cosmetic filler after monitoring. Stair-step cracks, widening gaps, or cracks with rust staining usually indicate structural movement or corrosion and may need engineer review, injection, or underpinning—not paint alone.",
+        "Hairline settlement cracks under about 1 mm often need cosmetic filler after monitoring. Stair-step cracks, widening gaps, or cracks with rust staining usually indicate structural movement or corrosion and may need engineer review, injection, or underpinning, not paint alone.",
     },
     {
       question: "How does concrete spalling compromise a building's integrity?",
       answer:
-        "Carbonation and chlorides lower concrete pH, destroy the passivation layer on steel, and let rebar rust and expand—blowing off cover and reducing section. Maverick treats spalling with breakout, passivation, structural mortars, and protective coatings documented for QA files.",
+        "Carbonation and chlorides lower concrete pH, destroy the passivation layer on steel, and let rebar rust and expand, blowing off cover and reducing section. Maverick treats spalling with breakout, passivation, structural mortars, and protective coatings documented for QA files.",
     },
     {
       question: "Do you provide independent QA on structural repairs?",
       answer:
-        "Yes on agreed commercial and sectional-title scopes. Third-party inspection of preparation, environmental conditions, and film build gives trustees and engineers defensible evidence—not contractor-only sign-off.",
+        "Yes on agreed commercial and sectional-title scopes. Third-party inspection of preparation, environmental conditions, and film build gives trustees and engineers defensible evidence, not contractor-only sign-off.",
     },
     {
       question: "What does concrete spalling repair typically cost in Gauteng?",
       answer:
-        "Remedial rates commonly range from roughly R800 to R2,500 per m² depending on breakout depth, steel treatment, access, and coating scope. Maverick quotes after on-site sounding and moisture profiling—not generic m² bait pricing.",
+        "Remedial rates commonly range from roughly R800 to R2,500 per m² depending on breakout depth, steel treatment, access, and coating scope. Maverick quotes after on-site sounding and moisture profiling, not generic m² bait pricing.",
     },
   ],
   "/waterproofing-services": [
     {
       question: "Why do flat concrete roofs in Gauteng leak so frequently?",
       answer:
-        "Highveld UV, thermal cycling, ponding, and failed detailing at outlets and penetrations age membranes quickly. Maverick specifies systems and maintenance calendars matched to substrate condition—not single-layer shortcuts.",
+        "Highveld UV, thermal cycling, ponding, and failed detailing at outlets and penetrations age membranes quickly. Maverick specifies systems and maintenance calendars matched to substrate condition, not single-layer shortcuts.",
     },
     {
       question: "Will home insurance cover my leaking roof damage?",
       answer:
-        "Policies often cover sudden storm damage but exclude gradual deterioration and lack of maintenance. Documented QA-backed maintenance programmes help trustees and owners show reasonable care—Maverick supplies reports; we do not adjudicate insurance.",
+        "Policies often cover sudden storm damage but exclude gradual deterioration and lack of maintenance. Documented QA-backed maintenance programmes help trustees and owners show reasonable care, Maverick supplies reports; we do not adjudicate insurance.",
     },
     {
-      question: "Torch-on or liquid membrane—which is better?",
+      question: "Torch-on or liquid membrane, which is better?",
       answer:
         "Depends on geometry, fire constraints, and substrate moisture. Open decks may suit torch-on; complex details and occupied podiums often favour liquid or hybrid programmes after adhesion and moisture testing.",
     },
@@ -50,12 +50,12 @@ export const hubFaqsByPath: Record<string, readonly ServiceDeepFaq[]> = {
     {
       question: "How can I tell the difference between rising damp and condensation?",
       answer:
-        "Rising damp typically shows hygroscopic salt tide marks up to about one metre from the floor via capillary action. Condensation often appears as black mould on cold thermal bridges in bathrooms and bedrooms with poor ventilation—different remedies apply.",
+        "Rising damp typically shows hygroscopic salt tide marks up to about one metre from the floor via capillary action. Condensation often appears as black mould on cold thermal bridges in bathrooms and bedrooms with poor ventilation, different remedies apply.",
     },
     {
       question: "What is negative side waterproofing for basements?",
       answer:
-        "When exterior excavation is impossible, crystalline or cementitious systems are applied internally to manage hydrostatic pressure. Feasibility depends on wall build and engineer design—Maverick implements specified systems with active leak control first.",
+        "When exterior excavation is impossible, crystalline or cementitious systems are applied internally to manage hydrostatic pressure. Feasibility depends on wall build and engineer design, Maverick implements specified systems with active leak control first.",
     },
   ],
   "/specialized-coatings": [
@@ -74,12 +74,12 @@ export const hubFaqsByPath: Record<string, readonly ServiceDeepFaq[]> = {
     {
       question: "Why is HEA airless spraying used on large commercial buildings?",
       answer:
-        "High Efficiency Airless technology reduces overspray while delivering uniform film build on large fields—often 4–10× faster than roller methods on warehouses and logistics shells when preparation is disciplined.",
+        "High Efficiency Airless technology reduces overspray while delivering uniform film build on large fields, often 4–10× faster than roller methods on warehouses and logistics shells when preparation is disciplined.",
     },
     {
       question: "How do body corporates reduce painting liability?",
       answer:
-        "STSMA requires a 10-year Maintenance, Repair and Replacement Plan (MRRP). Independent QA, manufacturer-backed systems, and phased scopes give trustees auditable proof of fiduciary care—see our body corporate solutions page.",
+        "STSMA requires a 10-year Maintenance, Repair and Replacement Plan (MRRP). Independent QA, manufacturer-backed systems, and phased scopes give trustees auditable proof of fiduciary care, see our body corporate solutions page.",
     },
   ],
   "/access-solutions": [
@@ -91,7 +91,7 @@ export const hubFaqsByPath: Record<string, readonly ServiceDeepFaq[]> = {
     {
       question: "When is rope access not appropriate?",
       answer:
-        "Heavy breakout, uncertified anchors, or extreme weather may require scaffold or MEWP hybrid programmes. We recommend the access method from risk and cost—not habit.",
+        "Heavy breakout, uncertified anchors, or extreme weather may require scaffold or MEWP hybrid programmes. We recommend the access method from risk and cost, not habit.",
     },
   ],
 };

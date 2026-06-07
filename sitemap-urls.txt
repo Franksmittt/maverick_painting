@@ -1,4 +1,4 @@
-# Maverick Painting Sitemap — 2026-06-07
+# Maverick Painting Sitemap, 2026-06-07
 # Submit this index URL in Google Search Console:
 # https://www.maverickpainting.co.za/sitemap.xml
 # Total URLs: 137

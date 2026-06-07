@@ -25,7 +25,7 @@ const articles: StandaloneBlogArticle[] = [
     slug: "stsma-10-year-maintenance-plan-guide",
     title: "Demystifying the STSMA 10-Year Maintenance Plan for Trustees",
     lead:
-      "Prescribed Management Rule 22 requires a Maintenance, Repair and Replacement Plan (MRRP). This guide explains what trustees must document—and how independent QA protects fiduciary decisions.",
+      "Prescribed Management Rule 22 requires a Maintenance, Repair and Replacement Plan (MRRP). This guide explains what trustees must document, and how independent QA protects fiduciary decisions.",
     pillarLabel: "Structural remediation guides",
     pillarHref: "/blog/structural-remediation",
     categoryLabel: "STSMA & sectional title",
@@ -39,8 +39,8 @@ const articles: StandaloneBlogArticle[] = [
       {
         heading: "Why the MRRP is not optional",
         paragraphs: [
-          "The Sectional Titles Schemes Management Act (STSMA) obliges trustees to plan maintenance across common property—not react only when paint fails or roofs leak. Prescribed Management Rule 22 requires a Maintenance, Repair and Replacement Plan (MRRP) that looks forward at least ten years, while PMR 24 governs how reserve funds are raised and applied.",
-          "Trustees who cannot show a credible plan—and evidence that major works followed engineer or manufacturer specifications—face personal fiduciary risk when owners or the Community Schemes Ombud Service (CSOS) challenge decisions.",
+          "The Sectional Titles Schemes Management Act (STSMA) obliges trustees to plan maintenance across common property, not react only when paint fails or roofs leak. Prescribed Management Rule 22 requires a Maintenance, Repair and Replacement Plan (MRRP) that looks forward at least ten years, while PMR 24 governs how reserve funds are raised and applied.",
+          "Trustees who cannot show a credible plan, and evidence that major works followed engineer or manufacturer specifications, face personal fiduciary risk when owners or the Community Schemes Ombud Service (CSOS) challenge decisions.",
         ],
       },
       {
@@ -50,7 +50,7 @@ const articles: StandaloneBlogArticle[] = [
         ],
         bulletList: [
           "Photographic condition logs with dated moisture and DFT readings where coatings are involved.",
-          "Engineer-aligned scopes for spalling, cracks, and structural elements—not cosmetic patches.",
+          "Engineer-aligned scopes for spalling, cracks, and structural elements, not cosmetic patches.",
           "Manufacturer maintenance calendars tied to warranty validity (torch-on, liquids, membranes).",
           "Independent QA sign-off on high-value renewals to create an auditable paper trail.",
         ],
@@ -58,7 +58,7 @@ const articles: StandaloneBlogArticle[] = [
       {
         heading: "How Maverick supports trustees without giving legal advice",
         paragraphs: [
-          "We supply technical surveys, phased programmes, and QA documentation that managing agents can embed into MRRP updates. We do not draft PMR resolutions or interpret CSOS rulings—that remains your attorney or managing agent’s role.",
+          "We supply technical surveys, phased programmes, and QA documentation that managing agents can embed into MRRP updates. We do not draft PMR resolutions or interpret CSOS rulings, that remains your attorney or managing agent’s role.",
         ],
       },
     ],
@@ -87,8 +87,8 @@ const articles: StandaloneBlogArticle[] = [
       {
         heading: "Administrative fund vs reserve fund",
         paragraphs: [
-          "Day-to-day expenses—security, gardening, insurance administration—flow through the administrative fund. Capital renewals (roof membranes, structural spalling, podium waterproofing) should be funded from the reserve fund when properly budgeted in the MRRP.",
-          "When reserve balances are insufficient, trustees may need special levies—but only within statutory processes. Under-budgeting painting while ignoring waterproofing guarantees is a common trigger for owner disputes.",
+          "Day-to-day expenses, security, gardening, insurance administration, flow through the administrative fund. Capital renewals (roof membranes, structural spalling, podium waterproofing) should be funded from the reserve fund when properly budgeted in the MRRP.",
+          "When reserve balances are insufficient, trustees may need special levies, but only within statutory processes. Under-budgeting painting while ignoring waterproofing guarantees is a common trigger for owner disputes.",
         ],
       },
       {
@@ -101,7 +101,7 @@ const articles: StandaloneBlogArticle[] = [
       {
         heading: "Itemised bills of quantities protect trustees",
         paragraphs: [
-          "Request line items for access, substrate repairs, membranes, coatings, and QA—not one blended m² rate. Maverick provides itemised responses for tender committees so reserve drawdowns map to defensible scope.",
+          "Request line items for access, substrate repairs, membranes, coatings, and QA, not one blended m² rate. Maverick provides itemised responses for tender committees so reserve drawdowns map to defensible scope.",
         ],
       },
     ],
@@ -123,7 +123,7 @@ const articles: StandaloneBlogArticle[] = [
     metadata: {
       title: "Rising Damp vs Condensation in Gauteng | Diagnostic Guide",
       description:
-        "Capillary rise, hygroscopic salts, thermal bridges, and HVAC condensation—how to tell them apart before chemical DPC injection or replastering.",
+        "Capillary rise, hygroscopic salts, thermal bridges, and HVAC condensation, how to tell them apart before chemical DPC injection or replastering.",
       path: "/blog/rising-damp-vs-condensation-gauteng",
     },
     sections: [
@@ -136,13 +136,13 @@ const articles: StandaloneBlogArticle[] = [
       {
         heading: "Condensation signatures",
         paragraphs: [
-          "Condensation forms where warm, humid air meets cold surfaces—bathroom ceilings, north-facing corners, and uninsulated steel windows. Black mould without salt bands often points to ventilation or leak paths, not capillary rise.",
+          "Condensation forms where warm, humid air meets cold surfaces, bathroom ceilings, north-facing corners, and uninsulated steel windows. Black mould without salt bands often points to ventilation or leak paths, not capillary rise.",
         ],
       },
       {
         heading: "The right remedy for each mechanism",
         paragraphs: [
-          "Rising damp may need chemical DPC injection and salt-retardant replaster systems. Condensation may need leak repair, extraction fans, or insulation—not injection. Maverick profiles moisture before recommending spend.",
+          "Rising damp may need chemical DPC injection and salt-retardant replaster systems. Condensation may need leak repair, extraction fans, or insulation, not injection. Maverick profiles moisture before recommending spend.",
         ],
       },
     ],
@@ -157,14 +157,14 @@ const articles: StandaloneBlogArticle[] = [
     slug: "highveld-climate-concrete-roof-damage",
     title: "The Highveld Climate: How Thermal Cycling Damages Concrete Roofs",
     lead:
-      "Intense UV, hail, and daily thermal swing age flat concrete roofs faster than inland owners expect. Membrane choice must match climate stress—not brochure aesthetics.",
+      "Intense UV, hail, and daily thermal swing age flat concrete roofs faster than inland owners expect. Membrane choice must match climate stress, not brochure aesthetics.",
     pillarLabel: "Waterproofing guides",
     pillarHref: "/blog/waterproofing",
     categoryLabel: "Flat roofs",
     metadata: {
       title: "Highveld Climate & Concrete Roof Waterproofing in Gauteng",
       description:
-        "How UV, thermal cycling, and hailstorms degrade flat concrete roofs—and which membrane systems and maintenance calendars protect Gauteng assets.",
+        "How UV, thermal cycling, and hailstorms degrade flat concrete roofs, and which membrane systems and maintenance calendars protect Gauteng assets.",
       path: "/blog/highveld-climate-concrete-roof-damage",
     },
     sections: [
@@ -198,7 +198,7 @@ const articles: StandaloneBlogArticle[] = [
     slug: "positive-negative-side-waterproofing",
     title: "Positive vs. Negative Side Waterproofing for West Rand Basements",
     lead:
-      "When you cannot excavate externally, crystalline and cementitious tanking applied internally can manage hydrostatic pressure—if the wall build and engineer design allow it.",
+      "When you cannot excavate externally, crystalline and cementitious tanking applied internally can manage hydrostatic pressure, if the wall build and engineer design allow it.",
     pillarLabel: "Waterproofing guides",
     pillarHref: "/blog/waterproofing",
     categoryLabel: "Basement tanking",
@@ -224,7 +224,7 @@ const articles: StandaloneBlogArticle[] = [
       {
         heading: "Feasibility and engineer involvement",
         paragraphs: [
-          "Double-leaf walls, high hydrostatic heads, and AMD-influenced groundwater may require structural upgrades—not paint-grade sealers. Maverick implements specified systems; we do not self-certify structural designs.",
+          "Double-leaf walls, high hydrostatic heads, and AMD-influenced groundwater may require structural upgrades, not paint-grade sealers. Maverick implements specified systems; we do not self-certify structural designs.",
         ],
       },
     ],
@@ -239,7 +239,7 @@ const articles: StandaloneBlogArticle[] = [
     slug: "sans-731-warehouse-line-marking",
     title: "SANS 731 Compliance: The Complete Guide to Warehouse Line Marking",
     lead:
-      "Forklift routing, disabled bays, and fire lanes must survive tyre scrub. Material choice and layout standards matter for OHS audits—not only colour.",
+      "Forklift routing, disabled bays, and fire lanes must survive tyre scrub. Material choice and layout standards matter for OHS audits, not only colour.",
     pillarLabel: "Industrial guides",
     pillarHref: "/blog/industrial",
     categoryLabel: "Line marking",
@@ -253,7 +253,7 @@ const articles: StandaloneBlogArticle[] = [
       {
         heading: "Layout and visibility",
         paragraphs: [
-          "Aisles, pedestrian routes, disabled parking, and fire lanes must be visible under warehouse lighting. Layouts follow SANS and facility OHS plans—not ad-hoc floor painting.",
+          "Aisles, pedestrian routes, disabled parking, and fire lanes must be visible under warehouse lighting. Layouts follow SANS and facility OHS plans, not ad-hoc floor painting.",
         ],
       },
       {
@@ -265,7 +265,7 @@ const articles: StandaloneBlogArticle[] = [
       {
         heading: "Surface prep and cure windows",
         paragraphs: [
-          "Oil contamination and weak laitance cause peel-off within weeks. Maverick profiles substrates and publishes lane reopening times based on datasheet cure—not guesswork.",
+          "Oil contamination and weak laitance cause peel-off within weeks. Maverick profiles substrates and publishes lane reopening times based on datasheet cure, not guesswork.",
         ],
       },
     ],
@@ -287,7 +287,7 @@ const articles: StandaloneBlogArticle[] = [
     metadata: {
       title: "Parking Garage Concrete Spalling Repair | Gauteng",
       description:
-        "Carbonation, chloride attack, and structural repair methodology for Gauteng parking decks—with passivation, structural mortars, and QA documentation.",
+        "Carbonation, chloride attack, and structural repair methodology for Gauteng parking decks, with passivation, structural mortars, and QA documentation.",
       path: "/blog/parking-garage-concrete-spalling-repair",
     },
     sections: [
@@ -321,7 +321,7 @@ const articles: StandaloneBlogArticle[] = [
     slug: "r638-food-safety-flooring-regulations",
     title: "R638 Food Safety Regulations: Flooring Requirements for Abattoirs",
     lead:
-      "Regulation R638 and HACCP programmes demand seamless, cleanable floors with integral coving—not painted concrete that chips under washdown.",
+      "Regulation R638 and HACCP programmes demand seamless, cleanable floors with integral coving, not painted concrete that chips under washdown.",
     pillarLabel: "Industrial guides",
     pillarHref: "/blog/industrial",
     categoryLabel: "HACCP floors",
@@ -362,7 +362,7 @@ const articles: StandaloneBlogArticle[] = [
     slug: "rope-access-vs-scaffolding-costs",
     title: "Why Commercial Rope Access is Cheaper and Safer Than Scaffolding",
     lead:
-      "For many Gauteng façades, rope access cuts mobilisation time, street footprint, and security exposure—when anchors and rescue plans are competent.",
+      "For many Gauteng façades, rope access cuts mobilisation time, street footprint, and security exposure, when anchors and rescue plans are competent.",
     pillarLabel: "Industrial guides",
     pillarHref: "/blog/industrial",
     categoryLabel: "Access methods",
@@ -382,7 +382,7 @@ const articles: StandaloneBlogArticle[] = [
       {
         heading: "Where scaffold still applies",
         paragraphs: [
-          "Heavy material hoisting, wide working platforms, or failed anchor surveys may still require scaffold or MEWP hybrids. Maverick selects access method from risk assessment—not habit.",
+          "Heavy material hoisting, wide working platforms, or failed anchor surveys may still require scaffold or MEWP hybrids. Maverick selects access method from risk assessment, not habit.",
         ],
       },
       {
@@ -403,7 +403,7 @@ const articles: StandaloneBlogArticle[] = [
     slug: "industrial-expansion-joint-failure",
     title: "Expansion Joint Failure: Risks to Heavy Industrial Flooring",
     lead:
-      "Forklift wheels destroy failed joint arrises. Traffic-rated sealants and armour must match slab movement—not hardware-store polyurethane.",
+      "Forklift wheels destroy failed joint arrises. Traffic-rated sealants and armour must match slab movement, not hardware-store polyurethane.",
     pillarLabel: "Structural remediation guides",
     pillarHref: "/blog/structural-remediation",
     categoryLabel: "Expansion joints",
@@ -429,7 +429,7 @@ const articles: StandaloneBlogArticle[] = [
       {
         heading: "Interface with waterproofing",
         paragraphs: [
-          "Podium and parking joints must maintain membrane continuity through the joint box—blind sealant shots risk voiding waterproofing guarantees.",
+          "Podium and parking joints must maintain membrane continuity through the joint box, blind sealant shots risk voiding waterproofing guarantees.",
         ],
       },
     ],
@@ -458,7 +458,7 @@ const articles: StandaloneBlogArticle[] = [
       {
         heading: "Gradual deterioration exclusions",
         paragraphs: [
-          "Many policies cover sudden storm ingress but exclude leaks caused by lack of maintenance, ponding, or aged membranes. Trustees must show reasonable care—not only emergency patch quotes after failure.",
+          "Many policies cover sudden storm ingress but exclude leaks caused by lack of maintenance, ponding, or aged membranes. Trustees must show reasonable care, not only emergency patch quotes after failure.",
         ],
       },
       {
@@ -499,7 +499,7 @@ const articles: StandaloneBlogArticle[] = [
       {
         heading: "Structural and waterproofing interfaces",
         paragraphs: [
-          "Handover packs should include engineer sign-off where required, membrane holiday tests, moisture readings at coating application, and curing records for structural mortars—not only aesthetic snagging lists.",
+          "Handover packs should include engineer sign-off where required, membrane holiday tests, moisture readings at coating application, and curing records for structural mortars, not only aesthetic snagging lists.",
         ],
       },
       {
@@ -526,21 +526,21 @@ const articles: StandaloneBlogArticle[] = [
     slug: "sans-10021-waterproofing",
     title: "SANS 10021 Waterproofing: What Facility Managers Must Specify",
     lead:
-      "South Africa’s national standard for waterproofing buildings defines how membranes, flashings, and outlets must perform—not how contractors should market generic paint-on sealants.",
+      "South Africa’s national standard for waterproofing buildings defines how membranes, flashings, and outlets must perform, not how contractors should market generic paint-on sealants.",
     pillarLabel: "Waterproofing guides",
     pillarHref: "/blog/waterproofing",
     categoryLabel: "SANS compliance",
     metadata: {
       title: "SANS 10021 Waterproofing Guide for Commercial Buildings",
       description:
-        "How SANS 10021 shapes flat roof, podium, and balcony waterproofing specifications in Gauteng—outlets, laps, curing, and independent QA for warranty validity.",
+        "How SANS 10021 shapes flat roof, podium, and balcony waterproofing specifications in Gauteng, outlets, laps, curing, and independent QA for warranty validity.",
       path: "/blog/sans-10021-waterproofing",
     },
     sections: [
       {
         heading: "Why SANS 10021 matters on commercial assets",
         paragraphs: [
-          "Facility managers and engineers reference SANS 10021 (waterproofing of buildings, including damp-proofing and vapour barriers) when specifying torch-on, liquid, and sheet systems. Deviations from lap widths, outlet detailing, and curing windows are common causes of premature failure—not product brand alone.",
+          "Facility managers and engineers reference SANS 10021 (waterproofing of buildings, including damp-proofing and vapour barriers) when specifying torch-on, liquid, and sheet systems. Deviations from lap widths, outlet detailing, and curing windows are common causes of premature failure, not product brand alone.",
         ],
       },
       {
@@ -587,7 +587,7 @@ const articles: StandaloneBlogArticle[] = [
       {
         heading: "Legal framework",
         paragraphs: [
-          "The Occupational Health and Safety Act requires a documented risk assessment, competent supervision, and emergency rescue capability for work at height. Rope access is not a shortcut around scaffold regulations—it is a specialised method with its own codes of practice.",
+          "The Occupational Health and Safety Act requires a documented risk assessment, competent supervision, and emergency rescue capability for work at height. Rope access is not a shortcut around scaffold regulations, it is a specialised method with its own codes of practice.",
         ],
       },
       {

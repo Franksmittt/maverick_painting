@@ -36,7 +36,7 @@ const entries = shuffled.map((file, index) => {
   fs.copyFileSync(path.join(srcDir, file), path.join(destDir, destName));
   return {
     src: `/images/gallery/${destName}`,
-    alt: `Maverick Painting project work — Gauteng ${index + 1}`,
+    alt: `Maverick Painting project work, Gauteng ${index + 1}`,
   };
 });
 

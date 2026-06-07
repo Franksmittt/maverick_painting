@@ -20,9 +20,9 @@ export const locationRegionHubs: LocationRegionHub[] = [
     headline: "Industrial coatings, logistics floors & plant maintenance",
     metaTitle: "East Rand Painting & Industrial Coatings Contractors",
     metaDescription:
-      "Boksburg, Kempton Park, Germiston, Isando, and Benoni—HACCP floors, warehouse painting, SANS line marking, corrosion control, and structural repairs with independent QA.",
+      "Boksburg, Kempton Park, Germiston, Isando, and Benoni, HACCP floors, warehouse painting, SANS line marking, corrosion control, and structural repairs with independent QA.",
     narrative:
-      "The East Rand is Gauteng's logistics and manufacturing corridor. Facility managers need corrosion stacks, rapid-cure resin floors, HEA airless programmes, and OHS-aware phasing—not residential repaint crews. Maverick mobilises across Boksburg, Kempton Park, Germiston, Isando, Benoni, and lifestyle estates with programmes sized for production continuity.",
+      "The East Rand is Gauteng's logistics and manufacturing corridor. Facility managers need corrosion stacks, rapid-cure resin floors, HEA airless programmes, and OHS-aware phasing, not residential repaint crews. Maverick mobilises across Boksburg, Kempton Park, Germiston, Isando, Benoni, and lifestyle estates with programmes sized for production continuity.",
     focusAreas: [
       "Industrial corrosion control & silo coatings",
       "HACCP and R638-aligned hygienic flooring",
@@ -42,7 +42,7 @@ export const locationRegionHubs: LocationRegionHub[] = [
     headline: "Damp proofing, basement tanking & subsidence-aware structural work",
     metaTitle: "West Rand Waterproofing & Damp Proofing Contractors",
     metaDescription:
-      "Roodepoort, Krugersdorp, and West Rand assets—rising damp injection, negative-side basement tanking, concrete spalling, and engineer-aligned remediation.",
+      "Roodepoort, Krugersdorp, and West Rand assets, rising damp injection, negative-side basement tanking, concrete spalling, and engineer-aligned remediation.",
     narrative:
       "Mining legacy hydrology and dolomite-aware geology make the West Rand a damp and subterranean challenge. Capillary rise, lateral moisture, and hydrostatic basement pressure need diagnosis before cosmetic seals. Maverick serves Roodepoort, Krugersdorp, and surrounding nodes with chemical DPC, crystalline tanking, and structural repair sequences.",
     focusAreas: [
@@ -64,7 +64,7 @@ export const locationRegionHubs: LocationRegionHub[] = [
     headline: "STSMA body corporate, estates & balcony waterproofing",
     metaTitle: "South Rand Body Corporate Painting & Waterproofing",
     metaDescription:
-      "Alberton, Glenvista, Meyersdal, and South Rand sectional-title schemes—STSMA maintenance, leaking balconies, roof renewal, and independent QA for trustees.",
+      "Alberton, Glenvista, Meyersdal, and South Rand sectional-title schemes, STSMA maintenance, leaking balconies, roof renewal, and independent QA for trustees.",
     narrative:
       "The South Rand is dense with sectional-title and lifestyle estates where trustees face STSMA, CSOS, and insurance scrutiny. Programmes must document common-property maintenance, balcony and roof interfaces, and manufacturer-backed warranties trustees can file at AGMs.",
     focusAreas: [
@@ -86,7 +86,7 @@ export const locationRegionHubs: LocationRegionHub[] = [
     headline: "Sandton, Midrand, Centurion & Pretoria commercial assets",
     metaTitle: "Central Gauteng Painting & Structural Maintenance",
     metaDescription:
-      "Sandton, Midrand, Centurion, Pretoria East, and Johannesburg North—high-rise rope access, commercial waterproofing, and mixed industrial programmes.",
+      "Sandton, Midrand, Centurion, Pretoria East, and Johannesburg North, high-rise rope access, commercial waterproofing, and mixed industrial programmes.",
     narrative:
       "Central Gauteng combines financial district towers, logistics growth along the N1, and Pretoria East estates. Maverick delivers rope-access façades, podium waterproofing, techno-park industrial coatings, and sectional-title programmes with third-party QA where appointed.",
     focusAreas: [

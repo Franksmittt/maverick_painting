@@ -12,7 +12,7 @@ import { withOgImage } from "@/lib/page-metadata";
 export const metadata = withOgImage({
   title: "Gauteng Service Locations | East, West, South & Central Rand",
   description:
-    "Maverick Painting serves Sandton, Midrand, Boksburg, Roodepoort, Alberton, and 17+ Gauteng nodes—structural repairs, waterproofing, industrial coatings, and independent QA by region.",
+    "Maverick Painting serves Sandton, Midrand, Boksburg, Roodepoort, Alberton, and 17+ Gauteng nodes, structural repairs, waterproofing, industrial coatings, and independent QA by region.",
   path: "/locations",
 });
 
@@ -25,7 +25,7 @@ const locationsFaq = [
   {
     question: "Do you offer localised service pages?",
     answer:
-      "Yes. High-intent combinations—such as leaking balcony repair in Sandton or HACCP flooring in Isando—have dedicated local pages that link to full technical methodologies and independent QA documentation.",
+      "Yes. High-intent combinations, such as leaking balcony repair in Sandton or HACCP flooring in Isando, have dedicated local pages that link to full technical methodologies and independent QA documentation.",
   },
   {
     question: "How quickly can you assess an asset?",

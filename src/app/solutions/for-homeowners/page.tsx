@@ -5,7 +5,7 @@ import { withOgImage } from "@/lib/page-metadata";
 export const metadata = withOgImage({
   title: "Premium Home Painting & Structural Protection Gauteng | Maverick",
   description:
-    "High-end residential painting with rising damp diagnostics, roof and balcony waterproofing, and manufacturer-backed finishes for Gauteng estates and townhouses—documented QA optional on larger scopes.",
+    "High-end residential painting with rising damp diagnostics, roof and balcony waterproofing, and manufacturer-backed finishes for Gauteng estates and townhouses, documented QA optional on larger scopes.",
   path: "/solutions/for-homeowners",
 });
 
@@ -18,12 +18,12 @@ const faqs = [
   {
     question: "How long until we can repaint after damp treatment?",
     answer:
-      "Masonry must equilibrate after injection and replastering. We publish drying curves and compatible primer windows—decoration before stabilisation voids most promises.",
+      "Masonry must equilibrate after injection and replastering. We publish drying curves and compatible primer windows, decoration before stabilisation voids most promises.",
   },
   {
     question: "Do you use low-VOC paints indoors?",
     answer:
-      "Yes—ultra-low and zero-VOC systems with documented ventilation guidance for occupied homes and sensitive occupants.",
+      "Yes, ultra-low and zero-VOC systems with documented ventilation guidance for occupied homes and sensitive occupants.",
   },
 ] as const;
 
@@ -32,8 +32,8 @@ export default function HomeownerSolutionsPage() {
     <SolutionPageLayout
       path="/solutions/for-homeowners"
       breadcrumbLabel="Homeowners"
-      h1="Protect your home from Gauteng weather—not just refresh the colour."
-      lead="On the Highveld, UV, thermal cycling, and summer storms destroy generic paint and hardware-store waterproofing within seasons. Maverick diagnoses moisture and structural drivers first, then applies manufacturer-backed systems so your investment is protected—not cosmetically masked."
+      h1="Protect your home from Gauteng weather, not just refresh the colour."
+      lead="On the Highveld, UV, thermal cycling, and summer storms destroy generic paint and hardware-store waterproofing within seasons. Maverick diagnoses moisture and structural drivers first, then applies manufacturer-backed systems so your investment is protected, not cosmetically masked."
       valueProps={[
         {
           title: "Diagnostics before decoration",
@@ -52,14 +52,14 @@ export default function HomeownerSolutionsPage() {
         {
           title: "Documented quality",
           description:
-            "Larger scopes can include independent QA and manufacturer warranty paths—execution to data sheet, not guesswork.",
+            "Larger scopes can include independent QA and manufacturer warranty paths, execution to data sheet, not guesswork.",
           icon: CheckSquare,
           accentColor: "border-secondary",
         },
         {
           title: "Director oversight",
           description:
-            "Premium residential projects receive hands-on site leadership—not anonymous subcontractor-only crews.",
+            "Premium residential projects receive hands-on site leadership, not anonymous subcontractor-only crews.",
           icon: Users,
           accentColor: "border-tertiary",
         },
@@ -67,9 +67,9 @@ export default function HomeownerSolutionsPage() {
       narrative={{
         heading: "West Rand damp, estate façades, and roof reality",
         paragraphs: [
-          "Homeowners in Roodepoort, Krugersdorp, and legacy suburbs often face capillary moisture and subsidence-related cracking—not problems solved by exterior paint alone. We coordinate damp proofing, tanking, and structural notes where needed before decorative programmes.",
+          "Homeowners in Roodepoort, Krugersdorp, and legacy suburbs often face capillary moisture and subsidence-related cracking, not problems solved by exterior paint alone. We coordinate damp proofing, tanking, and structural notes where needed before decorative programmes.",
           "Estate and townhouse complexes may still require HOA colour approval and security inductions. We supply mock-ups and phased access plans that respect community rules.",
-          "Heat-reflective roof coatings and compatible waterproofing stacks extend service life when applied after sound substrate preparation—especially on top-floor units exposed to full Highveld sun.",
+          "Heat-reflective roof coatings and compatible waterproofing stacks extend service life when applied after sound substrate preparation, especially on top-floor units exposed to full Highveld sun.",
         ],
       }}
       serviceLinks={[

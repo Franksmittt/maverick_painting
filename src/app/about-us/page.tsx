@@ -35,7 +35,7 @@ const aboutFaqs = [
   {
     question: "What makes Maverick different from general painting contractors?",
     answer:
-      "We position as an asset maintenance partner: engineer-aligned structural and waterproofing scopes, manufacturer-backed systems, and independent third-party QA on agreed programmes—not cosmetic repaint crews.",
+      "We position as an asset maintenance partner: engineer-aligned structural and waterproofing scopes, manufacturer-backed systems, and independent third-party QA on agreed programmes, not cosmetic repaint crews.",
   },
 ] as const;
 

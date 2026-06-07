@@ -13,17 +13,17 @@ const faqs = [
   {
     question: "How does independent QA help at practical completion?",
     answer:
-      "Timestamped records of substrate preparation, environmental readings, and film build give developers defensible evidence during defects liability periods—reducing disputes with body corporates and incoming facility managers.",
+      "Timestamped records of substrate preparation, environmental readings, and film build give developers defensible evidence during defects liability periods, reducing disputes with body corporates and incoming facility managers.",
   },
   {
     question: "Do you work to SANS 10400-related coating requirements?",
     answer:
-      "We implement engineer and manufacturer specifications aligned with national building regulations pathways for structural and fire-related interfaces—execution documentation is our deliverable; engineering sign-off remains with the appointed professional.",
+      "We implement engineer and manufacturer specifications aligned with national building regulations pathways for structural and fire-related interfaces, execution documentation is our deliverable; engineering sign-off remains with the appointed professional.",
   },
   {
     question: "Can you fix snags before final coat?",
     answer:
-      "Yes—spalling, crack injection, balcony waterproofing, and joint rehabilitation can be sequenced in one programme before architectural and protective topcoats close the envelope.",
+      "Yes, spalling, crack injection, balcony waterproofing, and joint rehabilitation can be sequenced in one programme before architectural and protective topcoats close the envelope.",
   },
 ] as const;
 
@@ -33,7 +33,7 @@ export default function DeveloperSolutionsPage() {
       path="/solutions/for-developers"
       breadcrumbLabel="Developers"
       h1="Handover-ready assets with QA files your QS can audit."
-      lead="Developers need coatings and waterproofing that survive defects liability—not cosmetic close-out paint. Maverick delivers manufacturer-aligned application, structural remediation where required, and independent third-party QA so practical completion packs include measurable evidence, not verbal assurances from site."
+      lead="Developers need coatings and waterproofing that survive defects liability, not cosmetic close-out paint. Maverick delivers manufacturer-aligned application, structural remediation where required, and independent third-party QA so practical completion packs include measurable evidence, not verbal assurances from site."
       valueProps={[
         {
           title: "Manufacturer-aligned execution",
@@ -68,8 +68,8 @@ export default function DeveloperSolutionsPage() {
         heading: "Mitigating latent defects after handover",
         paragraphs: [
           "Water ingress, spalling at podium levels, and failed balcony detailing are among the costliest post-handover disputes. Maverick sequences waterproofing, structural repair, and coatings under one accountable programme with hold points specifiers can witness.",
-          "Independent QA captures moisture readings, batch references, and repair maps—documentation that supports SANS 10400 compliance narratives and smoother transitions to sectional-title schemes.",
-          "We mobilise across Midrand, Centurion, East Rand logistics corridors, and West Rand nodes where mining legacy hydrology demands engineered tanking—not generic damp paint.",
+          "Independent QA captures moisture readings, batch references, and repair maps, documentation that supports SANS 10400 compliance narratives and smoother transitions to sectional-title schemes.",
+          "We mobilise across Midrand, Centurion, East Rand logistics corridors, and West Rand nodes where mining legacy hydrology demands engineered tanking, not generic damp paint.",
         ],
       }}
       serviceLinks={[

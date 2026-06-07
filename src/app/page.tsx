@@ -15,7 +15,7 @@ import { withOgImage } from "@/lib/page-metadata";
 export const metadata = withOgImage({
   title: "Gauteng Painting, Waterproofing & Structural Repairs",
   description:
-    "Owner-supervised contractors for concrete spalling, flat roofs, body corporate programmes, industrial coatings, and independent QA—serving Johannesburg, Pretoria, Midrand, and the East, West, and South Rand.",
+    "Owner-supervised contractors for concrete spalling, flat roofs, body corporate programmes, industrial coatings, and independent QA, serving Johannesburg, Pretoria, Midrand, and the East, West, and South Rand.",
   path: "/",
 });
 
