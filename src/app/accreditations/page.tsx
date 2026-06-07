@@ -1,7 +1,11 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { TrustAndCtaStrip } from "@/components/trust-and-cta-strip";
 import { Breadcrumbs } from "@/components/breadcrumbs";
+import { ServiceImageTriptych } from "@/components/service-hub/service-image-blocks";
+import { QaProcessModule } from "@/components/qa-process-module";
+import { STATIC_PAGE_VISUALS } from "@/data/static-pages-content";
 import {
   Shield,
   Layers,
@@ -13,6 +17,7 @@ import {
   Paintbrush,
 } from "lucide-react";
 import { withOgImage } from "@/lib/page-metadata";
+import { cn } from "@/lib/utils";
 
 export const metadata = withOgImage({
   title: "Manufacturer Applicators & Certified Contractors",
@@ -26,43 +31,43 @@ const ManufacturerPartners = [
     name: "Sika Approved Contractor",
     expertise: "Waterproofing, structural mortars, and injection systems",
     icon: Layers,
-    accentColor: "border-secondary",
+    accent: "secondary" as const,
   },
   {
     name: "Plascon Preferred Applicator",
     expertise: "Commercial, industrial, and high-performance coatings",
     icon: Factory,
-    accentColor: "border-tertiary",
+    accent: "tertiary" as const,
   },
   {
     name: "Dulux Accredited Painter",
     expertise: "High-volume residential, body corporate, and façade programmes",
     icon: Award,
-    accentColor: "border-secondary",
+    accent: "secondary" as const,
   },
   {
     name: "Marmoran Master Applicator",
     expertise: "Specialized decorative and textured wall systems",
     icon: Paintbrush,
-    accentColor: "border-tertiary",
+    accent: "tertiary" as const,
   },
   {
     name: "Penetron Approved Applicator",
     expertise: "Crystalline tanking, negative-side waterproofing, and active leak routing",
     icon: Layers,
-    accentColor: "border-secondary",
+    accent: "secondary" as const,
   },
   {
     name: "StonCor & A.B.E. Systems",
     expertise: "Industrial linings, epoxy mortars, and corrosion control",
     icon: Factory,
-    accentColor: "border-tertiary",
+    accent: "tertiary" as const,
   },
   {
     name: "Mapei & Bostik",
     expertise: "Tile-bed remediation, flexible sealants, and movement joint chemistry",
     icon: Scroll,
-    accentColor: "border-secondary",
+    accent: "secondary" as const,
   },
 ] as const;
 
@@ -95,7 +100,7 @@ const ComplianceChecklist = [
 
 export default function AccreditationsPage() {
   return (
-    <div className="bg-primary pt-24 text-white">
+    <div className="bg-[#080808] pt-24 text-zinc-300 antialiased">
       <Breadcrumbs
         items={[
           { label: "Home", href: "/" },
@@ -103,37 +108,62 @@ export default function AccreditationsPage() {
         ]}
       />
 
-      <section className="page-container py-16 md:py-24">
-        <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-secondary">
-          Verifiable credentials
-        </p>
-        <h1 className="type-h1 mb-6 max-w-3xl text-white">
-          Accreditations, manufacturer partnerships & compliance
-        </h1>
-        <p className="type-body mb-10 max-w-3xl text-zinc-400">
-          High-value assets need contractors whose credentials survive trustee meetings, insurer reviews,
-          and engineer sign-off. Maverick maintains manufacturer applicator relationships, industry
-          registrations, and an independent QA pathway on agreed commercial and sectional-title scopes.
-        </p>
-        <Button asChild className="bg-tertiary font-bold text-primary hover:bg-[#9ED529]">
-          <Link href="/contact">Request credential pack</Link>
-        </Button>
+      <section className="section-surface section-pad !pt-8">
+        <div className="page-container">
+          <div className="grid grid-cols-1 items-stretch gap-10 lg:grid-cols-2 lg:gap-12">
+            <div className="flex flex-col justify-center">
+              <p className="type-phase mb-3">Verifiable credentials</p>
+              <h1 className="type-h1 mb-5 max-w-3xl uppercase">Accreditations, manufacturer partnerships & compliance</h1>
+              <p className="type-lead mb-8 max-w-2xl text-zinc-400">
+                High-value assets need contractors whose credentials survive trustee meetings, insurer reviews,
+                and engineer sign-off. Maverick maintains manufacturer applicator relationships, industry
+                registrations, and an independent QA pathway on agreed commercial and sectional-title scopes.
+              </p>
+              <Button asChild className="h-auto w-fit rounded-lg bg-secondary px-6 py-3 font-bold text-primary hover:bg-[#4AD5E2]">
+                <Link href="/contact">Request credential pack</Link>
+              </Button>
+            </div>
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl border border-white/10">
+              <Image
+                src="/images/painting-industrial-coatings.jpg"
+                alt="Manufacturer-approved coating application on a Gauteng industrial asset"
+                fill
+                priority
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section className="border-t border-white/10 bg-gray-900/50 py-16">
+      <section className="section-flow border-b border-[#2a2e33]">
         <div className="page-container">
-          <h2 className="type-h2 mb-10 text-center text-white">Manufacturer applicator status</h2>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <header className="mb-6 max-w-2xl">
+            <p className="type-eyebrow mb-2">Approved systems</p>
+            <h2 className="type-h3 text-xl sm:text-2xl">Manufacturer-backed application in the field</h2>
+          </header>
+          <ServiceImageTriptych images={STATIC_PAGE_VISUALS.accreditations} />
+        </div>
+      </section>
+
+      <section className="section-flow border-b border-[#2a2e33]">
+        <div className="page-container">
+          <h2 className="type-h2 mb-10 text-center">Manufacturer applicator status</h2>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
             {ManufacturerPartners.map((partner) => {
               const Icon = partner.icon;
               return (
                 <article
                   key={partner.name}
-                  className={`rounded-xl border-t-4 ${partner.accentColor} bg-primary p-6 shadow-xl`}
+                  className={cn(
+                    "rounded-xl border border-white/[0.08] bg-[#111111] p-6",
+                    partner.accent === "secondary" ? "border-t-[3px] border-t-secondary" : "border-t-[3px] border-t-tertiary",
+                  )}
                 >
                   <Icon className="mb-3 h-8 w-8 text-secondary" aria-hidden />
                   <h3 className="mb-2 text-lg font-bold text-white">{partner.name}</h3>
-                  <p className="text-sm text-zinc-400">{partner.expertise}</p>
+                  <p className="type-body m-0 text-sm">{partner.expertise}</p>
                 </article>
               );
             })}
@@ -141,34 +171,36 @@ export default function AccreditationsPage() {
         </div>
       </section>
 
-      <section className="page-container py-16 md:py-24">
-        <h2 className="type-h2 mb-10 text-center text-white">Compliance & quality assurance</h2>
-        <div className="grid gap-8 md:grid-cols-2">
-          {ComplianceChecklist.map((item) => {
-            const Icon = item.icon;
-            return (
-              <article
-                key={item.title}
-                className="flex gap-4 rounded-xl border border-white/10 bg-gray-900/40 p-6"
-              >
-                <Icon className="h-8 w-8 shrink-0 text-tertiary" aria-hidden />
-                <div>
-                  <h3 className="mb-2 text-xl font-bold text-white">{item.title}</h3>
-                  <p className="text-sm leading-relaxed text-zinc-400">{item.description}</p>
-                </div>
-              </article>
-            );
-          })}
+      <section className="section-surface section-pad">
+        <div className="page-container">
+          <h2 className="type-h2 mb-10 text-center">Compliance & quality assurance</h2>
+          <div className="grid gap-6 md:grid-cols-2">
+            {ComplianceChecklist.map((item) => {
+              const Icon = item.icon;
+              return (
+                <article
+                  key={item.title}
+                  className="flex gap-4 rounded-xl border border-white/[0.08] bg-[#111111] p-6"
+                >
+                  <Icon className="h-8 w-8 shrink-0 text-tertiary" aria-hidden />
+                  <div>
+                    <h3 className="mb-2 text-xl font-bold text-white">{item.title}</h3>
+                    <p className="type-body m-0 text-sm">{item.description}</p>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+          <p className="type-body mx-auto mt-10 max-w-3xl text-center text-zinc-500">
+            Structural repairs affecting load-bearing elements are implemented to engineer or competent-person
+            specifications under National Building Regulations pathways. Maverick does not self-certify
+            engineering designs; we supply documented execution evidence for your professional team.
+          </p>
         </div>
-        <p className="type-body mx-auto mt-10 max-w-3xl text-center text-zinc-500">
-          Structural repairs affecting load-bearing elements are implemented to engineer or competent-person
-          specifications under National Building Regulations pathways. Maverick does not self-certify
-          engineering designs; we supply documented execution evidence for your professional team.
-        </p>
       </section>
 
+      <QaProcessModule />
       <TrustAndCtaStrip />
     </div>
   );
 }
-

@@ -1,37 +1,36 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { CtaFinalStrip } from "@/components/cta-final-strip";
-import { Droplet, BookOpen, Layers, CheckSquare } from "lucide-react";
+import { Breadcrumbs } from "@/components/breadcrumbs";
+import { TrustAndCtaStrip } from "@/components/trust-and-cta-strip";
+import { blogProseClassName } from "@/components/blog/blog-article-shell";
+import { Droplet, CheckSquare } from "lucide-react";
 
 export function LiquidVsTorchOnArticle() {
   return (
-    <div className="bg-gray-50 pt-32 pb-24 text-primary min-h-screen">
-      <div className="max-w-4xl mx-auto px-4">
-        <header className="mb-12 border-b border-gray-300 pb-6">
-          <div className="flex items-center space-x-4 text-sm text-gray-500 mb-2">
-            <Link
-              href="/blog/waterproofing"
-              className="hover:text-secondary font-semibold uppercase"
-            >
-              <BookOpen className="w-4 h-4 mr-1 inline-block" /> Waterproofing
-              Guides
-            </Link>
-            <span>|</span>
-            <span className="flex items-center space-x-1">
-              <Layers className="w-4 h-4" /> Technical Specification
-            </span>
-          </div>
+    <div className="bg-[#080808] pt-24 text-zinc-300 antialiased min-h-screen">
+      <Breadcrumbs
+        items={[
+          { label: "Blog", href: "/blog" },
+          { label: "Waterproofing", href: "/blog/waterproofing" },
+          {
+            label:
+              "Liquid Applied Membranes vs. Torch-On: Which System is Right for Your Roof?",
+            href: "/blog/waterproofing/liquid-vs-torch-on",
+          },
+        ]}
+      />
 
-          <h1 className="text-5xl font-extrabold text-primary leading-tight uppercase mb-4">
+      <article className="page-container pb-16 max-w-4xl">
+        <header className="mb-12 border-b border-[#2a2e33] pb-8">
+          <p className="type-eyebrow mb-3">Technical Specification</p>
+          <h1 className="type-h1 mb-4 uppercase">
             Liquid Applied vs. Torch-On: Which Waterproofing System is Superior?
           </h1>
         </header>
 
-        <div className="space-y-8 text-lg text-gray-700 leading-relaxed">
+        <div className={blogProseClassName}>
           <section>
-            <h2 className="text-3xl font-bold text-primary mb-4">
-              The Seamless Advantage of Liquid Membranes
-            </h2>
+            <h2>The Seamless Advantage of Liquid Membranes</h2>
             <p>
               <strong>Liquid Applied Membranes (LAMs)</strong>, particularly
               polyurethane systems, offer a fundamentally superior seal for
@@ -40,7 +39,7 @@ export function LiquidVsTorchOnArticle() {
               eliminates the weakest point of any traditional system: the joins
               and overlaps.
             </p>
-            <ul className="list-disc list-inside space-y-2 ml-6 font-semibold">
+            <ul>
               <li className="flex items-center space-x-2">
                 <Droplet className="w-5 h-5 text-secondary" /> Forms a single,
                 monolithic, and joint-free barrier.
@@ -59,9 +58,7 @@ export function LiquidVsTorchOnArticle() {
           </section>
 
           <section>
-            <h2 className="text-3xl font-bold text-primary mb-4">
-              The Trade-offs of Torch-On Systems
-            </h2>
+            <h2>The Trade-offs of Torch-On Systems</h2>
             <p>
               <strong>Torch-On Systems</strong> (bituminous felt) are robust and
               widely used, but their reliance on heat application introduces site
@@ -72,11 +69,9 @@ export function LiquidVsTorchOnArticle() {
             </p>
           </section>
 
-          <section className="bg-primary text-white p-6 rounded-xl shadow-xl">
-            <h3 className="text-2xl font-bold text-tertiary mb-3">
-              Maverick&apos;s Specification Recommendation
-            </h3>
-            <p className="text-lg">
+          <section className="rounded-xl border border-white/10 bg-[#111111] p-6">
+            <h3>Maverick&apos;s Specification Recommendation</h3>
+            <p>
               For critical, high-value assets (like multi-story commercial roofs
               and balconies), we generally specify{" "}
               <strong>high-quality polyurethane LAMs</strong> due to their
@@ -94,12 +89,9 @@ export function LiquidVsTorchOnArticle() {
             </Button>
           </section>
         </div>
-      </div>
+      </article>
 
-      <div className="mt-20">
-        <CtaFinalStrip />
-      </div>
+      <TrustAndCtaStrip />
     </div>
   );
 }
-

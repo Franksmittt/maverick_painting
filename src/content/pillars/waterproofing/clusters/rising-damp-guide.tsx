@@ -1,37 +1,35 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { CtaFinalStrip } from "@/components/cta-final-strip";
-import { Layers, BookOpen, CheckSquare, Droplet, Wrench } from "lucide-react";
+import { Breadcrumbs } from "@/components/breadcrumbs";
+import { TrustAndCtaStrip } from "@/components/trust-and-cta-strip";
+import { blogProseClassName } from "@/components/blog/blog-article-shell";
+import { Layers, CheckSquare, Wrench } from "lucide-react";
 
 export function RisingDampGuideArticle() {
   return (
-    <div className="bg-gray-50 pt-32 pb-24 text-primary min-h-screen">
-      <div className="max-w-4xl mx-auto px-4">
-        <header className="mb-12 border-b border-gray-300 pb-6">
-          <div className="flex items-center space-x-4 text-sm text-gray-500 mb-2">
-            <Link
-              href="/blog/waterproofing"
-              className="hover:text-secondary font-semibold uppercase"
-            >
-              <BookOpen className="w-4 h-4 mr-1 inline-block" /> Waterproofing
-              Guides
-            </Link>
-            <span>|</span>
-            <span className="flex items-center space-x-1">
-              <Droplet className="w-4 h-4" /> Moisture Control
-            </span>
-          </div>
+    <div className="bg-[#080808] pt-24 text-zinc-300 antialiased min-h-screen">
+      <Breadcrumbs
+        items={[
+          { label: "Blog", href: "/blog" },
+          { label: "Waterproofing", href: "/blog/waterproofing" },
+          {
+            label: "The Permanent Fix for Rising Damp: Chemical DPC Injection Guide",
+            href: "/blog/waterproofing/rising-damp-guide",
+          },
+        ]}
+      />
 
-          <h1 className="text-5xl font-extrabold text-primary leading-tight uppercase mb-4">
+      <article className="page-container pb-16 max-w-4xl">
+        <header className="mb-12 border-b border-[#2a2e33] pb-8">
+          <p className="type-eyebrow mb-3">Moisture Control</p>
+          <h1 className="type-h1 mb-4 uppercase">
             The Permanent Fix for Rising Damp: Chemical DPC Injection.
           </h1>
         </header>
 
-        <div className="space-y-8 text-lg text-gray-700 leading-relaxed">
+        <div className={blogProseClassName}>
           <section>
-            <h2 className="text-3xl font-bold text-primary mb-4">
-              Rising Damp vs. Condensation: The Correct Diagnosis
-            </h2>
+            <h2>Rising Damp vs. Condensation: The Correct Diagnosis</h2>
             <p>
               The first mistake is treating all internal dampness as rising damp.
               Rising damp draws moisture up from the ground via capillary action,
@@ -44,9 +42,7 @@ export function RisingDampGuideArticle() {
           </section>
 
           <section>
-            <h2 className="text-3xl font-bold text-primary mb-4">
-              The Chemical DPC Injection Process
-            </h2>
+            <h2>The Chemical DPC Injection Process</h2>
             <p>
               Since many older properties have failed or absent damp-proof courses,
               the modern solution is a <strong>Chemical DPC</strong>. This involves
@@ -54,7 +50,7 @@ export function RisingDampGuideArticle() {
               water-repellent (silane or siloxane-based) cream under pressure, and
               allowing it to cure.
             </p>
-            <ul className="list-disc list-inside space-y-2 ml-6 font-semibold">
+            <ul>
               <li className="flex items-center space-x-2">
                 <Wrench className="w-5 h-5 text-secondary" />{" "}
                 <strong>Injection:</strong> Forming a new, permanent, horizontal
@@ -74,11 +70,9 @@ export function RisingDampGuideArticle() {
             </ul>
           </section>
 
-          <section className="bg-primary text-white p-6 rounded-xl shadow-xl">
-            <h3 className="text-2xl font-bold text-tertiary mb-3">
-              Why DIY Damp Proofing Fails
-            </h3>
-            <p className="text-lg">
+          <section className="rounded-xl border border-white/10 bg-[#111111] p-6">
+            <h3>Why DIY Damp Proofing Fails</h3>
+            <p>
               The failure of DIY or non-specialized damp proofing usually occurs in
               the <strong>plaster remediation</strong> phase. If salt-contaminated
               plaster is not fully removed, the salts will continue to draw moisture
@@ -95,12 +89,9 @@ export function RisingDampGuideArticle() {
             </Button>
           </section>
         </div>
-      </div>
+      </article>
 
-      <div className="mt-20">
-        <CtaFinalStrip />
-      </div>
+      <TrustAndCtaStrip />
     </div>
   );
 }
-

@@ -45,6 +45,7 @@ const faqs = [
 export default function DeveloperSolutionsPage() {
   return (
     <SolutionPageLayout
+      solutionKey="developers"
       path="/solutions/for-developers"
       breadcrumbLabel="Developers"
       h1="Handover-ready assets with QA files your QS can audit."
@@ -55,28 +56,28 @@ export default function DeveloperSolutionsPage() {
           description:
             "Mix ratios, recoat windows, and film build logged to data sheets so product warranties remain valid after handover to body corporates.",
           icon: Scroll,
-          accentColor: "border-secondary",
+          accent: "secondary" as const,
         },
         {
           title: "Independent QA reporting",
           description:
             "Fortnightly third-party inspection reduces contractor bias and gives quantity surveyors auditable quality records for retention and snag closure.",
           icon: ClipboardCheck,
-          accentColor: "border-tertiary",
+          accent: "tertiary" as const,
         },
         {
           title: "Structural envelope integrity",
           description:
             "Spalling, injection, expansion joints, and tanking sequenced before final aesthetics so latent defects are not buried under topcoat.",
           icon: Wrench,
-          accentColor: "border-secondary",
+          accent: "secondary" as const,
         },
         {
           title: "High-volume programmes",
           description:
             "HEA airless and phased mobilisation for multi-block residential and commercial shells across Gauteng logistics and estate nodes.",
           icon: Building,
-          accentColor: "border-tertiary",
+          accent: "tertiary" as const,
         },
       ]}
       narrative={{

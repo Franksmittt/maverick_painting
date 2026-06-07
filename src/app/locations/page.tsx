@@ -4,9 +4,11 @@ import { Breadcrumbs } from "@/components/breadcrumbs";
 import { FaqSection } from "@/components/faq-section";
 import { QaProcessModule } from "@/components/qa-process-module";
 import { TrustAndCtaStrip } from "@/components/trust-and-cta-strip";
+import { ServiceImageTriptych } from "@/components/service-hub/service-image-blocks";
 import { Button } from "@/components/ui/button";
 import { locationRegionHubs } from "@/data/location-regions";
 import { serviceLocations } from "@/data/locations";
+import { LOCATIONS_VISUAL_STRIP } from "@/data/locations-page-content";
 import { withOgImage } from "@/lib/page-metadata";
 
 export const metadata = withOgImage({
@@ -66,7 +68,17 @@ export default function LocationsIndexPage() {
         </Button>
       </section>
 
-      <section className="border-y border-zinc-800 bg-zinc-900/20 py-16">
+      <section className="section-flow border-b border-[#2a2e33]">
+        <div className="page-container">
+          <header className="mb-6 max-w-2xl">
+            <p className="type-eyebrow mb-2">Gauteng coverage</p>
+            <h2 className="type-h3 text-xl sm:text-2xl">Programmes across Johannesburg, Pretoria & the Rand</h2>
+          </header>
+          <ServiceImageTriptych images={LOCATIONS_VISUAL_STRIP} />
+        </div>
+      </section>
+
+      <section className="border-y border-[#2a2e33] bg-[#111111]/30 py-16">
         <div className="page-container">
           <h2 className="type-h2 mb-8 text-white">Regional hubs</h2>
           <div className="grid gap-6 md:grid-cols-2">
@@ -74,7 +86,7 @@ export default function LocationsIndexPage() {
               <Link
                 key={region.slug}
                 href={`/locations/${region.slug}`}
-                className="group rounded-xl border border-zinc-800 bg-zinc-900/40 p-8 transition hover:border-secondary/50"
+                className="group rounded-xl border border-white/[0.08] bg-[#111111] p-8 transition hover:border-secondary/50"
               >
                 <h3 className="mb-2 text-xl font-bold text-white group-hover:text-secondary">
                   {region.name}
@@ -97,7 +109,7 @@ export default function LocationsIndexPage() {
             <Link
               key={city.slug}
               href={`/locations/${city.slug}`}
-              className="rounded-lg border border-zinc-800 bg-zinc-900/30 p-5 transition hover:border-secondary/40"
+              className="rounded-lg border border-white/[0.08] bg-[#111111] p-5 transition hover:border-secondary/40"
             >
               <h3 className="mb-1 font-bold text-white">{city.name}</h3>
               <p className="text-xs uppercase tracking-wide text-zinc-500">{city.region.replace("-", " ")}</p>

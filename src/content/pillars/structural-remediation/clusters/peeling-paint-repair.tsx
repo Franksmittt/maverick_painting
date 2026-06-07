@@ -1,37 +1,37 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { CtaFinalStrip } from "@/components/cta-final-strip";
-import { Wrench, BookOpen } from "lucide-react";
+import { Breadcrumbs } from "@/components/breadcrumbs";
+import { TrustAndCtaStrip } from "@/components/trust-and-cta-strip";
+import { blogProseClassName } from "@/components/blog/blog-article-shell";
 
 export function PeelingPaintRepairArticle() {
   return (
-    <div className="bg-gray-50 pt-32 pb-24 text-primary min-h-screen">
-      <div className="max-w-4xl mx-auto px-4">
-        <header className="mb-12 border-b border-gray-300 pb-6">
-          <div className="flex items-center space-x-4 text-sm text-gray-500 mb-2">
-            <Link
-              href="/blog/structural-remediation"
-              className="hover:text-secondary font-semibold uppercase"
-            >
-              <BookOpen className="w-4 h-4 mr-1 inline-block" /> Structural
-              Remediation
-            </Link>
-            <span>|</span>
-            <span className="flex items-center space-x-1">
-              <Wrench className="w-4 h-4" /> Paint Pathology
-            </span>
-          </div>
+    <div className="bg-[#080808] pt-24 text-zinc-300 antialiased min-h-screen">
+      <Breadcrumbs
+        items={[
+          { label: "Blog", href: "/blog" },
+          {
+            label: "Structural Remediation",
+            href: "/blog/structural-remediation",
+          },
+          {
+            label: "Why is My Paint Peeling? Complete Diagnostic Guide",
+            href: "/blog/structural-remediation/peeling-paint-repair",
+          },
+        ]}
+      />
 
-          <h1 className="text-5xl font-extrabold text-primary leading-tight uppercase mb-4">
+      <article className="page-container pb-16 max-w-4xl">
+        <header className="mb-12 border-b border-[#2a2e33] pb-8">
+          <p className="type-eyebrow mb-3">Paint Pathology</p>
+          <h1 className="type-h1 mb-4 uppercase">
             Why is My Paint Peeling? The Complete Diagnostic & Repair Guide
           </h1>
         </header>
 
-        <div className="space-y-8 text-lg text-gray-700 leading-relaxed">
+        <div className={blogProseClassName}>
           <section>
-            <h2 className="text-3xl font-bold text-primary mb-4">
-              Understanding Paint Peeling: The Root Causes
-            </h2>
+            <h2>Understanding Paint Peeling: The Root Causes</h2>
             <p>
               Paint peeling is not a cosmetic issue: it&apos;s a symptom of underlying
               substrate failure. Before applying a new coat, you must diagnose the
@@ -42,14 +42,12 @@ export function PeelingPaintRepairArticle() {
           </section>
 
           <section>
-            <h2 className="text-3xl font-bold text-primary mb-4">
-              Cause #1: Moisture Behind the Paint Film
-            </h2>
+            <h2>Cause #1: Moisture Behind the Paint Film</h2>
             <p>
               The most common cause of peeling paint is moisture trapped between
               the paint and the substrate. This occurs when:
             </p>
-            <ul className="list-disc list-inside space-y-2 mt-4 ml-4">
+            <ul>
               <li>
                 <strong>Rising damp</strong> draws water up through masonry walls
                 via capillary action
@@ -67,7 +65,7 @@ export function PeelingPaintRepairArticle() {
                 high-humidity areas
               </li>
             </ul>
-            <p className="mt-4">
+            <p>
               <strong>The Fix:</strong> You cannot paint over moisture. First,
               eliminate the water source. For rising damp, install a chemical DPC
               (Damp Proof Course). For lateral damp, apply a waterproof membrane.
@@ -77,14 +75,12 @@ export function PeelingPaintRepairArticle() {
           </section>
 
           <section>
-            <h2 className="text-3xl font-bold text-primary mb-4">
-              Cause #2: Poor Surface Preparation
-            </h2>
+            <h2>Cause #2: Poor Surface Preparation</h2>
             <p>
               Paint requires a clean, sound, and properly primed surface to
               adhere. Common preparation failures include:
             </p>
-            <ul className="list-disc list-inside space-y-2 mt-4 ml-4">
+            <ul>
               <li>
                 Painting over <strong>chalky or powdery surfaces</strong> without
                 stabilization
@@ -102,7 +98,7 @@ export function PeelingPaintRepairArticle() {
                 complete removal
               </li>
             </ul>
-            <p className="mt-4">
+            <p>
               <strong>The Fix:</strong> Remove all loose and flaking paint using
               scrapers, wire brushes, or power tools. For chalky surfaces, apply a
               stabilizing primer. For glossy surfaces, sand to create a &quot;tooth&quot; or
@@ -112,14 +108,12 @@ export function PeelingPaintRepairArticle() {
           </section>
 
           <section>
-            <h2 className="text-3xl font-bold text-primary mb-4">
-              Cause #3: Adhesion Failure (Paint Chemistry Mismatch)
-            </h2>
+            <h2>Cause #3: Adhesion Failure (Paint Chemistry Mismatch)</h2>
             <p>
               Certain paint types are incompatible with specific substrates or
               previous coatings. For example:
             </p>
-            <ul className="list-disc list-inside space-y-2 mt-4 ml-4">
+            <ul>
               <li>
               Applying <strong>water-based paint over oil-based paint</strong>{" "}
               without proper preparation
@@ -133,7 +127,7 @@ export function PeelingPaintRepairArticle() {
                 (or vice versa) without a bridging primer
               </li>
             </ul>
-            <p className="mt-4">
+            <p>
               <strong>The Fix:</strong> Identify the existing paint type (water or
               oil-based) using a simple test. If switching paint types, use a
               universal primer or bonding primer. For moisture-prone areas, use
@@ -142,14 +136,12 @@ export function PeelingPaintRepairArticle() {
           </section>
 
           <section>
-            <h2 className="text-3xl font-bold text-primary mb-4">
-              The Professional Repair Workflow
-            </h2>
+            <h2>The Professional Repair Workflow</h2>
             <p>
               At Maverick Painting, we follow a systematic approach to ensure
               peeling paint never returns:
             </p>
-            <ol className="list-decimal list-inside space-y-4 mt-4 ml-4">
+            <ol className="list-decimal list-inside space-y-4 ml-4">
               <li>
                 <strong>Diagnostic Assessment:</strong> We use moisture meters,
                 hammer tests, and visual inspection to identify the root cause.
@@ -178,24 +170,24 @@ export function PeelingPaintRepairArticle() {
             </ol>
           </section>
 
-          <section className="bg-primary text-white p-8 rounded-xl">
-            <h2 className="text-3xl font-bold mb-4">
-              Don&apos;t Paint Over the Problem
-            </h2>
-            <p className="text-lg mb-6">
+          <section className="rounded-xl border border-white/10 bg-[#111111] p-6">
+            <h2>Don&apos;t Paint Over the Problem</h2>
+            <p>
               Peeling paint is a structural issue, not a cosmetic one. A quick
               repaint will fail within months. Our approach fixes the root cause,
               ensuring your paint job lasts 10+ years.
             </p>
-            <Button asChild className="bg-tertiary hover:bg-[#9ED529] text-primary">
+            <Button
+              asChild
+              className="mt-4 bg-secondary hover:bg-[#4AD5E2] text-primary font-bold text-lg h-12"
+            >
               <Link href="/contact">Get a Professional Assessment</Link>
             </Button>
           </section>
         </div>
+      </article>
 
-        <CtaFinalStrip />
-      </div>
+      <TrustAndCtaStrip />
     </div>
   );
 }
-

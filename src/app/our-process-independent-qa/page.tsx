@@ -1,9 +1,12 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { FaqSection } from "@/components/faq-section";
 import { QaProcessModule } from "@/components/qa-process-module";
 import { TrustAndCtaStrip } from "@/components/trust-and-cta-strip";
+import { ServiceImageTriptych } from "@/components/service-hub/service-image-blocks";
+import { STATIC_PAGE_VISUALS } from "@/data/static-pages-content";
 import {
   Scroll,
   CheckSquare,
@@ -125,50 +128,72 @@ export default function IndependentQAPage() {
         ]}
       />
 
-      <section className="border-b border-zinc-800 px-4 py-20">
-        <div className="mx-auto max-w-5xl">
-          <p className="mb-3 text-sm font-bold uppercase tracking-widest text-secondary">
-            Engineer&apos;s hub
-          </p>
-          <h1 className="type-h1 mb-6 text-white">
-            Independent third-party QA, not contractor self-certification.
-          </h1>
-          <p className="type-body mb-6 max-w-3xl">
-            Maverick Painting positions quality assurance as a risk-mitigation layer for multi-million-rand
-            assets. Where scopes demand it, a separate inspector verifies preparation, environmental
-            conditions, and film build, creating evidence trustees, developers, and insurers can file without
-            relying on biased in-house checks.
-          </p>
-          <Button asChild className="bg-secondary font-bold text-primary hover:bg-[#4AD5E2]">
-            <Link href="/contact">Request QA on your scope</Link>
-          </Button>
+      <section className="section-surface section-pad !pt-8">
+        <div className="page-container">
+          <div className="grid grid-cols-1 items-stretch gap-10 lg:grid-cols-2 lg:gap-12">
+            <div className="flex flex-col justify-center">
+              <p className="type-phase mb-3">Engineer&apos;s hub</p>
+              <h1 className="type-h1 mb-5 uppercase">Independent third-party QA, not contractor self-certification.</h1>
+              <p className="type-lead mb-6 max-w-2xl text-zinc-400">
+                Maverick Painting positions quality assurance as a risk-mitigation layer for multi-million-rand
+                assets. Where scopes demand it, a separate inspector verifies preparation, environmental
+                conditions, and film build, creating evidence trustees, developers, and insurers can file without
+                relying on biased in-house checks.
+              </p>
+              <Button asChild className="h-auto w-fit rounded-lg bg-secondary px-6 py-3 font-bold text-primary hover:bg-[#4AD5E2]">
+                <Link href="/contact">Request QA on your scope</Link>
+              </Button>
+            </div>
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl border border-white/10">
+              <Image
+                src="/images/painting-body-corporate-qa.jpg"
+                alt="Independent QA documentation on a Gauteng sectional-title programme"
+                fill
+                priority
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
-      <section className="px-4 py-16">
-        <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-2 lg:grid-cols-4">
-          {FullQAProcess.map((item) => {
-            const Icon = item.icon;
-            return (
-              <article
-                key={item.step}
-                className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-6 border-t-4 border-secondary"
-              >
-                <Icon className="mb-4 h-8 w-8 text-secondary" aria-hidden />
-                <p className="mb-1 text-xs font-bold uppercase text-zinc-500">Step {item.step}</p>
-                <h2 className="mb-3 text-lg font-bold text-white">{item.title}</h2>
-                <p className="text-sm leading-relaxed text-zinc-400">{item.description}</p>
-              </article>
-            );
-          })}
+      <section className="section-flow border-b border-[#2a2e33]">
+        <div className="page-container">
+          <header className="mb-6 max-w-2xl">
+            <p className="type-eyebrow mb-2">Verification in practice</p>
+            <h2 className="type-h3 text-xl sm:text-2xl">What independent QA looks like on site</h2>
+          </header>
+          <ServiceImageTriptych images={STATIC_PAGE_VISUALS.qa} />
         </div>
       </section>
 
-      <section className="border-y border-zinc-800 bg-zinc-900/30 px-4 py-16">
-        <div className="mx-auto max-w-4xl">
+      <section className="section-flow border-b border-[#2a2e33]">
+        <div className="page-container">
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 lg:gap-6">
+            {FullQAProcess.map((item) => {
+              const Icon = item.icon;
+              return (
+                <article
+                  key={item.step}
+                  className="rounded-xl border border-t-[3px] border-white/[0.08] border-t-secondary bg-[#111111] p-6"
+                >
+                  <Icon className="mb-4 h-8 w-8 text-secondary" aria-hidden />
+                  <p className="mb-1 text-xs font-bold uppercase text-zinc-500">Step {item.step}</p>
+                  <h2 className="mb-3 text-lg font-bold text-white">{item.title}</h2>
+                  <p className="type-body m-0 text-sm">{item.description}</p>
+                </article>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-surface section-pad">
+        <div className="page-container max-w-4xl">
           <h2 className="type-h2 mb-6 text-white">ISO, OHS & compliance alignment</h2>
           <div className="grid gap-6 md:grid-cols-2">
-            <article className="flex gap-4 rounded-lg border border-zinc-800 p-5">
+            <article className="flex gap-4 rounded-lg border border-white/10 bg-[#111111] p-5">
               <Shield className="h-8 w-8 shrink-0 text-tertiary" aria-hidden />
               <div>
                 <h3 className="mb-2 font-bold text-white">Occupational health & safety</h3>
@@ -178,7 +203,7 @@ export default function IndependentQAPage() {
                 </p>
               </div>
             </article>
-            <article className="flex gap-4 rounded-lg border border-zinc-800 p-5">
+            <article className="flex gap-4 rounded-lg border border-white/10 bg-[#111111] p-5">
               <ClipboardCheck className="h-8 w-8 shrink-0 text-tertiary" aria-hidden />
               <div>
                 <h3 className="mb-2 font-bold text-white">Quality management</h3>
@@ -192,8 +217,8 @@ export default function IndependentQAPage() {
         </div>
       </section>
 
-      <section className="px-4 py-16">
-        <div className="mx-auto max-w-7xl">
+      <section className="section-flow border-t border-[#2a2e33]">
+        <div className="page-container">
           <h2 className="type-h2 mb-4 text-center text-white">Manufacturer-backed systems we apply</h2>
           <p className="type-body mx-auto mb-10 max-w-3xl text-center text-zinc-400">
             Approved applicator networks for procurement officers searching brand + application in Gauteng.
@@ -208,7 +233,7 @@ export default function IndependentQAPage() {
               <Link
                 key={brand.name}
                 href={brand.href}
-                className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-6 transition hover:border-secondary/50"
+                className="rounded-xl border border-white/[0.08] bg-[#111111] p-6 transition hover:border-secondary/50"
               >
                 <Factory className="mb-3 h-7 w-7 text-secondary" aria-hidden />
                 <h3 className="mb-2 font-bold text-white">{brand.name}</h3>

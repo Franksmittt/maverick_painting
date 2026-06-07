@@ -40,6 +40,7 @@ const faqs = [
 export default function BodyCorporateSolutionsPage() {
   return (
     <SolutionPageLayout
+      solutionKey="body-corporates"
       path="/solutions/for-body-corporates"
       breadcrumbLabel="Body corporates"
       h1="Sectional title maintenance trustees can defend at the AGM."
@@ -50,28 +51,28 @@ export default function BodyCorporateSolutionsPage() {
           description:
             "Condition surveys, photographic logs, and phased scopes that map to reserve fund planning, supporting PMR 22 without surprise special levies after the first storms.",
           icon: Scroll,
-          accentColor: "border-secondary",
+          accent: "secondary" as const,
         },
         {
           title: "Independent QA",
           description:
             "Bi-weekly third-party reporting on preparation, film build, and manufacturer compliance, so trustees are not relying on the contractor marking their own homework.",
           icon: ClipboardCheck,
-          accentColor: "border-tertiary",
+          accent: "tertiary" as const,
         },
         {
           title: "Structural & waterproofing first",
           description:
             "Spalling arrises, leaking balconies, and flat roofs are sequenced before decorative coats so the repaint is not funding repeat failures within two seasons.",
           icon: Shield,
-          accentColor: "border-secondary",
+          accent: "secondary" as const,
         },
         {
           title: "Low-disruption access",
           description:
             "Rope access, phased elevations, and resident communication plans reduce scaffold footprints and estate security friction on Sandton, Alberton, and South Rand complexes.",
           icon: MessageCircle,
-          accentColor: "border-tertiary",
+          accent: "tertiary" as const,
         },
       ]}
       narrative={{

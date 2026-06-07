@@ -45,6 +45,7 @@ const faqs = [
 export default function HomeownerSolutionsPage() {
   return (
     <SolutionPageLayout
+      solutionKey="homeowners"
       path="/solutions/for-homeowners"
       breadcrumbLabel="Homeowners"
       h1="Protect your home from Gauteng weather, not just refresh the colour."
@@ -55,28 +56,28 @@ export default function HomeownerSolutionsPage() {
           description:
             "Rising damp, condensation, and roof leaks are separated with moisture profiling so you do not pay for the wrong remedy.",
           icon: Shield,
-          accentColor: "border-secondary",
+          accent: "secondary" as const,
         },
         {
           title: "Low-VOC interior work",
           description:
             "Dust-controlled prep and low-odour films for occupied homes, with written cure and ventilation guidance at handover.",
           icon: Clock,
-          accentColor: "border-tertiary",
+          accent: "tertiary" as const,
         },
         {
           title: "Documented quality",
           description:
             "Larger scopes can include independent QA and manufacturer warranty paths, execution to data sheet, not guesswork.",
           icon: CheckSquare,
-          accentColor: "border-secondary",
+          accent: "secondary" as const,
         },
         {
           title: "Director oversight",
           description:
             "Premium residential projects receive hands-on site leadership, not anonymous subcontractor-only crews.",
           icon: Users,
-          accentColor: "border-tertiary",
+          accent: "tertiary" as const,
         },
       ]}
       narrative={{
