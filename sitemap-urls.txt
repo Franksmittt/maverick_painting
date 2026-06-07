@@ -1,7 +1,7 @@
-# Maverick Painting Sitemap — 2026-05-17
+# Maverick Painting Sitemap — 2026-06-07
 # Submit this index URL in Google Search Console:
 # https://www.maverickpainting.co.za/sitemap.xml
-# Total URLs: 132
+# Total URLs: 137
 
 https://www.maverickpainting.co.za
 https://www.maverickpainting.co.za/about-us
@@ -100,9 +100,11 @@ https://www.maverickpainting.co.za/our-process-independent-qa
 https://www.maverickpainting.co.za/painting-services
 https://www.maverickpainting.co.za/painting/body-corporate
 https://www.maverickpainting.co.za/painting/commercial-painting
+https://www.maverickpainting.co.za/painting/external-walls
 https://www.maverickpainting.co.za/painting/high-volume-commercial-painting
 https://www.maverickpainting.co.za/painting/industrial
 https://www.maverickpainting.co.za/painting/interior-painting
+https://www.maverickpainting.co.za/painting/internal-walls
 https://www.maverickpainting.co.za/painting/parking-garage-painting
 https://www.maverickpainting.co.za/painting/road-marking
 https://www.maverickpainting.co.za/painting/roof-painting
@@ -121,10 +123,13 @@ https://www.maverickpainting.co.za/solutions/for-body-corporates
 https://www.maverickpainting.co.za/solutions/for-developers
 https://www.maverickpainting.co.za/solutions/for-homeowners
 https://www.maverickpainting.co.za/specialized-coatings
+https://www.maverickpainting.co.za/specialized-coatings/cemcrete-external-walls
+https://www.maverickpainting.co.za/specialized-coatings/cemcrete-floors
 https://www.maverickpainting.co.za/specialized-coatings/hygienic-food-grade
 https://www.maverickpainting.co.za/specialized-coatings/industrial-corrosion-control
 https://www.maverickpainting.co.za/specialized-coatings/industrial-epoxy-flooring
 https://www.maverickpainting.co.za/specialized-coatings/marmoran-wall-systems
+https://www.maverickpainting.co.za/specialized-coatings/wall-cladding
 https://www.maverickpainting.co.za/structural-repairs
 https://www.maverickpainting.co.za/structural-repairs/concrete-spalling
 https://www.maverickpainting.co.za/structural-repairs/crack-injection

@@ -181,4 +181,4 @@ export function buildSitemapEntries(now = new Date()): MetadataRoute.Sitemap {
 }
 
 /** Expected indexable page count for CI validation (update if routes change). */
-export const EXPECTED_SITEMAP_URL_COUNT = 132;
+export const EXPECTED_SITEMAP_URL_COUNT = 137;
