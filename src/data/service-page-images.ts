@@ -22,9 +22,12 @@ const INDUSTRIAL_EPOXY_FLOORING_PATHS = new Set([
 
 const CEMCRETE_FLOORS_PATHS = new Set(["/specialized-coatings/cemcrete-floors"]);
 
+const CEMCRETE_EXTERNAL_WALLS_PATHS = new Set([
+  "/specialized-coatings/cemcrete-external-walls",
+]);
+
 const SPECIALIZED_COATINGS_PATHS = new Set([
   "/specialized-coatings",
-  "/specialized-coatings/cemcrete-external-walls",
   "/specialized-coatings/hygienic-food-grade",
   "/specialized-coatings/marmoran-wall-systems",
   "/specialized-coatings/industrial-corrosion-control",
@@ -221,6 +224,46 @@ const CEMCRETE_FLOORS_IMAGE_POOL: readonly ServicePageImage[] = [
   {
     src: "/images/coatings-cemcrete-floors-09.jpg",
     alt: "Completed decorative cement floor in a small café or guesthouse entrance",
+  },
+];
+
+/** Dedicated nine-slot pool for the Cemcrete external walls spoke. */
+const CEMCRETE_EXTERNAL_WALLS_IMAGE_POOL: readonly ServicePageImage[] = [
+  {
+    src: "/images/coatings-cemcrete-external-walls-01.jpg",
+    alt: "Completed decorative cement finish on a single-storey Gauteng home",
+  },
+  {
+    src: "/images/coatings-cemcrete-external-walls-02.jpg",
+    alt: "Finished decorative cement finish on a townhouse boundary wall",
+  },
+  {
+    src: "/images/coatings-cemcrete-external-walls-03.jpg",
+    alt: "Close-up of a completed exterior cementitious wall finish at a window reveal",
+  },
+  {
+    src: "/images/coatings-cemcrete-external-walls-04.jpg",
+    alt: "Finished decorative cement garden wall beside a small patio",
+  },
+  {
+    src: "/images/coatings-cemcrete-external-walls-05.jpg",
+    alt: "Completed boundary wall refresh at a sectional-title entrance",
+  },
+  {
+    src: "/images/coatings-cemcrete-external-walls-06.jpg",
+    alt: "Finished external corner detail on a cement-finished wall",
+  },
+  {
+    src: "/images/coatings-cemcrete-external-walls-07.jpg",
+    alt: "Completed parapet cap and cement finish on a small flat-roof building",
+  },
+  {
+    src: "/images/coatings-cemcrete-external-walls-08.jpg",
+    alt: "Finished decorative cement feature wall on a normal Gauteng home",
+  },
+  {
+    src: "/images/coatings-cemcrete-external-walls-09.jpg",
+    alt: "Completed cementitious finish on a small commercial street front",
   },
 ];
 
@@ -563,6 +606,10 @@ export function getServicePageImages(
 
   if (CEMCRETE_FLOORS_PATHS.has(path)) {
     return [...CEMCRETE_FLOORS_IMAGE_POOL];
+  }
+
+  if (CEMCRETE_EXTERNAL_WALLS_PATHS.has(path)) {
+    return [...CEMCRETE_EXTERNAL_WALLS_IMAGE_POOL];
   }
 
   if (SPECIALIZED_COATINGS_PATHS.has(path)) {

@@ -180,16 +180,16 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
   ],
   "cemcrete-external-walls": [
     {
-      src: "/images/coatings-marmoran-wall-01.jpg",
-      alt: "External wall preparation before cementitious decorative finish application",
+      src: "/images/coatings-cemcrete-external-walls-05.jpg",
+      alt: "Completed boundary wall refresh at a sectional-title entrance",
     },
     {
-      src: "/images/coatings-marmoran-wall-02.jpg",
-      alt: "Cementitious exterior wall finish application with texture control",
+      src: "/images/coatings-cemcrete-external-walls-08.jpg",
+      alt: "Finished decorative cement feature wall on a normal Gauteng home",
     },
     {
-      src: "/images/coatings-marmoran-wall-03.jpg",
-      alt: "Completed decorative external wall finish on a Gauteng property",
+      src: "/images/coatings-cemcrete-external-walls-09.jpg",
+      alt: "Completed cementitious finish on a small commercial street front",
     },
   ],
   "marmoran-wall-systems": [

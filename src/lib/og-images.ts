@@ -20,7 +20,7 @@ const OG_BY_PATH: Record<string, string> = {
   "/specialized-coatings/industrial-epoxy-flooring": "/images/coatings-industrial-epoxy-completed-floor.jpg",
   "/specialized-coatings/cemcrete-floors": "/images/coatings-cemcrete-floors-01.jpg",
   "/specialized-coatings/wall-cladding": "/images/coatings-wall-cladding-01.jpg",
-  "/specialized-coatings/cemcrete-external-walls": "/images/coatings-marmoran-wall-03.jpg",
+  "/specialized-coatings/cemcrete-external-walls": "/images/coatings-cemcrete-external-walls-01.jpg",
   "/specialized-coatings/hygienic-food-grade": "/images/coatings-hygienic-food-grade-01.jpg",
   "/specialized-coatings/marmoran-wall-systems": "/images/munyaka-midrand.jpg",
   "/specialized-coatings/industrial-corrosion-control": "/images/painting-industrial-corrosion.jpg",
