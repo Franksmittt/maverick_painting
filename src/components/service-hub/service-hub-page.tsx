@@ -53,13 +53,13 @@ export function ServiceHubPage({ config }: { config: ServiceHubPageConfig }) {
       <ServiceHubHero {...config.hero} />
       <ServiceHubApproach {...config.approach} />
       <HubSpokeSection variant="dark" {...config.hubSpoke} />
-      <ServiceHubMagazine {...config.magazine} />
       <ServiceHubGallery
         headingId={`${config.path.replace(/\//g, "-")}-image-gallery-heading`}
         title={`${config.breadcrumbLabel} image gallery`}
         subtitle="Six service image slots are reserved here so recent site photography can be added without changing the page layout."
         images={serviceImages}
       />
+      <ServiceHubMagazine {...config.magazine} />
       {(config.faqs ?? hubFaqsByPath[config.path]) ? (
         <FaqSection
           headingId={`${config.path.replace(/\//g, "-")}-faq-heading`}
