@@ -33,16 +33,15 @@ const SPECIALIZED_COATINGS_PATHS = new Set([
   "/specialized-coatings/industrial-corrosion-control",
 ]);
 
-const WATERPROOFING_PATHS = new Set([
-  "/waterproofing-services",
-  "/waterproofing/basement-tanking",
-]);
+const WATERPROOFING_PATHS = new Set(["/waterproofing-services"]);
 
 const FLAT_CONCRETE_ROOFS_PATHS = new Set(["/waterproofing/flat-concrete-roofs"]);
 
 const LEAKING_BALCONIES_PATHS = new Set(["/waterproofing/leaking-balconies"]);
 
 const TORCH_ON_LIQUID_PATHS = new Set(["/waterproofing/torch-on-liquid-membranes"]);
+
+const BASEMENT_TANKING_PATHS = new Set(["/waterproofing/basement-tanking"]);
 
 const PAINTING_SERVICES_PATHS = new Set([
   "/painting-services",
@@ -510,6 +509,46 @@ const TORCH_ON_LIQUID_IMAGE_POOL: readonly ServicePageImage[] = [
   },
 ];
 
+/** Dedicated nine-slot pool for the basement tanking spoke. */
+const BASEMENT_TANKING_IMAGE_POOL: readonly ServicePageImage[] = [
+  {
+    src: "/images/waterproofing-basement-tanking-01.jpg",
+    alt: "Completed basement car park level with dry sealed walls and floor",
+  },
+  {
+    src: "/images/waterproofing-basement-tanking-02.jpg",
+    alt: "Finished cementitious tanking coating on a basement parking wall",
+  },
+  {
+    src: "/images/waterproofing-basement-tanking-03.jpg",
+    alt: "Completed construction joint sealing in a basement car park wall",
+  },
+  {
+    src: "/images/waterproofing-basement-tanking-04.jpg",
+    alt: "Finished waterproofing at a basement parking column base",
+  },
+  {
+    src: "/images/waterproofing-basement-tanking-05.jpg",
+    alt: "Completed negative-side tanking in a small office basement car park corner",
+  },
+  {
+    src: "/images/waterproofing-basement-tanking-06.jpg",
+    alt: "Finished sealed lift pit or sump corner in a basement parking level",
+  },
+  {
+    src: "/images/waterproofing-basement-tanking-07.jpg",
+    alt: "Completed tanking on a wall beside a basement parking ramp",
+  },
+  {
+    src: "/images/waterproofing-basement-tanking-08.jpg",
+    alt: "Finished basement parking under a normal townhouse or apartment block",
+  },
+  {
+    src: "/images/waterproofing-basement-tanking-09.jpg",
+    alt: "Wide completed basement car park waterproofing handover with dry bays",
+  },
+];
+
 /** Shared nine-slot pool for the waterproofing hub and spokes. */
 const WATERPROOFING_IMAGE_POOL: readonly ServicePageImage[] = [
   {
@@ -538,15 +577,15 @@ const WATERPROOFING_IMAGE_POOL: readonly ServicePageImage[] = [
   },
   {
     src: "/images/waterproofing-basement-tanking-01.jpg",
-    alt: "Basement tanking assessment for hydrostatic pressure and active leak paths",
+    alt: "Completed basement car park level with dry sealed walls and floor",
   },
   {
     src: "/images/waterproofing-basement-tanking-02.jpg",
-    alt: "Crystalline or cementitious tanking application on a below-ground structure",
+    alt: "Finished cementitious tanking coating on a basement parking wall",
   },
   {
     src: "/images/waterproofing-basement-tanking-03.jpg",
-    alt: "Completed basement tanking handover with protection screed and monitoring notes",
+    alt: "Completed construction joint sealing in a basement car park wall",
   },
 ];
 
@@ -749,6 +788,10 @@ export function getServicePageImages(
 
   if (TORCH_ON_LIQUID_PATHS.has(path)) {
     return [...TORCH_ON_LIQUID_IMAGE_POOL];
+  }
+
+  if (BASEMENT_TANKING_PATHS.has(path)) {
+    return [...BASEMENT_TANKING_IMAGE_POOL];
   }
 
   if (WATERPROOFING_PATHS.has(path)) {

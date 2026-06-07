@@ -264,16 +264,16 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
   ],
   "basement-tanking": [
     {
-      src: "/images/waterproofing-basement-tanking-01.jpg",
-      alt: "Below-ground structure assessment for hydrostatic pressure and active leak paths",
+      src: "/images/waterproofing-basement-tanking-05.jpg",
+      alt: "Completed negative-side tanking in a small office basement car park corner",
     },
     {
-      src: "/images/waterproofing-basement-tanking-02.jpg",
-      alt: "Active leak management and tanking membrane installation ahead of basement handover",
+      src: "/images/waterproofing-basement-tanking-08.jpg",
+      alt: "Finished basement parking under a normal townhouse or apartment block",
     },
     {
-      src: "/images/waterproofing-basement-tanking-03.jpg",
-      alt: "Completed basement tanking handover with protection screed and monitoring notes",
+      src: "/images/waterproofing-basement-tanking-09.jpg",
+      alt: "Wide completed basement car park waterproofing handover with dry bays",
     },
   ],
   "roof-painting": [
