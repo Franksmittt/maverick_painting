@@ -118,8 +118,8 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
       alt: "Fresh saw-cut expansion joint with sealant installation in a small warehouse aisle",
     },
     {
-      src: "/images/structural-expansion-joint-01.jpg",
-      alt: "Renewed expansion joint line in a small basement parking area",
+      src: "/images/structural-expansion-joint-04.jpg",
+      alt: "Completed expansion joint with flush elastomeric sealant on a parking slab",
     },
   ],
   "rising-damp-treatment": [
