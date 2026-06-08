@@ -1,0 +1,243 @@
+{
+  "project": "Maverick Painting",
+  "client_site": "maverickpainting.co.za",
+  "page": "Marmoran wall systems spoke",
+  "path": "/specialized-coatings/marmoran-wall-systems",
+  "purpose": "AI image generation prompts for all nine photography slots on the Marmoran decorative wall systems spoke. Generate every image listed below, then supply files to be placed in public/images/ using the exact target_filename values. After generation, add MARMORAN_WALL_SYSTEMS_IMAGE_POOL in service-page-images.ts and update marmoran-wall-systems SPOKE_MAGAZINE_IMAGES in spoke-to-hub-config.tsx.",
+  "version": "1.0",
+  "date": "2026-06-08",
+  "style_guidelines": {
+    "mandatory_aesthetic": [
+      "raw documentary-style architectural and decorative coating photography",
+      "candid handheld camera aesthetic",
+      "unposed realism",
+      "authentic natural film grain",
+      "grounded Gauteng, South Africa context"
+    ],
+    "lighting": [
+      "Prefer harsh South African midday sun with raking light on textured walls, or warm late-afternoon golden hour emphasising granule depth",
+      "Avoid soft cinematic studio lighting and perfect HDR balance"
+    ],
+    "materials": [
+      "Describe micro-textures explicitly: visible mineral granules in high-build decorative coating, trowelled and rolled texture bands, matte to satin UV topcoat, neat termination at window reveals and parapets",
+      "Contrast fresh textured finish against ordinary plaster or face-brick adjacent zones where relevant"
+    ],
+    "scale_policy": "Small-team, modest-project realism only. Single townhouse elevations, short estate rows of four to six units, one boundary feature wall, or a small commercial feature façade a crew could coat with scaffold on one elevation — not hotel atriums, not twenty-two villa mega programmes, not Dubai luxury resorts.",
+    "shot_policy": "Mix close-up texture detail shots and medium architectural shots. Close-ups show granule exposure, corner arrises, and reveal junctions. Medium shots show one unit, one wall plane, or one garden boundary — never vast estate panoramas.",
+    "people_policy": "100% people-free. No workers, faces, hands, or silhouettes. Completed handover photography only.",
+    "completed_vs_process": "100% completed outcomes. No wet texture coats, half-finished walls, scaffold with workers, sample boards with readable labels, masking tape, or in-progress evidence.",
+    "text_policy": "Absolutely no readable text anywhere in frame. No estate name boards, house numbers, shop names, mock-up labels, posters, or branded signage.",
+    "location_cues": [
+      "Gauteng townhouse and lifestyle estate stock",
+      "Waterfall, Midrand, or Pretoria east residential architecture",
+      "pale Highveld sky",
+      "dry kikuyu grass and indigenous planting",
+      "modest two-storey units and boundary walls"
+    ]
+  },
+  "global_negative_prompt": "people, workers, faces, hands, silhouettes, wet coating, half-finished wall, scaffold with workers, masking tape, sample board with readable text, text, readable text, letters, numbers, words, signage, estate name board, logos, branding, watermarks, flat paint, smooth plaster with no texture, hotel atrium, Dubai resort, mega estate aerial, twenty-storey tower, plastic 3D render, CGI, Unreal Engine, oversaturated colours, perfectly clean fantasy site, drone aerial",
+  "output_specs": {
+    "default_format": "jpg",
+    "color_profile": "sRGB",
+    "quality": "high",
+    "notes": "All slots use 4:3 aspect ratio. Filename must match target_filename exactly (lowercase, hyphens). Replaces legacy coatings-marmoran-wall-01 through 03 placeholders on this spoke once integrated."
+  },
+  "page_slot_map": {
+    "note": "Nine-slot MARMORAN_WALL_SYSTEMS_IMAGE_POOL — add dedicated path handler and remove /specialized-coatings/marmoran-wall-systems from shared SPECIALIZED_COATINGS_PATHS when wired",
+    "slots": [
+      { "slot": 0, "role": "Hero", "filename": "coatings-marmoran-wall-01.jpg", "shot": "medium" },
+      { "slot": 1, "role": "Triptych left", "filename": "coatings-marmoran-wall-02.jpg", "shot": "close-up" },
+      { "slot": 2, "role": "Triptych centre", "filename": "coatings-marmoran-wall-03.jpg", "shot": "medium" },
+      { "slot": 3, "role": "Triptych right", "filename": "coatings-marmoran-wall-04.jpg", "shot": "close-up" },
+      { "slot": 4, "role": "Magazine editorial phase 01", "filename": "coatings-marmoran-wall-05.jpg", "shot": "medium" },
+      { "slot": 5, "role": "Image pair left", "filename": "coatings-marmoran-wall-06.jpg", "shot": "close-up" },
+      { "slot": 6, "role": "Image pair right", "filename": "coatings-marmoran-wall-07.jpg", "shot": "close-up" },
+      { "slot": 7, "role": "Magazine editorial phase 02", "filename": "coatings-marmoran-wall-08.jpg", "shot": "medium" },
+      { "slot": 8, "role": "Magazine editorial phase 03", "filename": "coatings-marmoran-wall-09.jpg", "shot": "medium" }
+    ]
+  },
+  "images": [
+    {
+      "id": "marmoran-townhouse-hero",
+      "section": "Hero — split layout beside H1",
+      "display_order": 0,
+      "target_filename": "coatings-marmoran-wall-01.jpg",
+      "target_path": "public/images/coatings-marmoran-wall-01.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed Marmoran-style decorative textured coating on a Gauteng townhouse elevation",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "mw01.png",
+      "prompt": "A raw, documentary-style 4:3 medium photograph of a completed high-build decorative textured wall coating on the front elevation of a modest two-storey Gauteng townhouse in a lifestyle estate near Midrand. The warm sandstone-beige Marmoran-style finish shows visible mineral granule texture and subtle trowel bands under raking midday sun, clearly not flat paint or CGI. Red roof tiles above, ordinary paved driveway, and dry Highveld grass at the base. No scaffold, workers, or estate signage. Empty property, no people. Authentic film grain, unposed architectural photography. No text, logos, signs, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, flat paint, smooth wall, mega mansion, readable estate sign, wet coating, scaffold, logos, CGI render, drone"
+    },
+    {
+      "id": "marmoran-granule-close",
+      "section": "Triptych left",
+      "display_order": 1,
+      "target_filename": "coatings-marmoran-wall-02.jpg",
+      "target_path": "public/images/coatings-marmoran-wall-02.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of completed Marmoran granule texture on an exterior wall in Gauteng",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "mw02.png",
+      "prompt": "A candid, documentary-style 4:3 close-up photograph of a completed Marmoran-class decorative wall coating on a Gauteng exterior plaster wall. The frame fills with warm greige high-build texture showing exposed mineral granules, fine roller marks, and matte UV topcoat sheen. Late-afternoon raking light casts micro-shadows across the texture so the coating is unmistakably decorative, not standard emulsion. Edge of window reveal blurred at frame edge with neat coating termination. No people. Authentic film grain, technical texture detail photography. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, flat painted wall, invisible texture, plastic CGI surface, readable labels, logos, wide building shot"
+    },
+    {
+      "id": "marmoran-estate-row",
+      "section": "Triptych centre",
+      "display_order": 2,
+      "target_filename": "coatings-marmoran-wall-03.jpg",
+      "target_path": "public/images/coatings-marmoran-wall-03.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed decorative textured coating on a short row of Gauteng estate townhouses",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "mw03.png",
+      "prompt": "A straightforward, documentary-style 4:3 medium photograph of a completed decorative textured coating programme on a short row of four townhouse units in a modest Gauteng estate. Each unit shows matching warm earth-toned Marmoran-style finish with consistent granule exposure across the row — scale appropriate to a small crew phasing one elevation at a time, not a vast development. Pale blue Highveld sky, interlocking pavers, and indigenous shrubs. Empty complex, no people or vehicles. Harsh midday sun emphasises wall texture. Authentic film grain, mundane estate realism. No text, estate boards, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, luxury resort row, inconsistent patchy coating, readable signage, wet texture, logos, drone aerial"
+    },
+    {
+      "id": "marmoran-reveal-close",
+      "section": "Triptych right",
+      "display_order": 3,
+      "target_filename": "coatings-marmoran-wall-04.jpg",
+      "target_path": "public/images/coatings-marmoran-wall-04.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of Marmoran texture termination at a window reveal on a Gauteng home",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "mw04.png",
+      "prompt": "A raw, documentary-style 4:3 close-up photograph of a completed decorative textured coating termination at an aluminium window reveal on a Gauteng home. The Marmoran-style warm sandstone texture wraps neatly to the frame with crisp arris lines and visible granule depth, adjacent off-white soffit above. Raking sunlight shows authentic hand-applied texture rather than a fake plastic render. No curtains with text, no decals on glass. No people. Authentic film grain, detail handover photography. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, messy reveal, flat paint, readable window decals, logos, CGI detail, wide house shot"
+    },
+    {
+      "id": "marmoran-boundary-wall",
+      "section": "Magazine editorial phase 01 + spoke magazine seed",
+      "display_order": 4,
+      "target_filename": "coatings-marmoran-wall-05.jpg",
+      "target_path": "public/images/coatings-marmoran-wall-05.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed Marmoran decorative finish on an estate boundary feature wall in Gauteng",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "mw05.png",
+      "prompt": "A candid, documentary-style 4:3 medium photograph of a completed decorative textured coating on a modest estate boundary feature wall in Pretoria east. The wall runs roughly ten metres with warm greige Marmoran-style granule finish, capped with neat plaster copings, set behind dry grass and ordinary kerb stones. Camera at eye level, one wall plane dominant — small-team programme scale, not a kilometres-long estate wall. Warm golden hour light rakes across texture. Empty scene, no people. Authentic film grain, suburban estate photography. No text, name boards, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, endless boundary wall, readable estate entrance sign, half-coated wall, logos, CGI, drone"
+    },
+    {
+      "id": "marmoran-corner-close",
+      "section": "Image pair left",
+      "display_order": 5,
+      "target_filename": "coatings-marmoran-wall-06.jpg",
+      "target_path": "public/images/coatings-marmoran-wall-06.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of external corner arris with Marmoran decorative texture in Gauteng",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "mw06.png",
+      "prompt": "A straightforward, documentary-style 4:3 close-up photograph of a completed external corner arris on a Gauteng townhouse with Marmoran-class decorative textured coating. The corner shows continuous granule texture wrapping both planes with neat true external angle, warm sandstone tone, and realistic shadow line under raking sun. No cracks telegraphing through the finish. No people or tools. Authentic film grain, craftsman detail realism. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, cracked corner, flat paint, perfect CGI corner, readable labels, wide elevation"
+    },
+    {
+      "id": "marmoran-parapet-close",
+      "section": "Image pair right",
+      "display_order": 6,
+      "target_filename": "coatings-marmoran-wall-07.jpg",
+      "target_path": "public/images/coatings-marmoran-wall-07.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of Marmoran texture at a parapet cap and wall head in Gauteng",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "mw07.png",
+      "prompt": "A raw, documentary-style 4:3 close-up photograph of a completed decorative textured coating at a flat-roof parapet cap on a modest Gauteng residential unit. The warm greige Marmoran-style texture terminates neatly below the cap with visible granule profile and UV topcoat satin hand, parapet edge painted clean off-white. Pale Highveld sky behind. No people. Authentic film grain, roofline detail photography. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, failed parapet detail, flat paint, logos, CGI, wide roof shot"
+    },
+    {
+      "id": "marmoran-interior-feature",
+      "section": "Magazine editorial phase 02 + spoke magazine seed",
+      "display_order": 7,
+      "target_filename": "coatings-marmoran-wall-08.jpg",
+      "target_path": "public/images/coatings-marmoran-wall-08.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed Marmoran decorative textured feature wall in a Gauteng living area",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "mw08.png",
+      "prompt": "A candid, documentary-style 4:3 medium photograph of a completed interior feature wall finished in a Marmoran-style decorative textured coating in a modest Gauteng townhouse living area. The accent wall shows warm earth-toned granule texture with raking window light emphasising depth, beside plain painted walls and tile floor. Simple sofa edge in frame, no branded décor. Small residential scale a crew could hand over in days. Empty room, no people. Authentic film grain, interior design documentation mood without staged luxury. No text, art with writing, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, flat painted feature wall, invisible texture, luxury penthouse, readable décor text, logos, CGI interior"
+    },
+    {
+      "id": "marmoran-commercial-feature",
+      "section": "Magazine editorial phase 03 + spoke magazine seed",
+      "display_order": 8,
+      "target_filename": "coatings-marmoran-wall-09.jpg",
+      "target_path": "public/images/coatings-marmoran-wall-09.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed Marmoran decorative textured façade on a small Gauteng commercial unit",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "mw09.png",
+      "prompt": "A raw, documentary-style 4:3 medium photograph of a completed Marmoran-class decorative textured coating on the street-facing elevation of a small single-storey commercial unit in a Gauteng neighbourhood centre. Warm sandstone textured finish covers the main façade with neat termination at shopfront columns, plain unmarked glass and doors, no readable store names. Modest retail strip scale, not a mall. Empty pavement, no people. Flat afternoon Highveld light. Authentic film grain, small commercial architectural realism. No text, shop signage, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, large mall façade, readable shop names, half-finished texture, logos, CGI retail render, drone"
+    }
+  ],
+  "hub_slot_assignment": {
+    "note": "Recommended mapping for service-page-images.ts MARMORAN_WALL_SYSTEMS_IMAGE_POOL",
+    "magazine_seeds_in_spoke_to_hub_config": [
+      { "phase": 1, "filename": "coatings-marmoran-wall-05.jpg" },
+      { "phase": 2, "filename": "coatings-marmoran-wall-08.jpg" },
+      { "phase": 3, "filename": "coatings-marmoran-wall-09.jpg" }
+    ]
+  },
+  "summary": {
+    "total_page_slots": 9,
+    "new_images_to_generate": 9,
+    "all_completed_work": true,
+    "no_text_anywhere": true,
+    "shot_mix": {
+      "close_up": 4,
+      "medium": 5
+    },
+    "generation_batches": {
+      "batch_1": [
+        "coatings-marmoran-wall-01.jpg",
+        "coatings-marmoran-wall-02.jpg",
+        "coatings-marmoran-wall-03.jpg",
+        "coatings-marmoran-wall-04.jpg",
+        "coatings-marmoran-wall-05.jpg"
+      ],
+      "batch_2": [
+        "coatings-marmoran-wall-06.jpg",
+        "coatings-marmoran-wall-07.jpg",
+        "coatings-marmoran-wall-08.jpg",
+        "coatings-marmoran-wall-09.jpg"
+      ]
+    },
+    "notes": [
+      "Texture must read clearly in every shot — visible granules and high-build decorative finish, not flat paint.",
+      "Legacy coatings-marmoran-wall-01 through 03 filenames are expanded to 09 for this dedicated spoke pool.",
+      "After generation: convert PNG → JPG (~88 quality), wire MARMORAN_WALL_SYSTEMS_IMAGE_POOL, update spoke config and og-images.ts, build, commit, push."
+    ]
+  }
+}

@@ -29,8 +29,11 @@ const CEMCRETE_EXTERNAL_WALLS_PATHS = new Set([
 const SPECIALIZED_COATINGS_PATHS = new Set([
   "/specialized-coatings",
   "/specialized-coatings/hygienic-food-grade",
-  "/specialized-coatings/marmoran-wall-systems",
   "/specialized-coatings/industrial-corrosion-control",
+]);
+
+const MARMORAN_WALL_SYSTEMS_PATHS = new Set([
+  "/specialized-coatings/marmoran-wall-systems",
 ]);
 
 const WATERPROOFING_PATHS = new Set(["/waterproofing-services"]);
@@ -145,12 +148,52 @@ const SPECIALIZED_COATINGS_IMAGE_POOL: readonly ServicePageImage[] = [
     alt: "Industrial corrosion assessment on steel structures in Gauteng",
   },
   {
+    src: "/images/coatings-cemcrete-external-walls-08.jpg",
+    alt: "Finished decorative cement feature wall on a normal Gauteng home",
+  },
+  {
+    src: "/images/coatings-wall-cladding-03.jpg",
+    alt: "Completed cladding on a simple estate entrance feature wall in warm grey",
+  },
+];
+
+/** Dedicated nine-slot pool for the Marmoran wall systems spoke. */
+const MARMORAN_WALL_SYSTEMS_IMAGE_POOL: readonly ServicePageImage[] = [
+  {
+    src: "/images/coatings-marmoran-wall-01.jpg",
+    alt: "Completed Marmoran-style decorative textured coating on a Gauteng townhouse elevation",
+  },
+  {
     src: "/images/coatings-marmoran-wall-02.jpg",
-    alt: "Premium textured wall coating application on a Gauteng façade",
+    alt: "Close-up of completed Marmoran granule texture on an exterior wall in Gauteng",
   },
   {
     src: "/images/coatings-marmoran-wall-03.jpg",
-    alt: "Completed Marmoran-style decorative wall finish on an estate elevation",
+    alt: "Completed decorative textured coating on a short row of Gauteng estate townhouses",
+  },
+  {
+    src: "/images/coatings-marmoran-wall-04.jpg",
+    alt: "Close-up of Marmoran texture termination at a window reveal on a Gauteng home",
+  },
+  {
+    src: "/images/coatings-marmoran-wall-05.jpg",
+    alt: "Completed Marmoran decorative finish on an estate boundary feature wall in Gauteng",
+  },
+  {
+    src: "/images/coatings-marmoran-wall-06.jpg",
+    alt: "Close-up of external corner arris with Marmoran decorative texture in Gauteng",
+  },
+  {
+    src: "/images/coatings-marmoran-wall-07.jpg",
+    alt: "Close-up of Marmoran texture at a parapet cap and wall head in Gauteng",
+  },
+  {
+    src: "/images/coatings-marmoran-wall-08.jpg",
+    alt: "Completed Marmoran decorative textured feature wall in a Gauteng living area",
+  },
+  {
+    src: "/images/coatings-marmoran-wall-09.jpg",
+    alt: "Completed Marmoran decorative textured façade on a small Gauteng commercial unit",
   },
 ];
 
@@ -977,6 +1020,10 @@ export function getServicePageImages(
 
   if (CEMCRETE_EXTERNAL_WALLS_PATHS.has(path)) {
     return [...CEMCRETE_EXTERNAL_WALLS_IMAGE_POOL];
+  }
+
+  if (MARMORAN_WALL_SYSTEMS_PATHS.has(path)) {
+    return [...MARMORAN_WALL_SYSTEMS_IMAGE_POOL];
   }
 
   if (SPECIALIZED_COATINGS_PATHS.has(path)) {

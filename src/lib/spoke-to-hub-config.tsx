@@ -194,16 +194,16 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
   ],
   "marmoran-wall-systems": [
     {
-      src: "/images/coatings-marmoran-wall-01.jpg",
-      alt: "Marmoran-class decorative wall preparation and high-build textured coating work on a Gauteng façade",
+      src: "/images/coatings-marmoran-wall-05.jpg",
+      alt: "Completed Marmoran decorative finish on an estate boundary feature wall in Gauteng",
     },
     {
-      src: "/images/coatings-marmoran-wall-02.jpg",
-      alt: "Premium textured wall coating application with granule control and signed-off mock-up reference",
+      src: "/images/coatings-marmoran-wall-08.jpg",
+      alt: "Completed Marmoran decorative textured feature wall in a Gauteng living area",
     },
     {
-      src: "/images/coatings-marmoran-wall-03.jpg",
-      alt: "Completed Marmoran-style decorative wall finish on an estate or commercial elevation",
+      src: "/images/coatings-marmoran-wall-09.jpg",
+      alt: "Completed Marmoran decorative textured façade on a small Gauteng commercial unit",
     },
   ],
   "industrial-corrosion-control": [
