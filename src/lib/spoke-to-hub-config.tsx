@@ -40,16 +40,16 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
   ],
   "hygienic-food-grade": [
     {
-      src: "/images/coatings-hygienic-food-grade-01.jpg",
-      alt: "Hygienic PU-cement or resin flooring in a food or beverage production area in Gauteng",
+      src: "/images/coatings-hygienic-food-grade-05.jpg",
+      alt: "Completed hygienic floor in a small Gauteng craft beverage bottling room",
     },
     {
-      src: "/images/coatings-hygienic-food-grade-02.jpg",
-      alt: "Seamless hygienic floor with integral coving and drainage detailing for HACCP-driven facilities",
+      src: "/images/coatings-hygienic-food-grade-08.jpg",
+      alt: "Completed thermal-shock hygienic floor at a cold-room threshold in Gauteng",
     },
     {
-      src: "/images/coatings-hygienic-food-grade-03.jpg",
-      alt: "Completed food-grade resin floor system ready for washdown and audit sign-off",
+      src: "/images/coatings-hygienic-food-grade-09.jpg",
+      alt: "Completed hygienic floor and bund walkway in a small Gauteng beverage plant",
     },
   ],
   "body-corporate": [

@@ -29,8 +29,11 @@ const CEMCRETE_EXTERNAL_WALLS_PATHS = new Set([
 
 const SPECIALIZED_COATINGS_PATHS = new Set([
   "/specialized-coatings",
-  "/specialized-coatings/hygienic-food-grade",
   "/specialized-coatings/industrial-corrosion-control",
+]);
+
+const HYGIENIC_FOOD_GRADE_PATHS = new Set([
+  "/specialized-coatings/hygienic-food-grade",
 ]);
 
 const MARMORAN_WALL_SYSTEMS_PATHS = new Set([
@@ -133,16 +136,16 @@ const SPECIALIZED_COATINGS_IMAGE_POOL: readonly ServicePageImage[] = [
     alt: "Multi-coat epoxy resin flooring application with controlled film build",
   },
   {
-    src: "/images/coatings-hygienic-food-grade-02.jpg",
-    alt: "Completed hygienic PU-cement floor with coving in a food production area",
+    src: "/images/coatings-industrial-epoxy-05.jpg",
+    alt: "Completed mid-grey epoxy floor in a small Gauteng industrial unit",
   },
   {
     src: "/images/coatings-industrial-corrosion-02.jpg",
     alt: "Completed industrial corrosion protection on pipe bridge steelwork",
   },
   {
-    src: "/images/coatings-hygienic-food-grade-01.jpg",
-    alt: "Hygienic floor and wall preparation before PU-cement application",
+    src: "/images/coatings-industrial-epoxy-06.jpg",
+    alt: "Completed epoxy lining in a small chemical storage bund",
   },
   {
     src: "/images/coatings-industrial-corrosion-01.jpg",
@@ -198,6 +201,46 @@ const MARMORAN_WALL_SYSTEMS_IMAGE_POOL: readonly ServicePageImage[] = [
   },
 ];
 
+/** Dedicated nine-slot pool for the hygienic food-grade flooring spoke. */
+const HYGIENIC_FOOD_GRADE_IMAGE_POOL: readonly ServicePageImage[] = [
+  {
+    src: "/images/coatings-hygienic-food-grade-01.jpg",
+    alt: "Completed hygienic polyurethane-cement floor in a small Gauteng commercial bakery",
+  },
+  {
+    src: "/images/coatings-hygienic-food-grade-02.jpg",
+    alt: "Close-up of integral radius coving on a hygienic food-grade floor in Gauteng",
+  },
+  {
+    src: "/images/coatings-hygienic-food-grade-03.jpg",
+    alt: "Completed hygienic floor and coving in a small Gauteng abattoir washdown corridor",
+  },
+  {
+    src: "/images/coatings-hygienic-food-grade-04.jpg",
+    alt: "Close-up of a stainless drain surround on a completed hygienic floor in Gauteng",
+  },
+  {
+    src: "/images/coatings-hygienic-food-grade-05.jpg",
+    alt: "Completed hygienic floor in a small Gauteng craft beverage bottling room",
+  },
+  {
+    src: "/images/coatings-hygienic-food-grade-06.jpg",
+    alt: "Close-up of anti-slip texture on a completed hygienic polyurethane-cement floor in Gauteng",
+  },
+  {
+    src: "/images/coatings-hygienic-food-grade-07.jpg",
+    alt: "Close-up of hygienic floor coving and wall splash zone in a Gauteng food prep area",
+  },
+  {
+    src: "/images/coatings-hygienic-food-grade-08.jpg",
+    alt: "Completed thermal-shock hygienic floor at a cold-room threshold in Gauteng",
+  },
+  {
+    src: "/images/coatings-hygienic-food-grade-09.jpg",
+    alt: "Completed hygienic floor and bund walkway in a small Gauteng beverage plant",
+  },
+];
+
 /** Dedicated nine-slot pool for the industrial epoxy flooring spoke. */
 const INDUSTRIAL_EPOXY_FLOORING_IMAGE_POOL: readonly ServicePageImage[] = [
   {
@@ -213,16 +256,16 @@ const INDUSTRIAL_EPOXY_FLOORING_IMAGE_POOL: readonly ServicePageImage[] = [
     alt: "Multi-coat epoxy resin flooring application with controlled film build",
   },
   {
-    src: "/images/coatings-hygienic-food-grade-02.jpg",
-    alt: "Completed hygienic PU-cement floor with coving in a food production area",
+    src: "/images/coatings-industrial-corrosion-02.jpg",
+    alt: "Completed industrial corrosion protection on pipe bridge steelwork",
   },
   {
     src: "/images/coatings-industrial-epoxy-04.jpg",
     alt: "Completed cold-room epoxy or polyurethane-cement floor with coved wall base",
   },
   {
-    src: "/images/coatings-hygienic-food-grade-01.jpg",
-    alt: "Hygienic floor and wall preparation before PU-cement application",
+    src: "/images/coatings-industrial-corrosion-03.jpg",
+    alt: "Completed protective coating on structural steel in a Gauteng plant",
   },
   {
     src: "/images/coatings-industrial-epoxy-05.jpg",
@@ -1065,6 +1108,10 @@ export function getServicePageImages(
 
   if (CEMCRETE_EXTERNAL_WALLS_PATHS.has(path)) {
     return [...CEMCRETE_EXTERNAL_WALLS_IMAGE_POOL];
+  }
+
+  if (HYGIENIC_FOOD_GRADE_PATHS.has(path)) {
+    return [...HYGIENIC_FOOD_GRADE_IMAGE_POOL];
   }
 
   if (MARMORAN_WALL_SYSTEMS_PATHS.has(path)) {

@@ -1,0 +1,244 @@
+{
+  "project": "Maverick Painting",
+  "client_site": "maverickpainting.co.za",
+  "page": "Industrial corrosion control spoke",
+  "path": "/specialized-coatings/industrial-corrosion-control",
+  "purpose": "AI image generation prompts for all nine photography slots on the industrial corrosion control spoke. Generate every image listed below, then supply files to be placed in public/images/ using the exact target_filename values. After generation, add INDUSTRIAL_CORROSION_CONTROL_IMAGE_POOL in service-page-images.ts, remove /specialized-coatings/industrial-corrosion-control from SPECIALIZED_COATINGS_PATHS, and update industrial-corrosion-control SPOKE_MAGAZINE_IMAGES in spoke-to-hub-config.tsx.",
+  "version": "1.0",
+  "date": "2026-06-08",
+  "style_guidelines": {
+    "mandatory_aesthetic": [
+      "raw documentary-style industrial corrosion protection photography",
+      "candid handheld camera aesthetic",
+      "unposed realism",
+      "authentic natural film grain",
+      "grounded Gauteng, South Africa context"
+    ],
+    "lighting": [
+      "Prefer harsh Highveld midday sun on exterior steel, or flat overcast light on plant structures",
+      "Avoid soft cinematic studio lighting and perfect HDR balance"
+    ],
+    "materials": [
+      "Describe micro-textures explicitly: grey zinc-rich primer on blast-clean steel, satin epoxy mid-coat, gloss polyurethane topcoat sheen, feathered stripe coats at welds, fair coating termination at bolt flanges",
+      "Contrast fresh grey-green protective stack against light surface rust on adjacent untreated steel where relevant"
+    ],
+    "scale_policy": "Small-team, modest-asset realism only. Small pipe racks, single silo or tank, light industrial warehouse portal frames, or a modest bund steel run a crew could coat on MEWP over a shutdown — not refinery complexes, not offshore platforms, not kilometres of pipeline.",
+    "shot_policy": "Mix close-up coating detail shots and medium structural shots. Close-ups show stripe coats, flange terminations, and film build texture. Medium shots show one rack, one silo, or one bay of steel — never vast plant panoramas.",
+    "people_policy": "100% people-free. No workers, faces, hands, or silhouettes. Completed handover photography only.",
+    "completed_vs_process": "100% completed outcomes. No active blasting, wet paint, spray equipment in use, half-coated steel, or in-progress evidence.",
+    "text_policy": "Absolutely no readable text anywhere in frame. No tank nameplates, hazard signs, company logos on hard hats, gauge readouts with numbers, or branded site boards.",
+    "location_cues": [
+      "Gauteng light industrial and logistics parks",
+      "Isando and East Rand plant steel",
+      "modest silo or tank farm",
+      "warehouse portal frame",
+      "pale Highveld sky",
+      "corrugated roof cladding behind steelwork"
+    ]
+  },
+  "global_negative_prompt": "people, workers, faces, hands, silhouettes, active blasting, wet paint spray, half-coated steel, readable text, letters, numbers, words, tank nameplate, hazard sign, logos, branding, watermarks, refinery complex, offshore platform, pipeline corridor, plastic 3D render, CGI, Unreal Engine, oversaturated colours, perfectly clean fantasy plant, drone aerial",
+  "output_specs": {
+    "default_format": "jpg",
+    "color_profile": "sRGB",
+    "quality": "high",
+    "notes": "All slots use 4:3 aspect ratio. Filename must match target_filename exactly (lowercase, hyphens). Replaces legacy coatings-industrial-corrosion-01 through 03 placeholders on this spoke once integrated."
+  },
+  "page_slot_map": {
+    "note": "Nine-slot INDUSTRIAL_CORROSION_CONTROL_IMAGE_POOL — remove /specialized-coatings/industrial-corrosion-control from SPECIALIZED_COATINGS_PATHS when wired",
+    "slots": [
+      { "slot": 0, "role": "Hero", "filename": "coatings-industrial-corrosion-01.jpg", "shot": "medium" },
+      { "slot": 1, "role": "Triptych left", "filename": "coatings-industrial-corrosion-02.jpg", "shot": "close-up" },
+      { "slot": 2, "role": "Triptych centre", "filename": "coatings-industrial-corrosion-03.jpg", "shot": "medium" },
+      { "slot": 3, "role": "Triptych right", "filename": "coatings-industrial-corrosion-04.jpg", "shot": "close-up" },
+      { "slot": 4, "role": "Magazine editorial phase 01", "filename": "coatings-industrial-corrosion-05.jpg", "shot": "medium" },
+      { "slot": 5, "role": "Image pair left", "filename": "coatings-industrial-corrosion-06.jpg", "shot": "close-up" },
+      { "slot": 6, "role": "Image pair right", "filename": "coatings-industrial-corrosion-07.jpg", "shot": "close-up" },
+      { "slot": 7, "role": "Magazine editorial phase 02", "filename": "coatings-industrial-corrosion-08.jpg", "shot": "medium" },
+      { "slot": 8, "role": "Magazine editorial phase 03", "filename": "coatings-industrial-corrosion-09.jpg", "shot": "medium" }
+    ]
+  },
+  "images": [
+    {
+      "id": "corrosion-pipe-rack-hero",
+      "section": "Hero — split layout beside H1",
+      "display_order": 0,
+      "target_filename": "coatings-industrial-corrosion-01.jpg",
+      "target_path": "public/images/coatings-industrial-corrosion-01.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed corrosion protection coating on a small Gauteng industrial pipe rack",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "ic01.png",
+      "prompt": "A raw, documentary-style 4:3 medium photograph of completed industrial corrosion protection coatings on a modest pipe rack at a small Gauteng light industrial plant. Grey-green epoxy and polyurethane stack on blast-prepared steel runs one bay deep under harsh midday sun — small-team shutdown scale, not a refinery. Empty yard, corrugated warehouse wall behind, no readable signage. No people or scaffolding. Authentic film grain, unposed plant photography. No text, logos, signs, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, refinery scale, readable tank labels, half-coated steel, wet paint, logos, CGI render, drone"
+    },
+    {
+      "id": "corrosion-stripe-coat-close",
+      "section": "Triptych left",
+      "display_order": 1,
+      "target_filename": "coatings-industrial-corrosion-02.jpg",
+      "target_path": "public/images/coatings-industrial-corrosion-02.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of stripe coat and weld area corrosion protection on Gauteng steelwork",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "ic02.png",
+      "prompt": "A candid, documentary-style 4:3 close-up photograph of a completed stripe coat and weld area on structural steel at a Gauteng plant. Grey zinc-rich primer and epoxy mid-coat feather neatly around the weld seam with satin topcoat sheen — clearly a protective stack, not generic grey paint. Raking sunlight emphasises film build. No people. Authentic film grain, coating detail photography. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, rust bleed-through, flat house paint, readable labels, logos, wide rack shot, CGI"
+    },
+    {
+      "id": "corrosion-silo-medium",
+      "section": "Triptych centre",
+      "display_order": 2,
+      "target_filename": "coatings-industrial-corrosion-03.jpg",
+      "target_path": "public/images/coatings-industrial-corrosion-03.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed protective coating on a modest Gauteng storage silo exterior",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "ic03.png",
+      "prompt": "A straightforward, documentary-style 4:3 medium photograph of a completed protective coating system on the exterior of a modest single silo at a small Gauteng manufacturing site. Light grey polyurethane finish on cylindrical steel with neat termination at manway band — farm or feed-mill scale, not a grain export terminal. Pale Highveld sky, gravel yard. Empty site, no people. Authentic film grain, industrial asset realism. No text, silo stencils, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, grain terminal row, readable silo text, half-painted tank, logos, drone aerial"
+    },
+    {
+      "id": "corrosion-flange-close",
+      "section": "Triptych right",
+      "display_order": 3,
+      "target_filename": "coatings-industrial-corrosion-04.jpg",
+      "target_path": "public/images/coatings-industrial-corrosion-04.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of corrosion protection coating at a bolt flange on Gauteng plant steel",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "ic04.png",
+      "prompt": "A raw, documentary-style 4:3 close-up photograph of completed corrosion protection coating at a bolt flange connection on plant pipework in Gauteng. Grey epoxy stack wraps the flange and pipe with neat termination at bolt heads, no missed holidays visible. No readable stamp marks on bolts. No people. Authentic film grain, flange detail handover photography. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, missed holidays, rust at flange, readable bolt marks, logos, CGI, wide pipe run"
+    },
+    {
+      "id": "corrosion-portal-frame",
+      "section": "Magazine editorial phase 01 + spoke magazine seed",
+      "display_order": 4,
+      "target_filename": "coatings-industrial-corrosion-05.jpg",
+      "target_path": "public/images/coatings-industrial-corrosion-05.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed corrosion protection on warehouse portal frame steel in Gauteng",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "ic05.png",
+      "prompt": "A candid, documentary-style 4:3 medium photograph of completed corrosion protection coatings on the portal frame steel of a small Gauteng warehouse in an East Rand logistics park. Grey-green protective stack on columns and rafters with corrugated roof above — single-bay unit scale a crew could coat from MEWP over a weekend. Empty yard, no trucks. Flat overcast Highveld light. No people. Authentic film grain, warehouse structural realism. No text, company signs, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, mega distribution centre, readable warehouse sign, half-coated frame, logos, drone"
+    },
+    {
+      "id": "corrosion-ibeam-close",
+      "section": "Image pair left",
+      "display_order": 5,
+      "target_filename": "coatings-industrial-corrosion-06.jpg",
+      "target_path": "public/images/coatings-industrial-corrosion-06.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of epoxy coating film build on structural I-beam steel in Gauteng",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "ic06.png",
+      "prompt": "A straightforward, documentary-style 4:3 close-up photograph of completed epoxy corrosion protection coating on the web and flange of a structural I-beam in a Gauteng plant. Satin grey film shows subtle orange-peel texture and clean edges at a stiffener plate — authentic industrial coating, not CGI metal. Raking light from a high window. No people. Authentic film grain, steel coating detail photography. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, rusted untreated steel, perfect mirror CGI metal, readable tags, logos, wide bay shot"
+    },
+    {
+      "id": "corrosion-base-plate-close",
+      "section": "Image pair right",
+      "display_order": 6,
+      "target_filename": "coatings-industrial-corrosion-07.jpg",
+      "target_path": "public/images/coatings-industrial-corrosion-07.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of corrosion protection at a column base plate in Gauteng",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "ic07.png",
+      "prompt": "A raw, documentary-style 4:3 close-up photograph of completed corrosion protection coating at a structural column base plate on a Gauteng warehouse floor slab. Grey protective stack wraps the base and column stem with neat termination above the grout line — no rust creep at the interface. Concrete floor edge visible. No people. Authentic film grain, base detail handover photography. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, rust at base, missed coating, readable floor stencils, logos, CGI, wide interior"
+    },
+    {
+      "id": "corrosion-bund-steel",
+      "section": "Magazine editorial phase 02 + spoke magazine seed",
+      "display_order": 7,
+      "target_filename": "coatings-industrial-corrosion-08.jpg",
+      "target_path": "public/images/coatings-industrial-corrosion-08.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed corrosion protection on bund wall steel at a small Gauteng chemical plant",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "ic08.png",
+      "prompt": "A candid, documentary-style 4:3 medium photograph of completed corrosion protection coatings on bund wall steel and handrail at a small Gauteng chemical or process plant. Grey epoxy-polyurethane stack on modest tank-adjacent steelwork — single-bay bund scale, not a refinery tank farm. Empty bund floor, no readable tank labels. Flat afternoon plant light. No people. Authentic film grain, process plant realism. No text, hazard signs, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, refinery tank farm, readable tank names, half-coated bund, logos, drone aerial"
+    },
+    {
+      "id": "corrosion-walkway-rail",
+      "section": "Magazine editorial phase 03 + spoke magazine seed",
+      "display_order": 8,
+      "target_filename": "coatings-industrial-corrosion-09.jpg",
+      "target_path": "public/images/coatings-industrial-corrosion-09.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed protective coating on plant walkway handrail and support steel in Gauteng",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "ic09.png",
+      "prompt": "A raw, documentary-style 4:3 medium photograph of completed corrosion protection coatings on a plant walkway handrail and support steel at a modest Gauteng manufacturing facility. Grey-green protective finish on tubular rail and posts with grated walkway — small internal platform scale a maintenance crew could recoat in one outage. Empty walkway, no people. Cool interior plant light with daylight at far opening. Authentic film grain, industrial maintenance photography. No text, warning signs, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, petrochemical catwalk maze, readable signs, half-painted rail, logos, CGI"
+    }
+  ],
+  "hub_slot_assignment": {
+    "note": "Recommended mapping for service-page-images.ts INDUSTRIAL_CORROSION_CONTROL_IMAGE_POOL",
+    "magazine_seeds_in_spoke_to_hub_config": [
+      { "phase": 1, "filename": "coatings-industrial-corrosion-05.jpg" },
+      { "phase": 2, "filename": "coatings-industrial-corrosion-08.jpg" },
+      { "phase": 3, "filename": "coatings-industrial-corrosion-09.jpg" }
+    ]
+  },
+  "summary": {
+    "total_page_slots": 9,
+    "new_images_to_generate": 9,
+    "all_completed_work": true,
+    "no_text_anywhere": true,
+    "shot_mix": {
+      "close_up": 4,
+      "medium": 5
+    },
+    "generation_batches": {
+      "batch_1": [
+        "coatings-industrial-corrosion-01.jpg",
+        "coatings-industrial-corrosion-02.jpg",
+        "coatings-industrial-corrosion-03.jpg",
+        "coatings-industrial-corrosion-04.jpg",
+        "coatings-industrial-corrosion-05.jpg"
+      ],
+      "batch_2": [
+        "coatings-industrial-corrosion-06.jpg",
+        "coatings-industrial-corrosion-07.jpg",
+        "coatings-industrial-corrosion-08.jpg",
+        "coatings-industrial-corrosion-09.jpg"
+      ]
+    },
+    "notes": [
+      "Legacy coatings-industrial-corrosion-01 through 03 filenames expand to full 09-set for this spoke.",
+      "Remove corrosion images from shared SPECIALIZED_COATINGS and industrial-epoxy pools when wiring.",
+      "After generation: convert PNG → JPG (~88 quality), wire pool, update spoke config and og-images.ts, build, commit, push."
+    ]
+  }
+}

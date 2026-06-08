@@ -1,6 +1,6 @@
 ================================================================================
 MAVERICK PAINTING — PROJECT SUMMARY
-Last updated: 2026-06-08
+Last updated: 2026-06-08 (hygienic batch integrated)
 Site: https://www.maverickpainting.co.za
 Repo: https://github.com/Franksmittt/maverick_painting (branch: main)
 Stack: Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS · pnpm
@@ -63,9 +63,10 @@ painting-stucco-wall-coatings-image-prompts.txt
 painting-parking-garage-image-prompts.txt
 marmoran-wall-systems-image-prompts.txt
 concrete-spalling-image-prompts.txt
-hygienic-food-grade-image-prompts.txt         (NEXT — prompts ready, images pending)
+hygienic-food-grade-image-prompts.txt         (integrated)
+industrial-corrosion-control-image-prompts.txt  (NEXT — prompts ready, images pending)
 
-DEDICATED 9-IMAGE POOLS — DONE (16 spokes)
+DEDICATED 9-IMAGE POOLS — DONE (17 spokes)
 ------------------------------------------
 Structural
   ✓ /structural-repairs/crack-injection          structural-crack-injection-01…09
@@ -83,6 +84,7 @@ Coatings
   ✓ /specialized-coatings/cemcrete-external-walls coatings-cemcrete-external-walls-01…09
   ✓ /specialized-coatings/wall-cladding          coatings-wall-cladding-01…09
   ✓ /specialized-coatings/marmoran-wall-systems  coatings-marmoran-wall-01…09
+  ✓ /specialized-coatings/hygienic-food-grade    coatings-hygienic-food-grade-01…09
 
 Painting
   ✓ /painting/industrial                         painting-industrial-01…09
@@ -95,14 +97,13 @@ PARTIAL — dedicated pool but not a clean numbered 9 (2 spokes)
   ~ /painting/body-corporate                     6 new + 3 legacy reused in pool
   ~ /specialized-coatings/industrial-epoxy-flooring  mixed epoxy/hygienic/legacy shots
 
-NOT DONE — still on shared hub pool (11 spokes)
+NOT DONE — still on shared hub pool (10 spokes)
 -----------------------------------------------
 Damp
   · /damp-proofing/rising-damp-treatment         shared DAMP_PROOFING_IMAGE_POOL
 
 Coatings
-  · /specialized-coatings/hygienic-food-grade    shared SPECIALIZED_COATINGS pool  ← NEXT
-  · /specialized-coatings/industrial-corrosion-control  shared SPECIALIZED_COATINGS pool
+  · /specialized-coatings/industrial-corrosion-control  shared SPECIALIZED_COATINGS pool  ← NEXT
 
 Painting (all on PAINTING_SERVICES_IMAGE_POOL)
   · /painting/interior-painting
@@ -169,6 +170,7 @@ POST-DEPLOY CHECKLIST (after each image batch)
 ================================================================================
 CHANGELOG (photography program)
 ================================================================================
+2026-06-08  Hygienic food-grade dedicated pool (coatings-hygienic-food-grade-01…09)
 2026-06-08  Concrete spalling dedicated pool (structural-concrete-spalling-01…09)
 2026-06-08  Marmoran wall systems dedicated pool (coatings-marmoran-wall-01…09)
 2026-06-08  Parking garage painting dedicated pool
