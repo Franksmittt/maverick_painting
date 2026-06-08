@@ -7,7 +7,7 @@ import { HomeServicePillars } from "@/components/home/home-service-pillars";
 import { HomeFeaturedServices } from "@/components/home/home-featured-services";
 import { HomeLocationsNav } from "@/components/home/home-locations-nav";
 import { ServicesAdditionalHubs } from "@/components/services/services-additional-hubs";
-import { SERVICES_VISUAL_STRIP } from "@/data/services-page-content";
+import { SERVICES_ALL_SPOKES, SERVICES_VISUAL_STRIP } from "@/data/services-page-content";
 
 const QA_STEPS = [
   {
@@ -106,7 +106,7 @@ export function ServicesOverview() {
       <HomeAudienceStrip />
       <HomeServicePillars />
       <ServicesAdditionalHubs />
-      <HomeFeaturedServices hideOverviewLink />
+      <HomeFeaturedServices hideOverviewLink services={SERVICES_ALL_SPOKES} />
       <HomeLocationsNav />
 
       <SectionShell bordered={false} className="pb-16 md:pb-24 lg:pb-28">

@@ -71,7 +71,7 @@ export const HOME_HUB_PILLARS: {
       "Epoxy and PU floors, hygienic HACCP surfaces, Marmoran walls, and industrial corrosion control.",
     href: "/specialized-coatings",
     image: "/images/coatings-industrial-epoxy-resin-application.jpg",
-    tags: SERVICE_OVERVIEW_TAGS.coatings.slice(0, 4),
+    tags: SERVICE_OVERVIEW_TAGS.coatings,
   },
   {
     num: "03",
@@ -89,7 +89,7 @@ export const HOME_HUB_PILLARS: {
       "Body corporate, industrial, warehouse, rope access, and high-volume airless programmes with QA reporting.",
     href: "/painting-services",
     image: "/images/painting-industrial-coatings.jpg",
-    tags: SERVICE_OVERVIEW_TAGS.painting.slice(0, 4),
+    tags: SERVICE_OVERVIEW_TAGS.painting,
   },
 ];
 

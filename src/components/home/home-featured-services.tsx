@@ -1,9 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { HOME_FEATURED_SERVICES } from "@/data/home-page-content";
+import { HOME_FEATURED_SERVICES, type HomeFeaturedService } from "@/data/home-page-content";
 
-export function HomeFeaturedServices({ hideOverviewLink = false }: { hideOverviewLink?: boolean }) {
+export function HomeFeaturedServices({
+  hideOverviewLink = false,
+  services = HOME_FEATURED_SERVICES,
+}: {
+  hideOverviewLink?: boolean;
+  services?: readonly HomeFeaturedService[];
+}) {
   return (
     <section className="section-surface section-flow" aria-labelledby="home-featured-services-heading">
       <div className="page-container">
@@ -14,7 +20,9 @@ export function HomeFeaturedServices({ hideOverviewLink = false }: { hideOvervie
               Jump straight to the scope you need
             </h2>
             <p className="type-body m-0 text-zinc-500">
-              Twelve high-intent entry points across structural, waterproofing, coatings, painting, and access work.
+              {services.length === HOME_FEATURED_SERVICES.length
+                ? "Twelve high-intent entry points across structural, waterproofing, coatings, painting, and access work."
+                : `${services.length} dedicated service pages across structural, waterproofing, coatings, painting, damp proofing, and access work.`}
             </p>
           </header>
           {hideOverviewLink ? (
@@ -29,7 +37,7 @@ export function HomeFeaturedServices({ hideOverviewLink = false }: { hideOvervie
         </div>
 
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {HOME_FEATURED_SERVICES.map((service) => (
+          {services.map((service) => (
             <Link
               key={service.href}
               href={service.href}
