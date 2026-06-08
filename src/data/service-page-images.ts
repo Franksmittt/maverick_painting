@@ -49,10 +49,11 @@ const INDUSTRIAL_PAINTING_PATHS = new Set(["/painting/industrial"]);
 
 const COMMERCIAL_PAINTING_PATHS = new Set(["/painting/commercial-painting"]);
 
+const STUCCO_WALL_COATINGS_PATHS = new Set(["/painting/stucco-wall-coatings"]);
+
 const PAINTING_SERVICES_PATHS = new Set([
   "/painting-services",
   "/painting/roof-painting",
-  "/painting/stucco-wall-coatings",
   "/painting/interior-painting",
   "/painting/internal-walls",
   "/painting/external-walls",
@@ -712,6 +713,46 @@ const COMMERCIAL_PAINTING_IMAGE_POOL: readonly ServicePageImage[] = [
   },
 ];
 
+/** Dedicated nine-slot pool for the stucco & wall coatings spoke. */
+const STUCCO_WALL_COATINGS_IMAGE_POOL: readonly ServicePageImage[] = [
+  {
+    src: "/images/painting-stucco-01.jpg",
+    alt: "Completed warm sand interior stucco feature wall in a Gauteng living room",
+  },
+  {
+    src: "/images/painting-stucco-02.jpg",
+    alt: "Completed soft greige interior stucco in an open-plan dining and living area",
+  },
+  {
+    src: "/images/painting-stucco-03.jpg",
+    alt: "Completed warm off-white interior stucco walls in a residential entrance foyer",
+  },
+  {
+    src: "/images/painting-stucco-04.jpg",
+    alt: "Completed warm sand interior stucco accent wall in a lounge seating area",
+  },
+  {
+    src: "/images/painting-stucco-05.jpg",
+    alt: "Completed soft greige interior stucco wall in a formal dining room in Gauteng",
+  },
+  {
+    src: "/images/painting-stucco-06.jpg",
+    alt: "Completed warm off-white interior stucco media wall in a living room",
+  },
+  {
+    src: "/images/painting-stucco-07.jpg",
+    alt: "Completed warm sand interior stucco in a foyer opening into the living room",
+  },
+  {
+    src: "/images/painting-stucco-08.jpg",
+    alt: "Completed soft greige interior stucco in a styled living or dining space in Gauteng",
+  },
+  {
+    src: "/images/painting-stucco-09.jpg",
+    alt: "Completed warm off-white interior stucco on a lounge corner wall in a Gauteng home",
+  },
+];
+
 /** Shared nine-slot pool for the painting services hub and spokes. */
 const PAINTING_SERVICES_IMAGE_POOL: readonly ServicePageImage[] = [
   {
@@ -927,6 +968,10 @@ export function getServicePageImages(
 
   if (COMMERCIAL_PAINTING_PATHS.has(path)) {
     return [...COMMERCIAL_PAINTING_IMAGE_POOL];
+  }
+
+  if (STUCCO_WALL_COATINGS_PATHS.has(path)) {
+    return [...STUCCO_WALL_COATINGS_IMAGE_POOL];
   }
 
   if (WATERPROOFING_PATHS.has(path)) {

@@ -1,0 +1,260 @@
+{
+  "project": "Maverick Painting",
+  "client_site": "maverickpainting.co.za",
+  "page": "Stucco & specialized wall coatings spoke",
+  "path": "/painting/stucco-wall-coatings",
+  "purpose": "AI image generation prompts for all nine photography slots on the stucco wall coatings spoke. Residential interior rooms only, three distinct stucco colour finishes, completed handover photography. Generate every image listed below, then supply files to be placed in public/images/ using the exact target_filename values. After generation, add STUCCO_WALL_COATINGS_IMAGE_POOL in service-page-images.ts and update stucco-wall-coatings SPOKE_MAGAZINE_IMAGES in spoke-to-hub-config.tsx.",
+  "version": "1.0",
+  "date": "2026-06-08",
+  "style_guidelines": {
+    "mandatory_aesthetic": [
+      "raw documentary-style residential interior photography",
+      "candid handheld camera aesthetic",
+      "unposed realism",
+      "authentic natural film grain",
+      "grounded Gauteng, South Africa context"
+    ],
+    "lighting": [
+      "Prefer soft daylight through ordinary windows, or warm interior downlights in living spaces",
+      "Avoid soft cinematic studio lighting, coloured gel drama, and perfect HDR balance"
+    ],
+    "materials": [
+      "Describe micro-textures explicitly: interior stucco float, lace, or smooth finish with visible trowel grain, matte to satin hand, neat junctions at skirting and ceiling",
+      "Show completed decorative wall coating as the product — not paint rollers, not exterior dash on façades"
+    ],
+    "finish_palette": {
+      "finish_a": "warm sand beige interior stucco — earthy oatmeal tone",
+      "finish_b": "soft greige interior stucco — muted grey-beige tone",
+      "finish_c": "warm off-white interior stucco — creamy white tone"
+    },
+    "scale_policy": "Small-team, modest residential realism only. Normal Gauteng townhouse or single-storey home rooms a crew could coat in a short interior programme — not luxury showhouses, not hotel lobbies, not vast double-volume mansions.",
+    "location_policy": "Residential indoors only. No exterior elevations, no estates, no commercial façades, no body corporate blocks.",
+    "people_policy": "100% people-free. No workers, faces, hands, or silhouettes. Completed handover photography only.",
+    "completed_vs_process": "100% completed outcomes. No half-coated walls, wet stucco, masking tape, sample boards on easels, scaffolding, or in-progress evidence.",
+    "text_policy": "Absolutely no readable text anywhere in frame. No wall art with writing, calendars, book spines with titles, sample panels with labels, or branded décor.",
+    "location_cues": [
+      "ordinary Gauteng townhouse or suburban home interiors",
+      "ceramic tile or laminate floors typical of local residential stock",
+      "simple aluminium or wooden window frames",
+      "modest ceiling heights and everyday furniture kept minimal or absent"
+    ]
+  },
+  "global_negative_prompt": "people, workers, faces, hands, silhouettes, exterior façade, estate elevation, commercial building, outdoor stucco, scaffolding, half-finished wall, wet plaster, masking tape, texture sample boards with labels, text, readable text, letters, numbers, words, signage, logos, watermarks, wall art with writing, book titles, luxury mansion atrium, hotel lobby, American suburban fantasy, European villa, CGI render, Unreal Engine, oversaturated colours, perfectly staged interior design shoot, drone aerial",
+  "output_specs": {
+    "default_format": "jpg",
+    "color_profile": "sRGB",
+    "quality": "high",
+    "notes": "All slots use 4:3 aspect ratio. Filename must match target_filename exactly (lowercase, hyphens). Replaces legacy coatings-marmoran-wall-01 through 03 placeholders on this spoke once integrated."
+  },
+  "page_slot_map": {
+    "note": "Nine-slot STUCCO_WALL_COATINGS_IMAGE_POOL — remove /painting/stucco-wall-coatings from PAINTING_SERVICES_PATHS when wired",
+    "slots": [
+      { "slot": 0, "role": "Hero", "filename": "painting-stucco-01.jpg", "finish": "warm sand beige" },
+      { "slot": 1, "role": "Triptych left", "filename": "painting-stucco-02.jpg", "finish": "soft greige" },
+      { "slot": 2, "role": "Triptych centre", "filename": "painting-stucco-03.jpg", "finish": "warm off-white" },
+      { "slot": 3, "role": "Triptych right", "filename": "painting-stucco-04.jpg", "finish": "warm sand beige" },
+      { "slot": 4, "role": "Magazine editorial phase 01", "filename": "painting-stucco-05.jpg", "finish": "soft greige" },
+      { "slot": 5, "role": "Image pair left", "filename": "painting-stucco-06.jpg", "finish": "warm off-white" },
+      { "slot": 6, "role": "Image pair right", "filename": "painting-stucco-07.jpg", "finish": "warm sand beige" },
+      { "slot": 7, "role": "Magazine editorial phase 02", "filename": "painting-stucco-08.jpg", "finish": "soft greige" },
+      { "slot": 8, "role": "Magazine editorial phase 03", "filename": "painting-stucco-09.jpg", "finish": "warm off-white" }
+    ]
+  },
+  "images": [
+    {
+      "id": "stucco-living-room-hero",
+      "section": "Hero — split layout beside H1",
+      "display_order": 0,
+      "target_filename": "painting-stucco-01.jpg",
+      "target_path": "public/images/painting-stucco-01.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "finish_color": "warm sand beige",
+      "alt_text": "Completed warm sand interior stucco feature wall in a Gauteng townhouse living room",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "st01.png",
+      "prompt": "A raw, documentary-style 4:3 photograph of a completed interior stucco feature wall in a modest Gauteng townhouse living room. The main wall is finished in warm sand beige interior stucco with a realistic float texture and matte hand, showing subtle trowel marks rather than a plastic CGI surface. Adjacent walls remain simple painted plaster in a lighter neutral tone for context. Ordinary ceramic floor tiles, a plain sofa without branded cushions, and soft daylight from a side window. Empty room, no people. Scale feels like a normal suburban home a small crew could hand over in a week, not a luxury showhouse. Authentic film grain, unposed residential interior photography. No text, logos, wall art with writing, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, exterior stucco, half-finished wall, sample boards, text, logos, luxury mansion, CGI render, wet plaster"
+    },
+    {
+      "id": "stucco-hallway",
+      "section": "Triptych left",
+      "display_order": 1,
+      "target_filename": "painting-stucco-02.jpg",
+      "target_path": "public/images/painting-stucco-02.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "finish_color": "soft greige",
+      "alt_text": "Completed soft greige interior stucco walls in a residential hallway in Gauteng",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "st02.png",
+      "prompt": "A candid, documentary-style 4:3 photograph of a completed residential hallway in a modest Gauteng home with interior stucco walls finished in soft greige. The camera looks along a short passage with lace-texture stucco on both walls, neat white skirting, and a simple wooden interior door at the end without signage. Laminate or tile floor with realistic wear. Cool daylight from a small window at the corridor end. Empty hallway, no people, furniture, or painting equipment. Authentic film grain, mundane suburban interior realism. No text, logos, calendars, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, commercial corridor, half-coated walls, masking tape, text, logos, hotel hallway, CGI interior"
+    },
+    {
+      "id": "stucco-bedroom",
+      "section": "Triptych centre",
+      "display_order": 2,
+      "target_filename": "painting-stucco-03.jpg",
+      "target_path": "public/images/painting-stucco-03.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "finish_color": "warm off-white",
+      "alt_text": "Completed warm off-white smooth interior stucco in a Gauteng bedroom",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "st03.png",
+      "prompt": "A straightforward, documentary-style 4:3 photograph of a completed bedroom in a modest Gauteng townhouse with a smooth interior stucco accent wall behind the bed zone finished in warm off-white creamy tone. The stucco has a fine matte texture with gentle light raking across the surface from a window with plain curtain. Simple built-in cupboard doors without labels, ordinary tiled or laminate floor, no bed linen with printed text. Empty room, no people. Authentic film grain, quiet residential handover photography. No text, posters, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, half-finished stucco, wet plaster, readable bedding text, wall art with words, logos, luxury bedroom CGI"
+    },
+    {
+      "id": "stucco-bathroom",
+      "section": "Triptych right",
+      "display_order": 3,
+      "target_filename": "painting-stucco-04.jpg",
+      "target_path": "public/images/painting-stucco-04.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "finish_color": "warm sand beige",
+      "alt_text": "Completed warm sand interior stucco above tile line in a residential bathroom in Gauteng",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "st04.png",
+      "prompt": "A raw, documentary-style 4:3 photograph of a completed residential bathroom in a modest Gauteng home. Upper walls above the tile line are finished in warm sand beige interior stucco with a subtle float texture, terminating neatly at white ceiling and ceramic wall tiles below. Plain mirror without etched text, simple chrome towel rail, no branded toiletries. Small en-suite scale, fluorescent or window light mixed. Empty bathroom, no people. Authentic film grain, ordinary suburban bathroom realism. No text, labels on bottles, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, spa luxury bathroom, half-finished wall, readable product labels, text, logos, CGI bathroom render"
+    },
+    {
+      "id": "stucco-dining-room",
+      "section": "Magazine editorial phase 01 + spoke magazine seed",
+      "display_order": 4,
+      "target_filename": "painting-stucco-05.jpg",
+      "target_path": "public/images/painting-stucco-05.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "finish_color": "soft greige",
+      "alt_text": "Completed soft greige interior stucco walls in a Gauteng dining room",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "st05.png",
+      "prompt": "A candid, documentary-style 4:3 photograph of a completed dining room in a modest Gauteng suburban home. Two walls are finished in soft greige interior stucco with realistic lace texture, paired with a plain white ceiling and simple wooden dining table with unmarked chairs. Tile or laminate floor, sliding door to patio blurred in background without readable decals. Warm late-afternoon light through a window. Empty room, no people or table settings with text. Authentic film grain, everyday residential interior photography. No text, wall charts, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, restaurant interior, half-painted wall, text on menus, logos, staged luxury dining CGI"
+    },
+    {
+      "id": "stucco-home-office",
+      "section": "Image pair left",
+      "display_order": 5,
+      "target_filename": "painting-stucco-06.jpg",
+      "target_path": "public/images/painting-stucco-06.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "finish_color": "warm off-white",
+      "alt_text": "Completed warm off-white interior stucco in a small home office nook in Gauteng",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "st06.png",
+      "prompt": "A raw, documentary-style 4:3 photograph of a completed small home office nook in a modest Gauteng townhouse. The main wall is finished in warm off-white smooth interior stucco with a clean matte surface and neat junction at a simple built-in desk shelf without equipment or monitors. Plain bookshelf with spine-neutral books showing no readable titles. Laminate floor, ordinary window light. Empty workspace, no people or computers with logos. Authentic film grain, realistic suburban study corner. No text, readable book titles, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, Silicon Valley office, monitors with logos, readable books, half-finished stucco, text, CGI workspace"
+    },
+    {
+      "id": "stucco-entrance-foyer",
+      "section": "Image pair right",
+      "display_order": 6,
+      "target_filename": "painting-stucco-07.jpg",
+      "target_path": "public/images/painting-stucco-07.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "finish_color": "warm sand beige",
+      "alt_text": "Completed warm sand interior stucco walls in a residential entrance foyer in Gauteng",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "st07.png",
+      "prompt": "A straightforward, documentary-style 4:3 photograph of a completed residential entrance foyer in a modest Gauteng home. Interior stucco walls are finished in warm sand beige with a float texture, meeting neat white skirting and a plain front door without house numbers or name plaques visible. Small shoe cupboard, tile floor with realistic dust at the mat edge. Soft daylight from a sidelight window. Empty foyer, no people. Authentic film grain, ordinary suburban entry realism. No text, door numbers, name signs, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, luxury hotel foyer, house number plaque, name sign, half-coated wall, text, logos, CGI entrance"
+    },
+    {
+      "id": "stucco-kitchen-nook",
+      "section": "Magazine editorial phase 02 + spoke magazine seed",
+      "display_order": 7,
+      "target_filename": "painting-stucco-08.jpg",
+      "target_path": "public/images/painting-stucco-08.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "finish_color": "soft greige",
+      "alt_text": "Completed soft greige interior stucco breakfast nook wall in a Gauteng kitchen",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "st08.png",
+      "prompt": "A candid, documentary-style 4:3 photograph of a completed breakfast nook area in a modest Gauteng kitchen. One accent wall is finished in soft greige interior stucco with realistic trowel texture, beside standard white kitchen cupboards with plain unmarked doors and a simple tile splashback without brand logos. Small built-in bench seat with plain cushion, no appliances with readable labels. Fluorescent and window light mix. Empty kitchen corner, no people. Authentic film grain, normal suburban kitchen realism. No text, appliance branding, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, luxury chef kitchen, branded appliances, readable labels, half-finished wall, text, logos, CGI kitchen"
+    },
+    {
+      "id": "stucco-lounge-corner",
+      "section": "Magazine editorial phase 03 + spoke magazine seed",
+      "display_order": 8,
+      "target_filename": "painting-stucco-09.jpg",
+      "target_path": "public/images/painting-stucco-09.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "finish_color": "warm off-white",
+      "alt_text": "Completed warm off-white interior stucco on a lounge corner wall in a Gauteng home",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "st09.png",
+      "prompt": "A raw, documentary-style 4:3 photograph of a completed lounge corner in a modest Gauteng suburban home. Two meeting walls are finished in warm off-white interior stucco with a soft float texture, wrapping a simple corner with neat ceiling junction and white skirting. Plain armchair and side table without branded décor, ceramic tile floor, afternoon light casting gentle shadow across the stucco grain. Empty room, no people. Authentic film grain, understated residential handover mood. No text, wall art with writing, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, showhouse interior, half-painted corner, text, logos, oversaturated décor CGI, exterior stucco"
+    }
+  ],
+  "hub_slot_assignment": {
+    "note": "Recommended mapping for service-page-images.ts STUCCO_WALL_COATINGS_IMAGE_POOL",
+    "magazine_seeds_in_spoke_to_hub_config": [
+      { "phase": 1, "filename": "painting-stucco-05.jpg" },
+      { "phase": 2, "filename": "painting-stucco-08.jpg" },
+      { "phase": 3, "filename": "painting-stucco-09.jpg" }
+    ],
+    "finish_distribution": {
+      "warm_sand_beige": ["01", "04", "07"],
+      "soft_greige": ["02", "05", "08"],
+      "warm_off_white": ["03", "06", "09"]
+    }
+  },
+  "summary": {
+    "total_page_slots": 9,
+    "new_images_to_generate": 9,
+    "theme": "residential interior stucco only — three colour finishes across nine different rooms",
+    "all_completed_work": true,
+    "indoors_only": true,
+    "no_text_anywhere": true,
+    "generation_batches": {
+      "batch_1": [
+        "painting-stucco-01.jpg",
+        "painting-stucco-02.jpg",
+        "painting-stucco-03.jpg",
+        "painting-stucco-04.jpg",
+        "painting-stucco-05.jpg"
+      ],
+      "batch_2": [
+        "painting-stucco-06.jpg",
+        "painting-stucco-07.jpg",
+        "painting-stucco-08.jpg",
+        "painting-stucco-09.jpg"
+      ]
+    },
+    "notes": [
+      "Three finishes repeat three times each: warm sand beige (01, 04, 07), soft greige (02, 05, 08), warm off-white (03, 06, 09).",
+      "Rooms vary: living room, hallway, bedroom, bathroom, dining room, home office, entrance foyer, kitchen nook, lounge corner.",
+      "Legacy coatings-marmoran-wall filenames remain on Marmoran spoke — this pool uses painting-stucco-01 through 09 only.",
+      "After generation: convert PNG → JPG (~88 quality), wire STUCCO_WALL_COATINGS_IMAGE_POOL, remove /painting/stucco-wall-coatings from PAINTING_SERVICES_PATHS, build, commit, push."
+    ]
+  }
+}

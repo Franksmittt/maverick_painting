@@ -292,16 +292,16 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
   ],
   "stucco-wall-coatings": [
     {
-      src: "/images/coatings-marmoran-wall-01.jpg",
-      alt: "High-build stucco or textured wall preparation on a Gauteng estate or commercial façade",
+      src: "/images/painting-stucco-05.jpg",
+      alt: "Completed soft greige interior stucco wall in a formal dining room in Gauteng",
     },
     {
-      src: "/images/coatings-marmoran-wall-02.jpg",
-      alt: "Stucco or elastomeric wall coating application with texture control",
+      src: "/images/painting-stucco-08.jpg",
+      alt: "Completed soft greige interior stucco in a styled living or dining space in Gauteng",
     },
     {
-      src: "/images/coatings-marmoran-wall-03.jpg",
-      alt: "Completed stucco or specialized wall finish on an estate elevation",
+      src: "/images/painting-stucco-09.jpg",
+      alt: "Completed warm off-white interior stucco on a lounge corner wall in a Gauteng home",
     },
   ],
   "rope-access-painting": [
