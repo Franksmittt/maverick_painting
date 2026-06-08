@@ -1,0 +1,200 @@
+{
+  "project": "Maverick Painting",
+  "client_site": "maverickpainting.co.za",
+  "page": "Body corporate painting spoke",
+  "path": "/painting/body-corporate",
+  "purpose": "AI image generation prompts to replace six photography slots on the body corporate spoke. Three existing files are kept as-is; generate only the six images listed below, then supply files to be placed in public/images/ using the exact target_filename values. After generation, update BODY_CORPORATE_IMAGE_POOL in service-page-images.ts and spoke magazine seeds in spoke-to-hub-config.tsx.",
+  "version": "1.0",
+  "date": "2026-06-08",
+  "style_guidelines": {
+    "mandatory_aesthetic": [
+      "raw documentary-style architectural photography",
+      "candid handheld camera aesthetic",
+      "unposed realism",
+      "authentic natural film grain",
+      "grounded Gauteng, South Africa context"
+    ],
+    "lighting": [
+      "Prefer harsh South African midday sun, flat hazy mid-morning, or warm late-afternoon golden hour with long diagonal shadows",
+      "Avoid soft cinematic studio lighting and perfect HDR balance"
+    ],
+    "materials": [
+      "Describe micro-textures explicitly: matte exterior acrylic on slightly bumpy plaster, crisp window reveals, weathered face brick, red interlocking roof tiles, painted steel carport columns",
+      "Contrast neat fresh paint against ordinary aged estate details where relevant — faded pavers, dry grass patches, mundane boundary walls"
+    ],
+    "scale_policy": "Small-team, small-complex realism only. Low-rise sectional-title blocks (two to four storeys), townhouse rows of roughly four to eight units, modest carports and common walkways. No Sandton towers, no massive lifestyle estates, no full-estate aerials, no crane-and-scaffold mega programmes.",
+    "people_policy": "100% people-free. No workers, faces, hands, or silhouettes. Completed handover photography only.",
+    "completed_vs_process": "100% completed outcomes. No scaffolding, containment plastic, half-painted walls, open paint tins, ladders in use, or in-progress evidence.",
+    "location_cues": [
+      "Alberton and Benoni sectional-title stock",
+      "Centurion and Pretoria east townhouse complexes",
+      "Roodepoort and Krugersdorp low-rise blocks",
+      "dry kikuyu grass patches",
+      "pale Highveld sky",
+      "ordinary grey cement pavers"
+    ]
+  },
+  "global_negative_prompt": "people, workers, faces, hands, silhouettes, posed models, stock photo, smiling at camera, scaffolding, scaffold wrap, boom lift, crane, paint tins, rollers in use, masking tape, plastic sheeting, half-painted walls, wet paint, in-progress work, plastic 3D render, CGI, Unreal Engine, octane render, toy house, diorama, overly smooth surfaces, fake HDR, cinematic bloom, lens flare, text, logos, branding, watermarks, misspelled signage, American suburb, European architecture, Dubai skyline, Sandton skyscraper district, luxury resort estate, lush tropical vegetation, rain, snow, oversaturated colours, perfectly clean fantasy site, drone aerial",
+  "output_specs": {
+    "default_format": "jpg",
+    "color_profile": "sRGB",
+    "quality": "high",
+    "notes": "All slots use 4:3 aspect ratio. Filename must match target_filename exactly (lowercase, hyphens)."
+  },
+  "keep_existing": [
+    {
+      "target_filename": "painting-body-corporate-estate.jpg",
+      "pool_slot": 2,
+      "used_as": "Triptych centre",
+      "status": "keep — do not regenerate"
+    },
+    {
+      "target_filename": "painting-body-corporate-qa.jpg",
+      "pool_slot": 5,
+      "used_as": "Image pair left",
+      "status": "keep — do not regenerate"
+    },
+    {
+      "target_filename": "painting-commercial-retail.jpg",
+      "pool_slot": 6,
+      "used_as": "Image pair right (replaces painting-commercial-healthcare.jpg)",
+      "status": "keep — do not regenerate"
+    }
+  ],
+  "page_slot_map": {
+    "note": "Nine-slot BODY_CORPORATE_IMAGE_POOL after integration",
+    "slots": [
+      { "slot": 0, "role": "Hero", "filename": "painting-body-corporate-01.jpg", "action": "generate" },
+      { "slot": 1, "role": "Triptych left", "filename": "painting-body-corporate-02.jpg", "action": "generate" },
+      { "slot": 2, "role": "Triptych centre", "filename": "painting-body-corporate-estate.jpg", "action": "keep" },
+      { "slot": 3, "role": "Triptych right", "filename": "painting-body-corporate-03.jpg", "action": "generate" },
+      { "slot": 4, "role": "Magazine editorial phase 01", "filename": "painting-body-corporate-04.jpg", "action": "generate" },
+      { "slot": 5, "role": "Image pair left", "filename": "painting-body-corporate-qa.jpg", "action": "keep" },
+      { "slot": 6, "role": "Image pair right", "filename": "painting-commercial-retail.jpg", "action": "keep" },
+      { "slot": 7, "role": "Magazine editorial phase 02", "filename": "painting-body-corporate-06.jpg", "action": "generate" },
+      { "slot": 8, "role": "Magazine editorial phase 03", "filename": "painting-body-corporate-05.jpg", "action": "generate" }
+    ]
+  },
+  "images": [
+    {
+      "id": "body-corp-hero",
+      "section": "Hero — split layout beside H1",
+      "display_order": 0,
+      "target_filename": "painting-body-corporate-01.jpg",
+      "target_path": "public/images/painting-body-corporate-01.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed exterior repaint of a modest Gauteng sectional-title apartment block",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "bc01.png",
+      "prompt": "A raw, documentary-style 4:3 photograph of a completed exterior repaint on a modest three-storey sectional-title block in Alberton, Gauteng. The building is ordinary Highveld stock — slightly bumpy off-white exterior plaster, simple aluminium window frames, and a small ground-floor carport with painted steel columns. The entire visible elevation reads as freshly handed over with matte acrylic finish that still shows real plaster texture, not a plastic CGI skin. One short boundary wall section remains older beige paint for believable context. Small patch of dry kikuyu grass and faded grey pavers in front. Camera at natural eye level from the parking area, slightly off-centre. Bright midday South African sun with short hard shadows. Empty of people, vehicles, scaffolding, and tools. Authentic film grain, unposed architectural photography. No text, logos, or branding.",
+      "negative_prompt": "people, workers, scaffolding, boom lift, Sandton tower, luxury estate, perfect CGI render, drone view, logos"
+    },
+    {
+      "id": "body-corp-townhouse-row",
+      "section": "Triptych left",
+      "display_order": 1,
+      "target_filename": "painting-body-corporate-02.jpg",
+      "target_path": "public/images/painting-body-corporate-02.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Finished double-storey townhouse units in a small Centurion body corporate complex",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "bc02.png",
+      "prompt": "A candid, documentary-style 4:3 photograph of a completed exterior repaint along a short row of four double-storey townhouse units in a small Centurion body corporate complex. Each unit has freshly painted light grey exterior plaster with crisp white window sills and neat garage door surrounds. Red interlocking roof tiles above look weathered but intact. The common driveway is ordinary interlocking pavers with a few weeds at the edges. Scale feels like a manageable small-team programme, not a massive estate. Warm late-afternoon golden hour light rakes across the façades showing matte paint micro-texture. Empty complex, no people, cars, or site equipment. Authentic film grain, mundane sectional-title realism. No text, logos, or branding.",
+      "negative_prompt": "people, workers, luxury American suburb, massive estate, perfect lawn, 3D render, drone, logos"
+    },
+    {
+      "id": "body-corp-facebrick-trim",
+      "section": "Triptych right",
+      "display_order": 3,
+      "target_filename": "painting-body-corporate-03.jpg",
+      "target_path": "public/images/painting-body-corporate-03.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed white trim and face-brick refresh on a small sectional-title complex in Gauteng",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "bc03.png",
+      "prompt": "A straightforward, documentary-style 4:3 close-to-mid photograph of a completed face-brick and painted trim refresh on a small two-storey sectional-title complex in Benoni. Weathered red face-brick sections remain exposed and realistic while adjacent plaster bands, parapet caps, and window surrounds are freshly coated in clean off-white matte paint with visible brush and roller texture at the reveals. A plain metal security gate and small paved stoep sit below. Flat hazy mid-morning Highveld light. Quiet residential street mood, empty of people and contractors. Authentic film grain, grounded body corporate finish photography. No text, logos, or branding.",
+      "negative_prompt": "people, workers, perfect new brick CGI, American apartment block, scaffolding, logos, oversaturated colours"
+    },
+    {
+      "id": "body-corp-block-handover",
+      "section": "Magazine editorial phase 01 + spoke magazine seed",
+      "display_order": 4,
+      "target_filename": "painting-body-corporate-04.jpg",
+      "target_path": "public/images/painting-body-corporate-04.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed double-storey body corporate block after full exterior repaint handover in Gauteng",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "bc04.png",
+      "prompt": "A raw, documentary-style 4:3 photograph of a completed full exterior repaint handover on a modest double-storey body corporate block in Roodepoort. The camera stands on a common-property walkway looking at the full front elevation: uniform warm grey exterior coating, tidy balcony balustrades with freshly painted undersides, and clean roofline parapet edges. The block is small-scale — roughly twelve to sixteen units total — with a simple covered parking bay and an ordinary palisade fence section visible. No scaffolding, debris, or tape anywhere. Pale blue Highveld sky with thin haze. Harsh midday sun. Empty site. Authentic film grain, trustee handover realism. No text, logos, or branding.",
+      "negative_prompt": "people, workers, scaffolding, tower block, lifestyle estate resort, perfect CGI building, drone, logos"
+    },
+    {
+      "id": "body-corp-carport-common",
+      "section": "Magazine editorial phase 02",
+      "display_order": 7,
+      "target_filename": "painting-body-corporate-06.jpg",
+      "target_path": "public/images/painting-body-corporate-06.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed common-property carport and stairwell exterior painting at a Gauteng sectional-title complex",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "bc06.png",
+      "prompt": "A candid, documentary-style 4:3 photograph of completed common-property painting at a small sectional-title complex in Krugersdorp. The camera frames a modest open carport with freshly painted steel columns and beams in dark grey, a neat external stairwell with clean handrail and risers in off-white, and the ground-floor passage wall in matching warm grey plaster paint. Concrete parking bays show realistic tyre marks and fine dust. A single dusty sedan space sits empty. Scale is clearly a small-complex maintenance job, not a commercial campus. Flat afternoon Highveld light with mild haze. No people, tools, or containment. Authentic film grain, ordinary body corporate common-area photography. No text, logos, or branding.",
+      "negative_prompt": "people, workers, corporate campus, Silicon Valley office, hospital interior, scaffolding, wet paint, logos, CGI"
+    },
+    {
+      "id": "body-corp-driveway-row",
+      "section": "Magazine editorial phase 03 + spoke magazine seed",
+      "display_order": 8,
+      "target_filename": "painting-body-corporate-05.jpg",
+      "target_path": "public/images/painting-body-corporate-05.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed townhouse estate exterior painting along paved driveways in Gauteng",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "bc05.png",
+      "prompt": "A raw, documentary-style 4:3 photograph of a completed exterior painting programme along a paved internal driveway in a small Gauteng townhouse estate near Pretoria east. Five attached units line one side of the frame, each with freshly coated cream and light stone exterior plaster, tidy garage lintels, and clean balcony edges. The driveway uses ordinary grey pavers with realistic wear and a shallow speed bump. Young but sparse landscaping and dry grass tufts ground the scene as normal Highveld estate stock, not a luxury resort. Camera at walking height looking along the row. Warm golden hour light with long soft shadows. Empty estate, no people or vehicles. Authentic film grain, unposed residential realism. No text, logos, or branding.",
+      "negative_prompt": "people, workers, luxury resort estate, Dubai architecture, perfect CGI estate, drone aerial, lush tropical plants, logos"
+    }
+  ],
+  "summary": {
+    "total_page_slots": 9,
+    "keep_existing": 3,
+    "new_images_to_generate": 6,
+    "all_completed_work": true,
+    "generation_batches": {
+      "batch_1": [
+        "painting-body-corporate-01.jpg",
+        "painting-body-corporate-02.jpg",
+        "painting-body-corporate-03.jpg",
+        "painting-body-corporate-04.jpg"
+      ],
+      "batch_2": [
+        "painting-body-corporate-06.jpg",
+        "painting-body-corporate-05.jpg"
+      ]
+    },
+    "notes": [
+      "painting-body-corporate-estate.jpg, painting-body-corporate-qa.jpg, and painting-commercial-retail.jpg are kept unchanged.",
+      "painting-body-corporate-06.jpg is a new filename for pool slot 7 — replaces painting-commercial-campus.jpg.",
+      "Regenerated files bc01–bc04 and bc05 overwrite existing painting-body-corporate-01 through 05 JPGs except estate (slot 2) which is untouched.",
+      "After generation: convert PNG → JPG (~88 quality), update BODY_CORPORATE_IMAGE_POOL and body-corporate SPOKE_MAGAZINE_IMAGES in spoke-to-hub-config.tsx, then build."
+    ]
+  }
+}

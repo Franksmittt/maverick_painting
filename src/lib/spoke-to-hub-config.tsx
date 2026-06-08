@@ -54,16 +54,16 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
   ],
   "body-corporate": [
     {
-      src: "/images/painting-body-corporate-sandton.jpg",
-      alt: "Phased exterior repainting of a Sandton sectional-title tower",
+      src: "/images/painting-body-corporate-04.jpg",
+      alt: "Completed double-storey body corporate block after full exterior repaint handover",
     },
     {
       src: "/images/painting-body-corporate-estate.jpg",
       alt: "Townhouse estate exterior painting and balcony edge repairs in Centurion",
     },
     {
-      src: "/images/painting-body-corporate-qa.jpg",
-      alt: "Body corporate painting programme with QA documentation at a Gauteng complex",
+      src: "/images/painting-body-corporate-05.jpg",
+      alt: "Completed townhouse estate exterior painting along paved driveways in Gauteng",
     },
   ],
   "commercial-painting": [

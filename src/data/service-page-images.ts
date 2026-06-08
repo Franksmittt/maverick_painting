@@ -43,9 +43,10 @@ const TORCH_ON_LIQUID_PATHS = new Set(["/waterproofing/torch-on-liquid-membranes
 
 const BASEMENT_TANKING_PATHS = new Set(["/waterproofing/basement-tanking"]);
 
+const BODY_CORPORATE_PATHS = new Set(["/painting/body-corporate"]);
+
 const PAINTING_SERVICES_PATHS = new Set([
   "/painting-services",
-  "/painting/body-corporate",
   "/painting/industrial",
   "/painting/roof-painting",
   "/painting/stucco-wall-coatings",
@@ -589,6 +590,46 @@ const WATERPROOFING_IMAGE_POOL: readonly ServicePageImage[] = [
   },
 ];
 
+/** Dedicated nine-slot pool for the body corporate painting spoke. */
+const BODY_CORPORATE_IMAGE_POOL: readonly ServicePageImage[] = [
+  {
+    src: "/images/painting-body-corporate-01.jpg",
+    alt: "Completed exterior repaint of a modest Gauteng sectional-title apartment block",
+  },
+  {
+    src: "/images/painting-body-corporate-02.jpg",
+    alt: "Finished double-storey townhouse units in a small Centurion body corporate complex",
+  },
+  {
+    src: "/images/painting-body-corporate-estate.jpg",
+    alt: "Townhouse estate exterior painting and balcony edge repairs in Centurion",
+  },
+  {
+    src: "/images/painting-body-corporate-03.jpg",
+    alt: "Completed white trim and face-brick refresh on a small sectional-title complex in Gauteng",
+  },
+  {
+    src: "/images/painting-body-corporate-04.jpg",
+    alt: "Completed double-storey body corporate block after full exterior repaint handover",
+  },
+  {
+    src: "/images/painting-body-corporate-qa.jpg",
+    alt: "Body corporate painting programme with QA documentation at a Gauteng complex",
+  },
+  {
+    src: "/images/painting-commercial-retail.jpg",
+    alt: "Retail commercial painting completed during night shifts in Gauteng",
+  },
+  {
+    src: "/images/painting-body-corporate-06.jpg",
+    alt: "Completed common-property carport and stairwell exterior painting at a Gauteng sectional-title complex",
+  },
+  {
+    src: "/images/painting-body-corporate-05.jpg",
+    alt: "Completed townhouse estate exterior painting along paved driveways in Gauteng",
+  },
+];
+
 /** Shared nine-slot pool for the painting services hub and spokes. */
 const PAINTING_SERVICES_IMAGE_POOL: readonly ServicePageImage[] = [
   {
@@ -792,6 +833,10 @@ export function getServicePageImages(
 
   if (BASEMENT_TANKING_PATHS.has(path)) {
     return [...BASEMENT_TANKING_IMAGE_POOL];
+  }
+
+  if (BODY_CORPORATE_PATHS.has(path)) {
+    return [...BODY_CORPORATE_IMAGE_POOL];
   }
 
   if (WATERPROOFING_PATHS.has(path)) {
