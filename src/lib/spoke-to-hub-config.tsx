@@ -82,16 +82,16 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
   ],
   "concrete-spalling": [
     {
-      src: "/images/structural-concrete-spalling-assessment.jpg",
-      alt: "Concrete spalling assessment and breakout on a Gauteng high-rise façade",
+      src: "/images/structural-concrete-spalling-05.jpg",
+      alt: "Completed spalling repair on a townhouse carport beam and column in Gauteng",
     },
     {
-      src: "/images/structural-concrete-spalling-repair.jpg",
-      alt: "Rebar passivation and structural mortar repair during concrete cancer remediation",
+      src: "/images/structural-concrete-spalling-08.jpg",
+      alt: "Completed concrete spalling repair on a small Gauteng warehouse tilt-up panel",
     },
     {
-      src: "/images/structural-concrete-spalling-handover.jpg",
-      alt: "Completed concrete spalling repair with protective anti-carbonation finish",
+      src: "/images/structural-concrete-spalling-09.jpg",
+      alt: "Completed spalling repair on a modest Gauteng estate retaining wall",
     },
   ],
   "crack-injection": [

@@ -1,0 +1,244 @@
+{
+  "project": "Maverick Painting",
+  "client_site": "maverickpainting.co.za",
+  "page": "Concrete spalling repair spoke",
+  "path": "/structural-repairs/concrete-spalling",
+  "purpose": "AI image generation prompts for all nine photography slots on the concrete spalling spoke. Generate every image listed below, then supply files to be placed in public/images/ using the exact target_filename values. After generation, add CONCRETE_SPALLING_IMAGE_POOL in service-page-images.ts, remove /structural-repairs/concrete-spalling from STRUCTURAL_REPAIRS_PATHS, and update concrete-spalling SPOKE_MAGAZINE_IMAGES in spoke-to-hub-config.tsx.",
+  "version": "1.0",
+  "date": "2026-06-08",
+  "style_guidelines": {
+    "mandatory_aesthetic": [
+      "raw documentary-style structural remediation photography",
+      "candid handheld camera aesthetic",
+      "unposed realism",
+      "authentic natural film grain",
+      "grounded Gauteng, South Africa context"
+    ],
+    "lighting": [
+      "Prefer harsh South African midday sun with raking light on repaired concrete texture, or cool fluorescent mixed with daylight in basement parking",
+      "Avoid soft cinematic studio lighting and perfect HDR balance"
+    ],
+    "materials": [
+      "Describe micro-textures explicitly: feathered polymer repair mortar into aged porous concrete, fair-faced patch edges, anti-carbonation coating sheen, chloride-stained column bases now restored, neat balcony arris fairing",
+      "Contrast fresh grey repair zones against weathered surrounding concrete without making patches look like plastic CGI"
+    ],
+    "scale_policy": "Small-team, modest-project realism only. Modest sectional-title blocks of four to eight storeys, single basement parking levels, townhouse carports, small warehouse tilt-up panels, or one parapet run a crew could close in a phased programme — not 30-storey Sandton towers, not airport parking grids, not refinery silo farms.",
+    "shot_policy": "Mix close-up repair detail shots and medium architectural shots. Close-ups show mortar feathering, arris fairing, and patch-to-substrate transitions. Medium shots show one column line, one basement aisle, or one townhouse elevation — never vast industrial complexes.",
+    "people_policy": "100% people-free. No workers, faces, hands, or silhouettes. Completed handover photography only.",
+    "completed_vs_process": "100% completed outcomes. No active breakout, exposed rusted rebar, hammer testing in progress, wet mortar, scaffold with workers, dust sheets, or half-patched zones.",
+    "text_policy": "Absolutely no readable text anywhere in frame. No unit numbers, warning signs, engineering tags, QA stickers, store names, or branded site boards.",
+    "location_cues": [
+      "Gauteng sectional-title apartment blocks",
+      "Centurion and Pretoria east townhouse stock",
+      "small basement parking with chloride staining remediated",
+      "East Rand light industrial tilt-up warehouse",
+      "pale Highveld sky",
+      "parapet and balcony edge details"
+    ]
+  },
+  "global_negative_prompt": "people, workers, faces, hands, silhouettes, exposed rusted rebar, active breakout, wet mortar, hammer test in progress, scaffold with workers, readable text, letters, numbers, words, signage, QA stickers, logos, branding, watermarks, Sandton mega tower, airport parking, refinery silo farm, plastic 3D render, CGI, Unreal Engine, oversaturated colours, perfectly clean fantasy site, drone aerial",
+  "output_specs": {
+    "default_format": "jpg",
+    "color_profile": "sRGB",
+    "quality": "high",
+    "notes": "All slots use 4:3 aspect ratio. Filename must match target_filename exactly (lowercase, hyphens). Legacy structural-concrete-spalling-assessment.jpg, repair.jpg, and handover.jpg remain on homepage and hub — this spoke gets a new numbered 01–09 dedicated pool."
+  },
+  "page_slot_map": {
+    "note": "Nine-slot CONCRETE_SPALLING_IMAGE_POOL — remove /structural-repairs/concrete-spalling from STRUCTURAL_REPAIRS_PATHS when wired",
+    "slots": [
+      { "slot": 0, "role": "Hero", "filename": "structural-concrete-spalling-01.jpg", "shot": "medium" },
+      { "slot": 1, "role": "Triptych left", "filename": "structural-concrete-spalling-02.jpg", "shot": "close-up" },
+      { "slot": 2, "role": "Triptych centre", "filename": "structural-concrete-spalling-03.jpg", "shot": "medium" },
+      { "slot": 3, "role": "Triptych right", "filename": "structural-concrete-spalling-04.jpg", "shot": "close-up" },
+      { "slot": 4, "role": "Magazine editorial phase 01", "filename": "structural-concrete-spalling-05.jpg", "shot": "medium" },
+      { "slot": 5, "role": "Image pair left", "filename": "structural-concrete-spalling-06.jpg", "shot": "close-up" },
+      { "slot": 6, "role": "Image pair right", "filename": "structural-concrete-spalling-07.jpg", "shot": "close-up" },
+      { "slot": 7, "role": "Magazine editorial phase 02", "filename": "structural-concrete-spalling-08.jpg", "shot": "medium" },
+      { "slot": 8, "role": "Magazine editorial phase 03", "filename": "structural-concrete-spalling-09.jpg", "shot": "medium" }
+    ]
+  },
+  "images": [
+    {
+      "id": "spalling-sectional-hero",
+      "section": "Hero — split layout beside H1",
+      "display_order": 0,
+      "target_filename": "structural-concrete-spalling-01.jpg",
+      "target_path": "public/images/structural-concrete-spalling-01.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed concrete spalling repair on a modest Gauteng sectional-title building elevation",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "cs01.png",
+      "prompt": "A raw, documentary-style 4:3 medium photograph of completed concrete spalling repairs on the front elevation of a modest six-storey Gauteng sectional-title apartment block. Several feathered polymer repair patches blend into the weathered off-white plaster and concrete bands under harsh midday sun, finished with compatible protective coating — clearly remediated, not hidden cosmetic filler. Empty paved forecourt, dry Highveld grass edge, pale blue sky. No scaffold, workers, or building name signage. Authentic film grain, unposed structural handover photography. No text, logos, signs, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, exposed rebar, active breakout, Sandton skyscraper, readable building sign, wet mortar, logos, CGI render, drone"
+    },
+    {
+      "id": "spalling-mortar-feather-close",
+      "section": "Triptych left",
+      "display_order": 1,
+      "target_filename": "structural-concrete-spalling-02.jpg",
+      "target_path": "public/images/structural-concrete-spalling-02.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of completed structural repair mortar feathering into original concrete on a Gauteng column",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "cs02.png",
+      "prompt": "A candid, documentary-style 4:3 close-up photograph of a completed structural repair mortar patch on a Gauteng parking garage column. The frame fills with grey polymer-modified mortar feathered smoothly into rough aged concrete with visible aggregate and old chloride staining now fully restored — patch edge crisp and fair-faced, no exposed steel. Cool basement fluorescent light with slight green cast. No people. Authentic film grain, technical remediation detail photography. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, exposed rusted rebar, half-finished patch, cosmetic filler blob, readable labels, logos, wide garage shot"
+    },
+    {
+      "id": "spalling-basement-aisle",
+      "section": "Triptych centre",
+      "display_order": 2,
+      "target_filename": "structural-concrete-spalling-03.jpg",
+      "target_path": "public/images/structural-concrete-spalling-03.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed spalling repairs on basement parking columns in a Gauteng sectional-title complex",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "cs03.png",
+      "prompt": "A straightforward, documentary-style 4:3 medium photograph of completed concrete spalling repairs on a short run of basement parking columns in a modest Gauteng sectional-title complex. Three columns show matching restored patch zones and fair-faced mortar at bases where chloride attack was remediated — one aisle depth, small-team programme scale. Empty car park, no vehicles, fluorescent tubes and ramp daylight at the far end. No people. Authentic film grain, mundane basement structural realism. No text, bay numbers, signage, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, cars, readable bay numbers, airport parking scale, exposed rebar, half-repaired columns, logos, drone"
+    },
+    {
+      "id": "spalling-balcony-edge-close",
+      "section": "Triptych right",
+      "display_order": 3,
+      "target_filename": "structural-concrete-spalling-04.jpg",
+      "target_path": "public/images/structural-concrete-spalling-04.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of completed concrete repair fairing at a balcony slab edge in Gauteng",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "cs04.png",
+      "prompt": "A raw, documentary-style 4:3 close-up photograph of a completed concrete spalling repair at a townhouse balcony slab edge in Centurion. Structural mortar fairing restores the arris with neat feathering into the soffit and top surface, finished with compatible protective coating — no map cracking or delamination visible. Raking late-afternoon sun emphasises texture. Empty balcony, no furniture with text. No people. Authentic film grain, detail handover photography. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, crumbling unrepaired edge, exposed rebar, readable décor text, logos, CGI detail, wide building shot"
+    },
+    {
+      "id": "spalling-townhouse-carport",
+      "section": "Magazine editorial phase 01 + spoke magazine seed",
+      "display_order": 4,
+      "target_filename": "structural-concrete-spalling-05.jpg",
+      "target_path": "public/images/structural-concrete-spalling-05.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed spalling repair on a townhouse carport beam and column in Gauteng",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "cs05.png",
+      "prompt": "A candid, documentary-style 4:3 medium photograph of completed concrete spalling repairs on a modest Gauteng townhouse carport structure. The beam-column junction and soffit show restored mortar patches and protective finish where cover loss was remediated — scale of a small body corporate common-property job, not a commercial warehouse. Dry paving, interlocking bricks, and pale Highveld sky. Empty carport, no cars. No people. Authentic film grain, suburban estate structural realism. No text, estate boards, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, warehouse scale, readable estate sign, active breakout, logos, CGI, drone"
+    },
+    {
+      "id": "spalling-corner-arris-close",
+      "section": "Image pair left",
+      "display_order": 5,
+      "target_filename": "structural-concrete-spalling-06.jpg",
+      "target_path": "public/images/structural-concrete-spalling-06.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of completed external corner concrete repair on a Gauteng building",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "cs06.png",
+      "prompt": "A straightforward, documentary-style 4:3 close-up photograph of a completed external corner arris repair on a modest Gauteng apartment block. Polymer repair mortar wraps the corner with continuous fairing on both planes and compatible anti-carbonation coating, blending into weathered surrounding concrete under raking sun. No cracks telegraphing through the patch. No people or tools. Authentic film grain, craftsman remediation detail realism. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, failed corner patch, exposed steel, perfect CGI corner, readable labels, wide elevation"
+    },
+    {
+      "id": "spalling-parapet-close",
+      "section": "Image pair right",
+      "display_order": 6,
+      "target_filename": "structural-concrete-spalling-07.jpg",
+      "target_path": "public/images/structural-concrete-spalling-07.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of completed parapet concrete repair on a Gauteng residential block",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "cs07.png",
+      "prompt": "A raw, documentary-style 4:3 close-up photograph of a completed concrete spalling repair at a flat-roof parapet on a modest four-storey Gauteng residential block. Restored mortar build-up and fairing at the wall head shows neat termination below the cap, with protective coating on the repaired zone — thin cover zone typical of local spalling failure now closed. Pale Highveld sky behind. No people. Authentic film grain, roofline structural detail photography. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, crumbling parapet, exposed rebar, logos, CGI, wide roof panorama"
+    },
+    {
+      "id": "spalling-warehouse-panel",
+      "section": "Magazine editorial phase 02 + spoke magazine seed",
+      "display_order": 7,
+      "target_filename": "structural-concrete-spalling-08.jpg",
+      "target_path": "public/images/structural-concrete-spalling-08.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed concrete spalling repair on a small Gauteng warehouse tilt-up panel",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "cs08.png",
+      "prompt": "A candid, documentary-style 4:3 medium photograph of completed concrete spalling repairs on one tilt-up panel of a small Gauteng light industrial warehouse in Isando. Two or three restored patch zones feather into the grey concrete wall with fair-faced mortar and protective finish — modest single-bay unit scale a crew could close during a short shutdown, not a logistics megapark. Empty yard, corrugated roof edge visible. Flat overcast Highveld light. No people or forklifts. Authentic film grain, industrial structural realism. No text, company names, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, mega warehouse, readable company sign, silo structure, active breakout, logos, drone aerial"
+    },
+    {
+      "id": "spalling-boundary-retaining",
+      "section": "Magazine editorial phase 03 + spoke magazine seed",
+      "display_order": 8,
+      "target_filename": "structural-concrete-spalling-09.jpg",
+      "target_path": "public/images/structural-concrete-spalling-09.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed spalling repair on a modest Gauteng estate retaining wall",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "cs09.png",
+      "prompt": "A raw, documentary-style 4:3 medium photograph of completed concrete spalling repairs on a modest estate retaining wall in Pretoria east. The wall runs roughly eight metres with restored patch zones where cover delamination was remediated, fair-faced mortar blending into weathered concrete, capped with simple plaster coping. Dry grass and indigenous shrubs at the base. Empty scene, no people. Warm golden hour light rakes across repaired texture. Authentic film grain, suburban structural maintenance photography. No text, name boards, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, highway retaining wall, readable estate sign, half-repaired wall, logos, CGI, drone"
+    }
+  ],
+  "hub_slot_assignment": {
+    "note": "Recommended mapping for service-page-images.ts CONCRETE_SPALLING_IMAGE_POOL",
+    "magazine_seeds_in_spoke_to_hub_config": [
+      { "phase": 1, "filename": "structural-concrete-spalling-05.jpg" },
+      { "phase": 2, "filename": "structural-concrete-spalling-08.jpg" },
+      { "phase": 3, "filename": "structural-concrete-spalling-09.jpg" }
+    ]
+  },
+  "summary": {
+    "total_page_slots": 9,
+    "new_images_to_generate": 9,
+    "all_completed_work": true,
+    "no_text_anywhere": true,
+    "shot_mix": {
+      "close_up": 4,
+      "medium": 5
+    },
+    "generation_batches": {
+      "batch_1": [
+        "structural-concrete-spalling-01.jpg",
+        "structural-concrete-spalling-02.jpg",
+        "structural-concrete-spalling-03.jpg",
+        "structural-concrete-spalling-04.jpg",
+        "structural-concrete-spalling-05.jpg"
+      ],
+      "batch_2": [
+        "structural-concrete-spalling-06.jpg",
+        "structural-concrete-spalling-07.jpg",
+        "structural-concrete-spalling-08.jpg",
+        "structural-concrete-spalling-09.jpg"
+      ]
+    },
+    "notes": [
+      "Crack injection and expansion joint already have dedicated pools — spalling completes the structural spoke photography set.",
+      "Legacy structural-concrete-spalling-assessment.jpg, repair.jpg, and handover.jpg stay on homepage and /structural-repairs hub.",
+      "After generation: convert PNG → JPG (~88 quality), wire CONCRETE_SPALLING_IMAGE_POOL, update spoke config and og-images.ts, build, commit, push."
+    ]
+  }
+}

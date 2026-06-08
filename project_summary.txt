@@ -1,129 +1,187 @@
 ================================================================================
-MAVERICK PAINTING, PROJECT SUMMARY
-Last updated: 2026-05-17
+MAVERICK PAINTING — PROJECT SUMMARY
+Last updated: 2026-06-08
 Site: https://www.maverickpainting.co.za
-Stack: Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS
+Repo: https://github.com/Franksmittt/maverick_painting (branch: main)
+Stack: Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS · pnpm
 ================================================================================
 
-CURRENT STATE (PRODUCTION-READY)
---------------------------------
-- Production build: ~138 static/SSG routes (includes OG image routes, auth API, etc.)
-- Indexable sitemap URLs: 132 (single source of truth in src/lib/sitemap-builder.ts)
-- Validation: npm run build && npm run validate:sitemap
+CURRENT STATE (PRODUCTION)
+--------------------------
+- Production build: ~143 static/SSG routes (includes OG image routes, auth API, etc.)
+- Validation: pnpm build && pnpm validate:sitemap
 - Live sitemap: https://www.maverickpainting.co.za/sitemap.xml
-- Local export after validate: sitemap-urls.txt (repo root, review only)
+- Service architecture: 6 hubs · 28 service spokes on /services (all spokes visible)
+- Photography: ~245 raster images in public/ (239 JPG + gallery subfolder + misc)
 
 Google Search Console:
-- Previously submitted when ~93 URLs were discovered (pre matrix + SEO expansion).
-- After deploy: resubmit sitemap.xml and request indexing on key hubs (/locations, /, top spokes).
-- Use sitemap-urls.txt for a full URL checklist when spot-checking coverage.
+- Resubmit sitemap.xml after major deploys
+- Request indexing on key hubs (/locations, /, priority spokes) after image batches
 
 ================================================================================
-SEO PROGRAM, PHASES COMPLETED
+SEO PROGRAM — COMPLETED (2026-05)
 ================================================================================
-
-PHASE 1–3 (FOUNDATION)
-- Service hub + spoke architecture (6 hubs, 22 deep service pages)
-- Blog pillar/cluster system (3 pillars, 8 clusters) + standalone articles
-- Location pages (17 cities) + 4 regional hubs
-- Solutions pages (body corporates, developers, homeowners)
-- Technical SEO: robots.txt, dynamic sitemap, canonical URLs, JSON-LD
-- next.config.mjs: trailingSlash false, reactStrictMode, legacy URL redirects
-
-PHASE 4, FINAL STRETCH
-- 36 location×service matrix pages: /locations/[city]/[service]
-  Data: src/data/location-service-matrix.ts
-  UI: src/components/location-service-page.tsx
-- Restored /our-process-independent-qa hub (full QA narrative)
-- Legal disclaimers: src/components/legal-disclaimer.tsx (STSMA, HACCP, structural, SANS)
-- Accreditations: Penetron, StonCor/A.B.E., Mapei/Bostik
-- New blogs: /blog/sans-10021-waterproofing, /blog/rope-access-ohs-compliance
-  (14 standalone articles in src/data/standalone-blog-articles.ts)
-- P0 legacy 301 redirects in next.config.mjs:
-  /basement-tanking, /expansion-joints, /parking-garage, /sans-line-marking, /crack-injection
-  (Plus body-corporate, industrial, hygienic flooring slug normalisation)
-
-PHASE 5, SEO 9+ UPLIFT PASS
-- src/data/site-navigation.ts, header/mobile: Services, Locations, Solutions, Projects,
-  Blog, About, Contact; mobile Solutions sub-links
-- Homepage: keyword H1, src/data/home-faqs.ts + FAQPage JSON-LD
-- src/lib/og-images.ts + page-metadata.ts, per-route OG; buildHubMetadata / buildSpokeMetadata
-- All hubs/spokes/solutions/core pages use OG helpers
-- Blog: Article JSON-LD, breadcrumbs, related services, guide FAQs (standalone-blog-article.tsx)
-- /locations index page in sitemap
-- City pages: breadcrumbs, FAQs, local proof, QA module, matrix cards
-- Regional hubs: breadcrumb fix, FAQs, QA module, matrix link grid
-- Matrix pages: highlights, process, FAQs, disclaimers, spoke OG paths
-- Gallery: richer copy, projectHref links in gallery-grid.tsx
-- Contact/About: breadcrumbs; About FAQs
-- FAQ JSON-LD via inline script in faq-section.tsx
-- Expanded serviceAreas in src/lib/seo.ts; keywords meta removed from root layout
+- Service hub + spoke architecture, blog pillar/cluster, 17 city + 4 regional location pages
+- 36 location×service matrix pages (/locations/[city]/[service])
+- Technical SEO: robots, dynamic sitemap, canonicals, JSON-LD, per-route OG images
+- /our-process-independent-qa, legal disclaimers, accreditations, standalone blog articles
+- P0 legacy 301 redirects in next.config.mjs
+- Homepage FAQs, city/regional FAQs, matrix pages, gallery project links
 
 ================================================================================
-SITEMAP URL BREAKDOWN (~132)
+SERVICE PAGE PHOTOGRAPHY PROGRAM (IN PROGRESS)
 ================================================================================
-Core & legal:           11
-Solutions:               3
-Service hubs:            6
-Service spokes:         22
-Blog (index+pillar+cluster+standalone): 26
-Locations (regions+cities+matrix+index): 58
-Projects:                ~6
-Total (deduped):       132, EXPECTED_SITEMAP_URL_COUNT in sitemap-builder.ts
+Each spoke page renders 9 slots (hero, triptych, editorial splits, pair). Goal: one
+dedicated 9-image pool per spoke with AI-generated documentary photography — small-team
+Gauteng scale, mix of close-ups and medium shots, people-free completed work, no text.
+
+WORKFLOW PER SPOKE
+------------------
+1. Create {topic}-image-prompts.txt in repo root (JSON, 9 slots, batch 5+4)
+2. User generates images in Gemini; drops PNGs in repo root
+3. Convert PNG → JPG (quality 88, mozjpeg) → public/images/{prefix}-01.jpg … 09.jpg
+4. Add dedicated *_IMAGE_POOL in src/data/service-page-images.ts
+5. Remove spoke path from shared hub pool Set
+6. Update SPOKE_MAGAZINE_IMAGES in src/lib/spoke-to-hub-config.tsx (usually 05, 08, 09)
+7. Update src/lib/og-images.ts hero + src/data/services-page-content.ts grid thumbnail
+8. pnpm build → commit → push main
+
+PROMPT FILES IN REPO ROOT
+-------------------------
+homepage-image-prompts.txt
+services-image-prompts.txt
+structural-repairs-image-prompts.txt          (legacy hub batch — superseded per spoke)
+specialized-coatings-image-prompts.txt        (legacy hub batch — superseded per spoke)
+waterproofing-image-prompts.txt
+damp-proofing-image-prompts.txt
+access-solutions-image-prompts.txt
+painting-services-image-prompts.txt
+body-corporate-image-prompts.txt
+painting-industrial-image-prompts.txt
+painting-commercial-painting-image-prompts.txt
+painting-stucco-wall-coatings-image-prompts.txt
+painting-parking-garage-image-prompts.txt
+marmoran-wall-systems-image-prompts.txt
+concrete-spalling-image-prompts.txt
+hygienic-food-grade-image-prompts.txt         (NEXT — prompts ready, images pending)
+
+DEDICATED 9-IMAGE POOLS — DONE (16 spokes)
+------------------------------------------
+Structural
+  ✓ /structural-repairs/crack-injection          structural-crack-injection-01…09
+  ✓ /structural-repairs/expansion-joint-sealing  structural-expansion-joint-01…09
+  ✓ /structural-repairs/concrete-spalling        structural-concrete-spalling-01…09
+
+Waterproofing
+  ✓ /waterproofing/flat-concrete-roofs           waterproofing-flat-roof-01…09 (+10)
+  ✓ /waterproofing/leaking-balconies             waterproofing-leaking-balcony-01…08
+  ✓ /waterproofing/torch-on-liquid-membranes     waterproofing-torch-on-liquid-01…09
+  ✓ /waterproofing/basement-tanking              waterproofing-basement-tanking-01…09
+
+Coatings
+  ✓ /specialized-coatings/cemcrete-floors        coatings-cemcrete-floors-01…09
+  ✓ /specialized-coatings/cemcrete-external-walls coatings-cemcrete-external-walls-01…09
+  ✓ /specialized-coatings/wall-cladding          coatings-wall-cladding-01…09
+  ✓ /specialized-coatings/marmoran-wall-systems  coatings-marmoran-wall-01…09
+
+Painting
+  ✓ /painting/industrial                         painting-industrial-01…09
+  ✓ /painting/commercial-painting                painting-commercial-01…09
+  ✓ /painting/stucco-wall-coatings               painting-stucco-01…09
+  ✓ /painting/parking-garage-painting            painting-parking-garage-01…09
+
+PARTIAL — dedicated pool but not a clean numbered 9 (2 spokes)
+--------------------------------------------------------------
+  ~ /painting/body-corporate                     6 new + 3 legacy reused in pool
+  ~ /specialized-coatings/industrial-epoxy-flooring  mixed epoxy/hygienic/legacy shots
+
+NOT DONE — still on shared hub pool (11 spokes)
+-----------------------------------------------
+Damp
+  · /damp-proofing/rising-damp-treatment         shared DAMP_PROOFING_IMAGE_POOL
+
+Coatings
+  · /specialized-coatings/hygienic-food-grade    shared SPECIALIZED_COATINGS pool  ← NEXT
+  · /specialized-coatings/industrial-corrosion-control  shared SPECIALIZED_COATINGS pool
+
+Painting (all on PAINTING_SERVICES_IMAGE_POOL)
+  · /painting/interior-painting
+  · /painting/internal-walls
+  · /painting/external-walls
+  · /painting/high-volume-commercial-painting
+  · /painting/roof-painting
+  · /painting/warehouse-painting
+  · /painting/road-marking
+
+Access
+  · /access-solutions/rope-access-painting       shared ACCESS_SOLUTIONS_IMAGE_POOL
+
+HUB PAGES STILL ON SHARED POOLS (6)
+-----------------------------------
+  /structural-repairs, /specialized-coatings, /waterproofing-services,
+  /painting-services, /damp-proofing-services, /access-solutions
+
+LEGACY IMAGES STILL IN USE (homepage / hubs / cross-links)
+------------------------------------------------------------
+  structural-concrete-spalling-assessment.jpg, repair.jpg, handover.jpg
+  painting-body-corporate-estate/sandton/qa, painting-commercial-*, etc.
+  Gallery: 64 × maverick-gallery-01…64.jpg on /gallery
+
+IMAGE COUNT (approx)
+--------------------
+  ~245 raster files in public/
+  ~131 numbered spoke batch JPGs + 64 gallery + ~44 shared/legacy/misc
 
 ================================================================================
 KEY ARCHITECTURE
 ================================================================================
-Sitemap/SEO:  src/lib/sitemap-builder.ts, src/app/sitemap.ts, metadata.ts,
-              page-metadata.ts, og-images.ts, seo.ts, next.config.mjs
-Services:     service-hub-pages.tsx, service-deep-registry.ts, hub/spoke components
-Locations:    locations.ts (17 cities), location-regions.ts (4), location-service-matrix.ts (36)
-Content:      standalone-blog-articles.ts, src/content/pillars/, pillars.ts
-Nav:          site-navigation.ts, header.tsx, mobile-nav.tsx, footer-data.ts
+Images:       src/data/service-page-images.ts (pools + getServicePageImages)
+Magazine:     src/lib/spoke-to-hub-config.tsx (SPOKE_MAGAZINE_IMAGES per spoke)
+OG:           src/lib/og-images.ts
+Services grid: src/data/services-page-content.ts (SPOKE_IMAGES)
+Sitemap/SEO:  src/lib/sitemap-builder.ts, page-metadata.ts, seo.ts
 
 HUBS (6): /structural-repairs, /waterproofing-services, /damp-proofing-services,
           /specialized-coatings, /painting-services, /access-solutions
 
-SPOKES (22): concrete-spalling, crack-injection, expansion-joint-sealing,
-  rising-damp-treatment, industrial-epoxy-flooring, hygienic-food-grade, marmoran-wall-systems,
-  industrial-corrosion-control, flat-concrete-roofs, leaking-balconies, torch-on-liquid-membranes,
-  basement-tanking, body-corporate, industrial, roof-painting, stucco-wall-coatings,
-  commercial-painting, high-volume-commercial-painting, interior-painting, warehouse-painting,
-  parking-garage-painting, road-marking, rope-access-painting
-
-CITIES (17): midrand, sandton, centurion, pretoria-east, benoni, kempton-park, boksburg,
-  germiston, isando, alberton, glenvista, roodepoort, krugersdorp, johannesburg-north,
-  serengeti-estate, ebotse-estate, meyersdal-estate
-
-REGIONS: central, east-rand, west-rand, south-rand
+SPOKES (28 on /services): see src/data/service-spoke-links.ts SERVICE_OVERVIEW_TAGS
 
 ================================================================================
 COMMANDS
 ================================================================================
-npm install
-npm run dev
-npm run build
-npm run validate:sitemap   (run after build)
+pnpm install
+pnpm dev
+pnpm build
+pnpm validate:sitemap
+
+Image conversion (one-off, from repo root):
+  npx --yes -p sharp node scripts/convert-*.mjs
+  (temp scripts deleted after use; PNG sources removed from root)
 
 ================================================================================
-POST-DEPLOY CHECKLIST
+POST-DEPLOY CHECKLIST (after each image batch)
 ================================================================================
-[ ] Deploy to production
-[ ] Confirm sitemap.xml shows 132 URLs
-[ ] GSC: resubmit sitemap.xml
-[ ] GSC: request indexing for /, /locations, priority spokes
-[ ] Rich Results Test on one FAQ page and one blog article
+[ ] pnpm build passes
+[ ] Spot-check spoke page: hero, triptych, magazine, OG preview
+[ ] git push main
+[ ] Optional: GSC request indexing on updated spoke URL
 
-OFF-SITE (not in repo): GBP, reviews, NAP citations, backlinks
+================================================================================
+CHANGELOG (photography program)
+================================================================================
+2026-06-08  Concrete spalling dedicated pool (structural-concrete-spalling-01…09)
+2026-06-08  Marmoran wall systems dedicated pool (coatings-marmoran-wall-01…09)
+2026-06-08  Parking garage painting dedicated pool
+2026-06-08  Stucco wall coatings dedicated pool (interior living areas)
+2026-06-08  Services page fix — all 28 spokes visible on /services
+2026-06-07  Commercial, industrial, body corporate painting batches
+2026-06-07  Homepage + gallery + waterproofing/structural/coatings early batches
+2026-05-17  SEO 9+ uplift; sitemap ~132 URLs
+2026-05-16  Phase 4 matrix, QA hub, blogs, redirects
 
 RESEARCH DOCS (repo root, often untracked):
-Maverick Painting SEO Strategy Plan.txt
-Maverick Painting SEO Strategy Roadmap.txt
-Maverick Content Production System Design.txt
-
-CHANGELOG
-2026-05-17, SEO 9+ uplift; sitemap 132 URLs.
-2026-05-16, Phase 4: matrix, QA hub, disclaimers, blogs, P0 redirects.
-Earlier, Phases 1–3 hub/spoke, locations, blog system, technical SEO base.
+  Maverick Painting SEO Strategy Plan.txt
+  Maverick Painting SEO Strategy Roadmap.txt
+  Maverick Content Production System Design.txt
 
 ================================================================================

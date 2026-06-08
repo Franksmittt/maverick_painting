@@ -1,0 +1,244 @@
+{
+  "project": "Maverick Painting",
+  "client_site": "maverickpainting.co.za",
+  "page": "Hygienic food-grade flooring spoke",
+  "path": "/specialized-coatings/hygienic-food-grade",
+  "purpose": "AI image generation prompts for all nine photography slots on the hygienic HACCP food-grade flooring spoke. Generate every image listed below, then supply files to be placed in public/images/ using the exact target_filename values. After generation, add HYGIENIC_FOOD_GRADE_IMAGE_POOL in service-page-images.ts, remove /specialized-coatings/hygienic-food-grade from SPECIALIZED_COATINGS_PATHS, and update hygienic-food-grade SPOKE_MAGAZINE_IMAGES in spoke-to-hub-config.tsx.",
+  "version": "1.0",
+  "date": "2026-06-08",
+  "style_guidelines": {
+    "mandatory_aesthetic": [
+      "raw documentary-style food-plant and hygienic flooring photography",
+      "candid handheld camera aesthetic",
+      "unposed realism",
+      "authentic natural film grain",
+      "grounded Gauteng, South Africa context"
+    ],
+    "lighting": [
+      "Prefer cool fluorescent process lighting in washdown areas, or bright overcast daylight through small factory windows",
+      "Avoid soft cinematic studio lighting and perfect HDR balance"
+    ],
+    "materials": [
+      "Describe micro-textures explicitly: seamless polyurethane-cement floor sheen, integral radius coving at wall base, stainless drain grates, satin anti-slip aggregate profile, fair epoxy or PU wall splash zones",
+      "Contrast fresh white or light-grey hygienic screed against tiled or painted walls typical of small Gauteng food plants"
+    ],
+    "scale_policy": "Small-team, modest-facility realism only. Small commercial bakeries, neighbourhood abattoir wash bays, craft beverage bottling rooms, or compact food-prep units a crew could coat over a weekend shutdown — not mega Nestlé lines, not airport catering kitchens, not pharmaceutical cleanrooms with full glass walls.",
+    "shot_policy": "Mix close-up detail shots and medium room shots. Close-ups show coving radius, drain surrounds, and floor texture. Medium shots show one production room, one washdown corridor, or one bottling bay — never vast factory halls.",
+    "people_policy": "100% people-free. No workers, faces, hands, or silhouettes. Completed handover photography only.",
+    "completed_vs_process": "100% completed outcomes. No wet screed, half-coved walls, masking tape, grinding dust, open drains under repair, or in-progress evidence.",
+    "text_policy": "Absolutely no readable text anywhere in frame. No HACCP posters, batch codes, brand labels on equipment, warning signs, or company names on uniforms or walls.",
+    "location_cues": [
+      "Gauteng light industrial food units",
+      "small bakery production floor",
+      "abattoir washdown corridor",
+      "craft beverage bottling room",
+      "white tiled or painted process walls",
+      "stainless equipment edges without readable branding"
+    ]
+  },
+  "global_negative_prompt": "people, workers, faces, hands, silhouettes, wet screed, half-finished coving, grinding in progress, readable text, letters, numbers, words, HACCP poster, brand labels, logos, branding, watermarks, mega factory, pharmaceutical cleanroom glamour, airport kitchen, plastic 3D render, CGI, Unreal Engine, oversaturated colours, perfectly clean fantasy plant, drone aerial",
+  "output_specs": {
+    "default_format": "jpg",
+    "color_profile": "sRGB",
+    "quality": "high",
+    "notes": "All slots use 4:3 aspect ratio. Filename must match target_filename exactly (lowercase, hyphens). Replaces legacy coatings-hygienic-food-grade-01 through 03 placeholders on this spoke once integrated."
+  },
+  "page_slot_map": {
+    "note": "Nine-slot HYGIENIC_FOOD_GRADE_IMAGE_POOL — remove /specialized-coatings/hygienic-food-grade from SPECIALIZED_COATINGS_PATHS when wired",
+    "slots": [
+      { "slot": 0, "role": "Hero", "filename": "coatings-hygienic-food-grade-01.jpg", "shot": "medium" },
+      { "slot": 1, "role": "Triptych left", "filename": "coatings-hygienic-food-grade-02.jpg", "shot": "close-up" },
+      { "slot": 2, "role": "Triptych centre", "filename": "coatings-hygienic-food-grade-03.jpg", "shot": "medium" },
+      { "slot": 3, "role": "Triptych right", "filename": "coatings-hygienic-food-grade-04.jpg", "shot": "close-up" },
+      { "slot": 4, "role": "Magazine editorial phase 01", "filename": "coatings-hygienic-food-grade-05.jpg", "shot": "medium" },
+      { "slot": 5, "role": "Image pair left", "filename": "coatings-hygienic-food-grade-06.jpg", "shot": "close-up" },
+      { "slot": 6, "role": "Image pair right", "filename": "coatings-hygienic-food-grade-07.jpg", "shot": "close-up" },
+      { "slot": 7, "role": "Magazine editorial phase 02", "filename": "coatings-hygienic-food-grade-08.jpg", "shot": "medium" },
+      { "slot": 8, "role": "Magazine editorial phase 03", "filename": "coatings-hygienic-food-grade-09.jpg", "shot": "medium" }
+    ]
+  },
+  "images": [
+    {
+      "id": "hygienic-bakery-hero",
+      "section": "Hero — split layout beside H1",
+      "display_order": 0,
+      "target_filename": "coatings-hygienic-food-grade-01.jpg",
+      "target_path": "public/images/coatings-hygienic-food-grade-01.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed hygienic polyurethane-cement floor in a small Gauteng commercial bakery",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "hf01.png",
+      "prompt": "A raw, documentary-style 4:3 medium photograph of a completed seamless hygienic polyurethane-cement floor in a small Gauteng commercial bakery production room. Light grey satin screed runs wall-to-wall with integral radius coving at white tiled skirting, stainless bench legs visible without readable branding. Empty room, no workers, cool fluorescent process lighting. Modest single-room scale a crew could hand over after a weekend shutdown. Authentic film grain, unposed food-plant photography. No text, posters, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, wet screed, mega bakery line, readable equipment labels, HACCP poster, logos, CGI render, drone"
+    },
+    {
+      "id": "hygienic-coving-close",
+      "section": "Triptych left",
+      "display_order": 1,
+      "target_filename": "coatings-hygienic-food-grade-02.jpg",
+      "target_path": "public/images/coatings-hygienic-food-grade-02.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of integral radius coving on a hygienic food-grade floor in Gauteng",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "hf02.png",
+      "prompt": "A candid, documentary-style 4:3 close-up photograph of completed integral radius coving where a hygienic polyurethane-cement floor meets a white process wall in a Gauteng food facility. The frame fills with smooth 100 mm cove profile, seamless transition, and satin light-grey floor sheen — no 90-degree corner, no gaps. Cool fluorescent light. No people. Authentic film grain, hygiene detail photography. No text, labels, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, square corner, gap at cove, readable wall chart, logos, wide room shot, CGI"
+    },
+    {
+      "id": "hygienic-washdown-corridor",
+      "section": "Triptych centre",
+      "display_order": 2,
+      "target_filename": "coatings-hygienic-food-grade-03.jpg",
+      "target_path": "public/images/coatings-hygienic-food-grade-03.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed hygienic floor and coving in a small Gauteng abattoir washdown corridor",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "hf03.png",
+      "prompt": "A straightforward, documentary-style 4:3 medium photograph of a completed hygienic polyurethane-cement floor and coving system in a modest Gauteng abattoir washdown corridor. Light grey seamless screed with continuous coving runs roughly six metres to a stainless drain — small-team abattoir scale, not an export plant. White tiled walls, hose reel bracket without readable tags. Empty corridor, no people. Authentic film grain, mundane process-area realism. No text, warning signs, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, export abattoir scale, readable signs, wet unfinished floor, logos, drone"
+    },
+    {
+      "id": "hygienic-drain-close",
+      "section": "Triptych right",
+      "display_order": 3,
+      "target_filename": "coatings-hygienic-food-grade-04.jpg",
+      "target_path": "public/images/coatings-hygienic-food-grade-04.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of a stainless drain surround on a completed hygienic floor in Gauteng",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "hf04.png",
+      "prompt": "A raw, documentary-style 4:3 close-up photograph of a completed stainless trapped drain set flush into a hygienic polyurethane-cement floor in a Gauteng food-prep unit. Seamless screed fairing around the grate with neat radius transitions and satin anti-slip profile — no ponding lip, no cracked surround. No readable markings on grate. No people. Authentic film grain, drainage detail handover photography. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, cracked drain surround, readable grate text, logos, CGI, wide floor shot"
+    },
+    {
+      "id": "hygienic-bottling-room",
+      "section": "Magazine editorial phase 01 + spoke magazine seed",
+      "display_order": 4,
+      "target_filename": "coatings-hygienic-food-grade-05.jpg",
+      "target_path": "public/images/coatings-hygienic-food-grade-05.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed hygienic floor in a small Gauteng craft beverage bottling room",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "hf05.png",
+      "prompt": "A candid, documentary-style 4:3 medium photograph of a completed hygienic resin floor in a small Gauteng craft beverage bottling room. Light grey seamless screed with coving at painted block walls, stainless filler line edge visible without brand labels — compact bottling bay scale a small crew could coat in one shutdown. Empty room, no bottles with labels facing camera. Cool fluorescent light. No people. Authentic film grain, light industrial food realism. No text, company names, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, Coca-Cola plant scale, readable bottle labels, logos, half-finished floor, CGI"
+    },
+    {
+      "id": "hygienic-floor-texture-close",
+      "section": "Image pair left",
+      "display_order": 5,
+      "target_filename": "coatings-hygienic-food-grade-06.jpg",
+      "target_path": "public/images/coatings-hygienic-food-grade-06.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of anti-slip texture on a completed hygienic polyurethane-cement floor in Gauteng",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "hf06.png",
+      "prompt": "A straightforward, documentary-style 4:3 close-up photograph of completed anti-slip aggregate texture on a hygienic polyurethane-cement floor in a Gauteng food processing area. Fine broadcast quartz profile visible under raking fluorescent light with satin sheen — clearly cleanable seamless screed, not standard painted concrete. No people. Authentic film grain, technical flooring detail photography. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, flat painted floor, invisible texture, logos, CGI plastic surface, wide shot"
+    },
+    {
+      "id": "hygienic-wall-splash-close",
+      "section": "Image pair right",
+      "display_order": 6,
+      "target_filename": "coatings-hygienic-food-grade-07.jpg",
+      "target_path": "public/images/coatings-hygienic-food-grade-07.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of hygienic floor coving and wall splash zone in a Gauteng food prep area",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "hf07.png",
+      "prompt": "A raw, documentary-style 4:3 close-up photograph of a completed hygienic wall splash zone above integral coving in a Gauteng commercial kitchen prep area. Light grey PU-cement floor cove transitions into white epoxy or hygiene wall coating to roughly 300 mm height with neat termination — small catering unit scale. Stainless bench leg at frame edge, no readable tags. No people. Authentic film grain, hygiene interface detail photography. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, messy termination, readable kitchen chart, logos, CGI, wide kitchen shot"
+    },
+    {
+      "id": "hygienic-cold-room-edge",
+      "section": "Magazine editorial phase 02 + spoke magazine seed",
+      "display_order": 7,
+      "target_filename": "coatings-hygienic-food-grade-08.jpg",
+      "target_path": "public/images/coatings-hygienic-food-grade-08.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed thermal-shock hygienic floor at a cold-room threshold in Gauteng",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "hf08.png",
+      "prompt": "A candid, documentary-style 4:3 medium photograph of a completed thermal-shock rated hygienic floor at a small cold-room threshold in a Gauteng food facility. Polyurethane-cement screed runs seamlessly through the doorway with coving intact at the chill-room edge — modest walk-in cold store scale, not a distribution centre. Insulated panel door edge visible, no temperature display with readable numbers. Empty scene, no people. Cool interior light. Authentic film grain, process flooring realism. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, mega cold store, readable digital display, logos, failed floor edge, CGI, drone"
+    },
+    {
+      "id": "hygienic-bund-walkway",
+      "section": "Magazine editorial phase 03 + spoke magazine seed",
+      "display_order": 8,
+      "target_filename": "coatings-hygienic-food-grade-09.jpg",
+      "target_path": "public/images/coatings-hygienic-food-grade-09.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed hygienic floor and bund walkway in a small Gauteng beverage plant",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "hf09.png",
+      "prompt": "A raw, documentary-style 4:3 medium photograph of a completed hygienic floor and chemical bund walkway in a small Gauteng beverage or sauce production unit. Light grey seamless screed with coving wraps a modest bunded zone beside stainless tanks without readable nameplates — single-bay plant scale a crew could close in days. Empty floor, no people. Flat fluorescent Highveld plant light. Authentic film grain, small food-manufacturing realism. No text, tank labels, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, refinery bund, readable tank labels, logos, half-coated bund, CGI aerial"
+    }
+  ],
+  "hub_slot_assignment": {
+    "note": "Recommended mapping for service-page-images.ts HYGIENIC_FOOD_GRADE_IMAGE_POOL",
+    "magazine_seeds_in_spoke_to_hub_config": [
+      { "phase": 1, "filename": "coatings-hygienic-food-grade-05.jpg" },
+      { "phase": 2, "filename": "coatings-hygienic-food-grade-08.jpg" },
+      { "phase": 3, "filename": "coatings-hygienic-food-grade-09.jpg" }
+    ]
+  },
+  "summary": {
+    "total_page_slots": 9,
+    "new_images_to_generate": 9,
+    "all_completed_work": true,
+    "no_text_anywhere": true,
+    "shot_mix": {
+      "close_up": 4,
+      "medium": 5
+    },
+    "generation_batches": {
+      "batch_1": [
+        "coatings-hygienic-food-grade-01.jpg",
+        "coatings-hygienic-food-grade-02.jpg",
+        "coatings-hygienic-food-grade-03.jpg",
+        "coatings-hygienic-food-grade-04.jpg",
+        "coatings-hygienic-food-grade-05.jpg"
+      ],
+      "batch_2": [
+        "coatings-hygienic-food-grade-06.jpg",
+        "coatings-hygienic-food-grade-07.jpg",
+        "coatings-hygienic-food-grade-08.jpg",
+        "coatings-hygienic-food-grade-09.jpg"
+      ]
+    },
+    "notes": [
+      "Legacy coatings-hygienic-food-grade-01 through 03 files will be replaced by this full numbered set.",
+      "Also remove hygienic images from industrial-epoxy and shared coatings hub pools when wiring.",
+      "After generation: convert PNG → JPG (~88 quality), wire pool, update spoke config and og-images.ts, build, commit, push."
+    ]
+  }
+}

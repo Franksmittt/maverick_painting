@@ -5,8 +5,9 @@ export type ServicePageImage = {
 
 export const SERVICE_PAGE_IMAGE_COUNT = 9;
 
-const STRUCTURAL_REPAIRS_PATHS = new Set([
-  "/structural-repairs",
+const STRUCTURAL_REPAIRS_PATHS = new Set(["/structural-repairs"]);
+
+const CONCRETE_SPALLING_PATHS = new Set([
   "/structural-repairs/concrete-spalling",
 ]);
 
@@ -434,6 +435,46 @@ const EXPANSION_JOINT_IMAGE_POOL: readonly ServicePageImage[] = [
   {
     src: "/images/structural-expansion-joint-09.jpg",
     alt: "Wide view of renewed expansion joints across one lane of a small basement parking area",
+  },
+];
+
+/** Dedicated nine-slot pool for the concrete spalling repair spoke. */
+const CONCRETE_SPALLING_IMAGE_POOL: readonly ServicePageImage[] = [
+  {
+    src: "/images/structural-concrete-spalling-01.jpg",
+    alt: "Completed concrete spalling repair on a modest Gauteng sectional-title building elevation",
+  },
+  {
+    src: "/images/structural-concrete-spalling-02.jpg",
+    alt: "Close-up of completed structural repair mortar feathering into original concrete on a Gauteng column",
+  },
+  {
+    src: "/images/structural-concrete-spalling-03.jpg",
+    alt: "Completed spalling repairs on basement parking columns in a Gauteng sectional-title complex",
+  },
+  {
+    src: "/images/structural-concrete-spalling-04.jpg",
+    alt: "Close-up of completed concrete repair fairing at a balcony slab edge in Gauteng",
+  },
+  {
+    src: "/images/structural-concrete-spalling-05.jpg",
+    alt: "Completed spalling repair on a townhouse carport beam and column in Gauteng",
+  },
+  {
+    src: "/images/structural-concrete-spalling-06.jpg",
+    alt: "Close-up of completed external corner concrete repair on a Gauteng building",
+  },
+  {
+    src: "/images/structural-concrete-spalling-07.jpg",
+    alt: "Close-up of completed parapet concrete repair on a Gauteng residential block",
+  },
+  {
+    src: "/images/structural-concrete-spalling-08.jpg",
+    alt: "Completed concrete spalling repair on a small Gauteng warehouse tilt-up panel",
+  },
+  {
+    src: "/images/structural-concrete-spalling-09.jpg",
+    alt: "Completed spalling repair on a modest Gauteng estate retaining wall",
   },
 ];
 
@@ -1000,6 +1041,10 @@ export function getServicePageImages(
 
   if (EXPANSION_JOINT_PATHS.has(path)) {
     return [...EXPANSION_JOINT_IMAGE_POOL];
+  }
+
+  if (CONCRETE_SPALLING_PATHS.has(path)) {
+    return [...CONCRETE_SPALLING_IMAGE_POOL];
   }
 
   if (STRUCTURAL_REPAIRS_PATHS.has(path)) {

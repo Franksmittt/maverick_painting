@@ -55,7 +55,7 @@ const SPOKE_CATEGORY: Record<
 };
 
 const SPOKE_IMAGES: Record<string, string> = {
-  "/structural-repairs/concrete-spalling": "/images/structural-concrete-spalling-repair.jpg",
+  "/structural-repairs/concrete-spalling": "/images/structural-concrete-spalling-01.jpg",
   "/structural-repairs/crack-injection": "/images/structural-crack-injection-injection.jpg",
   "/structural-repairs/expansion-joint-sealing": "/images/structural-expansion-joint-01.jpg",
   "/damp-proofing/rising-damp-treatment": "/images/damp-rising-damp-injection.jpg",
