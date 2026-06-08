@@ -23,7 +23,7 @@ const OG_BY_PATH: Record<string, string> = {
   "/specialized-coatings/cemcrete-external-walls": "/images/coatings-cemcrete-external-walls-01.jpg",
   "/specialized-coatings/hygienic-food-grade": "/images/coatings-hygienic-food-grade-01.jpg",
   "/specialized-coatings/marmoran-wall-systems": "/images/coatings-marmoran-wall-01.jpg",
-  "/specialized-coatings/industrial-corrosion-control": "/images/painting-industrial-corrosion.jpg",
+  "/specialized-coatings/industrial-corrosion-control": "/images/coatings-industrial-corrosion-01.jpg",
   "/painting/body-corporate": "/images/painting-body-corporate-01.jpg",
   "/painting/industrial": "/images/painting-industrial-01.jpg",
   "/painting/commercial-painting": "/images/painting-commercial-01.jpg",

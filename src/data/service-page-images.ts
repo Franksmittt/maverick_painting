@@ -27,8 +27,9 @@ const CEMCRETE_EXTERNAL_WALLS_PATHS = new Set([
   "/specialized-coatings/cemcrete-external-walls",
 ]);
 
-const SPECIALIZED_COATINGS_PATHS = new Set([
-  "/specialized-coatings",
+const SPECIALIZED_COATINGS_PATHS = new Set(["/specialized-coatings"]);
+
+const INDUSTRIAL_CORROSION_CONTROL_PATHS = new Set([
   "/specialized-coatings/industrial-corrosion-control",
 ]);
 
@@ -136,20 +137,16 @@ const SPECIALIZED_COATINGS_IMAGE_POOL: readonly ServicePageImage[] = [
     alt: "Multi-coat epoxy resin flooring application with controlled film build",
   },
   {
-    src: "/images/coatings-industrial-epoxy-05.jpg",
-    alt: "Completed mid-grey epoxy floor in a small Gauteng industrial unit",
+    src: "/images/coatings-industrial-epoxy-04.jpg",
+    alt: "Completed cold-room epoxy or polyurethane-cement floor with coved wall base",
   },
   {
-    src: "/images/coatings-industrial-corrosion-02.jpg",
-    alt: "Completed industrial corrosion protection on pipe bridge steelwork",
+    src: "/images/coatings-industrial-epoxy-07.jpg",
+    alt: "Completed epoxy floor with line marking in a small fulfilment unit",
   },
   {
     src: "/images/coatings-industrial-epoxy-06.jpg",
     alt: "Completed epoxy lining in a small chemical storage bund",
-  },
-  {
-    src: "/images/coatings-industrial-corrosion-01.jpg",
-    alt: "Industrial corrosion assessment on steel structures in Gauteng",
   },
   {
     src: "/images/coatings-cemcrete-external-walls-08.jpg",
@@ -256,16 +253,8 @@ const INDUSTRIAL_EPOXY_FLOORING_IMAGE_POOL: readonly ServicePageImage[] = [
     alt: "Multi-coat epoxy resin flooring application with controlled film build",
   },
   {
-    src: "/images/coatings-industrial-corrosion-02.jpg",
-    alt: "Completed industrial corrosion protection on pipe bridge steelwork",
-  },
-  {
     src: "/images/coatings-industrial-epoxy-04.jpg",
     alt: "Completed cold-room epoxy or polyurethane-cement floor with coved wall base",
-  },
-  {
-    src: "/images/coatings-industrial-corrosion-03.jpg",
-    alt: "Completed protective coating on structural steel in a Gauteng plant",
   },
   {
     src: "/images/coatings-industrial-epoxy-05.jpg",
@@ -278,6 +267,54 @@ const INDUSTRIAL_EPOXY_FLOORING_IMAGE_POOL: readonly ServicePageImage[] = [
   {
     src: "/images/coatings-industrial-epoxy-07.jpg",
     alt: "Completed epoxy floor with line marking in a small fulfilment unit",
+  },
+  {
+    src: "/images/painting-industrial-preparation.jpg",
+    alt: "Industrial floor surface preparation ahead of resin screed installation",
+  },
+  {
+    src: "/images/painting-industrial-coatings.jpg",
+    alt: "Completed protective coatings on adjacent plant steel during an epoxy floor programme",
+  },
+];
+
+/** Dedicated nine-slot pool for the industrial corrosion control spoke. */
+const INDUSTRIAL_CORROSION_CONTROL_IMAGE_POOL: readonly ServicePageImage[] = [
+  {
+    src: "/images/coatings-industrial-corrosion-01.jpg",
+    alt: "Completed corrosion protection coating on a small Gauteng industrial pipe rack",
+  },
+  {
+    src: "/images/coatings-industrial-corrosion-02.jpg",
+    alt: "Close-up of stripe coat and weld area corrosion protection on Gauteng steelwork",
+  },
+  {
+    src: "/images/coatings-industrial-corrosion-03.jpg",
+    alt: "Completed protective coating on a modest Gauteng storage silo exterior",
+  },
+  {
+    src: "/images/coatings-industrial-corrosion-04.jpg",
+    alt: "Close-up of corrosion protection coating at a bolt flange on Gauteng plant steel",
+  },
+  {
+    src: "/images/coatings-industrial-corrosion-05.jpg",
+    alt: "Completed corrosion protection on warehouse portal frame steel in Gauteng",
+  },
+  {
+    src: "/images/coatings-industrial-corrosion-06.jpg",
+    alt: "Close-up of epoxy coating film build on structural I-beam steel in Gauteng",
+  },
+  {
+    src: "/images/coatings-industrial-corrosion-07.jpg",
+    alt: "Close-up of corrosion protection at a column base plate in Gauteng",
+  },
+  {
+    src: "/images/coatings-industrial-corrosion-08.jpg",
+    alt: "Completed corrosion protection on bund wall steel at a small Gauteng chemical plant",
+  },
+  {
+    src: "/images/coatings-industrial-corrosion-09.jpg",
+    alt: "Completed protective coating on plant walkway handrail and support steel in Gauteng",
   },
 ];
 
@@ -1108,6 +1145,10 @@ export function getServicePageImages(
 
   if (CEMCRETE_EXTERNAL_WALLS_PATHS.has(path)) {
     return [...CEMCRETE_EXTERNAL_WALLS_IMAGE_POOL];
+  }
+
+  if (INDUSTRIAL_CORROSION_CONTROL_PATHS.has(path)) {
+    return [...INDUSTRIAL_CORROSION_CONTROL_IMAGE_POOL];
   }
 
   if (HYGIENIC_FOOD_GRADE_PATHS.has(path)) {

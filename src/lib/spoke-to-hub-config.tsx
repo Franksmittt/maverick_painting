@@ -208,16 +208,16 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
   ],
   "industrial-corrosion-control": [
     {
-      src: "/images/coatings-industrial-corrosion-01.jpg",
-      alt: "Industrial corrosion assessment and coating specification on steel or concrete structures in Gauteng",
+      src: "/images/coatings-industrial-corrosion-05.jpg",
+      alt: "Completed corrosion protection on warehouse portal frame steel in Gauteng",
     },
     {
-      src: "/images/coatings-industrial-corrosion-02.jpg",
-      alt: "Surface preparation and protective coating application for corrosion control on plant or warehouse assets",
+      src: "/images/coatings-industrial-corrosion-08.jpg",
+      alt: "Completed corrosion protection on bund wall steel at a small Gauteng chemical plant",
     },
     {
-      src: "/images/coatings-industrial-corrosion-03.jpg",
-      alt: "Completed protective coating system handover on industrial steelwork or tankage",
+      src: "/images/coatings-industrial-corrosion-09.jpg",
+      alt: "Completed protective coating on plant walkway handrail and support steel in Gauteng",
     },
   ],
   "flat-concrete-roofs": [

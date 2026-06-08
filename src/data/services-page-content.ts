@@ -65,7 +65,7 @@ const SPOKE_IMAGES: Record<string, string> = {
   "/specialized-coatings/cemcrete-external-walls": "/images/coatings-cemcrete-external-walls-01.jpg",
   "/specialized-coatings/hygienic-food-grade": "/images/coatings-hygienic-food-grade-01.jpg",
   "/specialized-coatings/marmoran-wall-systems": "/images/coatings-marmoran-wall-01.jpg",
-  "/specialized-coatings/industrial-corrosion-control": "/images/coatings-industrial-corrosion-02.jpg",
+  "/specialized-coatings/industrial-corrosion-control": "/images/coatings-industrial-corrosion-01.jpg",
   "/waterproofing/flat-concrete-roofs": "/images/waterproofing-flat-roof-02.jpg",
   "/waterproofing/leaking-balconies": "/images/waterproofing-leaking-balcony-04.jpg",
   "/waterproofing/torch-on-liquid-membranes": "/images/waterproofing-torch-on-liquid-01.jpg",
