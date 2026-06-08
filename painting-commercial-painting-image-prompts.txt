@@ -1,0 +1,242 @@
+{
+  "project": "Maverick Painting",
+  "client_site": "maverickpainting.co.za",
+  "path": "/painting/commercial-painting",
+  "page": "Commercial & healthcare painting spoke",
+  "purpose": "AI image generation prompts for all nine photography slots on the commercial painting spoke, focused on a new Gauteng hospital wing before equipment fit-out. Show completed wall coatings and resin/epoxy floors only. Generate every image listed below, then supply files to be placed in public/images/ using the exact target_filename values. After generation, add COMMERCIAL_PAINTING_IMAGE_POOL in service-page-images.ts and update commercial-painting SPOKE_MAGAZINE_IMAGES in spoke-to-hub-config.tsx.",
+  "version": "1.0",
+  "date": "2026-06-08",
+  "style_guidelines": {
+    "mandatory_aesthetic": [
+      "raw documentary-style healthcare interior photography",
+      "candid handheld camera aesthetic",
+      "unposed realism",
+      "authentic natural film grain",
+      "grounded Gauteng, South Africa context"
+    ],
+    "lighting": [
+      "Prefer cool even fluorescent ceiling light in clinical interiors, or soft daylight through high windows in empty rooms",
+      "Avoid soft cinematic studio lighting, coloured gel drama, and perfect HDR balance"
+    ],
+    "materials": [
+      "Describe micro-textures explicitly: matte low-VOC white and pale grey wall paint with neat cut-in, seamless light grey epoxy or PU-cement floors, integral floor-to-wall coving curves, aluminium door frames without stickers",
+      "Show walls and floors as the completed product — hygienic handover surfaces ready for furniture and equipment install later"
+    ],
+    "scale_policy": "Small-team, modest healthcare fit-out only. A new wing or small regional hospital block a crew could coat room-by-room — single corridor runs, one empty theatre, a few side rooms, one storage closet. Not a mega teaching hospital campus, not airport-scale atriums, not bustling wards.",
+    "hospital_fitout_policy": "Pre-equipment new hospital only. Empty rooms after painting and flooring handover. No beds, monitors, surgical machines, IV poles, trolleys, computers, medical devices, ceiling pendant surgical lights, crash carts, or installed casework with equipment.",
+    "people_policy": "100% people-free. No workers, faces, hands, or silhouettes. Completed handover photography only.",
+    "completed_vs_process": "100% completed outcomes. No containment plastic, half-painted walls, wet epoxy, masking tape, paint tins, rollers, or in-progress evidence.",
+    "text_policy": "Absolutely no readable text anywhere in frame. No wall boards, notice boards, whiteboards, wayfinding signs, room-number plaques, posters, paintings with writing, murals with lettering, labels on doors, fire-exit signs with text, or branded equipment markings.",
+    "location_cues": [
+      "modest Gauteng regional hospital or clinic wing",
+      "Centurion, Midrand, or Pretoria east healthcare stock",
+      "plain aluminium doors and square-set ceiling grids",
+      "pale clinical colour palette",
+      "empty handover mood before FF&E install"
+    ]
+  },
+  "global_negative_prompt": "people, workers, faces, hands, silhouettes, posed models, stock photo, hospital beds, medical equipment, surgical machines, monitors, IV stands, operating lights, trolleys, computers, installed medical casework, text, readable text, letters, numbers, words, signage, signs, notice boards, whiteboards, wall charts, posters, paintings with text, murals with writing, room number plaques, wayfinding, fire exit signs, labels, branding, logos, watermarks, masking tape, plastic sheeting, containment, half-painted walls, wet epoxy, paint tins, rollers in use, in-progress work, bustling hospital, patients, doctors, American mega hospital atrium, futuristic CGI clinic, lush decor, rain, snow, oversaturated colours, perfectly sterile fantasy render, drone aerial",
+  "output_specs": {
+    "default_format": "jpg",
+    "color_profile": "sRGB",
+    "quality": "high",
+    "notes": "All slots use 4:3 aspect ratio. Filename must match target_filename exactly (lowercase, hyphens). Replaces legacy painting-commercial-healthcare.jpg, painting-commercial-campus.jpg, and painting-commercial-retail.jpg on this spoke once integrated."
+  },
+  "page_slot_map": {
+    "note": "Nine-slot COMMERCIAL_PAINTING_IMAGE_POOL — remove /painting/commercial-painting from PAINTING_SERVICES_PATHS when wired",
+    "slots": [
+      { "slot": 0, "role": "Hero", "filename": "painting-commercial-01.jpg" },
+      { "slot": 1, "role": "Triptych left", "filename": "painting-commercial-02.jpg" },
+      { "slot": 2, "role": "Triptych centre", "filename": "painting-commercial-03.jpg" },
+      { "slot": 3, "role": "Triptych right", "filename": "painting-commercial-04.jpg" },
+      { "slot": 4, "role": "Magazine editorial phase 01", "filename": "painting-commercial-05.jpg" },
+      { "slot": 5, "role": "Image pair left", "filename": "painting-commercial-06.jpg" },
+      { "slot": 6, "role": "Image pair right", "filename": "painting-commercial-07.jpg" },
+      { "slot": 7, "role": "Magazine editorial phase 02", "filename": "painting-commercial-08.jpg" },
+      { "slot": 8, "role": "Magazine editorial phase 03", "filename": "painting-commercial-09.jpg" }
+    ]
+  },
+  "images": [
+    {
+      "id": "commercial-hospital-corridor-hero",
+      "section": "Hero — split layout beside H1",
+      "display_order": 0,
+      "target_filename": "painting-commercial-01.jpg",
+      "target_path": "public/images/painting-commercial-01.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed wall coatings and seamless resin flooring in a new empty hospital corridor in Gauteng",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "cp01.png",
+      "prompt": "A raw, documentary-style 4:3 photograph of a completed hospital corridor handover in a modest new Gauteng clinic wing before any equipment is installed. The camera looks down a straight empty passage with pale grey matte low-VOC wall paint, crisp white ceiling and door frames, and a seamless light grey epoxy or PU-cement floor with integral coving at the wall base. Aluminium doors are closed with plain unmarked faces — no room numbers, signs, or boards anywhere. Fluorescent ceiling panels give cool even clinical light. Scale feels like a small regional hospital block, not a massive teaching hospital. No people, beds, trolleys, or medical machines. Authentic film grain, unposed healthcare interior photography. No text, logos, signs, boards, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, hospital beds, equipment, wayfinding signs, room numbers, whiteboards, text, logos, half-painted walls, wet floor, CGI hospital atrium, bustling ward"
+    },
+    {
+      "id": "commercial-patient-room",
+      "section": "Triptych left",
+      "display_order": 1,
+      "target_filename": "painting-commercial-02.jpg",
+      "target_path": "public/images/painting-commercial-02.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed antimicrobial wall paint and resin floor in an empty new hospital patient room",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "cp02.png",
+      "prompt": "A candid, documentary-style 4:3 photograph of a completed empty patient room in a new modest Gauteng hospital wing. The room has off-white matte wall coating with neat cut-in at the ceiling, a plain aluminium window with simple blind and no decals, and a seamless pale grey resin floor with subtle satin sheen and floor-to-wall coving. No bed, bedside cabinet, monitor, curtain track with bags, or wall-mounted equipment — the space is bare and ready for fit-out. One plain closed door without signage. Soft daylight from the window mixed with cool fluorescent light. Authentic film grain, quiet clinical handover realism. No text, boards, posters, paintings, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, hospital bed, medical devices, wall charts, posters with text, room number sign, half-painted wall, wet epoxy, logos, stock hospital photo"
+    },
+    {
+      "id": "commercial-operating-theatre",
+      "section": "Triptych centre",
+      "display_order": 2,
+      "target_filename": "painting-commercial-03.jpg",
+      "target_path": "public/images/painting-commercial-03.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed hygienic wall and floor coatings in an empty new operating theatre in Gauteng",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "cp03.png",
+      "prompt": "A straightforward, documentary-style 4:3 photograph of a completed empty operating theatre in a small new Gauteng hospital before surgical equipment install. Walls are finished in clean pale green-grey or off-white hygienic matte coating with realistic roller texture. Floor is seamless light grey epoxy or PU-cement with coving up the walls and a floor drain cover visible. Ceiling is plain with fluorescent panels only — no surgical pendant lights, booms, or monitors installed yet. Empty sterile room, no people, tables, or machines. Cool bright clinical lighting. Authentic film grain, modest OT handover photography. No text, signs, boards, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, surgical lights, operating table, monitors, medical machines, wall charts, text, logos, in-progress coating, CGI futuristic OT"
+    },
+    {
+      "id": "commercial-storage-room",
+      "section": "Triptych right",
+      "display_order": 3,
+      "target_filename": "painting-commercial-04.jpg",
+      "target_path": "public/images/painting-commercial-04.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed paint and resin floor handover in an empty hospital storage room in Gauteng",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "cp04.png",
+      "prompt": "A raw, documentary-style 4:3 photograph of a completed empty hospital storage or utility room in a modest Gauteng medical building. The small room has light grey painted blockwork or plaster walls, a simple flat ceiling, and a durable mid-grey resin floor with neat coving at the base. No shelving loaded with boxes, no trolleys, no labels on shelves, no fire equipment signs with text. A single plain metal door, closed. Fluorescent light, slightly utilitarian mood. Empty handover space a small crew would have finished as a side room off a ward corridor. Authentic film grain, mundane clinical back-of-house realism. No text, boards, signs, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, stocked shelves with labels, boxes with writing, equipment, warning signs with text, half-painted walls, logos, CGI storeroom"
+    },
+    {
+      "id": "commercial-ward-hallway",
+      "section": "Magazine editorial phase 01 + spoke magazine seed",
+      "display_order": 4,
+      "target_filename": "painting-commercial-05.jpg",
+      "target_path": "public/images/painting-commercial-05.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed ward hallway with antimicrobial wall coatings and seamless flooring in a new Gauteng hospital",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "cp05.png",
+      "prompt": "A candid, documentary-style 4:3 photograph of a completed empty ward hallway in a new modest Gauteng hospital. The camera stands at nursing-station height looking along a shorter L-shaped corridor with warm off-white and pale grey wall coatings, plain aluminium door frames, and a continuous seamless light grey floor with subtle coving. Several closed doors without room plaques or boards. No nurses station furniture, benches, hand sanitizer stands with labels, or wall-mounted displays. Cool fluorescent corridor lighting with mild shadow at the corner. No people. Authentic film grain, pre-occupancy healthcare realism. No text, signs, boards, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, nurses station equipment, wayfinding boards, room numbers, posters, hospital bustle, text, logos, wet paint, CGI corridor"
+    },
+    {
+      "id": "commercial-sluice-room",
+      "section": "Image pair left",
+      "display_order": 5,
+      "target_filename": "painting-commercial-06.jpg",
+      "target_path": "public/images/painting-commercial-06.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed hygienic coatings in an empty hospital sluice or prep room with resin floor in Gauteng",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "cp06.png",
+      "prompt": "A raw, documentary-style 4:3 close-to-mid photograph of a completed empty hospital sluice or prep room in a small Gauteng clinic wing. Walls are finished in clean white hygienic matte paint with neat junction to a tiled or resin skirt zone at the lower wall if present. Floor is seamless pale grey PU-cement or epoxy with coving and a stainless steel floor drain, no fittings connected yet. Small room, plain ceiling, one closed door without signage. No sinks with branded taps, no wall charts, no machines. Cool fluorescent light reflecting softly on the floor sheen. No people. Authentic film grain, clinical service-room handover photography. No text, signs, boards, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, installed sinks with labels, medical equipment, wall charts, text, logos, half-finished coving, CGI cleanroom fantasy"
+    },
+    {
+      "id": "commercial-floor-coving-detail",
+      "section": "Image pair right",
+      "display_order": 6,
+      "target_filename": "painting-commercial-07.jpg",
+      "target_path": "public/images/painting-commercial-07.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close view of completed hospital wall paint and resin floor coving junction in Gauteng",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "cp07.png",
+      "prompt": "A straightforward, documentary-style 4:3 close photograph of a completed wall-to-floor junction in an empty new Gauteng hospital room. The frame shows pale off-white matte wall paint meeting a seamless light grey resin floor through a smooth integral coving curve, with realistic trowel texture and slight satin sheen on the floor, not a plastic CGI render. Lower wall is flawless handover quality. Empty room context blurred in background — no equipment, boards, or door signs visible. Raking fluorescent light emphasises coving profile and paint texture. No people. Authentic film grain, technical healthcare finish detail. No text, signs, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, equipment, wall boards, text, logos, failed coving, wet resin, perfect mirror CGI floor, labels"
+    },
+    {
+      "id": "commercial-consult-room",
+      "section": "Magazine editorial phase 02 + spoke magazine seed",
+      "display_order": 7,
+      "target_filename": "painting-commercial-08.jpg",
+      "target_path": "public/images/painting-commercial-08.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed low-VOC wall and floor coatings in an empty hospital consultation room in Gauteng",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "cp08.png",
+      "prompt": "A candid, documentary-style 4:3 photograph of a completed empty consultation or treatment room in a modest new Gauteng medical suite. Walls are finished in soft warm white low-VOC matte paint with crisp ceiling line. Floor is light grey seamless epoxy with subtle roller or trowel texture. Plain aluminium door and window, no desk, chairs, examination couch, or wall-mounted equipment installed yet. Small room scale appropriate to a clinic fit-out crew, not a flagship hospital pavilion. Daylight from window blended with fluorescent light. No people. Authentic film grain, calm pre-opening interior realism. No text, boards, posters, paintings, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, examination bed, desk, computer, anatomy posters, wall art with text, signage, logos, half-painted room, CGI clinic"
+    },
+    {
+      "id": "commercial-wing-intersection",
+      "section": "Magazine editorial phase 03 + spoke magazine seed",
+      "display_order": 8,
+      "target_filename": "painting-commercial-09.jpg",
+      "target_path": "public/images/painting-commercial-09.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed empty hospital wing corridor intersection with resin floors and wall coatings in Gauteng",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "cp09.png",
+      "prompt": "A raw, documentary-style 4:3 photograph of a completed empty hospital wing corridor intersection in a modest new Gauteng healthcare building. The camera captures a simple T-junction with pale grey and off-white wall coatings, plain doors on two sides without plaques, and continuous seamless light grey resin flooring throughout. Ceiling grid with fluorescent panels only. No wayfinding boards, fire notices, wall paintings, benches, or equipment of any kind. Quiet pre-handover mood before beds and machines arrive. Cool even clinical light. No people. Authentic film grain, unposed healthcare architectural photography. No text, signs, boards, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, wayfinding signs, fire exit text, hospital equipment, posters, murals, bustling corridor, text, logos, CGI atrium, drone"
+    }
+  ],
+  "hub_slot_assignment": {
+    "note": "Recommended mapping for service-page-images.ts COMMERCIAL_PAINTING_IMAGE_POOL",
+    "magazine_seeds_in_spoke_to_hub_config": [
+      { "phase": 1, "filename": "painting-commercial-05.jpg" },
+      { "phase": 2, "filename": "painting-commercial-08.jpg" },
+      { "phase": 3, "filename": "painting-commercial-09.jpg" }
+    ]
+  },
+  "summary": {
+    "total_page_slots": 9,
+    "new_images_to_generate": 9,
+    "theme": "new hospital wing before equipment fit-out — walls and resin/epoxy floors only",
+    "all_completed_work": true,
+    "no_text_anywhere": true,
+    "no_equipment": true,
+    "generation_batches": {
+      "batch_1": [
+        "painting-commercial-01.jpg",
+        "painting-commercial-02.jpg",
+        "painting-commercial-03.jpg",
+        "painting-commercial-04.jpg",
+        "painting-commercial-05.jpg"
+      ],
+      "batch_2": [
+        "painting-commercial-06.jpg",
+        "painting-commercial-07.jpg",
+        "painting-commercial-08.jpg",
+        "painting-commercial-09.jpg"
+      ]
+    },
+    "notes": [
+      "Every scene is an empty new hospital space after wall and floor coating handover — no beds, machines, boards, or signage.",
+      "Floors should read as seamless epoxy or PU-cement with coving, consistent with Maverick resin flooring capability.",
+      "Legacy filenames painting-commercial-healthcare.jpg, painting-commercial-campus.jpg, and painting-commercial-retail.jpg stay on other spokes until replaced separately.",
+      "After generation: convert PNG → JPG (~88 quality), wire COMMERCIAL_PAINTING_IMAGE_POOL, remove /painting/commercial-painting from PAINTING_SERVICES_PATHS, build, commit, push."
+    ]
+  }
+}

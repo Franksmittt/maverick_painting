@@ -68,16 +68,16 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
   ],
   "commercial-painting": [
     {
-      src: "/images/painting-commercial-healthcare.jpg",
-      alt: "Healthcare suite interior painting with containment and low-VOC coatings",
+      src: "/images/painting-commercial-05.jpg",
+      alt: "Completed ward hallway with antimicrobial wall coatings and seamless flooring in a new Gauteng hospital",
     },
     {
-      src: "/images/painting-commercial-campus.jpg",
-      alt: "Corporate campus interior repaint with phased weekend programmes",
+      src: "/images/painting-commercial-08.jpg",
+      alt: "Completed low-VOC wall and floor coatings in an empty hospital consultation room in Gauteng",
     },
     {
-      src: "/images/painting-commercial-retail.jpg",
-      alt: "Retail flagship commercial painting completed during night shifts",
+      src: "/images/painting-commercial-09.jpg",
+      alt: "Completed empty hospital wing corridor intersection with resin floors and wall coatings in Gauteng",
     },
   ],
   "concrete-spalling": [

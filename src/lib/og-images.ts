@@ -26,7 +26,7 @@ const OG_BY_PATH: Record<string, string> = {
   "/specialized-coatings/industrial-corrosion-control": "/images/painting-industrial-corrosion.jpg",
   "/painting/body-corporate": "/images/painting-body-corporate-01.jpg",
   "/painting/industrial": "/images/painting-industrial-01.jpg",
-  "/painting/commercial-painting": "/images/munyaka-midrand.jpg",
+  "/painting/commercial-painting": "/images/painting-commercial-01.jpg",
   "/painting/roof-painting": "/images/gallery/maverick-gallery-02.jpg",
   "/painting/parking-garage-painting": "/images/gallery/maverick-gallery-01.jpg",
   "/painting/warehouse-painting": "/images/painting-industrial-preparation.jpg",

@@ -47,11 +47,12 @@ const BODY_CORPORATE_PATHS = new Set(["/painting/body-corporate"]);
 
 const INDUSTRIAL_PAINTING_PATHS = new Set(["/painting/industrial"]);
 
+const COMMERCIAL_PAINTING_PATHS = new Set(["/painting/commercial-painting"]);
+
 const PAINTING_SERVICES_PATHS = new Set([
   "/painting-services",
   "/painting/roof-painting",
   "/painting/stucco-wall-coatings",
-  "/painting/commercial-painting",
   "/painting/interior-painting",
   "/painting/internal-walls",
   "/painting/external-walls",
@@ -671,6 +672,46 @@ const INDUSTRIAL_PAINTING_IMAGE_POOL: readonly ServicePageImage[] = [
   },
 ];
 
+/** Dedicated nine-slot pool for the commercial & healthcare painting spoke. */
+const COMMERCIAL_PAINTING_IMAGE_POOL: readonly ServicePageImage[] = [
+  {
+    src: "/images/painting-commercial-01.jpg",
+    alt: "Completed wall coatings and seamless resin flooring in a new empty hospital corridor in Gauteng",
+  },
+  {
+    src: "/images/painting-commercial-02.jpg",
+    alt: "Completed antimicrobial wall paint and resin floor in an empty new hospital patient room",
+  },
+  {
+    src: "/images/painting-commercial-03.jpg",
+    alt: "Completed hygienic wall and floor coatings in an empty new operating theatre in Gauteng",
+  },
+  {
+    src: "/images/painting-commercial-04.jpg",
+    alt: "Completed paint and resin floor handover in an empty hospital storage room in Gauteng",
+  },
+  {
+    src: "/images/painting-commercial-05.jpg",
+    alt: "Completed ward hallway with antimicrobial wall coatings and seamless flooring in a new Gauteng hospital",
+  },
+  {
+    src: "/images/painting-commercial-06.jpg",
+    alt: "Completed hygienic coatings in an empty hospital sluice or prep room with resin floor in Gauteng",
+  },
+  {
+    src: "/images/painting-commercial-07.jpg",
+    alt: "Close view of completed hospital wall paint and resin floor coving junction in Gauteng",
+  },
+  {
+    src: "/images/painting-commercial-08.jpg",
+    alt: "Completed low-VOC wall and floor coatings in an empty hospital consultation room in Gauteng",
+  },
+  {
+    src: "/images/painting-commercial-09.jpg",
+    alt: "Completed empty hospital wing corridor intersection with resin floors and wall coatings in Gauteng",
+  },
+];
+
 /** Shared nine-slot pool for the painting services hub and spokes. */
 const PAINTING_SERVICES_IMAGE_POOL: readonly ServicePageImage[] = [
   {
@@ -882,6 +923,10 @@ export function getServicePageImages(
 
   if (INDUSTRIAL_PAINTING_PATHS.has(path)) {
     return [...INDUSTRIAL_PAINTING_IMAGE_POOL];
+  }
+
+  if (COMMERCIAL_PAINTING_PATHS.has(path)) {
+    return [...COMMERCIAL_PAINTING_IMAGE_POOL];
   }
 
   if (WATERPROOFING_PATHS.has(path)) {
