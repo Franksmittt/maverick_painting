@@ -1,0 +1,249 @@
+{
+  "project": "Maverick Painting",
+  "client_site": "maverickpainting.co.za",
+  "page": "Parking garage painting spoke",
+  "path": "/painting/parking-garage-painting",
+  "purpose": "AI image generation prompts for all nine photography slots on the parking garage painting spoke. Generate every image listed below, then supply files to be placed in public/images/ using the exact target_filename values. After generation, add PARKING_GARAGE_PAINTING_IMAGE_POOL in service-page-images.ts and update parking-garage-painting SPOKE_MAGAZINE_IMAGES in spoke-to-hub-config.tsx.",
+  "version": "1.0",
+  "date": "2026-06-08",
+  "style_guidelines": {
+    "mandatory_aesthetic": [
+      "raw documentary-style parking structure photography",
+      "candid handheld camera aesthetic",
+      "unposed realism",
+      "authentic natural film grain",
+      "grounded Gauteng, South Africa context"
+    ],
+    "lighting": [
+      "Prefer cool fluorescent basement light mixed with daylight at ramp openings, or flat overcast light in open podium decks",
+      "Avoid soft cinematic studio lighting and perfect HDR balance"
+    ],
+    "materials": [
+      "Describe micro-textures explicitly: light-reflective grey wall paint on columns, satin traffic-rated deck polyurethane, neat bay line edges, patched spall zones feathered smooth, expansion joint sealant flush to slab",
+      "Contrast aged tyre marks at bay edges against fresh deck coating in completed zones"
+    ],
+    "scale_policy": "Small-team, realistic parking stock only. Sectional-title basement levels (one or two decks), small neighbourhood shopping centre car parks, or a modest single-level retail podium garage a crew could phase bay-by-bay. Not airport parking, not multi-storey mall atriums, not endless underground labyrinths.",
+    "shot_policy": "Mix close-up detail shots and medium environmental shots. Close-ups show coating texture, column bases, joint lines, and wall-to-deck junctions. Medium shots show one aisle, one ramp, or one basement level — never vast empty megastructures.",
+    "people_policy": "100% people-free. No workers, faces, hands, silhouettes, or vehicles in motion. Parked cars optional in medium shots only if static and unbranded.",
+    "completed_vs_process": "100% completed outcomes. No half-painted columns, wet deck coating, masking tape, line-marking crews, containment, or in-progress evidence.",
+    "text_policy": "Absolutely no readable text anywhere in frame. No bay numbers, stencilled words, fire-exit signs, pay-station signage, store names, license plates readable, warning labels, or painted characters on floors. Plain white or yellow bay lines without numbers are acceptable.",
+    "location_cues": [
+      "Gauteng sectional-title basement parking",
+      "small neighbourhood shopping centre car park",
+      "modest retail podium deck",
+      "concrete columns with chloride staining now coated over",
+      "fluorescent tubes and ramp daylight contrast"
+    ]
+  },
+  "global_negative_prompt": "people, workers, faces, hands, silhouettes, cars in motion, readable text, letters, numbers, words, bay numbers, stencilled words, signage, fire exit signs, pay station signs, store names, logos, branding, watermarks, airport parking, mega mall atrium, endless underground garage, half-painted walls, wet deck coating, masking tape, line marking crew, in-progress work, plastic 3D render, CGI, Unreal Engine, oversaturated colours, perfectly clean fantasy garage, drone aerial",
+  "output_specs": {
+    "default_format": "jpg",
+    "color_profile": "sRGB",
+    "quality": "high",
+    "notes": "All slots use 4:3 aspect ratio. Filename must match target_filename exactly (lowercase, hyphens). Replaces structural-expansion-joint placeholder images on this spoke once integrated."
+  },
+  "page_slot_map": {
+    "note": "Nine-slot PARKING_GARAGE_PAINTING_IMAGE_POOL — remove /painting/parking-garage-painting from PAINTING_SERVICES_PATHS when wired",
+    "slots": [
+      { "slot": 0, "role": "Hero", "filename": "painting-parking-garage-01.jpg", "shot": "medium" },
+      { "slot": 1, "role": "Triptych left", "filename": "painting-parking-garage-02.jpg", "shot": "close-up" },
+      { "slot": 2, "role": "Triptych centre", "filename": "painting-parking-garage-03.jpg", "shot": "medium" },
+      { "slot": 3, "role": "Triptych right", "filename": "painting-parking-garage-04.jpg", "shot": "close-up" },
+      { "slot": 4, "role": "Magazine editorial phase 01", "filename": "painting-parking-garage-05.jpg", "shot": "medium" },
+      { "slot": 5, "role": "Image pair left", "filename": "painting-parking-garage-06.jpg", "shot": "close-up" },
+      { "slot": 6, "role": "Image pair right", "filename": "painting-parking-garage-07.jpg", "shot": "close-up" },
+      { "slot": 7, "role": "Magazine editorial phase 02", "filename": "painting-parking-garage-08.jpg", "shot": "medium" },
+      { "slot": 8, "role": "Magazine editorial phase 03", "filename": "painting-parking-garage-09.jpg", "shot": "medium" }
+    ]
+  },
+  "images": [
+    {
+      "id": "parking-basement-hero",
+      "section": "Hero — split layout beside H1",
+      "display_order": 0,
+      "target_filename": "painting-parking-garage-01.jpg",
+      "target_path": "public/images/painting-parking-garage-01.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed light-reflective wall and deck coatings in a sectional-title basement parking level in Gauteng",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "pg01.png",
+      "prompt": "A raw, documentary-style 4:3 medium photograph of a completed parking garage handover on one basement level of a modest Gauteng sectional-title building. The camera stands in a single aisle showing freshly coated light grey columns and walls with matte anti-carbonation paint, and a mid-grey traffic-rated deck coating with realistic satin sheen and faint old tyre marks only at the outer bay edges. Plain white parking bay lines without numbers or words. One or two static unbranded cars parked far down the aisle. Cool fluorescent light with daylight spill from the ramp mouth. Small-scale two-level basement feel, not a mega structure. No people, workers, or signage with text. Authentic film grain, unposed parking photography. No text, logos, signs, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, readable bay numbers, fire signs, mega underground garage, half-painted columns, wet coating, logos, CGI render, airport parking"
+    },
+    {
+      "id": "parking-deck-texture",
+      "section": "Triptych left",
+      "display_order": 1,
+      "target_filename": "painting-parking-garage-02.jpg",
+      "target_path": "public/images/painting-parking-garage-02.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of completed traffic-rated deck coating on a Gauteng parking slab",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "pg02.png",
+      "prompt": "A candid, documentary-style 4:3 close-up photograph of a completed traffic-rated polyurethane deck coating on a Gauteng parking slab. The frame fills with mid-grey satin deck film showing realistic roller texture, micro-aggregate grip, and a neat edge where fresh coating meets an older worn concrete bay line — plain white line only, no numbers or stencilled words. Raking fluorescent light emphasises coating texture rather than mirror gloss. Empty bay, no people or vehicles. Authentic film grain, technical close-up realism. No text, logos, signs, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, mirror CGI floor, bay numbers, stencilled letters, wet coating, logos, perfect sterile deck render"
+    },
+    {
+      "id": "parking-columns-medium",
+      "section": "Triptych centre",
+      "display_order": 2,
+      "target_filename": "painting-parking-garage-03.jpg",
+      "target_path": "public/images/painting-parking-garage-03.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed light-reflective column and wall coatings in a residential basement car park",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "pg03.png",
+      "prompt": "A straightforward, documentary-style 4:3 medium photograph of completed light-reflective wall and column coatings in a modest residential basement car park in Alberton or Benoni. The camera captures three concrete columns and the wall behind them freshly painted in clean off-white and light grey anti-carbonation acrylic with realistic roller texture, improving visibility under fluorescent tubes. Deck below shows renewed mid-grey coating. Empty level, no people. Scale feels like a small sectional-title basement a small crew phased over weekends. Authentic film grain, mundane carpark realism. No text, signs, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, office tower mega garage, half-painted columns, warning signs with text, logos, CGI basement"
+    },
+    {
+      "id": "parking-column-base-close",
+      "section": "Triptych right",
+      "display_order": 3,
+      "target_filename": "painting-parking-garage-04.jpg",
+      "target_path": "public/images/painting-parking-garage-04.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of completed column base and deck junction in a Gauteng parking garage",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "pg04.png",
+      "prompt": "A raw, documentary-style 4:3 close-up photograph of a completed column base and deck junction in a Gauteng basement parking level. The frame shows a concrete column painted light grey with neat coating up from the deck, sitting on a freshly coated mid-grey traffic-rated slab with subtle satin sheen and realistic wear at the tyre scrub zone. Former spall patch feathered smooth at the column plinth. Fluorescent raking light reveals paint and deck texture. No people, tools, or signage. Authentic film grain, handover detail photography. No text, logos, signs, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, exposed rebar, wet paint, readable labels, logos, CGI column, wide empty garage"
+    },
+    {
+      "id": "parking-small-retail",
+      "section": "Magazine editorial phase 01 + spoke magazine seed",
+      "display_order": 4,
+      "target_filename": "painting-parking-garage-05.jpg",
+      "target_path": "public/images/painting-parking-garage-05.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed deck and wall coatings in a small neighbourhood shopping centre parking garage in Gauteng",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "pg05.png",
+      "prompt": "A candid, documentary-style 4:3 medium photograph of a completed parking garage programme at a small neighbourhood shopping centre in Gauteng. The camera looks along one underground aisle with off-white coated walls, grey columns, and a renewed mid-grey deck with plain white bay lines — no numbers or words. Low ceiling height, simple pipework, and a single ramp visible in background. Scale is a modest retail car park with roughly thirty to forty bays, not a large mall. Empty of people, empty bays, no shop signage visible. Cool fluorescent light. Authentic film grain, small retail carpark realism. No text, store names, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, large mall atrium, readable shop signs, bay numbers, half-painted deck, logos, CGI shopping centre"
+    },
+    {
+      "id": "parking-joint-close",
+      "section": "Image pair left",
+      "display_order": 5,
+      "target_filename": "painting-parking-garage-06.jpg",
+      "target_path": "public/images/painting-parking-garage-06.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of a completed expansion joint and deck coating line in a parking structure",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "pg06.png",
+      "prompt": "A straightforward, documentary-style 4:3 close-up photograph of a completed expansion joint and deck coating interface on a Gauteng parking deck. The joint line runs through the frame with neat grey polyurethane sealant flush to the slab and fresh mid-grey deck coating on both sides, realistic texture not a CGI mirror finish. Slight tyre scuff marks distant from the joint prove the deck is in use but the repair zone is clean. Empty slab, no people. Fluorescent raking light. Authentic film grain, technical carpark detail. No text, stencilled words, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, failed joint, wet sealant, readable floor markings, logos, wide garage shot"
+    },
+    {
+      "id": "parking-soffit-close",
+      "section": "Image pair right",
+      "display_order": 6,
+      "target_filename": "painting-parking-garage-07.jpg",
+      "target_path": "public/images/painting-parking-garage-07.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of completed soffit and column coating in a basement parking level",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "pg07.png",
+      "prompt": "A raw, documentary-style 4:3 close-up photograph looking up at a completed basement parking soffit and upper column zone in a Gauteng sectional-title garage. The soffit and column head are coated in clean light grey reflective paint with realistic roller lap texture, improving light bounce under fluorescent tubes. Pipe penetrations painted neatly with no labels readable. Edge of deck slab visible at bottom of frame. No people. Authentic film grain, ceiling detail handover photography. No text, pipe labels, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, readable pipe tags, warning stickers, half-painted soffit, logos, CGI carpark ceiling"
+    },
+    {
+      "id": "parking-larger-retail",
+      "section": "Magazine editorial phase 02 + spoke magazine seed",
+      "display_order": 7,
+      "target_filename": "painting-parking-garage-08.jpg",
+      "target_path": "public/images/painting-parking-garage-08.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed parking deck coatings on a larger shopping centre level in Gauteng",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "pg08.png",
+      "prompt": "A candid, documentary-style 4:3 medium photograph of a completed deck and wall coating programme on one level of a larger but still realistic Gauteng shopping centre parking garage. The camera captures two aisles of grey coated columns, light walls, and renewed mid-grey deck with plain white lines — no numbers or words. Moderate scale: perhaps eighty to one hundred bays on this level, not an endless multi-wing complex. A few static unbranded cars parked at the far end. Flat fluorescent and ramp daylight mix. Empty of people. Authentic film grain, commercial carpark handover realism. No text, mall signage, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, airport scale parking, readable mall signs, bay numbers, half-coated deck, logos, CGI atrium garage, drone"
+    },
+    {
+      "id": "parking-ramp-medium",
+      "section": "Magazine editorial phase 03 + spoke magazine seed",
+      "display_order": 8,
+      "target_filename": "painting-parking-garage-09.jpg",
+      "target_path": "public/images/painting-parking-garage-09.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed ramp and wall coatings at a Gauteng residential or retail parking structure",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "pg09.png",
+      "prompt": "A raw, documentary-style 4:3 medium photograph of a completed parking ramp and wall coating handover at a modest Gauteng residential or small retail parking structure. The camera looks up a short inclined ramp with light grey anti-slip deck coating, off-white side walls, and a pale Highveld sky visible at the top opening. Tyre wear marks faint and realistic at the curb line. Empty ramp, no people or moving vehicles. Late-morning natural light mixing with cool interior shade. Small-team programme scale. Authentic film grain, unposed carpark photography. No text, direction arrows with words, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, highway ramp, readable arrows, warning signs, half-painted ramp, logos, CGI structure, drone aerial"
+    }
+  ],
+  "hub_slot_assignment": {
+    "note": "Recommended mapping for service-page-images.ts PARKING_GARAGE_PAINTING_IMAGE_POOL",
+    "magazine_seeds_in_spoke_to_hub_config": [
+      { "phase": 1, "filename": "painting-parking-garage-05.jpg" },
+      { "phase": 2, "filename": "painting-parking-garage-08.jpg" },
+      { "phase": 3, "filename": "painting-parking-garage-09.jpg" }
+    ]
+  },
+  "summary": {
+    "total_page_slots": 9,
+    "new_images_to_generate": 9,
+    "all_completed_work": true,
+    "no_text_anywhere": true,
+    "shot_mix": {
+      "close_up": 4,
+      "medium": 5
+    },
+    "building_types": [
+      "sectional-title residential basement",
+      "small neighbourhood shopping centre garage",
+      "larger shopping centre single level"
+    ],
+    "generation_batches": {
+      "batch_1": [
+        "painting-parking-garage-01.jpg",
+        "painting-parking-garage-02.jpg",
+        "painting-parking-garage-03.jpg",
+        "painting-parking-garage-04.jpg",
+        "painting-parking-garage-05.jpg"
+      ],
+      "batch_2": [
+        "painting-parking-garage-06.jpg",
+        "painting-parking-garage-07.jpg",
+        "painting-parking-garage-08.jpg",
+        "painting-parking-garage-09.jpg"
+      ]
+    },
+    "notes": [
+      "Plain white or yellow bay lines are fine — no stencilled numbers, words, or fire-exit signage.",
+      "Static unbranded parked cars are acceptable in medium shots only.",
+      "Replaces structural-expansion-joint placeholder filenames currently used on this spoke.",
+      "After generation: convert PNG → JPG (~88 quality), wire PARKING_GARAGE_PAINTING_IMAGE_POOL, remove /painting/parking-garage-painting from PAINTING_SERVICES_PATHS, build, commit, push."
+    ]
+  }
+}

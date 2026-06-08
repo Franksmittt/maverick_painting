@@ -51,6 +51,8 @@ const COMMERCIAL_PAINTING_PATHS = new Set(["/painting/commercial-painting"]);
 
 const STUCCO_WALL_COATINGS_PATHS = new Set(["/painting/stucco-wall-coatings"]);
 
+const PARKING_GARAGE_PAINTING_PATHS = new Set(["/painting/parking-garage-painting"]);
+
 const PAINTING_SERVICES_PATHS = new Set([
   "/painting-services",
   "/painting/roof-painting",
@@ -59,7 +61,6 @@ const PAINTING_SERVICES_PATHS = new Set([
   "/painting/external-walls",
   "/painting/warehouse-painting",
   "/painting/high-volume-commercial-painting",
-  "/painting/parking-garage-painting",
   "/painting/road-marking",
 ]);
 
@@ -753,6 +754,46 @@ const STUCCO_WALL_COATINGS_IMAGE_POOL: readonly ServicePageImage[] = [
   },
 ];
 
+/** Dedicated nine-slot pool for the parking garage painting spoke. */
+const PARKING_GARAGE_PAINTING_IMAGE_POOL: readonly ServicePageImage[] = [
+  {
+    src: "/images/painting-parking-garage-01.jpg",
+    alt: "Completed light-reflective wall and deck coatings in a sectional-title basement parking level in Gauteng",
+  },
+  {
+    src: "/images/painting-parking-garage-02.jpg",
+    alt: "Close-up of completed traffic-rated deck coating on a Gauteng parking slab",
+  },
+  {
+    src: "/images/painting-parking-garage-03.jpg",
+    alt: "Completed light-reflective column and wall coatings in a residential basement car park",
+  },
+  {
+    src: "/images/painting-parking-garage-04.jpg",
+    alt: "Close-up of completed column base and deck junction in a Gauteng parking garage",
+  },
+  {
+    src: "/images/painting-parking-garage-05.jpg",
+    alt: "Completed deck and wall coatings in a small neighbourhood shopping centre parking garage in Gauteng",
+  },
+  {
+    src: "/images/painting-parking-garage-06.jpg",
+    alt: "Close-up of a completed expansion joint and deck coating line in a parking structure",
+  },
+  {
+    src: "/images/painting-parking-garage-07.jpg",
+    alt: "Close-up of completed soffit and column coating in a basement parking level",
+  },
+  {
+    src: "/images/painting-parking-garage-08.jpg",
+    alt: "Completed parking deck coatings on a larger shopping centre level in Gauteng",
+  },
+  {
+    src: "/images/painting-parking-garage-09.jpg",
+    alt: "Completed ramp and wall coatings at a Gauteng residential or retail parking structure",
+  },
+];
+
 /** Shared nine-slot pool for the painting services hub and spokes. */
 const PAINTING_SERVICES_IMAGE_POOL: readonly ServicePageImage[] = [
   {
@@ -972,6 +1013,10 @@ export function getServicePageImages(
 
   if (STUCCO_WALL_COATINGS_PATHS.has(path)) {
     return [...STUCCO_WALL_COATINGS_IMAGE_POOL];
+  }
+
+  if (PARKING_GARAGE_PAINTING_PATHS.has(path)) {
+    return [...PARKING_GARAGE_PAINTING_IMAGE_POOL];
   }
 
   if (WATERPROOFING_PATHS.has(path)) {

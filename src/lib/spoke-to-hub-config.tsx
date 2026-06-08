@@ -390,16 +390,16 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
   ],
   "parking-garage-painting": [
     {
-      src: "/images/structural-expansion-joint-assessment.jpg",
-      alt: "Parking deck joint and slab edge assessment before coating renewal",
+      src: "/images/painting-parking-garage-05.jpg",
+      alt: "Completed deck and wall coatings in a small neighbourhood shopping centre parking garage in Gauteng",
     },
     {
-      src: "/images/structural-expansion-joint-installation.jpg",
-      alt: "Traffic-rated deck preparation and coating application in a basement garage",
+      src: "/images/painting-parking-garage-08.jpg",
+      alt: "Completed parking deck coatings on a larger shopping centre level in Gauteng",
     },
     {
-      src: "/images/structural-expansion-joint-finish.jpg",
-      alt: "Completed parking structure coatings with wayfinding-ready surfaces",
+      src: "/images/painting-parking-garage-09.jpg",
+      alt: "Completed ramp and wall coatings at a Gauteng residential or retail parking structure",
     },
   ],
   "road-marking": [

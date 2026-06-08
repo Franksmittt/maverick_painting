@@ -80,7 +80,7 @@ const SPOKE_IMAGES: Record<string, string> = {
   "/access-solutions/rope-access-painting": "/images/access-solutions-method.jpg",
   "/painting/roof-painting": "/images/waterproofing-flat-roof-03.jpg",
   "/painting/warehouse-painting": "/images/painting-industrial-03.jpg",
-  "/painting/parking-garage-painting": "/images/structural-expansion-joint-finish.jpg",
+  "/painting/parking-garage-painting": "/images/painting-parking-garage-01.jpg",
   "/painting/stucco-wall-coatings": "/images/painting-stucco-01.jpg",
   "/painting/road-marking": "/images/painting-industrial-06.jpg",
 };
