@@ -1,0 +1,240 @@
+{
+  "project": "Maverick Painting",
+  "client_site": "maverickpainting.co.za",
+  "page": "Industrial painting spoke",
+  "path": "/painting/industrial",
+  "purpose": "AI image generation prompts for all nine photography slots on the industrial painting spoke. Generate every image listed below, then supply files to be placed in public/images/ using the exact target_filename values. After generation, add INDUSTRIAL_PAINTING_IMAGE_POOL in service-page-images.ts and update industrial-painting SPOKE_MAGAZINE_IMAGES in spoke-to-hub-config.tsx.",
+  "version": "1.0",
+  "date": "2026-06-08",
+  "style_guidelines": {
+    "mandatory_aesthetic": [
+      "raw documentary-style industrial and contractor photography",
+      "candid handheld camera aesthetic",
+      "unposed realism",
+      "authentic natural film grain",
+      "grounded Gauteng, South Africa context"
+    ],
+    "lighting": [
+      "Prefer harsh South African midday sun on exteriors, flat overcast Highveld light on yards, or cool fluorescent in factory interiors",
+      "Avoid soft cinematic studio lighting and perfect HDR balance"
+    ],
+    "materials": [
+      "Describe micro-textures explicitly: grey epoxy on pitted steel, matte light-grey interior wall paint, spray orange-peel on portal frames, worn concrete floors with fresh demarcation stripes",
+      "Contrast aged plant clutter against neat fresh coatings where relevant — gravel yards, chain-link fences, faded loading-bay lines"
+    ],
+    "scale_policy": "Small-team, modest-plant realism only. Single-storey warehouses, light industrial units, small pipe racks, one or two silos, short production halls a small crew could repaint in a planned shutdown. No mega refineries, no Amazon-scale fulfilment centres, no crane forests, no sprawling petrochemical complexes.",
+    "people_policy": "100% people-free. No workers, faces, hands, or silhouettes. Completed handover photography only.",
+    "completed_vs_process": "100% completed outcomes. No abrasive blasting in progress, no half-painted walls, no wet paint, no masking tape, no containment plastic, no open paint tins, no MEWP baskets with operators, no ladders in use.",
+    "text_policy": "Absolutely no readable text anywhere in frame. No signs, labels, numbers, lettering, branding, stencils, aisle markers with characters, vehicle registration plates, gauge readouts, or painted words on walls or floors.",
+    "location_cues": [
+      "Isando and Kempton Park logistics parks",
+      "Germiston and Boksburg light manufacturing",
+      "West Rand workshop and assembly units",
+      "pale Highveld sky",
+      "gravel yards and chain-link security fencing",
+      "corrugated steel cladding"
+    ]
+  },
+  "global_negative_prompt": "people, workers, faces, hands, silhouettes, posed models, stock photo, text, readable text, letters, numbers, words, signage, signs, labels, branding, logos, watermarks, stencils, aisle markers with text, license plates, gauges with numbers, scaffolding, boom lift, crane, paint tins, rollers in use, masking tape, plastic sheeting, half-painted walls, wet paint, abrasive blasting cloud, in-progress work, plastic 3D render, CGI, Unreal Engine, octane render, toy factory, diorama, overly smooth surfaces, fake HDR, cinematic bloom, lens flare, misspelled signage, American refinery, European factory, Dubai industrial zone, sci-fi plant, lush tropical vegetation, rain, snow, oversaturated colours, perfectly clean fantasy site, drone aerial",
+  "output_specs": {
+    "default_format": "jpg",
+    "color_profile": "sRGB",
+    "quality": "high",
+    "notes": "All slots use 4:3 aspect ratio. Filename must match target_filename exactly (lowercase, hyphens). Replaces legacy painting-industrial-coatings.jpg, painting-industrial-corrosion.jpg, and painting-industrial-preparation.jpg on this spoke once integrated."
+  },
+  "page_slot_map": {
+    "note": "Nine-slot INDUSTRIAL_PAINTING_IMAGE_POOL — remove /painting/industrial from PAINTING_SERVICES_PATHS when wired",
+    "slots": [
+      { "slot": 0, "role": "Hero", "filename": "painting-industrial-01.jpg" },
+      { "slot": 1, "role": "Triptych left", "filename": "painting-industrial-02.jpg" },
+      { "slot": 2, "role": "Triptych centre", "filename": "painting-industrial-03.jpg" },
+      { "slot": 3, "role": "Triptych right", "filename": "painting-industrial-04.jpg" },
+      { "slot": 4, "role": "Magazine editorial phase 01", "filename": "painting-industrial-05.jpg" },
+      { "slot": 5, "role": "Image pair left", "filename": "painting-industrial-06.jpg" },
+      { "slot": 6, "role": "Image pair right", "filename": "painting-industrial-07.jpg" },
+      { "slot": 7, "role": "Magazine editorial phase 02", "filename": "painting-industrial-08.jpg" },
+      { "slot": 8, "role": "Magazine editorial phase 03", "filename": "painting-industrial-09.jpg" }
+    ]
+  },
+  "images": [
+    {
+      "id": "industrial-hero",
+      "section": "Hero — split layout beside H1",
+      "display_order": 0,
+      "target_filename": "painting-industrial-01.jpg",
+      "target_path": "public/images/painting-industrial-01.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed protective exterior coatings on a small Gauteng light industrial warehouse",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "pi01.png",
+      "prompt": "A raw, documentary-style 4:3 photograph of a completed exterior protective coating programme on a modest single-storey light industrial warehouse in Isando, Gauteng. The camera stands at ground level on a gravel yard looking at corrugated steel cladding and portal frame columns freshly coated in uniform mid-grey polyurethane with realistic spray texture and slight orange-peel, not a plastic CGI render. Roller doors are closed with plain unmarked faces. A short chain-link fence and dry grass tufts ground the scene as ordinary East Rand industrial stock. Harsh midday South African sun with hard shadows. Empty yard, no people, vehicles, scaffolding, or tools. Authentic film grain, unposed industrial photography. No text, numbers, logos, signs, labels, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, mega warehouse, refinery, readable signs, text on doors, logos, scaffolding, wet paint, perfect CGI factory, drone"
+    },
+    {
+      "id": "industrial-hall-interior",
+      "section": "Triptych left",
+      "display_order": 1,
+      "target_filename": "painting-industrial-02.jpg",
+      "target_path": "public/images/painting-industrial-02.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed interior repaint of a small Gauteng production hall after shutdown handover",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "pi02.png",
+      "prompt": "A candid, documentary-style 4:3 photograph of a completed interior wall repaint in a small Gauteng production hall in Boksburg, empty after handover. The camera looks along one aisle between simple steel shelving and a painted blockwork wall finished in clean light grey matte coating with realistic roller lap texture. Concrete floor shows faint tyre marks and worn epoxy, not a mirror CGI floor. Fluorescent ceiling lights create flat even illumination. Scale feels like a single-bay factory a small team could finish over a short outage, not a vast plant. No people, pallets in motion, or painting equipment. Authentic film grain, mundane factory interior realism. No text, numbers, signs, labels, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, Amazon-scale warehouse, half-painted walls, masking tape, readable aisle markers, text, logos, perfect CGI interior"
+    },
+    {
+      "id": "industrial-portal-frame",
+      "section": "Triptych centre",
+      "display_order": 2,
+      "target_filename": "painting-industrial-03.jpg",
+      "target_path": "public/images/painting-industrial-03.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed protective coating on warehouse portal frame steel in Gauteng",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "pi03.png",
+      "prompt": "A straightforward, documentary-style 4:3 photograph of completed protective coatings on warehouse portal frame steel inside a modest Kempton Park logistics unit. The camera frames two grey-blue coated I-beams and bracing with authentic spray texture over previously pitted steel, fully encapsulated at bolted connections. Adjacent corrugated cladding wall is painted to match. Empty building interior, dusty concrete floor, daylight cutting in from a partially open roller door creating raking light on the steel surface. No people or access equipment. Authentic film grain, grounded contractor handover photography. No text, numbers, signs, labels, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, boom lift, half-primed steel, blasting dust, readable labels on beams, text, logos, perfect CGI metal"
+    },
+    {
+      "id": "industrial-silo-base",
+      "section": "Triptych right",
+      "display_order": 3,
+      "target_filename": "painting-industrial-04.jpg",
+      "target_path": "public/images/painting-industrial-04.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed corrosion control coatings on the lower section of a small industrial silo in Gauteng",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "pi04.png",
+      "prompt": "A raw, documentary-style 4:3 photograph of completed corrosion control coatings on the lower third of a single modest steel storage silo at a small Germiston manufacturing site. Fresh grey zinc-rich primer and mid-grey topcoat show realistic spray texture over previously pitted steel, with a neat line at the concrete plinth. Only one silo and a short pipe bridge visible — scale appropriate to a small-team maintenance programme, not a tank farm. Gravel yard, chain-link fence, dry Highveld grass. Flat afternoon light with mild haze. No people, MEWP, or scaffold. Authentic film grain, industrial documentary realism. No text, numbers, signs, labels, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, refinery tank farm, multiple giant silos, boom lift, readable pipe labels, text, logos, sci-fi plant, drone"
+    },
+    {
+      "id": "industrial-logistics-hall",
+      "section": "Magazine editorial phase 01 + spoke magazine seed",
+      "display_order": 4,
+      "target_filename": "painting-industrial-05.jpg",
+      "target_path": "public/images/painting-industrial-05.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed logistics hall interior repaint with refreshed walls and columns in Isando",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "pi05.png",
+      "prompt": "A candid, documentary-style 4:3 photograph of a completed logistics hall interior repaint in a small Isando distribution unit, empty after a two-week outage handover. The camera looks across a short receiving aisle with blockwork walls and steel columns uniformly finished in off-white and light grey matte paint, crisp at the ceiling junction. Concrete floor retains realistic scuffs and faint old tyre marks. One closed roller door at the end, plain and unmarked. Cool fluorescent light mixed with daylight from the door. No people, forklifts, or painting gear. Authentic film grain, production-handover realism. No text, numbers, signs, labels, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, massive fulfilment centre, half-painted columns, masking tape, readable bay numbers, text, logos, perfect CGI warehouse"
+    },
+    {
+      "id": "industrial-floor-demarcation",
+      "section": "Image pair left",
+      "display_order": 5,
+      "target_filename": "painting-industrial-06.jpg",
+      "target_path": "public/images/painting-industrial-06.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed safety floor demarcation and wall coatings in a West Rand manufacturing unit",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "pi06.png",
+      "prompt": "A raw, documentary-style 4:3 photograph of completed safety floor demarcation in a small West Rand manufacturing workshop after a planned shutdown. The camera looks down at a worn concrete floor with fresh yellow and black hazard stripes along a machine pad edge and walkway boundary — plain coloured bands only, no words, numbers, or stencilled characters anywhere. Adjacent blockwork wall is freshly painted light grey. One idle lathe or press machine covered with a dust sheet, no operator. Flat fluorescent workshop light. Empty floor, no people or paint tins. Authentic film grain, small-factory maintenance realism. No text, numbers, signs, labels, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, readable floor stencils, letters on floor, numbers, warning sign text, half-painted stripes, wet paint, logos, CGI factory"
+    },
+    {
+      "id": "industrial-pipe-rack",
+      "section": "Image pair right",
+      "display_order": 6,
+      "target_filename": "painting-industrial-07.jpg",
+      "target_path": "public/images/painting-industrial-07.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed protective coating on a small chemical plant pipe rack in Gauteng",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "pi07.png",
+      "prompt": "A straightforward, documentary-style 4:3 photograph of completed multi-coat protective coatings on a short pipe rack at a modest East Rand chemical handling site. The camera frames overlapping pipes and brackets coated in dark grey epoxy with plain coloured band stripes for identification — bands only, no letters, numbers, or printed labels on pipes. Minor surface orange-peel visible under raking midday sun. Small concrete plinth and gravel yard beneath, empty service corridor. Scale is a compact pipe bridge a small crew could coat during a weekend, not a refinery maze. No people. Authentic film grain, industrial finish photography. No text, numbers, signs, labels, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, refinery complex, readable pipe tags, valve labels, numbers on pipes, text, logos, neon plant, CGI pipes"
+    },
+    {
+      "id": "industrial-food-plant-walls",
+      "section": "Magazine editorial phase 02 + spoke magazine seed",
+      "display_order": 7,
+      "target_filename": "painting-industrial-08.jpg",
+      "target_path": "public/images/painting-industrial-08.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed low-odour interior wall repaint in a small Gauteng food production washdown area",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "pi08.png",
+      "prompt": "A candid, documentary-style 4:3 photograph of a completed low-odour interior wall repaint in a small Gauteng food production washdown area, empty after weekend handover. Walls are finished in clean white semi-matte coating with neat cut-in at the ceiling and a stainless steel bench against the wall. Tiled lower wall zone and floor drain visible. Equipment is switched off and unmarked — no brand names or labels readable. Cool fluorescent light with slight green cast typical of food plants. No people, containment sheeting, or wet paint. Authentic film grain, hygiene-area handover realism. No text, numbers, signs, labels, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, perfect CGI cleanroom, readable equipment labels, brand names, clinic signage, half-painted walls, logos, text"
+    },
+    {
+      "id": "industrial-workshop-handover",
+      "section": "Magazine editorial phase 03 + spoke magazine seed",
+      "display_order": 8,
+      "target_filename": "painting-industrial-09.jpg",
+      "target_path": "public/images/painting-industrial-09.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed workshop interior and steel coating handover at a Gauteng assembly plant",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "pi09.png",
+      "prompt": "A raw, documentary-style 4:3 photograph of a completed workshop interior and steel coating handover at a small Gauteng assembly plant near Benoni. The camera captures a tidy open workshop with freshly painted light grey walls, coated steel roof trusses above, and a completed dark grey floor with realistic wear at the entrance. Workbenches are empty and plain with no readable markings. One roller door closed at the rear. Warm late-afternoon light through high-level windows rakes across wall texture. Empty workshop, no people or tools in use. Authentic film grain, modest plant handover photography. No text, numbers, signs, labels, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, large automotive plant, half-painted trusses, readable bench labels, warning signs with text, logos, perfect CGI workshop, drone"
+    }
+  ],
+  "hub_slot_assignment": {
+    "note": "Recommended mapping for service-page-images.ts INDUSTRIAL_PAINTING_IMAGE_POOL",
+    "magazine_seeds_in_spoke_to_hub_config": [
+      { "phase": 1, "filename": "painting-industrial-05.jpg" },
+      { "phase": 2, "filename": "painting-industrial-08.jpg" },
+      { "phase": 3, "filename": "painting-industrial-09.jpg" }
+    ]
+  },
+  "summary": {
+    "total_page_slots": 9,
+    "new_images_to_generate": 9,
+    "all_completed_work": true,
+    "no_text_anywhere": true,
+    "generation_batches": {
+      "batch_1": [
+        "painting-industrial-01.jpg",
+        "painting-industrial-02.jpg",
+        "painting-industrial-03.jpg",
+        "painting-industrial-04.jpg",
+        "painting-industrial-05.jpg"
+      ],
+      "batch_2": [
+        "painting-industrial-06.jpg",
+        "painting-industrial-07.jpg",
+        "painting-industrial-08.jpg",
+        "painting-industrial-09.jpg"
+      ]
+    },
+    "notes": [
+      "Legacy filenames painting-industrial-coatings.jpg, painting-industrial-corrosion.jpg, and painting-industrial-preparation.jpg remain on homepage and hub until replaced separately — this spoke gets its own painting-industrial-01 through 09 pool.",
+      "Floor demarcation in pi06 must be plain yellow/black bands only — no stencilled words or numbers.",
+      "Pipe rack in pi07 may use plain colour bands but no readable tags or valve labels.",
+      "After generation: convert PNG → JPG (~88 quality), wire INDUSTRIAL_PAINTING_IMAGE_POOL, remove /painting/industrial from PAINTING_SERVICES_PATHS, build, commit, push."
+    ]
+  }
+}

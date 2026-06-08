@@ -26,16 +26,16 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
 > = {
   "industrial-painting": [
     {
-      src: "/images/painting-industrial-preparation.jpg",
-      alt: "Industrial surface preparation and coating work on warehouse steel structures",
+      src: "/images/painting-industrial-05.jpg",
+      alt: "Completed logistics hall interior repaint with refreshed walls and columns in Isando",
     },
     {
-      src: "/images/painting-industrial-corrosion.jpg",
-      alt: "Corrosion control and protective coatings on industrial silo and plant exteriors",
+      src: "/images/painting-industrial-08.jpg",
+      alt: "Completed low-odour interior wall repaint in a small Gauteng food production washdown area",
     },
     {
-      src: "/images/painting-industrial-coatings.jpg",
-      alt: "Multicoat epoxy and polyurethane application on a chemical plant pipe rack",
+      src: "/images/painting-industrial-09.jpg",
+      alt: "Completed workshop interior and steel coating handover at a Gauteng assembly plant",
     },
   ],
   "hygienic-food-grade": [

@@ -45,9 +45,10 @@ const BASEMENT_TANKING_PATHS = new Set(["/waterproofing/basement-tanking"]);
 
 const BODY_CORPORATE_PATHS = new Set(["/painting/body-corporate"]);
 
+const INDUSTRIAL_PAINTING_PATHS = new Set(["/painting/industrial"]);
+
 const PAINTING_SERVICES_PATHS = new Set([
   "/painting-services",
-  "/painting/industrial",
   "/painting/roof-painting",
   "/painting/stucco-wall-coatings",
   "/painting/commercial-painting",
@@ -630,6 +631,46 @@ const BODY_CORPORATE_IMAGE_POOL: readonly ServicePageImage[] = [
   },
 ];
 
+/** Dedicated nine-slot pool for the industrial painting spoke. */
+const INDUSTRIAL_PAINTING_IMAGE_POOL: readonly ServicePageImage[] = [
+  {
+    src: "/images/painting-industrial-01.jpg",
+    alt: "Completed protective exterior coatings on a small Gauteng light industrial warehouse",
+  },
+  {
+    src: "/images/painting-industrial-02.jpg",
+    alt: "Completed interior repaint of a small Gauteng production hall after shutdown handover",
+  },
+  {
+    src: "/images/painting-industrial-03.jpg",
+    alt: "Completed protective coating on warehouse portal frame steel in Gauteng",
+  },
+  {
+    src: "/images/painting-industrial-04.jpg",
+    alt: "Completed corrosion control coatings on the lower section of a small industrial silo in Gauteng",
+  },
+  {
+    src: "/images/painting-industrial-05.jpg",
+    alt: "Completed logistics hall interior repaint with refreshed walls and columns in Isando",
+  },
+  {
+    src: "/images/painting-industrial-06.jpg",
+    alt: "Completed safety floor demarcation and wall coatings in a West Rand manufacturing unit",
+  },
+  {
+    src: "/images/painting-industrial-07.jpg",
+    alt: "Completed protective coating on a small chemical plant pipe rack in Gauteng",
+  },
+  {
+    src: "/images/painting-industrial-08.jpg",
+    alt: "Completed low-odour interior wall repaint in a small Gauteng food production washdown area",
+  },
+  {
+    src: "/images/painting-industrial-09.jpg",
+    alt: "Completed workshop interior and steel coating handover at a Gauteng assembly plant",
+  },
+];
+
 /** Shared nine-slot pool for the painting services hub and spokes. */
 const PAINTING_SERVICES_IMAGE_POOL: readonly ServicePageImage[] = [
   {
@@ -837,6 +878,10 @@ export function getServicePageImages(
 
   if (BODY_CORPORATE_PATHS.has(path)) {
     return [...BODY_CORPORATE_IMAGE_POOL];
+  }
+
+  if (INDUSTRIAL_PAINTING_PATHS.has(path)) {
+    return [...INDUSTRIAL_PAINTING_IMAGE_POOL];
   }
 
   if (WATERPROOFING_PATHS.has(path)) {
