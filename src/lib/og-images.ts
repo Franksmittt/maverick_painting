@@ -34,7 +34,7 @@ const OG_BY_PATH: Record<string, string> = {
   "/painting/internal-walls": "/images/painting-commercial-campus.jpg",
   "/painting/external-walls": "/images/painting-body-corporate-sandton.jpg",
   "/painting/road-marking": "/images/gallery/maverick-gallery-08.jpg",
-  "/access-solutions/rope-access-painting": "/images/gallery/maverick-gallery-05.jpg",
+  "/access-solutions/rope-access-painting": "/images/access-rope-access-01.jpg",
   "/solutions/for-body-corporates": "/images/gallery/maverick-gallery-04.jpg",
   "/solutions/for-developers": "/images/the-blyde-pretorria.jpg",
   "/solutions/for-homeowners": "/images/munyaka-midrand.jpg",

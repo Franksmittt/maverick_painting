@@ -77,7 +77,7 @@ const SPOKE_IMAGES: Record<string, string> = {
   "/painting/internal-walls": "/images/painting-commercial-05.jpg",
   "/painting/external-walls": "/images/painting-body-corporate-sandton.jpg",
   "/painting/high-volume-commercial-painting": "/images/painting-industrial-coatings.jpg",
-  "/access-solutions/rope-access-painting": "/images/access-solutions-method.jpg",
+  "/access-solutions/rope-access-painting": "/images/access-rope-access-01.jpg",
   "/painting/roof-painting": "/images/waterproofing-flat-roof-03.jpg",
   "/painting/warehouse-painting": "/images/painting-industrial-03.jpg",
   "/painting/parking-garage-painting": "/images/painting-parking-garage-01.jpg",

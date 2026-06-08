@@ -77,8 +77,9 @@ const DAMP_PROOFING_PATHS = new Set([
   "/damp-proofing/rising-damp-treatment",
 ]);
 
-const ACCESS_SOLUTIONS_PATHS = new Set([
-  "/access-solutions",
+const ACCESS_SOLUTIONS_PATHS = new Set(["/access-solutions"]);
+
+const ROPE_ACCESS_PAINTING_PATHS = new Set([
   "/access-solutions/rope-access-painting",
 ]);
 
@@ -1053,28 +1054,68 @@ const ACCESS_SOLUTIONS_IMAGE_POOL: readonly ServicePageImage[] = [
     alt: "Coordinated rope access and remedial staging on a multi-storey structure",
   },
   {
+    src: "/images/access-rope-access-01.jpg",
+    alt: "Completed rope-access façade repaint on a modest Gauteng sectional-title building",
+  },
+  {
+    src: "/images/access-rope-access-03.jpg",
+    alt: "Completed balcony and façade coating after rope access on a Gauteng apartment block",
+  },
+  {
+    src: "/images/access-rope-access-05.jpg",
+    alt: "Empty rope access staging zone at the base of a Gauteng mid-rise building",
+  },
+  {
     src: "/images/painting-body-corporate-sandton.jpg",
     alt: "High-rise sectional-title tower suited to rope access programmes",
   },
   {
-    src: "/images/structural-concrete-spalling-assessment.jpg",
-    alt: "Façade spalling assessment often sequenced with rope access",
+    src: "/images/access-rope-access-08.jpg",
+    alt: "Completed upper-level exterior repaint on Gauteng townhouses using rope access",
   },
   {
     src: "/images/structural-concrete-spalling-repair.jpg",
     alt: "Completed spalling repair on an elevated façade element",
   },
+];
+
+/** Dedicated nine-slot pool for the rope access painting spoke. */
+const ROPE_ACCESS_PAINTING_IMAGE_POOL: readonly ServicePageImage[] = [
   {
-    src: "/images/painting-body-corporate-qa.jpg",
-    alt: "High-access painting programme with independent QA documentation",
+    src: "/images/access-rope-access-01.jpg",
+    alt: "Completed rope-access façade repaint on a modest Gauteng sectional-title building",
   },
   {
-    src: "/images/structural-crack-injection-injection.jpg",
-    alt: "Structural crack injection on concrete elements accessed at height",
+    src: "/images/access-rope-access-02.jpg",
+    alt: "Close-up of rope access anchor lines at a parapet on a Gauteng building",
   },
   {
-    src: "/images/waterproofing-flat-roof-01.jpg",
-    alt: "Parapet and flat roof detailing accessed via rope or MEWP programmes",
+    src: "/images/access-rope-access-03.jpg",
+    alt: "Completed balcony and façade coating after rope access on a Gauteng apartment block",
+  },
+  {
+    src: "/images/access-rope-access-04.jpg",
+    alt: "Close-up of completed window reveal sealing after rope access work in Gauteng",
+  },
+  {
+    src: "/images/access-rope-access-05.jpg",
+    alt: "Empty rope access staging zone at the base of a Gauteng mid-rise building",
+  },
+  {
+    src: "/images/access-rope-access-06.jpg",
+    alt: "Close-up of staged rope access safety kit on a Gauteng building site",
+  },
+  {
+    src: "/images/access-rope-access-07.jpg",
+    alt: "Close-up of completed parapet coating after rope access on a Gauteng roofline",
+  },
+  {
+    src: "/images/access-rope-access-08.jpg",
+    alt: "Completed upper-level exterior repaint on Gauteng townhouses using rope access",
+  },
+  {
+    src: "/images/access-rope-access-09.jpg",
+    alt: "Completed façade spalling repair and coating after rope access in Gauteng",
   },
 ];
 
@@ -1209,6 +1250,10 @@ export function getServicePageImages(
 
   if (DAMP_PROOFING_PATHS.has(path)) {
     return [...DAMP_PROOFING_IMAGE_POOL];
+  }
+
+  if (ROPE_ACCESS_PAINTING_PATHS.has(path)) {
+    return [...ROPE_ACCESS_PAINTING_IMAGE_POOL];
   }
 
   if (ACCESS_SOLUTIONS_PATHS.has(path)) {

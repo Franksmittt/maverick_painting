@@ -1,0 +1,250 @@
+{
+  "project": "Maverick Painting",
+  "client_site": "maverickpainting.co.za",
+  "page": "Interior painting spoke",
+  "path": "/painting/interior-painting",
+  "purpose": "AI image generation prompts for all nine photography slots on the interior painting spoke. Generate every image listed below, then supply files to be placed in public/images/ using the exact target_filename values. After generation, add INTERIOR_PAINTING_IMAGE_POOL in service-page-images.ts, remove /painting/interior-painting from PAINTING_SERVICES_PATHS, and update interior-painting SPOKE_MAGAZINE_IMAGES in spoke-to-hub-config.tsx.",
+  "version": "1.0",
+  "date": "2026-06-08",
+  "style_guidelines": {
+    "mandatory_aesthetic": [
+      "raw documentary-style interior residential and commercial photography",
+      "candid handheld camera aesthetic",
+      "unposed realism",
+      "authentic natural film grain",
+      "grounded Gauteng, South Africa context"
+    ],
+    "lighting": [
+      "Prefer warm window daylight mixed with ceiling downlights, or flat overcast light through large sliders",
+      "Avoid soft cinematic studio lighting, perfect HDR balance, and Instagram staging"
+    ],
+    "materials": [
+      "Describe micro-textures explicitly: smooth skimmed plaster, low-sheen acrylic wall film, satin ceiling finish, 2K cabinet respray on MDF shaker doors, neat skirting-to-wall junctions, filled nail holes invisible under raking light",
+      "Show completed handover rooms — furniture back in place, drop sheets removed, floors vacuum-clean"
+    ],
+    "scale_policy": "Small-team, modest-interior realism only. Three-bedroom suburban homes in Centurion or Alberton, townhouse living rooms, small professional offices with four to eight desks, or a single kitchen respray — not hotel lobbies, not penthouse glamour, not open-plan megamansions.",
+    "shot_policy": "Mix close-up surface detail shots and medium room shots. Close-ups show wall texture, ceiling cornices, cabinet finishes, and joinery junctions. Medium shots show one completed room or one open-plan zone — never vast corporate atriums.",
+    "people_policy": "100% people-free. No workers, faces, hands, silhouettes, or reflections of people in mirrors or appliances.",
+    "completed_vs_process": "100% completed outcomes. No wet paint, masking tape, drop sheets in use, sanding dust, open paint tins, rollers in trays, or prep in progress.",
+    "text_policy": "Absolutely no readable text anywhere in frame. No paint tin labels, colour chart names, book spines, appliance badges, fridge magnets with words, or wall art with lettering.",
+    "location_cues": [
+      "Gauteng suburban home interiors",
+      "townhouse open-plan living",
+      "modest home office or small commercial suite",
+      "completed kitchen cabinet respray",
+      "warm Highveld window light on fresh walls"
+    ]
+  },
+  "global_negative_prompt": "people, workers, faces, hands, silhouettes, readable text, letters, numbers, words, paint tin labels, colour chart names, book titles, logos, branding, watermarks, hotel lobby, penthouse glamour, mega mansion, wet paint, masking tape, drop sheets, sanding dust, rollers in trays, open paint cans, plastic 3D render, CGI, Unreal Engine, oversaturated colours, perfectly staged Instagram interior, drone aerial",
+  "output_specs": {
+    "default_format": "jpg",
+    "color_profile": "sRGB",
+    "quality": "high",
+    "notes": "All slots use 4:3 aspect ratio. Filename must match target_filename exactly (lowercase, hyphens). Replaces borrowed painting-commercial-* images on this spoke once integrated."
+  },
+  "page_slot_map": {
+    "note": "Nine-slot INTERIOR_PAINTING_IMAGE_POOL — remove /painting/interior-painting from PAINTING_SERVICES_PATHS when wired",
+    "slots": [
+      { "slot": 0, "role": "Hero", "filename": "painting-interior-01.jpg", "shot": "medium" },
+      { "slot": 1, "role": "Triptych left", "filename": "painting-interior-02.jpg", "shot": "close-up" },
+      { "slot": 2, "role": "Triptych centre", "filename": "painting-interior-03.jpg", "shot": "medium" },
+      { "slot": 3, "role": "Triptych right", "filename": "painting-interior-04.jpg", "shot": "close-up" },
+      { "slot": 4, "role": "Magazine editorial phase 01", "filename": "painting-interior-05.jpg", "shot": "medium" },
+      { "slot": 5, "role": "Image pair left", "filename": "painting-interior-06.jpg", "shot": "close-up" },
+      { "slot": 6, "role": "Image pair right", "filename": "painting-interior-07.jpg", "shot": "close-up" },
+      { "slot": 7, "role": "Magazine editorial phase 02", "filename": "painting-interior-08.jpg", "shot": "medium" },
+      { "slot": 8, "role": "Magazine editorial phase 03", "filename": "painting-interior-09.jpg", "shot": "medium" }
+    ]
+  },
+  "images": [
+    {
+      "id": "interior-living-hero",
+      "section": "Hero — split layout beside H1",
+      "display_order": 0,
+      "target_filename": "painting-interior-01.jpg",
+      "target_path": "public/images/painting-interior-01.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed low-VOC interior repaint in a Gauteng suburban living room",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "ip01.png",
+      "prompt": "A raw, documentary-style 4:3 medium photograph of a completed interior repaint handover in a modest Gauteng suburban living room. Warm off-white walls and a fresh flat ceiling read smooth under mixed window daylight and ceiling downlights. Simple sofa and side table back in place on a vacuum-clean tiled floor, drop sheets removed. Scale feels like a three-bedroom home in Centurion or Alberton, not a designer showroom. No people. Authentic film grain, unposed residential handover photography. No text, book spines, artwork lettering, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, wet paint, masking tape, drop sheets, penthouse glamour, readable book titles, paint tins, logos, CGI render, Instagram staging"
+    },
+    {
+      "id": "interior-wall-texture",
+      "section": "Triptych left",
+      "display_order": 1,
+      "target_filename": "painting-interior-02.jpg",
+      "target_path": "public/images/painting-interior-02.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of completed skimmed wall finish under raking light in a Gauteng home",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "ip02.png",
+      "prompt": "A candid, documentary-style 4:3 close-up photograph of a completed skimmed and painted interior wall in a Gauteng home. The frame fills with warm off-white low-sheen acrylic showing realistic subtle roller texture, filled nail holes invisible, and a neat edge where wall meets a painted skirting board. Raking window light reveals surface quality without mirror gloss. No people, tools, or paint products. Authentic film grain, technical interior close-up realism. No text, labels, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, roller holidays, wet paint, readable labels, logos, perfect CGI wall, wide room shot"
+    },
+    {
+      "id": "interior-hallway-medium",
+      "section": "Triptych centre",
+      "display_order": 2,
+      "target_filename": "painting-interior-03.jpg",
+      "target_path": "public/images/painting-interior-03.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed hallway and bedroom door repaint in a Gauteng townhouse",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "ip03.png",
+      "prompt": "A straightforward, documentary-style 4:3 medium photograph of a completed hallway repaint in a modest Gauteng townhouse. The camera looks down a short corridor with fresh light grey walls, white ceiling, and neatly coated interior doors with clean architraves. Tiled floor vacuum-clean, one bedroom door slightly ajar showing matching completed paint inside. Empty hallway, no people. Scale is a compact double-storey unit, not a hotel corridor. Authentic film grain, mundane residential realism. No text, door numbers, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, hotel corridor, half-painted walls, readable numbers, logos, CGI hallway"
+    },
+    {
+      "id": "interior-ceiling-cornice",
+      "section": "Triptych right",
+      "display_order": 3,
+      "target_filename": "painting-interior-04.jpg",
+      "target_path": "public/images/painting-interior-04.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of completed ceiling and cornice coating in a Gauteng home interior",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "ip04.png",
+      "prompt": "A raw, documentary-style 4:3 close-up photograph looking up at a completed ceiling and cornice junction in a Gauteng home interior. Flat white ceiling acrylic with realistic roller lap texture meets a simple plaster cornice and the top of a warm off-white wall, all coated cleanly with no cracks or dust nibs visible under raking light from a nearby window. No people, light fittings with readable labels, or tools. Authentic film grain, ceiling handover detail photography. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, cracked cornice, wet ceiling paint, readable light labels, logos, CGI ceiling"
+    },
+    {
+      "id": "interior-suburban-handover",
+      "section": "Magazine editorial phase 01 + spoke magazine seed",
+      "display_order": 4,
+      "target_filename": "painting-interior-05.jpg",
+      "target_path": "public/images/painting-interior-05.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed full-home interior repaint handover in a Gauteng suburban house",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "ip05.png",
+      "prompt": "A candid, documentary-style 4:3 medium photograph of a completed full-home interior repaint handover in a modest Gauteng suburban house. The camera captures an open-plan lounge and dining zone with warm neutral walls, fresh white ceiling, and clean tiled floor — furniture returned, no drop sheets, no paint smell evidence, just a lived-in but tidy family home. Window shows pale Highveld sky. Scale is a standard three-bedroom brick house, not a megamansion. No people. Authentic film grain, residential programme completion realism. No text, fridge magnets with words, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, megamansion, wet paint, drop sheets, readable magnets, logos, CGI interior, Instagram staging"
+    },
+    {
+      "id": "interior-kitchen-respray",
+      "section": "Image pair left",
+      "display_order": 5,
+      "target_filename": "painting-interior-06.jpg",
+      "target_path": "public/images/painting-interior-06.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of completed kitchen cabinet respray finish in a Gauteng home",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "ip06.png",
+      "prompt": "A straightforward, documentary-style 4:3 close-up photograph of completed kitchen cabinet respray work in a Gauteng home. The frame shows two shaker-style upper cabinet doors in satin off-white 2K finish with realistic spray texture, neat soft-close hinges, and a clean junction to a freshly painted wall. Countertop edge visible but no appliance badges readable. Empty kitchen, no people. Authentic film grain, joinery handover detail. No text, brand badges, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, wet spray, masking tape, readable appliance badges, logos, CGI kitchen, wide kitchen shot"
+    },
+    {
+      "id": "interior-skirting-junction",
+      "section": "Image pair right",
+      "display_order": 6,
+      "target_filename": "painting-interior-07.jpg",
+      "target_path": "public/images/painting-interior-07.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of completed skirting board and wall junction in an interior repaint",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "ip07.png",
+      "prompt": "A raw, documentary-style 4:3 close-up photograph of a completed skirting board and wall junction after an interior repaint in a Gauteng home. White skirting with satin enamel meets a warm grey wall in a crisp cut line, floor tile grout visible and clean, no caulk smears or brush marks. Raking side light emphasises neat joinery work. No people or tools. Authentic film grain, detail handover photography. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, messy caulk, wet paint, readable floor labels, logos, CGI skirting, wide room"
+    },
+    {
+      "id": "interior-office-medium",
+      "section": "Magazine editorial phase 02 + spoke magazine seed",
+      "display_order": 7,
+      "target_filename": "painting-interior-08.jpg",
+      "target_path": "public/images/painting-interior-08.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed low-VOC office interior repaint in a small Gauteng commercial suite",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "ip08.png",
+      "prompt": "A candid, documentary-style 4:3 medium photograph of a completed low-VOC office interior repaint in a small Gauteng commercial suite. The camera shows four to six desks with monitors turned off, light grey walls, white ceiling, and carpet tiles vacuum-clean after handover. Fluorescent and window light mix realistically. Scale is a modest professional office or home-office conversion, not a corporate tower floor plate. Empty of people. Authentic film grain, occupied-building programme realism. No text on monitors, name plates, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, corporate tower atrium, readable screen text, name plates, wet paint, logos, CGI office"
+    },
+    {
+      "id": "interior-bedroom-medium",
+      "section": "Magazine editorial phase 03 + spoke magazine seed",
+      "display_order": 8,
+      "target_filename": "painting-interior-09.jpg",
+      "target_path": "public/images/painting-interior-09.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed bedroom interior repaint with dustless preparation finish in Gauteng",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "ip09.png",
+      "prompt": "A raw, documentary-style 4:3 medium photograph of a completed bedroom interior repaint in a Gauteng home after dustless preparation and low-VOC coating. Soft neutral walls, white ceiling, built-in cupboard doors freshly coated, bed made with plain bedding and no readable text on labels. Window light from a suburban garden view. Room feels ready for same-day occupation. No people. Authentic film grain, unposed bedroom handover photography. No text, book covers, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, sanding dust, drop sheets, readable bedding labels, hotel bedroom, logos, CGI render"
+    }
+  ],
+  "hub_slot_assignment": {
+    "note": "Recommended mapping for service-page-images.ts INTERIOR_PAINTING_IMAGE_POOL",
+    "magazine_seeds_in_spoke_to_hub_config": [
+      { "phase": 1, "filename": "painting-interior-05.jpg" },
+      { "phase": 2, "filename": "painting-interior-08.jpg" },
+      { "phase": 3, "filename": "painting-interior-09.jpg" }
+    ]
+  },
+  "summary": {
+    "total_page_slots": 9,
+    "new_images_to_generate": 9,
+    "all_completed_work": true,
+    "no_text_anywhere": true,
+    "shot_mix": {
+      "close_up": 4,
+      "medium": 5
+    },
+    "building_types": [
+      "Gauteng suburban three-bedroom home",
+      "townhouse hallway and living zones",
+      "small commercial office suite",
+      "kitchen cabinet respray"
+    ],
+    "generation_batches": {
+      "batch_1": [
+        "painting-interior-01.jpg",
+        "painting-interior-02.jpg",
+        "painting-interior-03.jpg",
+        "painting-interior-04.jpg",
+        "painting-interior-05.jpg"
+      ],
+      "batch_2": [
+        "painting-interior-06.jpg",
+        "painting-interior-07.jpg",
+        "painting-interior-08.jpg",
+        "painting-interior-09.jpg"
+      ]
+    },
+    "notes": [
+      "All rooms must show completed handover — furniture back, floors clean, no prep evidence.",
+      "Kitchen respray close-up is slot 06; keep appliance badges out of frame or unreadable.",
+      "Replaces borrowed painting-commercial-campus, healthcare, and retail images on this spoke.",
+      "After generation: convert PNG → JPG (~88 quality), wire INTERIOR_PAINTING_IMAGE_POOL, remove /painting/interior-painting from PAINTING_SERVICES_PATHS, build, commit, push."
+    ]
+  }
+}

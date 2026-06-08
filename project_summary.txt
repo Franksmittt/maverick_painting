@@ -1,6 +1,6 @@
 ================================================================================
 MAVERICK PAINTING — PROJECT SUMMARY
-Last updated: 2026-06-08 (corrosion batch integrated)
+Last updated: 2026-06-08 (rope access batch integrated)
 Site: https://www.maverickpainting.co.za
 Repo: https://github.com/Franksmittt/maverick_painting (branch: main)
 Stack: Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS · pnpm
@@ -65,9 +65,11 @@ marmoran-wall-systems-image-prompts.txt
 concrete-spalling-image-prompts.txt
 hygienic-food-grade-image-prompts.txt         (integrated)
 industrial-corrosion-control-image-prompts.txt  (integrated)
-rising-damp-treatment-image-prompts.txt         (NEXT — prompts ready, images pending)
+rising-damp-treatment-image-prompts.txt         (skipped — existing damp pool images kept)
+rope-access-painting-image-prompts.txt          (integrated)
+interior-painting-image-prompts.txt               (NEXT — prompts ready, images pending)
 
-DEDICATED 9-IMAGE POOLS — DONE (18 spokes)
+DEDICATED 9-IMAGE POOLS — DONE (19 spokes)
 ------------------------------------------
 Structural
   ✓ /structural-repairs/crack-injection          structural-crack-injection-01…09
@@ -94,27 +96,27 @@ Painting
   ✓ /painting/stucco-wall-coatings               painting-stucco-01…09
   ✓ /painting/parking-garage-painting            painting-parking-garage-01…09
 
+Access
+  ✓ /access-solutions/rope-access-painting     access-rope-access-01…09
+
 PARTIAL — dedicated pool but not a clean numbered 9 (2 spokes)
 --------------------------------------------------------------
   ~ /painting/body-corporate                     6 new + 3 legacy reused in pool
   ~ /specialized-coatings/industrial-epoxy-flooring  mixed epoxy/hygienic/legacy shots
 
-NOT DONE — still on shared hub pool (9 spokes)
+NOT DONE — still on shared hub pool (8 spokes)
 -----------------------------------------------
 Damp
-  · /damp-proofing/rising-damp-treatment         shared DAMP_PROOFING_IMAGE_POOL  ← NEXT
+  · /damp-proofing/rising-damp-treatment         shared DAMP_PROOFING_IMAGE_POOL (images confirmed — keep as-is)
 
 Painting (all on PAINTING_SERVICES_IMAGE_POOL)
-  · /painting/interior-painting
+  · /painting/interior-painting                  ← NEXT (prompts ready)
   · /painting/internal-walls
   · /painting/external-walls
   · /painting/high-volume-commercial-painting
   · /painting/roof-painting
   · /painting/warehouse-painting
   · /painting/road-marking
-
-Access
-  · /access-solutions/rope-access-painting       shared ACCESS_SOLUTIONS_IMAGE_POOL
 
 HUB PAGES STILL ON SHARED POOLS (6)
 -----------------------------------
@@ -131,6 +133,7 @@ IMAGE COUNT (approx)
 --------------------
   ~245 raster files in public/
   ~131 numbered spoke batch JPGs + 64 gallery + ~44 shared/legacy/misc
+  +9 access-rope-access-01…09 (254 total approx after rope batch)
 
 ================================================================================
 KEY ARCHITECTURE
@@ -169,6 +172,7 @@ POST-DEPLOY CHECKLIST (after each image batch)
 ================================================================================
 CHANGELOG (photography program)
 ================================================================================
+2026-06-08  Rope access painting dedicated pool (access-rope-access-01…09)
 2026-06-08  Industrial corrosion control dedicated pool (coatings-industrial-corrosion-01…09)
 2026-06-08  Hygienic food-grade dedicated pool (coatings-hygienic-food-grade-01…09)
 2026-06-08  Marmoran wall systems dedicated pool (coatings-marmoran-wall-01…09)

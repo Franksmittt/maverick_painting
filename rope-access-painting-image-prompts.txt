@@ -1,0 +1,243 @@
+{
+  "project": "Maverick Painting",
+  "client_site": "maverickpainting.co.za",
+  "page": "Rope access painting spoke",
+  "path": "/access-solutions/rope-access-painting",
+  "purpose": "AI image generation prompts for all nine photography slots on the rope access painting spoke. Generate every image listed below, then supply files to be placed in public/images/ using the exact target_filename values. After generation, add ROPE_ACCESS_PAINTING_IMAGE_POOL in service-page-images.ts, remove /access-solutions/rope-access-painting from ACCESS_SOLUTIONS_PATHS, and update rope-access-painting SPOKE_MAGAZINE_IMAGES in spoke-to-hub-config.tsx.",
+  "version": "1.0",
+  "date": "2026-06-08",
+  "style_guidelines": {
+    "mandatory_aesthetic": [
+      "raw documentary-style high-access and façade photography",
+      "candid handheld camera aesthetic",
+      "unposed realism",
+      "authentic natural film grain",
+      "grounded Gauteng, South Africa context"
+    ],
+    "lighting": [
+      "Prefer harsh Highveld midday sun on façades or flat overcast light on mid-rise buildings",
+      "Avoid soft cinematic studio lighting and perfect HDR balance"
+    ],
+    "materials": [
+      "Describe micro-textures explicitly: static rope fibres, karabiner metal, anchor strops at parapets, fresh exterior paint on plaster, completed window reveal sealant, cone-and-tape exclusion zones without readable text",
+      "Show rope rigging evidence and completed façade zones — never climbers in frame"
+    ],
+    "scale_policy": "Small-team, modest-building realism only. Six to ten storey sectional-title blocks, short townhouse rows with upper-level access, or a single mid-rise wing — not 40-storey Sandton icons, not hotel towers, not Dubai skylines.",
+    "shot_policy": "Mix close-up rigging or detail shots and medium building shots. Close-ups show anchors, kit staging, and completed paint junctions. Medium shots show one elevation, one parapet level, or one pavement staging zone.",
+    "people_policy": "100% people-free. No workers, climbers, faces, hands, or silhouettes on ropes or ground.",
+    "completed_vs_process": "100% completed outcomes for façade shots; empty rigging and staged safety kit allowed only without humans. No climbers on ropes, no active spray painting in progress.",
+    "text_policy": "Absolutely no readable text anywhere in frame. No warning tape words, bag labels, unit numbers, or site boards.",
+    "location_cues": [
+      "Gauteng sectional-title apartment blocks",
+      "Centurion and Midrand mid-rise stock",
+      "pale Highveld sky",
+      "podium pavement staging",
+      "completed balcony grids"
+    ]
+  },
+  "global_negative_prompt": "people, workers, climbers on ropes, faces, hands, silhouettes, readable text, letters, numbers, words, warning tape text, logos, branding, watermarks, Dubai tower, 40-storey skyscraper, hotel high-rise glamour, wet paint in progress, plastic 3D render, CGI, Unreal Engine, oversaturated colours, perfectly clean fantasy site, drone aerial",
+  "output_specs": {
+    "default_format": "jpg",
+    "color_profile": "sRGB",
+    "quality": "high",
+    "notes": "All slots use 4:3 aspect ratio. Filename must match target_filename exactly (lowercase, hyphens). Legacy access-solutions-method.jpg, compliance.jpg, and coordination.jpg remain on homepage and access hub."
+  },
+  "page_slot_map": {
+    "note": "Nine-slot ROPE_ACCESS_PAINTING_IMAGE_POOL — remove /access-solutions/rope-access-painting from ACCESS_SOLUTIONS_PATHS when wired",
+    "slots": [
+      { "slot": 0, "role": "Hero", "filename": "access-rope-access-01.jpg", "shot": "medium" },
+      { "slot": 1, "role": "Triptych left", "filename": "access-rope-access-02.jpg", "shot": "close-up" },
+      { "slot": 2, "role": "Triptych centre", "filename": "access-rope-access-03.jpg", "shot": "medium" },
+      { "slot": 3, "role": "Triptych right", "filename": "access-rope-access-04.jpg", "shot": "close-up" },
+      { "slot": 4, "role": "Magazine editorial phase 01", "filename": "access-rope-access-05.jpg", "shot": "medium" },
+      { "slot": 5, "role": "Image pair left", "filename": "access-rope-access-06.jpg", "shot": "close-up" },
+      { "slot": 6, "role": "Image pair right", "filename": "access-rope-access-07.jpg", "shot": "close-up" },
+      { "slot": 7, "role": "Magazine editorial phase 02", "filename": "access-rope-access-08.jpg", "shot": "medium" },
+      { "slot": 8, "role": "Magazine editorial phase 03", "filename": "access-rope-access-09.jpg", "shot": "medium" }
+    ]
+  },
+  "images": [
+    {
+      "id": "rope-facade-hero",
+      "section": "Hero — split layout beside H1",
+      "display_order": 0,
+      "target_filename": "access-rope-access-01.jpg",
+      "target_path": "public/images/access-rope-access-01.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed rope-access façade repaint on a modest Gauteng sectional-title building",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "ra01.png",
+      "prompt": "A raw, documentary-style 4:3 medium photograph of a completed exterior repaint on the front elevation of a modest eight-storey Gauteng sectional-title apartment block after a rope access programme. Fresh off-white and grey bands show even coverage on upper floors with static rope lines still rigged from the parapet but no climbers on the ropes. Empty paved forecourt, pale Highveld sky. Small mid-rise scale, not a skyscraper. No people. Authentic film grain, unposed façade handover photography. No text, building signage, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, climbers, Sandton mega tower, readable estate sign, wet paint, logos, CGI render, drone"
+    },
+    {
+      "id": "rope-anchor-close",
+      "section": "Triptych left",
+      "display_order": 1,
+      "target_filename": "access-rope-access-02.jpg",
+      "target_path": "public/images/access-rope-access-02.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of rope access anchor lines at a parapet on a Gauteng building",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "ra02.png",
+      "prompt": "A candid, documentary-style 4:3 close-up photograph of rope access anchor lines rigged at a flat-roof parapet on a modest Gauteng residential block. Static rope and karabiners run over the cap with neat strop placement — rigging evidence only, no climbers. Raking midday sun on rope fibres and painted parapet edge. No people. Authentic film grain, rigging detail photography. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, climber, readable tags on gear, logos, wide building shot, CGI"
+    },
+    {
+      "id": "rope-balcony-grid",
+      "section": "Triptych centre",
+      "display_order": 2,
+      "target_filename": "access-rope-access-03.jpg",
+      "target_path": "public/images/access-rope-access-03.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed balcony and façade coating after rope access on a Gauteng apartment block",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "ra03.png",
+      "prompt": "A straightforward, documentary-style 4:3 medium photograph of a completed balcony grid and façade repaint on one wing of a modest Gauteng sectional-title block. Fresh paint on balcony soffits and spandrel panels with rope lines visible at the roof edge but no workers on the building. Empty balconies, no laundry with text. Flat overcast Highveld light. No people. Authentic film grain, mid-rise remediation realism. No text, unit numbers, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, climbers, luxury hotel tower, readable balcony signs, wet coating, logos, drone"
+    },
+    {
+      "id": "rope-reveal-close",
+      "section": "Triptych right",
+      "display_order": 3,
+      "target_filename": "access-rope-access-04.jpg",
+      "target_path": "public/images/access-rope-access-04.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of completed window reveal sealing after rope access work in Gauteng",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "ra04.png",
+      "prompt": "A raw, documentary-style 4:3 close-up photograph of a completed window reveal and perimeter seal after rope access maintenance on a Gauteng apartment block. Fresh paint and neat silicone termination at aluminium frame, adjacent plaster shows matching new coating — handover detail on an upper floor seen from a nearby elevation angle. No people. Authentic film grain, façade detail photography. No text, window decals, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, messy sealant, readable decals, logos, CGI, wide tower shot"
+    },
+    {
+      "id": "rope-staging-zone",
+      "section": "Magazine editorial phase 01 + spoke magazine seed",
+      "display_order": 4,
+      "target_filename": "access-rope-access-05.jpg",
+      "target_path": "public/images/access-rope-access-05.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Empty rope access staging zone at the base of a Gauteng mid-rise building",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "ra05.png",
+      "prompt": "A candid, documentary-style 4:3 medium photograph of an empty rope access staging zone at the pavement base of a modest Gauteng mid-rise building. Static ropes run upward to the façade with cones and plain barrier tape forming a tidy exclusion zone — no readable words on tape. Coiled backup rope and kit bag on drop sheet, no workers present. Pale sky, ordinary kerb and paving. Authentic film grain, programme coordination evidence. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, readable tape text, mega tower, logos, CGI, drone aerial"
+    },
+    {
+      "id": "rope-kit-close",
+      "section": "Image pair left",
+      "display_order": 5,
+      "target_filename": "access-rope-access-06.jpg",
+      "target_path": "public/images/access-rope-access-06.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of staged rope access safety kit on a Gauteng building site",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "ra06.png",
+      "prompt": "A straightforward, documentary-style 4:3 close-up photograph of rope access safety kit staged on a clean drop sheet at a Gauteng high-access site. Harness laid flat, karabiners, static rope coil, and hard hat without readable branding — empty of workers. Pavement texture and building plinth edge in background blur. Authentic film grain, OHS evidence photography. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, readable bag labels, posed stock gear, logos, wide site shot"
+    },
+    {
+      "id": "rope-parapet-close",
+      "section": "Image pair right",
+      "display_order": 6,
+      "target_filename": "access-rope-access-07.jpg",
+      "target_path": "public/images/access-rope-access-07.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of completed parapet coating after rope access on a Gauteng roofline",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "ra07.png",
+      "prompt": "A raw, documentary-style 4:3 close-up photograph of a completed parapet and roofline coating after rope access work on a modest Gauteng residential block. Fresh grey protective paint on the cap and upper wall band with rope anchor hardware neat — no rust streaks. Pale Highveld sky behind. No people. Authentic film grain, roofline handover detail. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, failed parapet paint, climber, logos, CGI panorama"
+    },
+    {
+      "id": "rope-townhouse-upper",
+      "section": "Magazine editorial phase 02 + spoke magazine seed",
+      "display_order": 7,
+      "target_filename": "access-rope-access-08.jpg",
+      "target_path": "public/images/access-rope-access-08.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed upper-level exterior repaint on Gauteng townhouses using rope access",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "ra08.png",
+      "prompt": "A candid, documentary-style 4:3 medium photograph of completed upper-level exterior repaint on a short row of three-storey Gauteng townhouses accessed by rope rigging from the roofline. Fresh paint on gables and upper walls with ropes visible but no climbers — small complex scale a local crew could close in phases. Empty driveways, dry grass. Warm late-afternoon light. No people. Authentic film grain, suburban high-access realism. No text, estate boards, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, climbers, mega estate, readable signage, logos, drone"
+    },
+    {
+      "id": "rope-spalling-touchup",
+      "section": "Magazine editorial phase 03 + spoke magazine seed",
+      "display_order": 8,
+      "target_filename": "access-rope-access-09.jpg",
+      "target_path": "public/images/access-rope-access-09.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed façade spalling repair and coating after rope access in Gauteng",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "ra09.png",
+      "prompt": "A raw, documentary-style 4:3 medium photograph of completed concrete spalling repair patches and protective coating on an upper elevation of a modest Gauteng sectional-title block after rope access remediation. Feathered mortar repairs and fresh paint bands visible across one floor zone — handover state, not active breakout. Rope lines at parapet, empty pavement below. No people. Authentic film grain, combined remedial and access photography. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, exposed rebar, active breakout, skyscraper scale, logos, CGI"
+    }
+  ],
+  "hub_slot_assignment": {
+    "note": "Recommended mapping for service-page-images.ts ROPE_ACCESS_PAINTING_IMAGE_POOL",
+    "magazine_seeds_in_spoke_to_hub_config": [
+      { "phase": 1, "filename": "access-rope-access-05.jpg" },
+      { "phase": 2, "filename": "access-rope-access-08.jpg" },
+      { "phase": 3, "filename": "access-rope-access-09.jpg" }
+    ]
+  },
+  "summary": {
+    "total_page_slots": 9,
+    "new_images_to_generate": 9,
+    "all_completed_work": true,
+    "no_text_anywhere": true,
+    "shot_mix": {
+      "close_up": 4,
+      "medium": 5
+    },
+    "generation_batches": {
+      "batch_1": [
+        "access-rope-access-01.jpg",
+        "access-rope-access-02.jpg",
+        "access-rope-access-03.jpg",
+        "access-rope-access-04.jpg",
+        "access-rope-access-05.jpg"
+      ],
+      "batch_2": [
+        "access-rope-access-06.jpg",
+        "access-rope-access-07.jpg",
+        "access-rope-access-08.jpg",
+        "access-rope-access-09.jpg"
+      ]
+    },
+    "notes": [
+      "Rising damp spoke keeps existing DAMP_PROOFING_IMAGE_POOL — no new batch needed.",
+      "Legacy access-solutions-method.jpg, compliance.jpg, and coordination.jpg stay on homepage and /access-solutions hub.",
+      "After generation: convert PNG → JPG (~88 quality), wire pool, update spoke config and og-images.ts, build, commit, push."
+    ]
+  }
+}
