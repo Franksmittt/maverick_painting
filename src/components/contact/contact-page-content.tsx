@@ -6,10 +6,27 @@ import { Breadcrumbs } from "@/components/breadcrumbs";
 import { TrustAndCtaStrip } from "@/components/trust-and-cta-strip";
 import { ServiceImageTriptych } from "@/components/service-hub/service-image-blocks";
 import { STATIC_PAGE_VISUALS } from "@/data/static-pages-content";
+import { nap } from "@/lib/nap";
+import { organizationProviderSchema } from "@/lib/schema-helpers";
+import { siteConfig } from "@/lib/seo";
 
 export function ContactPageContent() {
+  const contactSchema = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    name: "Contact Maverick Painting",
+    description: siteConfig.description,
+    mainEntity: organizationProviderSchema(),
+  };
+
   return (
     <div className="bg-[#080808] pt-24 text-zinc-300 antialiased">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(contactSchema).replace(/</g, "\\u003c"),
+        }}
+      />
       <Breadcrumbs items={[{ label: "Contact", href: "/contact" }]} />
 
       <section className="section-surface section-pad !pt-8">
@@ -18,7 +35,9 @@ export function ContactPageContent() {
             <div className="space-y-8 lg:col-span-6">
               <header>
                 <p className="type-phase mb-3">Talk to a specialist</p>
-                <h1 className="type-h1 mb-5 uppercase">Eliminate risk. Get a verifiable quote.</h1>
+                <h1 className="type-h1 mb-5 uppercase">
+                  Contact Maverick Painting — Gauteng contractors
+                </h1>
                 <p className="type-lead max-w-2xl text-zinc-400">
                   Schedule your free on-site assessment. Our technical team is ready to assist with
                   substrate-specific specifications for your high-value asset.
@@ -29,9 +48,14 @@ export function ContactPageContent() {
                 <div className="flex items-center gap-4">
                   <Phone className="h-10 w-10 shrink-0 text-tertiary" aria-hidden />
                   <div>
-                    <p className="text-sm font-semibold uppercase text-zinc-500">Call Lawrence Brooks (owner supervision)</p>
-                    <a href="tel:0826277082" className="text-2xl font-extrabold text-tertiary transition hover:text-white sm:text-3xl">
-                      082 627 7082
+                    <p className="text-sm font-semibold uppercase text-zinc-500">
+                      Call {nap.contactName} (owner supervision)
+                    </p>
+                    <a
+                      href={nap.phone.tel}
+                      className="text-2xl font-extrabold text-tertiary transition hover:text-white sm:text-3xl"
+                    >
+                      {nap.phone.display}
                     </a>
                   </div>
                 </div>
@@ -40,11 +64,28 @@ export function ContactPageContent() {
                   <div>
                     <p className="text-sm font-semibold uppercase text-zinc-500">Email for technical specifications</p>
                     <a
-                      href="mailto:maverickpainters1984@gmail.com"
+                      href={nap.email.mailto}
                       className="text-lg font-bold text-white transition hover:text-tertiary"
                     >
-                      maverickpainters1984@gmail.com
+                      {nap.email.display}
                     </a>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4 border-t border-white/10 pt-6">
+                  <MapPin className="h-10 w-10 shrink-0 text-secondary" aria-hidden />
+                  <div>
+                    <p className="text-sm font-semibold uppercase text-zinc-500">Head office</p>
+                    <a
+                      href={siteConfig.googleMapsUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-base font-semibold text-white transition hover:text-tertiary"
+                    >
+                      {nap.address.display}
+                    </a>
+                    <p className="mt-2 text-sm text-zinc-500">
+                      Gauteng-wide mobilisation · {siteConfig.openingHours.join(" · ")}
+                    </p>
                   </div>
                 </div>
               </div>

@@ -57,6 +57,7 @@ export function buildPageMetadata({
   return {
     title: pageTitle,
     description,
+    keywords: siteConfig.keywords,
     metadataBase: new URL(baseUrl),
     alternates: {
       canonical,
@@ -66,10 +67,14 @@ export function buildPageMetadata({
       description,
       url: canonical,
       siteName: siteConfig.name,
+      locale: "en_ZA",
       type: ogType,
       images: [
         {
           url: ogImage,
+          width: 1200,
+          height: 628,
+          alt: pageTitle,
         },
       ],
     },

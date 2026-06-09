@@ -62,4 +62,15 @@ export type ServiceHubPageConfig = {
   /** Visible on-page FAQs (also keep JSON-LD on spokes via ServiceDeepPage). */
   faqs?: readonly ServiceDeepFaq[];
   legalDisclaimer?: LegalDisclaimerVariant;
+  /** Unique local content block for location × service matrix pages. */
+  localDelivery?: {
+    cityName: string;
+    region: string;
+    landmarks: readonly string[];
+    regionalNarrative: string;
+    localContext: string;
+    highlights: readonly string[];
+    methodologyHref: string;
+    cityHref: string;
+  };
 };

@@ -29,7 +29,7 @@ export async function generateMetadata({
     title: matrix.metaTitle,
     description: matrix.metaDescription,
     path,
-    image: getOgImageForPath(matrix.spokePath),
+    image: getOgImageForPath(path),
   });
 }
 

@@ -56,9 +56,13 @@ export const siteConfig = {
   twitterHandle: "@maverickpainting",
   social: {
     linkedin: "https://www.linkedin.com/company/maverickpainting",
-    facebook: "https://www.facebook.com/maverickpaintingcontractors",
+    facebook: "https://www.facebook.com/people/Maverick-Painting/61586004524227/",
     instagram: "https://www.instagram.com/maverickpainting",
   } satisfies SocialProfiles,
+  googleMapsUrl:
+    "https://www.google.com/maps/search/?api=1&query=15+Highveld+Techno+Park+Centurion+South+Africa",
+  openingHours: ["Mo-Fr 07:00-17:00", "Sa 08:00-12:00"],
+  priceRange: "R$$",
   address: {
     street: "15 Highveld Techno Park",
     suburb: "Centurion",

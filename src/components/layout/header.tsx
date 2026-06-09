@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
 import { MobileNav } from "@/components/layout/mobile-nav";
 import { PRIMARY_NAV } from "@/data/site-navigation";
+import { nap } from "@/lib/nap";
 import { cn } from "@/lib/utils";
 
 export function Header() {
@@ -60,15 +61,17 @@ export function Header() {
 
           <div className="hidden md:flex space-x-6 items-center flex-shrink-0">
             <Link
-              href="tel:0826277082"
+              href={nap.phone.tel}
               className="flex items-center text-white/90 transition duration-300 hover:text-secondary space-x-2"
             >
               <div className="p-2 border border-white/50 rounded-full">
                 <Phone className="w-5 h-5" />
               </div>
               <div className="text-left">
-                <span className="text-xs font-light block text-white/70">Lawrence Brooks</span>
-                <span className="text-base font-semibold block whitespace-nowrap text-white">082 627 7082</span>
+                <span className="text-xs font-light block text-white/70">{nap.contactName}</span>
+                <span className="text-base font-semibold block whitespace-nowrap text-white">
+                  {nap.phone.display}
+                </span>
               </div>
             </Link>
 

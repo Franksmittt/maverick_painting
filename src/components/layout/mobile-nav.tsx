@@ -7,7 +7,8 @@ import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
-import { PRIMARY_NAV } from "@/data/site-navigation";
+import { PRIMARY_NAV, SOLUTION_NAV } from "@/data/site-navigation";
+import { nap } from "@/lib/nap";
 
 export function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,17 +49,31 @@ export function MobileNav() {
             </Link>
           ))}
 
-          <div className="pt-6 space-y-3">
+          <div className="border-t border-gray-700/50 px-3 py-4">
+            <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-zinc-500">Solutions</p>
+            {SOLUTION_NAV.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="block py-2 text-sm font-medium text-zinc-300 hover:text-secondary"
+                onClick={toggleMenu}
+              >
+                {item.name}
+              </Link>
+            ))}
+          </div>
+
+          <div className="pt-2 space-y-3 border-t border-gray-700/50">
             <Link
-              href="tel:0826277082"
+              href={nap.phone.tel}
               className="block px-3 py-3 text-base font-medium text-white hover:bg-black/50"
               onClick={toggleMenu}
             >
-              <Phone className="w-4 h-4 mr-2 inline-block" /> Call Lawrence (082 627 7082)
+              <Phone className="w-4 h-4 mr-2 inline-block" /> Call {nap.contactName} ({nap.phone.display})
             </Link>
 
             <Link
-              href="https://wa.me/27826277082"
+              href={nap.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
               className="block px-3 py-3 text-base font-medium text-tertiary hover:bg-black/50"

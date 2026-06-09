@@ -1,5 +1,7 @@
 /** Shared footer copy and navigation (single source for all layout variants). */
 
+import { nap } from "@/lib/nap";
+
 export const FOOTER_TAGLINE =
   "The trusted asset maintenance partner for high-value properties in Gauteng. We solve problems from the structure up.";
 
@@ -42,19 +44,22 @@ export const FOOTER_SERVICE_LINKS = [
   { href: "/painting/stucco-wall-coatings", label: "Stucco & wall systems" },
 ] as const;
 
-export const FOOTER_PHONE = { tel: "tel:0826277082", display: "082 627 7082", label: "Lawrence Brooks" };
+export const FOOTER_PHONE = {
+  tel: nap.phone.tel,
+  display: nap.phone.display,
+  label: nap.contactName,
+};
+
 export const FOOTER_EMAIL = {
-  mailto: "mailto:maverickpainters1984@gmail.com",
-  display: "maverickpainters1984@gmail.com",
+  mailto: nap.email.mailto,
+  display: nap.email.display,
   label: "Quotes",
 };
 
+export const FOOTER_ADDRESS = nap.address;
+
 export const FOOTER_SOCIAL = [
-  {
-    href: "https://www.facebook.com/people/Maverick-Painting/61586004524227/",
-    label: "Facebook",
-    key: "fb",
-  },
-  { href: "https://www.linkedin.com/company/maverickpainting", label: "LinkedIn", key: "in" },
-  { href: "https://wa.me/27826277082", label: "WhatsApp", key: "wa" },
+  { href: nap.social.facebook, label: "Facebook", key: "fb" },
+  { href: nap.social.linkedin, label: "LinkedIn", key: "in" },
+  { href: nap.whatsapp, label: "WhatsApp", key: "wa" },
 ] as const;

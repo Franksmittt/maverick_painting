@@ -1,8 +1,18 @@
+import { CITY_HERO_IMAGES, DEFAULT_CITY_HERO } from "@/data/locations-page-content";
+import { locationServiceMatrix } from "@/data/location-service-matrix";
+import { serviceLocations } from "@/data/locations";
+import { projectCaseStudies } from "@/data/projects";
 import { siteConfig } from "@/lib/seo";
 
 /** Per-route Open Graph images (absolute URLs resolved in metadata.ts). */
 const OG_BY_PATH: Record<string, string> = {
   "/": siteConfig.defaultOgImage,
+  "/about-us": "/images/painting-body-corporate-qa.jpg",
+  "/services": "/images/painting-industrial-coatings.jpg",
+  "/contact": "/images/access-solutions-compliance.jpg",
+  "/gallery": "/images/gallery/maverick-gallery-01.jpg",
+  "/projects": "/images/the-blyde-pretorria.jpg",
+  "/accreditations": "/images/access-solutions-compliance.jpg",
   "/structural-repairs": "/images/eastlands-benoni.jpg",
   "/waterproofing-services": "/images/munyaka-midrand.jpg",
   "/damp-proofing-services": "/images/the-blyde-pretorria.jpg",
@@ -42,12 +52,48 @@ const OG_BY_PATH: Record<string, string> = {
   "/solutions/for-homeowners": "/images/munyaka-midrand.jpg",
   "/our-process-independent-qa": "/images/access-solutions-compliance.jpg",
   "/locations": "/images/munyaka-midrand.jpg",
-  "/locations/sandton": "/images/gallery/maverick-gallery-05.jpg",
-  "/locations/isando": "/images/gallery/maverick-gallery-08.jpg",
+  "/locations/central": "/images/painting-commercial-campus.jpg",
+  "/locations/east-rand": "/images/eastlands-benoni.jpg",
+  "/locations/west-rand": "/images/greencreek-estate.jpg",
+  "/locations/south-rand": "/images/painting-body-corporate-estate.jpg",
   "/blog": "/images/eastlands-benoni.jpg",
+  "/blog/waterproofing": "/images/waterproofing-flat-roof-02.jpg",
+  "/blog/industrial": "/images/painting-industrial-01.jpg",
+  "/blog/structural-remediation": "/images/structural-concrete-spalling-01.jpg",
 };
+
+function getOgImageForSpokePath(spokePath: string): string {
+  return OG_BY_PATH[spokePath] ?? siteConfig.defaultOgImage;
+}
+
+const CITY_OG: Record<string, string> = Object.fromEntries(
+  serviceLocations.map((loc) => [
+    `/locations/${loc.slug}`,
+    (CITY_HERO_IMAGES[loc.slug] ?? DEFAULT_CITY_HERO).src,
+  ]),
+);
+
+const MATRIX_OG: Record<string, string> = Object.fromEntries(
+  locationServiceMatrix.map((entry) => [
+    `/locations/${entry.citySlug}/${entry.serviceSlug}`,
+    getOgImageForSpokePath(entry.spokePath),
+  ]),
+);
+
+const PROJECT_OG: Record<string, string> = Object.fromEntries(
+  projectCaseStudies.map((project) => [
+    `/projects/${project.slug}`,
+    project.image ?? siteConfig.defaultOgImage,
+  ]),
+);
 
 export function getOgImageForPath(path: string): string {
   const normalized = path === "/" ? "/" : path.replace(/\/$/, "");
-  return OG_BY_PATH[normalized] ?? siteConfig.defaultOgImage;
+  return (
+    OG_BY_PATH[normalized] ??
+    CITY_OG[normalized] ??
+    MATRIX_OG[normalized] ??
+    PROJECT_OG[normalized] ??
+    siteConfig.defaultOgImage
+  );
 }

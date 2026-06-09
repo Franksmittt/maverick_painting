@@ -68,7 +68,7 @@ export function ServicesOverview() {
         <div className="page-container relative">
           <p className="type-phase mb-5 text-secondary">The turn-key asset solution</p>
           <h1 id="services-hero-heading" className="type-h1 max-w-4xl text-4xl sm:text-5xl lg:text-6xl lg:leading-[1.05]">
-            Beyond paint. Specialized contractor services.
+            Painting, waterproofing & structural repair services in Gauteng
           </h1>
           <p className="type-lead mt-6 max-w-3xl text-zinc-500">
             We are not general painters. We are structural remediation specialists, approved applicators, and advanced

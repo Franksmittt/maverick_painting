@@ -17,7 +17,7 @@ import {
   DEFAULT_CITY_HERO,
   REGION_VISUAL_STRIPS,
 } from "@/data/locations-page-content";
-import { siteConfig } from "@/lib/seo";
+import { localServiceSchema } from "@/lib/schema-helpers";
 
 function regionLabel(region: ServiceLocation["region"]): string {
   if (region === "east-rand") return "East Rand";
@@ -43,24 +43,18 @@ export function CityLocationPage({ loc }: CityLocationPageProps) {
   const heroImage = CITY_HERO_IMAGES[loc.slug] ?? DEFAULT_CITY_HERO;
   const triptych = REGION_VISUAL_STRIPS[loc.region];
 
-  const localSchema = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    name: `Painting & Waterproofing in ${loc.name}`,
-    provider: {
-      "@type": "LocalBusiness",
-      name: siteConfig.name,
-      url: siteConfig.url.replace(/\/$/, ""),
-      telephone: siteConfig.phoneNumber,
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: loc.name,
-        addressRegion: "Gauteng",
-        addressCountry: "ZA",
-      },
-    },
-    areaServed: { "@type": "City", name: loc.name },
-  };
+  const localSchema = localServiceSchema({
+    name: loc.metaTitle,
+    description: loc.metaDescription,
+    cityName: loc.name,
+    path: `/locations/${loc.slug}`,
+    serviceType: [
+      "Painting contractors",
+      "Waterproofing",
+      "Structural repairs",
+      "Industrial coatings",
+    ],
+  });
 
   return (
     <div className="bg-[#080808] pt-24 text-zinc-300 antialiased">
@@ -85,7 +79,7 @@ export function CityLocationPage({ loc }: CityLocationPageProps) {
                 {loc.name} · {region}
               </p>
               <h1 id={`${loc.slug}-hero-heading`} className="type-h1 mb-5 uppercase">
-                Reliable asset maintenance in {loc.name}.
+                {loc.metaTitle}
               </h1>
               <p className="type-lead mb-4 max-w-2xl text-zinc-400">
                 Structural repairs, waterproofing, and painting with independent QA for assets near{" "}

@@ -141,6 +141,18 @@ export function Footer() {
           <div className="min-w-0 text-sm text-zinc-400">
             <FooterColHeading>Contact Us</FooterColHeading>
             <p className="leading-relaxed">
+              <strong className="font-semibold text-zinc-200">Head office</strong>
+              <br />
+              <a
+                href={`https://www.google.com/maps/search/?api=1&query=${D.FOOTER_ADDRESS.mapsQuery}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-zinc-300 transition hover:text-white"
+              >
+                {D.FOOTER_ADDRESS.display}
+              </a>
+            </p>
+            <p className="mt-4 leading-relaxed">
               <strong className="font-semibold text-zinc-200">{D.FOOTER_PHONE.label}</strong>
               <br />
               <a href={D.FOOTER_PHONE.tel} className="text-zinc-300 transition hover:text-white">
@@ -155,7 +167,9 @@ export function Footer() {
               </a>
             </p>
             <p className="mt-4 leading-relaxed">
-              <strong className="font-semibold text-zinc-200">Quotes</strong> available upon request.
+              <strong className="font-semibold text-zinc-200">Service area</strong>
+              <br />
+              Gauteng-wide mobilisation from Centurion.
             </p>
           </div>
         </div>

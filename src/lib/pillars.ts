@@ -1,6 +1,7 @@
 import type { LucideIcon } from "lucide-react";
 import { Layers, Droplet, Shield, Factory, ShieldCheck, Wrench } from "lucide-react";
 import type { BuildMetadataParams } from "@/lib/metadata";
+import { absoluteUrl } from "@/lib/schema-helpers";
 import {
   getPillarsData,
   getPillarContent,
@@ -337,12 +338,14 @@ export function getPillarJsonLd(pillarSlug: string) {
     "@type": "CollectionPage",
     name: pillar.title,
     description: pillar.summary,
-    url: pillar.metadata.path,
+    url: absoluteUrl(pillar.metadata.path ?? `/blog/${pillar.slug}`),
     hasPart: pillar.clusters.map((cluster) => ({
       "@type": "Article",
       name: cluster.title,
       description: cluster.description,
-      url: cluster.metadata.path,
+      url: absoluteUrl(
+        cluster.metadata.path ?? `/blog/${pillar.slug}/${cluster.slug}`,
+      ),
     })),
   };
 }
@@ -352,16 +355,20 @@ export function getClusterJsonLd(pillarSlug: string, clusterSlug: string) {
   const pillar = getPillarBySlug(pillarSlug);
   if (!cluster || !pillar) return undefined;
 
+  const pillarPath = pillar.metadata.path ?? `/blog/${pillar.slug}`;
+  const clusterPath =
+    cluster.metadata.path ?? `/blog/${pillar.slug}/${cluster.slug}`;
+
   return {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: cluster.title,
     description: cluster.description,
-    url: cluster.metadata.path,
+    url: absoluteUrl(clusterPath),
     isPartOf: {
       "@type": "CollectionPage",
       name: pillar.title,
-      url: pillar.metadata.path,
+      url: absoluteUrl(pillarPath),
     },
     breadcrumb: {
       "@type": "BreadcrumbList",
@@ -370,19 +377,19 @@ export function getClusterJsonLd(pillarSlug: string, clusterSlug: string) {
           "@type": "ListItem",
           position: 1,
           name: "Blog",
-          item: "/blog",
+          item: absoluteUrl("/blog"),
         },
         {
           "@type": "ListItem",
           position: 2,
           name: pillar.title,
-          item: pillar.metadata.path,
+          item: absoluteUrl(pillarPath),
         },
         {
           "@type": "ListItem",
           position: 3,
           name: cluster.title,
-          item: cluster.metadata.path,
+          item: absoluteUrl(clusterPath),
         },
       ],
     },

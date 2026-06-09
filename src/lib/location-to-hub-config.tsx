@@ -83,5 +83,15 @@ export function locationToHubConfig(
     },
     faqs: matrix.faqs,
     legalDisclaimer: matrix.disclaimer ?? base.legalDisclaimer,
+    localDelivery: {
+      cityName: loc.name,
+      region,
+      landmarks: loc.landmarks,
+      regionalNarrative: loc.regionalNarrative,
+      localContext: matrix.localContext,
+      highlights: matrix.highlights,
+      methodologyHref: matrix.spokePath,
+      cityHref: `/locations/${loc.slug}`,
+    },
   };
 }

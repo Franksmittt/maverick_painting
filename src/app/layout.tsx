@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import "@/app/globals.css";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
+import { organizationId, postalAddressSchema } from "@/lib/schema-helpers";
 import { siteConfig } from "@/lib/seo";
 import { GoogleTagManager } from "@/components/analytics/gtm-partytown"; // <--- NEW IMPORT
 
@@ -83,23 +84,27 @@ export default function RootLayout({
 }>) {
   const organizationJsonLd = {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
+    "@type": "HomeAndConstructionBusiness",
+    "@id": organizationId,
     name: siteConfig.name,
     url: baseUrl,
     legalName: siteConfig.legalName,
     slogan: siteConfig.slogan,
+    description: siteConfig.description,
+    image: defaultOgImage,
     email: siteConfig.email,
     telephone: siteConfig.phoneNumber,
-    areaServed: siteConfig.serviceAreas,
-    sameAs: Object.values(siteConfig.social).filter(Boolean),
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: siteConfig.address.street,
-      addressLocality: siteConfig.address.city,
-      addressRegion: siteConfig.address.region,
-      postalCode: siteConfig.address.postalCode,
-      addressCountry: siteConfig.address.country,
-    },
+    priceRange: siteConfig.priceRange,
+    openingHours: siteConfig.openingHours,
+    areaServed: siteConfig.serviceAreas.map((area) => ({
+      "@type": "AdministrativeArea",
+      name: area,
+    })),
+    sameAs: [
+      ...Object.values(siteConfig.social).filter(Boolean),
+      siteConfig.googleMapsUrl,
+    ],
+    address: postalAddressSchema(),
     geo: siteConfig.address.latitude
       ? {
           "@type": "GeoCoordinates",
@@ -111,7 +116,7 @@ export default function RootLayout({
       {
         "@type": "ContactPoint",
         telephone: siteConfig.phoneNumber,
-        contactType: "sales",
+        contactType: "customer service",
         areaServed: "ZA",
         availableLanguage: ["English"],
       },
@@ -122,11 +127,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Service",
     name: "Owner Supervised Painting, Structural Repairs & Waterproofing",
-    provider: {
-      "@type": "Organization",
-      name: siteConfig.name,
-      url: baseUrl,
-    },
+    provider: { "@id": organizationId },
     areaServed: siteConfig.serviceAreas,
     serviceType: [
       "Commercial & Industrial Painting",

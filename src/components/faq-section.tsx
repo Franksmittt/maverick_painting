@@ -1,4 +1,5 @@
 import type { ServiceDeepFaq } from "@/lib/service-deep-types";
+import { absoluteUrl } from "@/lib/schema-helpers";
 
 const FAQ_DISPLAY_COUNT = 6;
 
@@ -23,7 +24,7 @@ export function FaqSection({
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "@id": `${schemaPath}#faq`,
+    "@id": `${absoluteUrl(schemaPath)}#faq`,
     mainEntity: displayItems.map((item) => ({
       "@type": "Question",
       name: item.question,
