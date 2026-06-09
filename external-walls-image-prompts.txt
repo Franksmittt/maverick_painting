@@ -1,0 +1,252 @@
+{
+  "project": "Maverick Painting",
+  "client_site": "maverickpainting.co.za",
+  "page": "External walls spoke",
+  "path": "/painting/external-walls",
+  "purpose": "AI image generation prompts for all nine photography slots on the external walls spoke. Generate every image listed below, then supply files to be placed in public/images/ using the exact target_filename values. After generation, add EXTERNAL_WALLS_IMAGE_POOL in service-page-images.ts, remove /painting/external-walls from PAINTING_SERVICES_PATHS, and update external-walls SPOKE_MAGAZINE_IMAGES in spoke-to-hub-config.tsx.",
+  "version": "1.0",
+  "date": "2026-06-08",
+  "style_guidelines": {
+    "mandatory_aesthetic": [
+      "professional documentary-style exterior facade and wall photography",
+      "clean completed-project handover aesthetic",
+      "candid but crisp realism — excellent small-contractor portfolio quality",
+      "authentic natural film grain",
+      "grounded Gauteng, South Africa context"
+    ],
+    "lighting": [
+      "Prefer clear Highveld daylight — late morning or flat overcast that shows coating colour honestly",
+      "Avoid golden-hour glamour, cinematic HDR, or oversaturated stock-photo skies"
+    ],
+    "materials": [
+      "Describe micro-textures explicitly: smooth exterior acrylic on plaster, elastomeric film on repaired cracks, neat window reveal sealant, painted boundary wall caps, anti-carbonation grey bands, clean colour-change junctions at parapets",
+      "Show completed envelope outcomes — repairs integrated, coatings uniform, site clean at handover"
+    ],
+    "scale_policy": "Small-team, modest-building realism only. Single suburban homes, short townhouse rows, small neighbourhood retail strips, estate boundary walls, or a six-to-eight storey sectional-title wing — not 40-storey Sandton towers, not Dubai skylines, not megamall facades.",
+    "shot_policy": "Mix close-up coating detail shots and medium building elevations. Close-ups show crack repairs, junctions, caps, and texture. Medium shots show one completed elevation, one boundary run, or one street-facing wall — always clean and recently handed over.",
+    "clean_site_policy": "100% completed handover. No workers, no active scaffold, no ladders in use, no masking tape, no paint tins, no rubble, no site clutter. Paved areas swept, lawns tidy but not staged. Empty forecourts and pavements preferred.",
+    "people_policy": "100% people-free. No workers, faces, hands, silhouettes, or pedestrians.",
+    "completed_vs_process": "100% completed outcomes. No half-painted walls, wet coating, prep in progress, or access equipment in active use.",
+    "text_policy": "Absolutely no readable text anywhere in frame. No estate signage, street names, shop names, unit numbers, or vehicle licence plates readable.",
+    "location_cues": [
+      "Gauteng suburban home exteriors",
+      "townhouse and estate boundary walls",
+      "modest sectional-title apartment wings",
+      "small commercial strip buildings",
+      "pale Highveld sky over completed plaster facades"
+    ]
+  },
+  "global_negative_prompt": "people, workers, faces, hands, silhouettes, pedestrians, active scaffold, ladder in use, wet paint, half-painted walls, masking tape, paint tins, site rubble, construction mess, readable text, letters, numbers, words, estate signage, shop signs, logos, branding, watermarks, Sandton mega tower, Dubai skyline, hotel glamour, plastic 3D render, CGI, Unreal Engine, oversaturated colours, drone aerial, dramatic sunset glamour",
+  "output_specs": {
+    "default_format": "jpg",
+    "color_profile": "sRGB",
+    "quality": "high",
+    "notes": "All slots use 4:3 aspect ratio. Filename must match target_filename exactly (lowercase, hyphens). Replaces borrowed painting-body-corporate-* images on this spoke once integrated."
+  },
+  "page_slot_map": {
+    "note": "Nine-slot EXTERNAL_WALLS_IMAGE_POOL — remove /painting/external-walls from PAINTING_SERVICES_PATHS when wired",
+    "slots": [
+      { "slot": 0, "role": "Hero", "filename": "painting-external-walls-01.jpg", "shot": "medium" },
+      { "slot": 1, "role": "Triptych left", "filename": "painting-external-walls-02.jpg", "shot": "close-up" },
+      { "slot": 2, "role": "Triptych centre", "filename": "painting-external-walls-03.jpg", "shot": "medium" },
+      { "slot": 3, "role": "Triptych right", "filename": "painting-external-walls-04.jpg", "shot": "close-up" },
+      { "slot": 4, "role": "Magazine editorial phase 01", "filename": "painting-external-walls-05.jpg", "shot": "medium" },
+      { "slot": 5, "role": "Image pair left", "filename": "painting-external-walls-06.jpg", "shot": "close-up" },
+      { "slot": 6, "role": "Image pair right", "filename": "painting-external-walls-07.jpg", "shot": "close-up" },
+      { "slot": 7, "role": "Magazine editorial phase 02", "filename": "painting-external-walls-08.jpg", "shot": "medium" },
+      { "slot": 8, "role": "Magazine editorial phase 03", "filename": "painting-external-walls-09.jpg", "shot": "medium" }
+    ]
+  },
+  "images": [
+    {
+      "id": "external-suburban-hero",
+      "section": "Hero — split layout beside H1",
+      "display_order": 0,
+      "target_filename": "painting-external-walls-01.jpg",
+      "target_path": "public/images/painting-external-walls-01.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed exterior wall repaint on a modest Gauteng suburban home",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "ew01.png",
+      "prompt": "A professional, documentary-style 4:3 medium photograph of a completed exterior wall repaint on a modest single-storey Gauteng suburban home. Fresh warm off-white and light grey exterior acrylic on plaster reads clean and even under clear Highveld morning light. Empty swept driveway, tidy lawn edge, no workers, no scaffold, no site clutter — recently handed over. Pale blue sky. Scale is a standard three-bedroom brick house in Centurion or Alberton, not a megamansion. No people. Crisp but natural film grain, small-contractor portfolio photography. No text, house numbers, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, scaffold, wet paint, half-painted walls, megamansion, readable house numbers, logos, CGI render, sunset glamour"
+    },
+    {
+      "id": "external-plaster-close",
+      "section": "Triptych left",
+      "display_order": 1,
+      "target_filename": "painting-external-walls-02.jpg",
+      "target_path": "public/images/painting-external-walls-02.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of completed exterior plaster coating on a Gauteng facade",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "ew02.png",
+      "prompt": "A professional, documentary-style 4:3 close-up photograph of a completed exterior acrylic coating on plaster in Gauteng. The frame fills with smooth light grey low-sheen film showing realistic subtle texture, former hairline cracks bridged and invisible, uniform colour with no patch squares. Raking daylight reveals coating quality without plastic gloss. No people, tools, or wet paint. Natural film grain, technical facade close-up realism. No text, labels, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, visible patch squares, wet coating, readable labels, logos, perfect CGI render, wide building shot"
+    },
+    {
+      "id": "external-townhouse-row",
+      "section": "Triptych centre",
+      "display_order": 2,
+      "target_filename": "painting-external-walls-03.jpg",
+      "target_path": "public/images/painting-external-walls-03.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed exterior wall coatings on a Gauteng townhouse row",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "ew03.png",
+      "prompt": "A clean, documentary-style 4:3 medium photograph of completed exterior wall coatings on a short row of three Gauteng townhouses. Each unit shows fresh off-white and grey plaster walls, neat window reveals, and clean colour bands under flat overcast Highveld light. Empty paved parking bay in foreground, no workers, no scaffold, no cars with readable plates. Modest estate scale a small crew could phase over two weeks. No people. Natural film grain, professional handover photography. No text, estate signage, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, mega estate, Sandton tower row, readable signage, half-painted walls, logos, CGI, drone"
+    },
+    {
+      "id": "external-window-reveal",
+      "section": "Triptych right",
+      "display_order": 3,
+      "target_filename": "painting-external-walls-04.jpg",
+      "target_path": "public/images/painting-external-walls-04.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of completed exterior window reveal and wall coating junction",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "ew04.png",
+      "prompt": "A professional, documentary-style 4:3 close-up photograph of a completed exterior window reveal and wall coating junction on a Gauteng building. Neat grey acrylic meets white painted aluminium frame with clean sealant bead, no smears or overspray on glass. Plaster wall texture uniform around the opening. Raking daylight. No people, masking tape, or tools. Natural film grain, facade detail handover photography. No text, stickers, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, masking tape, wet sealant, readable stickers, logos, wide facade, CGI"
+    },
+    {
+      "id": "external-boundary-wall",
+      "section": "Magazine editorial phase 01 + spoke magazine seed",
+      "display_order": 4,
+      "target_filename": "painting-external-walls-05.jpg",
+      "target_path": "public/images/painting-external-walls-05.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed boundary wall repaint with coated cap in a Gauteng estate",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "ew05.png",
+      "prompt": "A clean, documentary-style 4:3 medium photograph of a completed boundary wall repaint in a modest Gauteng residential estate. The camera follows ten metres of fresh off-white plaster wall with a neatly coated grey cap and clean base at paved verge, empty sidewalk and swept gravel strip. No workers, rubble, or site clutter. Modest single-estate scale, not a highway boundary. Pale Highveld sky. No people. Natural film grain, professional exterior handover realism. No text, estate name boards, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, crumbling cap, half-painted wall, readable estate sign, logos, CGI, highway scale"
+    },
+    {
+      "id": "external-parapet-close",
+      "section": "Image pair left",
+      "display_order": 5,
+      "target_filename": "painting-external-walls-06.jpg",
+      "target_path": "public/images/painting-external-walls-06.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of completed parapet and wall capping coating on an exterior facade",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "ew06.png",
+      "prompt": "A professional, documentary-style 4:3 close-up photograph of a completed parapet and wall capping coating on a Gauteng building exterior. Grey anti-carbonation acrylic on the cap meets off-white wall below in a crisp line, no cracks at the junction, realistic satin sheen on the cap. Clear sky edge at top of frame. No people or access equipment. Natural film grain, roofline detail photography. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, cracked parapet, wet paint, readable labels, logos, wide roof shot, CGI"
+    },
+    {
+      "id": "external-colour-band",
+      "section": "Image pair right",
+      "display_order": 6,
+      "target_filename": "painting-external-walls-07.jpg",
+      "target_path": "public/images/painting-external-walls-07.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of completed two-tone exterior wall colour band on a Gauteng facade",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "ew07.png",
+      "prompt": "A professional, documentary-style 4:3 close-up photograph of a completed two-tone exterior wall colour band on a Gauteng plaster facade. A sharp horizontal line separates warm off-white upper wall from light grey lower band, both coats uniform with realistic roller texture and no bleed at the junction. Raking daylight emphasises neat masking quality after handover. No people or tools. Natural film grain, facade colour-work detail. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, wavy colour line, wet paint, readable markings, logos, CGI render"
+    },
+    {
+      "id": "external-retail-strip",
+      "section": "Magazine editorial phase 02 + spoke magazine seed",
+      "display_order": 7,
+      "target_filename": "painting-external-walls-08.jpg",
+      "target_path": "public/images/painting-external-walls-08.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed exterior wall coating on a small Gauteng neighbourhood retail building",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "ew08.png",
+      "prompt": "A clean, documentary-style 4:3 medium photograph of completed exterior wall coating on a small Gauteng neighbourhood retail building. One street-facing elevation shows fresh light grey and white plaster walls, neat shopfront openings with no readable signage or tenant names, empty paved forecourt swept clean. Modest single-storey strip scale — two or three units — not a mall. No workers, scaffold, or pedestrians. Flat overcast light. No people. Natural film grain, commercial facade handover photography. No text, shop names, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, mall scale, readable shop signs, half-painted walls, logos, CGI, staging"
+    },
+    {
+      "id": "external-sectional-title",
+      "section": "Magazine editorial phase 03 + spoke magazine seed",
+      "display_order": 8,
+      "target_filename": "painting-external-walls-09.jpg",
+      "target_path": "public/images/painting-external-walls-09.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed exterior wall repaint on a modest Gauteng sectional-title apartment wing",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "ew09.png",
+      "prompt": "A professional, documentary-style 4:3 medium photograph of a completed exterior wall repaint on one wing of a modest six-storey Gauteng sectional-title apartment block. Fresh off-white and grey exterior coatings on plaster, neat balcony fronts, empty paved forecourt below. No workers, no rope lines with climbers, no scaffold in use. Small mid-rise scale a specialist crew could deliver, not a Sandton icon tower. Pale Highveld sky. No people. Natural film grain, sectional-title handover realism. No text, building signage, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, climbers, Sandton mega tower, readable building sign, half-painted facade, logos, CGI, drone aerial"
+    }
+  ],
+  "hub_slot_assignment": {
+    "note": "Recommended mapping for service-page-images.ts EXTERNAL_WALLS_IMAGE_POOL",
+    "magazine_seeds_in_spoke_to_hub_config": [
+      { "phase": 1, "filename": "painting-external-walls-05.jpg" },
+      { "phase": 2, "filename": "painting-external-walls-08.jpg" },
+      { "phase": 3, "filename": "painting-external-walls-09.jpg" }
+    ]
+  },
+  "summary": {
+    "total_page_slots": 9,
+    "new_images_to_generate": 9,
+    "all_completed_work": true,
+    "clean_handover_sites": true,
+    "no_text_anywhere": true,
+    "shot_mix": {
+      "close_up": 4,
+      "medium": 5
+    },
+    "building_types": [
+      "suburban single home",
+      "townhouse row",
+      "estate boundary wall",
+      "small retail strip",
+      "modest sectional-title wing"
+    ],
+    "generation_batches": {
+      "batch_1": [
+        "painting-external-walls-01.jpg",
+        "painting-external-walls-02.jpg",
+        "painting-external-walls-03.jpg",
+        "painting-external-walls-04.jpg",
+        "painting-external-walls-05.jpg"
+      ],
+      "batch_2": [
+        "painting-external-walls-06.jpg",
+        "painting-external-walls-07.jpg",
+        "painting-external-walls-08.jpg",
+        "painting-external-walls-09.jpg"
+      ]
+    },
+    "notes": [
+      "All shots show completed handover — clean sites, no workers, no active access equipment.",
+      "Small-team Gauteng scale throughout; mix four close-ups and five medium elevations.",
+      "After generation: convert PNG → JPG (~88 quality), wire EXTERNAL_WALLS_IMAGE_POOL, remove /painting/external-walls from PAINTING_SERVICES_PATHS, build, commit, push."
+    ]
+  }
+}

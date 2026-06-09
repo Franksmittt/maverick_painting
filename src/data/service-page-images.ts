@@ -65,10 +65,12 @@ const INTERIOR_PAINTING_PATHS = new Set(["/painting/interior-painting"]);
 
 const INTERNAL_WALLS_PATHS = new Set(["/painting/internal-walls"]);
 
+const EXTERNAL_WALLS_PATHS = new Set(["/painting/external-walls"]);
+
+const ROOF_PAINTING_PATHS = new Set(["/painting/roof-painting"]);
+
 const PAINTING_SERVICES_PATHS = new Set([
   "/painting-services",
-  "/painting/roof-painting",
-  "/painting/external-walls",
   "/painting/warehouse-painting",
   "/painting/high-volume-commercial-painting",
   "/painting/road-marking",
@@ -1041,6 +1043,86 @@ const INTERNAL_WALLS_IMAGE_POOL: readonly ServicePageImage[] = [
   },
 ];
 
+/** Dedicated nine-slot pool for the external walls spoke. */
+const EXTERNAL_WALLS_IMAGE_POOL: readonly ServicePageImage[] = [
+  {
+    src: "/images/painting-external-walls-01.jpg",
+    alt: "Completed exterior wall repaint on a modest Gauteng suburban home",
+  },
+  {
+    src: "/images/painting-external-walls-02.jpg",
+    alt: "Close-up of completed exterior plaster coating on a Gauteng facade",
+  },
+  {
+    src: "/images/painting-external-walls-03.jpg",
+    alt: "Completed exterior wall coatings on a Gauteng townhouse row",
+  },
+  {
+    src: "/images/painting-external-walls-04.jpg",
+    alt: "Close-up of completed exterior window reveal and wall coating junction",
+  },
+  {
+    src: "/images/painting-external-walls-05.jpg",
+    alt: "Completed boundary wall repaint with coated cap in a Gauteng estate",
+  },
+  {
+    src: "/images/painting-external-walls-06.jpg",
+    alt: "Close-up of completed parapet and wall capping coating on an exterior facade",
+  },
+  {
+    src: "/images/painting-external-walls-07.jpg",
+    alt: "Close-up of completed two-tone exterior wall colour band on a Gauteng facade",
+  },
+  {
+    src: "/images/painting-external-walls-08.jpg",
+    alt: "Completed exterior wall coating on a small Gauteng neighbourhood retail building",
+  },
+  {
+    src: "/images/painting-external-walls-09.jpg",
+    alt: "Completed exterior wall repaint on a modest Gauteng sectional-title apartment wing",
+  },
+];
+
+/** Dedicated nine-slot pool for the roof painting spoke. */
+const ROOF_PAINTING_IMAGE_POOL: readonly ServicePageImage[] = [
+  {
+    src: "/images/painting-roof-painting-01.jpg",
+    alt: "Completed heat-reflective tile roof coating on a modest Gauteng suburban home",
+  },
+  {
+    src: "/images/painting-roof-painting-02.jpg",
+    alt: "Close-up of completed UV-stable acrylic coating on concrete roof tiles in Gauteng",
+  },
+  {
+    src: "/images/painting-roof-painting-03.jpg",
+    alt: "Completed tile roof restoration on a modest Gauteng sectional-title apartment wing",
+  },
+  {
+    src: "/images/painting-roof-painting-04.jpg",
+    alt: "Close-up of completed ridge and hip tile coating on a Gauteng tile roof",
+  },
+  {
+    src: "/images/painting-roof-painting-05.jpg",
+    alt: "Completed IBR metal roof coating on a small Gauteng industrial or workshop building",
+  },
+  {
+    src: "/images/painting-roof-painting-06.jpg",
+    alt: "Close-up of completed protective coating on IBR corrugated roof sheeting",
+  },
+  {
+    src: "/images/painting-roof-painting-07.jpg",
+    alt: "Close-up of completed heat-reflective protection coating on a flat concrete roof",
+  },
+  {
+    src: "/images/painting-roof-painting-08.jpg",
+    alt: "Completed tile roof coatings on a row of Gauteng townhouses",
+  },
+  {
+    src: "/images/painting-roof-painting-09.jpg",
+    alt: "Completed heat-reflective roof coating programme on a Gauteng residential property",
+  },
+];
+
 /** Shared nine-slot pool for the painting services hub and spokes. */
 const PAINTING_SERVICES_IMAGE_POOL: readonly ServicePageImage[] = [
   {
@@ -1328,6 +1410,14 @@ export function getServicePageImages(
 
   if (INTERNAL_WALLS_PATHS.has(path)) {
     return [...INTERNAL_WALLS_IMAGE_POOL];
+  }
+
+  if (EXTERNAL_WALLS_PATHS.has(path)) {
+    return [...EXTERNAL_WALLS_IMAGE_POOL];
+  }
+
+  if (ROOF_PAINTING_PATHS.has(path)) {
+    return [...ROOF_PAINTING_IMAGE_POOL];
   }
 
   if (WATERPROOFING_PATHS.has(path)) {

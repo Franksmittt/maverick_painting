@@ -1,0 +1,252 @@
+{
+  "project": "Maverick Painting",
+  "client_site": "maverickpainting.co.za",
+  "page": "Roof painting spoke",
+  "path": "/painting/roof-painting",
+  "purpose": "AI image generation prompts for all nine photography slots on the roof painting spoke. Generate every image listed below, then supply files to be placed in public/images/ using the exact target_filename values. After generation, add ROOF_PAINTING_IMAGE_POOL in service-page-images.ts, remove /painting/roof-painting from PAINTING_SERVICES_PATHS, and update roof-painting SPOKE_MAGAZINE_IMAGES in spoke-to-hub-config.tsx.",
+  "version": "1.0",
+  "date": "2026-06-08",
+  "style_guidelines": {
+    "mandatory_aesthetic": [
+      "professional documentary-style roof and coating photography",
+      "clean completed-project handover aesthetic",
+      "candid but crisp realism — excellent small-contractor portfolio quality",
+      "authentic natural film grain",
+      "grounded Gauteng, South Africa context"
+    ],
+    "lighting": [
+      "Prefer clear Highveld daylight or flat overcast that shows coating colour and texture honestly",
+      "Avoid dramatic sunset glamour, cinematic HDR, or oversaturated stock skies"
+    ],
+    "materials": [
+      "Describe micro-textures explicitly: UV-stable acrylic on concrete tiles, heat-reflective white or pale grey film on tiles, satin IBR sheet coating, zinc-primed metal under topcoat, neat ridge mortar and coated caps, reflective protection course on flat concrete",
+      "Show completed roof outcomes — substrates sound, coatings uniform, gutters and facades clean at handover"
+    ],
+    "scale_policy": "Small-team, modest-roof realism only. Suburban homes, short townhouse rows, small IBR sheds, modest sectional-title wings with tile roofs, or a single flat concrete roof a crew could coat in phased halves — not airport hangars, not megamall roofs, not city skyline panoramas.",
+    "shot_policy": "Mix close-up coating detail shots and medium roof elevations. Close-ups show tile film, ridge work, IBR texture, and flat-roof membrane protection. Medium shots show one completed roof plane or one building crown — always clean handover.",
+    "clean_site_policy": "100% completed handover. No workers on roofs, no active scaffold, no ladders in use, no paint tins, no masking, no half-coated sections. Ground areas tidy, no site rubble.",
+    "people_policy": "100% people-free. No workers, faces, hands, silhouettes.",
+    "completed_vs_process": "100% completed outcomes. No wet coating, prep in progress, or access equipment in active use.",
+    "text_policy": "Absolutely no readable text anywhere in frame. No water tank labels, estate signage, or vehicle licence plates readable.",
+    "location_cues": [
+      "Gauteng suburban tile roofs",
+      "modest sectional-title apartment crowns",
+      "small IBR workshop or store roofs",
+      "flat concrete roof reflective protection courses",
+      "pale Highveld sky above completed coatings"
+    ]
+  },
+  "global_negative_prompt": "people, workers, faces, hands, silhouettes, active scaffold, ladder in use, wet paint, half-painted roof, masking tape, paint tins, site rubble, readable text, logos, branding, watermarks, airport hangar, mega mall roof, city skyline panorama, plastic 3D render, CGI, Unreal Engine, oversaturated colours, drone aerial, dramatic sunset glamour",
+  "output_specs": {
+    "default_format": "jpg",
+    "color_profile": "sRGB",
+    "quality": "high",
+    "notes": "All slots use 4:3 aspect ratio. Filename must match target_filename exactly (lowercase, hyphens). Replaces borrowed waterproofing-flat-roof and gallery images on this spoke once integrated."
+  },
+  "page_slot_map": {
+    "note": "Nine-slot ROOF_PAINTING_IMAGE_POOL — remove /painting/roof-painting from PAINTING_SERVICES_PATHS when wired",
+    "slots": [
+      { "slot": 0, "role": "Hero", "filename": "painting-roof-painting-01.jpg", "shot": "medium" },
+      { "slot": 1, "role": "Triptych left", "filename": "painting-roof-painting-02.jpg", "shot": "close-up" },
+      { "slot": 2, "role": "Triptych centre", "filename": "painting-roof-painting-03.jpg", "shot": "medium" },
+      { "slot": 3, "role": "Triptych right", "filename": "painting-roof-painting-04.jpg", "shot": "close-up" },
+      { "slot": 4, "role": "Magazine editorial phase 01", "filename": "painting-roof-painting-05.jpg", "shot": "medium" },
+      { "slot": 5, "role": "Image pair left", "filename": "painting-roof-painting-06.jpg", "shot": "close-up" },
+      { "slot": 6, "role": "Image pair right", "filename": "painting-roof-painting-07.jpg", "shot": "close-up" },
+      { "slot": 7, "role": "Magazine editorial phase 02", "filename": "painting-roof-painting-08.jpg", "shot": "medium" },
+      { "slot": 8, "role": "Magazine editorial phase 03", "filename": "painting-roof-painting-09.jpg", "shot": "medium" }
+    ]
+  },
+  "images": [
+    {
+      "id": "roof-tile-home-hero",
+      "section": "Hero — split layout beside H1",
+      "display_order": 0,
+      "target_filename": "painting-roof-painting-01.jpg",
+      "target_path": "public/images/painting-roof-painting-01.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed heat-reflective tile roof coating on a modest Gauteng suburban home",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "rp01.png",
+      "prompt": "A professional, documentary-style 4:3 medium photograph of a completed heat-reflective tile roof coating on a modest single-storey Gauteng suburban home. Fresh pale terracotta-red or warm grey UV-stable acrylic on concrete tiles reads uniform under clear Highveld morning light, neat ridges and clean gutters, tidy lawn and empty driveway below. No workers on the roof, no ladders, no site clutter — recently handed over. Standard three-bedroom house scale. No people. Natural film grain, small-contractor roof portfolio photography. No text, water tank labels, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers on roof, ladder, wet paint, half-coated tiles, megamansion, readable labels, logos, CGI, drone, sunset glamour"
+    },
+    {
+      "id": "roof-tile-texture-close",
+      "section": "Triptych left",
+      "display_order": 1,
+      "target_filename": "painting-roof-painting-02.jpg",
+      "target_path": "public/images/painting-roof-painting-02.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of completed UV-stable acrylic coating on concrete roof tiles in Gauteng",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "rp02.png",
+      "prompt": "A professional, documentary-style 4:3 close-up photograph of completed UV-stable acrylic coating on concrete roof tiles in Gauteng. The frame fills with realistic tile profiles coated in uniform warm terracotta or pale grey film, subtle brush or roller texture in valleys, no cracked bedding visible. Raking daylight shows coating build without plastic gloss. No people or wet paint. Natural film grain, technical roof close-up realism. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, cracked tiles, wet coating, readable markings, logos, perfect CGI tiles, wide roof shot"
+    },
+    {
+      "id": "roof-sectional-title-medium",
+      "section": "Triptych centre",
+      "display_order": 2,
+      "target_filename": "painting-roof-painting-03.jpg",
+      "target_path": "public/images/painting-roof-painting-03.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed tile roof restoration on a modest Gauteng sectional-title apartment wing",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "rp03.png",
+      "prompt": "A clean, documentary-style 4:3 medium photograph of completed tile roof restoration and coating on one wing of a modest five-storey Gauteng sectional-title apartment block. Uniform refreshed tile colour across one roof plane, neat ridges, clean parapet edges, empty paved forecourt below. No workers, scaffold, or rope access in use. Mid-rise scale a specialist crew could phase, not a Sandton icon. Pale Highveld sky. No people. Natural film grain, professional handover photography. No text, building signage, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, Sandton mega tower, half-painted roof, readable signage, logos, CGI, drone aerial"
+    },
+    {
+      "id": "roof-ridge-close",
+      "section": "Triptych right",
+      "display_order": 3,
+      "target_filename": "painting-roof-painting-04.jpg",
+      "target_path": "public/images/painting-roof-painting-04.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of completed ridge and hip tile coating on a Gauteng tile roof",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "rp04.png",
+      "prompt": "A professional, documentary-style 4:3 close-up photograph of a completed ridge and hip tile coating on a Gauteng tile roof. Neat mortar bedding and matching UV-stable acrylic on ridge tiles, clean junctions at hip lines, no loose caps or cracked bedding. Clear pale sky behind the ridge line. No people or access equipment. Natural film grain, roof detail handover photography. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, loose ridge tiles, wet mortar, readable labels, logos, wide roof panorama, CGI"
+    },
+    {
+      "id": "roof-ibr-medium",
+      "section": "Magazine editorial phase 01 + spoke magazine seed",
+      "display_order": 4,
+      "target_filename": "painting-roof-painting-05.jpg",
+      "target_path": "public/images/painting-roof-painting-05.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed IBR metal roof coating on a small Gauteng industrial or workshop building",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "rp05.png",
+      "prompt": "A clean, documentary-style 4:3 medium photograph of a completed IBR corrugated metal roof coating on a small Gauteng workshop or light industrial building. Fresh mid-grey or off-white satin topcoat on corrugated sheets, neat ridge capping, rust zones arrested and invisible, empty gravel yard below. Modest single-bay shed scale, not an airport hangar. No workers on roof, no ladders in use. Flat overcast Highveld light. No people. Natural film grain, IBR roof handover realism. No text, company signage, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, airport hangar, rust streaks, wet paint, readable signage, logos, CGI, drone"
+    },
+    {
+      "id": "roof-ibr-close",
+      "section": "Image pair left",
+      "display_order": 5,
+      "target_filename": "painting-roof-painting-06.jpg",
+      "target_path": "public/images/painting-roof-painting-06.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of completed protective coating on IBR corrugated roof sheeting",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "rp06.png",
+      "prompt": "A professional, documentary-style 4:3 close-up photograph of completed protective coating on IBR corrugated roof sheeting in Gauteng. The frame fills with mid-grey satin film following corrugation profiles, realistic texture not mirror CGI metal, screw heads coated neatly with no rust bleed. Raking daylight. No people or tools. Natural film grain, metal roof detail photography. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, rust, wet coating, readable screw labels, logos, perfect CGI metal, wide shed shot"
+    },
+    {
+      "id": "roof-flat-reflective-close",
+      "section": "Image pair right",
+      "display_order": 6,
+      "target_filename": "painting-roof-painting-07.jpg",
+      "target_path": "public/images/painting-roof-painting-07.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of completed heat-reflective protection coating on a flat concrete roof",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "rp07.png",
+      "prompt": "A professional, documentary-style 4:3 close-up photograph of a completed heat-reflective protection coating on a flat concrete roof in Gauteng. Pale white or light grey reflective acrylic film with realistic roller texture on screed, neat edge at a low parapet kerb, no ponding water, no membrane rolls or wet coating. Raking daylight shows subtle sheen. No people. Natural film grain, flat-roof protection course detail. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, ponding water, wet membrane, torch-on rolls, readable labels, logos, CGI mirror roof"
+    },
+    {
+      "id": "roof-townhouse-row",
+      "section": "Magazine editorial phase 02 + spoke magazine seed",
+      "display_order": 7,
+      "target_filename": "painting-roof-painting-08.jpg",
+      "target_path": "public/images/painting-roof-painting-08.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed tile roof coatings on a row of Gauteng townhouses",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "rp08.png",
+      "prompt": "A clean, documentary-style 4:3 medium photograph of completed tile roof coatings on a short row of three Gauteng townhouses. Each roof plane shows uniform refreshed terracotta or grey tile coating, neat ridges, clean gutters, empty paved parking below. No workers or access equipment. Modest estate scale a small crew could deliver over a phased programme. Flat overcast light. No people. Natural film grain, townhouse roof handover photography. No text, estate signage, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, mega estate, half-painted roofs, readable signage, logos, CGI, drone"
+    },
+    {
+      "id": "roof-heat-reflective-home",
+      "section": "Magazine editorial phase 03 + spoke magazine seed",
+      "display_order": 8,
+      "target_filename": "painting-roof-painting-09.jpg",
+      "target_path": "public/images/painting-roof-painting-09.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed heat-reflective roof coating programme on a Gauteng residential property",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "rp09.png",
+      "prompt": "A professional, documentary-style 4:3 medium photograph of a completed heat-reflective roof coating programme on a modest Gauteng residential property. Pale reflective coating on concrete tiles contrasts subtly with off-white exterior walls below, tidy garden edges, empty driveway, clean handover. Single home or duplex scale, not a estate megaproject. Clear Highveld sky. No workers on roof, no ladders. No people. Natural film grain, residential roof programme completion realism. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers on roof, ladder, megamansion, half-coated tiles, readable labels, logos, CGI, sunset glamour, drone"
+    }
+  ],
+  "hub_slot_assignment": {
+    "note": "Recommended mapping for service-page-images.ts ROOF_PAINTING_IMAGE_POOL",
+    "magazine_seeds_in_spoke_to_hub_config": [
+      { "phase": 1, "filename": "painting-roof-painting-05.jpg" },
+      { "phase": 2, "filename": "painting-roof-painting-08.jpg" },
+      { "phase": 3, "filename": "painting-roof-painting-09.jpg" }
+    ]
+  },
+  "summary": {
+    "total_page_slots": 9,
+    "new_images_to_generate": 9,
+    "all_completed_work": true,
+    "clean_handover_sites": true,
+    "no_text_anywhere": true,
+    "shot_mix": {
+      "close_up": 4,
+      "medium": 5
+    },
+    "building_types": [
+      "suburban tile roof home",
+      "sectional-title apartment wing",
+      "small IBR workshop",
+      "flat concrete roof protection course",
+      "townhouse row"
+    ],
+    "generation_batches": {
+      "batch_1": [
+        "painting-roof-painting-01.jpg",
+        "painting-roof-painting-02.jpg",
+        "painting-roof-painting-03.jpg",
+        "painting-roof-painting-04.jpg",
+        "painting-roof-painting-05.jpg"
+      ],
+      "batch_2": [
+        "painting-roof-painting-06.jpg",
+        "painting-roof-painting-07.jpg",
+        "painting-roof-painting-08.jpg",
+        "painting-roof-painting-09.jpg"
+      ]
+    },
+    "notes": [
+      "All shots show completed handover — no workers on roofs, no wet coating, no half-finished planes.",
+      "Mix tile restoration, IBR metal, flat reflective protection, and sectional-title scale.",
+      "After generation: convert PNG → JPG (~88 quality), wire ROOF_PAINTING_IMAGE_POOL, remove /painting/roof-painting from PAINTING_SERVICES_PATHS, build, commit, push."
+    ]
+  }
+}

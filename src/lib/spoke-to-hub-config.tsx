@@ -278,16 +278,16 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
   ],
   "roof-painting": [
     {
-      src: "/images/waterproofing-flat-roof-01.jpg",
-      alt: "Flat or pitched roof assessment before coating or restoration in Gauteng",
+      src: "/images/painting-roof-painting-05.jpg",
+      alt: "Completed IBR metal roof coating on a small Gauteng industrial or workshop building",
     },
     {
-      src: "/images/painting-industrial-preparation.jpg",
-      alt: "Roof surface preparation, rust treatment, or membrane-compatible primer application",
+      src: "/images/painting-roof-painting-08.jpg",
+      alt: "Completed tile roof coatings on a row of Gauteng townhouses",
     },
     {
-      src: "/images/waterproofing-flat-roof-03.jpg",
-      alt: "Completed heat-reflective or protective roof coating programme",
+      src: "/images/painting-roof-painting-09.jpg",
+      alt: "Completed heat-reflective roof coating programme on a Gauteng residential property",
     },
   ],
   "stucco-wall-coatings": [
@@ -362,16 +362,16 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
   ],
   "external-walls": [
     {
-      src: "/images/painting-body-corporate-sandton.jpg",
-      alt: "External wall painting on a Gauteng sectional-title or commercial facade",
+      src: "/images/painting-external-walls-05.jpg",
+      alt: "Completed boundary wall repaint with coated cap in a Gauteng estate",
     },
     {
-      src: "/images/painting-body-corporate-estate.jpg",
-      alt: "Estate external wall coating and boundary wall preparation",
+      src: "/images/painting-external-walls-08.jpg",
+      alt: "Completed exterior wall coating on a small Gauteng neighbourhood retail building",
     },
     {
-      src: "/images/painting-body-corporate-qa.jpg",
-      alt: "External wall coating quality checks and handover documentation",
+      src: "/images/painting-external-walls-09.jpg",
+      alt: "Completed exterior wall repaint on a modest Gauteng sectional-title apartment wing",
     },
   ],
   "warehouse-painting": [
