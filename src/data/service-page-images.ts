@@ -75,10 +75,9 @@ const HIGH_VOLUME_COMMERCIAL_PAINTING_PATHS = new Set([
 
 const WAREHOUSE_PAINTING_PATHS = new Set(["/painting/warehouse-painting"]);
 
-const PAINTING_SERVICES_PATHS = new Set([
-  "/painting-services",
-  "/painting/road-marking",
-]);
+const ROAD_MARKING_PATHS = new Set(["/painting/road-marking"]);
+
+const PAINTING_SERVICES_PATHS = new Set(["/painting-services"]);
 
 const DAMP_PROOFING_PATHS = new Set([
   "/damp-proofing-services",
@@ -1207,6 +1206,46 @@ const WAREHOUSE_PAINTING_IMAGE_POOL: readonly ServicePageImage[] = [
   },
 ];
 
+/** Dedicated nine-slot pool for the road marking spoke. */
+const ROAD_MARKING_IMAGE_POOL: readonly ServicePageImage[] = [
+  {
+    src: "/images/painting-road-marking-01.jpg",
+    alt: "Completed parking bay line marking at a small Gauteng sectional-title complex",
+  },
+  {
+    src: "/images/painting-road-marking-02.jpg",
+    alt: "Close-up of a completed white parking line on asphalt at a Gauteng complex",
+  },
+  {
+    src: "/images/painting-road-marking-03.jpg",
+    alt: "Completed speed hump markings at a Gauteng estate or complex entrance",
+  },
+  {
+    src: "/images/painting-road-marking-04.jpg",
+    alt: "Close-up of completed yellow markings on a speed hump at a complex entrance",
+  },
+  {
+    src: "/images/painting-road-marking-05.jpg",
+    alt: "Completed visitor parking line marking at a small Gauteng townhouse cluster",
+  },
+  {
+    src: "/images/painting-road-marking-06.jpg",
+    alt: "Close-up of a completed yellow no-parking edge line at a complex kerb",
+  },
+  {
+    src: "/images/painting-road-marking-07.jpg",
+    alt: "Close-up of retro-reflective beads on a completed white line at a small complex basement ramp",
+  },
+  {
+    src: "/images/painting-road-marking-08.jpg",
+    alt: "Completed entrance road line marking at a modest Gauteng residential estate",
+  },
+  {
+    src: "/images/painting-road-marking-09.jpg",
+    alt: "Completed parking lines in a compact sectional-title basement car park in Gauteng",
+  },
+];
+
 /** Shared nine-slot pool for the painting services hub and spokes. */
 const PAINTING_SERVICES_IMAGE_POOL: readonly ServicePageImage[] = [
   {
@@ -1510,6 +1549,10 @@ export function getServicePageImages(
 
   if (WAREHOUSE_PAINTING_PATHS.has(path)) {
     return [...WAREHOUSE_PAINTING_IMAGE_POOL];
+  }
+
+  if (ROAD_MARKING_PATHS.has(path)) {
+    return [...ROAD_MARKING_IMAGE_POOL];
   }
 
   if (WATERPROOFING_PATHS.has(path)) {

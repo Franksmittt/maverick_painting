@@ -4,43 +4,43 @@
   "page": "Road marking spoke",
   "path": "/painting/road-marking",
   "purpose": "AI image generation prompts for all nine photography slots on the road and yard line marking spoke. Generate every image listed below, then supply files to be placed in public/images/ using the exact target_filename values. After generation, add ROAD_MARKING_IMAGE_POOL in service-page-images.ts, remove /painting/road-marking from PAINTING_SERVICES_PATHS, and update road-marking SPOKE_MAGAZINE_IMAGES in spoke-to-hub-config.tsx.",
-  "version": "1.0",
+  "version": "1.1",
   "date": "2026-06-09",
   "style_guidelines": {
     "mandatory_aesthetic": [
-      "professional documentary-style line marking and traffic demarcation photography",
+      "professional documentary-style small-scale line marking photography",
       "clean completed-project handover aesthetic",
       "candid but crisp realism — excellent small-contractor portfolio quality",
       "authentic natural film grain",
       "grounded Gauteng, South Africa context"
     ],
     "lighting": [
-      "Prefer clear daylight on outdoor yards and car parks, or cool fluorescent in basement decks",
+      "Prefer clear daylight on modest estate roads and small car parks, or cool fluorescent in compact basement decks",
       "Avoid cinematic HDR and oversaturated stock-photo looks"
     ],
     "materials": [
-      "Describe micro-textures explicitly: crisp white and yellow traffic acrylic edges, MMA cold plastic film with subtle glass bead sparkle, neat bay line corners, diagonal hatch zones, pedestrian walkway stripes, HGV route lines on concrete yard",
-      "Show completed marking outcomes — sharp edges, full cure, surfaces swept clean"
+      "Describe micro-textures explicitly: crisp white and yellow traffic acrylic on suburban asphalt, fresh speed hump chevrons, neat visitor bay rectangles, estate entrance edge lines, retro-reflective beads on a short ramp lip",
+      "Show completed marking on surfaces a small two- or three-person crew would handle in a day"
     ],
-    "scale_policy": "Small-team, modest-site realism only. Sectional-title car parks, small office park basements, modest warehouse yards, short estate access roads — not airport aprons, not mega-mall parking fields, not highway interchanges.",
-    "shot_policy": "Mix close-up line detail shots and medium yard or car park shots. Close-ups show line edges, bead texture, and junction geometry. Medium shots show one completed layout zone — empty of traffic where possible.",
-    "marking_text_policy": "Lines, arrows, hatch patterns, and geometric symbols only — absolutely no readable words, letters, numbers, or stencilled text. No FIRE LANE, STOP, RESERVED, bay numbers, or estate name stencils. Plain white or yellow lines and arrows without lettering. Disabled bays shown as yellow box hatch layout only — no wheelchair symbols with text.",
+    "scale_policy": "Small-team, residential-complex realism ONLY. Sectional-title car parks with six to twenty bays, townhouse cluster visitor parking, single-lane estate entrance roads, one or two speed humps, compact basement decks — NOT warehouse yards, NOT office park megafields, NOT airport aprons, NOT distribution hubs, NOT highway markings.",
+    "shot_policy": "Mix close-up line and speed-hump detail shots and medium shots of one small complex zone. Close-ups show line edges, hump markings, and bead texture. Medium shots show one modest parking row, one estate entrance, or one speed hump in context.",
+    "marking_text_policy": "Lines, arrows, hatch patterns, chevrons, and geometric symbols only — absolutely no readable words, letters, numbers, or stencilled text. No FIRE LANE, STOP, RESERVED, bay numbers, or estate name boards. Disabled bays as yellow box hatch only — no wheelchair symbols with text.",
     "people_policy": "100% people-free. No workers, faces, hands, silhouettes, or moving vehicles.",
     "completed_vs_process": "100% completed outcomes. No wet paint, masking tape, line-marking machines in use, or half-painted lines.",
     "location_cues": [
-      "Gauteng office park car parks",
-      "sectional-title basement decks",
-      "warehouse distribution yards",
-      "estate access roads",
-      "retro-reflective beads on ramp lanes"
+      "small sectional-title complex car parks",
+      "townhouse cluster visitor bays",
+      "estate entrance speed humps",
+      "compact basement parking decks",
+      "single-lane complex access roads in Centurion, Alberton, or Benoni suburbs"
     ]
   },
-  "global_negative_prompt": "people, workers, faces, hands, silhouettes, moving cars, readable text, letters, numbers, words, stencilled words, FIRE LANE text, STOP text, bay numbers, estate signage, logos, branding, watermarks, wet paint, line marking machine in use, masking tape, half-painted lines, airport apron, mega mall parking, highway interchange, plastic 3D render, CGI, Unreal Engine, oversaturated colours, drone aerial, sunset glamour",
+  "global_negative_prompt": "people, workers, faces, hands, silhouettes, moving cars, warehouse yard, distribution hub, office park megafield, airport apron, highway, mega mall parking, readable text, letters, numbers, words, stencilled words, bay numbers, estate name boards, logos, branding, watermarks, wet paint, line marking machine in use, masking tape, half-painted lines, forklifts, HGV routes, plastic 3D render, CGI, Unreal Engine, oversaturated colours, drone aerial, sunset glamour",
   "output_specs": {
     "default_format": "jpg",
     "color_profile": "sRGB",
     "quality": "high",
-    "notes": "All slots use 4:3 aspect ratio. Filename must match target_filename exactly (lowercase, hyphens). Replaces gallery and industrial placeholder images on this spoke once integrated."
+    "notes": "All slots use 4:3 aspect ratio. v1.1 — small complex and estate scale only, not commercial megasites."
   },
   "page_slot_map": {
     "note": "Nine-slot ROAD_MARKING_IMAGE_POOL — remove /painting/road-marking from PAINTING_SERVICES_PATHS when wired",
@@ -58,7 +58,7 @@
   },
   "images": [
     {
-      "id": "road-carpark-hero",
+      "id": "road-complex-carpark-hero",
       "section": "Hero — split layout beside H1",
       "display_order": 0,
       "target_filename": "painting-road-marking-01.jpg",
@@ -66,12 +66,12 @@
       "aspect_ratio": "4:3",
       "includes_people": false,
       "scene_type": "completed_work",
-      "alt_text": "Completed parking bay line marking in a modest Gauteng office park car park",
+      "alt_text": "Completed parking bay line marking at a small Gauteng sectional-title complex",
       "weight": 1,
       "batch": 1,
       "user_file_hint": "rm01.png",
-      "prompt": "A professional, documentary-style 4:3 medium photograph of completed parking bay line marking in a modest Gauteng office park car park. Crisp white bay lines on grey asphalt form neat rectangles without numbers or words, yellow walkway stripe at one edge, empty bays with no vehicles, pale Highveld sky. Small car park scale of roughly thirty bays, not a mega mall field. No workers or wet paint. Natural film grain, car park handover photography. No text, stencilled words, signage, logos, or branding anywhere in frame.",
-      "negative_prompt": "people, workers, cars, bay numbers, stencilled words, mega mall parking, wet paint, line marking crew, logos, CGI, drone"
+      "prompt": "A professional, documentary-style 4:3 medium photograph of completed parking bay line marking at a small Gauteng sectional-title complex. Eight to twelve crisp white bay rectangles on modest grey asphalt beside low brick townhouses or a small block of flats, one yellow walkway stripe, empty bays, no vehicles. Scale feels like a single compact complex a small crew marks in one day — not an office park or mall. Pale Highveld sky. No workers or wet paint. Natural film grain, suburban complex handover photography. No text, bay numbers, estate signage, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, cars, mega car park, warehouse yard, bay numbers, stencilled words, logos, CGI, drone"
     },
     {
       "id": "road-line-edge-close",
@@ -82,15 +82,15 @@
       "aspect_ratio": "4:3",
       "includes_people": false,
       "scene_type": "completed_work",
-      "alt_text": "Close-up of a completed white traffic line edge on Gauteng asphalt",
+      "alt_text": "Close-up of a completed white parking line on asphalt at a Gauteng complex",
       "weight": 1,
       "batch": 1,
       "user_file_hint": "rm02.png",
-      "prompt": "A professional, documentary-style 4:3 close-up photograph of a completed white traffic line edge on Gauteng asphalt. The frame shows a sharp 100mm-class line with realistic traffic acrylic texture, clean bond to grey asphalt, faint tyre scuff distant from the fresh edge. Raking daylight. No people, tools, or wet paint. Natural film grain, line marking detail realism. No text, letters, logos, or branding anywhere in frame.",
-      "negative_prompt": "people, workers, fuzzy edge, wet paint, readable markings, logos, wide car park shot, CGI"
+      "prompt": "A professional, documentary-style 4:3 close-up photograph of a completed white parking line on asphalt at a small Gauteng residential complex. Sharp traffic acrylic edge with realistic texture, clean bond to suburban asphalt, kerb or garden edge visible at frame edge. Raking daylight. No people, tools, or wet paint. Natural film grain, small-scale line marking detail. No text, letters, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, fuzzy edge, wet paint, readable markings, logos, wide megafield, CGI"
     },
     {
-      "id": "road-warehouse-yard",
+      "id": "road-speed-hump-medium",
       "section": "Triptych centre",
       "display_order": 2,
       "target_filename": "painting-road-marking-03.jpg",
@@ -98,15 +98,15 @@
       "aspect_ratio": "4:3",
       "includes_people": false,
       "scene_type": "completed_work",
-      "alt_text": "Completed HGV route and walkway line marking in an empty Gauteng warehouse yard",
+      "alt_text": "Completed speed hump markings at a Gauteng estate or complex entrance",
       "weight": 1,
       "batch": 1,
       "user_file_hint": "rm03.png",
-      "prompt": "A clean, documentary-style 4:3 medium photograph of completed HGV route and pedestrian walkway line marking in an empty Gauteng warehouse distribution yard. White and yellow lines define forklift routes and walkway stripes on swept concrete, diagonal hatch at a loading zone corner — geometric lines only, no stencilled words. Modest single-yard scale, no trucks or workers. Flat overcast light. No people. Natural film grain, yard demarcation handover photography. No text, company signage, logos, or branding anywhere in frame.",
-      "negative_prompt": "people, workers, trucks, forklifts, stencilled words, mega yard, wet paint, logos, CGI, drone"
+      "prompt": "A clean, documentary-style 4:3 medium photograph of completed speed hump markings at a modest Gauteng estate or sectional-title complex entrance. One asphalt speed hump with fresh yellow and white chevron or transverse bar markings, neat edge lines on the narrow access road, low boundary wall or simple gate posts without readable signs, empty road. Single-lane entrance scale — not a highway or business park boulevard. No workers or cars. Natural film grain, estate entrance handover realism. No text, estate name boards, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, cars, highway, business park boulevard, readable estate sign, wet paint, logos, CGI, drone"
     },
     {
-      "id": "road-mma-bead-close",
+      "id": "road-speed-hump-close",
       "section": "Triptych right",
       "display_order": 3,
       "target_filename": "painting-road-marking-04.jpg",
@@ -114,15 +114,15 @@
       "aspect_ratio": "4:3",
       "includes_people": false,
       "scene_type": "completed_work",
-      "alt_text": "Close-up of completed MMA cold plastic line marking with retro-reflective glass beads",
+      "alt_text": "Close-up of completed yellow markings on a speed hump at a complex entrance",
       "weight": 1,
       "batch": 1,
       "user_file_hint": "rm04.png",
-      "prompt": "A professional, documentary-style 4:3 close-up photograph of completed MMA cold plastic line marking with retro-reflective glass beads on Gauteng asphalt or concrete. Yellow or white MMA film shows subtle bead sparkle under raking light, crisp raised profile edge, realistic texture not CGI gloss. No people or wet material. Natural film grain, MMA line detail photography. No text, logos, or branding anywhere in frame.",
-      "negative_prompt": "people, workers, wet MMA, readable labels, logos, mirror CGI line, wide road shot"
+      "prompt": "A professional, documentary-style 4:3 close-up photograph of completed yellow transverse bar or chevron markings on a speed hump at a Gauteng complex entrance. Crisp traffic acrylic on asphalt hump crest, realistic texture, raking daylight. Kerb or painted edge line visible. No people or wet paint. Natural film grain, speed hump detail photography. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, wet paint, readable stencils, logos, wide highway shot, CGI"
     },
     {
-      "id": "road-disabled-bay",
+      "id": "road-visitor-bays",
       "section": "Magazine editorial phase 01 + spoke magazine seed",
       "display_order": 4,
       "target_filename": "painting-road-marking-05.jpg",
@@ -130,15 +130,15 @@
       "aspect_ratio": "4:3",
       "includes_people": false,
       "scene_type": "completed_work",
-      "alt_text": "Completed disabled parking bay line layout in a Gauteng basement car park",
+      "alt_text": "Completed visitor parking line marking at a small Gauteng townhouse cluster",
       "weight": 1,
       "batch": 1,
       "user_file_hint": "rm05.png",
-      "prompt": "A clean, documentary-style 4:3 medium photograph of a completed disabled parking bay line layout in a modest Gauteng basement car park. Yellow box outline and diagonal hatch pattern on grey deck coating mark the bay using geometric lines only — no wheelchair symbols with text, no stencilled words, no bay numbers. Empty bay, cool fluorescent light, swept deck. Small sectional-title basement scale. No people or vehicles. Natural film grain, basement marking handover realism. No text, signage, logos, or branding anywhere in frame.",
-      "negative_prompt": "people, workers, cars, wheelchair text, bay numbers, stencilled words, fire signs, logos, CGI basement"
+      "prompt": "A clean, documentary-style 4:3 medium photograph of completed visitor parking line marking at a small Gauteng townhouse cluster. Four to six white visitor bays on compact asphalt in front of a short row of double-storey townhouses, yellow edge line at kerb, empty spaces, tidy landscaping. Modest residential scale a small marking crew completes in a morning. No workers or vehicles. Natural film grain, townhouse cluster handover photography. No text, unit numbers, estate signage, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, cars, mega parking, office park, readable numbers, logos, CGI, drone"
     },
     {
-      "id": "road-hatch-junction-close",
+      "id": "road-yellow-line-close",
       "section": "Image pair left",
       "display_order": 5,
       "target_filename": "painting-road-marking-06.jpg",
@@ -146,15 +146,15 @@
       "aspect_ratio": "4:3",
       "includes_people": false,
       "scene_type": "completed_work",
-      "alt_text": "Close-up of completed diagonal hatch line marking at a loading zone corner",
+      "alt_text": "Close-up of a completed yellow no-parking edge line at a complex kerb",
       "weight": 1,
       "batch": 2,
       "user_file_hint": "rm06.png",
-      "prompt": "A professional, documentary-style 4:3 close-up photograph of completed diagonal yellow hatch line marking at a loading zone corner on Gauteng concrete or asphalt. Neat parallel hatch stripes meet a solid white border line at a crisp junction, realistic traffic paint texture, no words or stencils. Raking daylight. No people. Natural film grain, hatch detail photography. No text, logos, or branding anywhere in frame.",
-      "negative_prompt": "people, workers, wavy lines, wet paint, readable stencils, logos, wide yard shot"
+      "prompt": "A professional, documentary-style 4:3 close-up photograph of a completed yellow edge or no-parking line along a kerb at a small Gauteng residential complex. Crisp yellow traffic acrylic against grey asphalt and concrete kerb, realistic paint build, no words or stencils. Raking daylight. No people. Natural film grain, kerb-line detail. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, wet paint, readable stencils, logos, wide commercial yard, CGI"
     },
     {
-      "id": "road-bead-white-line",
+      "id": "road-bead-ramp-close",
       "section": "Image pair right",
       "display_order": 6,
       "target_filename": "painting-road-marking-07.jpg",
@@ -162,15 +162,15 @@
       "aspect_ratio": "4:3",
       "includes_people": false,
       "scene_type": "completed_work",
-      "alt_text": "Close-up of retro-reflective glass beads on a completed white ramp lane line",
+      "alt_text": "Close-up of retro-reflective beads on a completed white line at a small complex basement ramp",
       "weight": 1,
       "batch": 2,
       "user_file_hint": "rm07.png",
-      "prompt": "A professional, documentary-style 4:3 close-up photograph of retro-reflective glass beads embedded in a completed white ramp lane line on a Gauteng parking structure deck. Subtle bead sparkle visible under angled light, crisp line edge against mid-grey deck coating, realistic traffic paint build. No people or wet paint. Natural film grain, reflective line detail. No text, logos, or branding anywhere in frame.",
-      "negative_prompt": "people, workers, wet paint, readable deck labels, logos, CGI mirror deck"
+      "prompt": "A professional, documentary-style 4:3 close-up photograph of retro-reflective glass beads in a completed white line at the lip of a small sectional-title basement ramp in Gauteng. Subtle bead sparkle on traffic paint against mid-grey deck or asphalt, crisp edge, compact ramp scale not a multi-level mall garage. No people or wet paint. Natural film grain, reflective line detail. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, mega basement garage, wet paint, readable labels, logos, CGI"
     },
     {
-      "id": "road-estate-access",
+      "id": "road-estate-entrance",
       "section": "Magazine editorial phase 02 + spoke magazine seed",
       "display_order": 7,
       "target_filename": "painting-road-marking-08.jpg",
@@ -178,15 +178,15 @@
       "aspect_ratio": "4:3",
       "includes_people": false,
       "scene_type": "completed_work",
-      "alt_text": "Completed edge lines and chevron markings on a modest Gauteng estate access road",
+      "alt_text": "Completed entrance road line marking at a modest Gauteng residential estate",
       "weight": 1,
       "batch": 2,
       "user_file_hint": "rm08.png",
-      "prompt": "A clean, documentary-style 4:3 medium photograph of completed edge lines and yellow chevron-style markings on a modest Gauteng residential estate access road. White edge lines and geometric yellow chevron patterns on asphalt guide traffic — shapes only, no words or speed limit numbers. Empty road, neat kerb, pale sky. Short estate drive scale, not a highway. No workers, cars, or pedestrians. Natural film grain, estate road handover photography. No text, estate name boards, logos, or branding anywhere in frame.",
-      "negative_prompt": "people, workers, cars, speed limit numbers, estate name sign, highway, wet paint, logos, CGI, drone"
+      "prompt": "A clean, documentary-style 4:3 medium photograph of completed entrance road line marking at a modest Gauteng residential estate. White centre and edge lines on a narrow single-lane tar road leading to a simple gate structure without readable name boards, one speed hump visible ahead with fresh markings, empty road, suburban trees and pale sky. Short estate drive scale — not a highway or office campus. No workers, cars, or pedestrians. Natural film grain, estate entrance completion realism. No text, signage, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, cars, highway, office campus, readable gate sign, wet paint, logos, CGI, drone"
     },
     {
-      "id": "road-office-park-empty",
+      "id": "road-basement-small",
       "section": "Magazine editorial phase 03 + spoke magazine seed",
       "display_order": 8,
       "target_filename": "painting-road-marking-09.jpg",
@@ -194,12 +194,12 @@
       "aspect_ratio": "4:3",
       "includes_people": false,
       "scene_type": "completed_work",
-      "alt_text": "Completed SANS-style parking and walkway marking in an empty Gauteng commercial car park",
+      "alt_text": "Completed parking lines in a compact sectional-title basement car park in Gauteng",
       "weight": 1,
       "batch": 2,
       "user_file_hint": "rm09.png",
-      "prompt": "A professional, documentary-style 4:3 medium photograph of completed parking and walkway marking in an empty Gauteng commercial car park. White bay rectangles, yellow pedestrian walkway stripe, and directional arrow graphics on asphalt — arrows as shapes only without words, no bay numbers, empty bays, swept surface. Modest office park scale in Centurion or Midrand feel. No workers or vehicles. Natural film grain, commercial car park completion realism. No text, stencilled words, logos, or branding anywhere in frame.",
-      "negative_prompt": "people, workers, cars, bay numbers, stencilled FIRE LANE, mega mall, wet paint, logos, CGI, drone"
+      "prompt": "A professional, documentary-style 4:3 medium photograph of completed parking lines in a compact sectional-title basement car park in Gauteng. Six to ten white bays on grey deck coating, yellow walkway stripe, low ceiling, fluorescent light, empty spaces — small double-storey complex basement not a shopping centre garage. No workers or vehicles. Natural film grain, modest basement handover photography. No text, bay numbers, fire signs, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, cars, mega mall basement, bay numbers, fire exit text, wet paint, logos, CGI"
     }
   ],
   "hub_slot_assignment": {
@@ -214,6 +214,7 @@
     "total_page_slots": 9,
     "new_images_to_generate": 9,
     "all_completed_work": true,
+    "small_complex_scale_only": true,
     "geometric_lines_only": true,
     "no_text_anywhere": true,
     "shot_mix": {
@@ -221,10 +222,10 @@
       "medium": 5
     },
     "site_types": [
-      "office park car park",
-      "warehouse distribution yard",
-      "basement disabled bay",
-      "estate access road"
+      "sectional-title complex car park",
+      "townhouse visitor bays",
+      "estate entrance speed hump",
+      "compact basement deck"
     ],
     "generation_batches": {
       "batch_1": [
@@ -242,9 +243,9 @@
       ]
     },
     "notes": [
-      "Critical: lines, arrows, and hatch only — no readable words, numbers, or stencilled legends.",
-      "Last painting spoke on shared PAINTING_SERVICES_IMAGE_POOL — completing this finishes the painting spoke programme.",
-      "After generation: convert PNG → JPG (~88 quality), wire pool, remove from PAINTING_SERVICES_PATHS, build, commit, push."
+      "v1.1 replaces warehouse-yard and office-park megafield scale with small complexes, estates, and speed humps.",
+      "Lines, chevrons, and hatch only — no readable words or bay numbers.",
+      "Discard v1.0 images if too commercial — regenerate all nine at modest residential scale."
     ]
   }
 }

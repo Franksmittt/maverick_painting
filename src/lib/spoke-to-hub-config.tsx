@@ -404,16 +404,16 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
   ],
   "road-marking": [
     {
-      src: "/images/painting-industrial-preparation.jpg",
-      alt: "Yard or car park surface preparation before line marking application",
+      src: "/images/painting-road-marking-05.jpg",
+      alt: "Completed visitor parking line marking at a small Gauteng townhouse cluster",
     },
     {
-      src: "/images/coatings-industrial-epoxy-completed-floor.jpg",
-      alt: "Traffic-rated line marking and demarcation on industrial or commercial paving",
+      src: "/images/painting-road-marking-08.jpg",
+      alt: "Completed entrance road line marking at a modest Gauteng residential estate",
     },
     {
-      src: "/images/painting-industrial-coatings.jpg",
-      alt: "Completed SANS-aligned parking bay and yard marking programme",
+      src: "/images/painting-road-marking-09.jpg",
+      alt: "Completed parking lines in a compact sectional-title basement car park in Gauteng",
     },
   ],
 };

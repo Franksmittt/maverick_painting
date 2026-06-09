@@ -82,7 +82,7 @@ const SPOKE_IMAGES: Record<string, string> = {
   "/painting/warehouse-painting": "/images/painting-warehouse-01.jpg",
   "/painting/parking-garage-painting": "/images/painting-parking-garage-01.jpg",
   "/painting/stucco-wall-coatings": "/images/painting-stucco-01.jpg",
-  "/painting/road-marking": "/images/painting-industrial-06.jpg",
+  "/painting/road-marking": "/images/painting-road-marking-01.jpg",
 };
 
 const SPOKE_DESCRIPTIONS: Record<string, string> = {
