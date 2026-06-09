@@ -32,7 +32,7 @@ const OG_BY_PATH: Record<string, string> = {
   "/painting/parking-garage-painting": "/images/painting-parking-garage-01.jpg",
   "/painting/interior-painting": "/images/painting-interior-01.jpg",
   "/painting/high-volume-commercial-painting": "/images/painting-high-volume-commercial-01.jpg",
-  "/painting/warehouse-painting": "/images/painting-industrial-preparation.jpg",
+  "/painting/warehouse-painting": "/images/painting-warehouse-01.jpg",
   "/painting/internal-walls": "/images/painting-internal-walls-01.jpg",
   "/painting/external-walls": "/images/painting-external-walls-01.jpg",
   "/painting/road-marking": "/images/gallery/maverick-gallery-08.jpg",

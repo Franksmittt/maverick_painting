@@ -376,16 +376,16 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
   ],
   "warehouse-painting": [
     {
-      src: "/images/painting-industrial-preparation.jpg",
-      alt: "Warehouse interior preparation for coatings and light-reflective finishes",
+      src: "/images/painting-warehouse-05.jpg",
+      alt: "Completed interior coatings in an empty deep storage aisle in a Gauteng warehouse",
     },
     {
-      src: "/images/painting-industrial-coatings.jpg",
-      alt: "Industrial warehouse wall and steel coating application in Gauteng",
+      src: "/images/painting-warehouse-08.jpg",
+      alt: "Completed exterior warehouse wall and cladding coatings at a Gauteng logistics building",
     },
     {
-      src: "/images/coatings-industrial-epoxy-completed-floor.jpg",
-      alt: "Warehouse programme coordinating walls, steel, and resin floor handover",
+      src: "/images/painting-warehouse-09.jpg",
+      alt: "Completed warehouse interior and roller door surround coatings at a Gauteng logistics unit",
     },
   ],
   "parking-garage-painting": [

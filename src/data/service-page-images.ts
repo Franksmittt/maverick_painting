@@ -73,9 +73,10 @@ const HIGH_VOLUME_COMMERCIAL_PAINTING_PATHS = new Set([
   "/painting/high-volume-commercial-painting",
 ]);
 
+const WAREHOUSE_PAINTING_PATHS = new Set(["/painting/warehouse-painting"]);
+
 const PAINTING_SERVICES_PATHS = new Set([
   "/painting-services",
-  "/painting/warehouse-painting",
   "/painting/road-marking",
 ]);
 
@@ -1166,6 +1167,46 @@ const HIGH_VOLUME_COMMERCIAL_PAINTING_IMAGE_POOL: readonly ServicePageImage[] = 
   },
 ];
 
+/** Dedicated nine-slot pool for the warehouse painting spoke. */
+const WAREHOUSE_PAINTING_IMAGE_POOL: readonly ServicePageImage[] = [
+  {
+    src: "/images/painting-warehouse-01.jpg",
+    alt: "Completed light-reflective interior wall coatings in an empty Gauteng warehouse bay",
+  },
+  {
+    src: "/images/painting-warehouse-02.jpg",
+    alt: "Close-up of completed high-build acrylic on warehouse blockwork walls in Gauteng",
+  },
+  {
+    src: "/images/painting-warehouse-03.jpg",
+    alt: "Completed DTM coating on corrugated warehouse cladding in Gauteng",
+  },
+  {
+    src: "/images/painting-warehouse-04.jpg",
+    alt: "Close-up of completed protective coating on warehouse portal frame steel",
+  },
+  {
+    src: "/images/painting-warehouse-05.jpg",
+    alt: "Completed interior coatings in an empty deep storage aisle in a Gauteng warehouse",
+  },
+  {
+    src: "/images/painting-warehouse-06.jpg",
+    alt: "Close-up of completed DTM coating on corrugated iron warehouse cladding",
+  },
+  {
+    src: "/images/painting-warehouse-07.jpg",
+    alt: "Close-up of completed coating junction between warehouse block wall and steel column",
+  },
+  {
+    src: "/images/painting-warehouse-08.jpg",
+    alt: "Completed exterior warehouse wall and cladding coatings at a Gauteng logistics building",
+  },
+  {
+    src: "/images/painting-warehouse-09.jpg",
+    alt: "Completed warehouse interior and roller door surround coatings at a Gauteng logistics unit",
+  },
+];
+
 /** Shared nine-slot pool for the painting services hub and spokes. */
 const PAINTING_SERVICES_IMAGE_POOL: readonly ServicePageImage[] = [
   {
@@ -1465,6 +1506,10 @@ export function getServicePageImages(
 
   if (HIGH_VOLUME_COMMERCIAL_PAINTING_PATHS.has(path)) {
     return [...HIGH_VOLUME_COMMERCIAL_PAINTING_IMAGE_POOL];
+  }
+
+  if (WAREHOUSE_PAINTING_PATHS.has(path)) {
+    return [...WAREHOUSE_PAINTING_IMAGE_POOL];
   }
 
   if (WATERPROOFING_PATHS.has(path)) {
