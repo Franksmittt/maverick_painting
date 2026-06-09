@@ -63,10 +63,11 @@ const PARKING_GARAGE_PAINTING_PATHS = new Set(["/painting/parking-garage-paintin
 
 const INTERIOR_PAINTING_PATHS = new Set(["/painting/interior-painting"]);
 
+const INTERNAL_WALLS_PATHS = new Set(["/painting/internal-walls"]);
+
 const PAINTING_SERVICES_PATHS = new Set([
   "/painting-services",
   "/painting/roof-painting",
-  "/painting/internal-walls",
   "/painting/external-walls",
   "/painting/warehouse-painting",
   "/painting/high-volume-commercial-painting",
@@ -1000,6 +1001,46 @@ const INTERIOR_PAINTING_IMAGE_POOL: readonly ServicePageImage[] = [
   },
 ];
 
+/** Dedicated nine-slot pool for the internal walls spoke. */
+const INTERNAL_WALLS_IMAGE_POOL: readonly ServicePageImage[] = [
+  {
+    src: "/images/painting-internal-walls-01.jpg",
+    alt: "Completed internal wall skim and repaint in a vacant Gauteng office suite",
+  },
+  {
+    src: "/images/painting-internal-walls-02.jpg",
+    alt: "Close-up of completed skimmed and painted internal wall surface in Gauteng",
+  },
+  {
+    src: "/images/painting-internal-walls-03.jpg",
+    alt: "Completed internal wall coating in a vacant Gauteng retail white-box shell",
+  },
+  {
+    src: "/images/painting-internal-walls-04.jpg",
+    alt: "Close-up of completed hairline crack repair and repaint on an internal wall",
+  },
+  {
+    src: "/images/painting-internal-walls-05.jpg",
+    alt: "Completed feature accent wall in a vacant Gauteng home interior",
+  },
+  {
+    src: "/images/painting-internal-walls-06.jpg",
+    alt: "Close-up of completed stain-blocked and coated internal wall section in Gauteng",
+  },
+  {
+    src: "/images/painting-internal-walls-07.jpg",
+    alt: "Close-up of completed internal wall and door architrave coating junction",
+  },
+  {
+    src: "/images/painting-internal-walls-08.jpg",
+    alt: "Completed internal wall repaint in a vacant Gauteng office meeting room",
+  },
+  {
+    src: "/images/painting-internal-walls-09.jpg",
+    alt: "Completed internal wall coating in a vacant Gauteng townhouse room",
+  },
+];
+
 /** Shared nine-slot pool for the painting services hub and spokes. */
 const PAINTING_SERVICES_IMAGE_POOL: readonly ServicePageImage[] = [
   {
@@ -1283,6 +1324,10 @@ export function getServicePageImages(
 
   if (INTERIOR_PAINTING_PATHS.has(path)) {
     return [...INTERIOR_PAINTING_IMAGE_POOL];
+  }
+
+  if (INTERNAL_WALLS_PATHS.has(path)) {
+    return [...INTERNAL_WALLS_IMAGE_POOL];
   }
 
   if (WATERPROOFING_PATHS.has(path)) {

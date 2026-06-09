@@ -348,16 +348,16 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
   ],
   "internal-walls": [
     {
-      src: "/images/painting-commercial-campus.jpg",
-      alt: "Internal wall preparation and painting in an occupied commercial interior",
+      src: "/images/painting-internal-walls-05.jpg",
+      alt: "Completed feature accent wall in a vacant Gauteng home interior",
     },
     {
-      src: "/images/painting-commercial-healthcare.jpg",
-      alt: "Low-odour internal wall coating work with containment and protection",
+      src: "/images/painting-internal-walls-08.jpg",
+      alt: "Completed internal wall repaint in a vacant Gauteng office meeting room",
     },
     {
-      src: "/images/painting-commercial-retail.jpg",
-      alt: "Completed internal wall feature finish in a retail or office interior",
+      src: "/images/painting-internal-walls-09.jpg",
+      alt: "Completed internal wall coating in a vacant Gauteng townhouse room",
     },
   ],
   "external-walls": [

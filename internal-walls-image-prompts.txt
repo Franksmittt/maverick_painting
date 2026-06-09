@@ -4,7 +4,7 @@
   "page": "Internal walls spoke",
   "path": "/painting/internal-walls",
   "purpose": "AI image generation prompts for all nine photography slots on the internal walls spoke. Generate every image listed below, then supply files to be placed in public/images/ using the exact target_filename values. After generation, add INTERNAL_WALLS_IMAGE_POOL in service-page-images.ts, remove /painting/internal-walls from PAINTING_SERVICES_PATHS, and update internal-walls SPOKE_MAGAZINE_IMAGES in spoke-to-hub-config.tsx.",
-  "version": "1.0",
+  "version": "1.1",
   "date": "2026-06-08",
   "style_guidelines": {
     "mandatory_aesthetic": [
@@ -12,7 +12,8 @@
       "candid handheld camera aesthetic",
       "unposed realism",
       "authentic natural film grain",
-      "grounded Gauteng, South Africa context"
+      "grounded Gauteng, South Africa context",
+      "vacant post-revamp handover — empty rooms only"
     ],
     "lighting": [
       "Prefer raking window daylight or downlight that reveals wall surface quality",
@@ -22,25 +23,26 @@
       "Describe micro-textures explicitly: skimmed plaster feathered smooth, filled hairline cracks invisible, stain-blocked patches, low-sheen acrylic wall film, accent feature wall in deeper tone, neat architrave and skirting junctions",
       "Show completed wall outcomes — repairs integrated, coatings uniform under close light"
     ],
-    "scale_policy": "Small-team, modest-interior realism only. Single rooms in suburban homes, small office suites, compact retail white-box shells, or one feature wall in a townhouse — not hotel lobbies, not corporate atriums, not megamansions.",
-    "shot_policy": "Mix close-up wall detail shots and medium room shots focused on walls. Close-ups show skim quality, crack repairs, feature finishes, and junction lines. Medium shots show one wall elevation or one retail/office room where walls are the subject.",
+    "scale_policy": "Small-team, modest-interior realism only. Single empty rooms in suburban homes, vacant small office suites, compact retail white-box shells, or one feature wall in a bare townhouse room — not hotel lobbies, not corporate atriums, not megamansions.",
+    "shot_policy": "Mix close-up wall detail shots and medium room shots focused on walls. Close-ups show skim quality, crack repairs, feature finishes, and junction lines. Medium shots show one empty wall elevation or one vacant room where walls are the subject.",
+    "empty_space_policy": "100% vacant spaces. No furniture, no desks, no chairs, no sofas, no beds, no tables, no appliances, no decor, no rugs, no curtains with pattern, no plants, no clutter. Bare floors only — clean tiles, screed, or carpet tiles freshly vacuumed. Room reads as recently revamped and ready for handover, not lived-in or staged.",
     "people_policy": "100% people-free. No workers, faces, hands, silhouettes, or reflections in glass.",
-    "completed_vs_process": "100% completed outcomes. No wet filler, sanding dust, masking tape, open tins, or prep in progress.",
-    "text_policy": "Absolutely no readable text anywhere in frame. No paint labels, retail signage, brand panels, book spines, or wall art with lettering.",
+    "completed_vs_process": "100% completed outcomes. No wet filler, sanding dust, masking tape, open tins, drop sheets, or prep in progress.",
+    "text_policy": "Absolutely no readable text anywhere in frame. No paint labels, retail signage, brand panels, or wall art with lettering.",
     "location_cues": [
-      "Gauteng residential internal walls",
-      "small office or retail white-box interiors",
-      "feature accent walls in homes",
+      "vacant Gauteng residential rooms after internal wall revamp",
+      "empty small office or retail white-box shells",
+      "bare feature accent walls in homes",
       "skim-repaired plaster under downlights",
-      "low-VOC coated walls in occupied buildings"
+      "low-VOC coated walls in clean handover spaces"
     ]
   },
-  "global_negative_prompt": "people, workers, faces, hands, silhouettes, readable text, letters, numbers, words, paint tin labels, retail signage, logos, branding, watermarks, hotel lobby, corporate atrium, wet filler, sanding dust, masking tape, drop sheets, open paint cans, plastic 3D render, CGI, Unreal Engine, oversaturated colours, perfectly staged Instagram interior, drone aerial",
+  "global_negative_prompt": "people, workers, faces, hands, silhouettes, furniture, sofa, bed, desk, chair, table, appliances, decor, rugs, plants, clutter, staging, lived-in home, readable text, letters, numbers, words, paint tin labels, retail signage, logos, branding, watermarks, hotel lobby, corporate atrium, wet filler, sanding dust, masking tape, drop sheets, open paint cans, plastic 3D render, CGI, Unreal Engine, oversaturated colours, perfectly staged Instagram interior, drone aerial",
   "output_specs": {
     "default_format": "jpg",
     "color_profile": "sRGB",
     "quality": "high",
-    "notes": "All slots use 4:3 aspect ratio. Filename must match target_filename exactly (lowercase, hyphens). Replaces borrowed painting-commercial-* images on this spoke once integrated."
+    "notes": "All slots use 4:3 aspect ratio. Filename must match target_filename exactly (lowercase, hyphens). v1.1 — empty vacant spaces only, no furniture."
   },
   "page_slot_map": {
     "note": "Nine-slot INTERNAL_WALLS_IMAGE_POOL — remove /painting/internal-walls from PAINTING_SERVICES_PATHS when wired",
@@ -66,12 +68,12 @@
       "aspect_ratio": "4:3",
       "includes_people": false,
       "scene_type": "completed_work",
-      "alt_text": "Completed internal wall skim and repaint in a small Gauteng office suite",
+      "alt_text": "Completed internal wall skim and repaint in a vacant Gauteng office suite",
       "weight": 1,
       "batch": 1,
       "user_file_hint": "iw01.png",
-      "prompt": "A raw, documentary-style 4:3 medium photograph of completed internal wall preparation and painting in a small Gauteng office suite. The camera faces one main wall elevation showing smooth light grey low-sheen acrylic with no visible patch lines, white ceiling, and carpet tiles vacuum-clean after handover. Two desks with monitors off at the edges of frame. Scale is a modest four-to-six desk office, not a corporate tower floor. Empty of people. Authentic film grain, unposed commercial interior handover photography. No text on screens, name plates, logos, or branding anywhere in frame.",
-      "negative_prompt": "people, workers, patch lines visible, wet paint, corporate atrium, readable screen text, logos, CGI office"
+      "prompt": "A raw, documentary-style 4:3 medium photograph of a vacant small Gauteng office suite immediately after internal wall preparation and painting handover. The camera faces one main wall elevation showing smooth light grey low-sheen acrylic with no visible patch lines, white ceiling, and bare carpet tiles vacuum-clean. Completely empty room — no desks, no chairs, no monitors, no furniture of any kind. Pale window light from one side. Scale is a modest single office of roughly twenty square metres, not a corporate tower floor. No people. Authentic film grain, vacant commercial handover photography. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, furniture, desks, chairs, monitors, patch lines, wet paint, corporate atrium, logos, CGI office, staging"
     },
     {
       "id": "internal-walls-skim-close",
@@ -86,8 +88,8 @@
       "weight": 1,
       "batch": 1,
       "user_file_hint": "iw02.png",
-      "prompt": "A candid, documentary-style 4:3 close-up photograph of a completed skimmed and painted internal wall in a Gauteng home or office. The frame fills with warm off-white low-sheen acrylic showing realistic subtle roller texture, former hairline cracks filled and invisible, and a neat edge where wall meets white skirting. Raking side light from a window reveals surface quality without mirror gloss. No people, tools, or paint products. Authentic film grain, technical wall close-up realism. No text, labels, logos, or branding anywhere in frame.",
-      "negative_prompt": "people, workers, visible patch squares, wet filler, readable labels, logos, perfect CGI wall"
+      "prompt": "A candid, documentary-style 4:3 close-up photograph of a completed skimmed and painted internal wall in a vacant Gauteng room. The frame fills with warm off-white low-sheen acrylic showing realistic subtle roller texture, former hairline cracks filled and invisible, and a neat edge where wall meets white skirting on an otherwise empty space. Raking side light from a bare window reveals surface quality without mirror gloss. No people, tools, furniture, or paint products. Authentic film grain, technical wall close-up realism. No text, labels, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, furniture, visible patch squares, wet filler, readable labels, logos, perfect CGI wall"
     },
     {
       "id": "internal-walls-retail-medium",
@@ -98,12 +100,12 @@
       "aspect_ratio": "4:3",
       "includes_people": false,
       "scene_type": "completed_work",
-      "alt_text": "Completed internal wall coating in a Gauteng retail white-box shell",
+      "alt_text": "Completed internal wall coating in a vacant Gauteng retail white-box shell",
       "weight": 1,
       "batch": 1,
       "user_file_hint": "iw03.png",
-      "prompt": "A straightforward, documentary-style 4:3 medium photograph of completed internal wall painting in a modest Gauteng retail white-box shell ready for tenant fit-out. Three plain white walls and one light grey accent wall read smooth under fluorescent and window light, polished concrete or screed floor clean, no shopfront signage visible. Empty unit, no people. Scale feels like a small neighbourhood centre shop of roughly forty to sixty square metres, not a mall anchor store. Authentic film grain, retail shell handover realism. No text, store names, logos, or branding anywhere in frame.",
-      "negative_prompt": "people, workers, mall anchor store, readable signage, half-painted walls, logos, CGI retail"
+      "prompt": "A straightforward, documentary-style 4:3 medium photograph of a completely empty Gauteng retail white-box shell after internal wall painting handover. Three plain white walls and one light grey accent wall read smooth under fluorescent and window light, bare polished concrete or screed floor swept clean, no shopfit, no shelving, no signage. Vacant unit ready for tenant fit-out. Scale feels like a small neighbourhood centre shop of roughly forty to sixty square metres, not a mall anchor store. No people, no furniture. Authentic film grain, bare retail shell realism. No text, store names, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, furniture, shelving, mall anchor store, readable signage, half-painted walls, logos, CGI retail, staging"
     },
     {
       "id": "internal-walls-crack-repair-close",
@@ -118,8 +120,8 @@
       "weight": 1,
       "batch": 1,
       "user_file_hint": "iw04.png",
-      "prompt": "A raw, documentary-style 4:3 close-up photograph of a completed hairline crack repair and repaint on an internal plaster wall in a Gauteng home. The frame shows a section of warm neutral wall where a former settlement crack has been filled, skimmed feathered smooth, and coated with low-sheen acrylic — repair zone invisible under raking downlight. Edge of a door architrave visible. No people or tools. Authentic film grain, repair handover detail photography. No text, logos, or branding anywhere in frame.",
-      "negative_prompt": "people, workers, visible crack still open, wet filler, readable labels, logos, wide room shot"
+      "prompt": "A raw, documentary-style 4:3 close-up photograph of a completed hairline crack repair and repaint on an internal plaster wall in a vacant Gauteng room. The frame shows a section of warm neutral wall where a former settlement crack has been filled, skimmed feathered smooth, and coated with low-sheen acrylic — repair zone invisible under raking downlight. Edge of a painted door architrave visible, empty room beyond out of focus. No people, tools, or furniture. Authentic film grain, repair handover detail photography. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, furniture, visible crack still open, wet filler, readable labels, logos, wide furnished room"
     },
     {
       "id": "internal-walls-feature-wall",
@@ -130,12 +132,12 @@
       "aspect_ratio": "4:3",
       "includes_people": false,
       "scene_type": "completed_work",
-      "alt_text": "Completed feature accent wall finish in a Gauteng home interior",
+      "alt_text": "Completed feature accent wall in a vacant Gauteng home interior",
       "weight": 1,
       "batch": 1,
       "user_file_hint": "iw05.png",
-      "prompt": "A candid, documentary-style 4:3 medium photograph of a completed feature accent wall in a modest Gauteng home interior. One wall in deep charcoal or warm terracotta low-sheen coating contrasts with adjacent off-white walls, all edges cut neatly at ceiling and skirting. Simple sofa or console table below, no artwork with readable text. Window light from the side. Empty room, no people. Scale is a standard suburban lounge, not a designer showroom. Authentic film grain, residential feature wall handover realism. No text, artwork lettering, logos, or branding anywhere in frame.",
-      "negative_prompt": "people, workers, megamansion, readable artwork, wet paint, logos, CGI interior, Instagram staging"
+      "prompt": "A candid, documentary-style 4:3 medium photograph of a completely empty Gauteng suburban room after internal wall work handover. One wall in deep charcoal or warm terracotta low-sheen coating contrasts with adjacent off-white walls, all edges cut neatly at ceiling and skirting. Bare tiled floor, no furniture, no artwork, no curtains, no decor — vacant room recently revamped. Window light from the side shows pale Highveld sky. Scale is a standard single room in a three-bedroom house, not a designer showroom. No people. Authentic film grain, vacant residential handover realism. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, furniture, sofa, artwork, curtains, megamansion, wet paint, logos, CGI interior, Instagram staging"
     },
     {
       "id": "internal-walls-stain-block-close",
@@ -150,8 +152,8 @@
       "weight": 1,
       "batch": 2,
       "user_file_hint": "iw06.png",
-      "prompt": "A straightforward, documentary-style 4:3 close-up photograph of a completed stain-blocked and painted internal wall section in a Gauteng home. The frame shows a former damp or tannin stain zone now sealed and coated in uniform off-white low-sheen acrylic with no bleed-through visible under raking light. Neat junction to ceiling cornice at top of frame. No people, tools, or open tins. Authentic film grain, stain-block handover detail. No text, logos, or branding anywhere in frame.",
-      "negative_prompt": "people, workers, stain bleed-through, wet primer, readable labels, logos, CGI wall"
+      "prompt": "A straightforward, documentary-style 4:3 close-up photograph of a completed stain-blocked and painted internal wall section in a vacant Gauteng room. The frame shows a former damp or tannin stain zone now sealed and coated in uniform off-white low-sheen acrylic with no bleed-through visible under raking light. Neat junction to ceiling cornice at top of frame. Empty room, no people, tools, furniture, or open tins. Authentic film grain, stain-block handover detail. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, furniture, stain bleed-through, wet primer, readable labels, logos, CGI wall"
     },
     {
       "id": "internal-walls-architrave-close",
@@ -166,11 +168,11 @@
       "weight": 1,
       "batch": 2,
       "user_file_hint": "iw07.png",
-      "prompt": "A raw, documentary-style 4:3 close-up photograph of a completed internal wall and door architrave coating junction in a Gauteng home. Light grey wall acrylic meets white painted architrave and door frame in crisp cut lines, no brush marks or caulk smears, realistic low-sheen texture on both surfaces. Raking window light. No people. Authentic film grain, joinery junction detail photography. No text, logos, or branding anywhere in frame.",
-      "negative_prompt": "people, workers, messy caulk, wet paint, readable door hardware labels, logos, wide hallway"
+      "prompt": "A raw, documentary-style 4:3 close-up photograph of a completed internal wall and door architrave coating junction in a vacant Gauteng home. Light grey wall acrylic meets white painted architrave and closed interior door in crisp cut lines, no brush marks or caulk smears, realistic low-sheen texture on both surfaces. Bare floor edge at bottom of frame. Raking window light. No people, no furniture. Authentic film grain, joinery junction detail photography. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, furniture, messy caulk, wet paint, readable door hardware labels, logos, wide furnished hallway"
     },
     {
-      "id": "internal-walls-occupied-office",
+      "id": "internal-walls-vacant-office",
       "section": "Magazine editorial phase 02 + spoke magazine seed",
       "display_order": 7,
       "target_filename": "painting-internal-walls-08.jpg",
@@ -178,15 +180,15 @@
       "aspect_ratio": "4:3",
       "includes_people": false,
       "scene_type": "completed_work",
-      "alt_text": "Completed phased internal wall repaint in an occupied Gauteng office",
+      "alt_text": "Completed internal wall repaint in a vacant Gauteng office meeting room",
       "weight": 1,
       "batch": 2,
       "user_file_hint": "iw08.png",
-      "prompt": "A candid, documentary-style 4:3 medium photograph of a completed phased internal wall repaint in an occupied Gauteng office. One meeting room or open-plan zone shows fresh light grey walls, white ceiling, and carpet tiles clean — furniture returned, no drop sheets, monitors off. Glass partition edge visible but no readable text on glass. Scale is a small professional suite, not a corporate headquarters. Empty of people. Authentic film grain, occupied-building programme realism. No text, logos, or branding anywhere in frame.",
-      "negative_prompt": "people, workers, drop sheets, corporate HQ atrium, readable glass vinyl, wet paint, logos, CGI office"
+      "prompt": "A candid, documentary-style 4:3 medium photograph of a completely empty Gauteng office meeting room after internal wall repaint handover. Fresh light grey walls, white ceiling, bare carpet tiles vacuum-clean, no table, no chairs, no AV equipment, no glass vinyl with text. Vacant room recently revamped and ready for fit-out. Scale is a small professional suite, not a corporate headquarters. No people, no furniture. Authentic film grain, bare commercial handover realism. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, furniture, meeting table, chairs, drop sheets, corporate HQ atrium, readable glass vinyl, wet paint, logos, CGI office"
     },
     {
-      "id": "internal-walls-townhouse-lounge",
+      "id": "internal-walls-townhouse-empty",
       "section": "Magazine editorial phase 03 + spoke magazine seed",
       "display_order": 8,
       "target_filename": "painting-internal-walls-09.jpg",
@@ -194,12 +196,12 @@
       "aspect_ratio": "4:3",
       "includes_people": false,
       "scene_type": "completed_work",
-      "alt_text": "Completed internal wall preparation and coating in a Gauteng townhouse lounge",
+      "alt_text": "Completed internal wall coating in a vacant Gauteng townhouse room",
       "weight": 1,
       "batch": 2,
       "user_file_hint": "iw09.png",
-      "prompt": "A raw, documentary-style 4:3 medium photograph of completed internal wall preparation and coating in a Gauteng townhouse lounge. Two main wall elevations show smooth warm neutral low-sheen acrylic under mixed window daylight and downlights, tiled floor vacuum-clean, simple furniture back in place. Compact double-storey living scale, not a penthouse. No people. Authentic film grain, unposed residential wall handover photography. No text, book covers, logos, or branding anywhere in frame.",
-      "negative_prompt": "people, workers, penthouse, visible patch lines, drop sheets, readable books, logos, CGI render"
+      "prompt": "A raw, documentary-style 4:3 medium photograph of a completely vacant Gauteng townhouse room after internal wall preparation and coating handover. Two wall elevations show smooth warm neutral low-sheen acrylic under mixed window daylight and downlights, bare tiled floor swept clean, built-in cupboard doors freshly coated but room otherwise empty — no bed, no sofa, no decor. Compact double-storey room scale, not a penthouse. No people, no furniture. Authentic film grain, vacant residential handover photography. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, furniture, bed, sofa, penthouse, visible patch lines, drop sheets, logos, CGI render, staging"
     }
   ],
   "hub_slot_assignment": {
@@ -214,16 +216,18 @@
     "total_page_slots": 9,
     "new_images_to_generate": 9,
     "all_completed_work": true,
+    "all_empty_spaces": true,
+    "no_furniture": true,
     "no_text_anywhere": true,
     "shot_mix": {
       "close_up": 4,
       "medium": 5
     },
     "building_types": [
-      "small Gauteng office suite",
-      "retail white-box shell",
-      "suburban home feature wall",
-      "townhouse lounge"
+      "vacant small Gauteng office suite",
+      "empty retail white-box shell",
+      "bare suburban room with feature wall",
+      "vacant townhouse room"
     ],
     "generation_batches": {
       "batch_1": [
@@ -241,8 +245,9 @@
       ]
     },
     "notes": [
-      "Focus on wall preparation and finish quality — distinct from broader interior painting spoke.",
-      "Feature wall slot 05 should show clear accent colour contrast.",
+      "v1.1 — all medium shots must be completely empty: no furniture, decor, appliances, or staging.",
+      "Rooms read as recently revamped handover spaces, not lived-in or occupied.",
+      "Close-ups are wall/junction detail only — no furnished room context required.",
       "After generation: convert PNG → JPG (~88 quality), wire INTERNAL_WALLS_IMAGE_POOL, remove /painting/internal-walls from PAINTING_SERVICES_PATHS, build, commit, push."
     ]
   }

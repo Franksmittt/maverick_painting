@@ -1,6 +1,6 @@
 ================================================================================
 MAVERICK PAINTING — PROJECT SUMMARY
-Last updated: 2026-06-08 (interior painting batch integrated)
+Last updated: 2026-06-08 (internal walls batch integrated)
 Site: https://www.maverickpainting.co.za
 Repo: https://github.com/Franksmittt/maverick_painting (branch: main)
 Stack: Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS · pnpm
@@ -68,9 +68,9 @@ industrial-corrosion-control-image-prompts.txt  (integrated)
 rising-damp-treatment-image-prompts.txt         (skipped — existing damp pool images kept)
 rope-access-painting-image-prompts.txt          (integrated)
 interior-painting-image-prompts.txt               (integrated)
-internal-walls-image-prompts.txt                  (NEXT — prompts ready, images pending)
+internal-walls-image-prompts.txt                  (integrated)
 
-DEDICATED 9-IMAGE POOLS — DONE (20 spokes)
+DEDICATED 9-IMAGE POOLS — DONE (21 spokes)
 ------------------------------------------
 Structural
   ✓ /structural-repairs/crack-injection          structural-crack-injection-01…09
@@ -97,6 +97,7 @@ Painting
   ✓ /painting/stucco-wall-coatings               painting-stucco-01…09
   ✓ /painting/parking-garage-painting            painting-parking-garage-01…09
   ✓ /painting/interior-painting                  painting-interior-01…09
+  ✓ /painting/internal-walls                     painting-internal-walls-01…09
 
 Access
   ✓ /access-solutions/rope-access-painting     access-rope-access-01…09
@@ -106,14 +107,13 @@ PARTIAL — dedicated pool but not a clean numbered 9 (2 spokes)
   ~ /painting/body-corporate                     6 new + 3 legacy reused in pool
   ~ /specialized-coatings/industrial-epoxy-flooring  mixed epoxy/hygienic/legacy shots
 
-NOT DONE — still on shared hub pool (7 spokes)
+NOT DONE — still on shared hub pool (6 spokes)
 -----------------------------------------------
 Damp
   · /damp-proofing/rising-damp-treatment         shared DAMP_PROOFING_IMAGE_POOL (images confirmed — keep as-is)
 
 Painting (all on PAINTING_SERVICES_IMAGE_POOL)
-  · /painting/internal-walls                     ← NEXT (prompts ready)
-  · /painting/external-walls
+  · /painting/external-walls                     ← NEXT
   · /painting/high-volume-commercial-painting
   · /painting/roof-painting
   · /painting/warehouse-painting
@@ -173,6 +173,7 @@ POST-DEPLOY CHECKLIST (after each image batch)
 ================================================================================
 CHANGELOG (photography program)
 ================================================================================
+2026-06-08  Internal walls dedicated pool (painting-internal-walls-01…09)
 2026-06-08  Interior painting dedicated pool (painting-interior-01…09)
 2026-06-08  Rope access painting dedicated pool (access-rope-access-01…09)
 2026-06-08  Industrial corrosion control dedicated pool (coatings-industrial-corrosion-01…09)
