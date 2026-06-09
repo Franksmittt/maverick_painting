@@ -320,16 +320,16 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
   ],
   "high-volume-commercial-painting": [
     {
-      src: "/images/painting-industrial-preparation.jpg",
-      alt: "Large-scale commercial surface preparation ahead of airless spray application",
+      src: "/images/painting-high-volume-commercial-05.jpg",
+      alt: "Completed interior wall coatings at an empty Gauteng warehouse loading bay",
     },
     {
-      src: "/images/painting-industrial-coatings.jpg",
-      alt: "High-volume airless spray coating on warehouse or logistics interior",
+      src: "/images/painting-high-volume-commercial-08.jpg",
+      alt: "Completed exterior coatings on a small Gauteng business park warehouse row",
     },
     {
-      src: "/images/painting-industrial-corrosion.jpg",
-      alt: "Completed high-volume commercial coating programme with QA documentation",
+      src: "/images/painting-high-volume-commercial-09.jpg",
+      alt: "Completed airless spray coatings in an empty commercial warehouse interior aisle",
     },
   ],
   "interior-painting": [

@@ -1,6 +1,6 @@
 ================================================================================
 MAVERICK PAINTING — PROJECT SUMMARY
-Last updated: 2026-06-08 (roof painting batch integrated)
+Last updated: 2026-06-09 (high-volume commercial batch integrated)
 Site: https://www.maverickpainting.co.za
 Repo: https://github.com/Franksmittt/maverick_painting (branch: main)
 Stack: Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS · pnpm
@@ -71,8 +71,10 @@ interior-painting-image-prompts.txt               (integrated)
 internal-walls-image-prompts.txt                  (integrated)
 external-walls-image-prompts.txt                  (integrated)
 roof-painting-image-prompts.txt                   (integrated)
+high-volume-commercial-painting-image-prompts.txt (integrated)
+warehouse-painting-image-prompts.txt          (NEXT — prompts ready, images pending)
 
-DEDICATED 9-IMAGE POOLS — DONE (23 spokes)
+DEDICATED 9-IMAGE POOLS — DONE (24 spokes)
 ------------------------------------------
 Structural
   ✓ /structural-repairs/crack-injection          structural-crack-injection-01…09
@@ -102,6 +104,7 @@ Painting
   ✓ /painting/internal-walls                     painting-internal-walls-01…09
   ✓ /painting/external-walls                     painting-external-walls-01…09
   ✓ /painting/roof-painting                      painting-roof-painting-01…09
+  ✓ /painting/high-volume-commercial-painting  painting-high-volume-commercial-01…09
 
 Access
   ✓ /access-solutions/rope-access-painting     access-rope-access-01…09
@@ -111,14 +114,13 @@ PARTIAL — dedicated pool but not a clean numbered 9 (2 spokes)
   ~ /painting/body-corporate                     6 new + 3 legacy reused in pool
   ~ /specialized-coatings/industrial-epoxy-flooring  mixed epoxy/hygienic/legacy shots
 
-NOT DONE — still on shared hub pool (4 spokes)
+NOT DONE — still on shared hub pool (2 spokes)
 -----------------------------------------------
 Damp
   · /damp-proofing/rising-damp-treatment         shared DAMP_PROOFING_IMAGE_POOL (images confirmed — keep as-is)
 
 Painting (all on PAINTING_SERVICES_IMAGE_POOL)
-  · /painting/high-volume-commercial-painting    ← NEXT
-  · /painting/warehouse-painting
+  · /painting/warehouse-painting                 ← NEXT (prompts ready)
   · /painting/road-marking
 
 HUB PAGES STILL ON SHARED POOLS (6)
@@ -175,6 +177,7 @@ POST-DEPLOY CHECKLIST (after each image batch)
 ================================================================================
 CHANGELOG (photography program)
 ================================================================================
+2026-06-09  High-volume commercial painting dedicated pool (painting-high-volume-commercial-01…09)
 2026-06-08  Roof painting dedicated pool (painting-roof-painting-01…09)
 2026-06-08  External walls dedicated pool (painting-external-walls-01…09)
 2026-06-08  Internal walls dedicated pool (painting-internal-walls-01…09)

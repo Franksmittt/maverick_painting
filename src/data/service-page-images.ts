@@ -69,10 +69,13 @@ const EXTERNAL_WALLS_PATHS = new Set(["/painting/external-walls"]);
 
 const ROOF_PAINTING_PATHS = new Set(["/painting/roof-painting"]);
 
+const HIGH_VOLUME_COMMERCIAL_PAINTING_PATHS = new Set([
+  "/painting/high-volume-commercial-painting",
+]);
+
 const PAINTING_SERVICES_PATHS = new Set([
   "/painting-services",
   "/painting/warehouse-painting",
-  "/painting/high-volume-commercial-painting",
   "/painting/road-marking",
 ]);
 
@@ -1123,6 +1126,46 @@ const ROOF_PAINTING_IMAGE_POOL: readonly ServicePageImage[] = [
   },
 ];
 
+/** Dedicated nine-slot pool for the high-volume commercial painting spoke. */
+const HIGH_VOLUME_COMMERCIAL_PAINTING_IMAGE_POOL: readonly ServicePageImage[] = [
+  {
+    src: "/images/painting-high-volume-commercial-01.jpg",
+    alt: "Completed airless spray wall coating in an empty Gauteng warehouse bay",
+  },
+  {
+    src: "/images/painting-high-volume-commercial-02.jpg",
+    alt: "Close-up of completed airless spray coating film on a commercial interior wall",
+  },
+  {
+    src: "/images/painting-high-volume-commercial-03.jpg",
+    alt: "Completed airless spray coating on tilt-up panels at a Gauteng business park building",
+  },
+  {
+    src: "/images/painting-high-volume-commercial-04.jpg",
+    alt: "Close-up of completed coating at a tilt-up panel joint on a commercial building",
+  },
+  {
+    src: "/images/painting-high-volume-commercial-05.jpg",
+    alt: "Completed interior wall coatings at an empty Gauteng warehouse loading bay",
+  },
+  {
+    src: "/images/painting-high-volume-commercial-06.jpg",
+    alt: "Close-up of completed airless spray coating on concrete block warehouse walls",
+  },
+  {
+    src: "/images/painting-high-volume-commercial-07.jpg",
+    alt: "Close-up of completed wall and column base coating in a commercial warehouse interior",
+  },
+  {
+    src: "/images/painting-high-volume-commercial-08.jpg",
+    alt: "Completed exterior coatings on a small Gauteng business park warehouse row",
+  },
+  {
+    src: "/images/painting-high-volume-commercial-09.jpg",
+    alt: "Completed airless spray coatings in an empty commercial warehouse interior aisle",
+  },
+];
+
 /** Shared nine-slot pool for the painting services hub and spokes. */
 const PAINTING_SERVICES_IMAGE_POOL: readonly ServicePageImage[] = [
   {
@@ -1418,6 +1461,10 @@ export function getServicePageImages(
 
   if (ROOF_PAINTING_PATHS.has(path)) {
     return [...ROOF_PAINTING_IMAGE_POOL];
+  }
+
+  if (HIGH_VOLUME_COMMERCIAL_PAINTING_PATHS.has(path)) {
+    return [...HIGH_VOLUME_COMMERCIAL_PAINTING_IMAGE_POOL];
   }
 
   if (WATERPROOFING_PATHS.has(path)) {

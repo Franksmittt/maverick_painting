@@ -1,0 +1,251 @@
+{
+  "project": "Maverick Painting",
+  "client_site": "maverickpainting.co.za",
+  "page": "Warehouse painting spoke",
+  "path": "/painting/warehouse-painting",
+  "purpose": "AI image generation prompts for all nine photography slots on the warehouse painting spoke. Generate every image listed below, then supply files to be placed in public/images/ using the exact target_filename values. After generation, add WAREHOUSE_PAINTING_IMAGE_POOL in service-page-images.ts, remove /painting/warehouse-painting from PAINTING_SERVICES_PATHS, and update warehouse-painting SPOKE_MAGAZINE_IMAGES in spoke-to-hub-config.tsx.",
+  "version": "1.0",
+  "date": "2026-06-09",
+  "style_guidelines": {
+    "mandatory_aesthetic": [
+      "professional documentary-style warehouse painting photography",
+      "clean completed-project handover aesthetic",
+      "candid but crisp realism — excellent small-contractor portfolio quality",
+      "authentic natural film grain",
+      "grounded Gauteng, South Africa context"
+    ],
+    "lighting": [
+      "Prefer cool fluorescent warehouse interiors with high reflectance, or flat overcast on exterior cladding",
+      "Avoid cinematic HDR, golden-hour glamour, and oversaturated stock looks"
+    ],
+    "materials": [
+      "Describe micro-textures explicitly: high-reflectance white and light grey interior acrylic on block and tilt-up walls, DTM satin on corrugated cladding, grey epoxy or zinc-rich primer undercoat on portal frame steel, neat roller-door surrounds, swept concrete floors",
+      "Show completed envelope outcomes — walls, steel, and cladding uniform, yard tidy at handover"
+    ],
+    "scale_policy": "Small-team, modest warehouse realism only. Single logistics bays, light industrial sheds, small fulfilment units, or one portal-frame warehouse — not airport distribution megahubs, not multi-wing fulfilment campuses.",
+    "shot_policy": "Mix close-up coating detail shots and medium warehouse shots. Close-ups show block walls, steel members, cladding, and junctions. Medium shots show one empty bay, one exterior elevation, or one storage aisle.",
+    "empty_space_policy": "100% vacant completed spaces. No forklifts, pallet racking, workers, or active spray equipment. Empty bays and swept floors preferred.",
+    "people_policy": "100% people-free. No workers, faces, hands, silhouettes.",
+    "completed_vs_process": "100% completed outcomes. No wet paint, masking tape, half-coated walls, or prep in progress.",
+    "text_policy": "Absolutely no readable text anywhere in frame. No bay numbers, company signage, or licence plates readable.",
+    "location_cues": [
+      "Gauteng logistics corridors",
+      "Isando, Kempton Park, Germiston warehouse stock",
+      "portal frame and tilt-up sheds",
+      "light-reflective interior warehouse bays",
+      "completed corrugated cladding exteriors"
+    ]
+  },
+  "global_negative_prompt": "people, workers, faces, hands, silhouettes, forklifts, pallet racking, active spray gun, wet paint, half-painted walls, masking tape, readable text, company signage, logos, branding, watermarks, airport megahub, fulfilment campus panorama, plastic 3D render, CGI, Unreal Engine, oversaturated colours, drone aerial, sunset glamour",
+  "output_specs": {
+    "default_format": "jpg",
+    "color_profile": "sRGB",
+    "quality": "high",
+    "notes": "All slots use 4:3 aspect ratio. Filename must match target_filename exactly (lowercase, hyphens). Replaces borrowed painting-industrial-* images on this spoke once integrated."
+  },
+  "page_slot_map": {
+    "note": "Nine-slot WAREHOUSE_PAINTING_IMAGE_POOL — remove /painting/warehouse-painting from PAINTING_SERVICES_PATHS when wired",
+    "slots": [
+      { "slot": 0, "role": "Hero", "filename": "painting-warehouse-01.jpg", "shot": "medium" },
+      { "slot": 1, "role": "Triptych left", "filename": "painting-warehouse-02.jpg", "shot": "close-up" },
+      { "slot": 2, "role": "Triptych centre", "filename": "painting-warehouse-03.jpg", "shot": "medium" },
+      { "slot": 3, "role": "Triptych right", "filename": "painting-warehouse-04.jpg", "shot": "close-up" },
+      { "slot": 4, "role": "Magazine editorial phase 01", "filename": "painting-warehouse-05.jpg", "shot": "medium" },
+      { "slot": 5, "role": "Image pair left", "filename": "painting-warehouse-06.jpg", "shot": "close-up" },
+      { "slot": 6, "role": "Image pair right", "filename": "painting-warehouse-07.jpg", "shot": "close-up" },
+      { "slot": 7, "role": "Magazine editorial phase 02", "filename": "painting-warehouse-08.jpg", "shot": "medium" },
+      { "slot": 8, "role": "Magazine editorial phase 03", "filename": "painting-warehouse-09.jpg", "shot": "medium" }
+    ]
+  },
+  "images": [
+    {
+      "id": "warehouse-interior-hero",
+      "section": "Hero — split layout beside H1",
+      "display_order": 0,
+      "target_filename": "painting-warehouse-01.jpg",
+      "target_path": "public/images/painting-warehouse-01.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed light-reflective interior wall coatings in an empty Gauteng warehouse bay",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "wh01.png",
+      "prompt": "A professional, documentary-style 4:3 medium photograph of completed light-reflective interior wall coatings in an empty Gauteng warehouse bay. Bright off-white and pale grey acrylic on block walls and columns increases luminance under cool fluorescent tubes, swept concrete floor, no racking, pallets, or forklifts. Single modest logistics bay scale in Isando or Kempton Park corridor feel. No workers or wet paint. Natural film grain, warehouse interior handover photography. No text, bay numbers, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, racking, forklifts, half-painted walls, megahub, readable bay numbers, logos, CGI warehouse"
+    },
+    {
+      "id": "warehouse-block-close",
+      "section": "Triptych left",
+      "display_order": 1,
+      "target_filename": "painting-warehouse-02.jpg",
+      "target_path": "public/images/painting-warehouse-02.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of completed high-build acrylic on warehouse blockwork walls in Gauteng",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "wh02.png",
+      "prompt": "A professional, documentary-style 4:3 close-up photograph of completed high-build acrylic on warehouse blockwork walls in Gauteng. Light grey uniform film over block texture with mortar joints subtly visible, realistic industrial sheen, no holidays. Fluorescent raking light. No people or tools. Natural film grain, block-wall coating detail. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, unpainted mortar, wet paint, readable labels, logos, CGI render"
+    },
+    {
+      "id": "warehouse-cladding-exterior",
+      "section": "Triptych centre",
+      "display_order": 2,
+      "target_filename": "painting-warehouse-03.jpg",
+      "target_path": "public/images/painting-warehouse-03.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed DTM coating on corrugated warehouse cladding in Gauteng",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "wh03.png",
+      "prompt": "A clean, documentary-style 4:3 medium photograph of completed direct-to-metal coating on corrugated warehouse cladding at a modest Gauteng logistics shed. Mid-grey satin film on IBR or corrugated sheets, neat ridge cap, empty gravel yard, no trucks or workers. Small single-bay industrial scale, not an airport hangar. Flat overcast Highveld light. No people. Natural film grain, exterior warehouse handover photography. No text, company signage, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, rust streaks, airport hangar, trucks, readable signage, logos, CGI, drone"
+    },
+    {
+      "id": "warehouse-steel-close",
+      "section": "Triptych right",
+      "display_order": 3,
+      "target_filename": "painting-warehouse-04.jpg",
+      "target_path": "public/images/painting-warehouse-04.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of completed protective coating on warehouse portal frame steel",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "wh04.png",
+      "prompt": "A professional, documentary-style 4:3 close-up photograph of completed protective coating on warehouse portal frame steel in Gauteng. Grey epoxy or DTM topcoat on I-beam and column flange with realistic satin texture, no rust bleed, neat bolt heads coated. Cool interior fluorescent raking light. No people. Natural film grain, steel coating detail photography. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, rust, wet paint, readable bolt labels, logos, wide warehouse shot, CGI metal"
+    },
+    {
+      "id": "warehouse-aisle-medium",
+      "section": "Magazine editorial phase 01 + spoke magazine seed",
+      "display_order": 4,
+      "target_filename": "painting-warehouse-05.jpg",
+      "target_path": "public/images/painting-warehouse-05.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed interior coatings in an empty deep storage aisle in a Gauteng warehouse",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "wh05.png",
+      "prompt": "A clean, documentary-style 4:3 medium photograph of completed interior coatings in an empty deep storage aisle in a Gauteng warehouse. High-reflectance off-white walls and coated columns line both sides of a long aisle, bright fluorescent light bouncing evenly, swept floor, completely vacant with no racking. Modest fulfilment or storage bay scale. No workers or equipment. Natural film grain, deep-aisle handover realism. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, racking, forklifts, megahub aisle, half-painted walls, logos, CGI"
+    },
+    {
+      "id": "warehouse-corrugated-close",
+      "section": "Image pair left",
+      "display_order": 5,
+      "target_filename": "painting-warehouse-06.jpg",
+      "target_path": "public/images/painting-warehouse-06.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of completed DTM coating on corrugated iron warehouse cladding",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "wh06.png",
+      "prompt": "A professional, documentary-style 4:3 close-up photograph of completed direct-to-metal coating on corrugated iron warehouse cladding in Gauteng. Mid-grey satin film follows corrugation profiles with realistic texture not mirror CGI metal, screw heads coated neatly. Raking daylight. No people. Natural film grain, cladding detail photography. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, rust, wet coating, readable screw labels, logos, perfect CGI metal"
+    },
+    {
+      "id": "warehouse-steel-wall-junction",
+      "section": "Image pair right",
+      "display_order": 6,
+      "target_filename": "painting-warehouse-07.jpg",
+      "target_path": "public/images/painting-warehouse-07.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of completed coating junction between warehouse block wall and steel column",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "wh07.png",
+      "prompt": "A professional, documentary-style 4:3 close-up photograph of a completed coating junction between a warehouse block wall and portal frame steel column in Gauteng. Light grey wall acrylic meets grey coated steel column base in a crisp line, swept floor edge visible. Fluorescent raking light. No people. Natural film grain, junction detail handover photography. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, messy overlap, wet paint, readable markings, logos, wide bay shot"
+    },
+    {
+      "id": "warehouse-exterior-tilt-up",
+      "section": "Magazine editorial phase 02 + spoke magazine seed",
+      "display_order": 7,
+      "target_filename": "painting-warehouse-08.jpg",
+      "target_path": "public/images/painting-warehouse-08.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed exterior warehouse wall and cladding coatings at a Gauteng logistics building",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "wh08.png",
+      "prompt": "A clean, documentary-style 4:3 medium photograph of completed exterior warehouse wall and cladding coatings at a modest Gauteng logistics building. Off-white tilt-up or block walls with grey corrugated side cladding, neat roller doors without readable tenant names, empty paved yard, pale Highveld sky. Small industrial unit scale. No workers, trucks, or pedestrians. Natural film grain, exterior warehouse handover photography. No text, signage, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, trucks, readable tenant signs, half-painted walls, logos, CGI, drone"
+    },
+    {
+      "id": "warehouse-loading-zone",
+      "section": "Magazine editorial phase 03 + spoke magazine seed",
+      "display_order": 8,
+      "target_filename": "painting-warehouse-09.jpg",
+      "target_path": "public/images/painting-warehouse-09.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed warehouse interior and roller door surround coatings at a Gauteng logistics unit",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "wh09.png",
+      "prompt": "A professional, documentary-style 4:3 medium photograph of completed warehouse interior and roller door surround coatings at a Gauteng logistics unit. Interior walls in light-reflectance off-white, coated roller shutter surround, swept floor, daylight through open bay but no vehicles inside. Empty handover mood in a single modest unit. No workers. Natural film grain, loading-zone completion realism. No text, safety boards, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, trucks, pallets, readable safety signs, megahub, logos, CGI"
+    }
+  ],
+  "hub_slot_assignment": {
+    "note": "Recommended mapping for service-page-images.ts WAREHOUSE_PAINTING_IMAGE_POOL",
+    "magazine_seeds_in_spoke_to_hub_config": [
+      { "phase": 1, "filename": "painting-warehouse-05.jpg" },
+      { "phase": 2, "filename": "painting-warehouse-08.jpg" },
+      { "phase": 3, "filename": "painting-warehouse-09.jpg" }
+    ]
+  },
+  "summary": {
+    "total_page_slots": 9,
+    "new_images_to_generate": 9,
+    "all_completed_work": true,
+    "clean_empty_handover": true,
+    "no_text_anywhere": true,
+    "shot_mix": {
+      "close_up": 4,
+      "medium": 5
+    },
+    "building_types": [
+      "empty warehouse interior bay",
+      "corrugated cladding shed",
+      "portal frame steel interior",
+      "logistics unit exterior"
+    ],
+    "generation_batches": {
+      "batch_1": [
+        "painting-warehouse-01.jpg",
+        "painting-warehouse-02.jpg",
+        "painting-warehouse-03.jpg",
+        "painting-warehouse-04.jpg",
+        "painting-warehouse-05.jpg"
+      ],
+      "batch_2": [
+        "painting-warehouse-06.jpg",
+        "painting-warehouse-07.jpg",
+        "painting-warehouse-08.jpg",
+        "painting-warehouse-09.jpg"
+      ]
+    },
+    "notes": [
+      "Emphasise light-reflective interiors, portal steel, and DTM cladding — broader than high-volume airless spoke.",
+      "All medium shots vacant with swept floors — no workers, forklifts, or racking.",
+      "After generation: convert PNG → JPG (~88 quality), wire pool, remove from PAINTING_SERVICES_PATHS, build, commit, push."
+    ]
+  }
+}

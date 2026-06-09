@@ -1,0 +1,251 @@
+{
+  "project": "Maverick Painting",
+  "client_site": "maverickpainting.co.za",
+  "page": "High-volume commercial painting spoke",
+  "path": "/painting/high-volume-commercial-painting",
+  "purpose": "AI image generation prompts for all nine photography slots on the high-volume commercial airless spray painting spoke. Generate every image listed below, then supply files to be placed in public/images/ using the exact target_filename values. After generation, add HIGH_VOLUME_COMMERCIAL_PAINTING_IMAGE_POOL in service-page-images.ts, remove /painting/high-volume-commercial-painting from PAINTING_SERVICES_PATHS, and update high-volume-commercial-painting SPOKE_MAGAZINE_IMAGES in spoke-to-hub-config.tsx.",
+  "version": "1.0",
+  "date": "2026-06-09",
+  "style_guidelines": {
+    "mandatory_aesthetic": [
+      "professional documentary-style large-scale commercial coating photography",
+      "clean completed-project handover aesthetic",
+      "candid but crisp realism — excellent small-contractor portfolio quality",
+      "authentic natural film grain",
+      "grounded Gauteng, South Africa context"
+    ],
+    "lighting": [
+      "Prefer cool fluorescent warehouse light mixed with daylight at loading bays, or flat overcast on exterior tilt-up walls",
+      "Avoid cinematic HDR, golden-hour glamour, and oversaturated stock-photo looks"
+    ],
+    "materials": [
+      "Describe micro-textures explicitly: uniform airless-spray acrylic on concrete block or tilt-up panels, light grey interior wall film without roller stipple, neat colour bands on cladding, smooth spray finish on corrugated sections, clean floor-to-wall junctions",
+      "Show completed coating outcomes — even film build, no holidays, site swept clean at handover"
+    ],
+    "scale_policy": "Small-team, realistic commercial scale only. Single warehouse bays, two-to-four unit business parks, modest logistics sheds, or one tilt-up elevation a Gauteng crew could spray in phased shifts — not airport distribution megahubs, not twelve-building campus panoramas, not Sandton tower portfolios.",
+    "shot_policy": "Mix close-up spray-finish detail shots and medium environmental shots. Close-ups show uniform film texture, panel junctions, and block-wall coatings. Medium shots show one completed warehouse aisle, one exterior elevation, or one empty loading bay wall field.",
+    "empty_space_policy": "100% vacant completed spaces. No forklifts in motion, no pallet stacks blocking walls, no office furniture, no workers, no active spray rigs or hoses in use. Empty bays and swept floors preferred.",
+    "people_policy": "100% people-free. No workers, faces, hands, silhouettes.",
+    "completed_vs_process": "100% completed outcomes. No wet paint, masking tape, containment plastic, paint tins, spray guns in use, or half-coated walls.",
+    "text_policy": "Absolutely no readable text anywhere in frame. No bay numbers, company signage, safety boards, or vehicle licence plates readable.",
+    "location_cues": [
+      "Gauteng logistics and industrial corridors",
+      "Isando, Kempton Park, Germiston modest warehouse stock",
+      "tilt-up panel business parks",
+      "empty warehouse interiors after airless spray handover",
+      "pale Highveld sky on completed exterior elevations"
+    ]
+  },
+  "global_negative_prompt": "people, workers, faces, hands, silhouettes, active spray gun, spray hose in use, wet paint, half-painted walls, masking tape, containment plastic, paint tins, forklifts, pallet stacks, office furniture, readable text, letters, numbers, words, company signage, logos, branding, watermarks, airport megahub, twelve-building panorama, Sandton tower, plastic 3D render, CGI, Unreal Engine, oversaturated colours, drone aerial, sunset glamour",
+  "output_specs": {
+    "default_format": "jpg",
+    "color_profile": "sRGB",
+    "quality": "high",
+    "notes": "All slots use 4:3 aspect ratio. Filename must match target_filename exactly (lowercase, hyphens). Replaces borrowed painting-industrial-* images on this spoke once integrated."
+  },
+  "page_slot_map": {
+    "note": "Nine-slot HIGH_VOLUME_COMMERCIAL_PAINTING_IMAGE_POOL — remove /painting/high-volume-commercial-painting from PAINTING_SERVICES_PATHS when wired",
+    "slots": [
+      { "slot": 0, "role": "Hero", "filename": "painting-high-volume-commercial-01.jpg", "shot": "medium" },
+      { "slot": 1, "role": "Triptych left", "filename": "painting-high-volume-commercial-02.jpg", "shot": "close-up" },
+      { "slot": 2, "role": "Triptych centre", "filename": "painting-high-volume-commercial-03.jpg", "shot": "medium" },
+      { "slot": 3, "role": "Triptych right", "filename": "painting-high-volume-commercial-04.jpg", "shot": "close-up" },
+      { "slot": 4, "role": "Magazine editorial phase 01", "filename": "painting-high-volume-commercial-05.jpg", "shot": "medium" },
+      { "slot": 5, "role": "Image pair left", "filename": "painting-high-volume-commercial-06.jpg", "shot": "close-up" },
+      { "slot": 6, "role": "Image pair right", "filename": "painting-high-volume-commercial-07.jpg", "shot": "close-up" },
+      { "slot": 7, "role": "Magazine editorial phase 02", "filename": "painting-high-volume-commercial-08.jpg", "shot": "medium" },
+      { "slot": 8, "role": "Magazine editorial phase 03", "filename": "painting-high-volume-commercial-09.jpg", "shot": "medium" }
+    ]
+  },
+  "images": [
+    {
+      "id": "hv-warehouse-interior-hero",
+      "section": "Hero — split layout beside H1",
+      "display_order": 0,
+      "target_filename": "painting-high-volume-commercial-01.jpg",
+      "target_path": "public/images/painting-high-volume-commercial-01.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed airless spray wall coating in an empty Gauteng warehouse bay",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "hvc01.png",
+      "prompt": "A professional, documentary-style 4:3 medium photograph of a completed airless spray wall coating handover in an empty Gauteng warehouse bay. One long wall elevation of concrete block shows uniform light grey acrylic film without roller stipple, white ceiling and column bases coated cleanly, swept concrete floor with no pallets or forklifts. Cool fluorescent light with daylight spill from a closed loading bay door. Scale is a single modest logistics bay a small crew could coat in one programme, not an airport distribution centre. No workers, spray equipment, or wet paint. Natural film grain, commercial interior handover photography. No text, bay numbers, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, spray gun, forklifts, pallets, half-painted wall, megahub, readable bay numbers, logos, CGI warehouse, drone"
+    },
+    {
+      "id": "hv-spray-film-close",
+      "section": "Triptych left",
+      "display_order": 1,
+      "target_filename": "painting-high-volume-commercial-02.jpg",
+      "target_path": "public/images/painting-high-volume-commercial-02.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of completed airless spray coating film on a commercial interior wall",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "hvc02.png",
+      "prompt": "A professional, documentary-style 4:3 close-up photograph of completed airless spray coating on a commercial interior wall in Gauteng. The frame fills with smooth light grey acrylic showing even micro-fine spray texture without roller marks or holidays, realistic satin sheen not mirror CGI gloss. Raking fluorescent light reveals uniform film build. No people, tools, or wet coating. Natural film grain, technical spray-finish close-up realism. No text, labels, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, roller stipple, wet paint, readable labels, logos, perfect CGI wall, wide warehouse shot"
+    },
+    {
+      "id": "hv-tilt-up-exterior",
+      "section": "Triptych centre",
+      "display_order": 2,
+      "target_filename": "painting-high-volume-commercial-03.jpg",
+      "target_path": "public/images/painting-high-volume-commercial-03.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed airless spray coating on tilt-up panels at a Gauteng business park building",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "hvc03.png",
+      "prompt": "A clean, documentary-style 4:3 medium photograph of completed airless spray coating on the tilt-up panel exterior of a modest Gauteng business park warehouse. Fresh off-white and light grey panels read uniform under flat overcast Highveld light, neat panel joints and clean base at paved forecourt, empty yard with no trucks or workers. Two-to-three unit park scale, not a massive industrial estate. No people, scaffold, or spray rigs. Natural film grain, exterior commercial handover photography. No text, company signage, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, mega industrial estate, trucks, readable signage, half-painted panels, logos, CGI, drone aerial"
+    },
+    {
+      "id": "hv-panel-junction-close",
+      "section": "Triptych right",
+      "display_order": 3,
+      "target_filename": "painting-high-volume-commercial-04.jpg",
+      "target_path": "public/images/painting-high-volume-commercial-04.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of completed coating at a tilt-up panel joint on a commercial building",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "hvc04.png",
+      "prompt": "A professional, documentary-style 4:3 close-up photograph of a completed airless spray coating at a tilt-up concrete panel joint on a Gauteng commercial building. Uniform off-white film bridges the panel seam cleanly with realistic texture, no caulk smears or unpainted gaps, raking daylight emphasises neat joint finishing. No people or tools. Natural film grain, panel detail handover photography. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, open joint, wet sealant, readable markings, logos, wide building shot, CGI"
+    },
+    {
+      "id": "hv-loading-bay-wall",
+      "section": "Magazine editorial phase 01 + spoke magazine seed",
+      "display_order": 4,
+      "target_filename": "painting-high-volume-commercial-05.jpg",
+      "target_path": "public/images/painting-high-volume-commercial-05.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed interior wall coatings at an empty Gauteng warehouse loading bay",
+      "weight": 1,
+      "batch": 1,
+      "user_file_hint": "hvc05.png",
+      "prompt": "A clean, documentary-style 4:3 medium photograph of completed interior wall coatings at an empty Gauteng warehouse loading bay after airless spray handover. Two wall elevations and roller shutter surround show uniform light grey spray finish, swept floor, daylight through open bay door but no vehicles or workers inside. Modest single-bay logistics scale in Kempton Park or Isando corridor feel. No people, pallets, or spray equipment. Natural film grain, loading bay handover realism. No text, safety boards, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, trucks, pallets, spray gun, readable safety signs, megahub, logos, CGI"
+    },
+    {
+      "id": "hv-block-wall-close",
+      "section": "Image pair left",
+      "display_order": 5,
+      "target_filename": "painting-high-volume-commercial-06.jpg",
+      "target_path": "public/images/painting-high-volume-commercial-06.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of completed airless spray coating on concrete block warehouse walls",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "hvc06.png",
+      "prompt": "A professional, documentary-style 4:3 close-up photograph of completed airless spray coating on concrete block warehouse walls in Gauteng. The frame shows light grey uniform film over block texture with mortar joints still subtly visible beneath, no roller holidays, realistic industrial interior sheen. Fluorescent raking light. No people or wet paint. Natural film grain, block-wall coating detail. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, unpainted mortar, wet coating, readable labels, logos, CGI render"
+    },
+    {
+      "id": "hv-column-base-close",
+      "section": "Image pair right",
+      "display_order": 6,
+      "target_filename": "painting-high-volume-commercial-07.jpg",
+      "target_path": "public/images/painting-high-volume-commercial-07.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Close-up of completed wall and column base coating in a commercial warehouse interior",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "hvc07.png",
+      "prompt": "A professional, documentary-style 4:3 close-up photograph of a completed wall and concrete column base coating junction in an empty Gauteng warehouse interior. Light grey airless spray film on block wall meets coated column plinth in a crisp line, swept floor edge visible, no tyre marks or rubble. Cool fluorescent light. No people. Natural film grain, warehouse junction detail photography. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, rubble, wet paint, readable floor markings, logos, wide aisle shot"
+    },
+    {
+      "id": "hv-business-park-row",
+      "section": "Magazine editorial phase 02 + spoke magazine seed",
+      "display_order": 7,
+      "target_filename": "painting-high-volume-commercial-08.jpg",
+      "target_path": "public/images/painting-high-volume-commercial-08.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed exterior coatings on a small Gauteng business park warehouse row",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "hvc08.png",
+      "prompt": "A clean, documentary-style 4:3 medium photograph of completed exterior airless spray coatings on a small row of two Gauteng business park warehouses. Matching off-white and grey tilt-up or block elevations, neat roller doors with no readable tenant names, empty paved yard, pale Highveld sky. Modest phased portfolio scale a small team could deliver, not a twelve-building rollout panorama. No workers, trucks, or pedestrians. Natural film grain, business park handover photography. No text, signage, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, twelve buildings, readable tenant signs, trucks, half-painted walls, logos, CGI, drone"
+    },
+    {
+      "id": "hv-corridor-interior",
+      "section": "Magazine editorial phase 03 + spoke magazine seed",
+      "display_order": 8,
+      "target_filename": "painting-high-volume-commercial-09.jpg",
+      "target_path": "public/images/painting-high-volume-commercial-09.jpg",
+      "aspect_ratio": "4:3",
+      "includes_people": false,
+      "scene_type": "completed_work",
+      "alt_text": "Completed airless spray coatings in an empty commercial warehouse interior aisle",
+      "weight": 1,
+      "batch": 2,
+      "user_file_hint": "hvc09.png",
+      "prompt": "A professional, documentary-style 4:3 medium photograph of completed airless spray coatings in an empty commercial warehouse interior aisle in Gauteng. The camera looks down one aisle with uniform light grey walls on both sides, coated columns, white ceiling, swept concrete floor — completely vacant, no racking, pallets, or forklifts. Cool fluorescent and distant daylight mix. Single-bay to double-bay scale, realistic for a phased HEA spray programme. No workers or spray equipment. Natural film grain, warehouse aisle handover realism. No text, logos, or branding anywhere in frame.",
+      "negative_prompt": "people, workers, racking, pallets, forklifts, spray gun, megahub aisle, readable labels, logos, CGI"
+    }
+  ],
+  "hub_slot_assignment": {
+    "note": "Recommended mapping for service-page-images.ts HIGH_VOLUME_COMMERCIAL_PAINTING_IMAGE_POOL",
+    "magazine_seeds_in_spoke_to_hub_config": [
+      { "phase": 1, "filename": "painting-high-volume-commercial-05.jpg" },
+      { "phase": 2, "filename": "painting-high-volume-commercial-08.jpg" },
+      { "phase": 3, "filename": "painting-high-volume-commercial-09.jpg" }
+    ]
+  },
+  "summary": {
+    "total_page_slots": 9,
+    "new_images_to_generate": 9,
+    "all_completed_work": true,
+    "clean_empty_handover": true,
+    "no_text_anywhere": true,
+    "shot_mix": {
+      "close_up": 4,
+      "medium": 5
+    },
+    "building_types": [
+      "empty warehouse bay",
+      "tilt-up business park unit",
+      "loading bay interior",
+      "small warehouse row"
+    ],
+    "generation_batches": {
+      "batch_1": [
+        "painting-high-volume-commercial-01.jpg",
+        "painting-high-volume-commercial-02.jpg",
+        "painting-high-volume-commercial-03.jpg",
+        "painting-high-volume-commercial-04.jpg",
+        "painting-high-volume-commercial-05.jpg"
+      ],
+      "batch_2": [
+        "painting-high-volume-commercial-06.jpg",
+        "painting-high-volume-commercial-07.jpg",
+        "painting-high-volume-commercial-08.jpg",
+        "painting-high-volume-commercial-09.jpg"
+      ]
+    },
+    "notes": [
+      "Distinct from /painting/commercial-painting (healthcare handover) — this spoke is airless spray at warehouse/logistics scale.",
+      "All medium shots empty and handed over — no workers, forklifts, or active spray equipment.",
+      "After generation: convert PNG → JPG (~88 quality), wire pool, remove from PAINTING_SERVICES_PATHS, build, commit, push."
+    ]
+  }
+}
