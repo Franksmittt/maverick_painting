@@ -61,10 +61,11 @@ const STUCCO_WALL_COATINGS_PATHS = new Set(["/painting/stucco-wall-coatings"]);
 
 const PARKING_GARAGE_PAINTING_PATHS = new Set(["/painting/parking-garage-painting"]);
 
+const INTERIOR_PAINTING_PATHS = new Set(["/painting/interior-painting"]);
+
 const PAINTING_SERVICES_PATHS = new Set([
   "/painting-services",
   "/painting/roof-painting",
-  "/painting/interior-painting",
   "/painting/internal-walls",
   "/painting/external-walls",
   "/painting/warehouse-painting",
@@ -959,6 +960,46 @@ const PARKING_GARAGE_PAINTING_IMAGE_POOL: readonly ServicePageImage[] = [
   },
 ];
 
+/** Dedicated nine-slot pool for the interior painting spoke. */
+const INTERIOR_PAINTING_IMAGE_POOL: readonly ServicePageImage[] = [
+  {
+    src: "/images/painting-interior-01.jpg",
+    alt: "Completed low-VOC interior repaint in a Gauteng suburban living room",
+  },
+  {
+    src: "/images/painting-interior-02.jpg",
+    alt: "Close-up of completed skimmed wall finish under raking light in a Gauteng home",
+  },
+  {
+    src: "/images/painting-interior-03.jpg",
+    alt: "Completed hallway and bedroom door repaint in a Gauteng townhouse",
+  },
+  {
+    src: "/images/painting-interior-04.jpg",
+    alt: "Close-up of completed ceiling and cornice coating in a Gauteng home interior",
+  },
+  {
+    src: "/images/painting-interior-05.jpg",
+    alt: "Completed full-home interior repaint handover in a Gauteng suburban house",
+  },
+  {
+    src: "/images/painting-interior-06.jpg",
+    alt: "Close-up of completed kitchen cabinet respray finish in a Gauteng home",
+  },
+  {
+    src: "/images/painting-interior-07.jpg",
+    alt: "Close-up of completed skirting board and wall junction in an interior repaint",
+  },
+  {
+    src: "/images/painting-interior-08.jpg",
+    alt: "Completed low-VOC office interior repaint in a small Gauteng commercial suite",
+  },
+  {
+    src: "/images/painting-interior-09.jpg",
+    alt: "Completed bedroom interior repaint with dustless preparation finish in Gauteng",
+  },
+];
+
 /** Shared nine-slot pool for the painting services hub and spokes. */
 const PAINTING_SERVICES_IMAGE_POOL: readonly ServicePageImage[] = [
   {
@@ -1238,6 +1279,10 @@ export function getServicePageImages(
 
   if (PARKING_GARAGE_PAINTING_PATHS.has(path)) {
     return [...PARKING_GARAGE_PAINTING_IMAGE_POOL];
+  }
+
+  if (INTERIOR_PAINTING_PATHS.has(path)) {
+    return [...INTERIOR_PAINTING_IMAGE_POOL];
   }
 
   if (WATERPROOFING_PATHS.has(path)) {

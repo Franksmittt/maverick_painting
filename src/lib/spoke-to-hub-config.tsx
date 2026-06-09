@@ -334,16 +334,16 @@ const SPOKE_MAGAZINE_IMAGES: Partial<
   ],
   "interior-painting": [
     {
-      src: "/images/painting-commercial-campus.jpg",
-      alt: "Interior commercial painting with dust control and low-VOC systems",
+      src: "/images/painting-interior-05.jpg",
+      alt: "Completed full-home interior repaint handover in a Gauteng suburban house",
     },
     {
-      src: "/images/painting-commercial-healthcare.jpg",
-      alt: "Occupied interior repaint with containment and ventilation planning",
+      src: "/images/painting-interior-08.jpg",
+      alt: "Completed low-VOC office interior repaint in a small Gauteng commercial suite",
     },
     {
-      src: "/images/painting-commercial-retail.jpg",
-      alt: "Interior handover with clean-down and cure guidance for tenants",
+      src: "/images/painting-interior-09.jpg",
+      alt: "Completed bedroom interior repaint with dustless preparation finish in Gauteng",
     },
   ],
   "internal-walls": [
