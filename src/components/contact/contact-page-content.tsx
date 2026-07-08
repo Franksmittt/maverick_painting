@@ -74,17 +74,25 @@ export function ContactPageContent() {
                 <div className="flex items-start gap-4 border-t border-white/10 pt-6">
                   <MapPin className="h-10 w-10 shrink-0 text-secondary" aria-hidden />
                   <div>
-                    <p className="text-sm font-semibold uppercase text-zinc-500">Head office</p>
-                    <a
-                      href={siteConfig.googleMapsUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-base font-semibold text-white transition hover:text-tertiary"
-                    >
-                      {nap.address.display}
-                    </a>
-                    <p className="mt-2 text-sm text-zinc-500">
-                      Gauteng-wide mobilisation · {siteConfig.openingHours.join(" · ")}
+                    <p className="text-sm font-semibold uppercase text-zinc-500">
+                      {nap.address.label}
+                    </p>
+                    <p className="text-base font-semibold text-white">{nap.address.display}</p>
+                    <ul className="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-sm">
+                      {nap.serviceRegions.map((region) => (
+                        <li key={region.href}>
+                          <Link
+                            href={region.href}
+                            className="font-medium text-secondary transition hover:text-tertiary hover:underline"
+                          >
+                            {region.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="mt-3 text-sm text-zinc-500">
+                      On-site mobilisation across Gauteng · no public walk-in office ·{" "}
+                      {siteConfig.openingHours.join(" · ")}
                     </p>
                   </div>
                 </div>

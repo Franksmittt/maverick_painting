@@ -58,6 +58,8 @@ export const FOOTER_EMAIL = {
 
 export const FOOTER_ADDRESS = nap.address;
 
+export const FOOTER_SERVICE_REGIONS = nap.serviceRegions;
+
 export const FOOTER_SOCIAL = [
   { href: nap.social.facebook, label: "Facebook", key: "fb" },
   { href: nap.social.linkedin, label: "LinkedIn", key: "in" },
