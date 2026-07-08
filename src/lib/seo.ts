@@ -76,7 +76,7 @@ export const siteConfig = {
     city: "Johannesburg",
     region: "Gauteng",
     country: "ZA",
-  } satisfies SiteAddress,
+  } as SiteAddress,
   serviceAreas: [
     "Gauteng",
     "Johannesburg",
