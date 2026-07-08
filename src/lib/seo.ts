@@ -6,15 +6,23 @@ export type SocialProfiles = {
 };
 
 export type SiteAddress = {
-  street: string;
-  suburb: string;
+  /** Optional — omit when the business has no public walk-in office. */
+  street?: string;
+  suburb?: string;
   city: string;
   region: string;
-  postalCode: string;
+  postalCode?: string;
   country: string;
   latitude?: number;
   longitude?: number;
 };
+
+/** Primary mobilisation corridors shown on contact / footer (no public office). */
+export const serviceRegionLinks = [
+  { href: "/locations/west-rand", label: "West Rand" },
+  { href: "/locations/east-rand", label: "East Rand" },
+  { href: "/locations/south-rand", label: "South Rand" },
+] as const;
 
 export const siteConfig = {
   name: "Maverick Painting Contractors",
@@ -59,20 +67,16 @@ export const siteConfig = {
     facebook: "https://www.facebook.com/people/Maverick-Painting/61586004524227/",
     instagram: "https://www.instagram.com/maverickpainting",
   } satisfies SocialProfiles,
+  /** Service-area business — no public walk-in office; maps to Gauteng coverage. */
   googleMapsUrl:
-    "https://www.google.com/maps/search/?api=1&query=15+Highveld+Techno+Park+Centurion+South+Africa",
+    "https://www.google.com/maps/search/?api=1&query=West+Rand+East+Rand+South+Rand+Gauteng+South+Africa",
   openingHours: ["Mo-Fr 07:00-17:00", "Sa 08:00-12:00"],
   priceRange: "R$$",
   address: {
-    street: "15 Highveld Techno Park",
-    suburb: "Centurion",
-    city: "Pretoria",
+    city: "Johannesburg",
     region: "Gauteng",
-    postalCode: "0157",
     country: "ZA",
-    latitude: -25.89052,
-    longitude: 28.18904,
-  } satisfies SiteAddress,
+  } as SiteAddress,
   serviceAreas: [
     "Gauteng",
     "Johannesburg",

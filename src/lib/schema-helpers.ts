@@ -13,10 +13,10 @@ export function absoluteUrl(path: string): string {
 export function postalAddressSchema() {
   return {
     "@type": "PostalAddress" as const,
-    streetAddress: siteConfig.address.street,
+    ...(siteConfig.address.street ? { streetAddress: siteConfig.address.street } : {}),
     addressLocality: siteConfig.address.city,
     addressRegion: siteConfig.address.region,
-    postalCode: siteConfig.address.postalCode,
+    ...(siteConfig.address.postalCode ? { postalCode: siteConfig.address.postalCode } : {}),
     addressCountry: siteConfig.address.country,
   };
 }

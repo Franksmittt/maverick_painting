@@ -1,4 +1,4 @@
-import { siteConfig } from "@/lib/seo";
+import { serviceRegionLinks, siteConfig } from "@/lib/seo";
 
 /** Single source of truth for name, address, phone — footer, contact, and schema. */
 
@@ -23,12 +23,12 @@ export const nap = {
     region: siteConfig.address.region,
     postalCode: siteConfig.address.postalCode,
     country: siteConfig.address.country,
-    /** Single-line display for footer and contact. */
-    display: `${siteConfig.address.street}, ${siteConfig.address.suburb}, ${siteConfig.address.city}, ${siteConfig.address.postalCode}`,
-    mapsQuery: encodeURIComponent(
-      `${siteConfig.address.street}, ${siteConfig.address.suburb}, ${siteConfig.address.city}, South Africa`,
-    ),
+    /** Region-level display — no public walk-in office. */
+    display: "West Rand · East Rand · South Rand, Gauteng",
+    label: "Service areas",
+    mapsQuery: encodeURIComponent("West Rand, East Rand, South Rand, Gauteng, South Africa"),
   },
+  serviceRegions: serviceRegionLinks,
   whatsapp: siteConfig.whatsapp,
   social: siteConfig.social,
 } as const;

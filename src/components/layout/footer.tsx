@@ -141,17 +141,19 @@ export function Footer() {
           <div className="min-w-0 text-sm text-zinc-400">
             <FooterColHeading>Contact Us</FooterColHeading>
             <p className="leading-relaxed">
-              <strong className="font-semibold text-zinc-200">Head office</strong>
+              <strong className="font-semibold text-zinc-200">{D.FOOTER_ADDRESS.label}</strong>
               <br />
-              <a
-                href={`https://www.google.com/maps/search/?api=1&query=${D.FOOTER_ADDRESS.mapsQuery}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-zinc-300 transition hover:text-white"
-              >
-                {D.FOOTER_ADDRESS.display}
-              </a>
+              <span className="text-zinc-300">{D.FOOTER_ADDRESS.display}</span>
             </p>
+            <ul className="mt-2 space-y-1">
+              {D.FOOTER_SERVICE_REGIONS.map((region) => (
+                <li key={region.href}>
+                  <Link href={region.href} className={linkClass}>
+                    {region.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
             <p className="mt-4 leading-relaxed">
               <strong className="font-semibold text-zinc-200">{D.FOOTER_PHONE.label}</strong>
               <br />
@@ -166,10 +168,8 @@ export function Footer() {
                 {D.FOOTER_EMAIL.display}
               </a>
             </p>
-            <p className="mt-4 leading-relaxed">
-              <strong className="font-semibold text-zinc-200">Service area</strong>
-              <br />
-              Gauteng-wide mobilisation from Centurion.
+            <p className="mt-4 leading-relaxed text-zinc-500">
+              On-site mobilisation across Gauteng — no public walk-in office.
             </p>
           </div>
         </div>
