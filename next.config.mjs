@@ -1,5 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    // Serve static image files directly. Vercel Image Optimization is returning
+    // 402 OPTIMIZED_IMAGE_REQUEST_PAYMENT_REQUIRED on production, which blanks
+    // most next/image assets across service pages even though /images/* exists.
+    images: {
+        unoptimized: true,
+    },
     async redirects() {
         return [
             {
