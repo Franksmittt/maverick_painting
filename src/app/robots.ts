@@ -25,7 +25,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: ["/", "/_next/static/"], // Allow all pages and Next.js static resources (critical for rendering)
-        disallow: ["/api/"], // Block API routes to prevent crawl budget waste
+        disallow: ["/api/", "/client-service-review"], // Block API routes and internal client review form
       },
     ],
     sitemap: [`${baseUrl}/sitemap.xml`],
