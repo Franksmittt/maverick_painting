@@ -15,14 +15,16 @@ export function HomeFeaturedServices({
       <div className="page-container">
         <div className="mb-8 flex flex-col gap-4 md:mb-10 md:flex-row md:items-end md:justify-between">
           <header className="max-w-2xl">
-            <p className="type-eyebrow mb-3">Popular services</p>
+            <p className="type-eyebrow mb-3">
+              {hideOverviewLink ? "Featured first" : "Popular services"}
+            </p>
             <h2 id="home-featured-services-heading" className="type-h2 mb-3">
               Jump straight to the scope you need
             </h2>
             <p className="type-body m-0 text-zinc-500">
               {services.length === HOME_FEATURED_SERVICES.length
                 ? "Twelve high-intent entry points across structural, waterproofing, coatings, painting, and access work."
-                : `${services.length} dedicated service pages across structural, waterproofing, coatings, painting, damp proofing, and access work.`}
+                : "Interior, exterior, and roof painting lead the list, followed by every dedicated service page across structural, waterproofing, coatings, damp proofing, and access work."}
             </p>
           </header>
           {hideOverviewLink ? (

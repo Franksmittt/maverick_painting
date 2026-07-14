@@ -159,9 +159,26 @@ function spokeToFeatured(
   };
 }
 
-/** Every spoke linked from SERVICE_OVERVIEW_TAGS — used on /services only. */
-export const SERVICES_ALL_SPOKES: HomeFeaturedService[] = (
+/** Client priority focuses — shown first on /services, then every other spoke. */
+const FEATURED_SERVICE_HREFS = [
+  "/painting/interior-painting",
+  "/painting/external-walls",
+  "/painting/roof-painting",
+] as const;
+
+const ALL_SPOKES_UNORDERED: HomeFeaturedService[] = (
   Object.keys(SERVICE_OVERVIEW_TAGS) as Array<keyof typeof SERVICE_OVERVIEW_TAGS>
 ).flatMap((category) =>
   SERVICE_OVERVIEW_TAGS[category].map((tag) => spokeToFeatured(category, tag)),
 );
+
+/** Every spoke linked from SERVICE_OVERVIEW_TAGS — used on /services only. */
+export const SERVICES_ALL_SPOKES: HomeFeaturedService[] = [
+  ...FEATURED_SERVICE_HREFS.map(
+    (href) => ALL_SPOKES_UNORDERED.find((service) => service.href === href)!,
+  ),
+  ...ALL_SPOKES_UNORDERED.filter(
+    (service) =>
+      !(FEATURED_SERVICE_HREFS as readonly string[]).includes(service.href),
+  ),
+];
